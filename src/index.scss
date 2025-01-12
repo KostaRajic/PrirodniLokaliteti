@@ -160,6 +160,13 @@
     background-blend-mode: overlay;
     color: white;
     height: 100vh;
+
+    div {
+      padding: 0 50px;
+      letter-spacing: 1.3px;
+      word-spacing: 1.4px;
+      font-size: 23px;
+    }
   }  
 
   .severnoBanatskiOkrug {
