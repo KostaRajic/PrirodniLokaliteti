@@ -1,6 +1,6 @@
 import tisa1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Tisa/Tisa1.jpg";
 import tisa2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Tisa/Tisa2.jpg";
-import tisa3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Tisa/Tisa3.jpg";
+import tisa3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Tisa/TIsa3.jpg";
 import tisa4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Tisa/Tisa4.jpg";
 import tisa5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Tisa/Tisa5.jpg";
 
