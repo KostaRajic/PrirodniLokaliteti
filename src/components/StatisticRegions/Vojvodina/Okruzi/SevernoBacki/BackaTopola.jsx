@@ -1,9 +1,9 @@
-import backaT1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/Bt1.jpg";
-import backaT2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/Bt2.jpg";
-import backaT3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/Bt3.jpg";
-import backaT4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/Bt4.jpg";
-import backaT5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/Bt5.jpg";
-import backaT6 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/Bt6.jpg";
+import backaT1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT1.jpg";
+import backaT2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT2.jpg";
+import backaT3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT3.jpg";
+import backaT4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT4.jpg";
+import backaT5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT5.jpg";
+import backaT6 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
