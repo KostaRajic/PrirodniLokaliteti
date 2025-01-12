@@ -1,0 +1,601 @@
+:root {
+  --someBlueColor: rgb(19 17 35);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  color: white;
+}
+
+.serbianMapClass {
+  position: relative;
+  z-index: 2;
+}
+
+.modalBackground {
+  cursor: default;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: auto;
+}
+
+.modalContent {
+  margin: 0 160px;
+  background-color: white;
+  font-size: 20px;
+  padding: 30px;
+  max-height: 80vh;
+  overflow: auto;
+
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  p {
+    padding-bottom: 10px;
+    word-spacing: 2px;
+    line-height: 1.6;
+  }
+
+  h3 {
+    padding-bottom: 15px;
+  }
+}
+
+.btnClass {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.firstBtn {
+  margin: 40px;
+  padding: 20px;
+  font-size: 18px;
+  width: 150px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.firstBtn:hover {
+  transform: scale(1.1);
+  background-color: rgba(84, 14, 215, 0.773);
+  color: white;
+}
+
+.firstBtn:active {
+  transform: scale(1);
+}
+
+.secondBtn {
+  color: black;
+  margin: 40px;
+  padding: 20px;
+  font-size: 18px;
+  width: 150px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.secondBtn:hover {
+  transform: scale(1.1);
+  background-color: rgba(84, 14, 215, 0.773);
+  color: white;
+}
+
+.secondBtn:active {
+  transform: scale(1);
+}
+
+
+
+.cursor-pointer-false {
+  cursor: pointer;
+}
+
+.cursor-pointer-true {
+  cursor: default;
+}
+.vojvodinaBackground {
+  background-image: url(./assets/images/p0btlr60.jpeg);
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
+
+.toolTipClass {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+  color: black;
+}
+
+.okrugBackground {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2200;
+  background-color: white;
+  font-size: 25px;
+  overflow: auto;
+  cursor: default;
+
+  .zapadnoBackiClassMain {
+    background-image: url(../src/assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.65);
+    background-blend-mode: overlay;
+    color: white;
+    height: 100vh;
+
+    div {
+      padding: 0 50px;
+      letter-spacing: 1.3px;
+      word-spacing: 1.4px;
+      font-size: 26px;
+    }
+  }
+
+  .severnoBackiOkrug {
+    background-image: url(../src/assets/images/Vojvodina/SevernoBackiOkrug/PalickoJezero3.jpg);
+    background-position: 50% 90%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+    color: white;
+    height: 100vh;
+  }  
+
+  .severnoBanatskiOkrug {
+    background-image: url('./assets/images/Vojvodina/SevernoBanatskiOkrug/kikindaBCG.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    color: white;
+    height: 100vh;
+
+    div {
+      padding: 0 50px;
+      letter-spacing: 1.3px;
+      word-spacing: 1.4px;
+      font-size: 23px;
+    }
+  }  
+
+  .juznoBackiOkrug {
+    background-image: url('./assets/images/Vojvodina/JuznoBackiOkrug/NoviSad.jpg');
+    background-position: 50% 40%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+    height: 100vh;
+
+    div {
+      padding: 0 50px;
+      letter-spacing: 1.3px;
+      word-spacing: 1.4px;
+      font-size: 25px;
+    }
+  }  
+  
+.srednjeBanatskiOkrug {
+  background-image: url('./assets/images/Vojvodina/SrednjeBanatskiOkrug/SrednjeBanatskiOkrug.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  color: white;
+  height: 100vh;
+
+  div {
+    padding: 0 50px;
+    letter-spacing: 1.2px;
+    word-spacing: 1.2px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+.juznoBanatskiOkrug {
+  background-image: url('./assets/images/Vojvodina/JuznoBanatskiOkrug/juznobanatskiOkrug.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  color: white;
+  height: 100vh;
+
+  
+    div {
+      padding: 0 50px;
+      letter-spacing: 1.3px;
+      word-spacing: 1.4px;
+      font-size: 24px;
+    }
+}
+
+.sremskiOkrug {
+  background-image: url('./assets/images/Vojvodina/SremskiOkrug/sremski.jpg');
+  background-position: 50% 40%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  color: white;
+  height: 100vh;
+
+  div {
+    padding: 0 50px;
+    letter-spacing: 1.3px;
+    word-spacing: 1.4px;
+    font-size: 24px;
+  }
+}
+
+  h1 {
+    padding: 20px 50px 30px 50px;
+    font-size: 50px;
+  }
+
+  form {
+    padding: 0 50px 50px 50px;
+
+    h3 {
+      padding-bottom: 25px;
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 31px;
+      padding: 5px;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .beograd {
+    background-image: url('./assets/images/Beograd/beograd1.jpg');
+    background-position: 50% 40%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    color: white;
+    height: 100vh;
+
+    div {
+      padding: 0 50px;
+      letter-spacing: 1.3px;
+      word-spacing: 1.4px;
+      font-size: 23px;
+      font-weight: 600;
+    }
+
+  }
+}
+
+.citatClass {
+  background-color: white;
+
+  p {
+    text-align: center;
+    padding: 50px;
+    font-style: italic;
+    font-weight: 500;
+    color: #080818;
+  }
+}
+
+.caruoselClass {
+
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  height: 100vh;
+
+  .caruoselInfo {
+    padding: 0;
+  }
+
+  .arrow {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    left: 2%;
+  }
+
+  .arrow-right {
+    right: 2%;
+  }
+}
+
+.caruoselBackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 60%;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .5s cubic-bezier(0.42, 0, 0.58, 1);
+  position: absolute;
+  z-index: 1;
+
+  &-hidden {
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  &-visible {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  .caruoselInfo {
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    margin-top: 7%;
+    margin-left: 10%;
+
+    h3 {
+      color: black;
+      padding: 30px;
+    }
+
+    p {
+      color: black;
+      overflow: scroll;
+      padding: 0 30px 30px 30px;
+      height: 210px;
+      font-size: 17px;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    button {
+      margin: 40px 0 30px 30px;
+      width: 120px;
+      height: 35px;
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: #dddcdc;
+      cursor: pointer;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    button:active {
+      transform: scale(1);
+    }
+  }
+}
+
+// .caruoselBackground-hidden {
+//   display: none;
+// }
+
+.placeBackground {
+  width: 100vw;
+  overflow-y: auto;
+  z-index: 100000;
+
+
+
+  .somborBackground {
+    background: url(./assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor/Sombor1.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .gpBackground {
+    background: url(./assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/GP5.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 60%;
+  }
+
+  .vbkBackground {
+    background: url(./assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/VBK5.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 60%;
+  }
+
+  .salasiBackground {
+    background: url(./assets/images/Vojvodina/ZapadnoBackiOkrug/SalasiUBackoj/Salasi3.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 60%;
+  }
+
+  .dunavskeAdeBackground {
+    background: url(./assets/images/Vojvodina/ZapadnoBackiOkrug/DunavskeAde/ade4.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 60%;
+  }
+
+  .bodjaniBackground {
+    background: url(./assets/images/Vojvodina/ZapadnoBackiOkrug/ManastirBodjani/ManastirBodjani1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 60%;
+  }
+
+  .apatinBackground {
+    background: url(./assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position-y: 60% ;
+  }
+
+  .palickoBackground {
+    background: url(./assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić2.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+
+
+  h2 {
+    position: absolute;
+    top: 5px;
+    font-size: 85px;
+    padding: 40px 0 0 100px;
+    color: var(--someBlueColor);
+    font-style: italic;
+  }
+
+  p {
+    background-color: white;
+    color: var(--someBlueColor);
+    padding: 50px;
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .displayFlex {
+    background-color: white;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  align-items: center;
+
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 30%;
+    }
+
+    img {
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+      margin: 40px 20px 0 20px;
+    }
+
+    p {
+  margin-top: 10px;
+  font-size: 22px;
+  color: var(--someBlueColor);
+  padding: 30px;
+}
+}
+
+  .fourImages {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    align-content: center;
+
+    img {
+      width: 300px;
+      height: 400px;
+    }
+  }
+
+  .manyImages {
+    display: flex;
+    gap: 50px;
+    background-color: white;
+    flex-direction: column;
+
+    img {
+      margin: 30px;
+    }
+  }
+}
+
+.displayFlexClassic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowLeft {
+  position: absolute;
+   top: 20px;
+   right: 20px;
+   font-size: 40px;
+   cursor: pointer;
+  fill: var(--someBlueColor);
+
+   :hover {
+    transform: scale(1.2);
+   }
+
+   :active {
+    transform: scale(1);
+   }
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  font-weight: 1000;
+  overflow: hidden;
+  font-size: 50px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10000;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #0056b3;
+}
+
+.scroll-to-top-btn.show {
+  display: flex;
+}
