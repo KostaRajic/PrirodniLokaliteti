@@ -19,25 +19,23 @@
   cursor: default;
   height: 100vh;
   width: 100vw;
-
   background-color: rgba(0, 0, 0, 1);
   display: flex;
   justify-content: center;
   align-items: center;
-
   pointer-events: auto;
 }
 
 .modalContent {
-  margin: 0 160px;
   background-color: white;
   font-size: 20px;
   padding: 30px;
-  max-height: 80vh;
+  max-height: 100vh;
   overflow: auto;
 
   h1 {
     padding-bottom: 20px;
+    font-size: 50px;
   }
 
   p {
@@ -48,6 +46,8 @@
 
   h3 {
     padding-bottom: 15px;
+    font-weight: 800;
+    font-size: 30px;
   }
 }
 
@@ -108,11 +108,23 @@
 .cursor-pointer-true {
   cursor: default;
 }
-.vojvodinaBackground {
-  background-image: url(./assets/images/p0btlr60.jpeg);
+
+
+.vojvodinaTekstModalBackround {
+  background-image: url(./assets/images/Vojvodina/vojvodinaTekstModalBackground.jpg);
   color: white;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+}
+
+.sumadijaTekstModalBackground {
+  background-image: url(./assets/images/SumadijaIZapadnaSrbija/sumadijaTeksBackround.jpg);
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50% 10%;

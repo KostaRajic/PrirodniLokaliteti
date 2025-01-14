@@ -7,6 +7,7 @@ import bg6 from "../../../assets/images/Beograd/Beograd/BG6.jpg";
 import bg7 from "../../../assets/images/Beograd/Beograd/BG7.jpg";
 import bg8 from "../../../assets/images/Beograd/Beograd/BG8.jpg";
 import bg9 from "../../../assets/images/Beograd/Beograd/BG9.jpg";
+import bg10 from "../../../assets/images/Beograd/Beograd/BG10.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -73,11 +74,7 @@ export const Beograd2 = () => {
         spava, uvek je u pokretu i ima mnogo da ponudi svakom posetiocu.
       </p>
 
-      <img
-        src={bg2}
-        alt="Zemun"
-        style={{ marginBottom: "-10px" }}
-      />
+      <img src={bg2} alt="Zemun" style={{ marginBottom: "-10px" }} />
       <p>
         Za Zemun se često kaže da je "grad u gradu", a simbol ovog posebnog dela
         Beograda je Milenijumska kula na brdu Gardoš, koja se nalazi u središtu
@@ -94,11 +91,7 @@ export const Beograd2 = () => {
         specijalitetima i opuštati se uz zvuke starogradske muzike.
       </p>
 
-      <img
-        src={bg6}
-        alt="Park Topčider"
-        style={{ marginBottom: "-10px" }}
-      />
+      <img src={bg6} alt="Park Topčider" style={{ marginBottom: "-10px" }} />
       <p>
         Park Topčider predstavlja ostatak nekadašnjih beogradskih šuma i deo
         prirodne baštine grada. Tokom tridesetih godina 19. veka, knez Miloš
@@ -115,11 +108,7 @@ export const Beograd2 = () => {
         stalnu postavku Muzeja istorije Srbije u Konaku kneza Miloša.
       </p>
 
-      <img
-        src={bg7}
-        alt="Savamala"
-        style={{ marginBottom: "-10px" }}
-      />
+      <img src={bg7} alt="Savamala" style={{ marginBottom: "-10px" }} />
       <p>
         Savamala, nekada industrijska četvrt, danas je postala epicentar urbane
         kulture u Beogradu. Sa starim zgradama koje odišu baroknim i secesijskim
@@ -178,6 +167,32 @@ export const Beograd2 = () => {
         sa poznatim DJ-evima, jedinstvena beogradska iskustva čine i večeri uz
         tamburaše u restoranima, što posetiocima Beograda ostaje u nezaboravnom
         sećanju kao pravi ugođaj za dušu.
+      </p>
+
+      <img
+        src={bg10}
+        alt="Beogradski ZOO vrt"
+        style={{ marginBottom: "-10px" }}
+      />
+      <p>
+        Beogradski zoološki vrt, poznat i kao "Vrt dobre nade", jedan je od
+        najstarijih i najposećenijih zooloških vrtova u Srbiji. Smesten je u
+        samom centru Beograda, u parku Kalemegdan, i prostire se na površini od
+        oko 7 hektara. Ovaj zoološki vrt dom je brojnim vrstama životinja,
+        uključujući sisavce, ptice, reptile i druge egzotične vrste. Beogradski
+        zoo vrt je odlično uređen, sa različitim paviljonima i enclosures koji
+        omogućavaju posetiocima da izbliza vide životinje u njihovim prirodnim
+        uslovima. Pored klasičnih životinja, kao što su lavovi, tigar, slonovi i
+        majmuni, ovde se mogu videti i retke i ugrožene vrste, kao što su albino
+        krokodili, žirafe, antilope i mnoge ptice, uključujući i razne vrste
+        papagaja. Zoološki vrt je popularno odredište za porodice sa decom, ali
+        i za sve one koji žele da se opuste i uživaju u prirodi i životinjskom
+        svetu. Pored stalnih izložbi, vrt često organizuje edukativne programe i
+        manifestacije, kao i tematske događaje. Vrt takođe aktivno učestvuje u
+        zaštiti ugroženih vrsta i u realizaciji različitih projekata očuvanja
+        prirode. Beogradski zoološki vrt pruža jedinstveno iskustvo za
+        ljubitelje životinja i prirode, kao i priliku da saznate više o važnosti
+        očuvanja biodiverziteta.
       </p>
     </div>
   );

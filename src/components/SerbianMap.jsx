@@ -36,6 +36,8 @@ export const SerbianMap = () => {
       return navigate('vojvodinaTekstModal')
     } else if (showBeograd) {
       return navigate('Beograd')
+    } else if (showSumadijaIZapadnaSrbija) {
+      return navigate('sumadijaTekstModal')
     }
   }
   )
@@ -89,7 +91,7 @@ export const SerbianMap = () => {
                 statisticRegion?.properties?.name === 'Vojvodina' && setShowVojvodina(true)
                 statisticRegion?.properties?.name === 'Beograd' && setShowBeograd(true)
                 statisticRegion?.properties?.name === 'Juzna i istocna Srbija' && setShowIstocnaiJuznaSrbija(true)
-                statisticRegion?.properties?.name === 'Sumadija i zapadna Srbija' && setShowSumadijaIZapadnaSrbija(true)
+                statisticRegion?.properties?.name === 'Šumadija i zapadna Srbija' && setShowSumadijaIZapadnaSrbija(true)
                 statisticRegion?.properties?.name === 'Kosovo i Metohija' && setShowKosovoIMethoija(true)
               }
             }}

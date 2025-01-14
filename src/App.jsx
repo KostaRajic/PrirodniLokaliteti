@@ -55,6 +55,16 @@ import { Vrsac } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanat
 import { SRPKraljevac } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/SRPKraljevac";
 import { Beograd } from "./components/StatisticRegions/Beograd/Beograd";
 import { Beograd2 } from "./components/StatisticRegions/Beograd/Beograd2";
+import { Kalemegdan } from "./components/StatisticRegions/Beograd/Kalemegdan";
+import { HramSvetogSave } from "./components/StatisticRegions/Beograd/HramSvetogSave";
+import { KnezMihailova } from "./components/StatisticRegions/Beograd/KnezMihajlova";
+import { TrgRepublike } from "./components/StatisticRegions/Beograd/TrgRepublike";
+import { BotanickaBata } from "./components/StatisticRegions/Beograd/BotanickaBasta";
+import { Skadarlija } from "./components/StatisticRegions/Beograd/Skadarlija";
+import { AdaCiganlija } from "./components/StatisticRegions/Beograd/AdaCiganlija";
+import { Kosutnjak } from "./components/StatisticRegions/Beograd/Kosutnjak";
+import { SumadijaIZapadnaSrbijaTekstModal } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/SumdijaIZapadnaSrbijaTekstModal";
+import { SumadijaIZapadnaSrbija } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/SumadijaIZapadnaSrbija";
 
 function App() {
   return (
@@ -264,6 +274,16 @@ function App() {
         />
         <Route path="/Beograd" element={<Beograd />} />
         <Route path="/Beograd/Beograd2" element={<Beograd2 />} />
+        <Route path="/Beograd/Kalemegdan" element={<Kalemegdan />} />
+        <Route path="/Beograd/HramSvetogSave" element={<HramSvetogSave />} />
+        <Route path="/Beograd/KnezMihailova" element={<KnezMihailova />} />
+        <Route path="/Beograd/TrgRepublike" element={<TrgRepublike />} />
+        <Route path="/Beograd/BotanickaBasta" element={<BotanickaBata />} />
+        <Route path="/Beograd/Skadarlija" element={<Skadarlija />} />
+        <Route path="/Beograd/AdaCiganlija" element={<AdaCiganlija />} />
+        <Route path="/Beograd/Kosutnjak" element={<Kosutnjak />} />
+        <Route path="/sumadijaTekstModal" element={<SumadijaIZapadnaSrbijaTekstModal />} />
+        <Route path="/sumadijaTekstModal/SumadijaIZapadnaSrbija" element={<SumadijaIZapadnaSrbija />} />
       </Routes>
     </BrowserRouter>
   );

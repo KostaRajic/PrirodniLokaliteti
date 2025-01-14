@@ -10,13 +10,13 @@ export const SumadijaIZapadnaSrbija = () => {
     return (
         <MapContainer
           center={center}
-          zoom={9}
+          zoom={8}
           style={{ width: "100vw", height: "100vh", position: "none" }}
         >
-          <TileLayer
-            url="https://api.maptiler.com/maps/satellite/256/{z}/{x}/{y}.jpg?key=ZEp04Kl6nUeRyGwWLKXx"
-            attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-          />
+        <TileLayer
+          url={`https://api.maptiler.com/maps/satellite/256/{z}/{x}/{y}.jpg?key=qZ4DIeGQoRrxWzufyKP1`}
+          attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+        />
           {SumadijaIZapadnaSrbijaRegioni?.features?.map((statisticRegion) => {
             const cordinates = statisticRegion?.geometry?.coordinates[0]?.map(
               (item) => [item[1], item[0]]

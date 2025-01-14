@@ -5,6 +5,9 @@ import knezMihajlova from "../../../assets/images/Beograd/beograd5.jpg";
 import trgRepublike from "../../../assets/images/Beograd/beograd6.jpg";
 import botanickaBasta from "../../../assets/images/Beograd/beograd7.jpg";
 import skadarlija from "../../../assets/images/Beograd/beograd8.jpg";
+import adaCiganlija from "../../../assets/images/Beograd/beograd9.jpg";
+import zooVrt from "../../../assets/images/Beograd/beograd10.jpg";
+import kosutnjak from "../../../assets/images/Beograd/beograd11.jpg";
 
 export const beogradData = [
   {
@@ -29,7 +32,7 @@ Beograd je posebna teritorijalna jedinica u Srbiji koja ima svoju lokalnu samoup
   },
   {
     id: 4,
-    name: "Knez Mihajlova",
+    name: "Knez Mihailova",
     img: knezMihajlova,
     mainText: `Knez Mihailova ulica je jedna od najpoznatijih i najprometnijih ulica u Beogradu, smeštena u samom centru grada. Ova pešačka zona povezuje Trg Republike sa Kalemegdanskom tvrđavom i jedan je od glavnih trgovačkih i turističkih centara Beograda. Knez Mihailova je puna istorijskih zgrada i kulturnih spomenika, a njena arhitektura odražava predele iz različitih istorijskih perioda, od osmanskog do modernog doba. U ulici se nalaze brojne prodavnice, restorani, kafići, galerije i kulturne institucije, što je čini popularnim mestom za šetnje, kupovinu i opuštanje. Osim svoje komercijalne i društvene funkcije, Knez Mihailova je i simbol duhovne i kulturne baštine Beograda.`,
   },
@@ -52,6 +55,15 @@ Beograd je posebna teritorijalna jedinica u Srbiji koja ima svoju lokalnu samoup
     mainText: `Skadarlija je boemska četvrt u Beogradu, poznata po svom šarmu i istoriji. Smeštena u blizini centra grada, Skadarlija je bila omiljeno mesto umetnika, pisaca i pesnika krajem 19. i početkom 20. veka. Ulica je prepoznatljiva po kamenim trotoarima, starim kafanama, restoranima i galerijama koje čuvaju duh prošlih vremena. Danas je Skadarlija popularna turistička destinacija, a posetioci uživaju u tradicionalnoj srpskoj muzici, hrani i atmosferi. Mnoge kafane, poput "Tri šešira" i "Dva jelena", i dalje nude autentičan doživljaj beogradske boemske scene. Skadarlija je simbol srpske tradicije, umetnosti i gostoljubivosti.`,
   },
   {
-    yy: "ZOOO VRT"
-  }
+    id: 7,
+    name: "Ada Ciganlija",
+    img: adaCiganlija,
+    mainText: `Ada Ciganlija je popularno beogradsko izletište, smešteno na Savi, koje se prostire na površini od oko 8 km². Poznata je kao "beogradska plaža" zbog svojih brojih kupališta i uređenih obala. Ada je omiljeno mesto za rekreaciju, sport, šetnje i opuštanje, sa brojnim sportskim terenima, biciklističkim stazama, restoranima i kafićima. Osim toga, nudi mogućnost za vožnju čamcem, jedrenje i ribolov. Ada Ciganlija je i ekološki značajna, sa bogatim biljnim i životinjskim svetom, a tokom leta postaje centar društvenog života Beograđana i turista. Svojom lepotom i sadržajem predstavlja jedno od najvažnijih rekreativnih područja grada.`,
+  },
+  {
+    id: 8,
+    name: "Košutnjak",
+    img: kosutnjak,
+    mainText: `Košutnjak je jedan od najvećih i najlepših parkova u Beogradu, smešten na jugozapadnom delu grada. To je šumski kompleks, površine oko 330 hektara, koji pruža savršeno okruženje za rekreaciju i opuštanje. Osim bogate flore, Košutnjak nudi brojne staze za pešačenje, biciklističke staze, sportske terene i igrališta. Poznat je po svom sportsko-rekreativnom centru, gde se nalaze tereni za tenis, fudbal, košarku i bazen. Park je takođe dom za beogradski Atletski savez i nekoliko drugih sportskih objekata. Košutnjak je omiljeno mesto za sve koji žele uživati u prirodi, ali i za ljubitelje sporta i aktivnog života.`,
+  },
 ];
