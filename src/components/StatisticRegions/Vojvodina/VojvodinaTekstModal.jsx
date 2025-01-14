@@ -20,19 +20,19 @@ export const VojvodinaTekstModal = ({ goBack }) => {
       <ScrollToTop/>
           <>
             <h1 style={{textAlign: 'center'}}>{vojvodinaText?.name}</h1>
-            <p style={{margin: '0 30px', fontWeight: '600'}}>{vojvodinaText?.mainText}</p>
+            <h4>{vojvodinaText?.mainText}</h4>
             <h3 style={{margin: '20px 0', textAlign: 'center'}}>{vojvodinaText?.topic1}</h3>
-            <p style={{margin: '0 30px', fontWeight: '600'}}>{vojvodinaText?.text1}</p>
-            <p style={{margin:'10px 0 10px 50px'}}>{vojvodinaText?.text11}</p>
-            <p style={{margin:'10px 0 10px 50px'}}>{vojvodinaText?.text12}</p>
-            <p style={{margin:'10px 0 10px 50px'}}>{vojvodinaText?.text13}</p>
-            <p style={{margin:'10px 0 10px 50px'}}>{vojvodinaText?.text14}</p>
-            <p style={{margin:'10px 0 10px 50px'}}>{vojvodinaText?.text15}</p>
-            <p style={{margin:'10px 0 10px 50px'}}>{vojvodinaText?.text16}</p>
-            <p style={{margin:'10px 0 10px 50px'}}>{vojvodinaText?.text17}</p>
-            <p style={{margin:'10px 0 10px 50px'}}>{vojvodinaText?.text18}</p>
+            <h4>{vojvodinaText?.text1}</h4>
+            <p>{vojvodinaText?.text11}</p>
+            <p>{vojvodinaText?.text12}</p>
+            <p>{vojvodinaText?.text13}</p>
+            <p>{vojvodinaText?.text14}</p>
+            <p>{vojvodinaText?.text15}</p>
+            <p>{vojvodinaText?.text16}</p>
+            <p>{vojvodinaText?.text17}</p>
+            <p>{vojvodinaText?.text18}</p>
             <h3 style={{margin: '30px 0', textAlign: 'center'}}>{vojvodinaText?.topic2}</h3>
-            <p style={{margin: '0 30px', fontWeight: '600'}}>{vojvodinaText?.text2}</p>
+            <h4>{vojvodinaText?.text2}</h4>
             <h3 style={{margin: '20px 0', textAlign: 'center'}}>Okruzi</h3>
             <p style={{margin:'10px 0 10px 0px', textAlign: 'center'}}>Zapadno-Backi</p>
             <p style={{margin:'10px 0 10px 0px', textAlign: 'center'}}>Severno-Backi</p>

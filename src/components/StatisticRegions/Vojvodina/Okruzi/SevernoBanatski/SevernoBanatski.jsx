@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
@@ -8,6 +8,20 @@ import { severnoBanatskiData } from "./SevernoBanatskiData";
 export const SevernoBanatski = () => {
   const [slide, setSlide] = useState(0);
   const navigate = useNavigate();
+  const [isMobile, setIsMobile] = useState(false);
+console.log(isMobile)
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600); // Postavite isMobile na true ako je širina ekrana manja od 600px
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const nextContent = () => {
     setSlide(slide === severnoBanatskiData.length - 1 ? 0 : (prev) => prev + 1);
@@ -82,7 +96,7 @@ export const SevernoBanatski = () => {
           {severnoBanatskiData?.map((okrug, index) => (
             <div
               key={okrug.id}
-              style={{ backgroundImage: `url(${okrug.img})` }}
+              style={{backgroundImage: `url(${okrug.img})`}}
               className={
                 slide === index
                   ? "caruoselBackground caruoselBackground-visible"

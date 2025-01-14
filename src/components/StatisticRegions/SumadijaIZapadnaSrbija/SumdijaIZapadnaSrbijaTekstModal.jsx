@@ -27,14 +27,14 @@ export const SumadijaIZapadnaSrbijaTekstModal = ({ goBack }) => {
           <p style={{ margin: "0 30px", fontWeight: "600" }}>
             {sumadijaIZapadnaSrbijaText?.text1}
           </p>
-          <p style={{ margin: "10px 0 10px 50px" }}>{sumadijaIZapadnaSrbijaText?.text11}</p>
-          <p style={{ margin: "10px 0 10px 50px" }}>{sumadijaIZapadnaSrbijaText?.text12}</p>
-          <p style={{ margin: "10px 0 10px 50px" }}>{sumadijaIZapadnaSrbijaText?.text13}</p>
-          <p style={{ margin: "10px 0 10px 50px" }}>{sumadijaIZapadnaSrbijaText?.text14}</p>
-          <p style={{ margin: "10px 0 10px 50px" }}>{sumadijaIZapadnaSrbijaText?.text15}</p>
-          <p style={{ margin: "10px 0 10px 50px" }}>{sumadijaIZapadnaSrbijaText?.text16}</p>
-          <p style={{ margin: "10px 0 10px 50px" }}>{sumadijaIZapadnaSrbijaText?.text17}</p>
-          <p style={{ margin: "10px 0 10px 50px" }}>{sumadijaIZapadnaSrbijaText?.text18}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text11}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text12}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text13}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text14}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text15}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text16}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text17}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text18}</p>
           <h3 style={{ margin: "30px 0", textAlign: "center" }}>
             {sumadijaIZapadnaSrbijaText?.topic2}
           </h3>

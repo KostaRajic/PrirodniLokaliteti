@@ -5,6 +5,7 @@ import "leaflet/dist/leaflet.css";
 import { VojvodinaRegioni } from "./VojvodinaRegioni";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 export const Vojvodina = () => {
   const center = [45.20313713852372, 20.012617302735283];
@@ -17,16 +18,15 @@ export const Vojvodina = () => {
   const [showSrednjeBanatski, setSrednjeBanatski] = useState(false);
   const [showSremski, setSremski] = useState(false);
   const [shoeJuznoBanatski, setJuznoBanatski] = useState(false);
-
-  // useEffect(() => {
-  //   if (mapRef.current) {
-  //     if (showVojvodina) {
-  //       mapRef.current.scrollWheelZoom.disable();
-  //     } else {
-  //       mapRef.current.scrollWheelZoom.enable();
-  //     }
-  //   }
-  // }, [showVojvodina, navigate]);
+  const [zoom, setZoom] = useState(() => {
+    if (window.innerWidth < 600) {
+      return 7;
+    } else if (window.innerWidth < 1600) {
+      return 8;
+    } else {
+      return 10;
+    }
+  });
 
   useEffect(() => {
     if (showZapadnoBacki) {
@@ -46,17 +46,24 @@ export const Vojvodina = () => {
     }
   });
 
+  console.log(window.innerWidth)
+
   return (
     <div className="serbianMapClass">
       <MapContainer
         center={center}
-        zoom={8}
+        zoom={zoom}
         style={{ width: "100vw", height: "100vh" }}
         ref={mapRef}
       >
         <TileLayer
           url={`https://api.maptiler.com/maps/satellite/256/{z}/{x}/{y}.jpg?key=qZ4DIeGQoRrxWzufyKP1`}
           attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+        />
+        <FaArrowLeft
+          className="arrowLeft"
+          onClick={() => navigate(-1)}
+          style={{ fill: "white", zIndex: '400' }}
         />
         {VojvodinaRegioni?.features?.map((statisticOkrug, index) => {
           const cordinates = statisticOkrug?.geometry?.coordinates[0]?.map(

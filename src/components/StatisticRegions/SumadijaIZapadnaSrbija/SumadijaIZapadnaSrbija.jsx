@@ -2,15 +2,38 @@
 import { MapContainer, TileLayer, Polygon } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { SumadijaIZapadnaSrbijaRegioni } from "./SumadijaIZapadnaSrbijaRegioni";
+import { useEffect, useState } from "react";
     
 
 export const SumadijaIZapadnaSrbija = () => {
     const center = [43.904569, 20.301485];
+    const [zoom, setZoom] = useState(8);
+
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth < 600) {
+          setZoom(6);
+        } else if (window.innerWidth < 1200) {
+          setZoom(8);
+        } else {
+          setZoom(10);
+        }
+      };
+
+    window.addEventListener("resize", handleResize);
+    
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
     return (
         <MapContainer
           center={center}
-          zoom={8}
+          zoom={zoom}
           style={{ width: "100vw", height: "100vh", position: "none" }}
         >
         <TileLayer
