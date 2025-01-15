@@ -8,16 +8,16 @@ import BackoTopolskoJezero from "../../../../../assets/images/Vojvodina/SevernoB
 export const severnoBackiData = [
   {
     id: 1,
+    name: "Subotica",
+    img: subotica,
+    mainText: `Subotica je grad u severnom delu Srbije, smešten blizu granice sa Mađarskom, u Vojvodini. Poznat je po bogatom kulturnom nasleđu, multietničkoj zajednici i specifičnoj arhitekturi, posebno u stilu secesije. Grad je domaćin brojnim manifestacijama, a poznat je i po Palićkom jezeru, popularnoj destinaciji za turizam i rekreaciju. Subotica je važan ekonomski, obrazovni i kulturni centar, sa brojnim institucijama, galerijama, muzejima i istorijskim spomenicima. Grad ima i razvijenu industriju, a takođe se ističe i vinogradarskom tradicijom.`,
+  },
+  {
+    id: 2,
     name: "Palićko jezero",
     img: palickoJezero,
     mainText: `
 Palićko jezero je jedno od najlepših i najvećih jezera u Vojvodini, smešteno u blizini Subotice. Poznato je po svojoj bogatoj prirodi, čistoj vodi i prelepim pejzažima. Jezero je popularno odredište za turizam i rekreaciju, nudi aktivnosti poput vožnje čamcem, biciklizma, šetnje i ribolova. Pored toga, okolna područja su bogata florom i faunom, a u blizini je i Palićki park, koji je prirodni rezervat i kulturni spomenik. Jezero je takođe poznato po organizovanju manifestacija i događaja tokom leta, privlačeći posetioce iz zemlje i inostranstva.`,
-  },
-  {
-    id: 2,
-    name: "Subotica",
-    img: subotica,
-    mainText: `Subotica je grad u severnom delu Srbije, smešten blizu granice sa Mađarskom, u Vojvodini. Poznat je po bogatom kulturnom nasleđu, multietničkoj zajednici i specifičnoj arhitekturi, posebno u stilu secesije. Grad je domaćin brojnim manifestacijama, a poznat je i po Palićkom jezeru, popularnoj destinaciji za turizam i rekreaciju. Subotica je važan ekonomski, obrazovni i kulturni centar, sa brojnim institucijama, galerijama, muzejima i istorijskim spomenicima. Grad ima i razvijenu industriju, a takođe se ističe i vinogradarskom tradicijom.`,
   },
   {
     id: 3,

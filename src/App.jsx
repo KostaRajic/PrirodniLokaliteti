@@ -78,7 +78,7 @@ function App() {
           path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki"
           element={<ZapadnoBacki />}
         />
-        <Route path="Sombor" element={<Sombor />} />
+        <Route path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/Sombor" element={<Sombor />} />
         <Route
           path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/GornjePodunavlje"
           element={<GornjePodunavlje />}

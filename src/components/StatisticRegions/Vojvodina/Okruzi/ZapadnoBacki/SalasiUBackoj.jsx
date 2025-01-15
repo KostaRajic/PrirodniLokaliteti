@@ -2,6 +2,7 @@
 import salasi1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/SalasiUBackoj/Salasi1.jpg";
 import salasi4 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/SalasiUBackoj/Salasi4.jpg";
 import salasi2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/SalasiUBackoj/Salasi2.jpg";
+import salasi3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/SalasiUBackoj/Salasi3.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,9 +16,9 @@ export const SalasiUBackoj = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <div className="salasiBackground">
+      <img src={salasi3} alt="Salaši u Bačkoj 1" />
         <h2>SALAŠI U BAČKOJ</h2>
-      </div>
+
 
       <p>
         Salaši u Bačkoj su tradicionalna seoska imanja, karakteristična za ovu
@@ -27,7 +28,7 @@ export const SalasiUBackoj = () => {
         tradiciju, kulturu i način života ovog kraja.
       </p>
 
-      <img src={salasi1} alt="Salasi 1" />
+      <img src={salasi1} alt="Salaši u Bačkoj 2" />
 
       <p style={{ marginTop: "-10px" }}>
         Salaši su specifični zbog svoje arhitekture, koja obuhvata porodične
@@ -37,7 +38,7 @@ export const SalasiUBackoj = () => {
         manifestacijama i događanjima.
       </p>
 
-      <img src={salasi4} alt="Salasi 4" />
+      <img src={salasi4} alt="Salaši u Bačkoj 3" />
 
       <p style={{ marginTop: "-10px" }}>
         U Bačkoj je mnogo salaša koji se bave stočarstvom, a popularne su i
@@ -47,7 +48,7 @@ export const SalasiUBackoj = () => {
         prirodi.
       </p>
 
-      <img src={salasi2} alt="Salasi 2" />
+      <img src={salasi2} alt="Salaši u Bačkoj 4" />
 
       <p style={{ marginTop: "-10px" }}>
         Bačka je poznata po specifičnom etnološkom nasleđu, a salaši su jedan od

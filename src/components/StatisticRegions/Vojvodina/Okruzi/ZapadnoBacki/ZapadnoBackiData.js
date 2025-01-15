@@ -9,17 +9,18 @@ import dunavskeAde from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkru
 
 
 export const zapadnoBackiData = [
+    
     {
         id: 1,
-        name: 'Gornje Podunavlje',
-        img: gornjePodunavlje,
-        mainText: `Gornje Podunavlje je specijalni rezervat prirode u Srbiji, deo evropskog Amazona, poznat po bogatom biodiverzitetu i očuvanim močvarama, šumama i rečnim rukavcima Dunava. Proteže se u blizini Apatina i Sombora, obuhvatajući staništa retkih ptica, vidri, dabrova i riba. Idealno za ekoturizam, posmatranje ptica, ribolov i vožnje čamcima. Deo UNESCO biosfere, ovo područje ima ključnu ulogu u očuvanju prirode i promociji održivog razvoja, uz bogatu kulturnu baštinu i lokalne specijalitete poput ribljeg paprikaša.`
-    },
-    {
-        id: 2,
         name: 'Sombor',
         img: sombor,
         mainText: `Sombor je grad sa bogatom kulturnom tradicijom i istorijom, poznat po očuvanoj arhitekturi i šarmu starog jezgra. Grad se ističe brojnim kulturnim manifestacijama, kao što su pozorišne predstave, koncerti i izložbe, koje pružaju uvid u bogatstvo umetničkog života. Takođe, Sombor je domaćin brojnim manifestacijama posvećenim tradiciji, gastronomiji i narodnoj muzici. Grad je centar obrazovanja, sa školama i institucijama koje podržavaju kulturno obrazovanje i kreativne industrije. Sombor je i važno trgovačko i ekonomsko središte, sa razvijenim maloprodajnim sektorom i tržištem.`
+    },
+    {
+        id: 2,
+        name: 'Gornje Podunavlje',
+        img: gornjePodunavlje,
+        mainText: `Gornje Podunavlje je specijalni rezervat prirode u Srbiji, deo evropskog Amazona, poznat po bogatom biodiverzitetu i očuvanim močvarama, šumama i rečnim rukavcima Dunava. Proteže se u blizini Apatina i Sombora, obuhvatajući staništa retkih ptica, vidri, dabrova i riba. Idealno za ekoturizam, posmatranje ptica, ribolov i vožnje čamcima. Deo UNESCO biosfere, ovo područje ima ključnu ulogu u očuvanju prirode i promociji održivog razvoja, uz bogatu kulturnu baštinu i lokalne specijalitete poput ribljeg paprikaša.`
     },
     {
         id: 3,

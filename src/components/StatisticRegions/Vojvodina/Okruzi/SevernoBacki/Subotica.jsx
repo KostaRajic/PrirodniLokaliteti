@@ -4,6 +4,8 @@ import sub3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subot
 import sub4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub4.jpg";
 import sub5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub5.jpg";
 import sub7 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub7.jpg";
+import sub8 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub8.jpg";
+
 import spomenPetarKaradjordjevic from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/Spomenici/spomenPetarKaradjordjevic.jpg";
 import spomenSvetomTrojstvu from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/Spomenici/spomenSvetoTrojstvo.jpg";
 import spomenIvanuSaricu from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/Spomenici/spomenIvanSaric.jpg";
@@ -75,7 +77,7 @@ export const Subotica = () => {
 
       <div
         className="displayFlex"
-        style={{ marginTop: "-10px", height: "90vh" }}
+        //style={{ marginTop: "-10px", height: "90vh" }}
       >
         <div>
           <img src={spomenPetarKaradjordjevic} alt="Petar1 Karadjordjevic" />

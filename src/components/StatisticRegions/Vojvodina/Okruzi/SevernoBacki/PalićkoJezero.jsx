@@ -1,5 +1,5 @@
 import palicko1 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić4.jpg'
-import palicko2 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić1.jpg'
+import palicko2 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić2.jpg'
 import palicko3 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/PalićFilmFestival.jpg'
 import palicko4 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palićzoo.jpg'
 import palicko5 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić3.jpg'
@@ -16,9 +16,8 @@ export const PalićkoJezero = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <div className="palickoBackground">
+      <img src={palicko2} alt="palicko jezero 5" />
         <h2>PALIĆKO JEZERO</h2>
-      </div>
 
       <p>
         Palićko jezero se nalazi u Vojvodini, na 8 kilometara od Subotice,

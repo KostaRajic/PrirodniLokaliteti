@@ -1,7 +1,7 @@
 import ade1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/DunavskeAde/ade1.jpg";
 import ade2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/DunavskeAde/ade2.jpg";
 import ade3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/DunavskeAde/ade3.jpg";
-
+import ade4 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/DunavskeAde/ade4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,9 +15,9 @@ export const DunavskeAde = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <div className="dunavskeAdeBackground">
+      <img src={ade4} alt="Dunavseke Ade 4" />
         <h2>DUNAVSKE ADE</h2>
-      </div>
+
 
       <p>
         Dunavske Ade u zapadnoj Bačkoj predstavljaju specifičan ekosistem koji

@@ -22,7 +22,7 @@ export const FruskaGora = () => {
       <header></header>
       <img src={fruska2} alt="Fruska Gora 1" />
 
-      <h2 style={{ color: 'white', right: '50px' }}>
+      <h2 style={{ color: 'white'}}>
         NACIONALNI PARK "FRUŠKA GORA"
       </h2>
 

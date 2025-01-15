@@ -1,3 +1,4 @@
+import manastirBodjani1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ManastirBodjani/ManastirBodjani1.jpg";
 import manastirBodjani2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ManastirBodjani/ManastirBodjani2.jpg";
 import manastirBodjani3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ManastirBodjani/ManastirBodjani3.jpg";
 import manastirBodjani4 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ManastirBodjani/ManastirBodjani4.jpg";
@@ -14,9 +15,8 @@ export const ManastirBodjani = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <div className="bodjaniBackground">
+      <img src={manastirBodjani1} alt="manastir Bodjani 1" />
         <h2>MANASTIR BOĐANI</h2>
-      </div>
 
       <p>
         Manastir Bođani je srpski pravoslavni manastir koji se nalazi u blizini
@@ -25,7 +25,7 @@ export const ManastirBodjani = () => {
         kulturnih mesta u ovom regionu.
       </p>
 
-      <img src={manastirBodjani3} alt="manastir Bodjani3" />
+      <img src={manastirBodjani3} alt="manastir Bodjani 3" />
 
       <p style={{ marginTop: "-10px" }}>
         Udaljen je 15 km zapadno od Bača, u pravcu Dunava. Kompleks čine crkva,
@@ -34,7 +34,7 @@ export const ManastirBodjani = () => {
         manastir izgradio je trgovac Bogdan iz Dalmacije 1478. godine.
       </p>
 
-      <img src={manastirBodjani2} alt="manastir Bodjani2" />
+      <img src={manastirBodjani2} alt="manastir Bodjani 2" />
 
       <p style={{ marginTop: "-10px" }}>
         Veliki konak i crkva u Bođanima sagrađeni su u baroknom stilu, a živopis
@@ -44,7 +44,7 @@ export const ManastirBodjani = () => {
         posudama, štamparskom presom i drugim raritetima.
       </p>
 
-      <img src={manastirBodjani4} alt="manastir Bodjani4" />
+      <img src={manastirBodjani4} alt="manastir Bodjani 4" />
 
       <p style={{ marginTop: "-10px" }}>
         U posedu manastira je i nekoliko hektara zemlje pod šumom i voćnjacima,

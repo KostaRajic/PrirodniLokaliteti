@@ -15,9 +15,9 @@ export const VelikiBackiKanal = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <div className="vbkBackground">
+      
+      <img src={VBK5} alt="Veliki Backi Kanal1" />
         <h2>VELIKI BAČKI KANAL</h2>
-      </div>
 
       <p>
         Veliki bački kanal je deo Hidrosistema Dunav-Tisa-Dunav, smešten u

@@ -1,3 +1,4 @@
+import sombor1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor/Sombor1.jpg";
 import sombor2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor/Sombor2.jpg";
 import sombor3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor/Sombor3.jpg";
 import laza from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor/Spomenici/laza.jpg";
@@ -16,9 +17,9 @@ export const Sombor = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <div className="somborBackground">
+      <img src={sombor1} alt="sombor 1" />
         <h2>SOMBOR</h2>
-      </div>
+
 
       <p>
         Sombor je grad u severozapadnom delu Srbije, u Vojvodini, smešten na
@@ -29,7 +30,7 @@ export const Sombor = () => {
         status opštine sa značajnom ulogom u regionalnom razvoju.
       </p>
 
-      <img src={sombor2} alt="sombor2" />
+      <img src={sombor2} alt="sombor 2" />
 
       <p style={{ marginTop: "-10px" }}>
         Arhitektura grada odražava bogatu prošlost, sa brojnim zgradama u

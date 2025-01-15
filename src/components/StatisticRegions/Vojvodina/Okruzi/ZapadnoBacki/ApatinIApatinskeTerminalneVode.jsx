@@ -1,3 +1,4 @@
+import apatin1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin1.jpg";
 import apatin2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin2.jpg";
 import apatin3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin3.jpg";
 import apatin5 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin5.jpg";
@@ -14,9 +15,6 @@ import { useEffect, useState } from "react";
 export const Apatin = () => {
   const navigate = useNavigate();
 
-  console.log("Window height:", window.innerHeight);
-  console.log("Document height:", document.documentElement.scrollHeight);
-
   return (
     <>
       <div className="placeBackground">
@@ -24,9 +22,9 @@ export const Apatin = () => {
         <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
 
         <header></header>
-        <div className="apatinBackground">
+        <img src={apatin1} alt="apatin1" />
+        
           <h2>APATIN I TERMINALNE VODE</h2>
-        </div>
 
         <p>
           Apatin, smešten na severozapadu Srbije, u Zapadno Bačkom okrugu,

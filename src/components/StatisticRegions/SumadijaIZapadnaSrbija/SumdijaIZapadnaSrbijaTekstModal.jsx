@@ -16,25 +16,39 @@ export const SumadijaIZapadnaSrbijaTekstModal = ({ goBack }) => {
     <div className="modalBackground">
       <div className="modalContent sumadijaTekstModalBackground">
         <ScrollToTop />
-        <>
-          <h1 style={{ textAlign: "center" }}>{sumadijaIZapadnaSrbijaText?.name}</h1>
+          <h1 style={{ textAlign: "center" }}>
+            {sumadijaIZapadnaSrbijaText?.name}
+          </h1>
           <p style={{ margin: "0 30px", fontWeight: "600" }}>
             {sumadijaIZapadnaSrbijaText?.mainText}
           </p>
           <h3 style={{ margin: "20px 0", textAlign: "center" }}>
             {sumadijaIZapadnaSrbijaText?.topic1}
           </h3>
-          <p style={{ margin: "0 30px", fontWeight: "600" }}>
-            {sumadijaIZapadnaSrbijaText?.text1}
+          <p>
+            {sumadijaIZapadnaSrbijaText?.text11}
           </p>
-          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text11}</p>
-          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text12}</p>
-          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text13}</p>
-          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text14}</p>
-          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text15}</p>
-          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text16}</p>
-          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text17}</p>
-          <p style={{ margin: "10px 0 10px 60px" }}>{sumadijaIZapadnaSrbijaText?.text18}</p>
+          <p style={{ margin: "10px 0 10px 60px" }}>
+            {sumadijaIZapadnaSrbijaText?.text12}
+          </p>
+          <p style={{ margin: "10px 0 10px 60px" }}>
+            {sumadijaIZapadnaSrbijaText?.text13}
+          </p>
+          <p style={{ margin: "10px 0 10px 60px" }}>
+            {sumadijaIZapadnaSrbijaText?.text14}
+          </p>
+          <p style={{ margin: "10px 0 10px 60px" }}>
+            {sumadijaIZapadnaSrbijaText?.text15}
+          </p>
+          <p style={{ margin: "10px 0 10px 60px" }}>
+            {sumadijaIZapadnaSrbijaText?.text16}
+          </p>
+          <p style={{ margin: "10px 0 10px 60px" }}>
+            {sumadijaIZapadnaSrbijaText?.text17}
+          </p>
+          <p style={{ margin: "10px 0 10px 60px" }}>
+            {sumadijaIZapadnaSrbijaText?.text18}
+          </p>
           <h3 style={{ margin: "30px 0", textAlign: "center" }}>
             {sumadijaIZapadnaSrbijaText?.topic2}
           </h3>
@@ -42,7 +56,7 @@ export const SumadijaIZapadnaSrbijaTekstModal = ({ goBack }) => {
             {sumadijaIZapadnaSrbijaText?.text2}
           </p>
           <h3 style={{ margin: "20px 0", textAlign: "center" }}>Okruzi</h3>
-          <p style={{ margin: "10px 0 10px 0px", textAlign: "center" }}>
+          <p>
             Mačvanski
           </p>
           <p style={{ margin: "10px 0 10px 0px", textAlign: "center" }}>
@@ -66,7 +80,6 @@ export const SumadijaIZapadnaSrbijaTekstModal = ({ goBack }) => {
           <p style={{ margin: "10px 0 10px 0px", textAlign: "center" }}>
             Rasinski
           </p>
-        </>
         <div className="btnClass">
           <button className="firstBtn" onClick={() => navigate(-1)}>
             GO BACK
