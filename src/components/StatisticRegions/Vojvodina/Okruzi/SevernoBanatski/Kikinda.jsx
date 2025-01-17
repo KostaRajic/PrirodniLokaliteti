@@ -21,7 +21,7 @@ export const Kikinda = () => {
 
       <h2>KIKINDA</h2>
 
-      <p style={{ paddingTop: "80px",marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px",marginTop: "-10px" }}>
         Kikinda je grad u Severnobanatskom okrugu, smešten u Vojvodini, na
         severu Srbije, blizu granice sa Rumunijom. Grad se prostire uz reku Tisu
         i ima bogatu istoriju koja seže još od praistorijskih vremena, a u

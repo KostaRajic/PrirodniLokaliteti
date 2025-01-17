@@ -25,7 +25,7 @@ export const Pancevo = () => {
 
       <h2>PANČEVO</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Pančevo je jedan od najistaknutijih gradova u Vojvodini, prepoznatljiv
         po visokom stepenu industrijalizacije. I pored toga, grad ima bogatu
         kulturnu baštinu i značajnu ulogu u očuvanju tradicija ovog regiona.
@@ -57,24 +57,24 @@ export const Pancevo = () => {
         <img
           src={pancevo3narodnaBasta1}
           alt="Pančevo Narodna Bašta 1"
-          style={{ width: "1250px" }}
+          style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
         />
         <img
           src={pancevo3narodnaBasta2}
           alt="Pančevo Narodna Bašta 2"
-          style={{ width: "1250px" }}
+          style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
         />
       </div>
       <div className="fourImages">
         <img
           src={pancevo3narodnaBasta3}
           alt="Pančevo Narodna Bašta 3"
-          style={{ width: "1250px" }}
+          style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
         />
         <img
           src={pancevo3narodnaBasta4}
           alt="Pančevo Narodna Bašta 4"
-          style={{ width: "1250px" }}
+          style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
         />
       </div>
 

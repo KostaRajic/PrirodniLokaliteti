@@ -7,6 +7,7 @@ import { sremskiOkrugData } from "./SremskiOkrugData";
 
 export const SremskiOkrug = () => {
   const [slide, setSlide] = useState(0);
+
   const navigate = useNavigate();
 
   const nextContent = () => {
@@ -63,11 +64,10 @@ export const SremskiOkrug = () => {
             </p>
           </form>
           <div>
-            Sremski okrug je jedan od okruga koji je smešten u
-            Vojvodini. Ovaj okrug
-            obuhvata nekoliko gradova i opština, među kojima se ističu gradovi
-            Novi Sad, Sremska Mitrovica i Inđija, kao i brojne manje opštine
-            poput Rume, Šida i Pećinaca. Geografski, Sremski okrug je
+            Sremski okrug je jedan od okruga koji je smešten u Vojvodini. Ovaj
+            okrug obuhvata nekoliko gradova i opština, među kojima se ističu
+            gradovi Novi Sad, Sremska Mitrovica i Inđija, kao i brojne manje
+            opštine poput Rume, Šida i Pećinaca. Geografski, Sremski okrug je
             prepoznatljiv po ravničarskim područjima koja su pogodna za
             poljoprivredu, ali i po blizini reke Save. U jugoistočnom delu
             okruga prostire se Fruška gora, planinsko područje koje je deo
@@ -98,8 +98,8 @@ export const SremskiOkrug = () => {
                 style={{ backgroundImage: `url(${okrug.img})` }}
                 className={
                   slide === index
-                  ? "caruoselBackground caruoselBackground-visible"
-                  : "caruoselBackground caruoselBackground-hidden"
+                    ? "caruoselBackground caruoselBackground-visible"
+                    : "caruoselBackground caruoselBackground-hidden"
                 }
               >
                 <BsArrowLeftCircleFill
@@ -109,6 +109,7 @@ export const SremskiOkrug = () => {
                 <div className="caruoselInfo">
                   <h3>{okrug.name}</h3>
                   <p>{okrug.mainText}</p>
+
                   <button onClick={() => readMore(okrug.name)}>
                     Pročitaj više
                   </button>

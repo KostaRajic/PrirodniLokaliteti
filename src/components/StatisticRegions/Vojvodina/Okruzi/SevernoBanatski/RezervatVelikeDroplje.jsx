@@ -10,22 +10,48 @@ import droplja4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkru
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { useRef, useState } from "react";
 
 export const RezervatVelikeDroplje = () => {
   const navigate = useNavigate();
+  const [dragging, setDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const sliderRef = useRef(null);
+
+
+  const handleMouseDown = (e) => {
+    setDragging(true);
+    setStartX(e.clientX);
+    setScrollLeft(sliderRef.current.scrollLeft);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!dragging) return;
+    const moveX = e.clientX - startX;
+    sliderRef.current.scrollLeft = scrollLeft - moveX;
+  };
+
+  const handleMouseUp = () => {
+    setDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    if (dragging) {
+      setDragging(false);
+    }
+  };
 
   return (
     <div className="placeBackground">
-      <ScrollToTop/>
+      <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={vd1} alt="Rezervat Velike Droplje 1" />
 
-      <h2 style={{right: '50px'}}>
-        SPECIJALNI REZERVAT "PAŠNJACI VELIKE DROPLJE"
-      </h2>
+      <h2>SPECIJALNI REZERVAT "PAŠNJACI VELIKE DROPLJE"</h2>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Specijalni rezervoat Pašnjaci velike droplje nalazi se na severu Banata,
         na prostranoj aluvijalnoj ravni reke Zlatice, između novokneževačke i
         krsturko-siriške lesne terase. Rezervat čine 3 odvojene celine. Najveći
@@ -43,7 +69,14 @@ export const RezervatVelikeDroplje = () => {
         živelo preko 1000 jedinki velike droplje.
       </p>
 
-      <div className="fourImages">
+      <div
+        className="fourImages"
+        ref={sliderRef}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseLeave}
+      >
         <img src={droplja1} alt="Velika droplja 1" />
         <img src={droplja2} alt="Velika droplja 2" />
         <img src={droplja3} alt="Velika droplja 3" />

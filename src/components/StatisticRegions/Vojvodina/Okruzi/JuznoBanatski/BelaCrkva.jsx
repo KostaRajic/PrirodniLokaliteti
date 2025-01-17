@@ -22,7 +22,7 @@ export const BelaCrkva = () => {
 
       <h2>BELA CRKVA</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Bela Crkva, smeštena u jugozapadnom delu Srbije, poznata je po svojim
         prirodnim lepotama i bogatom kulturnom nasleđu, što čini ovu destinaciju
         interesantnom za turizam. Grad i okolna područja nude raznovrsne

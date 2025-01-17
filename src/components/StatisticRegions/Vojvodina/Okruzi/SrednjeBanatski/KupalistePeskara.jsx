@@ -48,30 +48,16 @@ export const KupalistePeskara = () => {
         svoje blizine Zrenjaninu i drugim većim gradovima Vojvodine, često je
         odredište za letnje vikende, ali i za dnevne odmore.
       </p>
-
-      <div
-        className="displayFlexClassic"
-        style={{ paddingBottom: "50px", backgroundColor: "white" }}
-      >
         <img
           src={peskara4}
           alt="Kupalište peskara 4"
-          style={{
-            height: "500px",
-            width: "2500px",
-            backgroundColor: "white",
-            padding: "50px",
-          }}
         />
 
-        <p style={{ marginTop: "-10px", fontSize: '35px' }}>
+        <p style={{ marginTop: "-10px"}}>
           Kupalište Peskara ima veliki značaj za lokalnu zajednicu jer privlači
           posetioce, podstičući razvoj turizma i povezane industrije. Takođe
           doprinosi promociji prirodnih lepotu i sportskih aktivnosti u regionu.
         </p>
-      </div>
-
-      <div></div>
       <div>
         <img src={peskara1} alt="Kupalište peskara 4" />
 

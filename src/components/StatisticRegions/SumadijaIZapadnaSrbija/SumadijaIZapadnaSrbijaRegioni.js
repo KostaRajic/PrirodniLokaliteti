@@ -4,7 +4,7 @@ export const SumadijaIZapadnaSrbijaRegioni =
     "features": [
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"name": "Mačvanski"},
         "geometry": {
           "coordinates": [
             [
@@ -535,7 +535,7 @@ export const SumadijaIZapadnaSrbijaRegioni =
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"name": "Kolubarski"},
         "geometry": {
           "coordinates": [
             [
@@ -990,7 +990,7 @@ export const SumadijaIZapadnaSrbijaRegioni =
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"name": "Šumadijski"},
         "geometry": {
           "coordinates": [
             [
@@ -1249,7 +1249,7 @@ export const SumadijaIZapadnaSrbijaRegioni =
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"name": "Zlatiborski"},
         "geometry": {
           "coordinates": [
             [
@@ -1916,7 +1916,7 @@ export const SumadijaIZapadnaSrbijaRegioni =
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"name": "Moravički"},
         "geometry": {
           "coordinates": [
             [
@@ -2267,7 +2267,7 @@ export const SumadijaIZapadnaSrbijaRegioni =
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"name": "Pomoravski"},
         "geometry": {
           "coordinates": [
             [
@@ -2666,7 +2666,7 @@ export const SumadijaIZapadnaSrbijaRegioni =
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"name": "Raški"},
         "geometry": {
           "coordinates": [
             [
@@ -3169,7 +3169,7 @@ export const SumadijaIZapadnaSrbijaRegioni =
       },
       {
         "type": "Feature",
-        "properties": {},
+        "properties": {"name": "Rasinski"},
         "geometry": {
           "coordinates": [
             [

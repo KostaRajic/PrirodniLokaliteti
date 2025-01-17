@@ -6,8 +6,6 @@ export const ScrollToTop = () => {
 
   useEffect(() => {
     const handelScroll = () => {
-        console.log("Scroll Y:", window.scrollY);
-        console.log("Document Scroll Top:", document.documentElement.scrollTop);
       if (document.documentElement.scrollTop > 50) {
         setScrollButton(true);
       } else {

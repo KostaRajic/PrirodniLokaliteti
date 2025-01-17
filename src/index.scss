@@ -152,6 +152,7 @@
   overflow: auto;
   cursor: default;
 
+  
   .zapadnoBackiClassMain {
     background-image: url(../src/assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor.jpg);
     background-position: 50%;
@@ -250,7 +251,6 @@
       padding: 0 50px;
       letter-spacing: 1.3px;
       word-spacing: 1.4px;
-      font-size: 24px;
     }
   }
 
@@ -267,7 +267,24 @@
       padding: 0 50px;
       letter-spacing: 1.3px;
       word-spacing: 1.4px;
-      font-size: 24px;
+
+    }
+  }
+
+  .macvanskiOkrug {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/macvanski.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    color: white;
+    padding-bottom: 50px;
+    font-size: 26px;
+
+    div {
+      padding: 0 50px;
+      letter-spacing: 1.3px;
+      word-spacing: 1.4px;
     }
   }
 
@@ -300,14 +317,12 @@
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
     color: white;
-    height: 100vh;
-
+    padding-bottom: 50px;
+    
     div {
       padding: 0 50px;
       letter-spacing: 1.3px;
       word-spacing: 1.4px;
-      font-size: 23px;
-      font-weight: 600;
     }
   }
 }
@@ -443,6 +458,25 @@
     font-size: 27px;
     line-height: 40px;
   }
+  
+  .fruskaGoraParagh {
+    font-size: 22px;
+    margin: 50px;
+    overflow: auto;
+    padding: 0;
+    height: 350px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fruskaGoraClassImg {
+    width: 3500px;
+    height: 450px;
+    background-color: white;
+    padding: 50px;
+  }
 
   img {
     width: 100%;
@@ -520,6 +554,7 @@
   font-size: 40px;
   cursor: pointer;
   fill: var(--someBlueColor);
+  z-index: 10000;
 
   :hover {
     transform: scale(1.2);
@@ -604,29 +639,48 @@
     }
   }
 
-  .caruoselBackground .caruoselInfo {
-    margin: 20px;
-    height: 250px;
+  .caruoselClass {
+    height: 60vh;
 
-    button {
-      margin: 20px 0 30px 30px;
-      height: 28px;
-      width: 100px;
-      font-size: 13px;
-      top: 20px;
-      position: absolute;
-      right: 40px;
-    }
+    .caruoselBackground  {
+      height: 60vh;
+  
+      .caruoselInfo {
+        margin: 20px;
+        height: 130px;
+        width: 200px;
 
-    p {
-      height: 135px;
-      font-size: 13px;
-    }
-
-    h3 {
-      margin-right: 80px;
+        p {
+          display: none;
+        }
+    
+        button {
+          margin: 20px 0 30px 30px;
+          height: 28px;
+          width: 100px;
+          font-size: 13px;
+          top: 82px;
+          position: absolute;
+    
+        }
+    
+        p {
+          height: 135px;
+          font-size: 13px;
+        }
+    
+        h3 {
+          
+          padding-top: 15px;
+        }
+      }
     }
   }
+
+  .citatClass p {
+    font-size: 18px;
+  }
+  
 
   .placeBackground {
     h2 {
@@ -660,6 +714,34 @@
         font-size: 15px;
         line-height: 27px;
       }
+    }
+
+    .flexColumn {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fruskaGoraParagh {
+      overflow: visible;
+      line-height: 27px;
+      margin: 0 30px 30px 30px;
+      font-size: 16px;
+      height: 100%;
+    }
+    .fruskaGoraClassImg {
+      height: auto;
+      max-height: 60vh;
+      width: 100%;
+      padding: 0;
+      margin: 50px 0;
+    }
+
+    .fourImages {
+      margin-left: 10px;
+      gap: 15px;
+      padding: 15px;
+      overflow: scroll;
+      justify-content: flex-start;
     }
   }
 }

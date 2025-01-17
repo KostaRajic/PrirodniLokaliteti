@@ -17,9 +17,9 @@ export const SRPKraljevac = () => {
       <header></header>
       <img src={kraljevac1} alt="Bela Crkva 1" />
 
-      <h2 style={{ right: "80px" }}>SPECIJALNI REZERVAT PRIRODE "KRALJEVAC"</h2>
+      <h2>SPECIJALNI REZERVAT PRIRODE "KRALJEVAC"</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Specijalni rezervoar prirode „Kraljevac” smešten je u srcu vojvođanske
         ravnice, na rubu Deliblatske peščare, u slikovitom selu Deliblato, koje
         deluje kao oaza mira i tišine. Jezero „Kraljevac” nastalo je usled

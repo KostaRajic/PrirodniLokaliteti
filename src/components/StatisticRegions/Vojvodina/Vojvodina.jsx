@@ -9,7 +9,6 @@ import { FaArrowLeft } from "react-icons/fa";
 
 export const Vojvodina = () => {
   const center = [45.20313713852372, 20.012617302735283];
-  const mapRef = useRef(null);
   const navigate = useNavigate();
   const [showZapadnoBacki, setZapadnoBacki] = useState(false);
   const [showSevernoBacki, setSevernoBacki] = useState(false);
@@ -46,7 +45,6 @@ export const Vojvodina = () => {
     }
   });
 
-  console.log(window.innerWidth)
 
   return (
     <div className="serbianMapClass">
@@ -54,7 +52,7 @@ export const Vojvodina = () => {
         center={center}
         zoom={zoom}
         style={{ width: "100vw", height: "100vh" }}
-        ref={mapRef}
+
       >
         <TileLayer
           url={`https://api.maptiler.com/maps/satellite/256/{z}/{x}/{y}.jpg?key=qZ4DIeGQoRrxWzufyKP1`}

@@ -73,7 +73,7 @@ export const BesenovackoJezero = () => {
       <img src={besenovackoJezero4} alt="Manastir Jazak 5" />
 
       <p style={{ marginTop: "-10px" }}>
-        ešenovačko jezero smešteno je blizu sela Bešenovački Prnjavor, u
+        Bešenovačko jezero smešteno je blizu sela Bešenovački Prnjavor, u
         Vojvodini, na teritoriji opštine Sremska Mitrovica. Od Novog Sada je
         udaljeno samo 30 kilometara. Ako dolazite iz Beograda, potrebno je da
         skrenete sa puta prema Rumi kada ugledate oznaku za Bešenovo ili selo

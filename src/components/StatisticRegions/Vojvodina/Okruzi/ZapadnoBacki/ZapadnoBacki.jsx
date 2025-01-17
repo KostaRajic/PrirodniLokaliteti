@@ -21,7 +21,7 @@ export const ZapadnoBacki = () => {
     if (name === "Sombor") {
       navigate("Sombor");
     } else if (name === "Gornje Podunavlje") {
-      navigate("/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/GornjePodunavlje");
+      navigate("GornjePodunavlje");
     } else if (name === "Apatin i apatinske terminalne vode") {
       navigate("ApatinITerminalneVode");
     } else if (name === "Veliki Bački kanal") {

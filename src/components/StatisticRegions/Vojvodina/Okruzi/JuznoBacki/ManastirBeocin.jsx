@@ -22,7 +22,7 @@ export const ManastirBeocin = () => {
         MANASTIR BEOČIN
       </h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px"  }}>
+      <p style={{ paddingTop: "50px", marginTop: "-10px"  }}>
         Manastir Beočin je pravoslavni manastir koji se nalazi u istoimenom
         naselju Beočin, u južnom delu Vojvodine, u blizini grada Novog Sada.
         Manastir je smešten na padinama Fruške gore, u prelepom prirodnom

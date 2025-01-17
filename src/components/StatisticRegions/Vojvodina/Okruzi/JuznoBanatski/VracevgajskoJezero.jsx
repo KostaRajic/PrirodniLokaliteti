@@ -19,7 +19,7 @@ export const VracevgajskoJezero = () => {
 
       <h2>VRAČEVGAJSKO JEZERO</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Vračevgajsko jezero se nalazi u blizini Bele Crkve, na samo tri
         kilometra od grada, uz glavnu saobraćajnicu Beograd - Bela Crkva. Ovo
         jezero je popularno odredište za sve ljubitelje prirode i rekreacije. Na
