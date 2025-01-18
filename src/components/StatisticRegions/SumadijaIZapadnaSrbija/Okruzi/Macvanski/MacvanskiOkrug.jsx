@@ -20,6 +20,8 @@ export const MacvanskiOkrug = () => {
   const readMore = (name) => {
     if (name === "Šabac") {
       navigate('Sabac')
+    } else if (name === "Gučevo") {
+      navigate('Gucevo')
     }
   };
 

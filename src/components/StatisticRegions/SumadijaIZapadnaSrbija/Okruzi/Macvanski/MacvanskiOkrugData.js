@@ -1,6 +1,6 @@
 import sabac from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/sabac.jpg";
 import gucevo from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/gucevo.jpg";
-import sokoGrad from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/SokoGrad/sokoGrad.jpg";
+import zvornickoJezero from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/zvornickoJezero.jpg";
 import mackovKamen from '../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mackovKamen.jpg'
 import manastirTronosa from '../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/tronosa.jpg'
 import cer from '../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cer.jpg'
@@ -23,10 +23,10 @@ export const macvanskiOkrugData = [
 
   {
     id: 3,
-    name: "Soko Grad",
-    img: sokoGrad,
+    name: "Zvorničko jezero",
+    img: zvornickoJezero,
     mainText: `
-Manastir Svetog Nikolaja Ohridskog i Žičkog – Soko grad, smešten je u blizini mesta Gračanice, nedaleko od Ljubovije, na oko 78 km od Loznice. Ovaj manastir je zadužbina episkopa Šabačko-valjevskog Lavrentija. Kompleks manastira izgrađen je na prostoru nekadašnjeg Soko grada, na padinama Sokolskih planina, u prirodnom okruženju koje je ujedno i istorijski značajno.`,
+Zvorničko jezero ima površinu od oko 8,1 km², zapreminu od 90.000.000 m³ vode, a maksimalnu dubinu do 39 m. Prosečna dubina je između 5 i 8 m. Dugačko je oko 25 km, dok se širina kreće od 200 m do 3 km. Nalazi se na 140 m nadmorske visine i proteže se Drinskim kanjonom, od ušća rečice Velike reke u istoimenom selu, pa do Zvornika i Malog Zvornika. Od punjenja akumulacije 1955. godine, oko 50% bazena je zatrpano erozivnim nanosima iz bujičnih vodotoka i rečica koje se ulivaju u jezero (Drinjča, Jošanica, Velika reka, Boraњska reka). Erozija tla i nalozi su stvorili veća ili manja ostrva i poluostrva.`,
   },
   {
     id: 4,

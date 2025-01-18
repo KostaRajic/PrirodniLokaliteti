@@ -67,6 +67,7 @@ import { SumadijaIZapadnaSrbijaTekstModal } from "./components/StatisticRegions/
 import { SumadijaIZapadnaSrbija } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/SumadijaIZapadnaSrbija";
 import { MacvanskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MacvanskiOkrug";
 import { Sabac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Sabac";
+import { Gucevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Gucevo";
 
 function App() {
   return (
@@ -302,6 +303,10 @@ function App() {
          <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/Sabac"
           element={<Sabac />}
+        />
+                 <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/Gucevo"
+          element={<Gucevo />}
         />
       </Routes>
     </BrowserRouter>
