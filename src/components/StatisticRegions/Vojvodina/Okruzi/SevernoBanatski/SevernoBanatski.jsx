@@ -8,20 +8,6 @@ import { severnoBanatskiData } from "./SevernoBanatskiData";
 export const SevernoBanatski = () => {
   const [slide, setSlide] = useState(0);
   const navigate = useNavigate();
-  const [isMobile, setIsMobile] = useState(false);
-console.log(isMobile)
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 600); // Postavite isMobile na true ako je širina ekrana manja od 600px
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   const nextContent = () => {
     setSlide(slide === severnoBanatskiData.length - 1 ? 0 : (prev) => prev + 1);
@@ -32,23 +18,27 @@ console.log(isMobile)
   };
 
   const readMore = (name) => {
-    if (name === 'Kikinda') {
-        navigate('Kikinda')
-      } else if (name === 'Kanjiža i termalne vode') {
-        navigate('Kanjiza')
-      } else if (name === 'Selevenjske pustare') {
-        navigate('SelevenjskePustare')
-      } else if (name === 'Rezervat velike droplje') {
-        navigate('RezervatVelikeDroplje')
-      } else if (name === 'Senta') {
-        navigate('Senta')
-      }
+    if (name === "Kikinda") {
+      navigate("Kikinda");
+    } else if (name === "Kanjiža i termalne vode") {
+      navigate("Kanjiza");
+    } else if (name === "Selevenjske pustare") {
+      navigate("SelevenjskePustare");
+    } else if (name === "Rezervat velike droplje") {
+      navigate("RezervatVelikeDroplje");
+    } else if (name === "Senta") {
+      navigate("Senta");
+    }
   };
 
   return (
     <div className="okrugBackground">
       <header>
-        <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
+        <FaArrowLeft
+          className="arrowLeft"
+          onClick={() => navigate(-1)}
+          style={{ fill: "white" }}
+        />
       </header>
       <section className="severnoBanatskiOkrug">
         <h1>Severno - Banatski okrug</h1>
@@ -87,16 +77,16 @@ console.log(isMobile)
       </section>
       <section className="citatClass">
         <p>
-        Dok putujemo svetom da bismo našli lepotu, moramo je poneti sa sobom
-        ili je nećemo naći. (Ralf Valdo Emerson)
+          Dok putujemo svetom da bismo našli lepotu, moramo je poneti sa sobom
+          ili je nećemo naći. (Ralf Valdo Emerson)
         </p>
       </section>
       <section>
-        <div className="caruoselClass" style={{padding: '0'}}>
+        <div className="caruoselClass" style={{ padding: "0" }}>
           {severnoBanatskiData?.map((okrug, index) => (
             <div
               key={okrug.id}
-              style={{backgroundImage: `url(${okrug.img})`}}
+              style={{ backgroundImage: `url(${okrug.img})` }}
               className={
                 slide === index
                   ? "caruoselBackground caruoselBackground-visible"

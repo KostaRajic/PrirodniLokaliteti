@@ -3,23 +3,64 @@ import senta2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/
 import senta3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/senta4.jpg";
 import senta4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/senta5.jpg";
 
-import stevanSremac from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/stevanSremac.jpg";
-import jovanDjordjevic from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/jovanDjordjevic.jpg";
-import bistaTotIštvana from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/bistaTotIštvana.jpg";
-import svJovan from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/svJovan.jpg";
-import zrtve1944 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/zrtve1944.jpg";
-import skeledzija from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/statuaSkeledzije.jpg";
+import stevanSremac from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/stevanSremac2.jpg";
+import jovanDjordjevic from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/jovanDjordjevic2.jpg";
+import bistaTotIštvana from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/bistaTotIštvana2.jpg";
+import svJovan from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/svJovan2.jpg";
+import zrtve1944 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/zrtve19442.jpg";
+import skeledzija from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/statuaSkeledzije2.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { useEffect, useRef, useState } from "react";
 
 export const Senta = () => {
   const navigate = useNavigate();
+  const [isMobile, setIsMobile] = useState(false);
+  const [dragging, setDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const sliderRef = useRef(null);
+
+  // const handleMouseDown = (e) => {
+  //   setDragging(true);
+  //   setStartX(e.clientX);
+  //   setScrollLeft(sliderRef.current.scrollLeft);
+  // };
+
+  // const handleMouseMove = (e) => {
+  //   if (!dragging) return;
+  //   const moveX = e.clientX - startX;
+  //   console.log(moveX);
+  // };
+
+  // const handleMouseUp = (e) => {
+  //   setDragging(false);
+  // };
+
+  // const handleMouseLeave = (e) => {
+  //   if (dragging) {
+  //     setDragging(false);
+  //   }
+  // };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="placeBackground">
-      <ScrollToTop/>
+      <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={senta3} alt="Senta 1" />
@@ -50,7 +91,7 @@ export const Senta = () => {
 
       <img src={senta2} alt="Senta 3" />
 
-      <p style={{ marginTop: "-100px", position: "absolute", width: "100vw" }}>
+      <p>
         U Senti postoje nekoliko parkova i zelenih površina, među kojima se
         izdvaja Gradski park, popularno mesto za šetnje i odmor. Takođe, u
         centru Sente se nalazi manji park sa drvećem i klupama, idealan za
@@ -59,48 +100,93 @@ export const Senta = () => {
         gradu i pružaju miran ambijent za lokalno stanovništvo.
       </p>
 
-      <div className="manyImages">
+      {isMobile ? (
         <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            height: "900px",
-          }}
+          className="fourImages"
+          style={{ padding: "20px", gap: "50px" }}
+          // ref={sliderRef}
+          // onMouseDown={handleMouseDown}
+          // onMouseMove={handleMouseMove}
+          // onMouseUp={handleMouseUp}
+          // onMouseLeave={handleMouseLeave}
         >
-          <img
-            src={stevanSremac}
-            alt="Stevan Sremac"
-            style={{ width: "1300px" }}
-          />
-          <div style={{ height: "104vh", overflow: "hidden" }}>
-            <img src={zrtve1944} alt="Zrtve 1944" style={{ height: "50%" }} />
-
-            <img
-              src={bistaTotIštvana}
-              alt="Bista Tot Istvana"
-              style={{ height: "50%", marginTop: "-10px" }}
-            />
+          <div style={{ marginLeft: "20px" }}>
+            <img src={jovanDjordjevic} alt="Jovan Djordjevic" />
+            <p style={{ padding: "20px", textAlign: "center" }}>
+              Jovam Đorđević
+            </p>
           </div>
-
-          <img
-            src={jovanDjordjevic}
-            alt="Jovan Djordjevic"
-            style={{ width: "1300px", paddingTop: "50px" }}
-          />
+          <div>
+            <img src={svJovan} alt="Sveti Jovan" />
+            <p style={{ padding: "20px", textAlign: "center" }}>Sveti Jovan</p>
+          </div>
+          <div>
+            <img src={skeledzija} alt="Skeledzija" />
+            <p style={{ padding: "20px", textAlign: "center" }}>Skeledžija</p>
+          </div>
+          <div>
+            <img src={stevanSremac} alt="Stevan Sremac" />
+            <p style={{ padding: "20px", textAlign: "center" }}>
+              Stevan Sremac
+            </p>
+          </div>
+          <div>
+            <img src={zrtve1944} alt="Zrtve 1944" />
+            <p style={{ padding: "20px", textAlign: "center" }}>
+              Žrtve u drugom svetskom ratu
+            </p>
+          </div>
+          <div style={{ marginRight: "20px" }}>
+            <img src={bistaTotIštvana} alt="Bista Tot Istvana" />
+            <p style={{ padding: "20px", textAlign: "center" }}>
+              Bista Tot Ištvana
+            </p>
+          </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            marginTop: "-200px",
-          }}
-        >
-          <img src={svJovan} alt="Sveti Jovan" />
-
-          <img src={skeledzija} alt="Skeledzija" style={{ width: "240%" }} />
-        </div>
-      </div>
+      ) : (
+        <>
+          <div className="fourImages" style={{ padding: "20px", gap: "100px" }}>
+            <div style={{ width: "20vw" }}>
+              <img src={jovanDjordjevic} alt="Jovan Djordjevic" />
+              <p style={{ padding: "20px", textAlign: "center" }}>
+                Žrtve u drugom svetskom ratu
+              </p>
+            </div>
+            <div style={{ width: "20vw" }}>
+              <img src={svJovan} alt="Sveti Jovan" />
+              <p style={{ padding: "20px", textAlign: "center" }}>
+                Žrtve u drugom svetskom ratu
+              </p>
+            </div>
+            <div style={{ width: "20vw" }}>
+              <img src={skeledzija} alt="Skeledzija" />
+              <p style={{ padding: "20px", textAlign: "center" }}>
+                Žrtve u drugom svetskom ratu
+              </p>
+            </div>
+          </div>
+          <div className="fourImages" style={{ padding: "20px", gap: "100px" }}>
+            <div style={{ width: "20vw" }}>
+              <img src={stevanSremac} alt="Stevan Sremac" />
+              <p style={{ padding: "20px", textAlign: "center" }}>
+                Stevan Sremac
+              </p>
+            </div>
+            <div style={{ width: "20vw" }}>
+              <img src={zrtve1944} alt="Zrtve 1944" />
+              <p style={{ padding: "20px", textAlign: "center" }}>
+                Žrtve u drugom svetskom ratu
+              </p>
+            </div>
+            <div style={{ width: "20vw" }}>
+              <img src={bistaTotIštvana} alt="Bista Tot Istvana" />
+              <p style={{ padding: "20px", textAlign: "center" }}>
+                Bista Tot Ištvana
+              </p>
+            </div>
+          </div>
+        </>
+      )}
 
       <p style={{ marginTop: "-10px" }}>
         Na teritoriji grada, ali i cele opštine, može se naći srazmerno mali
@@ -119,11 +205,11 @@ export const Senta = () => {
       <img src={senta4} alt="Senta 4" />
 
       <p style={{ marginTop: "-10px" }}>
-        Pravoslavna (srpska) Crkva Svetog Arhangela Mihaila je važan
-        verski i kulturni spomenik grada. Izgrađena je u baroknom stilu, a njen
-        početak izgradnje datira iz 18. veka, tačnije 1751. godine. Ova crkva je
-        jedna od najstarijih u Senti i predstavlja značajan deo verske tradicije
-        i istorije grada. Crkva je poznata po svom ikonostasu, koji je prvobitno
+        Pravoslavna (srpska) Crkva Svetog Arhangela Mihaila je važan verski i
+        kulturni spomenik grada. Izgrađena je u baroknom stilu, a njen početak
+        izgradnje datira iz 18. veka, tačnije 1751. godine. Ova crkva je jedna
+        od najstarijih u Senti i predstavlja značajan deo verske tradicije i
+        istorije grada. Crkva je poznata po svom ikonostasu, koji je prvobitno
         izrađen 1782. godine, a kasnije je između 1859. i 1862. godine obnovljen
         i naslikan od strane Pavla Simića, jednog od najpoznatijih predstavnika
         srpskog romantičnog slikarstva.

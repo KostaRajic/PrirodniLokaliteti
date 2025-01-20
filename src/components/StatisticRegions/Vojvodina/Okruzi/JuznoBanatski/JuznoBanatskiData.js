@@ -38,7 +38,7 @@ S druge strane, Deliblatska peščara je najveća pustinja u Evropi, sa specifi�
     mainText: `Specijalni rezervoar prirode Kraljevac se nalazi u blizini Pančeva, na levoj obali reke Tamiš. Ovaj specijalni rezervat prostire se na oko 320 hektara i predstavlja jedno od najvažnijih zaštićenih područja u Vojvodini. Kraljevac je dom bogatog biljnog i životinjskog sveta, sa brojnim vrstama ptica, riba i biljaka, a naročito je značajan zbog močvarnih staništa i biološke raznovrsnosti. U rezervatu se mogu videti vrste poput sive čaplje, crne rode i mnoge druge ptice močvarice. Zbog svoje prirodne lepote i ekološkog značaja, Kraljevac je popularno odredište za ljubitelje prirode, ekologe, ornitologe i sve one koji žele da uživaju u tišini i lepotama netaknute prirode.`,
   },
   {
-    id: 7,
+    id: 6,
     name: "Bela Crkva",
     img: belaCrkva,
     mainText: `Bela Crkva je grad u Vojvodini, smešten u Južnobanatskom okrugu, poznat po prirodnim lepotama i bogatoj istoriji. Grad je dobio ime po crkvi iz 18. veka, koja je bila prepoznatljiva po beloj boji. Bela Crkva je okružena brojnim jezerima i vodama, što je čini popularnim odredištem za ljubitelje prirode, ribolovce i turiste. Grad ima i bogat kulturni život, sa manifestacijama, festivalima i tradicijama koje se čuvaju i neguju. Osim toga, Bela Crkva je i važno saobraćajno čvorište u ovom delu Srbije.`,

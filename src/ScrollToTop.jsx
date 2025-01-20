@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const ScrollToTop = () => {
   const [scrollButton, setScrollButton] = useState(false);
-  console.log(scrollButton)
+
 
   useEffect(() => {
     const handelScroll = () => {

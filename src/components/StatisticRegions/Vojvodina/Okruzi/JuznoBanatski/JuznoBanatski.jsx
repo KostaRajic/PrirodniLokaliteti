@@ -29,6 +29,8 @@ export const JuznoBanatski = () => {
       navigate('Vrsac')
     } else if (name === "SRP 'Kraljevac'") {
       navigate('SRPKraljevac')
+    } else if (name === "Bela Crkva") {
+      navigate('BelaCrkva')
     }
   };
 
