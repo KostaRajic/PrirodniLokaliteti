@@ -78,6 +78,7 @@ import { Valjevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Ok
 import { TaorskaVrela } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/TaorskaVrela";
 import { PetnickaPecina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/PetnickaPecina";
 import { RekaGradac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/RekaGradac";
+import { ManastirLelic } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/ManastirLelic";
 
 function App() {
   return (
@@ -354,9 +355,13 @@ function App() {
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/PetnickaPecina"
           element={<PetnickaPecina />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/RekaGradac"
           element={<RekaGradac />}
+        />
+                <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/ManastirLelic"
+          element={<ManastirLelic />}
         />
       </Routes>
     </BrowserRouter>

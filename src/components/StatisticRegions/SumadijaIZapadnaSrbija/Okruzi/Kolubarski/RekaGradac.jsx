@@ -94,7 +94,7 @@ export const RekaGradac = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={gradac1} alt="Taorska Vrela" />
+      <img src={gradac1} alt="Reka Gradac 1" />
 
       <h2 style={{ color: "white" }}>REKA GRADAC</h2>
 
@@ -107,7 +107,7 @@ export const RekaGradac = () => {
         najlepših reka u Srbiji.
       </p>
 
-      <img src={gradac3} alt="Taorska Vrela" />
+      <img src={gradac3} alt="Reka Gradac 2" />
 
       <p>
         Izvire na planini Maljen i teče kroz Valjevske planine, stvarajući
@@ -188,7 +188,7 @@ export const RekaGradac = () => {
         specifičnom i vrednom istraživanja.
       </p>
 
-      <img src={gradac2} alt="Taorska Vrela" />
+      <img src={gradac2} alt="Reka Gradac 3" />
 
       <p>
         Reka Gradac obiluje prirodnim bogatstvima, od pećina i jama, do livada i
@@ -204,12 +204,12 @@ export const RekaGradac = () => {
       <div className="displayFlexClassic">
         <img
           src={gradac4}
-          alt="Taorska Vrela"
+          alt="Reka Gradac 31"
           style={{ margin: "0 50px", width: "600px", height: "600px" }}
         />
         <img
           src={gradac6}
-          alt="Taorska Vrela"
+          alt="Reka Gradac 32"
           style={{ margin: "0 50px", width: "600px", height: "600px" }}
         />
       </div>
@@ -224,7 +224,7 @@ export const RekaGradac = () => {
         i uživati u čistoj vodi koja je pogodna za piće.
       </p>
 
-      <img src={gradac5} alt="Taorska Vrela" />
+      <img src={gradac5} alt="Reka Gradac 5" />
 
       <p>
         Reka Gradac, osim što je prirodni raj za ljubitelje prirode, nudi i

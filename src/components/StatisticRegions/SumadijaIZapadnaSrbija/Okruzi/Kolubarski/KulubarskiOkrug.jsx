@@ -18,14 +18,16 @@ export const KolubarskiOkrug = () => {
   };
 
   const readMore = (name) => {
-    if (name === 'Valjevo') {
-        navigate('Valjevo')
-    } else if (name === 'Taorska Vrela') {
-      navigate('TaorskaVrela')
-    } else if (name === 'Petnica i Petnička pećina') {
-      navigate('PetnickaPecina')
-    } else if (name === 'Reka Gradac') {
-      navigate('RekaGradac')
+    if (name === "Valjevo") {
+      navigate("Valjevo");
+    } else if (name === "Taorska Vrela") {
+      navigate("TaorskaVrela");
+    } else if (name === "Petnica i Petnička pećina") {
+      navigate("PetnickaPecina");
+    } else if (name === "Reka Gradac") {
+      navigate("RekaGradac");
+    } else if (name === "Manastir Lelić") {
+      navigate("ManastirLelic");
     }
   };
 
