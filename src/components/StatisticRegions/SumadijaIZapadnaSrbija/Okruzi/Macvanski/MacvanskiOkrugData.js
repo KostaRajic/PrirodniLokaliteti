@@ -4,7 +4,7 @@ import zvornickoJezero from "../../../../../assets/images/SumadijaIZapadnaSrbija
 import mackovKamen from '../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mackovKamen.jpg'
 import manastirTronosa from '../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/tronosa.jpg'
 import cer from '../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cer.jpg'
-import bobija from '../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Bobija/bobija.jpg'
+import trsic from '../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/trsic.jpg'
 
 export const macvanskiOkrugData = [
   {
@@ -36,7 +36,7 @@ Zvorničko jezero ima površinu od oko 8,1 km², zapreminu od 90.000.000 m³ vod
   },
   {
     id: 5,
-    name: "Cer",
+    name: "Planina Cer",
     img: cer,
     mainText: `Planina Cer se nalazi u zapadnom delu Srbije, između reke Drine i reke Morave. Ona je deo Srednjeg Karpata i ima visinu od 1.091 metar. Cer je poznat po bogatoj prirodi, prelepim šumama, i raznovrsnoj flori i fauni. Osim prirodne lepote, Cer je istorijski značajna zbog bitke koja se odigrala tokom Prvog svetskog rata. Bitka na Ceru, koja je bila prva veća pobeda srpske vojske u tom ratu, odigrala se 1914. godine i odigrala ključnu ulogu u moralnoj podršci saveznicima. Na planini se nalazi i spomen-park posvećen palim borcima. Danas, Cer je popularna destinacija za planinarenje, biciklizam i druge aktivnosti na otvorenom.`
   },
@@ -49,9 +49,10 @@ Na Mačkovom kamenu, tokom prvih dve godine Prvog svetskog rata, vođene su krva
   },
   {
     id: 7,
-    name: "Bobija",
-    img: bobija,
+    name: "Tršić",
+    img: trsic,
     mainText: `
-Planina Bobija se nalazi u zapadnom delu Srbije, u blizini granice sa Bosnom i Hercegovinom, i deo je planinskog sistema Dinarida. Najviši vrh Bobije je Velika Bobija, sa visinom od 1.379 metara. Planina je prepoznatljiva po svom netaknutom prirodnom okruženju, gustim šumama, planinskim livadama i bogatoj fauni. Bobija je takođe značajna i zbog svoje kulturne baštine, jer je u njenoj okolini mnogo manastira, crkava i tradicija. Iako nije previše razvijena za turizam, planina privlači ljubitelje prirode, planinarenja i tihog odmora. Idealna je za sve koji žele da pobegnu od gradske gužve i uživaju u miru i prirodi.`
+Tršić, selo u Zapadnoj Srbiji, poznato je kao rodno mesto Vuka Stefanovića Karadžića, reformatora srpskog jezika. Nalazi se blizu Loznice i ima poseban značaj za srpsku kulturu. U Tršiću je očuvana Vukova rodna kuća, koja je danas muzej sa postavkom o njegovom životu i radu. Selo je deo etnografskog kompleksa sa tradicionalnim kućama i radionicama koje prikazuju stare zanate i način života iz 19. veka.
+Svake godine se u Tršiću održava manifestacija "Vukov sabor," najstarija kulturna manifestacija u Srbiji, koja slavi Vukovo nasleđe. Selo je idealno za posetioce koji žele da uživaju u istoriji, prirodi i tradiciji Zapadne Srbije.`
   },
 ];

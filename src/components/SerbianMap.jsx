@@ -19,7 +19,17 @@ export const SerbianMap = () => {
   const [ showSumadijaIZapadnaSrbija, setShowSumadijaIZapadnaSrbija ] = useState(false);
   const [ showKosovoIMetohija, setShowKosovoIMethoija ] = useState(false);
   const mapRef = useRef(null);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const [zoom, setZoom] = useState(() => {
+    if (window.innerWidth < 600) {
+      return 6;
+    } else if (window.innerWidth < 1600) {
+      return 7;
+    } else {
+      return 10;
+    }
+  });
+
 
   useEffect(() => {
     if (mapRef.current) {
@@ -46,7 +56,7 @@ export const SerbianMap = () => {
 
     <MapContainer
       center={center}
-      zoom={7}
+      zoom={zoom}
       style={{ width: "100vw", height: "100vh"}}
       ref={mapRef}
     >

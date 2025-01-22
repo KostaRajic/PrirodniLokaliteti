@@ -30,6 +30,8 @@ export const SumadijaIZapadnaSrbija = () => {
   useEffect(() => {
     if (showMacvanski) {
       return navigate("Macvanski");
+    } else if (showKolubarski) {
+      return navigate("Kolubarski")
     }
   });
 
@@ -82,6 +84,8 @@ export const SumadijaIZapadnaSrbija = () => {
               click: (e) => {
                 statisticRegion?.properties?.name === "Mačvanski" &&
                 setShowMacvanski(true);
+                statisticRegion?.properties?.name === "Kolubarski" &&
+                setShowKolubarski(true);
               },
             }}
           >

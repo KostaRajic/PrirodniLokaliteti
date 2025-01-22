@@ -68,6 +68,16 @@ import { SumadijaIZapadnaSrbija } from "./components/StatisticRegions/SumadijaIZ
 import { MacvanskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MacvanskiOkrug";
 import { Sabac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Sabac";
 import { Gucevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Gucevo";
+import { ZvornickoJezero } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/ZvornickoJezero";
+import { ManastirTronosa } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/ManastirTronosa";
+import { Cer } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Cer";
+import { MackovKamen } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MackovKamen";
+import { Trsic } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Trsic";
+import { KolubarskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/KulubarskiOkrug";
+import { Valjevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/Valjevo";
+import { TaorskaVrela } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/TaorskaVrela";
+import { PetnickaPecina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/PetnickaPecina";
+import { RekaGradac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/RekaGradac";
 
 function App() {
   return (
@@ -300,13 +310,53 @@ function App() {
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski"
           element={<MacvanskiOkrug />}
         />
-         <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/Sabac"
           element={<Sabac />}
         />
-                 <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/Gucevo"
           element={<Gucevo />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/ZvornickoJezero"
+          element={<ZvornickoJezero />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/ManastirTronosa"
+          element={<ManastirTronosa />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/PlaninaCer"
+          element={<Cer />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/MackovKamen"
+          element={<MackovKamen />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/Trsic"
+          element={<Trsic />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski"
+          element={<KolubarskiOkrug />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/Valjevo"
+          element={<Valjevo />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/TaorskaVrela"
+          element={<TaorskaVrela />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/PetnickaPecina"
+          element={<PetnickaPecina />}
+        />
+                <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/RekaGradac"
+          element={<RekaGradac />}
         />
       </Routes>
     </BrowserRouter>

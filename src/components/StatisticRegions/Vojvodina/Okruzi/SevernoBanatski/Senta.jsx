@@ -18,32 +18,7 @@ import { useEffect, useRef, useState } from "react";
 export const Senta = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
-  const [dragging, setDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
-  const sliderRef = useRef(null);
-
-  // const handleMouseDown = (e) => {
-  //   setDragging(true);
-  //   setStartX(e.clientX);
-  //   setScrollLeft(sliderRef.current.scrollLeft);
-  // };
-
-  // const handleMouseMove = (e) => {
-  //   if (!dragging) return;
-  //   const moveX = e.clientX - startX;
-  //   console.log(moveX);
-  // };
-
-  // const handleMouseUp = (e) => {
-  //   setDragging(false);
-  // };
-
-  // const handleMouseLeave = (e) => {
-  //   if (dragging) {
-  //     setDragging(false);
-  //   }
-  // };
+  
 
   useEffect(() => {
     const handleResize = () => {
@@ -104,13 +79,9 @@ export const Senta = () => {
         <div
           className="fourImages"
           style={{ padding: "20px", gap: "50px" }}
-          // ref={sliderRef}
-          // onMouseDown={handleMouseDown}
-          // onMouseMove={handleMouseMove}
-          // onMouseUp={handleMouseUp}
-          // onMouseLeave={handleMouseLeave}
+
         >
-          <div style={{ marginLeft: "20px" }}>
+          <div>
             <img src={jovanDjordjevic} alt="Jovan Djordjevic" />
             <p style={{ padding: "20px", textAlign: "center" }}>
               Jovam Đorđević
@@ -136,7 +107,7 @@ export const Senta = () => {
               Žrtve u drugom svetskom ratu
             </p>
           </div>
-          <div style={{ marginRight: "20px" }}>
+          <div>
             <img src={bistaTotIštvana} alt="Bista Tot Istvana" />
             <p style={{ padding: "20px", textAlign: "center" }}>
               Bista Tot Ištvana

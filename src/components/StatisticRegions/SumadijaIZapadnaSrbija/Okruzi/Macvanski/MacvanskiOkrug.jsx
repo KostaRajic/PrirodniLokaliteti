@@ -17,11 +17,22 @@ export const MacvanskiOkrug = () => {
     setSlide(slide === 0 ? macvanskiOkrugData.length - 1 : (prev) => prev - 1);
   };
 
+
   const readMore = (name) => {
     if (name === "Šabac") {
       navigate('Sabac')
     } else if (name === "Gučevo") {
       navigate('Gucevo')
+    } else if (name === "Zvorničko jezero") {
+      navigate('ZvornickoJezero')
+    } else if (name === "Manastir Tronoša") {
+      navigate('ManastirTronosa')
+    } else if (name === "Planina Cer") {
+      navigate('PlaninaCer')
+    } else if (name === "Mačkov Kamen") {
+      navigate('MackovKamen')
+    } else if (name === "Tršić") {
+      navigate('Trsic')
     }
   };
 

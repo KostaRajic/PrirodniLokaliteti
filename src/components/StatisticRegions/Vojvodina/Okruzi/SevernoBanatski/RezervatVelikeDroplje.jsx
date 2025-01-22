@@ -10,37 +10,10 @@ import droplja4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkru
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
-import { useRef, useState } from "react";
+
 
 export const RezervatVelikeDroplje = () => {
   const navigate = useNavigate();
-  const [dragging, setDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
-  const sliderRef = useRef(null);
-
-
-  const handleMouseDown = (e) => {
-    setDragging(true);
-    setStartX(e.clientX);
-    setScrollLeft(sliderRef.current.scrollLeft);
-  };
-
-  const handleMouseMove = (e) => {
-    if (!dragging) return;
-    const moveX = e.clientX - startX;
-    sliderRef.current.scrollLeft = scrollLeft - moveX;
-  };
-
-  const handleMouseUp = () => {
-    setDragging(false);
-  };
-
-  const handleMouseLeave = () => {
-    if (dragging) {
-      setDragging(false);
-    }
-  };
 
   return (
     <div className="placeBackground">
@@ -71,11 +44,6 @@ export const RezervatVelikeDroplje = () => {
 
       <div
         className="fourImages"
-        ref={sliderRef}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseLeave}
       >
         <img src={droplja1} alt="Velika droplja 1" />
         <img src={droplja2} alt="Velika droplja 2" />
