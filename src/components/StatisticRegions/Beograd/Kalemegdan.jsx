@@ -21,7 +21,7 @@ export const Kalemegdan = () => {
 
       <h2>KALEMEGDAN</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Beogradska tvrđava, smeštena na grebenu iznad ušća Save u Dunav,
         predstavlja istorijski kompleks od strateškog značaja koji je nastajao
         od I do XVIII veka kao vojni odbrambeni objekat. Danas je to spomenik
@@ -36,7 +36,7 @@ export const Kalemegdan = () => {
 
       <img src={kalemegdan2} alt="Kalemegdan 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Na brdu iznad ušća Save u Dunav nastao je antički Singidunum, a na istom
         mestu kasnije i slovenski Beograd. Tokom vekova, srednjovekovni grad se
         razvijao unutar zidina tvrđave, tražeći zaštitu među njenim bedemima.
@@ -56,7 +56,7 @@ export const Kalemegdan = () => {
 
       <img src={kalemegdan1} alt="Kalemegdan 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Novo razdoblje započelo je austrijsko-turskim ratom. Kao ključna utvrda
         u centru ratnih sukoba tokom 18. veka, tvrđava je tri puta
         rekonstruisana. Stari kastel je uništen, a veliki deo srednjovekovnih
@@ -75,7 +75,7 @@ export const Kalemegdan = () => {
 
       <img src={kalemegdan3} alt="Kalemegdan 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Beogradska tvrđava ima nekoliko značajnih kapija koje su kroz istoriju
         služile kao glavna ulaza u tvrđavu. Evo nekoliko najpoznatijih: Stambol
         kapija – Jedna od glavnih kapija, koja se sastoji od spoljne i

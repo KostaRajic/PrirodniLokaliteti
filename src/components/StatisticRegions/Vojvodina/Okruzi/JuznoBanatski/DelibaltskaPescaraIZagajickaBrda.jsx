@@ -21,7 +21,7 @@ export const DelibaltskaPescaraIZagajickaBrda = () => {
 
       <h2 style={{marginRight: '80px' }}>DELIBLATSKA PEŠČARA I ZAGAJIČKA BRDA</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px"}}>
         Deliblatska peščara je jedinstvena prirodna pojava u Evropi, smeštena u
         južnom Banatu, u Vojvodini, i prostire se na površini od oko 35.000
         hektara. Ovaj specifičan predel nastao je tokom ledenog doba, a čitava

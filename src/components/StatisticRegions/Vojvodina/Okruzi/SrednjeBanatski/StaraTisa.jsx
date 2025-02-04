@@ -19,7 +19,7 @@ export const StaraTisa = () => {
 
       <h2 style={{right: '50px'}}>PARK PRIRODE "STARA TISA" KOD BISERNOG OSTRVA</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p>
         Park prirode «Stara Tisa kod Bisernog ostrva» je kao hidrološki objekat
         posebno značajan zbog svoje očuvanosti. Dužina od 23.706 km čini je
         najdužom mrtvajom uz ceo tok reke Tise. Stara (Mrtva) Tisa je očuvala

@@ -21,7 +21,7 @@ export const KnezMihailova = () => {
 
       <h2>KNEZ MIHAILOVA</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Nastanak i razvoj najpoznatije beogradske ulice, koja je danas
         isključivo pešačka zona, najviše je povezan sa dve ličnosti – knezom
         Mihailom Obrenovićem, koji se isticao zalaganjem za evropsizaciju
@@ -33,7 +33,7 @@ export const KnezMihailova = () => {
 
       <img src={KnezMihailova2} alt="Knez Mihailova 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Realizacija Josimovićevog plana započeta je već dve godine kasnije, a
         jedan od prvih radova bio je uređenje Delijske ulice. Tim imenom je
         nazivan deo današnje Kneza Mihailove, od Ulice kralja Petra do Ulice
@@ -52,7 +52,7 @@ export const KnezMihailova = () => {
 
       <img src={KnezMihailova3} alt="Knez Mihailova 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Samo nekoliko kuća koje su u Kneza Mihailova građene pre Josimovićevog
         plana postoje i danas. Najstarije među njima su nekadašnji hoteli „Grčka
         kraljica“ (broj 51) i „Rusija“ (broj 38). Svaka zgrada u Kneza Mihailova
@@ -70,7 +70,7 @@ export const KnezMihailova = () => {
 
       <img src={KnezMihailova4} alt="Knez Mihailova 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Gradnja velelepnih zdanja u Kneza Mihailova išla je brže od izgradnje
         objekata komunalne infrastrukture. Ulica se u početku kretala preko
         nabijenog zemljišta koje je leti pretvarano u prašinu, a za kišnih dana

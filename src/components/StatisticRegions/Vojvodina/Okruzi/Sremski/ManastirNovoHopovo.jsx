@@ -20,7 +20,7 @@ export const ManastirNovoHopovo = () => {
 
       <h2 style={{color: 'white'}}>MANASTIR NOVO HOPOVO</h2>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Prema tradiciji, Sveti vladika Maksim postavio je temelje manastiru
         Novom Hopovu između 1496. i 1502. godine. Međutim, postoji tumačenje iz
         18. veka, zasnovano na životu Svete Majke Angelina, prema kojem prva
@@ -42,7 +42,7 @@ export const ManastirNovoHopovo = () => {
 
       <img src={novoHopovo2} alt="Manastir Novo Hopovo 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ovo crkveno zdanje, sa tri konhijalne osnove i dvanaestospranim kupolama
         na kvadratnom tamburu, ukrašenom slobodno stojećim kolonama i slepim
         arkadama, u svom arhitektonskom stilu jasno se oslanja na tradicije
@@ -61,7 +61,7 @@ export const ManastirNovoHopovo = () => {
       </p>
 
       <img src={novoHopovo3} alt="Manastir Novo Hopovo 3" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Tokom 16. veka, Novi Hopovo je bilo jedno od najvažnijih duhovnih i
         prosvetnih centara srpske Crkve, zbog čega su neki istoričari celu
         dijacezu nazivali „Hopovskom“. Kao druga mitropolitska rezidencija,
@@ -99,7 +99,7 @@ export const ManastirNovoHopovo = () => {
 
       <img src={novoHopovo5} alt="Manastir Novo Hopovo 5" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         U 17. veku, monasi iz Novog Hopova prikupljali su milostinju po Rusiji,
         a čak su 1641. godine od cara Mihaila Romanova dobili gramatu koja im je
         dopuštala da svake sedme ili osme godine ponovo dolaze u njegove zemlje.

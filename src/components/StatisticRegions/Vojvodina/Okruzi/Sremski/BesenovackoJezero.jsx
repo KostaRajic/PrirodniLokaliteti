@@ -24,7 +24,7 @@ export const BesenovackoJezero = () => {
 
       <h2 style={{ color: "white" }}>BEŠENOVAČKO JEZERO</h2>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Bešenovačko jezero, poznato i kao jezero Beli kamen, pravo je prirodno
         blago Fruške gore. Nekada je bilo kop laporca u vlasništvu beočinske
         fabrike cementa, a danas, zahvaljujući kontrastu između plavetnila vode
@@ -41,7 +41,7 @@ export const BesenovackoJezero = () => {
 
       <img src={besenovackoJezero2} alt="Manastir Jazak 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Bešenovačko jezero se izdvaja od drugih akumulacionih jezera, jer je
         nastalo na način sličan Ledinačkom jezeru. Nekada su ga pecaroši pamtili
         po bogatstvu ribe, ali danas je većina ribe ulovljena, pa su preostali
@@ -50,7 +50,7 @@ export const BesenovackoJezero = () => {
       </p>
 
       <img src={besenovackoJezero3} alt="Manastir Jazak 3" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Iako se nalazi duboko u srcu nacionalnog parka i okruženo netaknutom
         prirodom, Bešenovačko jezero svakodnevno privlači veliki broj
         posetilaca. Vikendom je parking često pun, a na plaži je teško pronaći
@@ -61,7 +61,7 @@ export const BesenovackoJezero = () => {
       </p>
 
       <img src={besenovackoJezero5} alt="Manastir Jazak 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Jedan deo plaže jezera je uredan i opremljen sa nekoliko kafića gde
         možete da se opustite, uživate u osveženju i pronađete slobodnu
         ležaljku. S druge strane, obala jezera ostala je divlja, namenjena
@@ -72,7 +72,7 @@ export const BesenovackoJezero = () => {
 
       <img src={besenovackoJezero4} alt="Manastir Jazak 5" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Bešenovačko jezero smešteno je blizu sela Bešenovački Prnjavor, u
         Vojvodini, na teritoriji opštine Sremska Mitrovica. Od Novog Sada je
         udaljeno samo 30 kilometara. Ako dolazite iz Beograda, potrebno je da

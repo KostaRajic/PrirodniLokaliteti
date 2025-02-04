@@ -20,7 +20,7 @@ export const SajkaskaOblast = () => {
 
       <h2>ŠAJKAŠKA OBLAST</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px"}}>
         Šajkaška oblast je bila i srce stvaranja Srpske Vojvodine. U toku
         revolucije 1848. godine, Šajkaška je bila ključ organizovanja srpske
         odbrane od mađarskih napada i to ne samo zbog generacija Srba koje su

@@ -1,23 +1,23 @@
-import palicko1 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić4.jpg'
-import palicko2 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić2.jpg'
-import palicko3 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/PalićFilmFestival.jpg'
-import palicko4 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palićzoo.jpg'
-import palicko5 from '../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić3.jpg'
+import palicko1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić4.jpg";
+import palicko2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić2.jpg";
+import palicko3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/PalićFilmFestival.jpg";
+import palicko4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palićzoo.jpg";
+import palicko5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić3.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { ScrollToTop } from '../../../../../ScrollToTop'
+import { ScrollToTop } from "../../../../../ScrollToTop";
 
 export const PalićkoJezero = () => {
   const navigate = useNavigate();
 
   return (
     <div className="placeBackground">
-      <ScrollToTop/>
+      <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={palicko2} alt="palicko jezero 5" />
-        <h2>PALIĆKO JEZERO</h2>
+      <h2>PALIĆKO JEZERO</h2>
 
       <p>
         Palićko jezero se nalazi u Vojvodini, na 8 kilometara od Subotice,
@@ -56,7 +56,11 @@ export const PalićkoJezero = () => {
         sadržajem.
       </p>
 
-      <img src={palicko4} alt="palicko jezero 4" style={{ marginBottom: "-10px" }} />
+      <img
+        src={palicko4}
+        alt="palicko jezero 4"
+        style={{ marginBottom: "-10px" }}
+      />
       <p>
         U neposrednoj blizini jezera se nalazi i atraktivni ZOO vrt u kome
         većina životinja nije smeštena u kaveze već slobodno šeta ograđenim

@@ -19,7 +19,7 @@ export const ManastirLelic = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={lelic4} alt="Taorska Vrela" />
+      <img src={lelic4} alt="Manastir Lelić 1" />
 
       <h2 style={{ color: "white" }}>MANASTIR LELIĆ</h2>
 
@@ -37,7 +37,7 @@ export const ManastirLelic = () => {
         način, manastir Lelić postaje metoh manastira Kaone.
       </p>
 
-      <img src={lelic2} alt="Taorska Vrela" />
+      <img src={lelic2} alt="Manastir Lelić 2" />
 
       <p>
         Odluka o pretvaranju parohijskog hrama u Leliću u manastir doneta je 12.
@@ -53,7 +53,7 @@ export const ManastirLelic = () => {
         a ispred crkve nalaze se veliki zvonik i crkveni dom.
       </p>
 
-      <img src={lelic3} alt="Taorska Vrela" />
+      <img src={lelic3} alt="Manastir Lelić 3" />
 
       <p>
         Živopis crkve osmišljen je prema zamisli Vladike Nikolaja, a odlikuje se
@@ -66,7 +66,7 @@ export const ManastirLelic = () => {
         takođe zadužbina episkopa Nikolaja.
       </p>
 
-      <img src={lelic1} alt="Taorska Vrela" />
+      <img src={lelic1} alt="Manastir Lelić 4" />
 
       <p>
         Godine 1991. u okviru manastirskog kompleksa otvoren je muzej posvećen

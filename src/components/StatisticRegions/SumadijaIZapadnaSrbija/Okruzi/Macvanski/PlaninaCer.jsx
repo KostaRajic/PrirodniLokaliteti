@@ -36,27 +36,26 @@ export const Cer = () => {
   }, []);
 
   const settings = isMobile
-  ? {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      pauseOnHover: false,
-      arrows: false,
-    }
-  : {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      pauseOnHover: false,
-      arrows: false,
-    };
-
+    ? {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        pauseOnHover: true,
+        arrows: false,
+      }
+    : {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        pauseOnHover: true,
+        arrows: false,
+      };
 
   const images = [
     {
@@ -165,21 +164,21 @@ export const Cer = () => {
           </h4>
           <Slider {...settings}>
             {images.map((image, index) => (
-              <div key={index}>
+              <div key={index} style={{ margin: "20px" }}>
                 <img
                   src={image.src}
                   alt={image.alt}
                   loading="lazy"
                   style={{
-                    width: "170px",
+                    width: "85%",
                     height: "230px",
-                    marginLeft: "20px",
+                    margin: "4% 4% 4% 6%",
                   }}
                 />
                 <p
                   style={{
                     textAlign: "center",
-                    paddingBottom: '5px'
+                    paddingBottom: "5px",
                   }}
                 >
                   {image.name}
@@ -231,30 +230,22 @@ export const Cer = () => {
       )}
 
       <p style={{ marginTop: "-10px" }}>
-        Na planini Gučevo, u blizini Loznice, postavljen je spomenik ruskoj
-        bolničarki Darji Aleksandrovnoj Korobkinoj, koja je poginula dok je
-        pomagali srpskim vojnicima tokom Prvog svetskog rata. „Ono što danas
-        činimo na stotu godišnjicu završetka Prvog svetskog rata predstavlja
-        spomenik časti i zahvalnosti Darji Aleksandrovnoj. Na Gučevu svako drvo
-        simbolizuje slobodu, svaka bukva izrasla je iz krvi i patnji mnogih duša
-        koje je ona svakodnevno lečila, obavezivala i pružala pomoć, i to čak
-        sto pedeset puta dnevno“, izjavio je gradonačelnik Loznice.
-      </p>
-      <img src={cer5} alt="Planina Cer 5" />
-      <p>
         Zelena planina nije zahtevna destinacija, što znači da vam nije potrebna
         specijalizovana planinarska oprema da biste uživali u šetnjama njenim
         stazama i posetili prelepe vidikovce. Planina je bogata florom, a tokom
         šetnje uživaćete u miru koji pružaju brojna stabla cera, bukovine,
         hrasta i graba. Ova šumovita planina, koja nije previše naseljena, sa
-        laganim i prijatnim stazama, idealna je za beg od gradske gužve. Poseban
-        adut su tematske staze koje se organizuju na Ceru. Možete krenuti
-        Rimskom stazom i obići Trojanov grad iz trećeg veka, ili izabrati šumsku
-        stazu. Ako ste ljubitelj nacionalne istorije, staza slave i pobede će
-        biti vaš izbor. Maj je idealan mesec za posetu, jer tada možete proći
-        stazom „Moj Cer, moja staza“, koja kreće od manastira Radovašnica i
-        završava se kod Lipovih voda. Dužina staze je 6 km, a duž nje su
-        smeštena uredna odmarališta.
+        laganim i prijatnim stazama, idealna je za beg od gradske gužve.
+      </p>
+      <img src={cer5} alt="Planina Cer 5" />
+      <p>
+        Poseban adut su tematske staze koje se organizuju na Ceru. Možete
+        krenuti Rimskom stazom i obići Trojanov grad iz trećeg veka, ili
+        izabrati šumsku stazu. Ako ste ljubitelj nacionalne istorije, staza
+        slave i pobede će biti vaš izbor. Maj je idealan mesec za posetu, jer
+        tada možete proći stazom „Moj Cer, moja staza“, koja kreće od manastira
+        Radovašnica i završava se kod Lipovih voda. Dužina staze je 6 km, a duž
+        nje su smeštena uredna odmarališta.
       </p>
     </div>
   );

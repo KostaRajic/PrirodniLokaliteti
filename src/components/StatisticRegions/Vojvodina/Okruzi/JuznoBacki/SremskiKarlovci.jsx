@@ -28,7 +28,7 @@ export const SremskiKarlovci = () => {
         SREMSKI KARLOVCI
       </h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px"  }}>
+      <p style={{ paddingTop: "50px"}}>
         Sremski Karlovci su mali grad u Vojvodini, smešten na desnoj obali reke
         Dunav, u blizini grada Novi Sad. Poznati su po svojoj bogatoj istoriji,
         kulturnom nasleđu, prelepim baroknim građevinama, kao i tradiciji

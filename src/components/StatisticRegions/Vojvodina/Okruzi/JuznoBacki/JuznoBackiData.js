@@ -6,20 +6,20 @@ import SKarlovci1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/S
 import sajkaskaoblast from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/sajkaska1.jpg";
 
 export const juznoBackiData = [
+
   {
     id: 1,
+    name: "Novi Sad",
+    img: noviSad,
+    mainText: `Glavni grad Južnobačkog okruga je Novi Sad, drugi po veličini grad u Srbiji. Poznat je po svojoj istoriji, kulturi i atrakcijama, među kojima se izdvaja Petrovaradinska tvrđava, koja pruža spektakularan pogled na grad i Dunav. Novi Sad je domaćin brojnih manifestacija, među kojima je najpoznatiji EXIT festival, koji privlači posetioce iz celog sveta. Grad je i centar umetnosti, sa brojnim galerijama, muzejima i teatarima, kao i velikim brojem parkova i uređenom obalom reke Dunav, koja nudi brojne rekreativne sadržaje.`,
+  },
+  {
+    id: 2,
     name: "Nacionalni park Fruska Gora",
     img: fruska1,
     mainText: `
 Nacionalni park Fruška gora jedan od najlepših prirodni lokaliteta u Srbiji, nalazi se u blizini Novog Sada, na južnim padinama Panonske nizije. Poznat je po bogatoj flori i fauni, sa više od 1.000 biljnih vrsta i velikim brojem ptica i drugih životinja. Iako je manji od mnogih drugih parkova, Fruška gora je značajna zbog svoje geološke prošlosti i očuvanih ekosistema. Park je i kulturno značajan jer sadrži brojne manastire, koji čine deo Srpske pravoslavne crkve, a nudi i brojne staze za planinarenje i biciklizam.`,
   },
-  {
-    id: 2,
-    name: "Novi Sad",
-    img: noviSad,
-    mainText: `Glavni grad Južnobačkog okruga je Novi Sad, drugi po veličini grad u Srbiji. Poznat je po svojoj istoriji, kulturi i atrakcijama, među kojima se izdvaja Petrovaradinska tvrđava, koja pruža spektakularan pogled na grad i Dunav. Novi Sad je domaćin brojnih manifestacija, među kojima je najpoznatiji EXIT festival, koji privlači posetioce iz celog sveta. Grad je i centar umetnosti, sa brojnim galerijama, muzejima i teatarima, kao i velikim brojem parkova i uređenom obalom reke Dunav, koja nudi brojne rekreativne sadržaje.`,
-  },
-
   {
     id: 3,
     name: "Manastir Krušedol",

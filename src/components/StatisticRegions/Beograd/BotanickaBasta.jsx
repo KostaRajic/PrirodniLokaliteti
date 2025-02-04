@@ -19,9 +19,9 @@ export const BotanickaBata = () => {
       <header></header>
       <img src={botanickaBasta2} alt="Botancika basta 1" />
 
-      <h2 style={{marginRight: '80px'}}>BOTANIČKA BAŠTA - JEVREMOVAC</h2>
+      <h2>BOTANIČKA BAŠTA - JEVREMOVAC</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Botanička bašta Jevremovac osnovana je 1874. godine na inicijativu
         Josifa Pančića, poznatog srpskog lekara i botaničara. Prvobitno je bašta
         bila smeštena na Dorćolu, blizu reke Dunav, ali je zbog nepovoljnih
@@ -34,7 +34,7 @@ export const BotanickaBata = () => {
 
       <img src={botanickaBasta1} alt="Botancika basta 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Staklena bašta, smeštena u severoistočnom delu Botaničke bašte,
         izgrađena je 1892. godine kao poklon Kralja Milana, uz podršku
         Ministarstva prosvetnih i crkvenih dela. Gradila ju je drezdenska firma
@@ -53,7 +53,7 @@ export const BotanickaBata = () => {
 
       <img src={botanickaBasta3} alt="Botancika basta 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Japanski vrtovi odražavaju estetski princip jednostavnosti, gde linije i
         boje nisu upadljive, već subtilne. Nisu zamišljeni da budu simetrični
         niti grandiozni; njihov cilj je da prikažu lepotu prirode u njenoj
@@ -76,7 +76,7 @@ export const BotanickaBata = () => {
 
       <img src={botanickaBasta4} alt="Botancika basta staklenik 1" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Unutrašnjost staklene Botaničke bašte Jevremovac prava je oaza u kojoj
         se susreću raznolike vrste biljaka iz tropskih, subtropskih i
         mediteranskih regiona. Staklenik, izgrađen u viktorijanskom stilu,

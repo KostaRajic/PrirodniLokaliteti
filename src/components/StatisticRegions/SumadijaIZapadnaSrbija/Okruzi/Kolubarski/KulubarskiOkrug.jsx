@@ -28,6 +28,14 @@ export const KolubarskiOkrug = () => {
       navigate("RekaGradac");
     } else if (name === "Manastir Lelić") {
       navigate("ManastirLelic");
+    } else if (name === "Vidikovac Velika stena") {
+      navigate("VidikovacVelikaStena");
+    } else if (name === "Vrh Rajac") {
+      navigate("VrhRajac");
+    } else if (name === "Manastir Ćelije") {
+      navigate("ManastirCelije");
+    } else if (name === "Divčibare") {
+      navigate("Divcibare");
     }
   };
 
@@ -78,8 +86,9 @@ export const KolubarskiOkrug = () => {
       </section>
       <section className="citatClass">
         <p>
-          O putu saznaš više kad njime pođeš nego od svih uputsva i opisa na
-          svetu. (Vilijam Hazlit)
+          Putujemo zato što su udaljenost i raznolikost tajni osveživači
+          kreativnosti. Kada stignemo kući, kuća je i dalje ista. Ali nešto
+          unutar našeg uma se promenilo, i to sve menja. (Johan Lehrer)
         </p>
       </section>
       <section>

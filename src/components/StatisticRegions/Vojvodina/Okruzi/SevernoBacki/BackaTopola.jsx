@@ -23,7 +23,7 @@ export const BackaTopola = () => {
         BAČKA TOPOLA
       </h2>
 
-      <p style={{ paddingTop: "80px",marginTop: "-10px"  }}>
+      <p style={{ paddingTop: "50px"}}>
         Ova vojvođanska varoš se „ugnjezdila“ na 69 km od Novog Sada, a 32 km od
         Subotice. Bačka Topola je pravi primer multikulturalnosti, ovde će vam
         poželjeti dobrodošlicu na srpskom ali i mađarskom jeziku. Dok šetate

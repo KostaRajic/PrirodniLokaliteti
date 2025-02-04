@@ -23,7 +23,7 @@ export const ManastirKrusedol = () => {
         MANASTIR KRUŠEDOL
       </h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px"  }}>
+      <p style={{ paddingTop: "50px"}}>
         Manastir Krušedol je jedan od najvažnijih i najlepših manastira na
         Fruškoj gori, u Vojvodini, Srbija. Smešten je u blizini grada Sremska
         Mitrovica, u opštini Ruma, i predstavlja značajnu tačku na kulturnoj i

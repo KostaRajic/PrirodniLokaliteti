@@ -21,7 +21,7 @@ export const SRPZasavica = () => {
 
       <h2 style={{ right: "50px" }}>SPECIJALNI REZERVAT PRIRODE "ZASAVICA"</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p>
         Specijalni rezervoar prirode Zasavica je prirodni rezervat stavljen pod
         zaštitu države 1977. godine kao prirodno dobro I kategorije od izuzetnog
         značaja. Rezervat se prostire u severnoj Mačvi na teritorijama opština
@@ -33,7 +33,7 @@ export const SRPZasavica = () => {
 
       <img src={zasavica1} alt="Specijalni rezervat prirode 'Zasavica' 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Vizitorski centar predstavlja centralno turističko mesto rezervata.
         Izgrađena je drvena građevina sa turnjem visine 18 m sa koga se pruža
         pogled ka pašnjaku od 300 ha i najširem i najlepšem delu toka Zasavice.
@@ -42,7 +42,7 @@ export const SRPZasavica = () => {
       </p>
 
       <img src={zasavica3} alt="Specijalni rezervat prirode 'Zasavica' 3" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Na ovom području do sada je zabeleženo preko 600 biljnih vrsta. Posebno
         je značajno prisustvo: belog i žutog lokvanja , testerice , lokvanjića ,
         močvarne koprive i iđirota. Ovo je jedino mesto u Srbiji gde možete
@@ -50,7 +50,7 @@ export const SRPZasavica = () => {
       </p>
 
       <img src={zasavica2} alt="Specijalni rezervat prirode 'Zasavica' 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Danas, kad svaka zemlja vodi računa o očuvanju autohtonih rasa, uz pomoć
         države, Specijalni rezervoar Zasavica postao je čuvar starih rasa,
         odnosno genetskog potencijala. Na pašnjaku Valjevac, koji je srce
@@ -62,7 +62,7 @@ export const SRPZasavica = () => {
 
       <img src={zasavica5} alt="Specijalni rezervat prirode 'Zasavica' 5" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Zahvaljujući brižljivom upravljanju kroz sve protekle godine, Specijalni
         rezervoar Zasavica i danas je bez ijedne fabrike i bez ijednog
         zagađivača. A, Zasavica se za svu dosadašnju brigu odužila neverovatnim

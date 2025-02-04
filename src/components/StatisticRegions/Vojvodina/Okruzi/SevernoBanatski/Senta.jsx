@@ -42,7 +42,7 @@ export const Senta = () => {
 
       <h2>SENTA</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p>
         Opština Senta nalazi se u Srbiji, u severnom delu Autonomne Pokrajine
         Vojvodine, 42 km južno od srpsko-mađarske granice, na desnoj obali reke
         Tise. Površina opštine Senta iznosi 283.5 km2 . U pravcu sever-jug

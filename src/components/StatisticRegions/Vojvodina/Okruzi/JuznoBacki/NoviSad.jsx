@@ -22,7 +22,7 @@ export const NoviSad = () => {
 
       <h2>NOVI SAD</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px"}}>
         Grad leži na obalama reke Dunav, između 1252. i 1262. kilometra rečnog
         toka. Na levoj obali Dunava se na`lazi ravničarski deo grada (Bačka), dok
         je na desnoj obali, na obroncima Fruške gore, smešten brdoviti deo grada

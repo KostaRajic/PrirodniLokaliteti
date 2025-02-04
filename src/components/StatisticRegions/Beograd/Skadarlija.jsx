@@ -21,7 +21,7 @@ export const Skadarlija = () => {
 
       <h2 style={{color: 'white'}}>SKADARLIJA</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Skadarlija se danas u turističkim vodičima često opisuje kao boemska
         četvrt Beograda, koja je nekada bila omiljeno okupljalište najpoznatijih
         srpskih pisaca, glumaca, slikara i svih onih koji su uživali u
@@ -39,7 +39,7 @@ export const Skadarlija = () => {
 
       <img src={skadarlija6} alt="Sakadrlija 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Prema podacima iz 1901. godine, Skadarlija je sve do sredine 19. veka
         bila gotovo nenaseljena periferija Beograda, smeštena između „varoši u
         šancu“ i naselja Palilula. Za razliku od područja uz reku Savi, koje je
@@ -54,7 +54,7 @@ export const Skadarlija = () => {
 
       <img src={skadarlija3} alt="Sakadrlija 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Samo polovinom 19. veka počelo je podizanje kvalitetnijih kuća u
         Skadarliji, čime je ovaj deo grada dobio urbani karakter. Počele su da
         se grade i više spratne zgrade, ali se taj trend usporio početkom Prvog
@@ -71,7 +71,7 @@ export const Skadarlija = () => {
 
       <img src={skadarlija4} alt="Sakadrlija 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Skadarliju su naseljavali različiti zanatlije, trgovci i ugostitelji, a
         mnogi su zarađivali izdajući stanove. U podacima o Skadarliji iz 19.
         veka spominje se otvoreni kanal koji je kroz njenu sredinu prolazio i

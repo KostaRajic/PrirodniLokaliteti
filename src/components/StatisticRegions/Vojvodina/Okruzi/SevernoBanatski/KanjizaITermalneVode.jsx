@@ -23,7 +23,7 @@ export const Kanjiza = () => {
         KANJIŽA I TERMALNE VODE
       </h2>
 
-      <p style={{ paddingTop: "50px",marginTop: "-10px"  }}>
+      <p>
         Opština Kanjiža se nalazi na severnom delu Srbije, na granici sa
         Mađarskom. Pokriva površinu od 400 km² na kojoj živi 24.995 stanovnika u
         13 naseljenih mesta (Adorjan, Velebit, Doline, Zimonjić, Kanjiža, Male

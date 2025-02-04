@@ -23,7 +23,7 @@ export const SubotickaPescara = () => {
         SUBOTIČKA PEŠČARA
       </h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p>
         Subotička peščara se nalazi na severu Bačke, a predstavlja krajnji južni
         deo velike peščarske površine u međurečju Dunava i Tise, koja se
         najvećim delom prostire u susednoj Mađarskoj. Zaštićeno područje je sa

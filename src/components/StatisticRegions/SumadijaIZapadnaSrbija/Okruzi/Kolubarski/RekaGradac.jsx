@@ -129,9 +129,9 @@ export const RekaGradac = () => {
                   alt={image.alt}
                   loading="lazy"
                   style={{
-                    width: "170px",
+                    width: "80%",
                     height: "230px",
-                    marginLeft: "20px",
+                    margin: "0 8% 0 12%"
                   }}
                 />
                 <p
@@ -201,7 +201,20 @@ export const RekaGradac = () => {
         žele da uživaju u netaknutoj divljini.
       </p>
 
-      <div className="displayFlexClassic">
+      { isMobile ? (<div className="displayFlexClassic">
+        <img
+          src={gradac4}
+          alt="Reka Gradac 31"
+          style={{ margin: '0 10px', width: "40%", height: "200px" }}
+        />
+        <img
+          src={gradac6}
+          alt="Reka Gradac 32"
+          style={{ margin: "0 10px", width: "40%", height: "200px" }}
+        />
+      </div>)
+      :
+      (<div className="displayFlexClassic">
         <img
           src={gradac4}
           alt="Reka Gradac 31"
@@ -212,7 +225,9 @@ export const RekaGradac = () => {
           alt="Reka Gradac 32"
           style={{ margin: "0 50px", width: "600px", height: "600px" }}
         />
-      </div>
+      </div>)}
+
+      
 
       <p>
         Zbog svojih pogodnih prirodnih karakteristika, veruje se da su obalu

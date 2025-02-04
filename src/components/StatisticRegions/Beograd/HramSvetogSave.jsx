@@ -23,7 +23,7 @@ export const HramSvetogSave = () => {
 
       <h2>HRAM SVETOG SAVE</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Istorijat Hrama Svetog Save, od trenutka kada se pojavila sama ideja do
         njene konačne realizacije, na specifičan način odražava istorijske
         tokove srpskog naroda tokom burnog 20. veka. Ako Hram Svetog Save
@@ -35,7 +35,7 @@ export const HramSvetogSave = () => {
 
       <img src={hramSvetogSave2} alt="Hram Svetog Save 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Hram je izgrađen u neovizantijskom stilu, u obliku grčkog krsta, sa
         velikom kupolom koja se uzdiže iznad njega. Građevina je obložena belim
         mermerom, a dodatno je ukrašena sa još 13 manjih kupola. Dužina hrama u
@@ -49,7 +49,7 @@ export const HramSvetogSave = () => {
 
       <img src={hramSvetogSave4} alt="Hram Svetog Save 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Hram Svetog Save predstavlja pravu ikonu srpske arhitekture i likovne
         umetnosti. Unutar hrama nalaze se brojni dragoceni mozaici, freske i
         ikone, kao i kripta. Evo šta sve možete videti unutar hrama: Unutrašnji
@@ -66,7 +66,7 @@ export const HramSvetogSave = () => {
 
       <img src={hramSvetogSave3} alt="Hram Svetog Save 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Hram Svetog Save se izdiže u centru Beograda, na vrhu Avalskog brda, i
         zauzima dominantnu poziciju u panorami grada. Smesten je na prostoru
         zvanoј Vračar, koji je deo šireg urbanog područja, a sa svoje visine

@@ -20,7 +20,7 @@ export const NoviBecej = () => {
 
       <h2>NOVI BEČEJ</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p>
         Novi Bečej je grad i sedište opštine u Vojvodini, Srbija, smešten u
         severoistočnom delu pokrajine, u blizini granice sa Rumunijom. Grad leži
         na reki Tamiš, koja je važan vodeni tok u ovom delu Srbije.

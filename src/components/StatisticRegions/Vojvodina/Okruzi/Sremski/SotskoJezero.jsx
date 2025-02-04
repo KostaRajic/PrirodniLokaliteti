@@ -20,7 +20,7 @@ export const SotskoJezero = () => {
 
       <h2>SOTSKO JEZERO</h2>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ako tražite savršen prostor za opuštanje, rekreaciju, uživanje u
         roštilju, kupanje (na sopstvenu odgovornost) ili jednostavno uživanje u
         tišini prirode, dok se deca zabavljaju na jednom od igrališta, ovo
@@ -31,7 +31,7 @@ export const SotskoJezero = () => {
 
       <img src={sotsko2} alt="Sotsko Jezero 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Prelepi pejzaži koji se prostiru do horizonta pružaju osećaj mira i
         opuštanja, a njihov očaravajući izgled poziva da ih zabeležite
         fotoaparatom. Dok šetate obalom jezera, sastaćete se sa raznovrsnim
@@ -45,7 +45,7 @@ export const SotskoJezero = () => {
       </p>
 
       <img src={sotsko3} alt="Sotsko Jezero 3" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Uživajte u pesmi brojnih ptica kao što su grmuše, senice i slavuje, dok
         tropski šareno krilo pčelarica i vodomara donosi dodatnu magiju prirode.
         U plićacima vas sa distance posmatraju bojažljive čaplje, koje su uvek
@@ -58,7 +58,7 @@ export const SotskoJezero = () => {
       </p>
 
       <img src={sotsko4} alt="Sotsko Jezero 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Kada poželite da se opustite nakon šetnje, raširite svoje ćebe na sveže
         pokošenu travu u šljiviku ili se smestite na obalu ispod vrba i uživajte
         u pikniku. Za ovu vrstu uživanja tu su i nove klupe i stolovi sa roštilj
@@ -75,7 +75,7 @@ export const SotskoJezero = () => {
 
       <img src={sotsko5} alt="Sotsko Jezero 5" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ako odlučite da prošetate duž obale, na oko 300 metara od plaže pronaći
         ćete jedinstveno Štrumf selo, izgrađeno od drvenih bačvi i oslikano
         motivima iz popularnog crtaća. Kada poželite da se sklonite u hlad,

@@ -21,7 +21,7 @@ export const Sid = () => {
       <header></header>
       <img src={sid5} alt="Šid 1" />
       <h2>ŠID</h2>
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Smeštena sa jedne strane uz Dunav i Frušku Goru, a sa druge uz Savu i
         Bosut, prostire se najzapadnija opština Srema – Opština Šid. Njene
         prednosti uključuju povoljan geografski položaj, široke šumske komplekse
@@ -35,7 +35,7 @@ export const Sid = () => {
         povoljnoj perspektivi ovog regiona.
       </p>
       <img src={sid2} alt="Šid 2" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Nadmorska visina je 104 m. To je sedište najzapadnije opštine Srema,
         smešteno između reke Dunav i obronaka Fruške gore na severu, te reke
         Save na jugu. Područje na kojem je izgrađen Šid je poznato po voćarstvu
@@ -48,7 +48,7 @@ export const Sid = () => {
         nalazi spomen-kuća i galerija poznatog slikara Save Šumanovića.
       </p>
       <img src={sid7} alt="Šid 3" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ako postoji mesto gde se snovi i stvarnost, talenat i upornost,
         marljivost i sreća spajaju, onda je to sigurno sremaska ravnica i njena
         najzapadnija opština Šid. Ovo je prostor gde se prepliću istorija,
@@ -60,7 +60,7 @@ export const Sid = () => {
       </p>
 
       <img src={sid4} alt="Šid 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Teritorija opštine Šid bila je naseljavana još u praistoriji. Prva
         naselja su nastajala na mestima koja su bila blizu vode, ali i drugih
         životnih potreba poput drveća, divljači i trske. Jedno od poznatih
@@ -75,7 +75,7 @@ export const Sid = () => {
       </p>
 
       <img src={sid6} alt="Šid 5" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Nakon Rimljana, ove prostore su naselili Huni, Germani i Avari, koji su
         vladali Sremom više od dva veka. Zajedno sa Avarima dolaze i Sloveni,
         koji su se najduže zadržali na ovom području. Iz srednjeg veka potiče
@@ -87,7 +87,7 @@ export const Sid = () => {
         turskih upada.
       </p>
       <img src={sid1} alt="Šid 6" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Galerija slika „Sava Šumanović“ nalazi se u Šidu, u ulici Svetog Save
         br. 7, nekadašnjoj Maršala Tita br. 11, i u njoj je smešten najveći broj
         dela ovog velikog slikara. Sava Šumanović (Vinkovci, 22. januar 1896 –
@@ -100,7 +100,7 @@ export const Sid = () => {
         značaja.
       </p>
       <img src={sid8} alt="Šid 7" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Srpska pravoslavna crkva Svetog Nikole u Šidu je značajna verska i
         kulturna građevina. Smeštena u samom centru grada, ova crkva predstavlja
         duhovnu središnjicu za pravoslavne vernike u ovom regionu. Građena je u

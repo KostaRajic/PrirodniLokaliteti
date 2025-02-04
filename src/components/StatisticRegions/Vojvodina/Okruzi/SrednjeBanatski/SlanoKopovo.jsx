@@ -23,7 +23,7 @@ export const SlanoKopovo = () => {
           SPRECIJALNI REZERVAT PRIRODE "SLANO KOPOVO"
         </h2>
 
-        <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+        <p>
           Specijalni rezerva prirode “Slano Kopovo” u Novom Bečeju, uredbom
           Vlade Republike Srbije 2011. godine proglašen je za prirodno dobro od
           izuzetnog značaja prve kategorije. Spada među poslednje očuvane bare

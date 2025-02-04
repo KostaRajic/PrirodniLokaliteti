@@ -26,7 +26,7 @@ export const Subotica = () => {
 
       <h2>SUBOTICA</h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px" }}>
+      <p>
         Grad Subotica, smešten na severu Republike Srbije, u blizini granice sa
         Mađarskom, ima prosečnu nadmorsku visinu od 114 metara. Nalazi se 40
         metara iznad nivoa reke Tise u Kanjiži i 32 metra iznad nivoa Dunava u

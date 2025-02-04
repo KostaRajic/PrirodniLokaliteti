@@ -24,7 +24,7 @@ export const ManastirJazak = () => {
 
       <h2 style={{ color: "white" }}>MANASTIR JAZAK</h2>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Prema crkvenom predanju, manastir Jazak je osnovao despot Jovan, mlađi
         sin Stefana Slepog i Angeline Branković. Prvi siguran zapis o ovom
         manastiru nalazi se u rukopisnom "Triodu" jazačkog monaha Lavrentija iz
@@ -42,7 +42,7 @@ export const ManastirJazak = () => {
 
       <img src={jazak2} alt="Manastir Jazak 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Povećanje broja vernika, kao i monaha koji su želeli da nađu večnu
         spasenu kraj netruležnog tela poslednjeg srpskog cara, dovelo je do
         potrebe za izgradnjom novog hrama posvećenog Silasku Svetog Duha na
@@ -56,7 +56,7 @@ export const ManastirJazak = () => {
       </p>
 
       <img src={jazak4} alt="Manastir Jazak 3" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Iako je manastir više puta obnavljan, ne mogu se primetiti značajnija
         odstupanja u odnosu na stanje prikazano na litografiji Mihajla Troha iz
         1837. godine. Prva obnova izvedena je 1846. godine po nalogu mitropolita
@@ -74,7 +74,7 @@ export const ManastirJazak = () => {
       </p>
 
       <img src={jazak3} alt="Manastir Jazak 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Pod okupacijom Nezavisne Države Hrvatske, manastir Jazak je pretrpeo
         ogromna stradanja. Sa dolaskom okupatorskih snaga, manastir su napustili
         vladika Valerijan (Pribićević) i svi monasi, osim ruskog jermonaha
@@ -99,7 +99,7 @@ export const ManastirJazak = () => {
 
       <img src={jazak5} alt="Manastir Jazak 5" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Kao što je već pomenuto, manastirska riznica je opljačkana tokom Drugog
         svetskog rata, ali su starine, koje su kasnije vraćene iz Zagreba, danas
         smeštene u Muzeju Srpske Pravoslavne Crkve u Beogradu. Među tim

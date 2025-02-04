@@ -23,7 +23,7 @@ export const Indjija = () => {
 
       <h2>INĐIJA</h2>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Opština Inđija se nalazi u severoistočnom delu Srema, na jugozapadnim
         padinama Fruške gore. Prostire se na površini od 384 km² i sastoji se od
         11 naselja: Inđija, Beška, Novi Slankamen, Novi Karlovci, Krčedin,
@@ -40,7 +40,7 @@ export const Indjija = () => {
 
       <img src={indjija5} alt="Inđija 5" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Indjija je grad bogat zelenim površinama i parkovima, idealnim za odmor
         i rekreaciju. U samom centru grada nalazi se park sa uređenim stazama,
         klupama i igralištima, pogodnim za porodice i decu. Takođe, tu su i
@@ -63,7 +63,7 @@ export const Indjija = () => {
         />
       </div>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Indjija je domaćin i modernom Outlet Shopping Parku, savremenom
         trgovačkom centru koji se nalazi na ulazu u grad i nudi posetiocima
         raznovrsne prodavnice brendiranih proizvoda po povoljnim cenama. Ovde se
@@ -79,7 +79,7 @@ export const Indjija = () => {
 
       <img src={indjija2} alt="Inđija 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Keltsko selo je tematski turistički kompleks smešten u
         sportsko-rekreativnoj zoni Inđije, na ulazu u grad iz pravca Novog Sada.
         Inspirisan životom Kelta na ovim prostorima u III veku pre nove ere,
@@ -96,7 +96,7 @@ export const Indjija = () => {
       </p>
 
       <img src={indjija4} alt="Inđija 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Zoo VRT Koki je mali zoološki vrt je popularno mesto za porodice i
         školsku decu, jer nudi priliku da se vide različite vrste životinja u
         opuštenoj i edukativnoj atmosferi. Zoološki vrt nije prevelik, ali je

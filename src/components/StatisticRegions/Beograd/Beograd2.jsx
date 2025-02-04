@@ -25,7 +25,7 @@ export const Beograd2 = () => {
 
       <h2>BEOGRAD</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Beograd je glavni grad Srbije, smešten na ušću reka Save i Dunava. Grad
         ima bogatu istoriju koja seže više od 2.000 godina unazad i bio je pod
         vlašću mnogih carstava, uključujući Rimljane, Osmanlije i
@@ -41,7 +41,7 @@ export const Beograd2 = () => {
 
       <img src={bg5} alt="Beograd 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Beograd je dinamičan grad koji spaja prošlost i savremenost na
         jedinstven način. Kroz istoriju, bio je pod vlašću različitih
         civilizacija, što je ostavilo trag na njegovoj arhitekturi i kulturi.
@@ -53,7 +53,7 @@ export const Beograd2 = () => {
 
       <img src={bg1} alt="Beograd 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Grad se odlikuje prelepim parkovima, promenadama uz reke, ali i modernim
         četvrtima i poslovnim centrima. Beograd ima bogat noćni život i poznat
         je po kafanama, klubovima i koncertima. Grad je i važno kulturno
@@ -66,7 +66,7 @@ export const Beograd2 = () => {
       </p>
 
       <img src={bg4} alt="Grad Beograd" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Beograd se brzo razvija, sa rastućim sektorima tehnologije i turizma. Sa
         svojom živahnom atmosferom, Beograd privlači turiste iz celog sveta.
         Grad je poznat po svojoj multikulturalnosti, jer su u njemu živeli i

@@ -6,8 +6,8 @@ Glavni grad Šumadije je Kragujevac, dok su značajni gradovi u Zapadnoj Srbiji 
     text1: `
 Šumadija i Zapadna Srbija su dom mnogim prirodnim lepotama i turističkim lokalitetima, među kojima se izdvajaju:`,
 text11: `* Nacionalni park Tara – Ovaj park, smešten na zapadu Srbije, nudi impresivne planinske predele, jezera, reke i bogat biljni i životinjski svet. Tara je poznata po specifičnoj flori i fauni, kao i vidikovcima sa prelepim pogledom.`,
-text12: `* Đerdapska klisura – Jedan od najlepših prirodnih lokaliteta u Srbiji, Đerdap je dom za mnoge arheološke i istorijske lokalitete, uključujući i Tračanske i rimske iskopine. Danas je to i Nacionalni park sa fantastičnim prirodnim pejzažima i rekama.`,
-text13: `* Avala – Planina u blizini Beograda, idealna za planinarenje, šetnje i panoramske poglede sa Avalskog tornja.`,
+text12: `* Kragujevac sa okolinom – Kragujevac je grad u centralnom delu Srbije, poznat po svojoj industrijskoj tradiciji, istorijskim spomenicima i značaju u savremenoj kulturi. Okolina Kragujevca je bogata prirodnim lepotama, sa brojnim planinama, rekama i selima koja čine ovu oblast idealnom za seoski turizam.`,
+text13: `* Reka Gradac – Reka Gradac je jedna od najlepših reka u Srbiji, poznata po svojoj čistoj vodi i slikovitim pejzažima. Prolazi kroz gradove Valjevo i Mionicu, a u njenoj blizini se nalaze brojna izletišta i prirodni resursi.`,
 text14: `* Rudnik – Planinski masiv i jedan od najslikovitijih delova Zapadne Srbije, poznat po divnim vidikovcima, stazama za planinarenje i netaknutoj prirodi.`,
 text15: `* Zapadna Morava – Reka koja prolazi kroz jedan od najlepših predela Srbije, uz brojne prilike za ribolov, biciklizam i uživanje u prirodi.`,
 text16: `* Manastiri – Šumadija i Zapadna Srbija su bogate manastirima, kao što su manastir Ljubostinja, manastir Studenica i manastir Žiča, koji imaju značajnu duhovnu i kulturnu vrednost.`,

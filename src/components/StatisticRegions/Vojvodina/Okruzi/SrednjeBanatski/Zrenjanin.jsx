@@ -21,7 +21,7 @@ export const Zrenjanin = () => {
 
       <h2>ZRENJANIN</h2>
 
-      <p style={{ paddingTop: "80px",marginTop: "-10px"  }}>
+      <p>
         Zrenjanin, poznat je i kao grad na Begeju, grad mostova, grad sporta,
         kao multinacionalna i multikonfesionalna sredina, zanimljive
         arhitekture, grad živopisnog okruženja, sa četiri reke i kanalskom

@@ -22,7 +22,7 @@ export const RekaTisa = () => {
         TISA REČNA I PRIRODNA OAZA
       </h2>
 
-      <p style={{ paddingTop: "80px",marginTop: "-10px"  }}>
+      <p>
         Tisa je ukupne dužine 966 kilometara i tipična je ravničarska reka.
         Izvire u Karpatima i jedna je od najstarijih reka na svetu. Tok Tise
         deli se na tri dela: gornji tok od izvora, gde nastaje spajanjem Bele i

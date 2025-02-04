@@ -20,7 +20,7 @@ export const KupalistePeskara = () => {
 
       <h2>KUPALIŠTE PESKARA</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Kupalište je smešteno uz obalu Peskarske bare, odnosno, to je veće
         vodenoečnog područja koje se koristi za letnji odmor. Voda u ovom
         području je obično čista, a obala je uređena za prijatan boravak

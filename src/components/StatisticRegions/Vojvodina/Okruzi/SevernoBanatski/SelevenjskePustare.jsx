@@ -23,7 +23,7 @@ export const SelevenjskePustare = () => {
         SELEVENJSKE PUSTARE
       </h2>
 
-      <p style={{ paddingTop: "80px", marginTop: "-10px"  }}>
+      <p>
         Specijalni rezervat prirode "Selevenjske pustare" nalazi se na severu
         Vojvodine uz samu državnu granicu sa Mađarskom. Prostire se između mesta
         Bački Vinogradi i Horgoš, na teritoriji opština Kanjiža i Subotica.

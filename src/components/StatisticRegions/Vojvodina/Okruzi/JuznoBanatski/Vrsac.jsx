@@ -24,7 +24,7 @@ export const Vrsac = () => {
 
       <h2>VRŠAC</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px"}}>
         Vršac je jedan od najlepših gradova u Banatu, smešten u severoistočnom
         delu Srbije, odnosno jugoistočnom delu Vojvodine. Grad se nalazi uz rub
         Panonske nizije, u podnožju i na padinama Vršačkih planina. Na njegovom

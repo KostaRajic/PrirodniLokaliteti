@@ -25,7 +25,7 @@ export const AdaCiganlija = () => {
 
       <h2>ADA CIGANLIJA</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Ada Ciganlija, koja se nalazi na samo 4 km od centra Beograda, na reki
         Savi u blizini njenog ušća u Dunav, nekada je bila ostrvo, a danas je
         poluostrvo. Ovo područje, bogato gustim listopadnim šumama, proplancima
@@ -40,7 +40,7 @@ export const AdaCiganlija = () => {
 
       <img src={adaCiganlija2} alt="Ada Ciganlija 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Donja i gornja pregrada na rukavcu reke Save izgrađene su 1967. godine,
         čime je Beograd dobio jedinstveno jezero dužine 4,2 km, prosečne širine
         200 m i dubine između 4 i 6 m. Tokom letnjih meseci, Ada Ciganlija
@@ -55,7 +55,7 @@ export const AdaCiganlija = () => {
 
       <img src={adaCiganlija3} alt="Ada Ciganlija 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Savsko jezero (Ada Ciganlija) je idealno za vrhunska takmičenja na mirnim vodama,
         zahvaljujući svom položaju, kvalitetu vode, opremljenosti objekata i
         dužini staza. Pogodno je za različite vodene sportove kao što su
@@ -72,7 +72,7 @@ export const AdaCiganlija = () => {
 
       <img src={adaCiganlija4} alt="Ada Ciganlija 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Glavna vrsta vegetacije na Adi Ciganliji su hrastove i brestove šume.
         Tokom sredine prošlog veka, flora je obogaćena uvođenjem američke topole
         i zelenog jasena. Najdivlji delovi ostrva prekriveni su netaknutom

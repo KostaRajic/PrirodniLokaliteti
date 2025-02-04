@@ -21,7 +21,7 @@ export const BackoTopolskoJezero = () => {
         BAČKOTOPOLSKO JEZERO
       </h2>
 
-      <p style={{ paddingTop: "80px",marginTop: "-10px" }}>
+      <p>
         Jezero kod Bačke Topole, 2019. godine je
         proglašeno za najčistije u Vojvodini i u potpunosti je prilagođeno
         kupanju i letnjim zanimacijama. Jedno je od atraktivnih kupališta u

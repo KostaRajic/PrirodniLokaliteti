@@ -21,7 +21,7 @@ export const Kosutnjak = () => {
 
       <h2>KOŠUTNJAK</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p>
         Košutnjak, koji je park, šuma i gradsko izletište, prostire se na
         površini od 330 hektara i pripada opštinama Savski Venac, Čukarica i
         Rakovica. To je jedno od najpoznatijih i najpopularnijih beogradskih
@@ -36,7 +36,7 @@ export const Kosutnjak = () => {
 
       <img src={kosutnjak2} alt="Kalemegdan 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Košutnjak je od Zavoda za zaštitu prirode Srbije proglašen za "Spomenik
         prirode". To je jedini preostali deo autohtone šumske vegetacije u
         neposrednoj blizini centra Beograda. Šuma Košutnjak je izuzetno bogata i
@@ -51,7 +51,7 @@ export const Kosutnjak = () => {
 
       <img src={kosutnjak4} alt="Kalemegdan 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Košutnjak se prvi put pominje u dokumentima iz 1831. godine, kada se
         opisuje kao veoma gusta šuma. U drugoj polovini 19. veka, Košutnjak je
         postao prestižno lovište, gde su zajedno sa knezom Milošem Obrenovićem
@@ -66,7 +66,7 @@ export const Kosutnjak = () => {
 
       <img src={kosutnjak3} alt="Kalemegdan 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Pored spomen-obilježja, jedno od najpoznatijih i najomiljenijih mesta
         okupljanja Beograđana, naročito za vreme praznika, jeste Hajdučka česma.
         Prema predaji, haiduci su se okupljali oko nje na Đurđevdan. Poznata je

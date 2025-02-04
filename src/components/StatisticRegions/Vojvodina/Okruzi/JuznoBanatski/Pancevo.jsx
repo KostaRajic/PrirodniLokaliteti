@@ -25,7 +25,7 @@ export const Pancevo = () => {
 
       <h2>PANČEVO</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px"}}>
         Pančevo je jedan od najistaknutijih gradova u Vojvodini, prepoznatljiv
         po visokom stepenu industrijalizacije. I pored toga, grad ima bogatu
         kulturnu baštinu i značajnu ulogu u očuvanju tradicija ovog regiona.

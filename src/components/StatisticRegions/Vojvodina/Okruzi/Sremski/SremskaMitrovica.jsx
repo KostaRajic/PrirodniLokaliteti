@@ -22,7 +22,7 @@ export const SremskaMitrovica = () => {
 
       <h2>SREMSKA MITROVICA</h2>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ukoliko planirate putovanje na kojem ćete u isto vreme moći da osetite
         dodir istorije i prirode, onda ste na pravom putu u Sremsku Mitrovicu.
         Sremska Mitrovica, neodoljiva duša Srema, pruža svakom gostu mogućnost
@@ -35,7 +35,7 @@ export const SremskaMitrovica = () => {
 
       <img src={sMitrovica3} alt="Sremska Mitrovica Muzej Srema" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Muzej Srema u Sremskoj Mitrovici čuva i prikazuje kulturno nasleđe ovog
         regiona, sa bogatim zbirkama iz oblasti arheologije, etnologije i
         istorije. Osnovan 1954. godine, muzeј se fokusira na arheološke nalaze
@@ -46,7 +46,7 @@ export const SremskaMitrovica = () => {
       </p>
 
       <img src={sMitrovica5} alt="Ruinе ekonomskog dela Carske palate" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ruinе ekonomskog dela Carske palate iz doba starog Rima nalaze se u
         gradskom središtu Sremske Mitrovice, na arheološkom lokalitetu Sirmijum.
         Ovaj deo palate obuhvata ostatke raznih zgrada, skladišta, radionica i
@@ -57,7 +57,7 @@ export const SremskaMitrovica = () => {
       </p>
 
       <img src={sMitrovica4} alt="Fontana Kameni cvet Sremska Mitrovica" />
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Fontana Kameni cvet se nalazi u centru gradskog parka u neposrednoj
         blizini Srpskog doma u Sremskoj Mitrovici. Napravljena je 1946. godine,
         autora Ruskinje Irine Ne­po­ko­jčic­ke, prve poznate žene arhitekte u
@@ -74,7 +74,7 @@ export const SremskaMitrovica = () => {
 
       <img src={sMitrovica2} alt="Gradska plaža u Sremskoj Mitrovici" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Gradska plaža u Sremskoj Mitrovici je jedno od omiljenih mesta za
         opuštanje i uživanje, posebno tokom toplih letnjih meseci. Smeštena uz
         reku Savu, ova plaža nudi savršen ambijent za ljubitelje prirode,
