@@ -1,8 +1,8 @@
-import grza1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/Grza1.jpg";
-import grza2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/Grza2.jpg";
-import grza3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/Grza3.jpg";
-import grza4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/Grza4.jpg";
-import grza5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/Grza5.jpg";
+import grza1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza1.jpg";
+import grza2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza2.jpg";
+import grza3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza3.jpg";
+import grza4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza4.jpg";
+import grza5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
