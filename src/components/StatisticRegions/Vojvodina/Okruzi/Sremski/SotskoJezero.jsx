@@ -18,7 +18,7 @@ export const SotskoJezero = () => {
       <header></header>
       <img src={sotsko1} alt="Sotsko Jezero 1" />
 
-      <h2>SOTSKO JEZERO</h2>
+      <h2>Sotsko Jezero</h2>
 
       <p>
         Ako tražite savršen prostor za opuštanje, rekreaciju, uživanje u

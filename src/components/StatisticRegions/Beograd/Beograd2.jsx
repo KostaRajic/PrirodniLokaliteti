@@ -23,7 +23,7 @@ export const Beograd2 = () => {
       <header></header>
       <img src={bg3} alt="Beograd 1" />
 
-      <h2>BEOGRAD</h2>
+      <h2>Beograd</h2>
 
       <p>
         Beograd je glavni grad Srbije, smešten na ušću reka Save i Dunava. Grad

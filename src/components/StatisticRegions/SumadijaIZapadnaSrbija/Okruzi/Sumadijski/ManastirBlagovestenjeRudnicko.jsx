@@ -20,7 +20,7 @@ export const ManastirBlagovestenjeRudnicko = () => {
       <header></header>
       <img src={manastirBlagovestenje1} alt="Manastir Blagoveštenje Rudničko 1" />
 
-      <h2 style={{ color: "white" }}>MANASTIR BLAGOVEŠTENJE RUDNIČKO</h2>
+      <h2 style={{ color: "white" }}>Manastir Blagoveštenje Rudničko</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Manastir Blagoveštenje Rudničko, smešten na severnim obroncima planine

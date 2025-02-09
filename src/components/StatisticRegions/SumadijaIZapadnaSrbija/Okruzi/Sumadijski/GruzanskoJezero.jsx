@@ -21,7 +21,7 @@ export const GruzanskoJezero = () => {
       <header></header>
       <img src={gruzanskoJezero1} alt="Gružansko jezero 1" />
 
-      <h2>GRUŽANSKO JEZERO</h2>
+      <h2>Gružansko jezero</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Godine 1979. prepravljena je jedna od najdužih i vodom najbogatijih reka

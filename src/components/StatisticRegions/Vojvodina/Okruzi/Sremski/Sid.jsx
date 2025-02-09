@@ -20,7 +20,7 @@ export const Sid = () => {
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={sid5} alt="Šid 1" />
-      <h2>ŠID</h2>
+      <h2>Šid</h2>
       <p>
         Smeštena sa jedne strane uz Dunav i Frušku Goru, a sa druge uz Savu i
         Bosut, prostire se najzapadnija opština Srema – Opština Šid. Njene

@@ -23,7 +23,7 @@ export const TrgRepublike = () => {
       <header></header>
       <img src={trgRepublike1} alt="Trg Republike 1" />
 
-      <h2 style={{ color: "white", top: "-30px" }}>TRG REPUBLIKE</h2>
+      <h2 style={{ color: "white", top: "-30px" }}>Trg Republike</h2>
 
       <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Glavni gradski trg prostire se između "Gradske kafane", bioskopa

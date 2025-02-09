@@ -17,8 +17,8 @@ export const Sombor = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <img src={sombor1} alt="sombor 1" />
-        <h2>SOMBOR</h2>
+      <img src={sombor1} alt="Sombor 1" />
+        <h2>Sombor</h2>
 
 
       <p>

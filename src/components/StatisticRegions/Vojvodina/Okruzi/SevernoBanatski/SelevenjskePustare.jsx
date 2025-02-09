@@ -20,7 +20,7 @@ export const SelevenjskePustare = () => {
       <img src={pustare3} alt="Selevenjske pustare 1" />
 
       <h2>
-        SELEVENJSKE PUSTARE
+      Selevenjske pustare
       </h2>
 
       <p>

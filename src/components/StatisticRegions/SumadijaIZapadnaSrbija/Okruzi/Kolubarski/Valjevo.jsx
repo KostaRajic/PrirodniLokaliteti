@@ -21,7 +21,7 @@ export const Valjevo = () => {
       <header></header>
       <img src={valjevo1} alt="Valjevo 1" />
 
-      <h2>VALJEVO</h2>
+      <h2>Valjevo</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Opština Valjevo smeštena je u Zapadnoj Srbiji i predstavlja

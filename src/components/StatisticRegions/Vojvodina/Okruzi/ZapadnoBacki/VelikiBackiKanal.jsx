@@ -16,8 +16,8 @@ export const VelikiBackiKanal = () => {
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       
-      <img src={VBK5} alt="Veliki Backi Kanal1" />
-        <h2>VELIKI BAČKI KANAL</h2>
+      <img src={VBK5} alt="Veliki Backi Kanal 1" />
+        <h2>Veliki Backi Kanal</h2>
 
       <p>
         Veliki bački kanal je deo Hidrosistema Dunav-Tisa-Dunav, smešten u
@@ -27,18 +27,18 @@ export const VelikiBackiKanal = () => {
         više vojvođanskih gradova i sela, uključujući Sombor, Vrbas i Kulu.
       </p>
 
-      <img src={VBK2} alt="Veliki Backi Kanal2" />
+      <img src={VBK2} alt="Veliki Backi Kanal 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Prokopavanje Velikog bačkog kanala predstavljalo je jedan od
         najznačajnijih poduhvata u istoriji Sombora, ali i cele Bačke. Kanal je
         bio posebno važan za regulisanje nivoa voda u gradskom ataru, pre svega
         na oranicama, pašnjacima i livadama.
       </p>
 
-      <img src={VBK3} alt="Veliki Backi Kanal3" />
+      <img src={VBK3} alt="Veliki Backi Kanal 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Njegovim prokopavanjem značajno je smanjen broj bara, močvara, mrtvaja,
         jezeraca i rečica koje su, povremeno ili stalno, ugrožavale zemljište u
         ataru grada i okolnih naselja. Samim tim, znatno su umanjene i stalne
@@ -48,8 +48,7 @@ export const VelikiBackiKanal = () => {
 
       <img
         src={VBK1}
-        alt="Veliki Backi Kanal5"
-        style={{ marginBottom: "-10px" }}
+        alt="Veliki Backi Kanal 5"
       />
       <p>
         Veliki bački kanal je značajan i kao stanište za raznovrstan biljni i

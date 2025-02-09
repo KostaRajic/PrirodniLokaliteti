@@ -96,7 +96,7 @@ export const Cer = () => {
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={cer1} alt="Planina Cer 1" />
-      <h2>PLANINA CER</h2>
+      <h2>Planina Cer</h2>
       <p style={{ paddingTop: "50px" }}>
         Cer je planina u blizini Šapca, koja nudi raznovrsne sadržaje za
         turiste. Iako je najpoznatija po istorijskoj bici iz Prvog svetskog

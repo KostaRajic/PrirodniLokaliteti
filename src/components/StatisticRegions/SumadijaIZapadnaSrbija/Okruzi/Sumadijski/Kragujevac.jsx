@@ -133,7 +133,7 @@ export const Kragujevac = () => {
       <header></header>
       <img src={kragujevac1} alt="Kragujevac 1" />
 
-      <h2>KRAGUJEVAC</h2>
+      <h2>Kragujevac</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Kragujevac je ekonomski, administrativni, obrazovni, zdravstveni,

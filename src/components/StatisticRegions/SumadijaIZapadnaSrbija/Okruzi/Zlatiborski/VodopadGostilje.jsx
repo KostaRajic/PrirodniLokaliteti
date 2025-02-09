@@ -18,7 +18,7 @@ export const VodopadGostilje = () => {
       <header></header>
       <img src={gostilje2} alt="Vodopad Gostilje 1" />
 
-      <h2>VODOPAD GOSTILJE</h2>
+      <h2>Vodopad Gostilje</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Vodopad Gostilje, smešten u selu Gostilje, u blizini Zlatibora, na

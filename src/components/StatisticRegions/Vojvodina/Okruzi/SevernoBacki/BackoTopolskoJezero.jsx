@@ -18,7 +18,7 @@ export const BackoTopolskoJezero = () => {
       <img src={btjezero4} alt="Backotopolsko jezero 1" />
 
       <h2>
-        BAČKOTOPOLSKO JEZERO
+        Bačkotopolsko Jezero
       </h2>
 
       <p>

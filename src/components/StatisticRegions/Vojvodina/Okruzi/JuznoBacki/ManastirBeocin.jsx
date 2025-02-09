@@ -16,10 +16,10 @@ export const ManastirBeocin = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={beocin3} alt="Bela Crkva 1" />
+      <img src={beocin3} alt="Manastir Beočin 1" />
 
       <h2 style={{ color: 'white'}}>
-        MANASTIR BEOČIN
+        Manastir Beočin
       </h2>
 
       <p style={{ paddingTop: "50px"}}>
@@ -30,7 +30,7 @@ export const ManastirBeocin = () => {
         za molitvu, meditaciju i duhovne posete.
       </p>
 
-      <img src={beocin1} alt="Bela Crkva 2" />
+      <img src={beocin1} alt="Manastir Beočin 2" />
 
       <p style={{ marginTop: "-10px" }}>
         Manastir Beočin ima bogatu istoriju, a osnovan je u 15. veku, tačnije
@@ -40,7 +40,7 @@ export const ManastirBeocin = () => {
         centar duhovnog života i kulturnog stvaralaštva.
       </p>
 
-      <img src={beocin4} alt="Bela Crkva 3" />
+      <img src={beocin4} alt="Manastir Beočin 3" />
 
       <p style={{ marginTop: "-10px" }}>
         Manastir je nekoliko puta bio uništavan i obnavljan tokom istorije,
@@ -49,7 +49,7 @@ export const ManastirBeocin = () => {
         oslobođenja Srbije obnovljen i ponovo postao aktivno duhovno središte.
       </p>
 
-      <img src={beocin2} alt="Bela Crkva 4" />
+      <img src={beocin2} alt="Manastir Beočin 4" />
       <p style={{ marginTop: "-10px" }}>
         Manastir Beočin je pravi primer tradicionalne srpske pravoslavne
         arhitekture, sa crkvom posvećenom Uspenju Presvete Bogorodice. Crkva je
@@ -61,7 +61,7 @@ export const ManastirBeocin = () => {
         žele da provedu neko vreme u molitvi i razmišljanju.
       </p>
 
-      <img src={beocin5} alt="Bela Crkva 5" style={{ marginBottom: "-10px" }} />
+      <img src={beocin5} alt="Manastir Beočin 5"/>
       <p>
         Danas je manastir Beočin aktivan manastir, u kojem žive monasi koji se
         bave duhovnim životom, molitvom, a takođe i sačuvavanjem i obnovom

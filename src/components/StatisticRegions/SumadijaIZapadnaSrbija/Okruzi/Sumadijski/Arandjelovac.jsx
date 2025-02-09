@@ -102,7 +102,7 @@ export const Arandjelovac = () => {
       <header></header>
       <img src={arandjelovac1} alt="Aradjelovac 1" />
 
-      <h2>ARANĐELOVAC</h2>
+      <h2>Aranđelovac</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Aranđelovac je grad i opština u Srbiji, smešten u podnožju planina

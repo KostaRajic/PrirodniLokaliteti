@@ -15,9 +15,9 @@ export const ManastirSretenje = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={sretenje1} alt="Jezero Međuvršje" />
+      <img src={sretenje1} alt="Manastir Sretenje" />
 
-      <h2 style={{ color: "white" }}>MANASTIR SRETENJE</h2>
+      <h2 style={{ color: "white" }}>Manastir Sretenje</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Manastir Sretenje nalazi se u Dučalovićima, mestu u opštini Lučani, pod
@@ -32,7 +32,7 @@ export const ManastirSretenje = () => {
         manastira Sretenje u selu Pakovraće.
       </p>
 
-      <img src={sretenje2} alt="Jezero Medjuvrsje" />
+      <img src={sretenje2} alt="Manastir Sretenje na Ovcaru i Kablaru" />
 
       <p>
         Manastirska crkva je obnovljena zahvaljujući trudu monaha Nikifora
@@ -44,7 +44,7 @@ export const ManastirSretenje = () => {
         u crkvi manastira Sretenje.
       </p>
 
-      <img src={sretenje3} alt="OvcarskoKablarska klisura" />
+      <img src={sretenje3} alt="Manastir Sretenje u moravickom okrugu" />
 
       <p>
         Manastirska crkva je izgrađena kao jednobrodna građevina, sa dubokom,
@@ -58,7 +58,7 @@ export const ManastirSretenje = () => {
         manastirsku crkvu na kraj 16. veka.
       </p>
 
-      <img src={sretenje4} alt="Jezero Medjuvrsje 2" />
+      <img src={sretenje4} alt="Manastir Sretenje 2" />
 
       <p>
         Živopis naosa, oltarskog prostora i zidane oltarske pregrade iz 1844.

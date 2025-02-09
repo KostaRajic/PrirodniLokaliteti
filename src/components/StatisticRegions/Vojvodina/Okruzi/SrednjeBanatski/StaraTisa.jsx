@@ -17,7 +17,7 @@ export const StaraTisa = () => {
       <header></header>
       <img src={stisa1} alt="Stara Tisa 1" />
 
-      <h2 style={{right: '50px'}}>PARK PRIRODE "STARA TISA" KOD BISERNOG OSTRVA</h2>
+      <h2 style={{right: '50px'}}>Park prirode "Stara Tisa kod Bisernog ostrva"</h2>
 
       <p>
         Park prirode «Stara Tisa kod Bisernog ostrva» je kao hidrološki objekat

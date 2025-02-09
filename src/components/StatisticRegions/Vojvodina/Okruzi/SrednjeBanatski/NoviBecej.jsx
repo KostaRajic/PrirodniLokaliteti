@@ -18,7 +18,7 @@ export const NoviBecej = () => {
       <header></header>
       <img src={nbecej3} alt="Novi Bečej 1" />
 
-      <h2>NOVI BEČEJ</h2>
+      <h2>Novi Bečej</h2>
 
       <p>
         Novi Bečej je grad i sedište opštine u Vojvodini, Srbija, smešten u

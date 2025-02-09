@@ -20,7 +20,7 @@ export const Sabac = () => {
       <header></header>
       <img src={sabac1} alt="Šabac 1" />
 
-      <h2 style={{color: 'white'}}>ŠABAC</h2>
+      <h2 style={{color: 'white'}}>Šabac</h2>
 
       <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Šabac je jedan od značajnijih i prepoznatljivijih gradova u Srbiji,

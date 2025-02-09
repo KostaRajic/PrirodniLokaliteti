@@ -20,7 +20,7 @@ export const NoviSad = () => {
       <header></header>
       <img src={NS1} alt="Novi Sad 1" />
 
-      <h2>NOVI SAD</h2>
+      <h2>Novi Sad</h2>
 
       <p style={{ paddingTop: "50px"}}>
         Grad leži na obalama reke Dunav, između 1252. i 1262. kilometra rečnog

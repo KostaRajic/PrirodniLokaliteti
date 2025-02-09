@@ -20,7 +20,7 @@ export const BelaCrkva = () => {
       <header></header>
       <img src={belaC5} alt="Bela Crkva 1" />
 
-      <h2>BELA CRKVA</h2>
+      <h2>Bela Crkva</h2>
 
       <p style={{ paddingTop: "50px"}}>
         Bela Crkva, smeštena u jugozapadnom delu Srbije, poznata je po svojim

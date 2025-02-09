@@ -19,7 +19,7 @@ export const RekaTisa = () => {
       <img src={tisa1} alt="Tisa 1" />
 
       <h2>
-        TISA REČNA I PRIRODNA OAZA
+        Reka Tisa
       </h2>
 
       <p>

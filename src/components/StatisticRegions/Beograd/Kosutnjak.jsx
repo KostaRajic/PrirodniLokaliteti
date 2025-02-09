@@ -19,7 +19,7 @@ export const Kosutnjak = () => {
       <header></header>
       <img src={kosutnjak1} alt="Kalemegdan 1" />
 
-      <h2>KOŠUTNJAK</h2>
+      <h2>Košutnjak</h2>
 
       <p>
         Košutnjak, koji je park, šuma i gradsko izletište, prostire se na

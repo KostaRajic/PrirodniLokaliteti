@@ -25,7 +25,7 @@ export const SremskiKarlovci = () => {
       <h2
         style={{color: "white" }}
       >
-        SREMSKI KARLOVCI
+        Sremski Karlovci
       </h2>
 
       <p style={{ paddingTop: "50px"}}>

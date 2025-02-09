@@ -16,9 +16,9 @@ export const SajkaskaOblast = () => {
       <ScrollToTop/>
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <img src={sajkaska1} alt="srp koviljsko petrovaradinski rit" />
+      <img src={sajkaska1} alt="Šajkaška oblast" />
 
-      <h2>ŠAJKAŠKA OBLAST</h2>
+      <h2>Šajkaška oblast</h2>
 
       <p style={{ paddingTop: "50px"}}>
         Šajkaška oblast je bila i srce stvaranja Srpske Vojvodine. U toku

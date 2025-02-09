@@ -20,7 +20,7 @@ export const SremskaMitrovica = () => {
       <header></header>
       <img src={sMitrovica7} alt="Sremska Mitrovica 1" />
 
-      <h2>SREMSKA MITROVICA</h2>
+      <h2>Sremska Mitrovica</h2>
 
       <p>
         Ukoliko planirate putovanje na kojem ćete u isto vreme moći da osetite

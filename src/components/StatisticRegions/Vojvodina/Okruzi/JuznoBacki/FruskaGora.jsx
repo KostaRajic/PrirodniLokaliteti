@@ -26,7 +26,7 @@ export const FruskaGora = () => {
       <header></header>
       <img src={fruska2} alt="Fruska Gora 1" />
 
-      <h2 style={{ color: "white" }}>NACIONALNI PARK "FRUŠKA GORA"</h2>
+      <h2 style={{ color: "white" }}>Nacionalni Park "Fruška Gora"</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Najviši vrh je Crveni Čot (539 m), a najznačajniji turistički centar

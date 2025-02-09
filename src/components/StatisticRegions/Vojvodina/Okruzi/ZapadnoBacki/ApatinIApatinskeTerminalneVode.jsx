@@ -24,7 +24,7 @@ export const Apatin = () => {
         <header></header>
         <img src={apatin1} alt="apatin1" />
         
-          <h2>APATIN I TERMINALNE VODE</h2>
+          <h2>Apatin i Terminalne Vode</h2>
 
         <p>
           Apatin, smešten na severozapadu Srbije, u Zapadno Bačkom okrugu,

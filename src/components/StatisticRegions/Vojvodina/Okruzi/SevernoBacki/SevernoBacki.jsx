@@ -39,7 +39,7 @@ export const SevernoBacki = () => {
   return (
     <div className="okrugBackground">
       <header>
-        <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)}  style={{fill: 'white'}}/>
+        <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)}  style={{fill: 'white',right: '50px'}}/>
       </header>
       <section className="severnoBackiOkrug">
         <h1>Severno - Bački okrug</h1>

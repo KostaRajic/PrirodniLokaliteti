@@ -19,7 +19,7 @@ export const Zrenjanin = () => {
       <header></header>
       <img src={zrenjanin1} alt="Zrenjanin 1" />
 
-      <h2>ZRENJANIN</h2>
+      <h2>Zrenjanin</h2>
 
       <p>
         Zrenjanin, poznat je i kao grad na Begeju, grad mostova, grad sporta,

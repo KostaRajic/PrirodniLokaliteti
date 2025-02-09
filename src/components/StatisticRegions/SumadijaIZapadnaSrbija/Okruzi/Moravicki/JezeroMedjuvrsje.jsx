@@ -18,7 +18,7 @@ export const JezeroMedjuvrsje = () => {
       <header></header>
       <img src={medjuvrsje1} alt="Jezero Međuvršje" />
 
-      <h2 style={{ color: "white" }}>JEZERO MEĐUVRŠJE</h2>
+      <h2 style={{ color: "white" }}>Međuvršje</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Međuvršje je najveće veštačko jezero na Zapadnoj Moravi, smešteno na

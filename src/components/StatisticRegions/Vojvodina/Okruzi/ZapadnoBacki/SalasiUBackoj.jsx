@@ -17,7 +17,7 @@ export const SalasiUBackoj = () => {
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={salasi3} alt="Salaši u Bačkoj 1" />
-        <h2>SALAŠI U BAČKOJ</h2>
+        <h2>Salaši u Bačkoj</h2>
 
 
       <p>

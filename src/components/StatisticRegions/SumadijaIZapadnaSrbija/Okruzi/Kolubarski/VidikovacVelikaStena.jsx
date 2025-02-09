@@ -18,7 +18,7 @@ export const VidikovacVelikaStena = () => {
       <header></header>
       <img src={velikaStena1} alt="Vidikovac Velika Stena 1" />
 
-      <h2>VIDIKOVAC VELIKA STENA</h2>
+      <h2>Vidikovac Velika Stena</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Velika stena, poznata i kao Lazareva stena, predstavlja jedan od

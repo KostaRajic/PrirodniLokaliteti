@@ -97,9 +97,9 @@ export const Cacak = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <img src={cacak1} alt="Planina Rudnik 1" />
+      <img src={cacak1} alt="Grad Čačak 1" />
 
-      <h2 style={{ color: "white" }}>ČAČAK</h2>
+      <h2 style={{ color: "white" }}>Čačak</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Grad Čačak se većim delom nalazi u zapadnom Pomoravlju i predstavlja
@@ -111,7 +111,7 @@ export const Cacak = () => {
         i toku Zapadne Morave.
       </p>
 
-      <img src={cacak2} alt="Planina Rudnik 2" />
+      <img src={cacak2} alt="Čačak 2" />
 
       <p>
         Reljef grada Čačka uglavnom je brdsko-brežuljkasti, dok je u centralnom
@@ -127,7 +127,7 @@ export const Cacak = () => {
         obale Zapadne Morave.
       </p>
 
-      <img src={cacak3} alt="Planina Rudnik 3" />
+      <img src={cacak3} alt="Centar grada Čačka" />
 
       <p>
         Centar grada Čačka je urbano i administrativno središte, koje čini
@@ -206,7 +206,7 @@ export const Cacak = () => {
         divljih zveri iz različitih svetskih mitologija.
       </p>
 
-      <img src={cacak4} alt="Planina Rudnik 4" />
+      <img src={cacak4} alt="Gradski park u Čačku" />
 
       <p>
         Gradski park u Čačku je jedan od omiljenih prostora za odmor i
@@ -219,7 +219,7 @@ export const Cacak = () => {
         posetiocima.
       </p>
 
-      <img src={cacak5} alt="Planina Rudnik 5" />
+      <img src={cacak5} alt="Narodni muzej u Čačku" />
 
       <p>
         Narodni muzej u Čačku je značajna kulturna institucija koja čuva i
@@ -235,7 +235,7 @@ export const Cacak = () => {
         ga važnim mestom za očuvanje i proučavanje kulturne baštine Čačka.
       </p>
 
-      <img src={cacak6} alt="Planina Rudnik 5" />
+      <img src={cacak6} alt="Memorijalni kompleks i spomenik na Ljubiću" />
 
       <p>
         Memorijalni kompleks i spomenik na Ljubiću posvećeni su boji na Ljubiću
@@ -248,7 +248,7 @@ export const Cacak = () => {
         Tanaskom Rajićem, koji je poginuo tokom boja, 25. aprila 1815. godine.
       </p>
 
-      <img src={cacak7} alt="Planina Rudnik 5" />
+      <img src={cacak7} alt="Rimske terme u Čačku" />
 
       <p>
         Rimske terme u Čačku predstavljaju značajan arheološki lokalitet koji
@@ -266,7 +266,7 @@ export const Cacak = () => {
         turistička destinacija i važan deo kulturno-istorijskog nasleđa grada.
       </p>
 
-      <img src={cacak8} alt="Planina Rudnik 5" />
+      <img src={cacak8} alt="Crkva u Čačku" />
 
       <p>
         Crkva se nalazi u samom centru Čačka. Ktitor je knez Stracimir, brat

@@ -16,7 +16,7 @@ export const ManastirBlagovestenje = () => {
       <header></header>
       <img src={blagovestenje2} alt="Manastir Blagoveštenja na Kablaru" />
 
-      <h2 style={{ color: "white" }}>MANASTIR BLAGOVEŠTENJE</h2>
+      <h2 style={{ color: "white" }}>Manastir Blagoveštenja</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Manastir Blagoveštenje smešten je u podnožju Kablara. Tačan datum

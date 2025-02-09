@@ -23,7 +23,7 @@ export const Pancevo = () => {
       <header></header>
       <img src={pancevo4} alt="Pančevo grad" />
 
-      <h2>PANČEVO</h2>
+      <h2>Pančevo</h2>
 
       <p style={{ paddingTop: "50px"}}>
         Pančevo je jedan od najistaknutijih gradova u Vojvodini, prepoznatljiv

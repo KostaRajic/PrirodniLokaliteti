@@ -19,7 +19,7 @@ export const PlaninaZlatar = () => {
       <header></header>
       <img src={zlatar3} alt="Planina Zlatar 1" />
 
-      <h2>PLANINA ZLATAR</h2>
+      <h2>Planina Zlatar</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Planina Zlatar nalazi se u jugozapadnom delu Srbije, na ivici Pešterske

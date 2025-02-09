@@ -18,7 +18,7 @@ export const PlaninaRudnik = () => {
       <header></header>
       <img src={planinaRudnik1} alt="Planina Rudnik 1" />
 
-      <h2 style={{color: 'white'}}>PLANINA RUDNIK</h2>
+      <h2 style={{color: 'white'}}>Planina Rudnik</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Rudnik, planina koja dominira Šumadijom, nalazi se oko 100 km južno od

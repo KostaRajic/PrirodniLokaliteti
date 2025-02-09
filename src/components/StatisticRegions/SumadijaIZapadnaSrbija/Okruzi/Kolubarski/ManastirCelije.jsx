@@ -22,7 +22,7 @@ export const ManastirCelije = () => {
       <header></header>
       <img src={celije4} alt="Manastir Ćelije 1" />
 
-      <h2 style={{marginLeft: '50px', color: 'white'}}>MANASTIR ĆELIJE</h2>
+      <h2 style={{marginLeft: '50px', color: 'white'}}>Manastir Ćelije</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Manastir Ćelije posvećen svetom velikomučeniku Georgiju nalazi se oko 3

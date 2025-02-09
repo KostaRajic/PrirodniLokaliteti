@@ -20,9 +20,9 @@ export const BesenovackoJezero = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={besenovackoJezero1} alt="Manastir Jazak 1" />
+      <img src={besenovackoJezero1} alt="Bešenovačko jezero 1" />
 
-      <h2 style={{ color: "white" }}>BEŠENOVAČKO JEZERO</h2>
+      <h2 style={{ color: "white" }}>Bešenovačko jezero</h2>
 
       <p>
         Bešenovačko jezero, poznato i kao jezero Beli kamen, pravo je prirodno
@@ -39,7 +39,7 @@ export const BesenovackoJezero = () => {
         za koje se takođe smatra da ima terapijska dejstva.
       </p>
 
-      <img src={besenovackoJezero2} alt="Manastir Jazak 2" />
+      <img src={besenovackoJezero2} alt="Bešenovačko jezero 2" />
 
       <p>
         Bešenovačko jezero se izdvaja od drugih akumulacionih jezera, jer je
@@ -49,7 +49,7 @@ export const BesenovackoJezero = () => {
         mogu videti jata sitnih riba.
       </p>
 
-      <img src={besenovackoJezero3} alt="Manastir Jazak 3" />
+      <img src={besenovackoJezero3} alt="Bešenovačko jezero 3" />
       <p>
         Iako se nalazi duboko u srcu nacionalnog parka i okruženo netaknutom
         prirodom, Bešenovačko jezero svakodnevno privlači veliki broj
@@ -60,7 +60,7 @@ export const BesenovackoJezero = () => {
         rano ujutro.
       </p>
 
-      <img src={besenovackoJezero5} alt="Manastir Jazak 4" />
+      <img src={besenovackoJezero5} alt="Bešenovačko jezero 4" />
       <p>
         Jedan deo plaže jezera je uredan i opremljen sa nekoliko kafića gde
         možete da se opustite, uživate u osveženju i pronađete slobodnu
@@ -70,7 +70,7 @@ export const BesenovackoJezero = () => {
         jezera prisutno mnogo sitnog kamenja, što može otežati udoban boravak.
       </p>
 
-      <img src={besenovackoJezero4} alt="Manastir Jazak 5" />
+      <img src={besenovackoJezero4} alt="Bešenovačko jezero 5" />
 
       <p>
         Bešenovačko jezero smešteno je blizu sela Bešenovački Prnjavor, u

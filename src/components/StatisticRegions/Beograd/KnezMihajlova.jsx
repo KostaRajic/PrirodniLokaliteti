@@ -19,7 +19,7 @@ export const KnezMihailova = () => {
       <header></header>
       <img src={KnezMihailova1} alt="Knez Mihailova 1" />
 
-      <h2>KNEZ MIHAILOVA</h2>
+      <h2>Knez Mihajlova</h2>
 
       <p>
         Nastanak i razvoj najpoznatije beogradske ulice, koja je danas

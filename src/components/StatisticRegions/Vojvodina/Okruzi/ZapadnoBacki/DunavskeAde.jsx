@@ -12,12 +12,11 @@ export const DunavskeAde = () => {
 
   return (
     <div className="placeBackground">
-      <ScrollToTop/>
+      <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={ade4} alt="Dunavseke Ade 4" />
-        <h2>DUNAVSKE ADE</h2>
-
+      <h2>Dunavseke Ade</h2>
 
       <p>
         Dunavske Ade u zapadnoj Bačkoj predstavljaju specifičan ekosistem koji
@@ -56,7 +55,6 @@ export const DunavskeAde = () => {
         očuvanje prirodnih resursa i pružaju miran ambijent za one koji žele da
         pobegnu od gradske vreve i uživaju u divljoj prirodi.
       </p>
-
     </div>
   );
 };

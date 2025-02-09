@@ -19,7 +19,7 @@ export const ZaovinskoJezero = () => {
       <header></header>
       <img src={zaovinskoJezero1} alt="Zaovinsko jezero 1" />
 
-      <h2>JEZERO ZAOVINE</h2>
+      <h2>Zaovinsko jezero</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Zaovinsko jezero, smešteno na planini Tari u blizini slikovitog sela

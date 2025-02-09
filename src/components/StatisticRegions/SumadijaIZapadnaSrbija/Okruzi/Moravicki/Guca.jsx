@@ -16,9 +16,9 @@ export const Guca = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}} />
       <header></header>
-      <img src={guca1} alt="Manastir Blagoveštenja na Kablaru" />
+      <img src={guca1} alt="Guča" />
 
-      <h2>GUČA</h2>
+      <h2>Guča</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Guča je gradska naselja u opštini Lučani, u Moravičkom okrugu, u Srbiji.
@@ -27,7 +27,7 @@ export const Guca = () => {
         trubača.
       </p>
 
-      <img src={guca3} alt="Manastir Blagoveštenja na Kablaru 2" />
+      <img src={guca3} alt="Guča2 " /> 
 
       <p>
         Guča se prvi put pominje u turskom katastarskom popisu iz 1476. godine.
@@ -41,7 +41,7 @@ export const Guca = () => {
         kneza Miloša Obrenovića.
       </p>
 
-      <img src={guca2} alt="Manastir Blagoveštenja na Kablaru 3" />
+      <img src={guca2} alt="Guča 3" />
 
       <p>
         Dragačevski sabor je godišnji festival trubača koji se održava u Guči, u
@@ -52,7 +52,7 @@ export const Guca = () => {
         festivalu snimljeno je nekoliko dokumentarnih filmova.
       </p>
 
-      <img src={guca4} alt="Manastir Blagoveštenja na Kablaru 3" />
+      <img src={guca4} alt="Guča 4" />
 
       <p>
         Prvi Dragačevski sabor u Guči započeo je skromno, sredinom oktobra 1961.
@@ -62,7 +62,7 @@ export const Guca = () => {
         je festivalu dao ime Veliki (narodni) sabor „Sa Ovčara i Kablara“.
       </p>
 
-      <img src={guca5} alt="Manastir Blagoveštenja na Kablaru 3" />
+      <img src={guca5} alt="Guča 5" />
 
       <p>
         Za festival su zaslužni i muzički entuzijasti Miodrag Vasiljević,

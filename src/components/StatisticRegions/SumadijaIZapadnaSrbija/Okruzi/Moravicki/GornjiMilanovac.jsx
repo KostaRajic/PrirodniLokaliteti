@@ -22,9 +22,9 @@ export const GornjiMilanovac = () => {
         onClick={() => navigate(-1)}
       />
       <header></header>
-      <img src={gMilanovac1} alt="Manastir Blagoveštenja na Kablaru" />
+      <img src={gMilanovac1} alt="Gornji Milanovac" />
 
-      <h2>GORNJI MILANOVAC</h2>
+      <h2>Gornji Milanovac</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Opština Gornji Milanovac pripada Moravičkom okrugu, koji se nalazi u
@@ -38,7 +38,7 @@ export const GornjiMilanovac = () => {
         severozapada graniči sa opštinama Požega i Mionica.
       </p>
 
-      <img src={gMilanovac7} alt="Manastir Blagoveštenja na Kablaru" />
+      <img src={gMilanovac7} alt="Gornji Milanovac" />
 
       <p>
         Gornji Milanovac je najveće naselje koje ima sve karakteristike modernog
@@ -55,13 +55,13 @@ export const GornjiMilanovac = () => {
       <div className="displayFlexClassic">
         <img
           src={gMilanovac3}
-          alt="Manastir Blagoveštenja na Kablaru 3"
+          alt="Takovo"
           style={{ padding: "50px", width: "47%" }}
         />
 
         <img
           src={gMilanovac2}
-          alt="Manastir Blagoveštenja na Kablaru 2"
+          alt="Takovo 2"
           style={{ padding: "50px", width: "47%" }}
         />
       </div>
@@ -81,7 +81,7 @@ export const GornjiMilanovac = () => {
         Takovskog ustanka za istoriju Srbije.
       </p>
 
-      <img src={gMilanovac4} alt="Manastir Blagoveštenja na Kablaru 3" />
+      <img src={gMilanovac4} alt="Gornji Milanovac 3" />
 
       <p>
         Grebenom Rudnik-Suvobor opština je podeljena na manji severni i znatno
@@ -97,7 +97,7 @@ export const GornjiMilanovac = () => {
         se prvobitni tektonski oblici ne pojavljuju neposredno u crtama reljefa.
       </p>
 
-      <img src={gMilanovac5} alt="Manastir Blagoveštenja na Kablaru 3" />
+      <img src={gMilanovac5} alt="Gornji Milanovac 4" />
 
       <p>
         Crkva Svetog Nikole u Staroj čaršiji, selo Brusnica (Opština Gornji
@@ -116,7 +116,7 @@ export const GornjiMilanovac = () => {
         sanacioni radovi na unutrašnjoj arhitekturi crkve i uređena je porta.
       </p>
 
-      <img src={gMilanovac8} alt="Manastir Blagoveštenja na Kablaru 3" />
+      <img src={gMilanovac8} alt="Gornji Milanovac 5" />
 
       <p>
         Spomen-park Brdo mira je spomenički kompleks u Gornjem Milanovcu koji
@@ -133,7 +133,7 @@ export const GornjiMilanovac = () => {
         posetioce.
       </p>
 
-      <img src={gMilanovac6} alt="Manastir Blagoveštenja na Kablaru 3" />
+      <img src={gMilanovac6} alt="Gornji Milanovac 6" />
 
       <p>
         Savinac, omiljeno izletište Milanovčana nalazi se u zaseoku Šarani 4 km od

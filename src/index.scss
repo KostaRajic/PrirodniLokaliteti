@@ -159,9 +159,7 @@ body {
   z-index: 2200;
   background-color: white;
   font-size: 25px;
-
   cursor: default;
-
 
 
   .zapadnoBackiClassMain {
@@ -335,6 +333,23 @@ body {
 
   .zlatiborskiOkrug {
     background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/zlatiborskiOkrug.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+    padding-bottom: 50px;
+    font-size: 26px;
+    text-shadow: 5px 5px 5px black;
+
+    div {
+      padding: 0 50px;
+      word-spacing: 1.5px;
+    }  
+  }
+
+  .pomoravskiOkrug {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/pomoravskiOkrug.jpg);
     background-position: 50%;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);

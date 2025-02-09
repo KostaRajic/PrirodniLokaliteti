@@ -18,7 +18,7 @@ export const PlaninaZlatibor = () => {
       <header></header>
       <img src={zlatibor1} alt="Planina Zlatibor 1" />
 
-      <h2>PLANINA ZLATIBOR</h2>
+      <h2>Planina Zlatibor</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Padine Zlatibora su najizraženije u istočnom i severoistočnom delu

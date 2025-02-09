@@ -24,7 +24,7 @@ export const Subotica = () => {
       <header></header>
       <img src={sub5} alt="Subotica 1" />
 
-      <h2>SUBOTICA</h2>
+      <h2>Subotica</h2>
 
       <p>
         Grad Subotica, smešten na severu Republike Srbije, u blizini granice sa

@@ -18,7 +18,7 @@ export const ManastirNovoHopovo = () => {
       <header></header>
       <img src={novoHopovo1} alt="Manastir Novo Hopovo 1" />
 
-      <h2 style={{color: 'white'}}>MANASTIR NOVO HOPOVO</h2>
+      <h2 style={{color: 'white'}}>Manastir Novo Hopovo</h2>
 
       <p>
         Prema tradiciji, Sveti vladika Maksim postavio je temelje manastiru

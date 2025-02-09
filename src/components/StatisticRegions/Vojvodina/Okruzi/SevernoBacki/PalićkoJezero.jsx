@@ -17,7 +17,7 @@ export const PalićkoJezero = () => {
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={palicko2} alt="palicko jezero 5" />
-      <h2>PALIĆKO JEZERO</h2>
+      <h2>Palicko jezero</h2>
 
       <p>
         Palićko jezero se nalazi u Vojvodini, na 8 kilometara od Subotice,

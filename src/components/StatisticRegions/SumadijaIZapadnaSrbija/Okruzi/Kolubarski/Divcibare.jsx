@@ -19,7 +19,7 @@ export const Divcibare = () => {
       <header></header>
       <img src={divcibare1} alt="Manastir Ćelije 1" />
 
-      <h2 style={{ marginLeft: "50px" }}>DIVČIBARE</h2>
+      <h2 style={{ marginLeft: "50px" }}>Divčibare</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Divčibare su gradsko naselje i popularno planinsko-turističko odredište

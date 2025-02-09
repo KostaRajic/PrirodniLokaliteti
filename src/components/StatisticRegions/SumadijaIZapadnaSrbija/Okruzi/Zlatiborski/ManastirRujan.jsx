@@ -18,7 +18,7 @@ export const ManastirRujan = () => {
       <header></header>
       <img src={rujan1} alt="Manastir Rujan 1" />
 
-      <h2>MANASTIR RUJAN</h2>
+      <h2>Manastir Rujan</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Manastir Rujan je obnovljeni manastir iz 15. veka koji danas pripada

@@ -18,7 +18,7 @@ export const KupalistePeskara = () => {
       <header></header>
       <img src={peskara5} alt="Kupalište peskara 1" />
 
-      <h2>KUPALIŠTE PESKARA</h2>
+      <h2>Kupalište peskara</h2>
 
       <p>
         Kupalište je smešteno uz obalu Peskarske bare, odnosno, to je veće

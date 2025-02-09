@@ -3,11 +3,9 @@ import guca from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiO
 import jezeroMedjuvrsje from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/jezeroMedjuvrsje.jpg";
 import rudnik from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/rudnik.jpg";
 import manastirSretenje from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/manastirSretenje.jpg";
-import manastirSveteTrojice from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSveteTrojice/manastirSveteTrojice.jpg";
 import ovcarIKablar from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura.jpg";
 import manastirBlagovestenje from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/manastirBlagovestenje.jpg";
 import gornjiMilanovac from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac.jpg";
-import ravnaGora from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/RavnaGora/ravnaGora.jpg";
 
 export const moravickiOkrugData = [
   {
@@ -67,19 +65,5 @@ Planina Rudnik, poznata kao „krov Šumadije“, nalazi se u centralnoj Srbiji 
     img: manastirSretenje,
     mainText: `
 Manastir Sretenje nalazi se na padinama Ovčara, poznate po svojim srednjovekovnim svetinjama. Osnovan je u 16. veku i posvećen je prazniku Sretenja Gospodnjeg. Manastirska crkva je građena u tradicionalnom srpskom stilu, sa skromnim dimenzijama, ali bogatom duhovnom istorijom. Kroz vekove je više puta rušen i obnavljan, a danas je aktivni ženski manastir. Poseduje vrednu riznicu, uključujući stare rukopise i ikone. Zbog svog značaja i prelepe prirode koja ga okružuje, često ga posećuju vernici i turisti. Manastir je deo kulturnog i duhovnog nasleđa Srbije.`,
-  },
-  {
-    id: 9,
-    name: "Ravna Gora",
-    img: ravnaGora,
-    mainText: `
-Ravna Gora je visoravan u zapadnoj Srbiji, na planini Suvobor, poznata kao istorijsko mesto gde je tokom Drugog svetskog rata formiran pokret Jugoslovenske vojske u otadžbini pod vođstvom Dragoljuba Mihailovića. Ovo područje bilo je centar otpora protiv okupatora i simbol četničkog pokreta. Danas je Ravna Gora mesto istorijskog značaja, sa spomenikom posvećenim Mihailoviću i njegovim saborcima. Pored istorijske vrednosti, poznata je i po netaknutoj prirodi, gustim šumama i vidikovcima, što je čini privlačnom za planinare i ljubitelje prirode. Često je mesto okupljanja i komemoracija posvećenih događajima iz prošlosti.`,
-  },
-  {
-    id: 10,
-    name: "Manastir Svete Trojice",
-    img: manastirSveteTrojice,
-    mainText: `
-Manastir Svete Trojice nalazi se u Ovčarsko-kablarskoj klisuri, na strmim padinama Ovčara, okružen netaknutom prirodom. Osnovan je u 16. veku i predstavlja deo duhovnog nasleđa poznate „Srpske Svete Gore“. Manastirska crkva je posvećena Svetoj Trojici i građena u tradicionalnom srpskom stilu, sa skromnim dimenzijama i jednostavnom arhitekturom. Kroz istoriju je više puta rušen i obnavljan, a u njegovoj riznici čuvaju se vredne ikone i stari rukopisi. Danas je aktivan manastir, poznat po svojoj mirnoj atmosferi i prelepom pogledu na klisuru, privlačeći vernike, turiste i ljubitelje duhovnosti i prirode.`,
   },
 ];

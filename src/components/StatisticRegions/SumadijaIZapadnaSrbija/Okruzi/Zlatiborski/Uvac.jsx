@@ -19,7 +19,7 @@ export const RekaUvac = () => {
       <header></header>
       <img src={uvac2} alt="Reka Uvac 1" />
 
-      <h2>REKA UVAC</h2>
+      <h2>Reka Uvac</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Specijalni rezervat prirode "Uvac" jedno je od najvrednijih prirodnih

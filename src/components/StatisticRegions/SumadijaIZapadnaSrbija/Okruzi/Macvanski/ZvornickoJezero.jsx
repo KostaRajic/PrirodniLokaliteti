@@ -19,7 +19,7 @@ export const ZvornickoJezero = () => {
       <header></header>
       <img src={zvornickoJezero1} alt="Zvorničko jezero 1" />
 
-      <h2>ZVORNIČKO JEZERO</h2>
+      <h2>Zvorničko jezero</h2>
 
       <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Priča o Zvorničkom jezeru počinje 1948. godine, kada su započeti

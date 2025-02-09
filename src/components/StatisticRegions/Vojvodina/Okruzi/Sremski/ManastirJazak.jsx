@@ -22,7 +22,7 @@ export const ManastirJazak = () => {
       <header></header>
       <img src={jazak1} alt="Manastir Jazak 1" />
 
-      <h2 style={{ color: "white" }}>MANASTIR JAZAK</h2>
+      <h2 style={{ color: "white" }}>Manastir Jazak</h2>
 
       <p>
         Prema crkvenom predanju, manastir Jazak je osnovao despot Jovan, mlađi

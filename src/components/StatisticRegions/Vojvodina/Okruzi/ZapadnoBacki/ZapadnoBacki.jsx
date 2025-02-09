@@ -42,7 +42,7 @@ export const ZapadnoBacki = () => {
           <FaArrowLeft
             className="arrowLeft"
             onClick={() => navigate(-1)}
-            style={{ fill: "white" }}
+            style={{ fill: "white",right: '50px' }}
           />
         </header>
         <section className="zapadnoBackiClassMain">

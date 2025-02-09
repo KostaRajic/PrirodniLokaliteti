@@ -21,7 +21,7 @@ export const NacionalniParkTara = () => {
       <header></header>
       <img src={tara1} alt='Nacionalni Park "Tara" 1' />
 
-      <h2>NACIONALNI PARK "TARA"</h2>
+      <h2>Nacionalni Park "Tara"</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Nacionalni park Tara, pravo prirodno blago zapadne Srbije, uživa status

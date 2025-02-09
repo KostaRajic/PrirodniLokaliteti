@@ -21,7 +21,7 @@ export const ManastirLelic = () => {
       <header></header>
       <img src={lelic4} alt="Manastir Lelić 1" />
 
-      <h2 style={{ color: "white" }}>MANASTIR LELIĆ</h2>
+      <h2 style={{ color: "white" }}>Manastir Lelić</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Manastir Lelić se nalazi u istoimenom selu, na teritoriji grada Valjeva,

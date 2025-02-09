@@ -21,7 +21,7 @@ export const Indjija = () => {
       <header></header>
       <img src={indjija1} alt="Inđija 1" />
 
-      <h2>INĐIJA</h2>
+      <h2>Inđija</h2>
 
       <p>
         Opština Inđija se nalazi u severoistočnom delu Srema, na jugozapadnim

@@ -18,7 +18,7 @@ export const MokraGora = () => {
       <header></header>
       <img src={gostilje2} alt="Mokra Gora 1" />
 
-      <h2>MOKRA GORA</h2>
+      <h2>Mokra Gora</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Mokra Gora je dolina u zapadnoj Srbiji, smeštena između planina Tare i

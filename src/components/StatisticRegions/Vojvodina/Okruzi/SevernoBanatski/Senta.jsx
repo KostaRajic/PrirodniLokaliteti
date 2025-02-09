@@ -40,7 +40,7 @@ export const Senta = () => {
       <header></header>
       <img src={senta3} alt="Senta 1" />
 
-      <h2>SENTA</h2>
+      <h2>Senta</h2>
 
       <p>
         Opština Senta nalazi se u Srbiji, u severnom delu Autonomne Pokrajine

@@ -18,7 +18,7 @@ export const ManastirPetkovica = () => {
       <header></header>
       <img src={manastirPetkovica1} alt="Manastir Petkovica 1" />
 
-      <h2>MANASTIR PETKOVICA</h2>
+      <h2>Manastir Petkovica</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Iznad Srebreničke reke, u blizini Stragara, nalazi se obnovljeni

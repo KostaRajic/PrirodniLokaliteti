@@ -18,7 +18,7 @@ export const PetnickaPecina = () => {
       <header></header>
       <img src={petnicaPecina1} alt="PETNIČKA PEĆINA 1" />
 
-      <h2>PETNIČKA PEĆINA</h2>
+      <h2>Petnička Pećina</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Spomenik prirode Petnička pećina predstavlja spomenik prirode

@@ -19,7 +19,7 @@ export const Kalemegdan = () => {
       <header></header>
       <img src={kalemegdan4} alt="Kalemegdan 1" />
 
-      <h2>KALEMEGDAN</h2>
+      <h2>Kalemegdan</h2>
 
       <p>
         Beogradska tvrđava, smeštena na grebenu iznad ušća Save u Dunav,

@@ -19,7 +19,7 @@ export const JezeroPerucac = () => {
       <header></header>
       <img src={perucac1} alt="Jezero Perućac 1" />
 
-      <h2>JEZERO PERUĆAC</h2>
+      <h2>Jezero Perućac</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Perućačko jezero je veštačko jezero udaljeno oko 2,4 km od istoimenog

@@ -19,7 +19,7 @@ export const Skadarlija = () => {
       <header></header>
       <img src={skadarlija1} alt="Sakadrlija 1" />
 
-      <h2 style={{color: 'white'}}>SKADARLIJA</h2>
+      <h2 style={{color: 'white'}}>Skadarlija</h2>
 
       <p>
         Skadarlija se danas u turističkim vodičima često opisuje kao boemska

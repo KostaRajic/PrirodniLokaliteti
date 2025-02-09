@@ -18,7 +18,7 @@ export const MackovKamen = () => {
       <header></header>
       <img src={mackov1} alt="Mačkov Kamen 1" />
 
-      <h2>MAČKOV KAMEN</h2>
+      <h2>Mačkov Kamen</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Na vrhu planine Jagodnje, nazvane po bogatstvu šumskih jagoda koje tamo

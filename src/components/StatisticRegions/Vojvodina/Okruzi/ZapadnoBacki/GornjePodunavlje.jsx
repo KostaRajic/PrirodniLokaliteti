@@ -17,7 +17,7 @@ export const GornjePodunavlje = () => {
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={GP5} alt="Gornje Podunavlje 1" />
-        <h2>GORNJE PODUNAVLJE</h2>
+        <h2>Gornje Podunavlje</h2>
 
 
       <p>

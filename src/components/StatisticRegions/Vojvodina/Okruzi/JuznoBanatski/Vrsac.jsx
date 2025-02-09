@@ -22,7 +22,7 @@ export const Vrsac = () => {
       <header></header>
       <img src={vrsac1} alt="Vršac grad 1" />
 
-      <h2>VRŠAC</h2>
+      <h2>Vršac</h2>
 
       <p style={{ paddingTop: "50px"}}>
         Vršac je jedan od najlepših gradova u Banatu, smešten u severoistočnom

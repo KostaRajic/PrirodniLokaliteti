@@ -19,7 +19,7 @@ export const VodopadSopotnice = () => {
       <header></header>
       <img src={sopotnice1} alt="Vodopad Sopotnice 1" />
 
-      <h2>VODOPAD SOPOTNICE</h2>
+      <h2>Vodopad Sopotnice</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Vodopadi Sopotnice predstavljaju zaštićeno prirodno područje na

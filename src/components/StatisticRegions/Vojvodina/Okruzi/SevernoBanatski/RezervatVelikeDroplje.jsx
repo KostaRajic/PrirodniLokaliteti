@@ -22,10 +22,10 @@ export const RezervatVelikeDroplje = () => {
       <header></header>
       <img src={vd1} alt="Rezervat Velike Droplje 1" />
 
-      <h2>SPECIJALNI REZERVAT "PAŠNJACI VELIKE DROPLJE"</h2>
+      <h2>Specijalni rezervat "Pašnjaci Velike Doplje"</h2>
 
       <p>
-        Specijalni rezervoat Pašnjaci velike droplje nalazi se na severu Banata,
+        Specijalni rezervat Pašnjaci velike droplje nalazi se na severu Banata,
         na prostranoj aluvijalnoj ravni reke Zlatice, između novokneževačke i
         krsturko-siriške lesne terase. Rezervat čine 3 odvojene celine. Najveći
         je Jaroš (tromeđa sela Mokrin, Jazovo i Sajan), zatim Siget (pored

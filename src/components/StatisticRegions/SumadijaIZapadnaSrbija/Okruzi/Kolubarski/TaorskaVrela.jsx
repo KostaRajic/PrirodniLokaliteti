@@ -22,7 +22,7 @@ export const TaorskaVrela = () => {
       <header></header>
       <img src={taorskaVrela1} alt="Taorska Vrela" />
 
-      <h2 style={{ color: "white" }}>TAORSKA VRELA</h2>
+      <h2 style={{ color: "white" }}>Taorska VrelaA</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Taorska vrela su jedno od najlepših i najtajanstvenijih prirodnih

@@ -19,10 +19,10 @@ export const SRPZasavica = () => {
       <header></header>
       <img src={zasavica4} alt="Specijalni rezervat prirode 'Zasavica' 1" />
 
-      <h2 style={{ right: "50px" }}>SPECIJALNI REZERVAT PRIRODE "ZASAVICA"</h2>
+      <h2 style={{ right: "50px" }}>Specijalni rezervat prirode "Zasavica"</h2>
 
       <p>
-        Specijalni rezervoar prirode Zasavica je prirodni rezervat stavljen pod
+        Specijalni rezervat prirode Zasavica je prirodni rezervat stavljen pod
         zaštitu države 1977. godine kao prirodno dobro I kategorije od izuzetnog
         značaja. Rezervat se prostire u severnoj Mačvi na teritorijama opština
         Sremska Mitrovica i Bogatić. Ovo je močvarno područje sa poplavnim

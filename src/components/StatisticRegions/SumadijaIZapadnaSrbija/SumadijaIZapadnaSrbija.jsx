@@ -31,13 +31,15 @@ export const SumadijaIZapadnaSrbija = () => {
     if (showMacvanski) {
       return navigate("Macvanski");
     } else if (showKolubarski) {
-      return navigate("Kolubarski")
+      return navigate("Kolubarski");
     } else if (showSumadijski) {
-      return navigate("Sumadijski")
+      return navigate("Sumadijski");
     } else if (showZlatiborski) {
-      return navigate("ZlatiborskiOkrug")
+      return navigate("ZlatiborskiOkrug");
     } else if (showMoravicki) {
-      return navigate("MoravickiOkrug")
+      return navigate("MoravickiOkrug");
+    } else if (showPomoravski) {
+      return navigate("PomoravskiOkrug");
     }
   });
 
@@ -89,15 +91,17 @@ export const SumadijaIZapadnaSrbija = () => {
               },
               click: (e) => {
                 statisticRegion?.properties?.name === "Mačvanski" &&
-                setShowMacvanski(true);
+                  setShowMacvanski(true);
                 statisticRegion?.properties?.name === "Kolubarski" &&
-                setShowKolubarski(true);
+                  setShowKolubarski(true);
                 statisticRegion?.properties?.name === "Šumadijski" &&
-                setShowSumadijski(true);
+                  setShowSumadijski(true);
                 statisticRegion?.properties?.name === "Zlatiborski" &&
-                setShowZlatiborski(true);
+                  setShowZlatiborski(true);
                 statisticRegion?.properties?.name === "Moravički" &&
-                setShowMoravicki(true);
+                  setShowMoravicki(true);
+                statisticRegion?.properties?.name === "Pomoravski" &&
+                  setShowPomoravski(true);
               },
             }}
           >

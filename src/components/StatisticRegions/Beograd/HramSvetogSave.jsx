@@ -21,7 +21,7 @@ export const HramSvetogSave = () => {
       <header></header>
       <img src={hramSvetogSave1} alt="Hram Svetog Save 1" />
 
-      <h2>HRAM SVETOG SAVE</h2>
+      <h2>Hram Svetog Save</h2>
 
       <p>
         Istorijat Hrama Svetog Save, od trenutka kada se pojavila sama ideja do

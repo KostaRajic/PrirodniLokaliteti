@@ -19,7 +19,7 @@ export const BotanickaBata = () => {
       <header></header>
       <img src={botanickaBasta2} alt="Botancika basta 1" />
 
-      <h2>BOTANIČKA BAŠTA - JEVREMOVAC</h2>
+      <h2>Botanička Bašta - Jevremovac</h2>
 
       <p>
         Botanička bašta Jevremovac osnovana je 1874. godine na inicijativu

@@ -19,7 +19,7 @@ export const DelibaltskaPescaraIZagajickaBrda = () => {
       <header></header>
       <img src={zagajickaBrda1} alt="Deliblatska Peščara" />
 
-      <h2 style={{marginRight: '80px' }}>DELIBLATSKA PEŠČARA I ZAGAJIČKA BRDA</h2>
+      <h2 style={{marginRight: '80px' }}>Deliblatska Peščara i Zagajička Brda</h2>
 
       <p style={{ paddingTop: "50px"}}>
         Deliblatska peščara je jedinstvena prirodna pojava u Evropi, smeštena u

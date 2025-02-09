@@ -20,7 +20,7 @@ export const VrhRajac = () => {
       <header></header>
       <img src={rajac1} alt="Vrh Rajac 1" />
 
-      <h2>VRH RAJAC</h2>
+      <h2>Vrh Rajac</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Vrh Rajac je jedan od najpoznatijih vrhova na planini Suvobor, smeštenoj

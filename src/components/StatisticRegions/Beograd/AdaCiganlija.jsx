@@ -23,7 +23,7 @@ export const AdaCiganlija = () => {
       <header></header>
       <img src={adaCiganlija6} alt="Ada Ciganlija 1" />
 
-      <h2>ADA CIGANLIJA</h2>
+      <h2>Ada Ciganlija</h2>
 
       <p>
         Ada Ciganlija, koja se nalazi na samo 4 km od centra Beograda, na reki

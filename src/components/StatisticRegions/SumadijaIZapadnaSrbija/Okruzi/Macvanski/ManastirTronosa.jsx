@@ -18,7 +18,7 @@ export const ManastirTronosa = () => {
       <header></header>
       <img src={tronosa1} alt="Manastir Tronoša 1" />
 
-      <h2>MANASTIR TRONOŠA</h2>
+      <h2>Manastir Tronoša</h2>
 
       <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
         Prema predanju, Tronoša je svoje ime dobila po tri rečice koje nose

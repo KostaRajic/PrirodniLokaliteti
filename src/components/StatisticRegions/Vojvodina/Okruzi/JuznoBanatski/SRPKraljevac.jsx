@@ -17,7 +17,7 @@ export const SRPKraljevac = () => {
       <header></header>
       <img src={kraljevac1} alt="Bela Crkva 1" />
 
-      <h2>SPECIJALNI REZERVAT PRIRODE "KRALJEVAC"</h2>
+      <h2>Specijlani Rezervat Prirode "Kraljevac"</h2>
 
       <p style={{ paddingTop: "50px"}}>
         Specijalni rezervoar prirode „Kraljevac” smešten je u srcu vojvođanske

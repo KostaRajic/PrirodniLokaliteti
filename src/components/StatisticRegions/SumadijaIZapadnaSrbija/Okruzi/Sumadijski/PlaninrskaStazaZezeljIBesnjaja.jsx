@@ -99,7 +99,7 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
       <header></header>
       <img src={zezeljIBesnjaja1} alt="Planinarska staza Žeželj i Bešnjaja 1" />
 
-      <h2 style={{ color: "white" }}>PLANINARSKA STAZA ŽEŽELJ I BEŠNJAJA</h2>
+      <h2 style={{ color: "white" }}>Planinarska staza Žeželj i Bešnjaja</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Žeželj je brdo koje se nalazi u kragujevačkom naselju Ždraljica. Vrh se

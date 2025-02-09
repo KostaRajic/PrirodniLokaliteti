@@ -28,7 +28,7 @@ export const Uzice = () => {
       <header></header>
       <img src={uzice1} alt="Užice 1" />
 
-      <h2 style={{ color: "white" }}>UŽICE</h2>
+      <h2 style={{ color: "white" }}>Užice</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Užice je grad koji se nalazi u zapadnoj Srbiji, u blizini reke Đetinje,

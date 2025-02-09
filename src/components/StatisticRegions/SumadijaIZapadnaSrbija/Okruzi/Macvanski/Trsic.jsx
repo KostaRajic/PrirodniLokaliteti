@@ -19,7 +19,7 @@ export const Trsic = () => {
       <header></header>
       <img src={trsic1} alt="Tršić Vukova Kuća" />
 
-      <h2>TRŠIĆ</h2>
+      <h2>Tršić</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Tršić, seosko naselje dinarskog tipa, udaljeno je 7 km od Loznice na

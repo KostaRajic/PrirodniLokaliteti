@@ -20,7 +20,7 @@ export const SubotickaPescara = () => {
       <img src={pescara1} alt="Suboticka Pescara 1" />
 
       <h2>
-        SUBOTIČKA PEŠČARA
+      Suboticka Peščara
       </h2>
 
       <p>

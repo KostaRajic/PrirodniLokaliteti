@@ -20,7 +20,7 @@ export const ManastirKrusedol = () => {
       <img src={krusedol4} alt="Manastir Krusedol 1" />
 
       <h2>
-        MANASTIR KRUŠEDOL
+      Manastir Krusedol
       </h2>
 
       <p style={{ paddingTop: "50px"}}>

@@ -96,7 +96,7 @@ export const RekaGradac = () => {
       <header></header>
       <img src={gradac1} alt="Reka Gradac 1" />
 
-      <h2 style={{ color: "white" }}>REKA GRADAC</h2>
+      <h2 style={{ color: "white" }}>Reka Gradac</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Reka Gradac je jedno od najlepših prirodnih blaga Srbije, koja je deo

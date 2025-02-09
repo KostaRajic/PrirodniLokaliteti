@@ -34,6 +34,8 @@ export const MoravickiOkrug = () => {
       navigate('PlaninaRudnik')
     } else if ( name === 'Manastir Sretenje' ) {
       navigate('ManastirSretenje')
+    } else if ( name === 'Manastir Svete Trojice' ) {
+      navigate('ManastirSveteTrojice')
     }
   };
 
@@ -43,7 +45,7 @@ export const MoravickiOkrug = () => {
         <FaArrowLeft
           className="arrowLeft"
           onClick={() => navigate(-1)}
-          style={{ fill: "white" }}
+          style={{ fill: "white",right: '50px' }}
         />
       </header>
       <section className="sumadijskiOkrug">

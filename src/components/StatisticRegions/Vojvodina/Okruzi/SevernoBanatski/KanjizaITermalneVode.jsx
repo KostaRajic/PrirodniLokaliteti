@@ -20,7 +20,7 @@ export const Kanjiza = () => {
       <img src={kanjiza2} alt="Kanjiza 1" />
 
       <h2>
-        KANJIŽA I TERMALNE VODE
+        Kanjiža i Terminalne vode
       </h2>
 
       <p>

@@ -127,6 +127,11 @@ import { ManastirVavedenje } from "./components/StatisticRegions/SumadijaIZapadn
 import { ManastirVaznesenje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirVaznesenje";
 import { PlaninaRudnik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/PlaninaRudnik";
 import { ManastirSretenje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/ManastirSretenje";
+import { PomoravskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/PomoravskiOkrug";
+import { Jagodina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/Jagodina";
+import { Grza } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/Grza";
+import { ManastirManasija } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirManasija";
+import { VodopadLisine } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/VodopadLisine";
 // import { PlaninaRudnik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/MoravickiOkrug/PlaninaRudnik";
 
 function App() {
@@ -546,35 +551,35 @@ function App() {
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura"
           element={<OvcarskoKablarskaKlisura />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirJovanje"
           element={<ManastirJovanje />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirNikolje"
           element={<ManastirNikolje />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirPreobrazenje"
           element={<ManastirPreobraženje />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirSavinje"
           element={<ManastirSavinje />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirSveteTrojice"
           element={<ManastirSveteTrojice />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirUspenje"
           element={<ManastirUspenje />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirVavedenje"
           element={<ManastirVavedenje />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirVaznesenje"
           element={<ManastirVaznesenje />}
         />
@@ -598,9 +603,29 @@ function App() {
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik"
           element={<PlaninaRudnik />}
         />
-                <Route
+        <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje"
           element={<ManastirSretenje />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug"
+          element={<PomoravskiOkrug />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina"
+          element={<Jagodina />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza"
+          element={<Grza />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija"
+          element={<ManastirManasija />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine"
+          element={<VodopadLisine />}
         />
       </Routes>
     </BrowserRouter>

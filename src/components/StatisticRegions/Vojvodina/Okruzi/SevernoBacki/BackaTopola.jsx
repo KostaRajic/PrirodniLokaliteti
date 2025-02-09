@@ -20,7 +20,7 @@ export const BackaTopola = () => {
       <img src={backaT2} alt="Backa Topola 1" />
 
       <h2>
-        BAČKA TOPOLA
+      Backa Topola
       </h2>
 
       <p style={{ paddingTop: "50px"}}>

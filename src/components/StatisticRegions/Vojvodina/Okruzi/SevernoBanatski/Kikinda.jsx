@@ -19,7 +19,7 @@ export const Kikinda = () => {
       <header></header>
       <img src={kikinda1} alt="Kikinda 1" />
 
-      <h2>KIKINDA</h2>
+      <h2>Kikinda</h2>
 
       <p>
         Kikinda je grad u Severnobanatskom okrugu, smešten u Vojvodini, na

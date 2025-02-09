@@ -18,7 +18,7 @@ export const ManastirMileseva = () => {
       <header></header>
       <img src={mileseva4} alt='Manastir Mileševa 1' />
 
-      <h2>MANASTIR MILEŠEVA</h2>
+      <h2>Manastir Mileševa</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Manastir Mileševa smešten je u dolini istoimene reke, nedaleko od

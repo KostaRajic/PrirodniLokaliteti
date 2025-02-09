@@ -159,7 +159,7 @@ export const OvcarskoKablarskaKlisura = () => {
       <header></header>
       <img src={ovcarIKablar1} alt="Ovcarsko-kablarska klisura" />
 
-      <h2 style={{ color: "white" }}>OVČARSKO - KABLARSKA KLISURA</h2>
+      <h2 style={{ color: "white" }}>Ovcarsko - kablarska klisura</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Ovčarsko-Kablarska klisura predstavlja jedinstvenu morfološku celinu.

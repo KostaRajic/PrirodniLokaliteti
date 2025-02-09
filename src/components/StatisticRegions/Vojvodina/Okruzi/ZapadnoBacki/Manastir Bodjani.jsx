@@ -16,7 +16,7 @@ export const ManastirBodjani = () => {
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
       <img src={manastirBodjani1} alt="manastir Bodjani 1" />
-        <h2>MANASTIR BOĐANI</h2>
+        <h2>Manastir Bođani</h2>
 
       <p>
         Manastir Bođani je srpski pravoslavni manastir koji se nalazi u blizini

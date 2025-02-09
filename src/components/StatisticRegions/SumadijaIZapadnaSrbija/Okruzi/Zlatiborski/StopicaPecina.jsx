@@ -19,7 +19,7 @@ export const StopicaPecina = () => {
       <header></header>
       <img src={stopicaPecina1} alt="Stopica Pecina 1" />
 
-      <h2 style={{color: 'white'}}>STOPIĆA PEĆINA</h2>
+      <h2 style={{color: 'white'}}>Stopića Pećina</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Stopića pećina smeštena je na severoistočnim padinama Zlatibora, između

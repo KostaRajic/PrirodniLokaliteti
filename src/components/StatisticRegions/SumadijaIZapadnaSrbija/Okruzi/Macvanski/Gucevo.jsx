@@ -19,7 +19,7 @@ export const Gucevo = () => {
       <header></header>
       <img src={gucevo1} alt="Gučevo 1" />
 
-      <h2>PLANINA GUČEVO</h2>
+      <h2>Planina Gučevo</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Planina Gučevo se nalazi u blizini Loznice, iznad Banje Koviljače. Deo

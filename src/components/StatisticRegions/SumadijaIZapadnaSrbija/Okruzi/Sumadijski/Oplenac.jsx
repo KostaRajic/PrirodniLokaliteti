@@ -20,7 +20,7 @@ export const Oplenac = () => {
       <header></header>
       <img src={oplenac1} alt="Oplenac 1" />
 
-      <h2 style={{ color: "white" }}>OPLENAC</h2>
+      <h2 style={{ color: "white" }}>Oplenac</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Hram Svetog Đorđa i mauzolej dinastije Karađorđević podignuti su na
