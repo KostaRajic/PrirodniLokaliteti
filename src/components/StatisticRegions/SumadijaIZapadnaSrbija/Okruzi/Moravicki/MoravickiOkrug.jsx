@@ -48,7 +48,7 @@ export const MoravickiOkrug = () => {
           style={{ fill: "white",right: '50px' }}
         />
       </header>
-      <section className="sumadijskiOkrug">
+      <section className="moravickiOkrug">
         <h1>Moravički Okrug</h1>
         <form>
           <p>

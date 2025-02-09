@@ -1,5 +1,4 @@
 import jagodina from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina.jpg";
-import paracin from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Paracin/paracin.jpg";
 import manastirJosanica from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/manastirJosanica.jpg";
 import manastirManasija from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/manastirManasija.jpg";
 import manastirRavanica from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/manastirRavanica.jpg";
