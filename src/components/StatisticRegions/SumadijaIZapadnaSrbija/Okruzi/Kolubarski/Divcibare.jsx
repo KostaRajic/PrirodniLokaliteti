@@ -17,7 +17,7 @@ export const Divcibare = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <img src={divcibare1} alt="Manastir Ćelije 1" />
+      <img src={divcibare1} alt="Divčibare 1" />
 
       <h2 style={{ marginLeft: "50px" }}>Divčibare</h2>
 
@@ -31,7 +31,7 @@ export const Divcibare = () => {
         najviši vrh je Kraljev sto, koji se uzdiže na 1.104 metra.
       </p>
 
-      <img src={divcibare2} alt="Manastir Ćelije 2" />
+      <img src={divcibare2} alt="Divčibare 2" />
 
       <p>
         Visoravan je dobila naziv Divčibare, ili devojačke bare, u spomen na
@@ -44,7 +44,7 @@ export const Divcibare = () => {
         građevinske objekte.
       </p>
 
-      <img src={divcibare3} alt="Manastir Ćelije 3" />
+      <img src={divcibare3} alt="Divčibare 3" />
 
       <p>
         Poznato je da je knjaz Miloš često posećivao ovaj kraj, obilazio čobane
@@ -58,7 +58,7 @@ export const Divcibare = () => {
         zajedničko ime Kara-dag, odnosno Crna Gora.
       </p>
 
-      <img src={divcibare4} alt="Manastir Ćelije 4" />
+      <img src={divcibare4} alt="Planina Divčibare 4" />
 
       <p>
         Maljen je planina koja pripada Dinarskom planinskom sistemu u
@@ -71,7 +71,7 @@ export const Divcibare = () => {
         dok je drugi po visini Crni vrh sa 1098 m.
       </p>
 
-      <img src={divcibare6} alt="sveti Ava Justin" />
+      <img src={divcibare6} alt="Divčibare 5" />
 
       <p>
         Vis Stražara deli Divčibare na dva dela: Divčibare u užem smislu i
@@ -88,7 +88,7 @@ export const Divcibare = () => {
         atraktivnu destinaciju i uživaju u svim njenim lepotama i blagodetima.
       </p>
 
-      <img src={divcibare5} alt="sveti Ava Justin" />
+      <img src={divcibare5} alt="Divčibare 6" />
 
       <p>
         Ljuti krš Vidikovac je popularno izletište na Divčibarama, smešteno na

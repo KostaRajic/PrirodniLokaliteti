@@ -27,6 +27,8 @@ export const Vojvodina = () => {
     }
   });
 
+  const bounds = [[45.20313713852372, 20.012617302735283]];
+
   useEffect(() => {
     if (showZapadnoBacki) {
       return navigate("ZapadnoBacki");
@@ -46,22 +48,25 @@ export const Vojvodina = () => {
   });
 
 
+
   return (
     <div className="serbianMapClass">
       <MapContainer
         center={center}
         zoom={zoom}
         style={{ width: "100vw", height: "100vh" }}
-
+        maxBounds={bounds}
+        maxBoundsViscosity={1.0}
+        scrollWheelZoom={false}
       >
         <TileLayer
-          url={`https://api.maptiler.com/maps/satellite/256/{z}/{x}/{y}.jpg?key=qZ4DIeGQoRrxWzufyKP1`}
-          attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         <FaArrowLeft
           className="arrowLeft"
           onClick={() => navigate(-1)}
-          style={{ fill: "white", zIndex: '400' }}
+          style={{ zIndex: '400' }}
         />
         {VojvodinaRegioni?.features?.map((statisticOkrug, index) => {
           const cordinates = statisticOkrug?.geometry?.coordinates[0]?.map(
@@ -73,8 +78,8 @@ export const Vojvodina = () => {
               <Polygon
                 key={statisticOkrug?.id}
                 pathOptions={{
-                  fillColor: "#FD8D3C",
-                  fillOpacity: 0.3,
+                  fillColor: "green",
+                  fillOpacity: 0.8,
                   weight: 2,
                   opacity: 1,
                   color: "white",
@@ -91,7 +96,8 @@ export const Vojvodina = () => {
                   mouseout: (e) => {
                     const layer = e.target;
                     layer.setStyle({
-                      fillOpacity: 0.3,
+                      fillColor: "green",
+                      fillOpacity: 0.8,
                       weight: 2,
                       color: "white",
                     });

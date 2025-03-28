@@ -26,6 +26,16 @@ export const PomoravskiOkrug = () => {
       navigate('ManastirManasija')
     } else if (name === 'Vodopad Lisine') {
       navigate('VodopadLisine')
+    } else if (name === 'Manastir Jošanica') {
+      navigate('ManastirJosanica')
+    } else if (name === 'Resavska Pećina') {
+      navigate('ResavskaPecina')
+    } else if (name === 'Vodopad Prskalo') {
+      navigate('VodopadPrskalo')
+    } else if (name === 'Manastir Ravanica') {
+      navigate('ManatirRavanica')
+    } else if (name === 'Prirodnjački centar') {
+      navigate('PrirodnjackiCentar')
     }
   };
 
@@ -35,10 +45,10 @@ export const PomoravskiOkrug = () => {
         <FaArrowLeft
           className="arrowLeft"
           onClick={() => navigate(-1)}
-          style={{ fill: "white", right: '50px' }}
+          style={{ fill: "white"}}
         />
       </header>
-      <section className="pomoravskiOkrug">
+      <section className="pomoravski okrug">
         <h1>Pomoravski Okrug</h1>
         <form>
           <p>

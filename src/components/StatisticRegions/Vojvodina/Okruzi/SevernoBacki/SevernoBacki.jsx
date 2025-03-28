@@ -18,30 +18,31 @@ export const SevernoBacki = () => {
   };
 
   const readMore = (name) => {
-
-    if (name === 'Palićko jezero') {
-      navigate('PalickoJezero')
-    } else if (name === 'Subotica') {
-      navigate('Subotica')
-    } else if (name === 'Tisa - rečna i prirodna oaza') {
-      navigate('Tisa')
-    } else if (name === 'Subotička peščara') {
-      navigate('SubotickaPescara')
-    } else if (name === 'Bačka Topola') {
-      navigate('BackaTopola')
-    } else if (name === 'Bačkotopolsko Jezero') {
-      navigate('BackoTopolskoJezero')
+    if (name === "Palićko jezero") {
+      navigate("PalickoJezero");
+    } else if (name === "Subotica") {
+      navigate("Subotica");
+    } else if (name === "Tisa - rečna i prirodna oaza") {
+      navigate("Tisa");
+    } else if (name === "Subotička peščara") {
+      navigate("SubotickaPescara");
+    } else if (name === "Bačka Topola") {
+      navigate("BackaTopola");
+    } else if (name === "Bačkotopolsko Jezero") {
+      navigate("BackoTopolskoJezero");
     }
-    
-  }
+  };
 
-  
   return (
     <div className="okrugBackground">
       <header>
-        <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)}  style={{fill: 'white',right: '50px'}}/>
+        <FaArrowLeft
+          className="arrowLeft"
+          onClick={() => navigate(-1)}
+          style={{ fill: "white"}}
+        />
       </header>
-      <section className="severnoBackiOkrug">
+      <section className="severnoBacki okrug">
         <h1>Severno - Bački okrug</h1>
         <form>
           <p>
@@ -83,7 +84,7 @@ export const SevernoBacki = () => {
         </p>
       </section>
       <section>
-        <div className="caruoselClass" style={{padding: '0'}}>
+        <div className="caruoselClass" style={{ padding: "0" }}>
           {severnoBackiData?.map((okrug, index) => (
             <div
               key={okrug.id}

@@ -65,7 +65,6 @@ import { AdaCiganlija } from "./components/StatisticRegions/Beograd/AdaCiganlija
 import { Kosutnjak } from "./components/StatisticRegions/Beograd/Kosutnjak";
 import { SumadijaIZapadnaSrbijaTekstModal } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/SumdijaIZapadnaSrbijaTekstModal";
 import { SumadijaIZapadnaSrbija } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/SumadijaIZapadnaSrbija";
-import { MacvanskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MacvanskiOkrug";
 import { Sabac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Sabac";
 import { Gucevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Gucevo";
 import { ZvornickoJezero } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/ZvornickoJezero";
@@ -132,7 +131,93 @@ import { Jagodina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/O
 import { Grza } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/Grza";
 import { ManastirManasija } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirManasija";
 import { VodopadLisine } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/VodopadLisine";
-// import { PlaninaRudnik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/MoravickiOkrug/PlaninaRudnik";
+import { ManastirJosanica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirJosanica";
+import { ResavskaPecina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ResavskaPecina";
+import { VodopadPrskalo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/VodopadPrskalo";
+import { ManastirRavanica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirRavanica";
+import { PrirodnjackiCentar } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/PrirodnjackiCentar";
+import { RaskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/RaskiOkrug";
+import { Kraljevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/Kraljevo";
+import { ManastirStudenica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirStudenica";
+import { PlaninaKopaonik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/PlaninaKopaonik";
+import { VrnjackaBanja } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/VrnjackaBanja";
+import { ManastirZica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirZica";
+import { TvrdjavaMaglic } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/TvrdjavaMaglic";
+import { PlaninaGoc } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/PlaninaGoc";
+import { ManastirDjurdjeviStupovi } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirDjurdjeviStupovi";
+import { TvrdjavaStariRas } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/TvrdjavaStariRas";
+import { ManastirSopocani } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirSopocani";
+import { MacvanskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MacvanskiOkrug";
+import { RasinskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/RasinskiOkrug";
+import { Krusevac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/Krusevac";
+import { JezeroCelije } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/JezeroCelije";
+import { TvrdjavaKoznik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/SrednjovekovnaTvrdjavaKoznik";
+import { ManastirDjunis } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/ManastirDjunis";
+import { SvetilisteMetodje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/Metodje";
+import { RibarskaBanja } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/RibarskaBanja";
+import { ManastirLjubostinja } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/ManastirLjubostinja";
+import { VodopadJelovarnik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/VodopadJelovarnik";
+import { JuznaIIStocnaSrbijaTekstModal } from "./components/StatisticRegions/IstocnaIJuznaSrbija/IstocnaIJuznaSrbijaTekstModal";
+import { IstocnaiJuznaSrbija } from "./components/StatisticRegions/IstocnaIJuznaSrbija/IstocnaIJuznaSrbija";
+import { PodunavskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/PodunavskiOkrug";
+import { Smederevo } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/Smederevo";
+import { ManastirPokajnica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/ManastirPokajnica";
+import { SmederevskaTvrdjava } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/SmederevskaTvrdjava";
+import { RadovanjskiLug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/RadovanjskiLug";
+import { ManastirKoporin } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/ManastirKoporin";
+import { BranicevskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/BranicevskiOkrug";
+import { Pozarevac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/Pozarevac";
+import { TvrdjavaGolubac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/TvrdjavaGolubac";
+import { SrebrnoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/SrebrnoJezero";
+import { ManastirTumane } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/ManastirTumane";
+import { KrupajskoVrelo } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/KrupajskoVrelo";
+import { ManastirGornjak } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/ManastirGornjak";
+import { PlaninaBeljanica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/PlaninaBeljanica";
+import { BorskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/BorskiOkrug";
+import { Bor } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/Bor";
+import { DjerdapskaKlisura } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/DjerdapskaKlisura";
+import { LazarevKanjon } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LazarevKanjon";
+import { LazarevaPecina } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LazarevaPecina";
+import { BorskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/BorskoJezero";
+import { LepenskiVir } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LepenskiVir";
+import { RajkovaPecina } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/RajkovaPecina";
+import { ZajecarskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/ZajecarskiOkrug";
+import { Zajecar } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/Zajecar";
+import { SokoBanja } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/Sokobanja";
+import { PlaninaRtanj } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/PlaninaRtanj";
+import { VodopadRipaljka } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/VodopadRipaljka";
+import { SokoGrad } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/SokoGrad";
+import { FelixRomulijana } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/FelixRomulijana";
+import { NisavskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/NisavskiOkrug";
+import { JuznoBackiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/JuznoBackiPathRoutes";
+import { nisavskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/NisavskiOkrugPathRoutes";
+import { Nis } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/Nis";
+import { Cegar } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/Cegar";
+import { BovanskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/BovanskoJezero";
+import { SuvaPlanina } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/SuvaPlanina";
+import { SicevackaKlisura } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/SicevackaKlisura";
+import { ManastirSvetaPetkaIverica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/ManastirSvetaPetkaIverica";
+import { NiskaBanja } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/NiskaBanja";
+import { ToplickiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/ToplickiOkrug";
+import { toplickiOkurgPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/ToplickiOkurgPathRoutes";
+import { Prokuplje } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/Prokuplje";
+import { DjavoljaVaros } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/DjavoljaVaros";
+import { PlaninaJastrebac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/PlaninaJastrebac";
+import { TvrdjavaHisar } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/HisarProkuplje";
+import { ManastirSvetogNikole } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/ManastirSvetogNikole";
+import { PlaninaRadan } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/PlaninaRadan";
+import { pirotskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/PirotskiOkrugPathRoutes";
+import { PirotskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/PIrotskiOkrug";
+import { Pirot } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/Pirot";
+import { StaraPlanina } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/StaraPlanina";
+import { ZavojskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/ZavojskoJezero";
+import { VodopadTupavica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/VodopadTupavica";
+import { ManastirSukovo } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/ManastirSukovo";
+import { VodopadBigar } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/VodopadBigar";
+import { KanjonRekeJerme } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/KanjonRekeJerme";
+import { jablanickiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/JablanickiOkrugPathRoutes";
+import { JablanickiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/JablanickiOkrug";
+import { Leskovac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/Leskovac";
 
 function App() {
   return (
@@ -225,32 +310,26 @@ function App() {
           path="/vojvodinaTekstModal/Vojvodina/SevernoBanatski/Senta"
           element={<Senta />}
         />
+        <Route path={JuznoBackiPathRoutes.home} element={<JuznoBacki />} />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBacki"
-          element={<JuznoBacki />}
-        />
-        <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBacki/FruskaGora"
+          path={JuznoBackiPathRoutes.fruskaGora}
           element={<FruskaGora />}
         />
+        <Route path={JuznoBackiPathRoutes.noviSad} element={<NoviSad />} />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBacki/NoviSad"
-          element={<NoviSad />}
-        />
-        <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBacki/ManastirKrusedol"
+          path={JuznoBackiPathRoutes.manastirKrusedol}
           element={<ManastirKrusedol />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBacki/SremskiKarlovci"
+          path={JuznoBackiPathRoutes.sremskiKarlovci}
           element={<SremskiKarlovci />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBacki/ManastirBeocin"
+          path={JuznoBackiPathRoutes.manastirBeocin}
           element={<ManastirBeocin />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBacki/SajkaskaOblast"
+          path={JuznoBackiPathRoutes.sajkaskaOblast}
           element={<SajkaskaOblast />}
         />
         <Route
@@ -626,6 +705,325 @@ function App() {
         <Route
           path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine"
           element={<VodopadLisine />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica"
+          element={<ManastirJosanica />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina"
+          element={<ResavskaPecina />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo"
+          element={<VodopadPrskalo />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManatirRavanica"
+          element={<ManastirRavanica />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar"
+          element={<PrirodnjackiCentar />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug"
+          element={<RaskiOkrug />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo"
+          element={<Kraljevo />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica"
+          element={<ManastirStudenica />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik"
+          element={<PlaninaKopaonik />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja"
+          element={<VrnjackaBanja />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica"
+          element={<ManastirZica />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic"
+          element={<TvrdjavaMaglic />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc"
+          element={<PlaninaGoc />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi"
+          element={<ManastirDjurdjeviStupovi />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas"
+          element={<TvrdjavaStariRas />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani"
+          element={<ManastirSopocani />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug"
+          element={<RasinskiOkrug />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/Krusevac"
+          element={<Krusevac />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/JezeroCelije"
+          element={<JezeroCelije />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/TvrdjavaKoznik"
+          element={<TvrdjavaKoznik />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/ManastirDjunis"
+          element={<ManastirDjunis />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/SvetilisteMetodje"
+          element={<SvetilisteMetodje />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/RibarskaBanja"
+          element={<RibarskaBanja />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/ManastirLjubostinja"
+          element={<ManastirLjubostinja />}
+        />
+        <Route
+          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/VodopadJelovarnik"
+          element={<VodopadJelovarnik />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal"
+          element={<JuznaIIStocnaSrbijaTekstModal />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija"
+          element={<IstocnaiJuznaSrbija />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug"
+          element={<PodunavskiOkrug />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/Smederevo"
+          element={<Smederevo />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/ManastirPokajnica"
+          element={<ManastirPokajnica />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava"
+          element={<SmederevskaTvrdjava />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/RadovanjskiLug"
+          element={<RadovanjskiLug />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/ManastirKoporin"
+          element={<ManastirKoporin />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug"
+          element={<BranicevskiOkrug />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/Pozarevac"
+          element={<Pozarevac />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/TvrdjavaGolubac"
+          element={<TvrdjavaGolubac />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/SrebrnoJezero"
+          element={<SrebrnoJezero />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/ManastirTumane"
+          element={<ManastirTumane />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/KrupajskoVrelo"
+          element={<KrupajskoVrelo />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/ManastirGornjak"
+          element={<ManastirGornjak />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/PlaninaBeljanica"
+          element={<PlaninaBeljanica />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug"
+          element={<BorskiOkrug />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/Bor"
+          element={<Bor />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/DjerdapskaKlisura"
+          element={<DjerdapskaKlisura />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LazarevKanjon"
+          element={<LazarevKanjon />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LazarevaPecina"
+          element={<LazarevaPecina />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/BorskoJezero"
+          element={<BorskoJezero />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LepenskiVir"
+          element={<LepenskiVir />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/RajkovaPecina"
+          element={<RajkovaPecina />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug"
+          element={<ZajecarskiOkrug />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/Zajecar"
+          element={<Zajecar />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/SokoBanja"
+          element={<SokoBanja />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/PlaninaRtanj"
+          element={<PlaninaRtanj />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/VodopadRipaljka"
+          element={<VodopadRipaljka />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/SokoGrad"
+          element={<SokoGrad />}
+        />
+        <Route
+          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/Gamzigrad"
+          element={<FelixRomulijana />}
+        />
+        <Route
+          path={nisavskiOkrugPathRoutes.home}
+          element={<NisavskiOkrug />}
+        />
+        <Route path={nisavskiOkrugPathRoutes.nis} element={<Nis />} />
+        <Route path={nisavskiOkrugPathRoutes.cegar} element={<Cegar />} />
+        <Route
+          path={nisavskiOkrugPathRoutes.bovanskoJezero}
+          element={<BovanskoJezero />}
+        />
+        <Route
+          path={nisavskiOkrugPathRoutes.suvaPlanina}
+          element={<SuvaPlanina />}
+        />
+        <Route
+          path={nisavskiOkrugPathRoutes.sicevackaKlisura}
+          element={<SicevackaKlisura />}
+        />
+        <Route
+          path={nisavskiOkrugPathRoutes.manastirSvetaPetkaIverica}
+          element={<ManastirSvetaPetkaIverica />}
+        />
+        <Route
+          path={nisavskiOkrugPathRoutes.niskaBanja}
+          element={<NiskaBanja />}
+        />
+        <Route
+          path={toplickiOkurgPathRoutes.home}
+          element={<ToplickiOkrug />}
+        />
+        <Route
+          path={toplickiOkurgPathRoutes.prokuplje}
+          element={<Prokuplje />}
+        />
+        <Route
+          path={toplickiOkurgPathRoutes.djavoljaVaros}
+          element={<DjavoljaVaros />}
+        />
+        <Route
+          path={toplickiOkurgPathRoutes.jastrebac}
+          element={<PlaninaJastrebac />}
+        />
+        <Route
+          path={toplickiOkurgPathRoutes.hisar}
+          element={<TvrdjavaHisar />}
+        />
+        <Route
+          path={toplickiOkurgPathRoutes.hisar}
+          element={<TvrdjavaHisar />}
+        />
+        <Route
+          path={toplickiOkurgPathRoutes.manastirSvetogNikole}
+          element={<ManastirSvetogNikole />}
+        />
+        <Route
+          path={toplickiOkurgPathRoutes.planinaRadan}
+          element={<PlaninaRadan />}
+        />
+        <Route
+          path={pirotskiOkrugPathRoutes.home}
+          element={<PirotskiOkrug />}
+        />
+        <Route path={pirotskiOkrugPathRoutes.pirot} element={<Pirot />} />
+        <Route
+          path={pirotskiOkrugPathRoutes.staraPlanina}
+          element={<StaraPlanina />}
+        />
+        <Route
+          path={pirotskiOkrugPathRoutes.zavojskoJezero}
+          element={<ZavojskoJezero />}
+        />
+        <Route
+          path={pirotskiOkrugPathRoutes.vodopadTupavica}
+          element={<VodopadTupavica />}
+        />
+        <Route
+          path={pirotskiOkrugPathRoutes.manastirSukovo}
+          element={<ManastirSukovo />}
+        />
+        <Route
+          path={pirotskiOkrugPathRoutes.vodopadBigar}
+          element={<VodopadBigar />}
+        />
+        <Route
+          path={pirotskiOkrugPathRoutes.jerma}
+          element={<KanjonRekeJerme />}
+        />
+        <Route
+          path={jablanickiOkrugPathRoutes.home}
+          element={<JablanickiOkrug />}
+        />
+        <Route
+          path={jablanickiOkrugPathRoutes.leskovac}
+          element={<Leskovac />}
         />
       </Routes>
     </BrowserRouter>

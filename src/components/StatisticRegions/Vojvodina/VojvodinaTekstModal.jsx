@@ -43,8 +43,8 @@ export const VojvodinaTekstModal = ({ goBack }) => {
             <p style={{margin:'10px 0 10px 0px', textAlign: 'center'}}>Juzno-Banatski</p>
           </>
         <div className="btnClass">
-          <button className="firstBtn" onClick={() => navigate(-1)}>GO BACK</button>
-          <button className="secondBtn" onClick={handleNext}>NEXT</button>
+          <button className="button firstBtn" onClick={() => navigate(-1)}>Nazad</button>
+          <button className="button secondBtn" onClick={handleNext}>Napred</button>
         </div>
         <Outlet />
       </div>

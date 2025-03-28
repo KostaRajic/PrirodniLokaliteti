@@ -4,7 +4,7 @@ export const IstocnaIJuznaSrbijaRegioni =
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Toplički'},
       "geometry": {
         "coordinates": [
           [
@@ -395,7 +395,7 @@ export const IstocnaIJuznaSrbijaRegioni =
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Borski'},
       "geometry": {
         "coordinates": [
           [
@@ -866,7 +866,7 @@ export const IstocnaIJuznaSrbijaRegioni =
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Podunavski'},
       "geometry": {
         "coordinates": [
           [
@@ -1253,7 +1253,7 @@ export const IstocnaIJuznaSrbijaRegioni =
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Braničevski'},
       "geometry": {
         "coordinates": [
           [
@@ -1740,7 +1740,7 @@ export const IstocnaIJuznaSrbijaRegioni =
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Zaječarski'},
       "geometry": {
         "coordinates": [
           [
@@ -2199,7 +2199,7 @@ export const IstocnaIJuznaSrbijaRegioni =
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Nišavski'},
       "geometry": {
         "coordinates": [
           [
@@ -2882,7 +2882,7 @@ export const IstocnaIJuznaSrbijaRegioni =
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Pirotski'},
       "geometry": {
         "coordinates": [
           [
@@ -3225,7 +3225,7 @@ export const IstocnaIJuznaSrbijaRegioni =
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Jablanički'},
       "geometry": {
         "coordinates": [
           [
@@ -3736,7 +3736,7 @@ export const IstocnaIJuznaSrbijaRegioni =
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {name: 'Pčinski'},
       "geometry": {
         "coordinates": [
           [

@@ -74,6 +74,6 @@ U manastirskoj crkvi, posvećenoj Vaznesenju Hristovom, čuvaju se mošti kneza 
     name: "Prirodnjački centar",
     img: prirodnjackiCentar,
     mainText: `
-Vodopad Prskalo je jedinstven prirodni fenomen smešten na planini Kučaj, u blizini naselja Resavica, u opštini Despotovac. Iako nema veliki protok vode, nikada ne presušuje, a svojom neobičnom pojavom i očaravajućom lepotom ostavlja snažan utisak na sve koji ga posete. Ovaj vodopad je pravi dragulj prirode, koji će vam ostati u sećanju zbog svoje netaknute lepote i spokojne atmosfere.`,
+Prirodnjački centar Srbije u Svilajncu je naučno-obrazovna institucija i muzej koji se fokusira na naučni turizam. Smešten je uz regionalni put Markovac—Svilajnac—Despotovac, u neposrednoj blizini kompleksa Sportskog-turističkog centra, na 6 kilometara od međunarodnog puta (E75), u pravcu Despotovca, i 110 kilometara od Beograda.`
   },
 ];

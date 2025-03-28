@@ -7,7 +7,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 export const SumadijaIZapadnaSrbija = () => {
-  const center = [43.904569, 20.301485];
+  const center = [43.92543064661552, 20.38526435851563];
   const navigate = useNavigate();
   const [showMacvanski, setShowMacvanski] = useState(false);
   const [showKolubarski, setShowKolubarski] = useState(false);
@@ -27,6 +27,8 @@ export const SumadijaIZapadnaSrbija = () => {
     }
   });
 
+  // const bounds = [[44.02543064661552, 20.888526435851563]];
+
   useEffect(() => {
     if (showMacvanski) {
       return navigate("Macvanski");
@@ -40,6 +42,10 @@ export const SumadijaIZapadnaSrbija = () => {
       return navigate("MoravickiOkrug");
     } else if (showPomoravski) {
       return navigate("PomoravskiOkrug");
+    } else if (showRaski) {
+      return navigate("RaskiOkrug");
+    } else if (showRasinski) {
+      return navigate("RasinskiOkrug");
     }
   });
 
@@ -48,15 +54,18 @@ export const SumadijaIZapadnaSrbija = () => {
       center={center}
       zoom={zoom}
       style={{ width: "100vw", height: "100vh", position: "none" }}
+      //maxBounds={bounds}
+      maxBoundsViscosity={1.0}
+      scrollWheelZoom={false}
     >
-      <TileLayer
-        url={`https://api.maptiler.com/maps/satellite/256/{z}/{x}/{y}.jpg?key=qZ4DIeGQoRrxWzufyKP1`}
-        attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
-      />
+        <TileLayer
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        />
       <FaArrowLeft
         className="arrowLeft"
         onClick={() => navigate(-1)}
-        style={{ fill: "white", zIndex: "400" }}
+        style={{zIndex: "400" }}
       />
       {SumadijaIZapadnaSrbijaRegioni?.features?.map((statisticRegion) => {
         const cordinates = statisticRegion?.geometry?.coordinates[0]?.map(
@@ -66,8 +75,8 @@ export const SumadijaIZapadnaSrbija = () => {
         return (
           <Polygon
             pathOptions={{
-              fillColor: "#FD8D3C",
-              fillOpacity: 0.3,
+              fillColor: "green",
+              fillOpacity: 0.8,
               weight: 2,
               opacity: 1,
               color: "white",
@@ -84,7 +93,8 @@ export const SumadijaIZapadnaSrbija = () => {
               mouseout: (e) => {
                 const layer = e.target;
                 layer.setStyle({
-                  fillOpacity: 0.3,
+                  fillColor: "green",
+                  fillOpacity: 0.8,
                   weight: 2,
                   color: "white",
                 });
@@ -102,6 +112,10 @@ export const SumadijaIZapadnaSrbija = () => {
                   setShowMoravicki(true);
                 statisticRegion?.properties?.name === "Pomoravski" &&
                   setShowPomoravski(true);
+                statisticRegion?.properties?.name === "Raški" &&
+                  setShowRaski(true);
+                statisticRegion?.properties?.name === "Rasinski" &&
+                  setShowRasinski(true);
               },
             }}
           >

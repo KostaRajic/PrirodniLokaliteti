@@ -37,10 +37,10 @@ export const SrednjeBanatski = () => {
         <FaArrowLeft
           className="arrowLeft"
           onClick={() => navigate(-1)}
-          style={{ fill: "white",right: '50px' }}
+          style={{ fill: "white"}}
         />
       </header>
-      <section className="srednjeBanatskiOkrug">
+      <section className="srednjeBanatski okrug">
         <h1>Srednje - Banatski okrug</h1>
         <form>
           <p>

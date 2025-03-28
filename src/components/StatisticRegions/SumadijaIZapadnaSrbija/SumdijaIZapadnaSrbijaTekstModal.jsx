@@ -63,10 +63,10 @@ export const SumadijaIZapadnaSrbijaTekstModal = ({ goBack }) => {
         </p>
         <div className="btnClass">
           <button className="firstBtn" onClick={() => navigate(-1)}>
-            GO BACK
+            Nazad
           </button>
           <button className="secondBtn" onClick={handleNext}>
-            NEXT
+            Napred
           </button>
         </div>
         <Outlet />

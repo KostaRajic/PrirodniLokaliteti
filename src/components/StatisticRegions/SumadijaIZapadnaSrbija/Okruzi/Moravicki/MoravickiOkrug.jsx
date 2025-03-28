@@ -45,10 +45,10 @@ export const MoravickiOkrug = () => {
         <FaArrowLeft
           className="arrowLeft"
           onClick={() => navigate(-1)}
-          style={{ fill: "white",right: '50px' }}
+          style={{ fill: "white"}}
         />
       </header>
-      <section className="moravickiOkrug">
+      <section className="moravicki okrug">
         <h1>Moravički Okrug</h1>
         <form>
           <p>

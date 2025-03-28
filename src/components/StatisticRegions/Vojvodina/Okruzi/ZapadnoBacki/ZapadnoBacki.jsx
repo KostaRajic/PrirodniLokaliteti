@@ -42,10 +42,10 @@ export const ZapadnoBacki = () => {
           <FaArrowLeft
             className="arrowLeft"
             onClick={() => navigate(-1)}
-            style={{ fill: "white",right: '50px' }}
+            style={{ fill: "white"}}
           />
         </header>
-        <section className="zapadnoBackiClassMain">
+        <section className="zapadnoBacki okrug">
           <h1>Zapadno - Bački okrug</h1>
           <form>
             <p>

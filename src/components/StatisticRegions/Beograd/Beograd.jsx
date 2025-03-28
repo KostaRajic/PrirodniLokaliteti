@@ -47,7 +47,7 @@ export const Beograd = () => {
         <FaArrowLeft
           className="arrowLeft"
           onClick={() => navigate(-1)}
-          style={{ fill: "white",right: '50px'}}
+          style={{ fill: "white"}}
         />
       </header>
       <section className="beograd">

@@ -10,7 +10,8 @@
   color: white;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -74,19 +75,24 @@ body {
 }
 
 .firstBtn {
-  margin: 40px;
-  padding: 20px;
-  font-size: 18px;
+  margin: 40px 50px;
   width: 150px;
-  color: black;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.5s all;
+      color: var(--someBlueColor);
+      background: white;
+      border-radius: 999px;
+      box-shadow: #5E5DF0 0 10px 20px -10px;
+      cursor: pointer;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      border: 0;
 }
 
 .firstBtn:hover {
   transform: scale(1.1);
-  background-color: rgba(84, 14, 215, 0.773);
+  background-color: var(--someBlueColor);
   color: white;
 }
 
@@ -95,19 +101,27 @@ body {
 }
 
 .secondBtn {
-  color: black;
-  margin: 40px;
-  padding: 20px;
-  font-size: 18px;
-  width: 150px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.5s all;
+  margin: 40px 50px;
+      width: 150px;
+      color: var(--someBlueColor);
+      background: white;
+      border-radius: 999px;
+      box-shadow: #5E5DF0 0 10px 20px -10px;
+      cursor: pointer;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+
+      height: 60px;
+
+      border: 0;
 }
 
 .secondBtn:hover {
   transform: scale(1.1);
-  background-color: rgba(84, 14, 215, 0.773);
+  background-color: var(--someBlueColor);
   color: white;
 }
 
@@ -145,6 +159,17 @@ body {
   text-shadow: 5px 5px 5px black;
 }
 
+.istocnaIJuznaSrbijaTekstModalBackground {
+  background-image: url(./assets/images/JuznaIIstocnaSrbija/istocnaSrbija.jpg);
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  text-shadow: 5px 5px 5px black;
+}
+
 .toolTipClass {
   font-size: 20px;
   padding: 10px;
@@ -161,62 +186,8 @@ body {
   font-size: 25px;
   cursor: default;
 
-
-  .zapadnoBackiClassMain {
-    background-image: url(../src/assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor.jpg);
+  .okrug {
     background-position: 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.65);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-
-      word-spacing: 1.5px;
-    }
-  }
-
-  .severnoBackiOkrug {
-    background-image: url(../src/assets/images/Vojvodina/SevernoBackiOkrug/PalickoJezero3.jpg);
-    background-position: 50% 90%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }
-  }
-
-  .severnoBanatskiOkrug {
-    background-image: url("./assets/images/Vojvodina/SevernoBanatskiOkrug/kikindaBCG.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }
-  }
-
-  .juznoBackiOkrug {
-    background-image: url("./assets/images/Vojvodina/JuznoBackiOkrug/NoviSad.jpg");
-    background-position: 50% 40%;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
@@ -225,22 +196,6 @@ body {
     font-size: 26px;
     text-shadow: 5px 5px 5px black;
 
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }
-  }
-
-  .srednjeBanatskiOkrug {
-    background-image: url("./assets/images/Vojvodina/SrednjeBanatskiOkrug/SrednjeBanatskiOkrug.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
 
     div {
       padding: 0 50px;
@@ -248,140 +203,98 @@ body {
     }
   }
 
-  .juznoBanatskiOkrug {
-    background-image: url("./assets/images/Vojvodina/JuznoBanatskiOkrug/juznobanatskiOkrug.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }
+  .rasinski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/rasinskiOkrug.jpg);
   }
-
-  .sremskiOkrug {
-    background-image: url("./assets/images/Vojvodina/SremskiOkrug/sremski.jpg");
-    background-position: 50% 40%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }
-  }
-
-  .macvanskiOkrug {
-    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/macvanski.jpg);
-    background-position: 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }
-  }
-
-  .kolubarskiOkrug {
-    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/kolubarski.jpg);
-    background-position: 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }
-  }
-
-    .sumadijskiOkrug {
-      background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/sumadija.jpg);
-      background-position: 50%;
-      background-size: cover;
-      background-color: rgba(0, 0, 0, 0.5);
-      background-blend-mode: overlay;
-      color: white;
-      padding-bottom: 50px;
-      font-size: 26px;
-      text-shadow: 5px 5px 5px black;
   
-      div {
-        padding: 0 50px;
-        word-spacing: 1.5px;
-      }
+
+  .raski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/raskiOkrug.jpg);
   }
 
-  .zlatiborskiOkrug {
-    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/zlatiborskiOkrug.jpg);
-    background-position: 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    color: moravickiOkrugwhite;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }  
+  .zapadnoBacki {
+    background-image: url(../src/assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor.jpg);
   }
 
-  .moravickiOkrug {
+  .severnoBanatski {
+    background-image: url("./assets/images/Vojvodina/SevernoBanatskiOkrug/kikindaBCG.jpg");
+  }
+
+  .juznoBacki {
+    background-image: url("./assets/images/Vojvodina/JuznoBackiOkrug/NoviSad.jpg");
+  }
+
+  .juznoBanatski {
+    background-image: url("./assets/images/Vojvodina/JuznoBanatskiOkrug/juznobanatskiOkrug.jpg");
+  }
+
+  .severnoBacki {
+    background-image: url(../src/assets/images/Vojvodina/SevernoBackiOkrug/PalickoJezero3.jpg);
+  }
+
+  .srednjeBanatski {
+    background-image: url("./assets/images/Vojvodina/SrednjeBanatskiOkrug/SrednjeBanatskiOkrug.jpg");
+  }
+
+  .sremski {
+    background-image: url("./assets/images/Vojvodina/SremskiOkrug/sremski.jpg");
+  }
+
+  .kolubarski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/kolubarski.jpg);
+  }
+
+  .macvanski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/macvanski.jpg);
+  }
+
+  .moravicki {
     background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/moravickiOkrug.jpg);
-    background-position: 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    color: moravickiOkrugwhite;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }  
   }
 
-  .pomoravskiOkrug {
+  .sumadijski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/sumadija.jpg);
+  }
+
+  .zlatiborski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/zlatiborskiOkrug.jpg);
+  }
+
+  .pomoravski {
     background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/pomoravskiOkrug.jpg);
-    background-position: 50%;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;
-    color: white;
-    padding-bottom: 50px;
-    font-size: 26px;
-    text-shadow: 5px 5px 5px black;
-
-    div {
-      padding: 0 50px;
-      word-spacing: 1.5px;
-    }  
   }
 
+  .podunavski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/podunavskiOkrug.jpg);
+  }
+
+  .branicevski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/branicevskiOkug.jpg);
+  }
+  
+  .borski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/BorskiOkrug/borskiOkrug.jpg);
+  }
+
+  .zajecarski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/zajecarskiOkrug.jpg);
+  }
+
+  .nisavski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/nisavskiOkrug.jpg);
+  }
+
+  .toplicki {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/toplickiOkrug.jpg);
+  }
+
+  .pirotski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/pirotskiOkrug.jpg);
+  }
+
+  .jablanicki {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/jablanickiOkrug.jpg);
+  }
 
   h1 {
     padding: 20px 50px 30px 50px;
@@ -539,19 +452,22 @@ body {
   }
 
   .caruoselInfo {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
     width: 400px;
-    height: 450px;
-    background-color: white;
+    height: 500px;
     margin-top: 7%;
     margin-left: 10%;
 
     h3 {
-      color: black;
+
       padding: 30px;
     }
 
     p {
-      color: black;
+      line-height: 23px;
+      letter-spacing: 1.1px;
+      word-spacing: 1.2px;
       overflow: scroll;
       padding: 0 30px 30px 30px;
       height: 210px;
@@ -565,19 +481,34 @@ body {
     button {
       margin: 20px 0 30px 30px;
       width: 120px;
-      height: 35px;
-      color: black;
-      font-size: 16px;
-      font-weight: 500;
-      background-color: #dddcdc;
+      color: var(--someBlueColor);
+      background: white;
+      border-radius: 999px;
+      box-shadow: #5E5DF0 0 10px 20px -10px;
       cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 8px 18px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
     }
     button:hover {
-      transform: scale(1.1);
+      transform: scale(1.1) translateY(3px);
+      color: white;
+      background: var(--someBlueColor);
     }
 
     button:active {
       transform: scale(1);
+      color: var(--someBlueColor);
+      background: white;
     }
   }
 }
@@ -691,7 +622,7 @@ body {
     margin-left: 50px;
     cursor: pointer;
   }
-  
+
   .kgImages:hover {
     transform: scale(1.1);
   }
@@ -701,14 +632,13 @@ body {
   }
 
   h2 {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 10px 30px;
     color: white;
     font-style: italic;
     text-shadow: 5px 5px 5px black;
   }
-  
 }
 
 .displayFlexClassic {
@@ -739,14 +669,14 @@ body {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  height: 50px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
   font-weight: 1000;
   overflow: hidden;
   font-size: 45px;
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border: none;
+  color: var(--someBlueColor);
+  border: 3px solid var(--someBlueColor);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -756,7 +686,8 @@ body {
 }
 
 .scroll-to-top-btn:hover {
-  background-color: #0056b3;
+  background-color: var(--someBlueColor);
+  color: white;
 }
 
 .scroll-to-top-btn.show {
@@ -771,7 +702,6 @@ body {
   justify-content: center;
   overflow: auto;
   pointer-events: auto;
-
 }
 
 .scrollableClass {
@@ -781,7 +711,23 @@ body {
   height: 60vh;
 }
 
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+}
 
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
 
 @media (max-width: 420px) {
   .modalContent {
@@ -836,21 +782,27 @@ body {
       height: 60vh;
 
       .caruoselInfo {
-        margin: 20px;
-        height: 130px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        margin: 20px auto;
+        height: auto;
         width: 200px;
 
         p {
-          display: none;
+          color: white;
+          padding: 10px 30px;
+
+          font-style: italic;
+          text-shadow: 5px 5px 5px black;
         }
 
         button {
           margin: 20px 0 30px 30px;
-          height: 28px;
-          width: 100px;
+          height: 39px;
+          width: 126px;
           font-size: 13px;
-          top: 82px;
-          position: absolute;
+
         }
 
         p {
@@ -859,7 +811,12 @@ body {
         }
 
         h3 {
+          margin-top: 5px;
           padding-top: 15px;
+          color: white;
+          font-weight: 700;
+          font-size: 16px;
+      
         }
       }
     }
@@ -873,7 +830,7 @@ body {
     h2 {
       font-size: 43px;
       margin: 20px 70px 0 30px;
-      padding: 0;
+      padding: 10px;
       top: 0;
     }
 
@@ -932,5 +889,23 @@ body {
     }
   }
 
+  .scroll-to-top-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 35px;
+  }
 
+  .arrowLeft {
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+  }
+
+  .secondBtn {
+    margin-left: 20px;
+  }
+
+  .firstBtn {
+    margin-right: 20px;
+  }
 }

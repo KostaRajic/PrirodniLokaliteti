@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { juznoBackiData } from "./JuznoBackiData";
+import { JuznoBackiPathRoutes } from "./JuznoBackiPathRoutes";
 
 export const JuznoBacki = () => {
   const [slide, setSlide] = useState(0);
@@ -19,17 +20,17 @@ export const JuznoBacki = () => {
 
   const readMore = (name) => {
     if (name === 'Nacionalni park Fruska Gora') {
-      navigate('FruskaGora')
+      navigate(JuznoBackiPathRoutes.fruskaGora)
     } else if (name === 'Novi Sad') {
-      navigate('NoviSad')
+      navigate(JuznoBackiPathRoutes.noviSad)
     } else if (name === 'Manastir Krušedol') {
-      navigate('ManastirKrusedol')
+      navigate(JuznoBackiPathRoutes.manastirKrusedol)
     } else if (name === 'Sremski Karlovci') {
-      navigate('SremskiKarlovci')
+      navigate(JuznoBackiPathRoutes.sremskiKarlovci)
     } else if (name === 'Šajkaška oblast') {
-      navigate('SajkaskaOblast')
+      navigate(JuznoBackiPathRoutes.sajkaskaOblast)
     } else if (name === 'Manastir Beočin') {
-      navigate('ManastirBeocin')
+      navigate(JuznoBackiPathRoutes.manastirBeocin)
     }
   };
 
@@ -39,10 +40,10 @@ export const JuznoBacki = () => {
         <FaArrowLeft
           className="arrowLeft"
           onClick={() => navigate(-1)}
-          style={{ fill: "white",right: '50px' }}
+          style={{ fill: "white"}}
         />
       </header>
-      <section className="juznoBackiOkrug">
+      <section className="juznoBacki okrug">
         <h1>Južno - Bački okrug</h1>
         <form>
           <p>
