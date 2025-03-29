@@ -3,6 +3,7 @@ import suvaPlanina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/Nisav
 import suvaPlanina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina3.jpg";
 import suvaPlanina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina4.jpg";
 import suvaPlanina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina5.jpg";
+import suvaPlanina6 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -59,8 +60,10 @@ export const SuvaPlanina = () => {
         evidentirano je 128 endemskih vrsta flore, 58 vrsta lišajeva, 139 vrsta
         ptica itd. Zbog toga je prema nacionalnom zakonodavstvu proglašena za
         područje sa statusom rezervata prirode i objektom geonasleđa Srbije.
-        <br />
-        <br />
+      </p>
+
+      <img src={suvaPlanina6} alt="Suva Planina 6" />
+      <p>
         Od ukupno 31.860 ha površine zaštićenog područja Specijalnog rezervata
         prirode „Suva planina”, 18.176 ha ima prvi (4,5%), drugi (8,5%) i treći
         stepen zaštite (87%).

@@ -10,6 +10,7 @@ import { nisavskiOkrugPathRoutes } from "./Okruzi/Nisavski/NisavskiOkrugPathRout
 import { toplickiOkurgPathRoutes } from "./Okruzi/Toplicki/ToplickiOkurgPathRoutes";
 import { pirotskiOkrugPathRoutes } from "./Okruzi/Pirotski/PirotskiOkrugPathRoutes";
 import { jablanickiOkrugPathRoutes } from "./Okruzi/Jablanicki/JablanickiOkrugPathRoutes";
+import { pcinjskiOkrugPathRoutes } from "./Okruzi/Pcinjski/PcinjskiOkrugPathRoutes";
 
 export const IstocnaiJuznaSrbija = () => {
   const center = [43.582016, 21.975183];
@@ -21,7 +22,8 @@ export const IstocnaiJuznaSrbija = () => {
   const [showNisavski, setShowNisavski] = useState(false);
   const [showToplicki, setShowToplicki] = useState(false);
   const [showPirotski, setShowPirotski] = useState(false);
-  const [showJablanicki, setShowJablanicki] = useState(false)
+  const [showJablanicki, setShowJablanicki] = useState(false);
+  const [showPcinjski, setShowPcinjski] = useState(false);
   const [zoom, setZoom] = useState(() => {
     if (window.innerWidth < 600) {
       return 7;
@@ -51,6 +53,8 @@ export const IstocnaiJuznaSrbija = () => {
       return navigate(pirotskiOkrugPathRoutes.home);
     } else if (showJablanicki) {
       return navigate(jablanickiOkrugPathRoutes.home);
+    } else if (showPcinjski) {
+      return navigate(pcinjskiOkrugPathRoutes.home);
     }
   });
 
@@ -117,10 +121,12 @@ export const IstocnaiJuznaSrbija = () => {
                   setShowNisavski(true);
                 statisticRegion?.properties?.name === "Toplički" &&
                   setShowToplicki(true);
-                  statisticRegion?.properties?.name === "Pirotski" &&
+                statisticRegion?.properties?.name === "Pirotski" &&
                   setShowPirotski(true);
-                  statisticRegion?.properties?.name === "Jablanički" &&
+                statisticRegion?.properties?.name === "Jablanički" &&
                   setShowJablanicki(true);
+                statisticRegion?.properties?.name === "Pčinski" &&
+                  setShowPcinjski(true);
               },
             }}
           >

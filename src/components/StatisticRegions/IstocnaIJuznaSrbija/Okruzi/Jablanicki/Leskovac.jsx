@@ -22,7 +22,7 @@ export const Leskovac = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={leskovac1} alt="Manastir Gornjak 1" />
+      <img src={leskovac1} alt="Leskovac 1" />
 
       <h2>Leskovac</h2>
 
@@ -38,7 +38,7 @@ export const Leskovac = () => {
         gora, Seličevice i Suva planina na istoku.
       </p>
 
-      <img src={leskovac2} alt="Manastir Gornjak 2" />
+      <img src={leskovac2} alt="Leskovac 2" />
 
       <p>
         Grad Leskovac ima 144 naselja, a među njima su Leskovac, Vučje i
@@ -56,7 +56,7 @@ export const Leskovac = () => {
         festival (LIFFE).
       </p>
 
-      <img src={leskovac3} alt="Manastir Gornjak 3" />
+      <img src={leskovac3} alt="Leskovac 3" />
 
       <p>
         Najraniji naziv za područje u kojem se danas nalazi grad Leskovac bio je
@@ -72,63 +72,66 @@ export const Leskovac = () => {
         reke Lapaštice u reku Medveđu (Jablanicu).
       </p>
 
-      <img src={leskovac4} alt="Manastir Gornjak 4" />
+      <img src={leskovac4} alt="Leskovac 4" />
 
       <p>
-        Međutim, popis iz vremena Murata III (1574–1595) pokazuje pad manastira
-        – broj monaha opada na dva, a godišnji prihod se smanjuje na 1.000 akči.
-        U ovom popisu prvi put se javlja novo ime manastira – Gornjak. Ime ne
-        potiče od zapadnog vetra, već od „gornjeg grada“. Naime, Gornjačka
-        klisura prepuna je ostataka starih utvrđenja: na visu Vukanu nalazio se
-        gradić, na Uzengiji još jedno utvrđenje, dok je na suprotnoj strani, na
-        Ježevcu, stajala stražarska osmatračnica s koje se mogao videti ceo
-        predeo, čak do Beograda. Pored reke su postojale zidine i kapije koje su
-        zatvarale taj jedini i teško prohodni prolaz u Homolje.
+        Leskovac se nalazi u podnožju brda Hisar (341 m), u srcu prostrane i
+        plodne leskovačke kotline, jedne od najvećih kotlina u Srbiji. Ova
+        kotlina se prostire duž srednjeg toka Južne Morave, između Niške kotline
+        na severu i Vranjske kotline na jugu. Kotlina je dugačka 50, a široka 45
+        km, a presijecaju je rečni tokovi Južne Morave, Jablanice, Veternice i
+        Puste reke. Kroz sam grad protice reka Veternica.
+        <br />
+        <br />
+        Leskovac leži na nadmorskoj visini od 228 m i smešten je u plodnoj
+        kotlini, koja obuhvata 2.250 km² i u kojoj se nalazi još oko 300
+        naselja. Ova kotlina je nekada bila deo Panonskog mora. Oko kotline se
+        nalaze planine: Goľjak, Čemerik (1.638 m) i Kukavica na jugu, Babička
+        gora (1.098 m), Seličevice (903 m), Bukovik, Kruševica i Suva planina na
+        istoku, Radan (1.409 m) i Pasjača na zapadu. Na severu se graniči sa
+        Niškom kotlinom, dok se na jugu, preko Grdeličke klisure, spaja sa
+        Vranjsko-bujanovačkom kotlinom.
       </p>
 
-      <img src={leskovac5} alt="Manastir Gornjak 5" />
+      <img src={leskovac5} alt="Narodni muzej u Leskovcu" />
       <p>
-        Manastir Gornjak, iako vladarska zadužbina, skromnih je dimenzija, što
-        je često izazivalo sumnju u Lazarovo ktitorstvo. Mnogi manastirski
-        objekti nisu sačuvani u prvobitnom stanju. Tokom Drugog svetskog rata
-        spaljena su oba konaka.
+        Narodni muzej u Leskovcu je neprofitna ustanova u službi društva, koja
+        prikuplja, čuva, dokumentuje, proučava i prikazuje istorijsko-umetnička
+        dela prikupljena na teritoriji koju pokriva. Muzejski predmeti su
+        raspoređeni u zbirke prema njihovoj pripadnosti. Eksponati u stalnoj
+        postavci ili izloženi na povremenim muzejskim izložbama proširuju
+        saznanja o istorijskim kontekstima njihovog nastanka, upotrebi i
+        umetničkoj vrednosti.
         <br />
         <br />
-        Danas manastirski kompleks čine manastirska crkva, kapela Grigorija
-        Sinajita, Zimska kapela i kapela Svetog Ilije, kao i stari i novi konak.
-        Izvan manastirskog kompleksa nalaze se dva objekta – jednospratna zgrada
-        za duhovnika i goste, kao i trpezarija za vernike koji se ovde okupljaju
-        za velike praznike.
+        Kao čuvar, zaštitnik i tumač kulturne baštine, muzej je nezaobilazan
+        akter savremenih društvenih kretanja na jugu Srbije, koji se brine o
+        unapređenju muzejske delatnosti, širenju opštih kulturnih vrednosti i
+        ostvarivanju vaspitno-obrazovnih zadataka.
       </p>
 
-      <img src={leskovac6} alt="Manastir Gornjak 5" />
+      <img src={leskovac6} alt="Park Devet Jugovića u Leskovcu" />
       <p>
-        Manastir Gornjak, iako vladarska zadužbina, skromnih je dimenzija, što
-        je često izazivalo sumnju u Lazarovo ktitorstvo. Mnogi manastirski
-        objekti nisu sačuvani u prvobitnom stanju. Tokom Drugog svetskog rata
-        spaljena su oba konaka.
+        Park Devet Jugovića u Leskovcu je jedan od važnijih gradskih parkova,
+        smešten u samom centru grada. Ovaj park je poznat po svojoj zelenoj
+        površini, koja pruža miran i prijatan ambijent za odmor i rekreaciju.
+        Park je nazvan po devet junaka iz srpske istorije, poznatih kao
+        Jugovići, koji su simbolizovali hrabrost i borbu za slobodu.
         <br />
-        <br />
-        Danas manastirski kompleks čine manastirska crkva, kapela Grigorija
-        Sinajita, Zimska kapela i kapela Svetog Ilije, kao i stari i novi konak.
-        Izvan manastirskog kompleksa nalaze se dva objekta – jednospratna zgrada
-        za duhovnika i goste, kao i trpezarija za vernike koji se ovde okupljaju
-        za velike praznike.
+        <br />U parku se često održavaju različite kulturne i društvene
+        manifestacije, a njegove staze i livade pružaju prostor za šetanje,
+        sport i opuštanje. Pored toga, park je domaćin i nekoliko spomenika,
+        među kojima je i spomenik devet Jugovića, koji je podignut u znak
+        sećanja na njihove herojske podvige.
       </p>
 
-      <img src={leskovac7} alt="Manastir Gornjak 5" />
+      <img src={leskovac7} alt="Spomen-park „Revolucije“" />
       <p>
-        Manastir Gornjak, iako vladarska zadužbina, skromnih je dimenzija, što
-        je često izazivalo sumnju u Lazarovo ktitorstvo. Mnogi manastirski
-        objekti nisu sačuvani u prvobitnom stanju. Tokom Drugog svetskog rata
-        spaljena su oba konaka.
-        <br />
-        <br />
-        Danas manastirski kompleks čine manastirska crkva, kapela Grigorija
-        Sinajita, Zimska kapela i kapela Svetog Ilije, kao i stari i novi konak.
-        Izvan manastirskog kompleksa nalaze se dva objekta – jednospratna zgrada
-        za duhovnika i goste, kao i trpezarija za vernike koji se ovde okupljaju
-        za velike praznike.
+        Spomen-park „Revolucije“ je memorijalni park koji se nalazi na istočnoj
+        padini uzvišenja Hisar u gradu Leskovcu. Kompleks je izgrađen 1971.
+        godine, a autor mu je arhitekta Bogdan Bogdanović. Posvećen je borcima
+        NOB-a i žrtvama fašizma sa ovog područja, koji su poginuli tokom Drugog
+        svetskog rata.
       </p>
     </div>
   );

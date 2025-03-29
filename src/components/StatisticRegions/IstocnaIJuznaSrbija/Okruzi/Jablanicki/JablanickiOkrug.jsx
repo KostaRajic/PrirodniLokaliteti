@@ -22,6 +22,16 @@ export const JablanickiOkrug = () => {
   const readMore = (name) => {
     if (name === "Leskovac") {
       navigate(jablanickiOkrugPathRoutes.leskovac)
+    } else if (name === "Brestovačko Jezero") {
+      navigate(jablanickiOkrugPathRoutes.brestovackoJezero)
+    } else if (name === "Planina Babička Gora") {
+      navigate(jablanickiOkrugPathRoutes.babickaGora)
+    } else if (name === "Kanjon Vučjanke") {
+      navigate(jablanickiOkrugPathRoutes.kanjonVucjanke)
+    } else if (name === "Planina Goljak") {
+      navigate(jablanickiOkrugPathRoutes.planinaGoljak)
+    } else if (name === "Tularska Banja") {
+      navigate(jablanickiOkrugPathRoutes.tularskaBanja)
     }
   };
 

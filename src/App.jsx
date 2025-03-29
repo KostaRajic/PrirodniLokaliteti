@@ -218,6 +218,17 @@ import { KanjonRekeJerme } from "./components/StatisticRegions/IstocnaIJuznaSrbi
 import { jablanickiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/JablanickiOkrugPathRoutes";
 import { JablanickiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/JablanickiOkrug";
 import { Leskovac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/Leskovac";
+import { BrestovackoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/BrestovackoJezero";
+import { PlaninaBabickaGora } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/PlaninaBabickaGora";
+import { KanjonVucjanke } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/KanjonVucjanke";
+import { PlaninaGoljak } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/PlaninaGoljak";
+import { TularskaBanja } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/TularskaBanja";
+import { pcinjskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PcinjskiOkrugPathRoutes";
+import { PcinjskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PcinjskiOkrug";
+import { Vranje } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/Vranje";
+import { VlasinskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/VlasinskoJezero";
+import { PlaninaBesnaKobila } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaBesnaKobila";
+import { ManastirProhoraPcinjskog } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/ManastirProhoraPcinjskog";
 
 function App() {
   return (
@@ -1024,6 +1035,46 @@ function App() {
         <Route
           path={jablanickiOkrugPathRoutes.leskovac}
           element={<Leskovac />}
+        />
+        <Route
+          path={jablanickiOkrugPathRoutes.brestovackoJezero}
+          element={<BrestovackoJezero />}
+        />
+        <Route
+          path={jablanickiOkrugPathRoutes.babickaGora}
+          element={<PlaninaBabickaGora />}
+        />
+         <Route
+          path={jablanickiOkrugPathRoutes.kanjonVucjanke}
+          element={<KanjonVucjanke />}
+        />
+        <Route
+          path={jablanickiOkrugPathRoutes.planinaGoljak}
+          element={<PlaninaGoljak />}
+        />
+        <Route
+          path={jablanickiOkrugPathRoutes.tularskaBanja}
+          element={<TularskaBanja />}
+        />
+        <Route
+          path={pcinjskiOkrugPathRoutes.home}
+          element={<PcinjskiOkrug />}
+        />
+         <Route
+          path={pcinjskiOkrugPathRoutes.vranje}
+          element={<Vranje />}
+        />
+        <Route
+          path={pcinjskiOkrugPathRoutes.vlasinskoJezero}
+          element={<VlasinskoJezero />}
+        />
+        <Route
+          path={pcinjskiOkrugPathRoutes.besnaKobila}
+          element={<PlaninaBesnaKobila />}
+        />
+        <Route
+          path={pcinjskiOkrugPathRoutes.prohorPcinjski}
+          element={<ManastirProhoraPcinjskog />}
         />
       </Routes>
     </BrowserRouter>
