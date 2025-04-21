@@ -9,6 +9,7 @@ import rajac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Kolubars
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { kulubarskiOkrugPathRoutes } from "./KolubarskiOkrugPathRoutes";
 
 export const VrhRajac = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const VrhRajac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={rajac1} alt="Vrh Rajac 1" />
 

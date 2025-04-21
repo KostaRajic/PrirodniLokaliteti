@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { toplickiOkrugData } from "./toplickiOkrugData";
 import { toplickiOkurgPathRoutes } from "./ToplickiOkurgPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const ToplickiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -39,7 +40,7 @@ export const ToplickiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.IstocnaSrbija)}
           style={{ fill: "white" }}
         />
       </header>

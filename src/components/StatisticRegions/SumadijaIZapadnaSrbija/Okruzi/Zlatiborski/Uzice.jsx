@@ -13,6 +13,7 @@ import uzice11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Zlatibo
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
 
 export const Uzice = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ export const Uzice = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(zlatiborskiOkrugPathRoutes.uzice)}
         style={{ fill: "white" }}
       />
       <header></header>

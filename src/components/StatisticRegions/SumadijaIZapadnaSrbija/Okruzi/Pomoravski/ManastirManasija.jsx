@@ -7,6 +7,7 @@ import manasija5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Pomor
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pomoravskiOkrugPathRoutes } from "./PomoravskiOkrugPathRoutes";
 
 export const ManastirManasija = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const ManastirManasija = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(pomoravskiOkrugPathRoutes.home)}
 
       />
       <header></header>

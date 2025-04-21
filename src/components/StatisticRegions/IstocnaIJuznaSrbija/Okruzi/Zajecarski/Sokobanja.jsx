@@ -9,6 +9,7 @@ import sokobanja8 from "../../../../../assets/images/JuznaIIstocnaSrbija/Zajecar
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zajecarskiOkrugPathRoutes } from "./ZajecarskiOkrugPathRoutes";
 
 export const SokoBanja = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const SokoBanja = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={sokobanja2} alt="Sokobanja 1" />
 

@@ -8,6 +8,7 @@ import kosutnjak6 from "../../../assets/images/Beograd/Kosutnjak/kosutnjak6.jpg"
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const Kosutnjak = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Kosutnjak = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
       <img src={kosutnjak1} alt="Kalemegdan 1" />
 

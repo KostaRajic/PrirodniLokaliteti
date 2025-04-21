@@ -6,6 +6,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { jablanickiOkrugData } from "./JablanickiOkrugData";
 import { jablanickiOkrugPathRoutes } from "./JablanickiOkrugPathRoutes";
 import { Leskovac } from "./Leskovac";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const JablanickiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -40,7 +41,7 @@ export const JablanickiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.IstocnaSrbija)}
           style={{ fill: "white" }}
         />
       </header>

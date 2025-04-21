@@ -229,12 +229,82 @@ import { Vranje } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi
 import { VlasinskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/VlasinskoJezero";
 import { PlaninaBesnaKobila } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaBesnaKobila";
 import { ManastirProhoraPcinjskog } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/ManastirProhoraPcinjskog";
+import { PlaninaKukavica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaKukavica";
+import { PlaninaCemernik } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaCemernik";
+import { KosovoIMetohijaTekstModal } from "./components/StatisticRegions/KosovoIMetohija/KosovoIMetohijaTekstModal";
+import { KosovoIMetohija } from "./components/StatisticRegions/KosovoIMetohija/KosovoIMetohija";
+import { peckiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckiOkrugPathRoutes";
+import { PeckiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckiOkrug";
+import { Pec } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/Pec";
+import { PeckaPatrijarsija } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckaPatrijarsija";
+import { PlaninaMokraGora } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaMokraGora";
+import { VodopadBeliDrim } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/VodopadBeliDrim";
+import { PlaninaZutiKamen } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaZutiKamen";
+import { mitrovackiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/MitrovackiOkrugPathRoutes";
+import { MitrovackiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/MitrovackiOkrug";
+import { KosovskaMitrovica } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/KMitrovica";
+import { ManastirBanjska } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/manastirBanjska";
+import { GazivodskoJezero } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/GazivodskoJezero";
+import { ManastirDevic } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/ManastirDevic";
+import { pristinskiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/PristinskiOkrugPathRoutes";
+import { PristinskiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/PristinskiOkrug";
+import { Pristina } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Pristina";
+import { ManastirGracanica } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Gracanica";
+import { Gazimestan } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Gazimestan";
+import { MermernaPecina } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/MermernaPecina";
+import { TvrdjavaNovoBrdo } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/TvrdjavaNovoBrdo";
+import { prizrenskiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/PrizrenskiOkrugPathRoutes";
+import { PrizrenskiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/PrizrenskiOkrug";
+import { Prizren } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/Prizren";
+import { ManastirSvetihArhangela } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/ManastirSvetihArhangela";
+import { VodopadMirusa } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/VodopadMirusa";
+import { djakovickiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/DjakovickiOkrugPathRoutes";
+import { DjakovickiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/DjakovickiOkrug";
+import { Djakovica } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/Djakovica";
+import { ManastirVisokiDecani } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/ManastirVisokiDecani";
+import { Prokletije } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/Prokletije";
+import { urosevackiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/UrosevackiOkrugPathRoutes";
+import { UrosevackiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/UrosevackiOkrug";
+import { Urosevac } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/Urosevac";
+import { Brezovica } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/Brezovica";
+import { Ljuboten } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/Ljuboten";
+import { gnjilanskiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/GnjilanskiOkrugPathRoutes";
+import { GnjilanskiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/GnjilanskiOkrug";
+import { Gnjilane } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/Gnjilane";
+import { ManastirUbozac } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/ManastirUbozac";
+import { TvrdjavaPodgradje } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/PodgradjeTvrdjava";
+import { beogradPathRoutes } from "./components/StatisticRegions/Beograd/BeogradPathRoutes";
+import { borskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/BorskiOkrugPathRoutes";
+import { branicevskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/BranicevskiOkrugPathRoutes";
+import { podunavskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/PodunavskiOkrugPathRouts";
+import { zajecarskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/ZajecarskiOkrugPathRoutes";
+import { kulubarskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/KolubarskiOkrugPathRoutes";
+import { macvanskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MacvanskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "./components/serbianMapPathRoutes";
+import { moravickiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/MoravickiOkrugPathRoutes";
+import { pomoravskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/PomoravskiOkrugPathRoutes";
+import { rasinskiOkrugData } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/rasinskiOkrugData";
+import { rasinskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/RasinskiOkrugPathRoutes";
+import { raskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/RaskiOkrugPathRoutes";
+import { sumadijskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/SumadijskiOkrugPathRoutes";
+import { zlatiborskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ZlatiborskiOkrugPahtRoutes";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SerbianMap />} />
+        <Route path={beogradPathRoutes.home} element={<Beograd />} />
+        <Route path={beogradPathRoutes.beograd} element={<Beograd2 />} />
+        <Route path={beogradPathRoutes.kalemegdan} element={<Kalemegdan />} />
+        <Route path={beogradPathRoutes.hramSvetogSave} element={<HramSvetogSave />} />
+        <Route path={beogradPathRoutes.knezMihajlova} element={<KnezMihailova />} />
+        <Route path={beogradPathRoutes.trgRepublike} element={<TrgRepublike />} />
+        <Route path={beogradPathRoutes.botanickaBasta} element={<BotanickaBata />} />
+        <Route path={beogradPathRoutes.skadarlija} element={<Skadarlija />} />
+        <Route path={beogradPathRoutes.adaCiganlija} element={<AdaCiganlija />} />
+        <Route path={beogradPathRoutes.kosutnjak} element={<Kosutnjak />} />
+ 
         <Route path="/vojvodinaTekstModal" element={<VojvodinaTekstModal />} />
         <Route path="/vojvodinaTekstModal/Vojvodina" element={<Vojvodina />} />
         <Route
@@ -431,514 +501,505 @@ function App() {
           path="/vojvodinaTekstModal/Vojvodina/JuznoBanatski/SRPKraljevac"
           element={<SRPKraljevac />}
         />
-        <Route path="/Beograd" element={<Beograd />} />
-        <Route path="/Beograd/Beograd2" element={<Beograd2 />} />
-        <Route path="/Beograd/Kalemegdan" element={<Kalemegdan />} />
-        <Route path="/Beograd/HramSvetogSave" element={<HramSvetogSave />} />
-        <Route path="/Beograd/KnezMihailova" element={<KnezMihailova />} />
-        <Route path="/Beograd/TrgRepublike" element={<TrgRepublike />} />
-        <Route path="/Beograd/BotanickaBasta" element={<BotanickaBata />} />
-        <Route path="/Beograd/Skadarlija" element={<Skadarlija />} />
-        <Route path="/Beograd/AdaCiganlija" element={<AdaCiganlija />} />
-        <Route path="/Beograd/Kosutnjak" element={<Kosutnjak />} />
+        
         <Route
-          path="/sumadijaTekstModal"
+          path={serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal}
           element={<SumadijaIZapadnaSrbijaTekstModal />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija"
+          path={serbianMapPathRoutes.SumadijaIZapadnaSrbija}
           element={<SumadijaIZapadnaSrbija />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski"
+          path={macvanskiOkrugPathRoutes.home}
           element={<MacvanskiOkrug />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/Sabac"
+          path={macvanskiOkrugPathRoutes.sabac}
           element={<Sabac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/Gucevo"
+          path={macvanskiOkrugPathRoutes.gucevo}
           element={<Gucevo />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/ZvornickoJezero"
+          path={macvanskiOkrugPathRoutes.zvornickoJezero}
           element={<ZvornickoJezero />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/ManastirTronosa"
+          path={macvanskiOkrugPathRoutes.manastirTronosa}
           element={<ManastirTronosa />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/PlaninaCer"
+          path={macvanskiOkrugPathRoutes.planinaCer}
           element={<Cer />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/MackovKamen"
+          path={macvanskiOkrugPathRoutes.mackovKamen}
           element={<MackovKamen />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Macvanski/Trsic"
+          path={macvanskiOkrugPathRoutes.trsic}
           element={<Trsic />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski"
+          path={kulubarskiOkrugPathRoutes.home}
           element={<KolubarskiOkrug />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/Valjevo"
+          path={kulubarskiOkrugPathRoutes.valjevo}
           element={<Valjevo />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/TaorskaVrela"
+          path={kulubarskiOkrugPathRoutes.taorskaVrela}
           element={<TaorskaVrela />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/PetnickaPecina"
+          path={kulubarskiOkrugPathRoutes.petnickaPecina}
           element={<PetnickaPecina />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/RekaGradac"
+          path={kulubarskiOkrugPathRoutes.rekaGradac}
           element={<RekaGradac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/ManastirLelic"
+          path={kulubarskiOkrugPathRoutes.manastirLelic}
           element={<ManastirLelic />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/VidikovacVelikaStena"
+          path={kulubarskiOkrugPathRoutes.vidikovacVelikaStena}
           element={<VidikovacVelikaStena />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/VrhRajac"
+          path={kulubarskiOkrugPathRoutes.vrhRajac}
           element={<VrhRajac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/ManastirCelije"
+          path={kulubarskiOkrugPathRoutes.manastirCelije}
           element={<ManastirCelije />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Kolubarski/Divcibare"
+          path={kulubarskiOkrugPathRoutes.divcibare}
           element={<Divcibare />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski"
+          path={sumadijskiOkrugPathRoutes.home}
           element={<SumadijskiOkrug />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/Kragujevac"
+          path={sumadijskiOkrugPathRoutes.kragujevac}
           element={<Kragujevac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/Kragujevac/StaraPridvornaCrkva"
+          path={sumadijskiOkrugPathRoutes.staraPridvornaCrkva}
           element={<StaraPridvornaCrkva />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/Kragujevac/KonakKnezaMihaila"
+          path={sumadijskiOkrugPathRoutes.konakKnezaMihaila}
           element={<KonakKnezaMihaila />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/Kragujevac/ZgradaGimnazije"
+          path={sumadijskiOkrugPathRoutes.zgradaGimnazije}
           element={<ZgradaGimnazije />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/Kragujevac/SpomenikPalimSumadincima"
+          path={sumadijskiOkrugPathRoutes.spomenikStarimSumadincima}
           element={<SpomenikPalimSumadincima />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/Kragujevac/ZgradaStareLivnice"
+          path={sumadijskiOkrugPathRoutes.zgradaGimnazije}
           element={<ZgradaStareLivnice />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/Arandjelovac"
+          path={sumadijskiOkrugPathRoutes.arandjelovac}
           element={<Arandjelovac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/Oplenac"
+          path={sumadijskiOkrugPathRoutes.oplenac}
           element={<Oplenac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/GruzanskoJezero"
+          path={sumadijskiOkrugPathRoutes.gruzanskoJezero}
           element={<GruzanskoJezero />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/ManastirBlagovestenjeRudnciko"
+          path={sumadijskiOkrugPathRoutes.manastirBlagovestenjeRudnicko}
           element={<ManastirBlagovestenjeRudnicko />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/ManastirPetkovica"
+          path={sumadijskiOkrugPathRoutes.manastirPetkovica}
           element={<ManastirPetkovica />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/Sumadijski/ZezeljIBesnjaja"
+          path={sumadijskiOkrugPathRoutes.planinarskaStazaZezeljIBesnjaja}
           element={<PlaninarskaStazaZezeljIBesnjaja />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug"
+          path={zlatiborskiOkrugPathRoutes.home}
           element={<ZlatiborskiOkrug />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice"
+          path={zlatiborskiOkrugPathRoutes.uzice}
           element={<Uzice />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/RekaUvac"
+          path={zlatiborskiOkrugPathRoutes.rekaUvac}
           element={<RekaUvac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara"
+          path={zlatiborskiOkrugPathRoutes.nacionalniParkTara}
           element={<NacionalniParkTara />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/PlaninaZlatibor"
+          path={zlatiborskiOkrugPathRoutes.planinaZlatibor}
           element={<PlaninaZlatibor />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirMileseva"
+          path={zlatiborskiOkrugPathRoutes.manastirMileseva}
           element={<ManastirMileseva />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac"
+          path={zlatiborskiOkrugPathRoutes.jezeroPerucac}
           element={<JezeroPerucac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadSopotnice"
+          path={zlatiborskiOkrugPathRoutes.vodopadSopotnice}
           element={<VodopadSopotnice />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan"
+          path={zlatiborskiOkrugPathRoutes.manastirRujan}
           element={<ManastirRujan />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/PlaninaZlatar"
+          path={zlatiborskiOkrugPathRoutes.planinaZlatar}
           element={<PlaninaZlatar />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero"
+          path={zlatiborskiOkrugPathRoutes.zaovinskoJezero}
           element={<ZaovinskoJezero />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina"
+          path={zlatiborskiOkrugPathRoutes.stopicaPecina}
           element={<StopicaPecina />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje"
+          path={zlatiborskiOkrugPathRoutes.vodopadGostilje}
           element={<VodopadGostilje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora"
+          path={zlatiborskiOkrugPathRoutes.mokraGora}
           element={<MokraGora />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug"
+          path={moravickiOkrugPathRoutes.home}
           element={<MoravickiOkrug />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak"
+          path={moravickiOkrugPathRoutes.cacak}
           element={<Cacak />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura"
+          path={moravickiOkrugPathRoutes.ovcarskoKablarskaKlisura}
           element={<OvcarskoKablarskaKlisura />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirJovanje"
+          path={moravickiOkrugPathRoutes.manastirJovanje}
           element={<ManastirJovanje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirNikolje"
+          path={moravickiOkrugPathRoutes.manastirNikolje}
           element={<ManastirNikolje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirPreobrazenje"
+          path={moravickiOkrugPathRoutes.manastirPreobrazenje}
           element={<ManastirPreobraženje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirSavinje"
+          path={moravickiOkrugPathRoutes.manastirSavinje}
           element={<ManastirSavinje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirSveteTrojice"
+          path={moravickiOkrugPathRoutes.manastirSveteTrojice}
           element={<ManastirSveteTrojice />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirUspenje"
+          path={moravickiOkrugPathRoutes.manastirUspenje}
           element={<ManastirUspenje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirVavedenje"
+          path={moravickiOkrugPathRoutes.manastirVavedenje}
           element={<ManastirVavedenje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/ManastirVaznesenje"
+          path={moravickiOkrugPathRoutes.manastirVaznesenje}
           element={<ManastirVaznesenje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje"
+          path={moravickiOkrugPathRoutes.jezeroMedjuvrsje}
           element={<JezeroMedjuvrsje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje"
+          path={moravickiOkrugPathRoutes.manastirBlagovestenje}
           element={<ManastirBlagovestenje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca"
+          path={moravickiOkrugPathRoutes.guca}
           element={<Guca />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac"
+          path={moravickiOkrugPathRoutes.gornjiMilanovac}
           element={<GornjiMilanovac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik"
+          path={moravickiOkrugPathRoutes.planinaRudnik}
           element={<PlaninaRudnik />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje"
+          path={moravickiOkrugPathRoutes.manastirSretenje}
           element={<ManastirSretenje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug"
+          path={pomoravskiOkrugPathRoutes.home}
           element={<PomoravskiOkrug />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina"
+          path={pomoravskiOkrugPathRoutes.jagodina}
           element={<Jagodina />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza"
+          path={pomoravskiOkrugPathRoutes.grza}
           element={<Grza />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija"
+          path={pomoravskiOkrugPathRoutes.manastirManasija}
           element={<ManastirManasija />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine"
+          path={pomoravskiOkrugPathRoutes.vodopadLisine}
           element={<VodopadLisine />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica"
+          path={pomoravskiOkrugPathRoutes.manastirJosanica}
           element={<ManastirJosanica />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina"
+          path={pomoravskiOkrugPathRoutes.resavskaPecina}
           element={<ResavskaPecina />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo"
+          path={pomoravskiOkrugPathRoutes.vodopadPrskalo}
           element={<VodopadPrskalo />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManatirRavanica"
+          path={pomoravskiOkrugPathRoutes.manastirRavanica}
           element={<ManastirRavanica />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar"
+          path={pomoravskiOkrugPathRoutes.prirodnjackiCentar}
           element={<PrirodnjackiCentar />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug"
+          path={raskiOkrugPathRoutes.home}
           element={<RaskiOkrug />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo"
+          path={raskiOkrugPathRoutes.kraljevo}
           element={<Kraljevo />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica"
+          path={raskiOkrugPathRoutes.manastirStudenica}
           element={<ManastirStudenica />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik"
+          path={raskiOkrugPathRoutes.planinaKopaonik}
           element={<PlaninaKopaonik />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja"
+          path={raskiOkrugPathRoutes.vrnjackaBanja}
           element={<VrnjackaBanja />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica"
+          path={raskiOkrugPathRoutes.manastirZica}
           element={<ManastirZica />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic"
+          path={raskiOkrugPathRoutes.tvrdjavaMaglic}
           element={<TvrdjavaMaglic />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc"
+          path={raskiOkrugPathRoutes.planinaGoc}
           element={<PlaninaGoc />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi"
+          path={raskiOkrugPathRoutes.manastirDjurdjeviStupovi}
           element={<ManastirDjurdjeviStupovi />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas"
+          path={raskiOkrugPathRoutes.tvrdjavaStariRas}
           element={<TvrdjavaStariRas />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani"
+          path={raskiOkrugPathRoutes.manastirSopocani}
           element={<ManastirSopocani />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug"
+          path={rasinskiOkrugData.home}
           element={<RasinskiOkrug />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/Krusevac"
+          path={rasinskiOkrugPathRoutes.krusevac}
           element={<Krusevac />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/JezeroCelije"
+          path={rasinskiOkrugPathRoutes.jezeroCelije}
           element={<JezeroCelije />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/TvrdjavaKoznik"
+          path={rasinskiOkrugPathRoutes.tvrdjavaKoznik}
           element={<TvrdjavaKoznik />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/ManastirDjunis"
+          path={rasinskiOkrugPathRoutes.manastirDjunis}
           element={<ManastirDjunis />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/SvetilisteMetodje"
+          path={rasinskiOkrugPathRoutes.svetilisteMetodje}
           element={<SvetilisteMetodje />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/RibarskaBanja"
+          path={rasinskiOkrugData.ribarskaBanja}
           element={<RibarskaBanja />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/ManastirLjubostinja"
+          path={rasinskiOkrugPathRoutes.manastirLjubostinja}
           element={<ManastirLjubostinja />}
         />
         <Route
-          path="/sumadijaTekstModal/SumadijaIZapadnaSrbija/RasinskiOkrug/VodopadJelovarnik"
+          path={rasinskiOkrugPathRoutes.vodopadJelovarnik}
           element={<VodopadJelovarnik />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal"
+          path={serbianMapPathRoutes.IstocnaSrbijaTekstModal}
           element={<JuznaIIStocnaSrbijaTekstModal />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija"
+          path={serbianMapPathRoutes.IstocnaSrbija}
           element={<IstocnaiJuznaSrbija />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug"
+          path={podunavskiOkrugPathRoutes.home}
           element={<PodunavskiOkrug />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/Smederevo"
+          path={podunavskiOkrugPathRoutes.smederevo}
           element={<Smederevo />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/ManastirPokajnica"
+          path={podunavskiOkrugPathRoutes.manastirPokajnica}
           element={<ManastirPokajnica />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava"
+          path={podunavskiOkrugPathRoutes.smedervskaTvrdjava}
           element={<SmederevskaTvrdjava />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/RadovanjskiLug"
+          path={podunavskiOkrugPathRoutes.radovanjskiLug}
           element={<RadovanjskiLug />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/ManastirKoporin"
+          path={podunavskiOkrugPathRoutes.manastirKoporin}
           element={<ManastirKoporin />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug"
+          path={branicevskiOkrugPathRoutes.home}
           element={<BranicevskiOkrug />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/Pozarevac"
+          path={branicevskiOkrugPathRoutes.pozarevac}
           element={<Pozarevac />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/TvrdjavaGolubac"
+          path={branicevskiOkrugPathRoutes.tvrdjavaGolubac}
           element={<TvrdjavaGolubac />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/SrebrnoJezero"
+          path={branicevskiOkrugPathRoutes.srebrnoJezero}
           element={<SrebrnoJezero />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/ManastirTumane"
+          path={branicevskiOkrugPathRoutes.manastirTumane}
           element={<ManastirTumane />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/KrupajskoVrelo"
+          path={branicevskiOkrugPathRoutes.krupajskoVrelo}
           element={<KrupajskoVrelo />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/ManastirGornjak"
+          path={branicevskiOkrugPathRoutes.manastirGornjak}
           element={<ManastirGornjak />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BranicevskiOkrug/PlaninaBeljanica"
+          path={branicevskiOkrugPathRoutes.planinaBeljanica}
           element={<PlaninaBeljanica />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug"
+          path={borskiOkrugPathRoutes.home}
           element={<BorskiOkrug />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/Bor"
+          path={borskiOkrugPathRoutes.bor}
           element={<Bor />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/DjerdapskaKlisura"
+          path={borskiOkrugPathRoutes.djerdapskaKlisura}
           element={<DjerdapskaKlisura />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LazarevKanjon"
+          path={borskiOkrugPathRoutes.lazarevKanjon}
           element={<LazarevKanjon />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LazarevaPecina"
+          path={borskiOkrugPathRoutes.lazarevaPecina}
           element={<LazarevaPecina />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/BorskoJezero"
+          path={borskiOkrugPathRoutes.borskoJezero}
           element={<BorskoJezero />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LepenskiVir"
+          path={borskiOkrugPathRoutes.lepenskiVir}
           element={<LepenskiVir />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/RajkovaPecina"
+          path={borskiOkrugPathRoutes.rajkovaPecina}
           element={<RajkovaPecina />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug"
+          path={zajecarskiOkrugPathRoutes.home}
           element={<ZajecarskiOkrug />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/Zajecar"
+          path={zajecarskiOkrugPathRoutes.zajecar}
           element={<Zajecar />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/SokoBanja"
+          path={zajecarskiOkrugPathRoutes.sokoBanja}
           element={<SokoBanja />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/PlaninaRtanj"
+          path={zajecarskiOkrugPathRoutes.planinaRtanj}
           element={<PlaninaRtanj />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/VodopadRipaljka"
+          path={zajecarskiOkrugPathRoutes.vodopadRipaljka}
           element={<VodopadRipaljka />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/SokoGrad"
+          path={zajecarskiOkrugPathRoutes.sokoGrad}
           element={<SokoGrad />}
         />
         <Route
-          path="/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/Gamzigrad"
+          path={zajecarskiOkrugPathRoutes.gamzigrad}
           element={<FelixRomulijana />}
         />
         <Route
@@ -1044,7 +1105,7 @@ function App() {
           path={jablanickiOkrugPathRoutes.babickaGora}
           element={<PlaninaBabickaGora />}
         />
-         <Route
+        <Route
           path={jablanickiOkrugPathRoutes.kanjonVucjanke}
           element={<KanjonVucjanke />}
         />
@@ -1060,10 +1121,7 @@ function App() {
           path={pcinjskiOkrugPathRoutes.home}
           element={<PcinjskiOkrug />}
         />
-         <Route
-          path={pcinjskiOkrugPathRoutes.vranje}
-          element={<Vranje />}
-        />
+        <Route path={pcinjskiOkrugPathRoutes.vranje} element={<Vranje />} />
         <Route
           path={pcinjskiOkrugPathRoutes.vlasinskoJezero}
           element={<VlasinskoJezero />}
@@ -1076,9 +1134,59 @@ function App() {
           path={pcinjskiOkrugPathRoutes.prohorPcinjski}
           element={<ManastirProhoraPcinjskog />}
         />
+        <Route
+          path={pcinjskiOkrugPathRoutes.planinaKukavica}
+          element={<PlaninaKukavica />}
+        />
+        <Route
+          path={pcinjskiOkrugPathRoutes.planinaCemernik}
+          element={<PlaninaCemernik />}
+        />
+        <Route
+          path={"/KosovoIMetohijaTekstModal"}
+          element={<KosovoIMetohijaTekstModal />}
+        />
+        <Route
+          path={"/KosovoIMetohijaTekstModal/KosovoIMetohija"}
+          element={<KosovoIMetohija />}
+        />
+        <Route path={peckiOkrugPathRoutes.home} element={<PeckiOkrug />} />
+        <Route path={peckiOkrugPathRoutes.pec} element={<Pec />} />
+        <Route path={peckiOkrugPathRoutes.peckaPatrijarsija} element={<PeckaPatrijarsija />} />
+        <Route path={peckiOkrugPathRoutes.mokraGora} element={<PlaninaMokraGora />} />
+        <Route path={peckiOkrugPathRoutes.vodopadBeliDrim} element={<VodopadBeliDrim />} />
+        <Route path={peckiOkrugPathRoutes.planinaZutiKamen} element={<PlaninaZutiKamen />} />
+        <Route path={mitrovackiOkrugPathRoutes.home} element={<MitrovackiOkrug />} />
+        <Route path={mitrovackiOkrugPathRoutes.mitrovica} element={<KosovskaMitrovica />} />
+        <Route path={mitrovackiOkrugPathRoutes.banjska} element={<ManastirBanjska />} />
+        <Route path={mitrovackiOkrugPathRoutes.gazivode} element={<GazivodskoJezero />} />
+        <Route path={mitrovackiOkrugPathRoutes.devic} element={<ManastirDevic />} />
+        <Route path={pristinskiOkrugPathRoutes.home} element={<PristinskiOkrug />} />
+        <Route path={pristinskiOkrugPathRoutes.pristina} element={<Pristina />} />
+        <Route path={pristinskiOkrugPathRoutes.gracanica} element={<ManastirGracanica />} />
+        <Route path={pristinskiOkrugPathRoutes.gazimestan} element={<Gazimestan />} />
+        <Route path={pristinskiOkrugPathRoutes.mermernaPecina} element={<MermernaPecina />} />
+        <Route path={pristinskiOkrugPathRoutes.tvrdjavaNovoBrdo} element={<TvrdjavaNovoBrdo />} />
+        <Route path={prizrenskiOkrugPathRoutes.home} element={<PrizrenskiOkrug />} />
+        <Route path={prizrenskiOkrugPathRoutes.prizren} element={<Prizren />} />
+        <Route path={prizrenskiOkrugPathRoutes.manastirSvetihArhangela} element={<ManastirSvetihArhangela />} />
+        <Route path={prizrenskiOkrugPathRoutes.vodopadMirusa} element={<VodopadMirusa />} />
+        <Route path={djakovickiOkrugPathRoutes.home} element={<DjakovickiOkrug />} />
+        <Route path={djakovickiOkrugPathRoutes.djakovica} element={<Djakovica />} />
+        <Route path={djakovickiOkrugPathRoutes.decani} element={<ManastirVisokiDecani />} />
+        <Route path={djakovickiOkrugPathRoutes.prokletije} element={<Prokletije />} />
+        <Route path={urosevackiOkrugPathRoutes.home} element={<UrosevackiOkrug />} />
+        <Route path={urosevackiOkrugPathRoutes.urosevac} element={<Urosevac />} />
+        <Route path={urosevackiOkrugPathRoutes.brezovica} element={<Brezovica />} />
+        <Route path={urosevackiOkrugPathRoutes.ljuboten} element={<Ljuboten />} />
+        <Route path={gnjilanskiOkrugPathRoutes.home} element={<GnjilanskiOkrug />} />
+        <Route path={gnjilanskiOkrugPathRoutes.gnjilane} element={<Gnjilane />} />
+        <Route path={gnjilanskiOkrugPathRoutes.ubozac} element={<ManastirUbozac />} />
+        <Route path={gnjilanskiOkrugPathRoutes.podgradje} element={<TvrdjavaPodgradje />} />
+
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default App

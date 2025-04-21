@@ -18,6 +18,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import { kulubarskiOkrugPathRoutes } from "./KolubarskiOkrugPathRoutes";
 
 export const RekaGradac = () => {
   const navigate = useNavigate();
@@ -90,7 +91,7 @@ export const RekaGradac = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(kulubarskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

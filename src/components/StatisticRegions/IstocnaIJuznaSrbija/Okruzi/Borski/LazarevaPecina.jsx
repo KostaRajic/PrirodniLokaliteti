@@ -7,6 +7,7 @@ import lazarevaPecina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Bo
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { borskiOkrugPathRoutes } from "./BorskiOkrugPathRoutes";
 
 export const LazarevaPecina = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const LazarevaPecina = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(borskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

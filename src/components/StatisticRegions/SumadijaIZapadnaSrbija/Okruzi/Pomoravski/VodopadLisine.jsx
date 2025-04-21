@@ -7,6 +7,7 @@ import lisine5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Pomorav
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pomoravskiOkrugPathRoutes } from "./PomoravskiOkrugPathRoutes";
 
 export const VodopadLisine = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const VodopadLisine = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(pomoravskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

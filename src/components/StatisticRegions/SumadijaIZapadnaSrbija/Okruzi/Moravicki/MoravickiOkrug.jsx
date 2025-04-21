@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { moravickiOkrugData } from "./moravickiOkrugData";
+import { moravickiOkrugPathRoutes } from "./MoravickiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const MoravickiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,23 +21,21 @@ export const MoravickiOkrug = () => {
 
   const readMore = (name) => {
     if (name === 'Čačak') {
-      navigate('Cacak')
+      navigate(moravickiOkrugPathRoutes.cacak)
     } else if ( name === 'Ovčarsko - kablarska klisura' ) {
-      navigate('OvcarskoKablarskaKlisura')
+      navigate(moravickiOkrugPathRoutes.ovcarskoKablarskaKlisura)
     } else if ( name === 'Jezero Međuvršje' ) {
-      navigate('JezeroMedjuvrsje')
+      navigate(moravickiOkrugPathRoutes.jezeroMedjuvrsje)
     } else if ( name === 'Manastir Blagoveštenje' ) {
-      navigate('ManastirBlagovestenje')
+      navigate(moravickiOkrugPathRoutes.manastirBlagovestenje)
     } else if ( name === 'Guča' ) {
-      navigate('Guca')
+      navigate(moravickiOkrugPathRoutes.guca)
     } else if ( name === 'Gornji Milanovac' ) {
-      navigate('GornjiMilanovac')
+      navigate(moravickiOkrugPathRoutes.gornjiMilanovac)
     } else if ( name === 'Planina Rudnik' ) {
-      navigate('PlaninaRudnik')
+      navigate(moravickiOkrugPathRoutes.planinaRudnik)
     } else if ( name === 'Manastir Sretenje' ) {
-      navigate('ManastirSretenje')
-    } else if ( name === 'Manastir Svete Trojice' ) {
-      navigate('ManastirSveteTrojice')
+      navigate(moravickiOkrugPathRoutes.manastirSretenje)
     }
   };
 
@@ -44,7 +44,7 @@ export const MoravickiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija)}
           style={{ fill: "white"}}
         />
       </header>

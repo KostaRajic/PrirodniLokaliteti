@@ -7,6 +7,7 @@ import celije5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Kolubar
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { kulubarskiOkrugPathRoutes } from "./KolubarskiOkrugPathRoutes";
 
 export const ManastirCelije = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const ManastirCelije = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(kulubarskiOkrugPathRoutes.home)}
         style={{fill: 'white'}}
       />
       <header></header>

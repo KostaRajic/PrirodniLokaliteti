@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { beogradData } from "./BeogradData";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const Beograd = () => {
   const [slide, setSlide] = useState(0);
@@ -21,23 +22,23 @@ export const Beograd = () => {
 
   const readMore = (name) => {
     if (name === 'Beograd') {
-      navigate('Beograd2')
+      navigate(beogradPathRoutes.beograd)
     } else if (name === 'Beogradska Tvrdjava - Kalemegdan') {
-      navigate('Kalemegdan')
+      navigate(beogradPathRoutes.kalemegdan)
     } else if (name === 'Hram Svetog Save') {
-      navigate('HramSvetogSave')
+      navigate(beogradPathRoutes.hramSvetogSave)
     } else if (name === 'Knez Mihailova') {
-      navigate('KnezMihailova')
+      navigate(beogradPathRoutes.knezMihajlova)
     } else if (name === 'Trg Republike') {
-      navigate('TrgRepublike')
+      navigate(beogradPathRoutes.trgRepublike)
     } else if (name === 'Botanicka Bašta') {
-      navigate('BotanickaBasta')
+      navigate(beogradPathRoutes.botanickaBasta)
     } else if (name === 'Skadarlija') {
-      navigate('Skadarlija')
+      navigate(beogradPathRoutes.skadarlija)
     } else if (name === 'Ada Ciganlija') {
-      navigate('AdaCiganlija')
+      navigate(beogradPathRoutes.adaCiganlija)
     } else if (name === 'Košutnjak') {
-      navigate('Kosutnjak')
+      navigate(beogradPathRoutes.kosutnjak)
     }
   };
 
@@ -46,7 +47,7 @@ export const Beograd = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/')}
           style={{ fill: "white"}}
         />
       </header>
@@ -89,6 +90,7 @@ export const Beograd = () => {
           kulture i tradicije.
         </div>
       </section>
+      <Outlet />
       <section className="citatClass">
         <p>
           Svet je knjiga, a oni koji ne putuju, čitaju samo jednu stranicu.
@@ -127,7 +129,6 @@ export const Beograd = () => {
         </div>
       </section>
       <footer></footer>
-      <Outlet />
     </div>
   );
 };

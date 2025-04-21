@@ -7,6 +7,7 @@ import studenica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Rask
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { rasinskiOkrugPathRoutes } from "../Rasinski/RasinskiOkrugPathRoutes";
 
 export const ManastirStudenica = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ManastirStudenica = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(rasinskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={studenica1} alt="Manastir Studenica 1" />
 

@@ -7,6 +7,7 @@ import tumane5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Branicevsk
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { branicevskiOkrugPathRoutes } from "./BranicevskiOkrugPathRoutes";
 
 export const ManastirTumane = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ManastirTumane = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(branicevskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={tumane1} alt="Manastir Tumane 1" />
 

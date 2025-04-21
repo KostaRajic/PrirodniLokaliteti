@@ -7,6 +7,7 @@ import grza5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Pomoravsk
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pomoravskiOkrugPathRoutes } from "./PomoravskiOkrugPathRoutes";
 
 export const Grza = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const Grza = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(pomoravskiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
       <img src={grza1} alt="Grza 1" />
 

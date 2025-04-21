@@ -5,6 +5,11 @@ import { SumadijaIZapadnaSrbijaRegioni } from "./SumadijaIZapadnaSrbijaRegioni";
 import { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { kulubarskiOkrugPathRoutes } from "./Okruzi/Kolubarski/KolubarskiOkrugPathRoutes";
+import { macvanskiOkrugPathRoutes } from "./Okruzi/Macvanski/MacvanskiOkrugPathRoutes";
+import { moravickiOkrugPathRoutes } from "./Okruzi/Moravicki/MoravickiOkrugPathRoutes";
+import { pomoravskiOkrugPathRoutes } from "./Okruzi/Pomoravski/PomoravskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../serbianMapPathRoutes";
 
 export const SumadijaIZapadnaSrbija = () => {
   const center = [43.92543064661552, 20.38526435851563];
@@ -31,17 +36,17 @@ export const SumadijaIZapadnaSrbija = () => {
 
   useEffect(() => {
     if (showMacvanski) {
-      return navigate("Macvanski");
+      return navigate(macvanskiOkrugPathRoutes.home);
     } else if (showKolubarski) {
-      return navigate("Kolubarski");
+      return navigate(kulubarskiOkrugPathRoutes.home);
     } else if (showSumadijski) {
       return navigate("Sumadijski");
     } else if (showZlatiborski) {
       return navigate("ZlatiborskiOkrug");
     } else if (showMoravicki) {
-      return navigate("MoravickiOkrug");
+      return navigate(moravickiOkrugPathRoutes.home);
     } else if (showPomoravski) {
-      return navigate("PomoravskiOkrug");
+      return navigate(pomoravskiOkrugPathRoutes.home);
     } else if (showRaski) {
       return navigate("RaskiOkrug");
     } else if (showRasinski) {
@@ -64,7 +69,7 @@ export const SumadijaIZapadnaSrbija = () => {
         />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija)}
         style={{zIndex: "400" }}
       />
       {SumadijaIZapadnaSrbijaRegioni?.features?.map((statisticRegion) => {

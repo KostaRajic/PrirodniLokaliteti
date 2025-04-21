@@ -20,6 +20,7 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { sumadijskiOkrugPathRoutes } from "./SumadijskiOkrugPathRoutes";
 
 export const Kragujevac = () => {
   const navigate = useNavigate();
@@ -109,19 +110,19 @@ export const Kragujevac = () => {
 
     switch (e.target.alt) {
       case "Stara (Pridvorna crkva)":
-        navigate("StaraPridvornaCrkva");
+        navigate(sumadijskiOkrugPathRoutes.staraPridvornaCrkva);
         break;
       case "Konak Kneza Mihaila":
-        navigate("KonakKnezaMihaila");
+        navigate(sumadijskiOkrugPathRoutes.konakKnezaMihaila);
         break;
       case "Zgrada Gimnazije":
-        navigate("ZgradaGimnazije");
+        navigate(sumadijskiOkrugPathRoutes.zgradaGimnazije);
         break;
       case "Spomenik palim Sumadincima":
-        navigate("SpomenikPalimSumadincima");
+        navigate(sumadijskiOkrugPathRoutes.spomenikStarimSumadincima);
         break;
       case "Zgrada stare livnice":
-        navigate("ZgradaStareLivnice");
+        navigate(sumadijskiOkrugPathRoutes.zgradaGimnazije);
         break;
     }
   };

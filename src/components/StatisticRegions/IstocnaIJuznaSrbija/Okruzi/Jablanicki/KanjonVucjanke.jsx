@@ -8,6 +8,7 @@ import vucjanke6 from "../../../../../assets/images/JuznaIIstocnaSrbija/Jablanic
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { jablanickiOkrugPathRoutes } from "./JablanickiOkrugPathRoutes";
 
 export const KanjonVucjanke = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const KanjonVucjanke = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(jablanickiOkrugPathRoutes.home)} />
       <header></header>
       <img src={vucjanke1} alt="Kanjon Vučjanke 1" />
 

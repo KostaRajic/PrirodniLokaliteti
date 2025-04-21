@@ -8,6 +8,7 @@ import sopotnice6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Zlat
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
 
 export const VodopadSopotnice = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const VodopadSopotnice = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.vodopadSopotnice)} style={{fill: 'white'}} />
       <header></header>
       <img src={sopotnice1} alt="Vodopad Sopotnice 1" />
 

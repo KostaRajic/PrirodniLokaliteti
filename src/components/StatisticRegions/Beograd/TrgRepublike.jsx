@@ -8,6 +8,7 @@ import trgRepublike6 from "../../../assets/images/Beograd/TrgRepublike/trgRepubl
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const TrgRepublike = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const TrgRepublike = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(beogradPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

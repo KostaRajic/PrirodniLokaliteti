@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { rasinskiOkrugData } from "./rasinskiOkrugData";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
+import { rasinskiOkrugPathRoutes } from "./RasinskiOkrugPathRoutes";
 
 export const RasinskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,21 +21,21 @@ export const RasinskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === "Kruševac") {
-      navigate("Krusevac");
+      navigate(rasinskiOkrugPathRoutes.krusevac);
     } else if (name === "Jezero Ćelije") {
-      navigate("JezeroCelije");
+      navigate(rasinskiOkrugPathRoutes.jezeroCelije);
     } else if (name === "Srpski srednjovekovni grad Koznik") {
-      navigate("TvrdjavaKoznik");
+      navigate(rasinskiOkrugPathRoutes.tvrdjavaKoznik);
     } else if (name === "Manastir Đunis") {
-      navigate("ManastirDjunis");
+      navigate(rasinskiOkrugPathRoutes.manastirDjunis);
     } else if (name === "Svetilište Metođe") {
-      navigate("SvetilisteMetodje");
+      navigate(rasinskiOkrugPathRoutes.svetilisteMetodje);
     } else if (name === "Ribarska Banja") {
-      navigate("RibarskaBanja");
+      navigate(rasinskiOkrugPathRoutes.ribarskaBanja);
     } else if (name === "Manastir Ljubostinja") {
-      navigate("ManastirLjubostinja");
+      navigate(rasinskiOkrugPathRoutes.manastirLjubostinja);
     } else if (name === "Vodopad Jelovarnik") {
-      navigate("VodopadJelovarnik");
+      navigate(rasinskiOkrugPathRoutes.vodopadJelovarnik);
     }
   };
 
@@ -42,7 +44,7 @@ export const RasinskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija)}
           style={{ fill: "white"}}
         />
       </header>

@@ -6,6 +6,7 @@ import babickaGora4 from '../../../../../assets/images/JuznaIIstocnaSrbija/Jabla
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { jablanickiOkrugPathRoutes } from './JablanickiOkrugPathRoutes';
 
 export const PlaninaBabickaGora = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export const PlaninaBabickaGora = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(jablanickiOkrugPathRoutes.home)} />
       <header></header>
       <img src={babickaGora1} alt="Planina Babička Gora 1" />
 

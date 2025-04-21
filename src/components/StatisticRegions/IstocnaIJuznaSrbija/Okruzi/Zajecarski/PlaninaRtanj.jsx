@@ -8,6 +8,7 @@ import rtanj6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiO
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zajecarskiOkrugPathRoutes } from "./ZajecarskiOkrugPathRoutes";
 
 export const PlaninaRtanj = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const PlaninaRtanj = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={rtanj2} alt="Planina Rtanj 1" />
 

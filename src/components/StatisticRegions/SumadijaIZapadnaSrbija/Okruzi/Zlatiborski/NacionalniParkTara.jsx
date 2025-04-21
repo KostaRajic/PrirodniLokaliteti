@@ -10,6 +10,7 @@ import tara8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Zlatibors
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
 
 export const NacionalniParkTara = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const NacionalniParkTara = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.nacionalniParkTara)} />
       <header></header>
       <img src={tara1} alt='Nacionalni Park "Tara" 1' />
 

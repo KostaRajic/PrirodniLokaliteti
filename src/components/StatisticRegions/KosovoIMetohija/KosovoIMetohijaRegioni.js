@@ -4,8 +4,9 @@ export const KosovoIMetohijaRegioni =
     "type": "FeatureCollection",
     "features": [
       {
+        "id": 1,
         "type": "Feature",
-        "properties": {},
+        "properties": {name: "Mitrovački"},
         "geometry": {
           "coordinates": [
             [
@@ -199,8 +200,9 @@ export const KosovoIMetohijaRegioni =
         }
       },
       {
+        "id": 2,
         "type": "Feature",
-        "properties": {},
+        "properties": {name: "Prištinski"},
         "geometry": {
           "coordinates": [
             [
@@ -622,8 +624,9 @@ export const KosovoIMetohijaRegioni =
         }
       },
       {
+        "id": 3,
         "type": "Feature",
-        "properties": {},
+        "properties": {name: "Pećki"},
         "geometry": {
           "coordinates": [
             [
@@ -961,8 +964,9 @@ export const KosovoIMetohijaRegioni =
         }
       },
       {
+        "id": 4,
         "type": "Feature",
-        "properties": {},
+        "properties": {name: "Đakovički"},
         "geometry": {
           "coordinates": [
             [
@@ -1448,8 +1452,9 @@ export const KosovoIMetohijaRegioni =
         }
       },
       {
+        "id": 5,
         "type": "Feature",
-        "properties": {},
+        "properties": {name: "Prizrenski"},
         "geometry": {
           "coordinates": [
             [
@@ -2035,8 +2040,9 @@ export const KosovoIMetohijaRegioni =
         }
       },
       {
+        "id": 6,
         "type": "Feature",
-        "properties": {},
+        "properties": {name: "Gnjilanski"},
         "geometry": {
           "coordinates": [
             [
@@ -2390,8 +2396,9 @@ export const KosovoIMetohijaRegioni =
         }
       },
       {
+        "id": 7,
         "type": "Feature",
-        "properties": {},
+        "properties": {name: "Uroševački"},
         "geometry": {
           "coordinates": [
             [

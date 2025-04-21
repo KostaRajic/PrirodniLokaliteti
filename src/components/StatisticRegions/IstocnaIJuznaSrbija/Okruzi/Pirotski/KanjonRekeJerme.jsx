@@ -7,6 +7,7 @@ import jerma5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkr
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pirotskiOkrugPathRoutes } from "./PirotskiOkrugPathRoutes";
 
 export const KanjonRekeJerme = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const KanjonRekeJerme = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(pirotskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

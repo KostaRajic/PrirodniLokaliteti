@@ -6,6 +6,7 @@ import brestovackoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { jablanickiOkrugPathRoutes } from "./JablanickiOkrugPathRoutes";
 
 export const BrestovackoJezero = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const BrestovackoJezero = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(jablanickiOkrugPathRoutes.home)}
 
       />
       <header></header>

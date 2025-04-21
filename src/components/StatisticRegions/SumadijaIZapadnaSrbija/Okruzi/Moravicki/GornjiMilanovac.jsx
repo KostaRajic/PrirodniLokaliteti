@@ -10,6 +10,7 @@ import gMilanovac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Mor
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { moravickiOkrugPathRoutes } from "./MoravickiOkrugPathRoutes";
 
 export const GornjiMilanovac = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export const GornjiMilanovac = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(moravickiOkrugPathRoutes.home)}
       />
       <header></header>
       <img src={gMilanovac1} alt="Gornji Milanovac" />

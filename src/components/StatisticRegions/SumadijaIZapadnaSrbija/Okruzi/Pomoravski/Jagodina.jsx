@@ -10,6 +10,7 @@ import jagodina8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Pomor
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pomoravskiOkrugPathRoutes } from "./PomoravskiOkrugPathRoutes";
 
 export const Jagodina = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export const Jagodina = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(pomoravskiOkrugPathRoutes.home)}
 
       />
       <header></header>

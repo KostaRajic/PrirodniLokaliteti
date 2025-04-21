@@ -7,6 +7,7 @@ import tronosa5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Macvan
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { macvanskiOkrugPathRoutes } from "./MacvanskiOkrugPathRoutes";
 
 export const ManastirTronosa = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ManastirTronosa = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
       <img src={tronosa1} alt="Manastir Tronoša 1" />
 

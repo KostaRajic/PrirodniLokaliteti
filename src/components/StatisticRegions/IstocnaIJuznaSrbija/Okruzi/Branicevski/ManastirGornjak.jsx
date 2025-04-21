@@ -7,6 +7,7 @@ import gronjak5 from '../../../../../assets/images/JuznaIIstocnaSrbija/Branicevs
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { branicevskiOkrugPathRoutes } from './BranicevskiOkrugPathRoutes'
 
 export const ManastirGornjak = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const ManastirGornjak = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(branicevskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

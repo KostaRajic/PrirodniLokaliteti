@@ -7,6 +7,7 @@ import zavojskoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Pi
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pirotskiOkrugPathRoutes } from "./PirotskiOkrugPathRoutes";
 
 export const ZavojskoJezero = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ZavojskoJezero = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={zavojskoJezero1} alt="Zavaojsko jezero 1" />
 

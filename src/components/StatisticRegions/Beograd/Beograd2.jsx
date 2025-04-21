@@ -12,6 +12,7 @@ import bg10 from "../../../assets/images/Beograd/Beograd/BG10.jpg";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const Beograd2 = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export const Beograd2 = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
       <img src={bg3} alt="Beograd 1" />
 

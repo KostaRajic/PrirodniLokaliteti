@@ -2,6 +2,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import z from "../../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg2.jpg";
+import { moravickiOkrugPathRoutes } from "../MoravickiOkrugPathRoutes";
 
 export const ManastirJovanje = () => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ export const ManastirJovanje = () => {
     <div className="singleComponent">
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(moravickiOkrugPathRoutes.ovcarskoKablarskaKlisura)}
         style={{ fill: "white" }}
       />
       <div

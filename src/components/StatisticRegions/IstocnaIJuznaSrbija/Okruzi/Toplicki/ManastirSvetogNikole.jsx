@@ -7,6 +7,7 @@ import manastirSvetogNikole5 from "../../../../../assets/images/JuznaIIstocnaSrb
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { toplickiOkurgPathRoutes } from "./ToplickiOkurgPathRoutes";
 
 export const ManastirSvetogNikole = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ManastirSvetogNikole = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
       <img
         src={manastirSvetogNikole1}

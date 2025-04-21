@@ -8,6 +8,7 @@ import vlasinsko6 from "../../../../../assets/images/JuznaIIstocnaSrbija/Pcinjsk
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pcinjskiOkrugPathRoutes } from "./PcinjskiOkrugPathRoutes";
 
 export const VlasinskoJezero = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const VlasinskoJezero = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(pcinjskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={vlasinsko1} alt="Vlasinsko Jezero 1" />
 

@@ -7,6 +7,7 @@ import koporin4 from '../../../../../assets/images/JuznaIIstocnaSrbija/Podunavsk
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { podunavskiOkrugPathRoutes } from './PodunavskiOkrugPathRouts';
 
 export const ManastirKoporin = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const ManastirKoporin = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(podunavskiOkrugPathRoutes.home)}
 
       />
       <header></header>

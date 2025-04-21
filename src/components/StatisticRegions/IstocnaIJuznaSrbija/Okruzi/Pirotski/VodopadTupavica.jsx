@@ -6,6 +6,7 @@ import vodopadTupavica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/P
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pirotskiOkrugPathRoutes } from "./PirotskiOkrugPathRoutes";
 
 export const VodopadTupavica = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export const VodopadTupavica = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={vodopadTupavica1} alt="Vodopad Tupavica 1" />
 

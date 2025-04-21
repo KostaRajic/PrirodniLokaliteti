@@ -25,6 +25,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { useEffect, useState } from "react";
+import { nisavskiOkrugPathRoutes } from "./NisavskiOkrugPathRoutes";
 
 export const Nis = () => {
   const navigate = useNavigate();
@@ -46,7 +47,7 @@ export const Nis = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
       <img
         alt="Niš 1"

@@ -6,6 +6,7 @@ import lelic4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Kolubars
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { kulubarskiOkrugPathRoutes } from "./KolubarskiOkrugPathRoutes";
 
 export const ManastirLelic = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const ManastirLelic = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(kulubarskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

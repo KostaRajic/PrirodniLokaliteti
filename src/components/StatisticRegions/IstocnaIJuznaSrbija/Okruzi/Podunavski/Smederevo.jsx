@@ -10,6 +10,7 @@ import smederevo8 from "../../../../../assets/images/JuznaIIstocnaSrbija/Podunav
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { podunavskiOkrugPathRoutes } from "./PodunavskiOkrugPathRouts";
 
 export const Smederevo = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export const Smederevo = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(podunavskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

@@ -10,6 +10,7 @@ import valjevo8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Koluba
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { kulubarskiOkrugPathRoutes } from "./KolubarskiOkrugPathRoutes";
 
 export const Valjevo = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const Valjevo = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={valjevo1} alt="Valjevo 1" />
 

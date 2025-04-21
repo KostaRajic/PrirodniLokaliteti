@@ -7,6 +7,7 @@ import zica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkru
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
 
 export const ManastirZica = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ManastirZica = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={zica3} alt="Manastir Žiča 1" />
 

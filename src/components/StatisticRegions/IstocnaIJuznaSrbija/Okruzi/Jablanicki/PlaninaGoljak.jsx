@@ -8,6 +8,7 @@ import goljak6 from "../../../../../assets/images/JuznaIIstocnaSrbija/Jablanicki
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { jablanickiOkrugPathRoutes } from "./JablanickiOkrugPathRoutes";
 
 export const PlaninaGoljak = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const PlaninaGoljak = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(jablanickiOkrugPathRoutes.home)} />
       <header></header>
       <img src={goljak1} alt="Planina Goljak 1" />
 

@@ -7,6 +7,7 @@ import medjuvrsje5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Mor
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { moravickiOkrugPathRoutes } from "./MoravickiOkrugPathRoutes";
 
 export const JezeroMedjuvrsje = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const JezeroMedjuvrsje = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} />
       <header></header>
       <img src={medjuvrsje1} alt="Jezero Međuvršje" />
 

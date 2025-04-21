@@ -7,6 +7,7 @@ import mileseva5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Zlati
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
 
 export const ManastirMileseva = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ManastirMileseva = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.manastirMileseva)} />
       <header></header>
       <img src={mileseva4} alt='Manastir Mileševa 1' />
 

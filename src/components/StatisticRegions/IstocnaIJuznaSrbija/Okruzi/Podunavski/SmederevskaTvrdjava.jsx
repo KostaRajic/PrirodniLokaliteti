@@ -7,6 +7,7 @@ import smederevskaTvrdjava5 from "../../../../../assets/images/JuznaIIstocnaSrbi
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { podunavskiOkrugPathRoutes } from "./PodunavskiOkrugPathRouts";
 
 export const SmederevskaTvrdjava = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const SmederevskaTvrdjava = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(podunavskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { branicevskiOkrugData } from "./BranicevskiOkrugData";
+import { borskiOkrugPathRoutes } from "../Borski/BorskiOkrugPathRoutes";
+import { branicevskiOkrugPathRoutes } from "./BranicevskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const BranicevskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,19 +22,19 @@ export const BranicevskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === 'Požarevac') {
-        return navigate('Pozarevac')
+        return navigate(branicevskiOkrugPathRoutes.pozarevac)
     } else if (name === 'Tvrđava Golubac') {
-      return navigate('TvrdjavaGolubac')
+      return navigate(branicevskiOkrugPathRoutes.tvrdjavaGolubac)
     } else if (name === 'Srebrno Jezero') {
-      return navigate('SrebrnoJezero')
+      return navigate(branicevskiOkrugPathRoutes.srebrnoJezero)
     } else if (name === 'Manastir Tumane') {
-      return navigate('ManastirTumane')
+      return navigate(branicevskiOkrugPathRoutes.manastirTumane)
     } else if (name === 'Krupajsko Vrelo') {
-      return navigate('KrupajskoVrelo')
+      return navigate(branicevskiOkrugPathRoutes.krupajskoVrelo)
     } else if (name === 'Manastir Gornjak') {
-      return navigate('ManastirGornjak')
+      return navigate(branicevskiOkrugPathRoutes.manastirGornjak)
     } else if (name === 'Planina Beljanica') {
-      return navigate('PlaninaBeljanica')
+      return navigate(branicevskiOkrugPathRoutes.planinaBeljanica)
     }
   };
 
@@ -40,7 +43,7 @@ export const BranicevskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.IstocnaSrbija)}
           style={{ fill: "white"}}
         />
       </header>

@@ -8,6 +8,7 @@ import kalemegdan6 from "../../../assets/images/Beograd/Kalemegdan/kalemegdan6.j
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const Kalemegdan = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Kalemegdan = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
       <img src={kalemegdan4} alt="Kalemegdan 1" />
 

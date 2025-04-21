@@ -17,6 +17,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import { macvanskiOkrugPathRoutes } from "./MacvanskiOkrugPathRoutes";
 
 export const Cer = () => {
   const navigate = useNavigate();
@@ -93,7 +94,7 @@ export const Cer = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={cer1} alt="Planina Cer 1" />
       <h2>Planina Cer</h2>

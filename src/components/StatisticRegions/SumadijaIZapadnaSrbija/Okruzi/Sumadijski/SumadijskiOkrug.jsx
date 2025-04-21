@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { sumadijskiOkrugData } from "./SumadijskiOkrugData";
+import { sumadijskiOkrugPathRoutes } from "./SumadijskiOkrugPathRoutes";
 
 export const SumadijskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,21 +20,19 @@ export const SumadijskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === 'Kragujevac') {
-      navigate('Kragujevac')
+      navigate(sumadijskiOkrugPathRoutes.kragujevac)
     } else if (name === 'Arandjelovac') {
-      navigate('Arandjelovac')
+      navigate(sumadijskiOkrugPathRoutes.arandjelovac)
     } else if (name === 'Oplenac') {
-      navigate('Oplenac')
+      navigate(sumadijskiOkrugPathRoutes.oplenac)
     } else if (name === 'Gružansko jezero') {
-      navigate('GruzanskoJezero')
+      navigate(sumadijskiOkrugPathRoutes.gruzanskoJezero)
     } else if (name === 'Manastir Blagoveštenje Rudničko') {
-      navigate('ManastirBlagovestenjeRudnciko')
-    } else if (name === 'Planina Rudnik') {
-      navigate('PlaninaRudnik')
+      navigate(sumadijskiOkrugPathRoutes.manastirBlagovestenjeRudnicko)
     } else if (name === 'Manastir Petkovica') {
-      navigate('ManastirPetkovica')
+      navigate(sumadijskiOkrugPathRoutes.manastirPetkovica)
     } else if (name === 'Planinarska staza Žeželj i Bešnjaja') {
-      navigate('ZezeljIBesnjaja')
+      navigate(sumadijskiOkrugPathRoutes.planinarskaStazaZezeljIBesnjaja)
     }
   };
 

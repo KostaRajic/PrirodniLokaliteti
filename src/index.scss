@@ -170,6 +170,17 @@ body {
   text-shadow: 5px 5px 5px black;
 }
 
+.kosovoIMetohijaTekstModalBackgorund {
+  background-image: url(./assets/images/KosovoIMetohija/kosovo.jpg);
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  text-shadow: 5px 5px 5px black;
+}
+
 .toolTipClass {
   font-size: 20px;
   padding: 10px;
@@ -298,6 +309,34 @@ body {
 
   .pcinjski {
     background-image: url(../src/assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/pcinjskiOkrug.jpg);
+  }
+
+  .pecki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Pecki/peckiOkrug.jpg);
+  }
+
+  .mitrovacki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Mitrovacki/mitrovackiOkrug.jpg);
+  }
+
+  .pristinki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Pristinski/pristinskiOkrug.jpg);
+  }
+
+  .prizrenski {
+    background-image: url(../src/assets/images/KosovoIMetohija/Prizrenski/prizrenskiOkrug.jpg);
+  }
+
+  .djakovicki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Djakovicki/djakovickiOkrug.jpg);
+  }
+
+  .urosevacki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Urosevacki/urosevackiOkrug.jpg);
+  }
+
+  .gnjilanski {
+    background-image: url(../src/assets/images/KosovoIMetohija/Gnjilanski/gnjilanskiOkrug.jpg);
   }
 
   h1 {

@@ -10,6 +10,7 @@ import staraPlaina8 from "../../../../../assets/images/JuznaIIstocnaSrbija/Pirot
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pirotskiOkrugPathRoutes } from "./PirotskiOkrugPathRoutes";
 
 export const StaraPlanina = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const StaraPlanina = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={staraPlaina1} alt="Stara Planina 1" />
 

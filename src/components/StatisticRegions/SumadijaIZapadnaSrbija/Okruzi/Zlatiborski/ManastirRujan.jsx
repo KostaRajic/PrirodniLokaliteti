@@ -7,6 +7,7 @@ import rujan6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Zlatibor
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
 
 export const ManastirRujan = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ManastirRujan = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.manastirRujan)} />
       <header></header>
       <img src={rujan1} alt="Manastir Rujan 1" />
 

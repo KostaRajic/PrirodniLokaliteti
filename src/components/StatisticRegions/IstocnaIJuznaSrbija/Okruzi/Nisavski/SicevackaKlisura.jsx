@@ -7,6 +7,7 @@ import sicevackaKlisura5 from "../../../../../assets/images/JuznaIIstocnaSrbija/
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { nisavskiOkrugPathRoutes } from "./NisavskiOkrugPathRoutes";
 
 export const SicevackaKlisura = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const SicevackaKlisura = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={sicevackaKlisura1} alt="Sićevačka klisura 1" />
 

@@ -8,6 +8,7 @@ import zlatar6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Zlatibo
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
 
 export const PlaninaZlatar = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const PlaninaZlatar = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.planinaZlatar)} />
       <header></header>
       <img src={zlatar3} alt="Planina Zlatar 1" />
 

@@ -7,6 +7,7 @@ import planinaRudnik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { moravickiOkrugPathRoutes } from "./MoravickiOkrugPathRoutes";
 
 export const PlaninaRudnik = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const PlaninaRudnik = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
       <img src={planinaRudnik1} alt="Planina Rudnik 1" />
 

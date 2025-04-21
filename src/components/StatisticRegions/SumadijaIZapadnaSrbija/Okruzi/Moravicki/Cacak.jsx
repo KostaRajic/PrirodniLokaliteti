@@ -21,6 +21,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import { moravickiOkrugPathRoutes } from "./MoravickiOkrugPathRoutes";
 
 export const Cacak = () => {
   const navigate = useNavigate();
@@ -95,7 +96,7 @@ export const Cacak = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} />
       <header></header>
       <img src={cacak1} alt="Grad Čačak 1" />
 

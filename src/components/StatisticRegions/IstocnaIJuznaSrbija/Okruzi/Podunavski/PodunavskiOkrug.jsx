@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { podunavskiOkrugData } from "./PodunavskiOkrugData";
+import { podunavskiOkrugPathRoutes } from "./PodunavskiOkrugPathRouts";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const PodunavskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,15 +21,15 @@ export const PodunavskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === "Smederevo") {
-      navigate("Smederevo");
+      navigate(podunavskiOkrugPathRoutes.smederevo);
     } else if (name === "Manastir Pokajnica") {
-      navigate("ManastirPokajnica");
+      navigate(podunavskiOkrugPathRoutes.manastirPokajnica);
     } else if (name === "Smederevska tvrdjava") {
-      navigate("SmederevskaTvrdjava");
+      navigate(podunavskiOkrugPathRoutes.smedervskaTvrdjava);
     } else if (name === "Radovanjski Lug") {
-      navigate("RadovanjskiLug");
+      navigate(podunavskiOkrugPathRoutes.radovanjskiLug);
     } else if (name === "Manastir Koporin") {
-      navigate("ManastirKoporin");
+      navigate(podunavskiOkrugPathRoutes.manastirKoporin);
     }
   };
 
@@ -36,7 +38,7 @@ export const PodunavskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.IstocnaSrbijaTekstModal)}
           style={{ fill: "white"}}
         />
       </header>

@@ -7,6 +7,7 @@ import djavoljaVaros5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Top
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { toplickiOkurgPathRoutes } from "./ToplickiOkurgPathRoutes";
 
 export const DjavoljaVaros = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const DjavoljaVaros = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
       <img src={djavoljaVaros1} alt="Đavolja Varoš 1" />
 

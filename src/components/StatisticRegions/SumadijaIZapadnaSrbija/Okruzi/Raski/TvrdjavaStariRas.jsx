@@ -8,6 +8,7 @@ import stariRas6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Raski
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
 
 export const TvrdjavaStariRas = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const TvrdjavaStariRas = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
       <img src={stariRas1} alt="Tvrđava Stari Ras 1" />
 

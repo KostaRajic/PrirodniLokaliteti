@@ -22,6 +22,7 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { moravickiOkrugPathRoutes } from "./MoravickiOkrugPathRoutes";
 
 export const OvcarskoKablarskaKlisura = () => {
   const navigate = useNavigate();
@@ -126,28 +127,28 @@ export const OvcarskoKablarskaKlisura = () => {
 
     switch (e.target.alt) {
       case "Manastir Jovanje":
-        navigate("ManastirJovanje");
+        navigate(moravickiOkrugPathRoutes.manastirJovanje);
         break;
       case "Manastir Nikolje":
-        navigate("ManastirNikolje");
+        navigate(moravickiOkrugPathRoutes.manastirNikolje);
         break;
       case "Manastir Preobrazenje":
-        navigate("ManastirPreobrazenje");
+        navigate(moravickiOkrugPathRoutes.manastirPreobrazenje);
         break;
       case "Manastir Savinje":
-        navigate("ManastirSavinje");
+        navigate(moravickiOkrugPathRoutes.manastirSavinje);
         break;
       case "Manastir Svete Trojice":
-        navigate("ManastirSveteTrojice");
+        navigate(moravickiOkrugPathRoutes.manastirSveteTrojice);
         break;
       case "Manastir Uspenje":
-        navigate("ManastirUspenje");
+        navigate(moravickiOkrugPathRoutes.manastirUspenje);
         break;
       case "Manastir Vavedenje":
-        navigate("ManastirVavedenje");
+        navigate(moravickiOkrugPathRoutes.manastirVavedenje);
         break;
       case "Manastir Vaznesenje":
-        navigate("ManastirVaznesenje");
+        navigate(moravickiOkrugPathRoutes.manastirVaznesenje);
         break;
     }
   };
@@ -155,7 +156,7 @@ export const OvcarskoKablarskaKlisura = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} />
       <header></header>
       <img src={ovcarIKablar1} alt="Ovcarsko-kablarska klisura" />
 

@@ -8,6 +8,7 @@ import perucac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Zlatib
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
 
 export const JezeroPerucac = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const JezeroPerucac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.jezeroPerucac)} />
       <header></header>
       <img src={perucac1} alt="Jezero Perućac 1" />
 

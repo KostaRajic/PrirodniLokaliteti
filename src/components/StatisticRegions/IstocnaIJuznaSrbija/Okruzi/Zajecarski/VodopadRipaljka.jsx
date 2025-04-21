@@ -7,6 +7,7 @@ import ripaljka5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Zajecars
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zajecarskiOkrugPathRoutes } from "./ZajecarskiOkrugPathRoutes";
 
 export const VodopadRipaljka = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const VodopadRipaljka = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={ripaljka1} alt="Vodopad Ripaljka 1" />
 

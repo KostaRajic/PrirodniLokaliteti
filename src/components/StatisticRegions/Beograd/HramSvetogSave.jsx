@@ -10,6 +10,7 @@ import hramSvetogSave8 from "../../../assets/images/Beograd/HramSvetogSave/hramS
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const HramSvetogSave = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const HramSvetogSave = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
       <img src={hramSvetogSave1} alt="Hram Svetog Save 1" />
 

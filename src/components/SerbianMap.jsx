@@ -5,6 +5,8 @@ import "leaflet/dist/leaflet.css";
 import { serbianMapData } from "../data";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { serbianMapPathRoutes } from "./serbianMapPathRoutes";
+import { beogradPathRoutes } from "./StatisticRegions/Beograd/BeogradPathRoutes";
 
 export const SerbianMap = () => {
   const center = [44.02543064661552, 20.888526435851563];
@@ -32,17 +34,16 @@ export const SerbianMap = () => {
     if (showVojvodina) {
       return navigate("vojvodinaTekstModal");
     } else if (showBeograd) {
-      return navigate("Beograd");
+      return navigate(beogradPathRoutes.home);
     } else if (showSumadijaIZapadnaSrbija) {
-      return navigate("sumadijaTekstModal");
+      return navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal);
     } else if (showIstocnaiJuznaSrbija) {
-      return navigate("istocnaSrbijaTekstModal");
+      return navigate(serbianMapPathRoutes.IstocnaSrbijaTekstModal);
     } else if (showKosovoIMetohija) {
-      return navigate("istocnaSrbijaTekstModal");
+      return navigate(serbianMapPathRoutes.KosovoIMetohijaTekstModal);
     }
   });
 
-  const toggleMap = () => setShowMap(!showMap);
 
   return (
     <div className="serbianMapClass">

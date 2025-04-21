@@ -7,6 +7,7 @@ import prirodnjackiCentar5 from "../../../../../assets/images/SumadijaIZapadnaSr
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pomoravskiOkrugPathRoutes } from "./PomoravskiOkrugPathRoutes";
 
 export const PrirodnjackiCentar = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const PrirodnjackiCentar = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(pomoravskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

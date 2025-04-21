@@ -7,6 +7,7 @@ import beljanica5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Branice
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { branicevskiOkrugPathRoutes } from "./BranicevskiOkrugPathRoutes";
 
 export const PlaninaBeljanica = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const PlaninaBeljanica = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(branicevskiOkrugPathRoutes.home)}
       />
       <header></header>
       <img src={beljanica2} alt="Planina Beljanica 1" />

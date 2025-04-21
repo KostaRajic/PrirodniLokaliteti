@@ -8,6 +8,7 @@ import sopocani6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Raski
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
 
 export const ManastirSopocani = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const ManastirSopocani = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={sopocani2} alt="Manastir Sopoćani 1" />
 

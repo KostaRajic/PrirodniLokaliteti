@@ -6,6 +6,7 @@ import prskalo4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Pomora
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pomoravskiOkrugPathRoutes } from "./PomoravskiOkrugPathRoutes";
 
 export const VodopadPrskalo = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const VodopadPrskalo = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(pomoravskiOkrugPathRoutes.home)}
 
       />
       <header></header>

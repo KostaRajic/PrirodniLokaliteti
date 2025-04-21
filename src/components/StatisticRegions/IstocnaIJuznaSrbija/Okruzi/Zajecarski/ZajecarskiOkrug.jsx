@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { zajecarskiOkrugData } from "./ZajecarskiOkrugData";
+import { zajecarskiOkrugPathRoutes } from "./ZajecarskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const ZajecarskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,17 +21,17 @@ export const ZajecarskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === "Zaječar") {
-      navigate("Zajecar");
+      navigate(zajecarskiOkrugPathRoutes.zajecar);
     } else if (name === "Sokobanja") {
-      navigate("SokoBanja");
+      navigate(zajecarskiOkrugPathRoutes.sokoBanja);
     } else if (name === "Planina Rtanj") {
-      navigate("PlaninaRtanj");
+      navigate(zajecarskiOkrugPathRoutes.planinaRtanj);
     } else if (name === "Vodopad Ripaljka") {
-      navigate("VodopadRipaljka");
+      navigate(zajecarskiOkrugPathRoutes.vodopadRipaljka);
     } else if (name === 'Srpski Srednjovekovni Grad "Soko Grad"') {
-      navigate("SokoGrad");
+      navigate(zajecarskiOkrugPathRoutes.sokoGrad);
     } else if (name === "Feliks Romulijana") {
-      navigate("Gamzigrad");
+      navigate(zajecarskiOkrugPathRoutes.gamzigrad);
     }
   };
 
@@ -38,7 +40,7 @@ export const ZajecarskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.IstocnaSrbija)}
           style={{ fill: "white" }}
         />
       </header>

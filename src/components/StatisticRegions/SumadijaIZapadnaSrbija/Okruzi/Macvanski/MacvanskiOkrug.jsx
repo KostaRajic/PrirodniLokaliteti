@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { macvanskiOkrugData } from "./MacvanskiOkrugData";
+import { macvanskiOkrugPathRoutes } from "./MacvanskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const MacvanskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -20,19 +22,19 @@ export const MacvanskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === "Šabac") {
-      navigate('Sabac')
+      navigate(macvanskiOkrugPathRoutes.sabac)
     } else if (name === "Gučevo") {
-      navigate('Gucevo')
+      navigate(macvanskiOkrugPathRoutes.gucevo)
     } else if (name === "Zvorničko jezero") {
-      navigate('ZvornickoJezero')
+      navigate(macvanskiOkrugPathRoutes.zvornickoJezero)
     } else if (name === "Manastir Tronoša") {
-      navigate('ManastirTronosa')
+      navigate(macvanskiOkrugPathRoutes.manastirTronosa)
     } else if (name === "Planina Cer") {
-      navigate('PlaninaCer')
+      navigate(macvanskiOkrugPathRoutes.planinaCer)
     } else if (name === "Mačkov Kamen") {
-      navigate('MackovKamen')
+      navigate(macvanskiOkrugPathRoutes.mackovKamen)
     } else if (name === "Tršić") {
-      navigate('Trsic')
+      navigate(macvanskiOkrugPathRoutes.trsic)
     }
   };
 
@@ -41,7 +43,7 @@ export const MacvanskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija)}
           style={{ fill: "white"}}
         />
       </header>

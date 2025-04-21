@@ -4,12 +4,13 @@ import { sumadijaIZapadnaSrbijaText } from "./SumadijaIZapadnaSrbijaTekst";
 import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { serbianMapPathRoutes } from "../../serbianMapPathRoutes";
 
 export const SumadijaIZapadnaSrbijaTekstModal = ({ goBack }) => {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    navigate("SumadijaIZapadnaSrbija");
+    navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija);
   };
 
   return (
@@ -62,7 +63,7 @@ export const SumadijaIZapadnaSrbijaTekstModal = ({ goBack }) => {
           Rasinski
         </p>
         <div className="btnClass">
-          <button className="firstBtn" onClick={() => navigate(-1)}>
+          <button className="firstBtn" onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal)}>
             Nazad
           </button>
           <button className="secondBtn" onClick={handleNext}>

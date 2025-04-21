@@ -9,6 +9,7 @@ import leskovac7 from "../../../../../assets/images/JuznaIIstocnaSrbija/Jablanic
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { jablanickiOkrugPathRoutes } from "./JablanickiOkrugPathRoutes";
 
 export const Leskovac = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ export const Leskovac = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(jablanickiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

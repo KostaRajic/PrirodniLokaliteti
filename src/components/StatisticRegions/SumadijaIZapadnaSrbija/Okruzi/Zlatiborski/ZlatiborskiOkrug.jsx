@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { zlatiborskiOkrugData } from "./ZlatiborskiOkrugData";
+import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
 
 export const ZlatiborskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,31 +20,31 @@ export const ZlatiborskiOkrug = () => {
 
   const readMore = (name) => {
       if (name === 'Užice') {
-        navigate('Uzice')
+        navigate(zlatiborskiOkrugPathRoutes.uzice)
       } else if (name === 'Reka Uvac') {
-        navigate('RekaUvac')
+        navigate(zlatiborskiOkrugPathRoutes.rekaUvac)
       } else if (name === 'Nacionalni Park "Tara"') {
-        navigate('NacionalniParkTara')
+        navigate(zlatiborskiOkrugPathRoutes.nacionalniParkTara)
       } else if (name === 'Planina Zlatibor') {
-        navigate('PlaninaZlatibor')
+        navigate(zlatiborskiOkrugPathRoutes.planinaZlatar)
       } else if (name === 'Manastir Mileševa') {
-        navigate('ManastirMileseva')
+        navigate(zlatiborskiOkrugPathRoutes.manastirMileseva)
       } else if (name === 'Jezero Perućac') {
-        navigate('JezeroPerucac')
+        navigate(zlatiborskiOkrugPathRoutes.jezeroPerucac)
       } else if (name === 'Vodopad Sopotice') {
-        navigate('VodopadSopotnice')
+        navigate(zlatiborskiOkrugPathRoutes.vodopadSopotnice)
       } else if (name === 'Manastir Rujan') {
-        navigate('ManastirRujan')
+        navigate(zlatiborskiOkrugPathRoutes.manastirRujan)
       } else if (name === 'Planina Zlatar') {
-        navigate('PlaninaZlatar')
+        navigate(zlatiborskiOkrugPathRoutes.planinaZlatar)
       } else if (name === 'Zaovinsko Jezero') {
-        navigate('ZaovinskoJezero')
+        navigate(zlatiborskiOkrugPathRoutes.zaovinskoJezero)
       } else if (name === 'Stopića Pećina') {
-        navigate('StopicaPecina')
+        navigate(zlatiborskiOkrugPathRoutes.stopicaPecina)
       } else if (name === 'Vodopad Gostilje') {
-        navigate('VodopadGostilje')
+        navigate(zlatiborskiOkrugPathRoutes.vodopadGostilje)
       } else if (name === 'Mokra Gora') {
-        navigate('MokraGora')
+        navigate(zlatiborskiOkrugPathRoutes.mokraGora)
       }
   };  
 

@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { borskiOkrugData } from "./BorskiOkrugData";
+import { borskiOkrugPathRoutes } from "./BorskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const BorskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -23,19 +25,19 @@ export const BorskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === "Bor") {
-      return navigate("Bor");
+      return navigate(borskiOkrugPathRoutes.bor);
     } else if (name === "Đerdapska Klisura") {
-      return navigate('DjerdapskaKlisura')
+      return navigate(borskiOkrugPathRoutes.djerdapskaKlisura)
     } else if (name === "Lazarev Kanjon") {
-      return navigate('LazarevKanjon')
+      return navigate(borskiOkrugPathRoutes.lazarevKanjon)
     } else if (name === "Lazareva Pećina") {
-      return navigate('LazarevaPecina')
+      return navigate(borskiOkrugPathRoutes.lazarevaPecina)
     } else if (name === "Borsko Jezero") {
-      return navigate('BorskoJezero')
+      return navigate(borskiOkrugPathRoutes.borskoJezero)
     } else if (name === "Lepenski Vir") {
-      return navigate('LepenskiVir')
+      return navigate(borskiOkrugPathRoutes.lepenskiVir)
     } else if (name === "Rajkova Pećina") {
-      return navigate('RajkovaPecina')
+      return navigate(borskiOkrugPathRoutes.rajkovaPecina)
     }
   };
 
@@ -44,7 +46,7 @@ export const BorskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.IstocnaSrbija)}
           style={{ fill: "white" }}
         />
       </header>

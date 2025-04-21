@@ -7,6 +7,7 @@ import bovanskoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Ni
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { nisavskiOkrugPathRoutes } from "./NisavskiOkrugPathRoutes";
 
 export const BovanskoJezero = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const BovanskoJezero = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={bovanskoJezero1} alt="Bovansko Jezero 1" />
 

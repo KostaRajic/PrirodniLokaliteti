@@ -7,6 +7,7 @@ import sokoGrad5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Zajecars
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zajecarskiOkrugPathRoutes } from "./ZajecarskiOkrugPathRoutes";
 
 export const SokoGrad = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const SokoGrad = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
       <img src={sokoGrad4} alt="Srpski Srednjovekovni Grad 'Soko Grad' 1" />
 

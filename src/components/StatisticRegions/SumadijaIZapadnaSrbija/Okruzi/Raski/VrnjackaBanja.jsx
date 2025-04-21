@@ -10,6 +10,7 @@ import vrnjackaBanja8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
 
 export const VrnjackaBanja = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const VrnjackaBanja = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes)} />
       <header></header>
       <img src={vrnjackaBanja1} alt="Vrnjačka Banja 1" />
 

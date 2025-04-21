@@ -10,6 +10,7 @@ import prokuplje9 from "../../../../../assets/images/JuznaIIstocnaSrbija/Toplick
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { toplickiOkurgPathRoutes } from "./ToplickiOkurgPathRoutes";
 
 export const Prokuplje = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const Prokuplje = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
       <img src={prokuplje1} alt="Prokuplje 1" />
 

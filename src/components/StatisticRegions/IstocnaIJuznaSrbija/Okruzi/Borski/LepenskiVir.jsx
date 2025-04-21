@@ -18,6 +18,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
+import { borskiOkrugPathRoutes } from "./BorskiOkrugPathRoutes";
 
 export const LepenskiVir = () => {
   const navigate = useNavigate();
@@ -92,7 +93,7 @@ export const LepenskiVir = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(borskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={lepenskiVir1} alt="Lepenski Vir 1" />
 

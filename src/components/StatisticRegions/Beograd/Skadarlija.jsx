@@ -8,6 +8,7 @@ import skadarlija6 from "../../../assets/images/Beograd/Skadarlija/skadarllija6.
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const Skadarlija = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Skadarlija = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
       <img src={skadarlija1} alt="Sakadrlija 1" />
 

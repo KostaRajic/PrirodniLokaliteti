@@ -6,6 +6,7 @@ import radovanjskiLug4 from "../../../../../assets/images/JuznaIIstocnaSrbija/Po
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { podunavskiOkrugPathRoutes } from "./PodunavskiOkrugPathRouts";
 
 export const RadovanjskiLug = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export const RadovanjskiLug = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(podunavskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={radovanjskiLug1} alt="Radovanjski Lug 1" />
 

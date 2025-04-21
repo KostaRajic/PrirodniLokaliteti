@@ -7,6 +7,7 @@ import planinaRadan5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Topl
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { toplickiOkurgPathRoutes } from "./ToplickiOkurgPathRoutes";
 
 export const PlaninaRadan = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const PlaninaRadan = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
       <img src={planinaRadan1} alt="Planina Radan 1" />
 

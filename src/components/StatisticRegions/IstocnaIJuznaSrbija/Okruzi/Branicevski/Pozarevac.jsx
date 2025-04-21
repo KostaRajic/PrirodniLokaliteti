@@ -8,6 +8,7 @@ import pozarevac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/Branice
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { branicevskiOkrugPathRoutes } from "./BranicevskiOkrugPathRoutes";
 
 export const Pozarevac = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Pozarevac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(branicevskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={pozarevac1} alt="Požarevac 1" />
 

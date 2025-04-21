@@ -7,6 +7,7 @@ import pirot6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkr
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { pirotskiOkrugPathRoutes } from "./PirotskiOkrugPathRoutes";
 
 export const Pirot = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const Pirot = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={pirot1} alt="Pirot 1" />
 

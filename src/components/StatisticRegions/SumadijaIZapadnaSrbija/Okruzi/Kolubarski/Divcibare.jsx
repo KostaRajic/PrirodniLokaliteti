@@ -8,6 +8,7 @@ import divcibare6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Kolu
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { kulubarskiOkrugPathRoutes } from "./KolubarskiOkrugPathRoutes";
 
 export const Divcibare = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Divcibare = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={divcibare1} alt="Divčibare 1" />
 

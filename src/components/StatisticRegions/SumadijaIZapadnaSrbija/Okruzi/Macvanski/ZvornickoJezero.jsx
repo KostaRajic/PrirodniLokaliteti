@@ -8,6 +8,7 @@ import zvornickoJezero6 from "../../../../../assets/images/SumadijaIZapadnaSrbij
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { macvanskiOkrugPathRoutes } from "./MacvanskiOkrugPathRoutes";
 
 export const ZvornickoJezero = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const ZvornickoJezero = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={zvornickoJezero1} alt="Zvorničko jezero 1" />
 

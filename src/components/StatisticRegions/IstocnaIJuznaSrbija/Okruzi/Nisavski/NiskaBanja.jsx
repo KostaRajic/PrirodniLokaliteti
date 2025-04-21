@@ -7,6 +7,7 @@ import niskaBanja5 from "../../../../../assets/images/JuznaIIstocnaSrbija/Nisavs
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { nisavskiOkrugPathRoutes } from "./NisavskiOkrugPathRoutes";
 
 export const NiskaBanja = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const NiskaBanja = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={niskaBanja2} alt="Niška Banja 1" />
 

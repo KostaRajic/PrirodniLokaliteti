@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { pcinjskiOkrugData } from "./PcinjskiOkrugData";
 import { pcinjskiOkrugPathRoutes } from "./PcinjskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const PcinjskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -27,7 +28,11 @@ export const PcinjskiOkrug = () => {
         navigate(pcinjskiOkrugPathRoutes.besnaKobila)
     } else if (name === 'Manastir Prohora Pčinjskog') {
       navigate(pcinjskiOkrugPathRoutes.prohorPcinjski)
-  }
+  } else if (name === 'Planina Kukavica') {
+    navigate(pcinjskiOkrugPathRoutes.planinaKukavica)
+} else if (name === 'Planina Čermenik') {
+  navigate(pcinjskiOkrugPathRoutes.planinaCemernik)
+}
   };
 
   return (
@@ -35,7 +40,7 @@ export const PcinjskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.IstocnaSrbija)}
           style={{ fill: "white" }}
         />
       </header>
@@ -72,7 +77,7 @@ export const PcinjskiOkrug = () => {
         </div>
       </section>
       <section className="citatClass">
-        <p>Putovanje i promena mesta daju novu snagu vašem umu. (Seneka)</p>
+        <p>Bolje je doživeti nešto jednom nego slušati o tome 1000 puta. (Azian Proverb)</p>
       </section>
       <section>
         <div className="caruoselClass" style={{ padding: "0" }}>

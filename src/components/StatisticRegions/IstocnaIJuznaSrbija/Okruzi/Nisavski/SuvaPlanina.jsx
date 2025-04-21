@@ -8,6 +8,7 @@ import suvaPlanina6 from "../../../../../assets/images/JuznaIIstocnaSrbija/Nisav
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { nisavskiOkrugPathRoutes } from "./NisavskiOkrugPathRoutes";
 
 export const SuvaPlanina = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const SuvaPlanina = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={suvaPlanina1} alt="Suva Planina 1" />
 

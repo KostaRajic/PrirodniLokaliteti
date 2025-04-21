@@ -6,6 +6,7 @@ import sretenje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Morav
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { moravickiOkrugPathRoutes } from "./MoravickiOkrugPathRoutes";
 
 export const ManastirSretenje = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export const ManastirSretenje = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
       <img src={sretenje1} alt="Manastir Sretenje" />
 

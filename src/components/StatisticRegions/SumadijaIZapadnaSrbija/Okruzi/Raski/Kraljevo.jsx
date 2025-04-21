@@ -10,6 +10,7 @@ import kraljevo8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Raski
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
 
 export const Kraljevo = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export const Kraljevo = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(raskiOkrugPathRoutes.home)}
 
       />
       <header></header>

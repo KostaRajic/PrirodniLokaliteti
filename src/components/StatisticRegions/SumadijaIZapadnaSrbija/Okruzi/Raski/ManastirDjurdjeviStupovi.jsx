@@ -7,6 +7,7 @@ import stupovi5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiO
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { rasinskiOkrugPathRoutes } from "../Rasinski/RasinskiOkrugPathRoutes";
 
 export const ManastirDjurdjeviStupovi = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const ManastirDjurdjeviStupovi = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(rasinskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={stupovi2} alt="Manastir Đurđevi Stupovi 1" />
 

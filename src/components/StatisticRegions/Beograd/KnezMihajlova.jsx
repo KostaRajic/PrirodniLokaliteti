@@ -8,6 +8,7 @@ import KnezMihailova6 from "../../../assets/images/Beograd/KnezMihailova/knezMih
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const KnezMihailova = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const KnezMihailova = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
       <img src={KnezMihailova1} alt="Knez Mihailova 1" />
 

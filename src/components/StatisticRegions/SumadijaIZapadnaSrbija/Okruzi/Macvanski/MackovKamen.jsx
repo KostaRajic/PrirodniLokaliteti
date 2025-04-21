@@ -7,6 +7,7 @@ import mackov5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Macvans
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { macvanskiOkrugPathRoutes } from "./MacvanskiOkrugPathRoutes";
 
 export const MackovKamen = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const MackovKamen = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={mackov1} alt="Mačkov Kamen 1" />
 

@@ -9,6 +9,7 @@ import sabac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Macvansk
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { macvanskiOkrugPathRoutes } from "./MacvanskiOkrugPathRoutes";
 
 export const Sabac = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const Sabac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={sabac1} alt="Šabac 1" />
 

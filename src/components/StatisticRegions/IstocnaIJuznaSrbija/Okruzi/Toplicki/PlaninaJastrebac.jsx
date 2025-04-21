@@ -9,6 +9,7 @@ import jastrebac7 from "../../../../../assets/images/JuznaIIstocnaSrbija/Toplick
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { toplickiOkurgPathRoutes } from "./ToplickiOkurgPathRoutes";
 
 export const PlaninaJastrebac = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const PlaninaJastrebac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
       <img src={jastrebac1} alt="Planina Jasterbac 1" />
 

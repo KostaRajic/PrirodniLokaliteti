@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { raskiOkrugData } from "./raskiOkrugData";
+import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
 
 export const RaskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,25 +20,25 @@ export const RaskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === 'Kraljevo') {
-      navigate('Kraljevo')
+      navigate(raskiOkrugPathRoutes.kraljevo)
     } else if (name === 'Manastir Studenica') {
-      navigate('ManastirStudenica')
+      navigate(raskiOkrugPathRoutes.manastirStudenica)
     } else if (name === 'Planina Kopaonik') {
-      navigate('PlaninaKopaonik')
+      navigate(raskiOkrugPathRoutes.planinaKopaonik)
     } else if (name === 'Vrnjačka Banja') {
-      navigate('VrnjackaBanja')
+      navigate(raskiOkrugPathRoutes.vrnjackaBanja)
     } else if (name === 'Manastir Žiča') {
-      navigate('ManastirZica')
+      navigate(raskiOkrugPathRoutes.manastirZica)
     } else if (name === 'Tvrđava Maglič') {
-      navigate('TvrdjavaMaglic')
+      navigate(raskiOkrugPathRoutes.tvrdjavaMaglic)
     } else if (name === 'Planina Goč') {
-      navigate('PlaninaGoc')
+      navigate(raskiOkrugPathRoutes.planinaGoc)
     } else if (name === 'Manastir Đurđevi Stupovi') {
-      navigate('ManastirDjurdjeviStupovi')
+      navigate(raskiOkrugPathRoutes.manastirDjurdjeviStupovi)
     } else if (name === 'Tvrđava Stari Ras') {
-      navigate('TvrdjavaStariRas')
+      navigate(raskiOkrugPathRoutes.tvrdjavaStariRas)
     } else if (name === 'Manastir Sopoćani') {
-      navigate('ManastirSopocani')
+      navigate(raskiOkrugPathRoutes.manastirSopocani)
     }
       };
 

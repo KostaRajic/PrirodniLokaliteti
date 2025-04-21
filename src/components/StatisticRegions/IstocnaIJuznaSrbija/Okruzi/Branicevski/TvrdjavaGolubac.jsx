@@ -8,6 +8,7 @@ import golubac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/Branicevs
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { branicevskiOkrugPathRoutes } from "./BranicevskiOkrugPathRoutes";
 
 export const TvrdjavaGolubac = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const TvrdjavaGolubac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(branicevskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={golubac1} alt="Tvrđava Golubac 1" />
 

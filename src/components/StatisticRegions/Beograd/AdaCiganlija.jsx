@@ -8,6 +8,7 @@ import adaCiganlija6 from "../../../assets/images/Beograd/AdaCiganlija/adaCiganl
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { beogradPathRoutes } from "./BeogradPathRoutes";
 
 export const AdaCiganlija = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ export const AdaCiganlija = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(beogradPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>
@@ -26,8 +27,8 @@ export const AdaCiganlija = () => {
       <h2>Ada Ciganlija</h2>
 
       <p>
-        Ada Ciganlija, koja se nalazi na samo 4 km od centra Beograda, na reki
-        Savi u blizini njenog ušća u Dunav, nekada je bila ostrvo, a danas je
+        Ada Ciganlija, koja se nalazi na samo 4 km od centra Beograda, na reci
+        Savi u blizini njenog ušća u Dunav. Nekada je bila ostrvo, a danas je
         poluostrvo. Ovo područje, bogato gustim listopadnim šumama, proplancima
         i livadama, postalo je najpoznatije i najposećenije izletište, kupalište
         i odmaralište Beograđana. Ime "Ada Ciganlija" potiče od keltskih reči

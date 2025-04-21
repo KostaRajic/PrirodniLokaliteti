@@ -7,6 +7,7 @@ import petnicaPecina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { kulubarskiOkrugPathRoutes } from "./KolubarskiOkrugPathRoutes";
 
 export const PetnickaPecina = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const PetnickaPecina = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={petnicaPecina1} alt="PETNIČKA PEĆINA 1" />
 

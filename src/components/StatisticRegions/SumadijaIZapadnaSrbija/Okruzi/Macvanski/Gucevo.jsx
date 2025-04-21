@@ -8,6 +8,7 @@ import gucevo6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Macvans
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { macvanskiOkrugPathRoutes } from "./MacvanskiOkrugPathRoutes";
 
 export const Gucevo = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const Gucevo = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={gucevo1} alt="Gučevo 1" />
 

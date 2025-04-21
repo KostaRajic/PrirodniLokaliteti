@@ -11,6 +11,7 @@ import krusevac9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Rasin
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { rasinskiOkrugPathRoutes } from "./RasinskiOkrugPathRoutes";
 
 export const Krusevac = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ export const Krusevac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(rasinskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={krusevac2} alt="Krusevac 1" />
 

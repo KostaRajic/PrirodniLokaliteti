@@ -8,6 +8,7 @@ import kopaonik6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Raski
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
 
 export const PlaninaKopaonik = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export const PlaninaKopaonik = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={kopaonik1} alt="Planina Kopaonik 1" />
 

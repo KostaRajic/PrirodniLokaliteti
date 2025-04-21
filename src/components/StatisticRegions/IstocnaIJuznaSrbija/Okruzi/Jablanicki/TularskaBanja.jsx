@@ -6,6 +6,7 @@ import tularskaBanja4 from "../../../../../assets/images/JuznaIIstocnaSrbija/Jab
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { jablanickiOkrugPathRoutes } from "./JablanickiOkrugPathRoutes";
 
 export const TularskaBanja = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export const TularskaBanja = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: "white"}}/>
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(jablanickiOkrugPathRoutes.home)} style={{fill: "white"}}/>
       <header></header>
       <img src={tularskaBanja1} alt="Tularska Banja 1" />
 

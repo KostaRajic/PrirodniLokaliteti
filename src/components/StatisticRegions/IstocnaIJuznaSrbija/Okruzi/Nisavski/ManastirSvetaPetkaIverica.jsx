@@ -6,6 +6,7 @@ import svetaPetkaIverica4 from "../../../../../assets/images/JuznaIIstocnaSrbija
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { nisavskiOkrugPathRoutes } from "./NisavskiOkrugPathRoutes";
 
 export const ManastirSvetaPetkaIverica = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export const ManastirSvetaPetkaIverica = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={svetaPetkaIverica2} alt="Manastir Sveta Petka Iverica 1" />
 

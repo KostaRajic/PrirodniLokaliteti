@@ -9,6 +9,7 @@ import bor7 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/B
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { borskiOkrugPathRoutes } from "./BorskiOkrugPathRoutes";
 
 export const Bor = () => {
   const navigate = useNavigate();
@@ -18,13 +19,13 @@ export const Bor = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(borskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>
       <img src={bor1} alt="Krupajsko Vrelo 1" />
 
-      <h2>Krupajsko Vrelo</h2>
+      <h2>Bor</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Bor se nalazi na istoku Republike Srbije, u Timočkoj regiji, između

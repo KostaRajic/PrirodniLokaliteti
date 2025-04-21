@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { pomoravskiOkrugData } from "./pomoravskiOkrugData";
+import { pomoravskiOkrugPathRoutes } from "./PomoravskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
+
 
 export const PomoravskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -19,23 +22,23 @@ export const PomoravskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === 'Jagodina') {
-      navigate('Jagodina')
+      navigate(pomoravskiOkrugPathRoutes.jagodina)
     } else if (name === 'Grza') {
-      navigate('Grza')
+      navigate(pomoravskiOkrugPathRoutes.grza)
     } else if (name === 'Manastir Manasija') {
-      navigate('ManastirManasija')
+      navigate(pomoravskiOkrugPathRoutes.manastirManasija)
     } else if (name === 'Vodopad Lisine') {
-      navigate('VodopadLisine')
+      navigate(pomoravskiOkrugPathRoutes.vodopadLisine)
     } else if (name === 'Manastir Jošanica') {
-      navigate('ManastirJosanica')
+      navigate(pomoravskiOkrugPathRoutes.manastirJosanica)
     } else if (name === 'Resavska Pećina') {
-      navigate('ResavskaPecina')
+      navigate(pomoravskiOkrugPathRoutes.resavskaPecina)
     } else if (name === 'Vodopad Prskalo') {
-      navigate('VodopadPrskalo')
+      navigate(pomoravskiOkrugPathRoutes.vodopadPrskalo)
     } else if (name === 'Manastir Ravanica') {
-      navigate('ManatirRavanica')
+      navigate(pomoravskiOkrugPathRoutes.manastirRavanica)
     } else if (name === 'Prirodnjački centar') {
-      navigate('PrirodnjackiCentar')
+      navigate(pomoravskiOkrugPathRoutes.prirodnjackiCentar)
     }
   };
 
@@ -44,7 +47,7 @@ export const PomoravskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija)}
           style={{ fill: "white"}}
         />
       </header>

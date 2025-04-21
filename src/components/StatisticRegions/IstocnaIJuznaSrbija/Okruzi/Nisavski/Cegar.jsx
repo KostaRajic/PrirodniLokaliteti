@@ -6,6 +6,7 @@ import cegar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkr
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { nisavskiOkrugPathRoutes } from "./NisavskiOkrugPathRoutes";
 
 export const Cegar = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export const Cegar = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
       <img src={cegar1} alt="Čergar 1" />
 

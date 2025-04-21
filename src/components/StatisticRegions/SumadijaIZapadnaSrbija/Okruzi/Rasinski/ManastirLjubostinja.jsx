@@ -7,6 +7,7 @@ import ljubostinja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Ra
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { rasinskiOkrugPathRoutes } from "./RasinskiOkrugPathRoutes";
 
 export const ManastirLjubostinja = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const ManastirLjubostinja = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(rasinskiOkrugPathRoutes.home)}
 
       />
       <header></header>

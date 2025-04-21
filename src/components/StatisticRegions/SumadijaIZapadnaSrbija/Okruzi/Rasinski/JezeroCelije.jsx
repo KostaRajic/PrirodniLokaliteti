@@ -7,6 +7,7 @@ import celije5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Rasinsk
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { rasinskiOkrugPathRoutes } from "./RasinskiOkrugPathRoutes";
 
 export const JezeroCelije = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export const JezeroCelije = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(rasinskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>

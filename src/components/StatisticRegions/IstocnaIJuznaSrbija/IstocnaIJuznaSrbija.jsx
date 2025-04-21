@@ -11,6 +11,11 @@ import { toplickiOkurgPathRoutes } from "./Okruzi/Toplicki/ToplickiOkurgPathRout
 import { pirotskiOkrugPathRoutes } from "./Okruzi/Pirotski/PirotskiOkrugPathRoutes";
 import { jablanickiOkrugPathRoutes } from "./Okruzi/Jablanicki/JablanickiOkrugPathRoutes";
 import { pcinjskiOkrugPathRoutes } from "./Okruzi/Pcinjski/PcinjskiOkrugPathRoutes";
+import { borskiOkrugPathRoutes } from "./Okruzi/Borski/BorskiOkrugPathRoutes";
+import { branicevskiOkrugPathRoutes } from "./Okruzi/Branicevski/BranicevskiOkrugPathRoutes";
+import { podunavskiOkrugPathRoutes } from "./Okruzi/Podunavski/PodunavskiOkrugPathRouts";
+import { zajecarskiOkrugPathRoutes } from "./Okruzi/Zajecarski/ZajecarskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../serbianMapPathRoutes";
 
 export const IstocnaiJuznaSrbija = () => {
   const center = [43.582016, 21.975183];
@@ -38,13 +43,13 @@ export const IstocnaiJuznaSrbija = () => {
 
   useEffect(() => {
     if (showPodunavski) {
-      return navigate("PodunavskiOkrug");
+      return navigate(podunavskiOkrugPathRoutes.home);
     } else if (showBranicevski) {
-      return navigate("BranicevskiOkrug");
+      return navigate(branicevskiOkrugPathRoutes.home);
     } else if (showBorski) {
-      return navigate("BorskiOkrug");
+      return navigate(borskiOkrugPathRoutes.home);
     } else if (showZajecarski) {
-      return navigate("ZajecarskiOkrug");
+      return navigate(zajecarskiOkrugPathRoutes.home);
     } else if (showNisavski) {
       return navigate(nisavskiOkrugPathRoutes.home);
     } else if (showToplicki) {
@@ -56,7 +61,18 @@ export const IstocnaiJuznaSrbija = () => {
     } else if (showPcinjski) {
       return navigate(pcinjskiOkrugPathRoutes.home);
     }
-  });
+  }, [
+    showPodunavski,
+    showBranicevski,
+    showBorski,
+    showZajecarski,
+    showNisavski,
+    showToplicki,
+    showPirotski,
+    showJablanicki,
+    showPcinjski,
+    navigate,
+  ]);
 
   return (
     <MapContainer
@@ -73,7 +89,7 @@ export const IstocnaiJuznaSrbija = () => {
       />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(serbianMapPathRoutes.IstocnaSrbijaTekstModal)}
         style={{ zIndex: "400" }}
       />
       {IstocnaIJuznaSrbijaRegioni?.features?.map((statisticRegion) => {
