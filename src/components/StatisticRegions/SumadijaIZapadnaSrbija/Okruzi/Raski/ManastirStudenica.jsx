@@ -1,8 +1,13 @@
-import studenica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/manastirStudenica1.jpg";
-import studenica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/manastirStudenica2.jpg";
-import studenica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/manastirStudenica3.jpg";
-import studenica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/manastirStudenica4.jpg";
-import studenica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/manastirStudenica5.jpg";
+import studenica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/desktop/manastirStudenica1.jpg";
+import studenica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/desktop/manastirStudenica2.jpg";
+import studenica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/desktop/manastirStudenica3.jpg";
+import studenica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/desktop/manastirStudenica4.jpg";
+import studenica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/desktop/manastirStudenica5.jpg";
+import studenica11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/mobile/MmanastirStudenica1.jpg";
+import studenica22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/mobile/MmanastirStudenica2.jpg";
+import studenica33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/mobile/MmanastirStudenica3.jpg";
+import studenica44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/mobile/MmanastirStudenica4.jpg";
+import studenica55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica/mobile/MmanastirStudenica5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const ManastirStudenica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(rasinskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={studenica1} alt="Manastir Studenica 1" />
+      <img srcSet={`${studenica11} 400w, ${studenica1} `} alt="Manastir Studenica 1" />
 
       <h2 style={{ color: "white" }}>Manastir Studenica</h2>
 
@@ -36,7 +41,7 @@ export const ManastirStudenica = () => {
         severno od Raške.
       </p>
 
-      <img src={studenica2} alt="Manastir Studenica 2" />
+      <img srcSet={`${studenica22} 400w, ${studenica2} `} alt="Manastir Studenica 2" />
 
       <p>
         Pripada Eparhiji žičkoj Srpske pravoslavne crkve. Manastirski kompleks
@@ -60,7 +65,7 @@ export const ManastirStudenica = () => {
         kao prvi po dostojanstvu, najugledniji srpski manastir.
       </p>
 
-      <img src={studenica3} alt="Manastir Studenica 3" />
+      <img srcSet={`${studenica33} 400w, ${studenica3} `} alt="Manastir Studenica 3" />
 
       <p>
         Manastir Studenicu je gradio veliki župan Stefan Nemanja, rodonačelnik
@@ -77,7 +82,7 @@ export const ManastirStudenica = () => {
         kralj Stefan.
       </p>
 
-      <img src={studenica4} alt="Manastir Studenica 4" />
+      <img srcSet={`${studenica44} 400w, ${studenica4} `} alt="Manastir Studenica 4" />
 
       <p>
         Nemanjin treći sin, Sava Nemanjić, preneo je 1207. godine mošti svog oca
@@ -105,7 +110,7 @@ export const ManastirStudenica = () => {
         Simeon Mirotočivi.
       </p>
 
-      <img src={studenica5} alt="Manastir Studenica 5" />
+      <img srcSet={`${studenica55} 400w, ${studenica5} `} alt="Manastir Studenica 5" />
 
       <p>
         Bogorodičina crkva je jednobrodna crkva s kupolom. Na njenom istočnom

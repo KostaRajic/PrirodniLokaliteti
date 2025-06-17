@@ -1,8 +1,13 @@
-import sokoGrad1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/SokoGrad1.jpg";
-import sokoGrad2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/SokoGrad2.jpg";
-import sokoGrad3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/SokoGrad3.jpg";
-import sokoGrad4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/SokoGrad4.jpg";
-import sokoGrad5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/SokoGrad5.jpg";
+import sokoGrad1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/desktop/SokoGrad1.jpg";
+import sokoGrad2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/desktop/SokoGrad2.jpg";
+import sokoGrad3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/desktop/SokoGrad3.jpg";
+import sokoGrad4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/desktop/SokoGrad4.jpg";
+import sokoGrad5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/desktop/SokoGrad5.jpg";
+import sokoGrad11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/mobile/SokoGradM1.jpg";
+import sokoGrad22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/mobile/SokoGradM2.jpg";
+import sokoGrad33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/mobile/SokoGradM3.jpg";
+import sokoGrad44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/mobile/SokoGradM4.jpg";
+import sokoGrad55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/SokoGrad/mobile/SokoGradM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const SokoGrad = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={sokoGrad4} alt="Srpski Srednjovekovni Grad 'Soko Grad' 1" />
+      <img srcSet={`${sokoGrad44} 400w, ${sokoGrad4} `} alt="Srpski Srednjovekovni Grad 'Soko Grad' 1" />
 
       <h2>Srpski Srednjovekovni Grad "Soko Grad"</h2>
 
@@ -35,7 +40,7 @@ export const SokoGrad = () => {
         dalje ponosno kruže, podsećajući na bogatu prošlost ove tvrđave.
       </p>
 
-      <img src={sokoGrad2} alt="Srpski Srednjovekovni Grad 'Soko Grad' 2" />
+      <img srcSet={`${sokoGrad22} 400w, ${sokoGrad2} `} alt="Srpski Srednjovekovni Grad 'Soko Grad' 2" />
 
       <p>
         Sokograd je podignut na izuzetno nepristupačnom terenu, što je
@@ -51,7 +56,7 @@ export const SokoGrad = () => {
         brdo preko kojeg se voda izlila naziva "Prevalac".
       </p>
 
-      <img src={sokoGrad3} alt="Srpski Srednjovekovni Grad 'Soko Grad' 3" />
+      <img srcSet={`${sokoGrad33} 400w, ${sokoGrad3} `} alt="Srpski Srednjovekovni Grad 'Soko Grad' 3" />
 
       <p>
         Sokograd je bio prostrana i razuđena tvrđava, sastavljena od dva dela –
@@ -68,7 +73,7 @@ export const SokoGrad = () => {
         živelo je stanovništvo, a tu su bili smešteni i robovi.
       </p>
 
-      <img src={sokoGrad1} alt="Srpski Srednjovekovni Grad 'Soko Grad' 4" />
+      <img srcSet={`${sokoGrad11} 400w, ${sokoGrad1} `} alt="Srpski Srednjovekovni Grad 'Soko Grad' 4" />
 
       <p>
         Najbolje očuvani deo gornjeg grada je stara cisterna za vodu, a tokom
@@ -85,7 +90,7 @@ export const SokoGrad = () => {
         istoriju.
       </p>
 
-      <img src={sokoGrad5} alt="Srpski Srednjovekovni Grad 'Soko Grad' 5" />
+      <img srcSet={`${sokoGrad55} 400w, ${sokoGrad5} `} alt="Srpski Srednjovekovni Grad 'Soko Grad' 5" />
 
       <p>
         Početkom 15. veka, Sokograd je pao pod tursku vlast. Sultan Musa, sin

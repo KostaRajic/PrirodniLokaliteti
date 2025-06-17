@@ -1,7 +1,11 @@
-import vodopadMirusa1 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/vodopadMirusa1.jpg";
-import vodopadMirusa2 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/vodopadMirusa2.jpg";
-import vodopadMirusa3 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/vodopadMirusa3.jpg";
-import vodopadMirusa4 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/vodopadMirusa4.jpg";
+import vodopadMirusa1 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/desktop/vodopadMirusa1.jpg";
+import vodopadMirusa2 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/desktop/vodopadMirusa2.jpg";
+import vodopadMirusa3 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/desktop/vodopadMirusa3.jpg";
+import vodopadMirusa4 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/desktop/vodopadMirusa4.jpg";
+import vodopadMirusa11 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/mobile/MvodopadMirusa1.jpg";
+import vodopadMirusa22 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/mobile/MvodopadMirusa2.jpg";
+import vodopadMirusa33 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/mobile/MvodopadMirusa3.jpg";
+import vodopadMirusa44 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/VodopadMirusa/mobile/MvodopadMirusa4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +24,7 @@ export const VodopadMirusa = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={vodopadMirusa4} alt="Vodopad Miruša 1" />
+      <img srcSet={`${vodopadMirusa44} 400w, ${vodopadMirusa4} `} alt="Vodopad Miruša 1" />
 
       <h2>Vodopad Miruša</h2>
 
@@ -35,7 +39,7 @@ export const VodopadMirusa = () => {
         dolinskog kraja uz Belo Drim, na teritoriji opština Klina i Orahovac.
       </p>
 
-      <img src={vodopadMirusa2} alt="Vodopad Miruša 2" />
+      <img srcSet={`${vodopadMirusa22} 400w, ${vodopadMirusa2} `} alt="Vodopad Miruša 2" />
 
       <p>
         Miruša je leva pritoka Belog Drima, koja izvire u podnožju planine
@@ -48,7 +52,7 @@ export const VodopadMirusa = () => {
         Gremnik, do vrha Zatrič, na nadmorskoj visini od 360 do 630 metara.
       </p>
 
-      <img src={vodopadMirusa3} alt="Vodopad Miruša 3" />
+      <img srcSet={`${vodopadMirusa33} 400w, ${vodopadMirusa3} `} alt="Vodopad Miruša 3" />
 
       <p>
         Celi region kanjona reke Miruše, dug 30 kilometara, bogat je brojnim
@@ -66,7 +70,7 @@ export const VodopadMirusa = () => {
         freske, oltara i molitvenika.
       </p>
 
-      <img src={vodopadMirusa1} alt="Vodopad Miruša 4" />
+      <img srcSet={`${vodopadMirusa11} 400w, ${vodopadMirusa1} `} alt="Vodopad Miruša 4" />
 
       <p>
         U specifičnom parku prirode koji je stvoren od strane reke Miruše i

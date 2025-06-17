@@ -1,8 +1,13 @@
-import hisar1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/hisar1.jpg";
-import hisar2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/hisar2.jpg";
-import hisar3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/hisar3.jpg";
-import hisar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/hisar4.jpg";
-import hisar5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/hisar5.jpg";
+import hisar1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/desktop/hisar1.jpg";
+import hisar2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/desktop/hisar2.jpg";
+import hisar3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/desktop/hisar3.jpg";
+import hisar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/desktop/hisar4.jpg";
+import hisar5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/desktop/hisar5.jpg";
+import hisar11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/mobile/hisarM1.jpg";
+import hisar22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/mobile/hisarM2.jpg";
+import hisar33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/mobile/hisarM3.jpg";
+import hisar44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/mobile/hisarM4.jpg";
+import hisar55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/HisarProkuplje/mobile/hisarM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const TvrdjavaHisar = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
-      <img src={hisar1} alt="Hisar Tvrđava 1" />
+      <img srcSet={`${hisar11} 400w, ${hisar1} `} alt="Hisar Tvrđava 1" />
 
       <h2>Hisar Tvrđava</h2>
 
@@ -37,7 +42,7 @@ export const TvrdjavaHisar = () => {
         Latinska (Jug Bogdanova) crkva iz 14. veka.
       </p>
 
-      <img src={hisar2} alt="Hisar Tvrđava 2" />
+      <img srcSet={`${hisar22} 400w, ${hisar2} `} alt="Hisar Tvrđava 2" />
 
       <p>
         Sa severozapadne strane citadele, nalazi se strma stena kroz koju
@@ -52,7 +57,7 @@ export const TvrdjavaHisar = () => {
         su u toku radovi na čišćenju i obnovi tvrđave.
       </p>
 
-      <img src={hisar3} alt="Hisar Tvrđava 3" />
+      <img srcSet={`${hisar33} 400w, ${hisar3} `} alt="Hisar Tvrđava 3" />
 
       <p>
         Sredinom 12. veka, Prokuplje i cela oblast Toplice bili su deo udele
@@ -71,7 +76,7 @@ export const TvrdjavaHisar = () => {
         unutar tvrđavskog podgrađa.
       </p>
 
-      <img src={hisar4} alt="Prokupaćki grad" />
+      <img srcSet={`${hisar44} 400w, ${hisar4} `} alt="Prokupaćki grad" />
 
       <p>
         Tokom prvog pada Despotovine, Osmanlije su 1440. godine ušle u grad, ali
@@ -92,7 +97,7 @@ export const TvrdjavaHisar = () => {
         sa tri očuvane i jednom delimično srušenom četvoročlanom kulom.
       </p>
 
-      <img src={hisar5} alt="Prokupacki grad Hisar" />
+      <img srcSet={`${hisar55} 400w, ${hisar5} `} alt="Prokupacki grad Hisar" />
 
       <p>
         Prokupčanska tvrđava se sastoji od ovalne citadele smeštene na najvišoj

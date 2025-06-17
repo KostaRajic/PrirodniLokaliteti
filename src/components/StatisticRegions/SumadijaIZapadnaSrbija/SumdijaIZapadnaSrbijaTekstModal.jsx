@@ -63,7 +63,7 @@ export const SumadijaIZapadnaSrbijaTekstModal = ({ goBack }) => {
           Rasinski
         </p>
         <div className="btnClass">
-          <button className="firstBtn" onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal)}>
+          <button className="firstBtn" onClick={() => navigate('/')}>
             Nazad
           </button>
           <button className="secondBtn" onClick={handleNext}>

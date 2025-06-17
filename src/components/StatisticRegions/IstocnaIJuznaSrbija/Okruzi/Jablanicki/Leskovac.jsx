@@ -1,10 +1,17 @@
-import leskovac1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/leskovac1.jpg";
-import leskovac2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/leskovac2.jpg";
-import leskovac3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/leskovac3.jpg";
-import leskovac4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/leskovac4.jpg";
-import leskovac5 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/leskovac5.jpg";
-import leskovac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/leskovac6.jpg";
-import leskovac7 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/leskovac7.jpg";
+import leskovac1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/desktop/leskovac1.jpg";
+import leskovac2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/desktop/leskovac2.jpg";
+import leskovac3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/desktop/leskovac3.jpg";
+import leskovac4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/desktop/leskovac4.jpg";
+import leskovac5 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/desktop/leskovac5.jpg";
+import leskovac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/desktop/leskovac6.jpg";
+import leskovac7 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/desktop/leskovac7.jpg";
+import leskovac11 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/mobile/leskovacM1.jpg";
+import leskovac22 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/mobile/leskovacM2.jpg";
+import leskovac33 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/mobile/leskovacM3.jpg";
+import leskovac44 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/mobile/leskovacM4.jpg";
+import leskovac55 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/mobile/leskovacM5.jpg";
+import leskovac66 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/mobile/leskovacM6.jpg";
+import leskovac77 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Leskovac/mobile/leskovacM7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +30,7 @@ export const Leskovac = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={leskovac1} alt="Leskovac 1" />
+      <img srcSet={`${leskovac11} 400w, ${leskovac1} `} alt="Leskovac 1" />
 
       <h2>Leskovac</h2>
 
@@ -39,7 +46,7 @@ export const Leskovac = () => {
         gora, Seličevice i Suva planina na istoku.
       </p>
 
-      <img src={leskovac2} alt="Leskovac 2" />
+      <img srcSet={`${leskovac22} 400w, ${leskovac2} `} alt="Leskovac 2" />
 
       <p>
         Grad Leskovac ima 144 naselja, a među njima su Leskovac, Vučje i
@@ -57,7 +64,7 @@ export const Leskovac = () => {
         festival (LIFFE).
       </p>
 
-      <img src={leskovac3} alt="Leskovac 3" />
+      <img srcSet={`${leskovac33} 400w, ${leskovac3} `} alt="Leskovac 3" />
 
       <p>
         Najraniji naziv za područje u kojem se danas nalazi grad Leskovac bio je
@@ -73,7 +80,7 @@ export const Leskovac = () => {
         reke Lapaštice u reku Medveđu (Jablanicu).
       </p>
 
-      <img src={leskovac4} alt="Leskovac 4" />
+      <img srcSet={`${leskovac44} 400w, ${leskovac4} `} alt="Leskovac 4" />
 
       <p>
         Leskovac se nalazi u podnožju brda Hisar (341 m), u srcu prostrane i
@@ -94,7 +101,7 @@ export const Leskovac = () => {
         Vranjsko-bujanovačkom kotlinom.
       </p>
 
-      <img src={leskovac5} alt="Narodni muzej u Leskovcu" />
+      <img srcSet={`${leskovac55} 400w, ${leskovac5} `} alt="Narodni muzej u Leskovcu" />
       <p>
         Narodni muzej u Leskovcu je neprofitna ustanova u službi društva, koja
         prikuplja, čuva, dokumentuje, proučava i prikazuje istorijsko-umetnička
@@ -111,7 +118,7 @@ export const Leskovac = () => {
         ostvarivanju vaspitno-obrazovnih zadataka.
       </p>
 
-      <img src={leskovac6} alt="Park Devet Jugovića u Leskovcu" />
+      <img srcSet={`${leskovac66} 400w, ${leskovac6} `} alt="Park Devet Jugovića u Leskovcu" />
       <p>
         Park Devet Jugovića u Leskovcu je jedan od važnijih gradskih parkova,
         smešten u samom centru grada. Ovaj park je poznat po svojoj zelenoj
@@ -126,7 +133,7 @@ export const Leskovac = () => {
         sećanja na njihove herojske podvige.
       </p>
 
-      <img src={leskovac7} alt="Spomen-park „Revolucije“" />
+      <img srcSet={`${leskovac77} 400w, ${leskovac7} `} alt="Spomen-park „Revolucije“" />
       <p>
         Spomen-park „Revolucije“ je memorijalni park koji se nalazi na istočnoj
         padini uzvišenja Hisar u gradu Leskovcu. Kompleks je izgrađen 1971.

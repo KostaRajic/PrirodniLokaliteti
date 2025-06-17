@@ -1,5 +1,5 @@
 import valjevo from '../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo.webp'
-import taorskaVrela from '../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/taorskaVrela.webp'
+import taorskaVrela from '../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/taorskaVrela.jpg'
 import petnicaPecina from '../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/petnicaPecina.jpg'
 import rekaGradac from '../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac.jpg'
 import velikaStena from '../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/velikaStena.jpg'

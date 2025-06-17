@@ -1,9 +1,15 @@
-import vlasinsko1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/vlasinskoJezero1.jpg";
-import vlasinsko2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/vlasinskoJezero2.jpg";
-import vlasinsko3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/vlasinskoJezero3.jpg";
-import vlasinsko4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/vlasinskoJezero4.jpg";
-import vlasinsko5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/vlasinskoJezero5.jpg";
-import vlasinsko6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/vlasinskoJezero6.jpg";
+import vlasinsko1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/desktop/vlasinskoJezero1.jpg";
+import vlasinsko2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/desktop/vlasinskoJezero2.jpg";
+import vlasinsko3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/desktop/vlasinskoJezero3.jpg";
+import vlasinsko4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/desktop/vlasinskoJezero4.jpg";
+import vlasinsko5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/desktop/vlasinskoJezero5.jpg";
+import vlasinsko6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/desktop/vlasinskoJezero6.jpg";
+import vlasinsko11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/mobile/vlasinskoJezeroM1.jpg";
+import vlasinsko22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/mobile/vlasinskoJezeroM2.jpg";
+import vlasinsko33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/mobile/vlasinskoJezeroM3.jpg";
+import vlasinsko44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/mobile/vlasinskoJezeroM4.jpg";
+import vlasinsko55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/mobile/vlasinskoJezeroM5.jpg";
+import vlasinsko66 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/VlasinskoJezero/mobile/vlasinskoJezeroM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const VlasinskoJezero = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pcinjskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={vlasinsko1} alt="Vlasinsko Jezero 1" />
+      <img srcSet={`${vlasinsko11} 400w, ${vlasinsko1} `} alt="Vlasinsko Jezero 1" />
 
       <h2>Vlasinsko Jezero</h2>
 
@@ -30,7 +36,7 @@ export const VlasinskoJezero = () => {
         od 1213 metara, Vlasinsko jezero je najviše jezero u Srbiji.
       </p>
 
-      <img src={vlasinsko2} alt="Vlasinsko Jezero 2" />
+      <img srcSet={`${vlasinsko22} 400w, ${vlasinsko2} `} alt="Vlasinsko Jezero 2" />
 
       <p>
         Vlasinsko jezero je nastalo na mestu gde je nekada postojala tresava,
@@ -44,7 +50,7 @@ export const VlasinskoJezero = () => {
         mestima bila prekrivena živim peskom.
       </p>
 
-      <img src={vlasinsko3} alt="Vlasinsko Jezero 3" />
+      <img srcSet={`${vlasinsko33} 400w, ${vlasinsko3} `} alt="Vlasinsko Jezero 3" />
 
       <p>
         Izgradnja brane na jezeru trajala je od 1946. do 1949. godine. Jezero je
@@ -59,7 +65,7 @@ export const VlasinskoJezero = () => {
         I danas postoji nekoliko ovakvih plovećih ostrva.
       </p>
 
-      <img src={vlasinsko6} alt="Vlasinsko Jezero 4" />
+      <img srcSet={`${vlasinsko66} 400w, ${vlasinsko6} `} alt="Vlasinsko Jezero 4" />
 
       <p>
         Vlasinsko jezero je akumulaciono jezero sa površinom od 16,5 kvadratnih
@@ -79,7 +85,7 @@ export const VlasinskoJezero = () => {
         100 reka, uključujući njihove pritoke.
       </p>
 
-      <img src={vlasinsko5} alt="Vlasinsko Jezero 5" />
+      <img srcSet={`${vlasinsko55} 400w, ${vlasinsko5} `} alt="Vlasinsko Jezero 5" />
 
       <p>
         Vlasinsko jezero ima dva stalna ostrva, Stratoriju i Dugi Del.
@@ -91,7 +97,7 @@ export const VlasinskoJezero = () => {
         vrbe i breze, drveće tipično za ovu oblast.
       </p>
 
-      <img src={vlasinsko4} alt="Vlasinsko Jezero 6" />
+      <img srcSet={`${vlasinsko44} 400w, ${vlasinsko4} `} alt="Vlasinsko Jezero 6" />
 
       <p>
         Vlasinsko jezero je okruženo valovitom visoravni, koja podseća na šareni

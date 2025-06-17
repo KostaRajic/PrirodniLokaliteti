@@ -1,13 +1,20 @@
-import zrenjanin1 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/zrenjanin4.jpg";
-import zrenjanin2 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/zrenjanin2.jpg";
-import zrenjanin3 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/zrenjanin3.jpg";
-import zrenjanin4 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/zrenjanin5.jpg";
-import zrenjanin5 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/zrenjanin6.jpg";
-import zrenjanin6 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/zrenjanin7.jpg";
+import zrenjanin1 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/desktop/zrenjanin4.jpg";
+import zrenjanin2 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/desktop/zrenjanin2.jpg";
+import zrenjanin3 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/desktop/zrenjanin3.jpg";
+import zrenjanin4 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/desktop/zrenjanin5.jpg";
+import zrenjanin5 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/desktop/zrenjanin6.jpg";
+import zrenjanin6 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/desktop/zrenjanin7.jpg";
+import zrenjanin11 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/mobile/Mzrenjanin4.jpg";
+import zrenjanin22 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/mobile/Mzrenjanin2.jpg";
+import zrenjanin33 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/mobile/Mzrenjanin3.jpg";
+import zrenjanin44 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/mobile/Mzrenjanin5.jpg";
+import zrenjanin55 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/mobile/Mzrenjanin6.jpg";
+import zrenjanin66 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/Zrenjanin/mobile/Mzrenjanin7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { srednjeBanatskiPathRoutes } from "./SrednjeBanatskiPathRoutes";
 
 export const Zrenjanin = () => {
   const navigate = useNavigate();
@@ -15,9 +22,9 @@ export const Zrenjanin = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(srednjeBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={zrenjanin1} alt="Zrenjanin 1" />
+      <img srcSet={`${zrenjanin11} 400w, ${zrenjanin1} `} alt="Zrenjanin 1" />
 
       <h2>Zrenjanin</h2>
 
@@ -29,9 +36,9 @@ export const Zrenjanin = () => {
         uverite se!
       </p>
 
-      <img src={zrenjanin2} alt="Katedrala Sv. Ivana Nepomuka" />
+      <img srcSet={`${zrenjanin22} 400w, ${zrenjanin2} `} alt="Katedrala Sv. Ivana Nepomuka" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Katedrala Sv. Ivana Nepomuka u Zrenjaninu je jedna od najznačajnijih
         religioznih i arhitektonskih građevina u gradu. Smeštena je u centru
         Zrenjanina, na glavnom trgu, i predstavlja dominirajući spomenik.
@@ -46,9 +53,9 @@ export const Zrenjanin = () => {
         multinacionalan.
       </p>
 
-      <img src={zrenjanin3} alt="Narodni muzej Zrenjanin" />
+      <img srcSet={`${zrenjanin33} 400w, ${zrenjanin3} `} alt="Narodni muzej Zrenjanin" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Narodni muzej Zrenjanin otvorio je svoja vrata za posetioce davne 1911.
         godine. Zavičajnog tipa i kompleksnog karaktera, Muzej čuva bogato
         kulturno nasleđe Banata iz oblasti prirode, arheologije, etnologije,
@@ -57,8 +64,8 @@ export const Zrenjanin = () => {
         zgrade gde se smenjuju tematske izložbe i odigravaju prateći programi.
       </p>
 
-      <img src={zrenjanin4} alt="Županijski park" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${zrenjanin44} 400w, ${zrenjanin4} `} alt="Županijski park" />
+      <p>
         Županijski park, poznat i kao Gradska bašta, jedan je od najlepših
         parkova u Zrenjaninu. Smešten je u centru grada i predstavlja oazu
         zelenila i mira. Park je osnovan u 19. veku, a njegovo uređenje obuhvata
@@ -72,9 +79,8 @@ export const Zrenjanin = () => {
       </p>
 
       <img
-        src={zrenjanin5}
+        srcSet={`${zrenjanin55} 400w, ${zrenjanin5} `}
         alt="Zrenjanin 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Zrenjanin je često nazivana "grad mostova" zbog velikog broja mostova
@@ -89,9 +95,8 @@ export const Zrenjanin = () => {
       </p>
 
       <img
-        src={zrenjanin6}
+        srcSet={`${zrenjanin66} 400w, ${zrenjanin6} `}
         alt="Zrenjanin 6"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Carska bara je jedno od najznačajnijih prirodnih dobara u Zrenjaninu i

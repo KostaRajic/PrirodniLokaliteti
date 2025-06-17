@@ -1,13 +1,20 @@
-import krusedol1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/krusedol2.jpg";
-import krusedol2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/krusedol3.jpg";
-import krusedol3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/krusedol4.jpg";
-import krusedol4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/krusedol5.jpg";
-import krusedol5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/krusedol6.jpg";
-import krusedol6 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/krusedol7.jpg";
+import krusedol1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/desktop/krusedol2.jpg";
+import krusedol2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/desktop/krusedol3.jpg";
+import krusedol3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/desktop/krusedol4.jpg";
+import krusedol4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/desktop/krusedol5.jpg";
+import krusedol5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/desktop/krusedol6.jpg";
+import krusedol6 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/desktop/krusedol7.jpg";
+import krusedol11 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/mobile/krusedolM2.jpg";
+import krusedol22 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/mobile/krusedolM3.jpg";
+import krusedol33 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/mobile/krusedolM4.jpg";
+import krusedol44 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/mobile/krusedolM5.jpg";
+import krusedol55 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/mobile/krusedolM6.jpg";
+import krusedol66 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirKrusedol/mobile/krusedolM7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { JuznoBackiPathRoutes } from "./JuznoBackiPathRoutes";
 
 export const ManastirKrusedol = () => {
   const navigate = useNavigate();
@@ -15,9 +22,9 @@ export const ManastirKrusedol = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(JuznoBackiPathRoutes.home)} />
       <header></header>
-      <img src={krusedol4} alt="Manastir Krusedol 1" />
+      <img srcSet={`${krusedol44} 400w, ${krusedol4} `} alt="Manastir Krusedol 1" />
 
       <h2>
       Manastir Krusedol
@@ -31,9 +38,9 @@ export const ManastirKrusedol = () => {
         je poznata po bogatoj istoriji i duhovnoj tradiciji.
       </p>
 
-      <img src={krusedol2} alt="Manastir Krusedol 2" />
+      <img srcSet={`${krusedol22} 400w, ${krusedol2} `} alt="Manastir Krusedol 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Manastir Krušedol je osnovan u 16. veku, 1509. godine, i to
         najverovatnije od strane despotice Jelene, majke Despotovića. Manastir
         je imao značajnu ulogu u duhovnom životu srpskog naroda, naročito tokom
@@ -44,9 +51,9 @@ export const ManastirKrusedol = () => {
         plemići, među kojima se izdvaja patrijarh Arsenije III Čarnojević.
       </p>
 
-      <img src={krusedol3} alt="Manastir Krusedol 3" />
+      <img srcSet={`${krusedol33} 400w, ${krusedol3} `} alt="Manastir Krusedol 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Manastir je izgrađen u stilu srpskog srednjovekovnog manastira, sa
         kombinacijom srpsko-vizantijskog i moravskog stila. Najznačajniji deo
         manastira je crkva posvećena Svetoj Trojici, koja je središnji objekat
@@ -55,8 +62,8 @@ export const ManastirKrusedol = () => {
         ličnosti.
       </p>
 
-      <img src={krusedol1} alt="Manastir Krusedol 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${krusedol11} 400w, ${krusedol1} `} alt="Manastir Krusedol 4" />
+      <p>
         Manastir Krušedol je od velikog značaja u verskom i kulturnom smislu.
         Bio je jedno od najvažnijih mesta duhovnog okupljanja i prosvetiteljskih
         aktivnosti u vreme osmanske okupacije. Manastir je značajno uticao na
@@ -64,9 +71,8 @@ export const ManastirKrusedol = () => {
       </p>
 
       <img
-        src={krusedol5}
+        srcSet={`${krusedol55} 400w, ${krusedol5} `}
         alt="Manastir Krusedol 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Manastir je poznat po svojim freskama koje su značajna umetnička dela.
@@ -75,9 +81,8 @@ export const ManastirKrusedol = () => {
       </p>
 
       <img
-        src={krusedol6}
+        srcSet={`${krusedol66} 400w, ${krusedol6} `}
         alt="Manastir Krusedol 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Manastir Krušedol je lako dostupan, smešten u blizini Sremske Mitrovice

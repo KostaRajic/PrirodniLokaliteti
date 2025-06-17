@@ -1,8 +1,13 @@
-import lazarevKanjon1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/lazarevKanjon1.jpg";
-import lazarevKanjon2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/lazarevKanjon2.jpg";
-import lazarevKanjon3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/lazarevKanjon3.jpg";
-import lazarevKanjon4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/lazarevKanjon4.jpg";
-import lazarevKanjon5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/lazarevKanjon5.jpg";
+import lazarevKanjon1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/desktop/lazarevKanjon1.jpg";
+import lazarevKanjon2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/desktop/lazarevKanjon2.jpg";
+import lazarevKanjon3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/desktop/lazarevKanjon3.jpg";
+import lazarevKanjon4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/desktop/lazarevKanjon4.jpg";
+import lazarevKanjon5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/desktop/lazarevKanjon5.jpg";
+import lazarevKanjon11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/mobile/lazarevKanjonM1.jpg";
+import lazarevKanjon22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/mobile/lazarevKanjonM2.jpg";
+import lazarevKanjon33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/mobile/lazarevKanjonM3.jpg";
+import lazarevKanjon44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/mobile/lazarevKanjonM4.jpg";
+import lazarevKanjon55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevKanjon/mobile/lazarevKanjonM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const LazarevKanjon = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={lazarevKanjon1} alt="Lazarev Kanjon 1" />
+      <img srcSet={`${lazarevKanjon11} 400w, ${lazarevKanjon1} `} alt="Lazarev Kanjon 1" />
 
       <h2>Lazarev Kanjon</h2>
 
@@ -39,7 +44,7 @@ export const LazarevKanjon = () => {
         je kao spomenik prirode.
       </p>
 
-      <img src={lazarevKanjon2} alt="Lazarev Kanjon 2" />
+      <img srcSet={`${lazarevKanjon22} 400w, ${lazarevKanjon2} `} alt="Lazarev Kanjon 2" />
 
       <p>
         Sa dužinom od oko 9 kilometara i dubinom koja varira između 300 i 500
@@ -63,7 +68,7 @@ export const LazarevKanjon = () => {
         dužinu od 7,5 metara, širinu od 6,5 metara i dubinu od 3 metra.
       </p>
 
-      <img src={lazarevKanjon3} alt="Lazarev Kanjon 3" />
+      <img srcSet={`${lazarevKanjon33} 400w, ${lazarevKanjon3} `} alt="Lazarev Kanjon 3" />
 
       <p>
         Kanjon je sa svih strana okružen stenovitim grebenima: na jugu i
@@ -82,7 +87,7 @@ export const LazarevKanjon = () => {
         vrste u Evropi.
       </p>
 
-      <img src={lazarevKanjon4} alt="Lazarev Kanjon 4" />
+      <img srcSet={`${lazarevKanjon44} 400w, ${lazarevKanjon4} `} alt="Lazarev Kanjon 4" />
 
       <p>
         Lazarev kanjon, kroz koji protiče istoimena reka, nekada je bio jedno od
@@ -97,7 +102,7 @@ export const LazarevKanjon = () => {
         pronalazili i hajduci koji su se borili protiv turskih osvajača.
       </p>
 
-      <img src={lazarevKanjon5} alt="Lazarev Kanjon 5" />
+      <img srcSet={`${lazarevKanjon55} 400w, ${lazarevKanjon5} `} alt="Lazarev Kanjon 5" />
       <p>
         Lazarev kanjon spada među floristički i fitogeografski najsloženija i
         najraznovrsnija područja u Srbiji. Flora ovog kanjona i Malinika

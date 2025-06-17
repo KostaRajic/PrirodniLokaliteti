@@ -1,8 +1,13 @@
-import mitrovica1 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/kMitrovica1.jpg";
-import mitrovica2 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/kMitrovica2.jpg";
-import mitrovica3 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/kMitrovica3.jpg";
-import mitrovica4 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/kMitrovica4.jpg";
-import mitrovica5 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/kMitrovica5.jpg";
+import mitrovica1 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/desktop/kMitrovica1.jpg";
+import mitrovica2 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/desktop/kMitrovica2.jpg";
+import mitrovica3 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/desktop/kMitrovica3.jpg";
+import mitrovica4 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/desktop/kMitrovica4.jpg";
+import mitrovica5 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/desktop/kMitrovica5.jpg";
+import mitrovica11 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/mobile/MkMitrovica1.jpg";
+import mitrovica22 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/mobile/MkMitrovica2.jpg";
+import mitrovica33 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/mobile/MkMitrovica3.jpg";
+import mitrovica44 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/mobile/MkMitrovica4.jpg";
+import mitrovica55 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/KMitrovica/mobile/MkMitrovica5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const KosovskaMitrovica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(mitrovackiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={mitrovica1} alt="Kosovska Mitrovica 1" />
+      <img srcSet={`${mitrovica11} 400w, ${mitrovica1} `} alt="Kosovska Mitrovica 1" />
 
       <h2>Kosovska Mitrovica</h2>
 
@@ -32,7 +37,7 @@ export const KosovskaMitrovica = () => {
         podele grada.
       </p>
 
-      <img src={mitrovica2} alt="Kosovska Mitrovica 2" />
+      <img srcSet={`${mitrovica22} 400w, ${mitrovica2} `}  alt="Kosovska Mitrovica 2" />
 
       <p>
         Kao rudarski grad, Trepča se pominje 1303. godine. U Starom Trgu se do
@@ -45,7 +50,7 @@ export const KosovskaMitrovica = () => {
         danas uzdižu na obližnjem istoimenom brdu.
       </p>
 
-      <img src={mitrovica5} alt="Kosovska Mitrovica 3" />
+      <img srcSet={`${mitrovica55} 400w, ${mitrovica5} `}  alt="Kosovska Mitrovica 3" />
 
       <p>
         Kosovska Mitrovica se nalazi na jugoistočnom rubu Dinarskih planina, u
@@ -65,7 +70,7 @@ export const KosovskaMitrovica = () => {
         Kraljevu, gde se uliva u Zapadnu Moravu.
       </p>
 
-      <img src={mitrovica3} alt="Muzej Kosovska Mitrovica" />
+      <img srcSet={`${mitrovica33} 400w, ${mitrovica3} `}  alt="Muzej Kosovska Mitrovica" />
 
       <p>
         Gradski muzej Kosovska Mitrovica je muzejska institucija kulture koja se
@@ -76,7 +81,7 @@ export const KosovskaMitrovica = () => {
         Metohije, od praistorije do kraja 20. veka.
       </p>
 
-      <img src={mitrovica4} alt="Most na Ibru" />
+      <img srcSet={`${mitrovica44} 400w, ${mitrovica4} `}  alt="Most na Ibru" />
 
       <p>
         Most na Ibru, poznat i kao Novi most ili Mitrovački most, je čelični

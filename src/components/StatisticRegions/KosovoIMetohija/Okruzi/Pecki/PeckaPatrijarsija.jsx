@@ -1,7 +1,11 @@
-import peckaPatrijarsija1 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/peckaPatrijarsija1.jpg'
-import peckaPatrijarsija2 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/peckaPatrijarsija2.jpg'
-import peckaPatrijarsija3 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/peckaPatrijarsija3.jpg'
-import peckaPatrijarsija4 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/peckaPatrijarsija4.jpg'
+import peckaPatrijarsija1 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/desktop/peckaPatrijarsija1.jpg'
+import peckaPatrijarsija2 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/desktop/peckaPatrijarsija2.jpg'
+import peckaPatrijarsija3 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/desktop/peckaPatrijarsija3.jpg'
+import peckaPatrijarsija4 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/desktop/peckaPatrijarsija4.jpg'
+import peckaPatrijarsija11 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/mobile/MpeckaPatrijarsija1.jpg'
+import peckaPatrijarsija22 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/mobile/MpeckaPatrijarsija2.jpg'
+import peckaPatrijarsija33 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/mobile/MpeckaPatrijarsija3.jpg'
+import peckaPatrijarsija44 from '../../../../../assets/images/KosovoIMetohija/Pecki/PeckaPatrijarsija/mobile/MpeckaPatrijarsija4.jpg'
 
 
 import { FaArrowLeft } from "react-icons/fa";
@@ -17,7 +21,7 @@ export const PeckaPatrijarsija = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(peckiOkrugPathRoutes.home)} style={{fill: "white"}} />
       <header></header>
-      <img src={peckaPatrijarsija1} alt="Pećka Patrijaršija 1" />
+      <img srcSet={`${peckaPatrijarsija11} 400w, ${peckaPatrijarsija1} `} alt="Pećka Patrijaršija 1" />
 
       <h2>Pećka Patrijaršija</h2>
 
@@ -33,7 +37,7 @@ export const PeckaPatrijarsija = () => {
         Tačnije, u periodu od 30-ih godina 13. veka do polovine narednog.
       </p>
 
-      <img src={peckaPatrijarsija2} alt="Pećka Patrijaršija 2" />
+      <img srcSet={`${peckaPatrijarsija22} 400w, ${peckaPatrijarsija2} `} alt="Pećka Patrijaršija 2" />
 
       <p>
         zuzev “zajedničke spoljne priprate na zapadnoj strani”, u okviru
@@ -50,7 +54,7 @@ export const PeckaPatrijarsija = () => {
         polovini 16. veka.
       </p>
 
-      <img src={peckaPatrijarsija3} alt="Pećka Patrijaršija 3" />
+      <img srcSet={`${peckaPatrijarsija33} 400w, ${peckaPatrijarsija3} `} alt="Pećka Patrijaršija 3" />
 
       <p>
         Budući da je prva među četiri svetinje podignuta, to se crkva Svetih
@@ -65,7 +69,7 @@ export const PeckaPatrijarsija = () => {
         Svetih Apostola bila istovetne, crvene boje kao i fasada manastira Žiča.
       </p>
 
-      <img src={peckaPatrijarsija4} alt="Pećka Patrijaršija 4" />
+      <img srcSet={`${peckaPatrijarsija44} 400w, ${peckaPatrijarsija4} `} alt="Pećka Patrijaršija 4" />
 
       <p>
         Izuzev patrijarha Arsenija Prvog, u ovoj svetinji manastira Pećka

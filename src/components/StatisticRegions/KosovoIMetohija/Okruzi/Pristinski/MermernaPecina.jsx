@@ -1,6 +1,9 @@
-import mermernaPecina1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/mermernaPecina1.jpg";
-import mermernaPecina2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/mermernaPecina2.jpg";
-import mermernaPecina3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/mermernaPecina3.jpg";
+import mermernaPecina1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/desktop/mermernaPecina1.jpg";
+import mermernaPecina2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/desktop/mermernaPecina2.jpg";
+import mermernaPecina3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/desktop/mermernaPecina3.jpg";
+import mermernaPecina11 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/mobile/MmermernaPecina1.jpg";
+import mermernaPecina22 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/mobile/MmermernaPecina2.jpg";
+import mermernaPecina33 from "../../../../../assets/images/KosovoIMetohija/Pristinski/MermernaPecina/mobile/MmermernaPecina3.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +22,7 @@ export const MermernaPecina = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={mermernaPecina1} alt="Mermerna Pećina 1" />
+      <img srcSet={`${mermernaPecina11} 400w, ${mermernaPecina1} `} alt="Mermerna Pećina 1" />
 
       <h2>Mermerna Pećina</h2>
 
@@ -33,7 +36,7 @@ export const MermernaPecina = () => {
         uređeno 440 metara kanala, dok ukupna dužina pećine iznosi 1.260 metara.
       </p>
 
-      <img src={mermernaPecina2} alt="Mermerna Pećina 2" />
+      <img srcSet={`${mermernaPecina22} 400w, ${mermernaPecina2} `} alt="Mermerna Pećina 2" />
 
       <p>
         Pećina je slučajno otkrivena 1969. godine, prilikom vađenja građevinskog
@@ -49,7 +52,7 @@ export const MermernaPecina = () => {
         dobio ime po nakitu plave boje).
       </p>
 
-      <img src={mermernaPecina3} alt="Mermerna Pećina 3" />
+      <img srcSet={`${mermernaPecina33} 400w, ${mermernaPecina3} `} alt="Mermerna Pećina 3" />
 
       <p>
         Mermerna pećina je jedinstven prirodni fenomen, jer je formirana od

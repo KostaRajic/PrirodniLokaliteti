@@ -1,15 +1,12 @@
 import gornjePodunavlje from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Gornje Podunavlje.jpg'
 import sombor from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/sombor2.jpg'
 import apatin from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/apatin.jpg'
-import velikiBackiKanal from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Veliki Backi Kanal.png'
+import velikiBackiKanal from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Veliki Backi Kanal.jpg'
 import manastirBodjani from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Manastir Bodjani.jpg'
-import salasiUBackoj from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/salasiUBackoj.png'
+import salasiUBackoj from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/salasiUBackoj.jpg'
 import dunavskeAde from '../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/Dunavske Ade.jpg'
 
-
-
 export const zapadnoBackiData = [
-    
     {
         id: 1,
         name: 'Sombor',

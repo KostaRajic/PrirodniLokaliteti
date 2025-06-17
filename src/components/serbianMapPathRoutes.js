@@ -4,5 +4,7 @@ export const serbianMapPathRoutes = {
     SumadijaIZapadnaSrbijaModal: "/sumadijaTekstModal",
     SumadijaIZapadnaSrbija: "/sumadijaTekstModal/SumadijaIZapadnaSrbija",
     IstocnaSrbijaTekstModal: "/istocnaSrbijaTekstModal",
-    IstocnaSrbija: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija"
+    IstocnaSrbija: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija",
+    Vojvodina: "/vojvodinaTekstModal/Vojvodina",
+    VojvodinaTekstModal: "/vojvodinaTekstModal"
 }

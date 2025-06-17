@@ -31,9 +31,9 @@ export const IstocnaiJuznaSrbija = () => {
   const [showPcinjski, setShowPcinjski] = useState(false);
   const [zoom, setZoom] = useState(() => {
     if (window.innerWidth < 600) {
-      return 7;
+      return 6;
     } else if (window.innerWidth < 1600) {
-      return 8;
+      return 7;
     } else {
       return 10;
     }
@@ -75,10 +75,11 @@ export const IstocnaiJuznaSrbija = () => {
   ]);
 
   return (
+    <div>
     <MapContainer
       center={center}
       zoom={zoom}
-      style={{ width: "100vw", height: "100vh", position: "none" }}
+      style={{ width: "100vw", height: "100vh"}}
       maxBounds={bounds}
       maxBoundsViscosity={1.0}
       scrollWheelZoom={false}
@@ -155,5 +156,6 @@ export const IstocnaiJuznaSrbija = () => {
         );
       })}
     </MapContainer>
+    </div>
   );
 };

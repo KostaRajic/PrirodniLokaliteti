@@ -1,13 +1,20 @@
-import kikinda1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/kikinda1.jpg";
-import kikinda2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/kikinda3.jpg";
-import kikinda3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/kikinda4.jpg";
-import kikinda4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/kikinda5.jpg";
-import kikinda5 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/kikinda6.jpg";
-import kikinda6 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/kikinda7.jpg";
+import kikinda1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/desktop/kikinda1.jpg";
+import kikinda2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/desktop/kikinda3.jpg";
+import kikinda3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/desktop/kikinda4.jpg";
+import kikinda4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/desktop/kikinda5.jpg";
+import kikinda5 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/desktop/kikinda6.jpg";
+import kikinda6 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/desktop/kikinda7.jpg";
+import kikinda11 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/mobile/Mkikinda1.jpg";
+import kikinda22 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/mobile/Mkikinda3.jpg";
+import kikinda33 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/mobile/Mkikinda4.jpg";
+import kikinda44 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/mobile/Mkikinda5.jpg";
+import kikinda55 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/mobile/Mkikinda6.jpg";
+import kikinda66 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Kikinda/mobile/Mkikinda7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { severnoBanatskiPathRoutes } from "./SevernoBanatskiPathRoutes";
 
 export const Kikinda = () => {
   const navigate = useNavigate();
@@ -15,9 +22,9 @@ export const Kikinda = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(severnoBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={kikinda1} alt="Kikinda 1" />
+      <img srcSet={`${kikinda11} 400w, ${kikinda1} `} alt="Kikinda 1" />
 
       <h2>Kikinda</h2>
 
@@ -31,9 +38,9 @@ export const Kikinda = () => {
         oblikovalo njen kulturni i etnički mozaik.
       </p>
 
-      <img src={kikinda2} alt="Kikinda 2" />
+      <img srcSet={`${kikinda22} 400w, ${kikinda2} `} alt="Kikinda 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Kikinda je takođe poznata po svojim istorijskim spomenicima, poput
         Gradske crkve iz 18. veka, koja je jedno od glavnih verskih i kulturnih
         mesta. Grad je ponosan i na spomenik velikoj droplji, ptici koja je
@@ -43,9 +50,9 @@ export const Kikinda = () => {
         podsećaju na bogatstvo istorije.
       </p>
 
-      <img src={kikinda3} alt="Kikinda 3" />
+      <img srcSet={`${kikinda33} 400w, ${kikinda3} `} alt="Kikinda 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ulica Generala Petra Drapšina, zauzima visoko 22. mesto na listi
         najlepših ulica na svetu! Tako specifična i neobična privlači pažnju
         mnogih turista. Ukupno 389 stabala, stvara zeleni tunel, i čini oazu
@@ -57,8 +64,8 @@ export const Kikinda = () => {
         bundevu.
       </p>
 
-      <img src={kikinda4} alt="Kikinda 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${kikinda44} 400w, ${kikinda4} `} alt="Kikinda 4" />
+      <p>
         Narodni muzej Kikinda je kulturna institucija koja čuva bogatu istoriju
         i tradiciju ovog grada. Muzej se sastoji od nekoliko zbirki, uključujući
         arheološke, etnološke i umetničke eksponate, a posebno je poznat po
@@ -66,9 +73,8 @@ export const Kikinda = () => {
       </p>
 
       <img
-        src={kikinda5}
+        srcSet={`${kikinda55} 400w, ${kikinda5} `}
         alt="Kikinda 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Bogata riznica tehničkog i kulturno-istorijskog nasleđa Vojvodine i
@@ -79,9 +85,8 @@ export const Kikinda = () => {
       </p>
 
       <img
-        src={kikinda6}
+        srcSet={`${kikinda66} 400w, ${kikinda6} `}
         alt="Kikinda 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Terra muzej Kikinda, jedinstvena institucija koja se fokusira na

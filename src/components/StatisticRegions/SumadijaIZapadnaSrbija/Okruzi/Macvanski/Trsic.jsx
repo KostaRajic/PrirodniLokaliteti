@@ -1,9 +1,15 @@
-import trsic1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/trsic1.jpg";
-import trsic2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/trsic2.jpg";
-import trsic3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/trsic3.jpg";
-import trsic4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/trsic4.jpg";
-import trsic5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/trsic5.jpg";
-import trsic6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/trsic6.jpg";
+import trsic1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/desktop/trsic1.jpg";
+import trsic2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/desktop/trsic2.jpg";
+import trsic3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/desktop/trsic3.jpg";
+import trsic4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/desktop/trsic4.jpg";
+import trsic5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/desktop/trsic5.jpg";
+import trsic6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/desktop/trsic6.jpg";
+import trsic11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/mobile/Mtrsic1.jpg";
+import trsic22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/mobile/Mtrsic2.jpg";
+import trsic33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/mobile/Mtrsic3.jpg";
+import trsic44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/mobile/Mtrsic4.jpg";
+import trsic55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/mobile/Mtrsic5.jpg";
+import trsic66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Trsic/mobile/Mtrsic6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const Trsic = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={trsic1} alt="Tršić Vukova Kuća" />
+      <img srcSet={`${trsic11} 400w, ${trsic1} `} alt="Tršić Vukova Kuća" />
 
       <h2>Tršić</h2>
 
@@ -39,7 +45,7 @@ export const Trsic = () => {
         vrste na ovim prostorima.
       </p>
 
-      <img src={trsic2} alt="Tršić Vukova Kuća 2" />
+      <img srcSet={`${trsic22} 400w, ${trsic2} `} alt="Tršić Vukova Kuća 2" />
 
       <p>
         Kompleks zauzima površinu od 5,3 hektara. Objekti u Značajnom mestu
@@ -55,7 +61,7 @@ export const Trsic = () => {
         vremena i nudi posetiocima jedinstven spoj tradicije i kulture.
       </p>
 
-      <img src={trsic6} alt="Tršić Vukova Kuća 3" />
+      <img srcSet={`${trsic66} 400w, ${trsic6} `} alt="Tršić Vukova Kuća 3" />
 
       <p>
         Vukova spomen-kuća proglašena je 1979. godine nepokretnim kulturnim
@@ -73,7 +79,7 @@ export const Trsic = () => {
         kulturno-istorijski značaj ovog kompleksa.
       </p>
 
-      <img src={trsic3} alt="Tršić Vukova Kuća 3" />
+      <img srcSet={`${trsic33} 400w, ${trsic3} `} alt="Tršić Vukova Kuća 3" />
 
       <p>
         Srpski etno kompleksi, kao čuvari baštine i kulture, sve više ostvaruju
@@ -85,7 +91,7 @@ export const Trsic = () => {
         pritisaka modernog gradskog života.
       </p>
 
-      <img src={trsic4} alt="Tršić Vukova Kuća 4" />
+      <img srcSet={`${trsic44} 400w, ${trsic4} `} alt="Tršić Vukova Kuća 4" />
 
       <p>
         Priroda u Tršiću pruža brojne mogućnosti za šetnje, uživanje u čistom
@@ -95,7 +101,7 @@ export const Trsic = () => {
         posetioci mogu pronaći spokoj i povezanost sa prirodom.
       </p>
 
-      <img src={trsic5} alt="Tršić Vukova Kuća 5" />
+      <img srcSet={`${trsic55} 400w, ${trsic5} `} alt="Tršić Vukova Kuća 5" />
       <p>
         Svake godine Vukovu kuću posećuju deca i nastavnici iz svih krajeva
         Srbije, pretvarajući Tršić u živopisno i veselo mesto ispunjeno

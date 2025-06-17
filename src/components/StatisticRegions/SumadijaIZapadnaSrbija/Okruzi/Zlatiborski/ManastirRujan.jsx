@@ -1,8 +1,13 @@
-import rujan1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/manastirRujan1.jpg";
-import rujan2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/manastirRujan2.jpg";
-import rujan3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/manastirRujan3.jpg";
-import rujan4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/manastirRujan4.jpg";
-import rujan6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/manastirRujan6.jpg";
+import rujan1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/desktop/manastirRujan1.jpg";
+import rujan2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/desktop/manastirRujan2.jpg";
+import rujan3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/desktop/manastirRujan3.jpg";
+import rujan4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/desktop/manastirRujan4.jpg";
+import rujan6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/desktop/manastirRujan6.jpg";
+import rujan11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/mobile/MmanastirRujan1.jpg";
+import rujan22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/mobile/MmanastirRujan2.jpg";
+import rujan33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/mobile/MmanastirRujan3.jpg";
+import rujan44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/mobile/MmanastirRujan4.jpg";
+import rujan66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ManastirRujan/mobile/MmanastirRujan6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,9 +20,9 @@ export const ManastirRujan = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.manastirRujan)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={rujan1} alt="Manastir Rujan 1" />
+      <img srcSet={`${rujan11} 400w, ${rujan1} `} alt="Manastir Rujan 1" />
 
       <h2>Manastir Rujan</h2>
 
@@ -30,7 +35,7 @@ export const ManastirRujan = () => {
         manastir – Rujno.
       </p>
 
-      <img src={rujan2} alt="Manastir Rujan 2" />
+      <img srcSet={`${rujan22} 400w, ${rujan2} `} alt="Manastir Rujan 2" />
 
       <p>
         Manastir ima poseban značaj za srpsku kulturu i istoriju, jer je upravo
@@ -42,7 +47,7 @@ export const ManastirRujan = () => {
         metalnih slova, siromašni monasi iz Rujna su slova rezali od drveta.
       </p>
 
-      <img src={rujan3} alt="Manastir Rujno 3" />
+      <img srcSet={`${rujan33} 400w, ${rujan3} `} alt="Manastir Rujno 3" />
 
       <p>
         Verovalo se da su monasi iz Rujna izrezivali celu stranicu izjedna na
@@ -56,7 +61,7 @@ export const ManastirRujan = () => {
         svaki imao svoj prepoznatljiv stil rezbarenja drveta.
       </p>
 
-      <img src={rujan4} alt="Manastir Rujno 4" />
+      <img srcSet={`${rujan44} 400w, ${rujan4} `} alt="Manastir Rujno 4" />
 
       <p>
         Rujansko četvorojevanđelje štampano je u dve boje – crvenoj i crnoj.
@@ -73,7 +78,7 @@ export const ManastirRujan = () => {
         listova, nalazi se u Ruskoj nacionalnoj biblioteci u Sankt Peterburgu.
       </p>
 
-      <img src={rujan6} alt="Manastir Rujno 5" />
+      <img srcSet={`${rujan66} 400w, ${rujan6} `} alt="Manastir Rujno 5" />
       <p>
         Nacionalna biblioteka Srbije je posedovala jedan primerak Rujanskog
         četvorojevanđelja, ali je on uništen u bombardovanju Beograda 1941.

@@ -1,10 +1,17 @@
-import rajkovaPecina1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/rajkovaPecina1.jpg";
-import rajkovaPecina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/rajkovaPecina2.jpg";
-import rajkovaPecina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/rajkovaPecina3.jpg";
-import rajkovaPecina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/rajkovaPecina4.jpg";
-import rajkovaPecina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/rajkovaPecina5.jpg";
-import rajkovaPecina6 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/rajkovaPecina6.jpg";
-import rajkovaPecina7 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/rajkovaPecina7.jpg";
+import rajkovaPecina1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/desktop/rajkovaPecina1.jpg";
+import rajkovaPecina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/desktop/rajkovaPecina2.jpg";
+import rajkovaPecina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/desktop/rajkovaPecina3.jpg";
+import rajkovaPecina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/desktop/rajkovaPecina4.jpg";
+import rajkovaPecina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/desktop/rajkovaPecina5.jpg";
+import rajkovaPecina6 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/desktop/rajkovaPecina6.jpg";
+import rajkovaPecina7 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/desktop/rajkovaPecina7.jpg";
+import rajkovaPecina11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/mobile/rajkovaPecinaM1.jpg";
+import rajkovaPecina22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/mobile/rajkovaPecinaM2.jpg";
+import rajkovaPecina33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/mobile/rajkovaPecinaM3.jpg";
+import rajkovaPecina44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/mobile/rajkovaPecinaM4.jpg";
+import rajkovaPecina55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/mobile/rajkovaPecinaM5.jpg";
+import rajkovaPecina66 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/mobile/rajkovaPecinaM6.jpg";
+import rajkovaPecina77 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/RajkovaPecina/mobile/rajkovaPecinaM7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +30,7 @@ export const RajkovaPecina = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={rajkovaPecina4} alt="Rajkova Pećina 1" />
+      <img srcSet={`${rajkovaPecina44} 400w, ${rajkovaPecina4} `} alt="Rajkova Pećina 1" />
 
       <h2>Rajkova Pećina</h2>
 
@@ -33,7 +40,7 @@ export const RajkovaPecina = () => {
         po izuzetno belim pećinskim ukrasima.
       </p>
 
-      <img src={rajkovaPecina2} alt="Rajkova Pećina 2" />
+      <img srcSet={`${rajkovaPecina22} 400w, ${rajkovaPecina2} `} alt="Rajkova Pećina 2" />
 
       <p>
         Rajkova pećina je dobila ime po Rajku Vojvodi, za koga se pretpostavlja
@@ -47,7 +54,7 @@ export const RajkovaPecina = () => {
         godine.
       </p>
 
-      <img src={rajkovaPecina3} alt="Rajkova Pećina 3" />
+      <img srcSet={`${rajkovaPecina33} 400w, ${rajkovaPecina3} `} alt="Rajkova Pećina 3" />
 
       <p>
         Rajkova pećina je jedna od najvažnijih turističkih pećina u Srbiji.
@@ -58,7 +65,7 @@ export const RajkovaPecina = () => {
         postala deo prvog geoparka u Srbiji — Đerdap UNESCO geopark.
       </p>
 
-      <img src={rajkovaPecina1} alt="Rajkova Pećina 4" />
+      <img srcSet={`${rajkovaPecina11} 400w, ${rajkovaPecina1} `} alt="Rajkova Pećina 4" />
 
       <p>
         Rajkova pećina je nastala radom ponornice Rajkove reke. Proces njenog
@@ -81,7 +88,7 @@ export const RajkovaPecina = () => {
         pećine, a svaka celina ima po dva horizonta: rečni i suvi.
       </p>
 
-      <img src={rajkovaPecina5} alt="Rajkova Pećina 5" />
+      <img srcSet={`${rajkovaPecina55} 400w, ${rajkovaPecina5} `} alt="Rajkova Pećina 5" />
       <p>
         Rečni horizont je jednostavan pećinski kanal sa niskim kaskadama i
         džinovskim loncima. Dno aktivnog kanala prekriveno je peskom i šljunkom,
@@ -106,7 +113,7 @@ export const RajkovaPecina = () => {
         scrofa (divlja svinja), Cervus elaphus (jelen).
       </p>
 
-      <img src={rajkovaPecina6} alt="Rajkova Pećina 5" />
+      <img srcSet={`${rajkovaPecina66} 400w, ${rajkovaPecina6} `} alt="Rajkova Pećina 5" />
       <p>
         Rečni horizont pećine prvi je istraživao Jovan Cvijić, a njegov rad
         nastaviće sedamdesetih godina 20. veka dr Radенко Lazarеvić u saradnji
@@ -122,7 +129,7 @@ export const RajkovaPecina = () => {
         horizonta pećine, u ukupnoj dužini od 1.400 metara.
       </p>
 
-      <img src={rajkovaPecina7} alt="Rajkova Pećina 5" />
+      <img srcSet={`${rajkovaPecina77} 400w, ${rajkovaPecina7} `} alt="Rajkova Pećina 5" />
       <p>
         Rajkova pećina je bogata pećinskim nakitom različitih oblika, od snežno
         belog kristalnog kalcita, koji je najkvalitetniji u Srbiji. Hodnici

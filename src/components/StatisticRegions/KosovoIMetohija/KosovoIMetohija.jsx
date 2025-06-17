@@ -65,6 +65,9 @@ export const KosovoIMetohija = () => {
   const bounds = [[42.651929, 20.992529]];
 
   return (
+    <div>
+
+
     <MapContainer
       center={center}
       zoom={zoom}
@@ -142,5 +145,6 @@ export const KosovoIMetohija = () => {
         );
       })}
     </MapContainer>
+    </div>
   );
 };

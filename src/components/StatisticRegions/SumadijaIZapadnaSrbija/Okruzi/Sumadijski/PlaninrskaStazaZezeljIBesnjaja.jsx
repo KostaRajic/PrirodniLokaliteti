@@ -1,14 +1,25 @@
-import zezeljIBesnjaja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja1.jpg";
-import zezeljIBesnjaja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja2.jpg";
-import zezeljIBesnjaja31 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja31.jpg";
-import zezeljIBesnjaja32 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja32.jpg";
-import zezeljIBesnjaja33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja33.jpg";
-import zezeljIBesnjaja34 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja34.jpg";
-import zezeljIBesnjaja35 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja35.jpg";
-import zezeljIBesnjaja36 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja36.jpg";
-import zezeljIBesnjaja37 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja37.jpg";
-import zezeljIBesnjaja4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja4.jpg";
-import zezeljIBesnjaja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/zezeljIBesnjaja5.jpg";
+import zezeljIBesnjaja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja1.jpg";
+import zezeljIBesnjaja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja2.jpg";
+import zezeljIBesnjaja31 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja31.jpg";
+import zezeljIBesnjaja32 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja32.jpg";
+import zezeljIBesnjaja33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja33.jpg";
+import zezeljIBesnjaja34 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja34.jpg";
+import zezeljIBesnjaja35 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja35.jpg";
+import zezeljIBesnjaja36 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja36.jpg";
+import zezeljIBesnjaja37 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja37.jpg";
+import zezeljIBesnjaja4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja4.jpg";
+import zezeljIBesnjaja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja5.jpg";
+import zezeljIBesnjaja11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja1.jpg";
+import zezeljIBesnjaja22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja2.jpg";
+import zezeljIBesnjaja311 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja31.jpg";
+import zezeljIBesnjaja322 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja32.jpg";
+import zezeljIBesnjaja333 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja33.jpg";
+import zezeljIBesnjaja344 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja34.jpg";
+import zezeljIBesnjaja355 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja35.jpg";
+import zezeljIBesnjaja366 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja36.jpg";
+import zezeljIBesnjaja377 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja37.jpg";
+import zezeljIBesnjaja44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja4.jpg";
+import zezeljIBesnjaja55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -59,31 +70,38 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
 
   const images = [
     {
-      src: zezeljIBesnjaja31,
+      desktopSrc: zezeljIBesnjaja31,
+      mobileSrc: zezeljIBesnjaja311,
       alt: "Planinarska staza Žeželj i Bešnjaja 1",
     },
     {
-      src: zezeljIBesnjaja33,
+      desktopSrc: zezeljIBesnjaja22,
+      mobileSrc: zezeljIBesnjaja322,
       alt: "Planinarska staza Žeželj i Bešnjaja 2",
     },
     {
-      src: zezeljIBesnjaja33,
+      desktopSrc: zezeljIBesnjaja33,
+      mobileSrc: zezeljIBesnjaja333,
       alt: "Planinarska staza Žeželj i Bešnjaja 3",
     },
     {
-      src: zezeljIBesnjaja34,
+      desktopSrc: zezeljIBesnjaja34,
+      mobileSrc: zezeljIBesnjaja344,
       alt: "Planinarska staza Žeželj i Bešnjaja 4",
     },
     {
-      src: zezeljIBesnjaja35,
+      desktopSrc: zezeljIBesnjaja35,
+      mobileSrc: zezeljIBesnjaja355,
       alt: "Planinarska staza Žeželj i Bešnjaja 5",
     },
     {
-      src: zezeljIBesnjaja36,
+      desktopSrc: zezeljIBesnjaja36,
+      mobileSrc: zezeljIBesnjaja366,
       alt: "Planinarska staza Žeželj i Bešnjaja 6",
     },
     {
-      src: zezeljIBesnjaja37,
+      desktopSrc: zezeljIBesnjaja37,
+      mobileSrc: zezeljIBesnjaja377,
       alt: "Planinarska staza Žeželj i Bešnjaja 7",
     },
   ];
@@ -97,7 +115,7 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={zezeljIBesnjaja1} alt="Planinarska staza Žeželj i Bešnjaja 1" />
+      <img srcSet={`${zezeljIBesnjaja11} 400w, ${zezeljIBesnjaja1} `} alt="Planinarska staza Žeželj i Bešnjaja 1" />
 
       <h2 style={{ color: "white" }}>Planinarska staza Žeželj i Bešnjaja</h2>
 
@@ -111,7 +129,7 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
         kragujevačko Planinarsko društvo Žeželj.
       </p>
 
-      <img src={zezeljIBesnjaja2} alt="Planinarska staza Žeželj i Bešnjaja 2" />
+      <img srcSet={`${zezeljIBesnjaja22} 400w, ${zezeljIBesnjaja2} `} alt="Planinarska staza Žeželj i Bešnjaja 2" />
 
       <p>
         Planinarska staza Žeželj-Bešnjaja je popularna izletnička tura koja
@@ -128,7 +146,7 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -147,7 +165,7 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -170,7 +188,7 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
         Ždraljice i Gledićke planine.
       </p>
 
-      <img src={zezeljIBesnjaja4} alt="Planinarska staza Žeželj i Bešnjaja 4" />
+      <img srcSet={`${zezeljIBesnjaja44} 400w, ${zezeljIBesnjaja4} `} alt="Planinarska staza Žeželj i Bešnjaja 4" />
 
       <p>
         Na vrhu se nalaze ostaci planinarskog doma koji je uništen u požaru.
@@ -182,7 +200,7 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
         pogledi na okolinu.
       </p>
 
-      <img src={zezeljIBesnjaja5} alt="Planinarska staza Žeželj i Bešnjaja 5" />
+      <img srcSet={`${zezeljIBesnjaja55} 400w, ${zezeljIBesnjaja5} `} alt="Planinarska staza Žeželj i Bešnjaja 5" />
 
       <p>
         Dalje, staza prolazi ispod vrha Lisin Laz (613 m). Odatle se put spušta

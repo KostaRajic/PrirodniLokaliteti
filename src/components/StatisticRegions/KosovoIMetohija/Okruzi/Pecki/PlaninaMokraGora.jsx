@@ -1,7 +1,11 @@
-import mokraGora1 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/mokraGora1.jpg'
-import mokraGora2 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/mokraGora2.jpg'
-import mokraGora3 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/mokraGora3.jpg'
-import mokraGora4 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/mokraGora4.jpg'
+import mokraGora1 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/desktop/mokraGora1.jpg'
+import mokraGora2 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/desktop/mokraGora2.jpg'
+import mokraGora3 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/desktop/mokraGora3.jpg'
+import mokraGora4 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/desktop/mokraGora4.jpg'
+import mokraGora11 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/mobile/MmokraGora1.jpg'
+import mokraGora22 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/mobile/MmokraGora2.jpg'
+import mokraGora33 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/mobile/MmokraGora3.jpg'
+import mokraGora44 from '../../../../../assets/images/KosovoIMetohija/Pecki/MokraGora/mobile/MmokraGora4.jpg'
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const PlaninaMokraGora = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(peckiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={mokraGora1} alt="Planina Mokra Gora 1" />
+      <img srcSet={`${mokraGora11} 400w, ${mokraGora1} `} alt="Planina Mokra Gora 1" />
 
       <h2>Planina Mokra Gora</h2>
 
@@ -30,7 +34,7 @@ export const PlaninaMokraGora = () => {
         površine postale potpuno ogolene zbog nezakonite sječe.
       </p>
 
-      <img src={mokraGora2} alt="Planina Mokra Gora 2" />
+      <img srcSet={`${mokraGora22} 400w, ${mokraGora2} `} alt="Planina Mokra Gora 2" />
 
       <p>
         Mokra Gora je deo planinskog venca Prokletija. Njena prepoznatljiva,
@@ -50,7 +54,7 @@ export const PlaninaMokraGora = () => {
         prelaze 1 m².
       </p>
 
-      <img src={mokraGora3} alt="Planina Mokra Gora 3" />
+      <img srcSet={`${mokraGora33} 400w, ${mokraGora3} `} alt="Planina Mokra Gora 3" />
 
       <p>
         Na Mokroj Gori uspevaju različite vrste jelki i borova, kao i endemično
@@ -83,7 +87,7 @@ export const PlaninaMokraGora = () => {
         kojima su najpoznatije vrganj, lisičarka i smrčak.
       </p>
 
-      <img src={mokraGora4} alt="Planina Mokra Gora 4" />
+      <img srcSet={`${mokraGora44} 400w, ${mokraGora4} `} alt="Planina Mokra Gora 4" />
 
       <p>
         Na Mokroj Gori mogu se sresti razne vrste divljih životinja, uključujući

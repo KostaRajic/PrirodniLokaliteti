@@ -1,9 +1,15 @@
-import golubac1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/golubac1.jpg";
-import golubac2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/golubac2.jpg";
-import golubac3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/golubac3.jpg";
-import golubac4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/golubac4.jpg";
-import golubac5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/golubac5.jpg";
-import golubac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/golubac6.jpg";
+import golubac1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/desktop/golubac1.jpg";
+import golubac2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/desktop/golubac2.jpg";
+import golubac3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/desktop/golubac3.jpg";
+import golubac4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/desktop/golubac4.jpg";
+import golubac5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/desktop/golubac5.jpg";
+import golubac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/desktop/golubac6.jpg";
+import golubac11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/mobile/golubacM1.jpg";
+import golubac22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/mobile/golubacM2.jpg";
+import golubac33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/mobile/golubacM3.jpg";
+import golubac44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/mobile/golubacM4.jpg";
+import golubac55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/mobile/golubacM5.jpg";
+import golubac66 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/TvrdjavaGolubac/mobile/golubacM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const TvrdjavaGolubac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(branicevskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={golubac1} alt="Tvrđava Golubac 1" />
+      <img srcSet={`${golubac11} 400w, ${golubac1} `} alt="Tvrđava Golubac 1" />
 
       <h2>Tvrđava Golubac</h2>
 
@@ -48,7 +54,7 @@ export const TvrdjavaGolubac = () => {
         „Golubački grad-tvrđava”.
       </p>
 
-      <img src={golubac2} alt="Tvrđava Golubac 2" />
+      <img srcSet={`${golubac22} 400w, ${golubac2} `} alt="Tvrđava Golubac 2" />
 
       <p>
         Golubački grad-tvrđava nalazi se na desnoj obali Dunava, u opštini
@@ -84,7 +90,7 @@ export const TvrdjavaGolubac = () => {
         delimično istraženi ostaci građevina.
       </p>
 
-      <img src={golubac3} alt="Tvrđava Golubac 3" />
+      <img srcSet={`${golubac33} 400w, ${golubac3} `} alt="Tvrđava Golubac 3" />
 
       <p>
         Srednjovekovni Golubac nastao je na ostacima starijeg rimskog utvrđenja.
@@ -105,7 +111,7 @@ export const TvrdjavaGolubac = () => {
         potrebama artiljerije. Svoj današnji oblik dobila je krajem 15. veka.
       </p>
 
-      <img src={golubac4} alt="Tvrđava Golubac 4" />
+      <img srcSet={`${golubac44} 400w, ${golubac4} `} alt="Tvrđava Golubac 4" />
 
       <p>
         Golubac se prvi put pominje u ugarskim izvorima iz 1335, 1337. i 1342.
@@ -123,7 +129,7 @@ export const TvrdjavaGolubac = () => {
         nadzirala Dunav i štitila pristanište za šajke koje se nalazilo uz nju.
       </p>
 
-      <img src={golubac5} alt="Tvrđava Golubac 5" />
+      <img srcSet={`${golubac55} 400w, ${golubac5} `} alt="Tvrđava Golubac 5" />
       <p>
         Golubački grad bio je deo države kneza Lazara, koji je sela u okolini
         darovao manastirima kao metohe. Neposredno nakon Kosovske bitke 1389.
@@ -149,7 +155,7 @@ export const TvrdjavaGolubac = () => {
         opisan kao prosperitetan grad.
       </p>
 
-      <img src={golubac6} alt="Golubacka Tvrdjava" />
+      <img srcSet={`${golubac66} 400w, ${golubac6} `} alt="Golubacka Tvrdjava" />
       <p>
         Od tada pa sve do 19. veka, Turci su vladali Golupcem. Nakratko su ga
         držali Austrijanci (1688–1690) i srpski ustanici tokom Kočine krajine i

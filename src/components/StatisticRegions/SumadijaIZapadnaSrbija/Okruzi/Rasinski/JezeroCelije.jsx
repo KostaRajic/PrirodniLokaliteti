@@ -1,8 +1,13 @@
-import celije1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/celije1.jpg";
-import celije2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/celije2.jpg";
-import celije3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/celije3.jpg";
-import celije4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/celije4.jpg";
-import celije5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/celije5.jpg";
+import celije1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/desktop/celije1.jpg";
+import celije2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/desktop/celije2.jpg";
+import celije3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/desktop/celije3.jpg";
+import celije4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/desktop/celije4.jpg";
+import celije5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/desktop/celije5.jpg";
+import celije11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/mobile/Mcelije1.jpg";
+import celije22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/mobile/Mcelije2.jpg";
+import celije33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/mobile/Mcelije3.jpg";
+import celije44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/mobile/Mcelije4.jpg";
+import celije55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/JezeroCelije/mobile/Mcelije5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const JezeroCelije = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={celije1} alt="Jezero Ćelije 1" />
+      <img srcSet={`${celije11} 400w, ${celije1} `} alt="Jezero Ćelije 1" />
 
       <h2 style={{ color: "white" }}>Jezero Ćelije</h2>
 
@@ -34,7 +39,7 @@ export const JezeroCelije = () => {
         Zlatno jezero.
       </p>
 
-      <img src={celije2} alt="Jezero Ćelije 2" />
+      <img srcSet={`${celije22} 400w, ${celije2} `} alt="Jezero Ćelije 2" />
 
       <p>
         Jezero Ćelije prvobitno je izgrađeno kako bi služilo zaštiti Đerdapa od
@@ -47,7 +52,7 @@ export const JezeroCelije = () => {
         ranga.
       </p>
 
-      <img src={celije3} alt="Jezero Ćelije 3" />
+      <img srcSet={`${celije33} 400w, ${celije3} `} alt="Jezero Ćelije 3" />
 
       <p>
         Jezero je napravljeno na mestu gde je nekada postojalo naselje Zlatari,
@@ -61,7 +66,7 @@ export const JezeroCelije = () => {
         na njegovim obalama.
       </p>
 
-      <img src={celije4} alt="Jezero Ćelije 4" />
+      <img srcSet={`${celije44} 400w, ${celije4} `} alt="Jezero Ćelije 4" />
 
       <p>
         Prema prvobitnim planovima, očekivalo se da jezero bude u funkciji 50
@@ -73,7 +78,7 @@ export const JezeroCelije = () => {
         se ispuštaju u reku Rasinu iz gradova uzvodno od jezera.
       </p>
 
-      <img src={celije5} alt="Jezero Ćelije 5" />
+      <img srcSet={`${celije55} 400w, ${celije5} `} alt="Jezero Ćelije 5" />
 
       <p>
         Jezero Ćelije se nalazi na nadmorskoj visini od 277 metara, a njegova

@@ -1,7 +1,11 @@
-import decani1 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/manastirDecani1.jpg";
-import decani2 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/manastirDecani2.jpg";
-import decani3 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/manastirDecani3.jpg";
-import decani4 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/manastirDecani4.jpg";
+import decani1 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/desktop/manastirDecani1.jpg";
+import decani2 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/desktop/manastirDecani2.jpg";
+import decani3 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/desktop/manastirDecani3.jpg";
+import decani4 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/desktop/manastirDecani4.jpg";
+import decani11 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/mobile/MmanastirDecani1.jpg";
+import decani22 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/mobile/MmanastirDecani2.jpg";
+import decani33 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/mobile/MmanastirDecani3.jpg";
+import decani44 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/ManastirDecani/mobile/MmanastirDecani4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const ManastirVisokiDecani = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(djakovickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={decani1} alt="Menastir Visoki Dečani 1" />
+      <img srcSet={`${decani11} 400w, ${decani1} `} alt="Menastir Visoki Dečani 1" />
 
       <h2>Menastir Visoki Dečani</h2>
 
@@ -31,7 +35,7 @@ export const ManastirVisokiDecani = () => {
         kao i planina pokrivenih šumama i vodama metohijskih bistrih reka.
       </p>
 
-      <img src={decani2} alt="Menastir Visoki Dečani 2" />
+      <img srcSet={`${decani22} 400w, ${decani2} `} alt="Menastir Visoki Dečani 2" />
 
       <p>
         Stefan Uroš Treći je podigao manastir nedaleko od "prvog sela zvanog
@@ -54,7 +58,7 @@ export const ManastirVisokiDecani = () => {
         zvezda Danica koja sja iznutra".
       </p>
 
-      <img src={decani3} alt="Menastir Visoki Dečani 3" />
+      <img srcSet={`${decani33} 400w, ${decani3} `} alt="Menastir Visoki Dečani 3" />
 
       <p>
         Od veličanstvenog prvobitnog arhitektonskog i prostornog koncepta
@@ -74,7 +78,7 @@ export const ManastirVisokiDecani = () => {
         njegovoj blizini.
       </p>
 
-      <img src={decani4} alt="Menastir Visoki Dečani 4" />
+      <img srcSet={`${decani44} 400w, ${decani4} `} alt="Menastir Visoki Dečani 4" />
 
       <p>
         Hram posvećen Hristu Spasu Svedržitelju, odnosno Vaznesenju Gospodnjem,

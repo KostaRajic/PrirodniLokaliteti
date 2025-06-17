@@ -1,8 +1,13 @@
-import ripaljka1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/vodopadRipaljka1.jpg";
-import ripaljka2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/vodopadRipaljka2.jpg";
-import ripaljka3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/vodopadRipaljka3.jpg";
-import ripaljka4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/vodopadRipaljka4.jpg";
-import ripaljka5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/vodopadRipaljka5.jpg";
+import ripaljka1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/desktop/vodopadRipaljka1.jpg";
+import ripaljka2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/desktop/vodopadRipaljka2.jpg";
+import ripaljka3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/desktop/vodopadRipaljka3.jpg";
+import ripaljka4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/desktop/vodopadRipaljka4.jpg";
+import ripaljka5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/desktop/vodopadRipaljka5.jpg";
+import ripaljka11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/mobile/vodopadRipaljkaM1.jpg";
+import ripaljka22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/mobile/vodopadRipaljkaM2.jpg";
+import ripaljka33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/mobile/vodopadRipaljkaM3.jpg";
+import ripaljka44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/mobile/vodopadRipaljkaM4.jpg";
+import ripaljka55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/VodopadRipaljka/mobile/vodopadRipaljkaM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const VodopadRipaljka = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={ripaljka1} alt="Vodopad Ripaljka 1" />
+      <img srcSet={`${ripaljka11} 400w, ${ripaljka1} `} alt="Vodopad Ripaljka 1" />
 
       <h2>Vodopad Ripaljka</h2>
 
@@ -28,7 +33,7 @@ export const VodopadRipaljka = () => {
         vreme Ripaljka je važila za najviši vodopad u Srbiji.
       </p>
 
-      <img src={ripaljka2} alt="Vodopad Ripaljka 2" />
+      <img srcSet={`${ripaljka22} 400w, ${ripaljka2} `} alt="Vodopad Ripaljka 2" />
 
       <p>
         Ripaljka je akumulativni vodopad smešten na nadmorskoj visini od 420
@@ -44,7 +49,7 @@ export const VodopadRipaljka = () => {
         ispod Sokobanje uliva u reku Moravicu.
       </p>
 
-      <img src={ripaljka3} alt="Vodopad Ripaljka 3" />
+      <img srcSet={`${ripaljka33} 400w, ${ripaljka3} `} alt="Vodopad Ripaljka 3" />
 
       <p>
         Ripaljka se sastoji od 11 odseka čija ukupna visina iznosi oko 40
@@ -56,7 +61,7 @@ export const VodopadRipaljka = () => {
         jezera-pondova u krugu bolnice.
       </p>
 
-      <img src={ripaljka4} alt="Vodopad Ripaljka 4" />
+      <img srcSet={`${ripaljka44} 400w, ${ripaljka4} `} alt="Vodopad Ripaljka 4" />
 
       <p>
         Ripaljka je jedna od nezaobilaznih atrakcija ovog kraja i omiljena
@@ -74,7 +79,7 @@ export const VodopadRipaljka = () => {
         Ripaljka jedno od prvih zaštićenih prirodnih dobara u Srbiji.
       </p>
 
-      <img src={ripaljka5} alt="Vodopad Ripaljka 5" />
+      <img srcSet={`${ripaljka55} 400w, ${ripaljka5} `} alt="Vodopad Ripaljka 5" />
 
       <p>
         Prvo područje koje je stavljeno pod zaštitu na teritoriji današnje

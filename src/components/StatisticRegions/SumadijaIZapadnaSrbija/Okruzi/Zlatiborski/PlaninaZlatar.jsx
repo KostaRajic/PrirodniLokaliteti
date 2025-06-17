@@ -1,9 +1,15 @@
-import zlatar1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/zlatar1.jpg";
-import zlatar2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/zlatar2.jpg";
-import zlatar3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/zlatar3.jpg";
-import zlatar4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/zlatar4.jpg";
-import zlatar5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/zlatar5.jpg";
-import zlatar6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/zlatar6.jpg";
+import zlatar1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/desktop/zlatar1.jpg";
+import zlatar2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/desktop/zlatar2.jpg";
+import zlatar3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/desktop/zlatar3.jpg";
+import zlatar4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/desktop/zlatar4.jpg";
+import zlatar5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/desktop/zlatar5.jpg";
+import zlatar6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/desktop/zlatar6.jpg";
+import zlatar11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/mobile/Mzlatar1.jpg";
+import zlatar22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/mobile/Mzlatar2.jpg";
+import zlatar33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/mobile/Mzlatar3.jpg";
+import zlatar44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/mobile/Mzlatar4.jpg";
+import zlatar55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/mobile/Mzlatar5.jpg";
+import zlatar66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatar/mobile/Mzlatar6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,9 +22,9 @@ export const PlaninaZlatar = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.planinaZlatar)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zlatar3} alt="Planina Zlatar 1" />
+      <img srcSet={`${zlatar33} 400w, ${zlatar3} `} alt="Planina Zlatar 1" />
 
       <h2>Planina Zlatar</h2>
 
@@ -30,7 +36,7 @@ export const PlaninaZlatar = () => {
         metara.
       </p>
 
-      <img src={zlatar2} alt="Planina Zlatar 2" />
+      <img srcSet={`${zlatar22} 400w, ${zlatar2} `} alt="Planina Zlatar 2" />
 
       <p>
         Zlatar planina već godinama privlači veliki broj turista, a jedan od
@@ -41,7 +47,7 @@ export const PlaninaZlatar = () => {
         pašnjaci.
       </p>
 
-      <img src={zlatar1} alt="Planina Zlatar 3" />
+      <img srcSet={`${zlatar11} 400w, ${zlatar1} `} alt="Planina Zlatar 3" />
 
       <p>
         Na Zlataru su zastupljene šume lišćara i četinarskih vrsta, uključujući
@@ -51,7 +57,7 @@ export const PlaninaZlatar = () => {
         „vazdušne banje“.
       </p>
 
-      <img src={zlatar4} alt="Planina Zlatar 4" />
+      <img srcSet={`${zlatar44} 400w, ${zlatar4} `} alt="Planina Zlatar 4" />
 
       <p>
         Životinjski svet planine Zlatar nije bogato razvijen, ali se mogu
@@ -61,7 +67,7 @@ export const PlaninaZlatar = () => {
         rudnicima mrkog uglja i lignita.
       </p>
 
-      <img src={zlatar5} alt="Planina Zlatar 5" />
+      <img srcSet={`${zlatar55} 400w, ${zlatar5} `} alt="Planina Zlatar 5" />
       <p>
         Zlatar je poznat po proizvodnji sjeničkog i zlatarskog sira, a
         stočarstvo na ovom području beleži sve veći razvoj. Na planini se nalazi
@@ -74,7 +80,7 @@ export const PlaninaZlatar = () => {
         Izletnički turizam je takođe dobro razvijen.
       </p>
 
-      <img src={zlatar6} alt="Planina Zlatar 5" />
+      <img srcSet={`${zlatar66} 400w, ${zlatar6} `} alt="Planina Zlatar 5" />
       <p>
         Na Zlataru su uređene dve ski staze. Prva staza, dužine 800 metara,
         opremljena je ski liftom od 420 metara, a posetioci imaju mogućnost

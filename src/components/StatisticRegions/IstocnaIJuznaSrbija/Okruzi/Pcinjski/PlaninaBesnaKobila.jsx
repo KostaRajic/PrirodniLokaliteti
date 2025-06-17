@@ -1,8 +1,13 @@
-import besnaKobila1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/besnaKobila1.jpg";
-import besnaKobila2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/besnaKobila2.jpg";
-import besnaKobila3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/besnaKobila3.jpg";
-import besnaKobila4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/besnaKobila4.jpg";
-import besnaKobila5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/besnaKobila5.jpg";
+import besnaKobila1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/desktop/besnaKobila1.jpg";
+import besnaKobila2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/desktop/besnaKobila2.jpg";
+import besnaKobila3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/desktop/besnaKobila3.jpg";
+import besnaKobila4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/desktop/besnaKobila4.jpg";
+import besnaKobila5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/desktop/besnaKobila5.jpg";
+import besnaKobila11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/mobile/besnaKobilaM1.jpg";
+import besnaKobila22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/mobile/besnaKobilaM2.jpg";
+import besnaKobila33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/mobile/besnaKobilaM3.jpg";
+import besnaKobila44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/mobile/besnaKobilaM4.jpg";
+import besnaKobila55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/BesnaKobila/mobile/besnaKobilaM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const PlaninaBesnaKobila = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pcinjskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={besnaKobila1} alt="Planina Besna Kobila 1" />
+      <img srcSet={`${besnaKobila11} 400w, ${besnaKobila1} `} alt="Planina Besna Kobila 1" />
 
       <h2>Planina Besna Kobila</h2>
 
@@ -30,7 +35,7 @@ export const PlaninaBesnaKobila = () => {
         godine, greben ove planine činio je granicu između Srbije i Bugarske.
       </p>
 
-      <img src={besnaKobila2} alt="Planina Besna Kobila 2" />
+      <img srcSet={`${besnaKobila22} 400w, ${besnaKobila2} `} alt="Planina Besna Kobila 2" />
 
       <p>
         U prošlim vremenima, na planini bogatoj zelenim pašnjacima, naselili su
@@ -55,7 +60,7 @@ export const PlaninaBesnaKobila = () => {
         Kriva Feja, a planina je dobila ime Besna kobila.
       </p>
 
-      <img src={besnaKobila3} alt="Planina Besna Kobila 3" />
+      <img srcSet={`${besnaKobila33} 400w, ${besnaKobila3} `} alt="Planina Besna Kobila 3" />
 
       <p>
         Planina Besna kobila, sa najvišim vrhom koji se uzdiže na 1.922 metra
@@ -76,7 +81,7 @@ export const PlaninaBesnaKobila = () => {
         Južne Morave. Na južnoj padini planine nalazi se rudnik galenita.
       </p>
 
-      <img src={besnaKobila4} alt="Planina Besna Kobila 4" />
+      <img srcSet={`${besnaKobila44} 400w, ${besnaKobila4} `} alt="Planina Besna Kobila 4" />
 
       <p>
         Planina Besna kobila bogata je raznovrsnim biljnim vrstama, sa preko 700
@@ -94,7 +99,7 @@ export const PlaninaBesnaKobila = () => {
         najsušniji mesec, sa svega 35 milimetara padavina.
       </p>
 
-      <img src={besnaKobila5} alt="Planina Besna Kobila 5" />
+      <img srcSet={`${besnaKobila55} 400w, ${besnaKobila5} `} alt="Planina Besna Kobila 5" />
 
       <p>
         Najvažniji prirodni resursi područja Besne kobile uključuju sliv reke

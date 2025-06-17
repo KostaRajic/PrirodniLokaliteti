@@ -1,9 +1,15 @@
-import zvornickoJezero1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/zvornickoJezero1.jpg";
-import zvornickoJezero2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/zvornickoJezero2.jpg";
-import zvornickoJezero3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/zvornickoJezero3.jpg";
-import zvornickoJezero4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/zvornickoJezero4.jpg";
-import zvornickoJezero5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/zvornickoJezero5.jpg";
-import zvornickoJezero6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/zvornickoJezero6.jpg";
+import zvornickoJezero1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/desktop/zvornickoJezero1.jpg";
+import zvornickoJezero2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/desktop/zvornickoJezero2.jpg";
+import zvornickoJezero3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/desktop/zvornickoJezero3.jpg";
+import zvornickoJezero4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/desktop/zvornickoJezero4.jpg";
+import zvornickoJezero5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/desktop/zvornickoJezero5.jpg";
+import zvornickoJezero6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/desktop/zvornickoJezero6.jpg";
+import zvornickoJezero11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/mobile/MzvornickoJezero1.jpg";
+import zvornickoJezero22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/mobile/MzvornickoJezero2.jpg";
+import zvornickoJezero33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/mobile/MzvornickoJezero3.jpg";
+import zvornickoJezero44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/mobile/MzvornickoJezero4.jpg";
+import zvornickoJezero55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/mobile/MzvornickoJezero5.jpg";
+import zvornickoJezero66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ZvornickoJezero/mobile/MzvornickoJezero6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,11 +24,11 @@ export const ZvornickoJezero = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zvornickoJezero1} alt="Zvorničko jezero 1" />
+      <img srcSet={`${zvornickoJezero11} 400w, ${zvornickoJezero1} `} alt="Zvorničko jezero 1" />
 
       <h2>Zvorničko jezero</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px"}}>
         Priča o Zvorničkom jezeru počinje 1948. godine, kada su započeti
         pripremni radovi za izgradnju brane i prateće infrastrukture. Godine
         1955. jezerski basen je napunjen vodom, stvarajući prelepi vodeni
@@ -32,9 +38,9 @@ export const ZvornickoJezero = () => {
         okruženja.
       </p>
 
-      <img src={zvornickoJezero2} alt="Zvorničko jezero 2" />
+      <img srcSet={`${zvornickoJezero22} 400w, ${zvornickoJezero2} `} alt="Zvorničko jezero 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Zvorničko jezero je popularna turistička destinacija, posebno za
         ribolovce, koji dolaze iz različitih delova sveta u Mali Zvornik. Glavni
         razlog za ovakav interes leži u bogatom ribljem fondu jezera, koje
@@ -43,9 +49,9 @@ export const ZvornickoJezero = () => {
         pastrmku, linjaka i mnoge druge.
       </p>
 
-      <img src={zvornickoJezero3} alt="Zvorničko jezero 3" />
+      <img srcSet={`${zvornickoJezero33} 400w, ${zvornickoJezero3} `} alt="Zvorničko jezero 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Bogatstvo ribljeg fonda jezera, kao ključna prednost za razvoj
         ribolovnog turizma, zajedno s atraktivnim izgledom jezera i njegove
         okolice, stvorilo je potrebu za organizovanjem različitih ribolovnih
@@ -57,9 +63,9 @@ export const ZvornickoJezero = () => {
         ljubitelje prirode.
       </p>
 
-      <img src={zvornickoJezero6} alt="Zvorničko jezero 4" />
+      <img srcSet={`${zvornickoJezero66} 400w, ${zvornickoJezero6} `} alt="Zvorničko jezero 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Nekih 4 kilometra od Malog Zvornika, u selu Sakar, nalazi se jedna od
         najlepših i najbolje uređenih plaža u okolini. Obala je ravna i
         šljunkovita, što je iskoristila lokalna zajednica da stvori pravu
@@ -67,7 +73,7 @@ export const ZvornickoJezero = () => {
         posetiti, ukoliko se nađete u blizini Malog Zvornika.
       </p>
 
-      <img src={zvornickoJezero4} alt="Zvorničko jezero 5" />
+      <img srcSet={`${zvornickoJezero44} 400w, ${zvornickoJezero4} `} alt="Zvorničko jezero 5" />
       <p>
         Ovo prelepo malo jezero prostire se uzvodno kroz drinski kanjon, od
         Zvornika (Republika Srpska) i Malog Zvornika (Srbija), sve do ušća reke
@@ -79,7 +85,7 @@ export const ZvornickoJezero = () => {
         poluostrva, nastala usled erozije i nanosa.
       </p>
 
-      <img src={zvornickoJezero5} alt="Zvorničko jezero 6" />
+      <img srcSet={`${zvornickoJezero55} 400w, ${zvornickoJezero5} `} alt="Zvorničko jezero 6" />
       <p>
         Zvorničko jezero tokom zime pruža potpuno drugačiji, ali jednako
         fascinantan prizor. Dok zimske temperature padaju, površina jezera može

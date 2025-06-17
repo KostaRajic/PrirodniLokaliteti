@@ -1,10 +1,17 @@
-import prizren1 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/prizren2.jpg";
-import prizren2 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/prizren1.jpg";
-import prizren3 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/prizren3.jpg";
-import prizren4 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/prizren4.jpg";
-import prizren5 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/prizren5.jpg";
-import prizren6 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/prizren6.jpg";
-import prizren7 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/prizren7.jpg";
+import prizren1 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/desktop/prizren2.jpg";
+import prizren2 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/desktop/prizren1.jpg";
+import prizren3 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/desktop/prizren3.jpg";
+import prizren4 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/desktop/prizren4.jpg";
+import prizren5 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/desktop/prizren5.jpg";
+import prizren6 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/desktop/prizren6.jpg";
+import prizren7 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/desktop/prizren7.jpg";
+import prizren11 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/mobile/Mprizren2.jpg";
+import prizren22 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/mobile/Mprizren1.jpg";
+import prizren33 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/mobile/Mprizren3.jpg";
+import prizren44 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/mobile/Mprizren4.jpg";
+import prizren55 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/mobile/Mprizren5.jpg";
+import prizren66 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/mobile/Mprizren6.jpg";
+import prizren77 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/Prizren/mobile/Mprizren7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +26,7 @@ export const Prizren = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(prizrenskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={prizren1} alt="Prizren 1" />
+      <img srcSet={`${prizren11} 400w, ${prizren1} `} alt="Prizren 1" />
 
       <h2>Prizren</h2>
 
@@ -54,7 +61,7 @@ export const Prizren = () => {
         dugotrajniju istorijsku važnost.
       </p>
 
-      <img src={prizren2} alt="Prizren 2" />
+      <img srcSet={`${prizren22} 400w, ${prizren2} `} alt="Prizren 2" />
 
       <p>
         Grad Prizren svoje ime duguje Vizantijcima, dok su srpski srednjovekovni
@@ -85,7 +92,7 @@ export const Prizren = () => {
         Metohiji, koji su tada stavljeni pod zaštitu.
       </p>
 
-      <img src={prizren3} alt="Kameni most u Prizrenu" />
+      <img srcSet={`${prizren33} 400w, ${prizren3} `} alt="Kameni most u Prizrenu" />
 
       <p>
         Kameni most u Prizrenu je simbol grada, smešten preko reke Prizrenskoj
@@ -99,7 +106,7 @@ export const Prizren = () => {
         direktno povezuje trg „Šadrvan“ i Saračanu.
       </p>
 
-      <img src={prizren4} alt="Prizrenska Bogoslovija" />
+      <img srcSet={`${prizren44} 400w, ${prizren4} `} alt="Prizrenska Bogoslovija" />
 
       <p>
         Prizrenska Bogoslovija, osnovana 1871. godine u kući njenog osnivača,
@@ -119,7 +126,7 @@ export const Prizren = () => {
         sadašnjosti koju je nosila kosovsko-metohijska stvarnost..
       </p>
 
-      <img src={prizren5} alt="Bogorodica Ljeviška" />
+      <img srcSet={`${prizren55} 400w, ${prizren5} `} alt="Bogorodica Ljeviška" />
 
       <p>
         Glavna crkva Prizrena bila je Bogorodica Ljeviška. Temeljno ju je
@@ -154,7 +161,7 @@ export const Prizren = () => {
         dragulja među više od dvadeset crkava u Prizrenu.
       </p>
 
-      <img src={prizren6} alt="Saborna crkva Svetog Đorđa u Prizrenu" />
+      <img srcSet={`${prizren66} 400w, ${prizren6} `} alt="Saborna crkva Svetog Đorđa u Prizrenu" />
 
       <p>
         Saborna crkva Svetog Đorđa u Prizrenu predstavlja glavnu crkvu Srpske
@@ -177,7 +184,7 @@ export const Prizren = () => {
         godine, a temelji crkve postavljeni su na Ilinđan 1856. godine.
       </p>
 
-      <img src={prizren7} alt="Utvrđeni grad Kaljaja" />
+      <img srcSet={`${prizren77} 400w, ${prizren7} `} alt="Utvrđeni grad Kaljaja" />
 
       <p>
         Utvrđeni grad Kaljaja nalazi se iznad današnjeg Prizrena, na brdu sa

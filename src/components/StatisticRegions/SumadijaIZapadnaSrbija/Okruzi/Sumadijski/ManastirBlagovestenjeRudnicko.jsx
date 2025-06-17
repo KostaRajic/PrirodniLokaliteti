@@ -1,6 +1,9 @@
-import manastirBlagovestenje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/manastirBlagovestenje1.jpg";
-import manastirBlagovestenje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/manastirBlagovestenje2.jpg";
-import manastirBlagovestenje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/manastirBlagovestenje3.jpg";
+import manastirBlagovestenje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/desktop/manastirBlagovestenje1.jpg";
+import manastirBlagovestenje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/desktop/manastirBlagovestenje2.jpg";
+import manastirBlagovestenje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/desktop/manastirBlagovestenje3.jpg";
+import manastirBlagovestenje11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/mobile/MmanastirBlagovestenje1.jpg";
+import manastirBlagovestenje22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/mobile/MmanastirBlagovestenje2.jpg";
+import manastirBlagovestenje33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirBlagoveštenje/mobile/MmanastirBlagovestenje3.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +21,7 @@ export const ManastirBlagovestenjeRudnicko = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={manastirBlagovestenje1} alt="Manastir Blagoveštenje Rudničko 1" />
+      <img srcSet={`${manastirBlagovestenje11} 400w, ${manastirBlagovestenje1} `} alt="Manastir Blagoveštenje Rudničko 1" />
 
       <h2 style={{ color: "white" }}>Manastir Blagoveštenje Rudničko</h2>
 
@@ -29,7 +32,7 @@ export const ManastirBlagovestenjeRudnicko = () => {
         1400. godine, a posvećen je Blagoveštenju Presvete Bogorodice.
       </p>
 
-      <img src={manastirBlagovestenje2} alt="Manastir Blagoveštenje Rudničko 2" />
+      <img srcSet={`${manastirBlagovestenje22} 400w, ${manastirBlagovestenje2} `} alt="Manastir Blagoveštenje Rudničko 2" />
 
       <p>
         Manastir je tokom svoje istorije više puta stradao i obnavljan. Tokom
@@ -40,7 +43,7 @@ export const ManastirBlagovestenjeRudnicko = () => {
         15. veka, a kompleks uključuje konake i druge prateće objekte.
       </p>
 
-      <img src={manastirBlagovestenje3} alt="Manastir Blagoveštenje Rudničko 3" />
+      <img srcSet={`${manastirBlagovestenje33} 400w, ${manastirBlagovestenje3} `} alt="Manastir Blagoveštenje Rudničko 3" />
 
       <p>
         Manastir Blagoveštenje Rudničko predstavlja značajan duhovni centar i

@@ -1,8 +1,11 @@
-import gostilje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje1.jpg";
-import gostilje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje2.jpg";
-import gostilje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje3.jpg";
-import gostilje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje4.jpg";
-import gostilje5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje5.jpg";
+import mokraGora1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora/desktop/mokraGora1.jpg";
+import mokraGora2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora/desktop/mokraGora2.jpg";
+import mokraGora3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora/desktop/mokraGora3.jpg";
+import mokraGora4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora/desktop/mokraGora4.jpg";
+import mokraGora11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora/mobile/MmokraGora1.jpg";
+import mokraGora22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora/mobile/MmokraGora2.jpg";
+import mokraGora33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora/mobile/MmokraGora3.jpg";
+import mokraGora44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/MokraGora/mobile/MmokraGora4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,9 +18,9 @@ export const MokraGora = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.mokraGora)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={gostilje2} alt="Mokra Gora 1" />
+      <img srcSet={`${mokraGora11} 400w, ${mokraGora1} `} alt="Mokra Gora 1" />
 
       <h2>Mokra Gora</h2>
 
@@ -33,7 +36,7 @@ export const MokraGora = () => {
         mineralnim izvorima, a najpoznatiji među njima je izvor Bele vode.
       </p>
 
-      <img src={gostilje5} alt="Mokra Gora 2" />
+      <img srcSet={`${mokraGora22} 400w, ${mokraGora2} `} alt="Mokra Gora 2" />
 
       <p>
         Kompleksi autohtonih šuma crnog i belog bora na serpentinama, koje
@@ -48,7 +51,7 @@ export const MokraGora = () => {
         divlja mačka.
       </p>
 
-      <img src={gostilje3} alt="Mokra Gora 3" />
+      <img srcSet={`${mokraGora33} 400w, ${mokraGora3} `} alt="Mokra Gora 3" />
 
       <p>
         Mokra Gora i Šargan su kroz istoriju bile deo važnog putnog pravca, što
@@ -63,7 +66,7 @@ export const MokraGora = () => {
         ideji poznatog filmskog režisera Emira Kusturice.
       </p>
 
-      <img src={gostilje4} alt="Mokra Gora 4" />
+      <img srcSet={`${mokraGora44} 400w, ${mokraGora4} `} alt="Mokra Gora 4" />
 
       <p>
         Mokra Gora, idilično planinsko selo smešteno na jugozapadu Srbije između
@@ -79,23 +82,6 @@ export const MokraGora = () => {
         i autentičnim izgledom.
       </p>
 
-      <img src={gostilje1} alt="Mokra Gora 5" />
-      <p>
-        Ako ste strastveni ljubitelji prirode i avanturisti, Mokra Gora vam nudi
-        širok izbor planinskih kuća i brvnara, smeštenih u blizini skijališta
-        „Iver“ i planinarskih staza. Ovi objekti nude savršen mir i tišinu, kao
-        i spektakularne poglede na okolne planinske vrhove i zelenilo. Za
-        porodice sa decom, preporučujemo smeštaj u neposrednoj blizini
-        železničke stanice Šarganska Osmica, poznate i kao „Ćira“. Ova
-        istorijska uskotračna pruga pruža jedinstvenu priliku za vožnju starim
-        parnim vozom, kroz kojeg možete uživati u prirodnim lepotama ovog kraja.
-        Deca će biti oduševljena ovom avanturom, dok će roditelji ceniti udoban
-        smeštaj u blizini ove popularne atrakcije. Bilo da planirate posetu sa
-        prijateljima ili porodicom, Mokra Gora je pravo mesto za istraživanje
-        čarobnog sveta prirode. Bez obzira na vrstu smeštaja koju izaberete,
-        jedno je sigurno: ovde ćete stvoriti uspomene koje će vas pratiti tokom
-        celog života.
-      </p>
     </div>
   );
 };

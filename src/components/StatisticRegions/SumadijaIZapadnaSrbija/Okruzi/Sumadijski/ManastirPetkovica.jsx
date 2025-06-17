@@ -1,8 +1,13 @@
-import manastirPetkovica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/manastirPetkovica1.jpg";
-import manastirPetkovica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/manastirPetkovica2.jpg";
-import manastirPetkovica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/manastirPetkovica3.jpg";
-import manastirPetkovica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/manastirPetkovica4.jpg";
-import manastirPetkovica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/manastirPetkovica5.jpg";
+import manastirPetkovica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/desktop/manastirPetkovica1.jpg";
+import manastirPetkovica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/desktop/manastirPetkovica2.jpg";
+import manastirPetkovica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/desktop/manastirPetkovica3.jpg";
+import manastirPetkovica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/desktop/manastirPetkovica4.jpg";
+import manastirPetkovica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/desktop/manastirPetkovica5.jpg";
+import manastirPetkovica11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/mobile/MmanastirPetkovica1.jpg";
+import manastirPetkovica22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/mobile/MmanastirPetkovica2.jpg";
+import manastirPetkovica33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/mobile/MmanastirPetkovica3.jpg";
+import manastirPetkovica44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/mobile/MmanastirPetkovica4.jpg";
+import manastirPetkovica55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ManastirPetkovica/mobile/MmanastirPetkovica5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +21,7 @@ export const ManastirPetkovica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <img src={manastirPetkovica1} alt="Manastir Petkovica 1" />
+      <img srcSet={`${manastirPetkovica11} 400w, ${manastirPetkovica1} `} alt="Manastir Petkovica 1" />
 
       <h2>Manastir Petkovica</h2>
 
@@ -31,7 +36,7 @@ export const ManastirPetkovica = () => {
         deceniji XV veka, za vreme despota Stefana Lazarevića.
       </p>
 
-      <img src={manastirPetkovica2} alt="Manastir Petkovica 2" />
+      <img srcSet={`${manastirPetkovica22} 400w, ${manastirPetkovica2} `} alt="Manastir Petkovica 2" />
 
       <p>
         Za datiranje Petkovice posebno su značajne originalne freske sačuvane u
@@ -50,7 +55,7 @@ export const ManastirPetkovica = () => {
         do pada Srbije pod tursku vlast.
       </p>
 
-      <img src={manastirPetkovica3} alt="Manastir Petkovica 3" />
+      <img srcSet={`${manastirPetkovica33} 400w, ${manastirPetkovica3} `} alt="Manastir Petkovica 3" />
 
       <p>
         Među brojnim manastirima koje turski popisi iz XVI veka beleže na ovom
@@ -68,7 +73,7 @@ export const ManastirPetkovica = () => {
         lučnog oblika sa oslikanom lunetom.
       </p>
 
-      <img src={manastirPetkovica4} alt="Manastir Petkovica 4" />
+      <img srcSet={`${manastirPetkovica44} 400w, ${manastirPetkovica4} `} alt="Manastir Petkovica 4" />
 
       <p>
         Pripratna prostorija je dograđena krajem XIV veka sa zapadne strane
@@ -83,7 +88,7 @@ export const ManastirPetkovica = () => {
         stvarajući lazurne svetlosne odbljese.
       </p>
 
-      <img src={manastirPetkovica5} alt="Manastir Petkovica 5" />
+      <img srcSet={`${manastirPetkovica55} 400w, ${manastirPetkovica5} `} alt="Manastir Petkovica 5" />
 
       <p>
         Mlađem slikarstvu pripadaju ostaci monumentalne kompozicije

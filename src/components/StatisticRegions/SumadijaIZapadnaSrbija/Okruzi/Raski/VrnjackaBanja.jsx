@@ -1,11 +1,19 @@
-import vrnjackaBanja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/vrnjackaBanja1.jpg";
-import vrnjackaBanja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/vrnjackaBanja2.jpg";
-import vrnjackaBanja3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/vrnjackaBanja3.jpg";
-import vrnjackaBanja4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/vrnjackaBanja4.jpg";
-import vrnjackaBanja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/vrnjackaBanja5.jpg";
-import vrnjackaBanja6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/vrnjackaBanja6.jpg";
-import vrnjackaBanja7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/vrnjackaBanja7.jpg";
-import vrnjackaBanja8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/vrnjackaBanja8.jpg";
+import vrnjackaBanja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/desktop/vrnjackaBanja1.jpg";
+import vrnjackaBanja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/desktop/vrnjackaBanja2.jpg";
+import vrnjackaBanja3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/desktop/vrnjackaBanja3.jpg";
+import vrnjackaBanja4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/desktop/vrnjackaBanja4.jpg";
+import vrnjackaBanja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/desktop/vrnjackaBanja5.jpg";
+import vrnjackaBanja6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/desktop/vrnjackaBanja6.jpg";
+import vrnjackaBanja7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/desktop/vrnjackaBanja7.jpg";
+import vrnjackaBanja8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/desktop/vrnjackaBanja8.jpg";
+import vrnjackaBanja11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/mobile/MvrnjackaBanja1.jpg";
+import vrnjackaBanja22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/mobile/MvrnjackaBanja2.jpg";
+import vrnjackaBanja33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/mobile/MvrnjackaBanja3.jpg";
+import vrnjackaBanja44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/mobile/MvrnjackaBanja4.jpg";
+import vrnjackaBanja55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/mobile/MvrnjackaBanja5.jpg";
+import vrnjackaBanja66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/mobile/MvrnjackaBanja6.jpg";
+import vrnjackaBanja77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/mobile/MvrnjackaBanja7.jpg";
+import vrnjackaBanja88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja/mobile/MvrnjackaBanja8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +28,7 @@ export const VrnjackaBanja = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes)} />
       <header></header>
-      <img src={vrnjackaBanja1} alt="Vrnjačka Banja 1" />
+      <img srcSet={`${vrnjackaBanja11} 400w, ${vrnjackaBanja1} `} alt="Vrnjačka Banja 1" />
 
       <h2 style={{ color: "white" }}>Vrnjačka Banja</h2>
 
@@ -43,7 +51,7 @@ export const VrnjackaBanja = () => {
         zatrpavali izvore iz protesta.
       </p>
 
-      <img src={vrnjackaBanja2} alt="Vrnjačka Banja 2" />
+      <img srcSet={`${vrnjackaBanja22} 400w, ${vrnjackaBanja2} `} alt="Vrnjačka Banja 2" />
 
       <p>
         U tridesetim godinama 19. veka, nakon oslobođenja Srbije od turske
@@ -64,7 +72,7 @@ export const VrnjackaBanja = () => {
         lečenju i opuštanju na ovom mestu.
       </p>
 
-      <img src={vrnjackaBanja3} alt="Vrnjačka Banja 3" />
+      <img srcSet={`${vrnjackaBanja33} 400w, ${vrnjackaBanja3} `} alt="Vrnjačka Banja 3" />
 
       <p>
         Uz reku su se pojavljivale krajnjače, jednostavne kolibe koje su služile
@@ -86,7 +94,7 @@ export const VrnjackaBanja = () => {
         gradili vile i letnjikovce. Neke od tih zgrada su i danas sačuvane.
       </p>
 
-      <img src={vrnjackaBanja4} alt="Vrnjačka Banja 4" />
+      <img srcSet={`${vrnjackaBanja44} 400w, ${vrnjackaBanja4} `} alt="Vrnjačka Banja 4" />
 
       <p>
         Vrnjačka Banja se nalazi u centralnom delu Srbije, u oblasti Raška, na
@@ -108,7 +116,7 @@ export const VrnjackaBanja = () => {
         putevi koji vode do Beograda, Sofije i Atine.
       </p>
 
-      <img src={vrnjackaBanja5} alt="Vrnjačka Banja 5" />
+      <img srcSet={`${vrnjackaBanja55} 400w, ${vrnjackaBanja5} `} alt="Vrnjačka Banja 5" />
 
       <p>
         Izvori lekovite vode u Vrnjačkoj Banji poznati su još iz antickih
@@ -127,7 +135,7 @@ export const VrnjackaBanja = () => {
         kupatilo je sagrađeno 1892. godine.
       </p>
 
-      <img src={vrnjackaBanja6} alt="Vrnjačka Banja 6" />
+      <img srcSet={`${vrnjackaBanja66} 400w, ${vrnjackaBanja6} `} alt="Vrnjačka Banja 6" />
 
       <p>
         Na dan Opštine Vrnjačka Banja, 14. jula, otvorena su vrata najvećeg akva
@@ -142,7 +150,7 @@ export const VrnjackaBanja = () => {
         nalazi unutar kompleksa.
       </p>
 
-      <img src={vrnjackaBanja7} alt="Vrnjačka Banja 7" />
+      <img srcSet={`${vrnjackaBanja77} 400w, ${vrnjackaBanja7} `} alt="Vrnjačka Banja 7" />
 
       <p>
         Pored svog zdravstvenog turizma, Vrnjačka Banja je poznata i po bogatom
@@ -159,7 +167,7 @@ export const VrnjackaBanja = () => {
         svetskog rata.
       </p>
 
-      <img src={vrnjackaBanja8} alt="Vrnjačka Banja 8" />
+      <img srcSet={`${vrnjackaBanja88} 400w, ${vrnjackaBanja8} `} alt="Vrnjačka Banja 8" />
 
       <p>
         Oruđe iz vremena praistorije (mlađeg kamenog doba) može se videti u

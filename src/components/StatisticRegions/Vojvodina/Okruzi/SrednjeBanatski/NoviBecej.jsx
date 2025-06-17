@@ -1,12 +1,18 @@
-import nbecej1 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/novibecej2.jpg";
-import nbecej2 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/novibecej3.jpg";
-import nbecej3 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/novibecej4.jpg";
-import nbecej4 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/novibecej5.jpg";
-import nbecej5 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/novibecej6.jpg";
+import nbecej1 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/desktop/novibecej2.jpg";
+import nbecej2 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/desktop/novibecej3.jpg";
+import nbecej3 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/desktop/novibecej4.jpg";
+import nbecej4 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/desktop/novibecej5.jpg";
+import nbecej5 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/desktop/novibecej6.jpg";
+import nbecej11 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/mobile/Mnovibecej2.jpg";
+import nbecej22 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/mobile/Mnovibecej3.jpg";
+import nbecej33 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/mobile/Mnovibecej4.jpg";
+import nbecej44 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/mobile/Mnovibecej5.jpg";
+import nbecej55 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/NoviBecej/mobile/Mnovibecej6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { srednjeBanatskiPathRoutes } from "./SrednjeBanatskiPathRoutes";
 
 export const NoviBecej = () => {
   const navigate = useNavigate();
@@ -14,9 +20,9 @@ export const NoviBecej = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(srednjeBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={nbecej3} alt="Novi Bečej 1" />
+      <img srcSet={`${nbecej33} 400w, ${nbecej3} `} alt="Novi Bečej 1" />
 
       <h2>Novi Bečej</h2>
 
@@ -26,9 +32,9 @@ export const NoviBecej = () => {
         na reki Tamiš, koja je važan vodeni tok u ovom delu Srbije.
       </p>
 
-      <img src={nbecej2} alt="Novi Bečej 2" />
+      <img srcSet={`${nbecej22} 400w, ${nbecej2} `} alt="Novi Bečej 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Grad je zvanično osnovan kao naselje u 18. veku, kada su prvi stanovnici
         naselili ovo područje. Tokom 19. i 20. veka, Novi Bečej je doživeo
         značajan privredni razvoj, a posebno je bio poznat po poljoprivredi i
@@ -40,9 +46,9 @@ export const NoviBecej = () => {
         što znači „zemljoposed”, ili da znači „utvrđenje na vodi”
       </p>
 
-      <img src={nbecej5} alt="Novi Bečej 3" />
+      <img srcSet={`${nbecej55} 400w, ${nbecej5} `} alt="Novi Bečej 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Novi Bečej je poznat po svojoj kulturnoj baštini. Grad se ponosi i
         očuvanim istorijskim spomenicima i tradicionalnim manifestacijama, kao i
         brojnim verskim objektima, kao što je crkva Sv. Đorđa, koja je deo
@@ -53,17 +59,17 @@ export const NoviBecej = () => {
         žele da uživaju u mirnom okruženju i prirodnim lepotama.
       </p>
 
-      <img src={nbecej1} alt="Novi Bečej 4" />
+      <img srcSet={`${nbecej11} 400w, ${nbecej1} `} alt="Novi Bečej 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Privreda Novog Bečeja temelji se na poljoprivredi, ali u poslednje vreme
         raste i razvoj industrije. Gradske vlasti ulažu u poboljšanje
         infrastrukture, što uključuje i povećanje kapaciteta za turizam, kao i
         razvoj preduzetništva.
       </p>
 
-      <img src={nbecej4} alt="Novi Bečej 5" />
-      <p style={{ marginTop: "-110px", position: "absolute" }}>
+      <img srcSet={`${nbecej44} 400w, ${nbecej4} `} alt="Novi Bečej 5" />
+      <p>
         Biserno ostrvo je smešteno u toku reke Tamiš i predstavlja jedno od
         omiljenih mesta za odmor i rekreaciju. Ostrvo se odlikuje bogatstvom
         flore i faune, a često se koristi kao destinacija za ljubitelje prirode,

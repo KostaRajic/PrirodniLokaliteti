@@ -1,7 +1,11 @@
-import tularskaBanja1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/tularskaBanja1.jpg";
-import tularskaBanja2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/tularskaBanja2.jpg";
-import tularskaBanja3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/tularskaBanja3.jpg";
-import tularskaBanja4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/tularskaBanja4.jpg";
+import tularskaBanja1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/desktop/tularskaBanja1.jpg";
+import tularskaBanja2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/desktop/tularskaBanja2.jpg";
+import tularskaBanja3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/desktop/tularskaBanja3.jpg";
+import tularskaBanja4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/desktop/tularskaBanja4.jpg";
+import tularskaBanja11 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/mobile/tularskaBanjaM1.jpg";
+import tularskaBanja22 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/mobile/tularskaBanjaM2.jpg";
+import tularskaBanja33 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/mobile/tularskaBanjaM3.jpg";
+import tularskaBanja44 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/TularskaBanja/mobile/tularskaBanjaM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const TularskaBanja = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(jablanickiOkrugPathRoutes.home)} style={{fill: "white"}}/>
       <header></header>
-      <img src={tularskaBanja1} alt="Tularska Banja 1" />
+      <img srcSet={`${tularskaBanja11} 400w, ${tularskaBanja1} `} alt="Tularska Banja 1" />
 
       <h2>Tularska Banja</h2>
 
@@ -38,7 +42,7 @@ export const TularskaBanja = () => {
         proglašena za najbolju vodu u Jugoslaviji.
       </p>
 
-      <img src={tularskaBanja2} alt="Tularska Banja 2" />
+      <img srcSet={`${tularskaBanja22} 400w, ${tularskaBanja2} `} alt="Tularska Banja 2" />
 
       <p>
         ​U Tularskoj banji nalazi se nekoliko izvora mineralnih voda. Ovi izvori
@@ -62,7 +66,7 @@ export const TularskaBanja = () => {
         (krečljiva boja)
       </p>
 
-      <img src={tularskaBanja3} alt="Tularska Banja 3" />
+      <img srcSet={`${tularskaBanja33} 400w, ${tularskaBanja3} `} alt="Tularska Banja 3" />
 
       <p>
         ​Analize vode Tularske banje, koje je sproveo Marko T. Leko, pokazale su
@@ -80,7 +84,7 @@ export const TularskaBanja = () => {
         terapijskim svojstvima.
       </p>
 
-      <img src={tularskaBanja4} alt="Tularska Banja 4" />
+      <img srcSet={`${tularskaBanja44} 400w, ${tularskaBanja4} `} alt="Tularska Banja 4" />
 
       <p>
         ​Lekovite vode Tularske banje nisu dovoljno iskorišćene. Savremeni

@@ -1,18 +1,33 @@
-import cacak1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/cacak1.jpg";
-import cacak2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/cacak2.jpg";
-import cacak3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/cacak3.jpg";
-import cacak4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/cacak4.jpg";
-import cacak5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/cacak5.jpg";
-import cacak6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/cacak6.jpg";
-import cacak7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/cacak7.jpg";
-import cacak8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/cacak8.webp";
-import cacakSpomenBIP1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/spomenParkBorbeIPobede1.webp";
-import cacakSpomenBIP2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/spomenParkBorbeIPobede2.webp";
-import cacakSpomenBIP3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/spomenParkBorbeIPobede3.jpg";
-import cacakSpomenBIP4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/spomenParkBorbeIPobede4.webp";
-import cacakSpomenBIP5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/spomenParkBorbeIPobede5.webp";
-import cacakSpomenBIP6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/spomenParkBorbeIPobede6.webp";
-import cacakSpomenBIP7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/spomenParkBorbeIPobede7.webp";
+import cacak1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/desktop/cacak1.jpg";
+import cacak2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/desktop/cacak2.jpg";
+import cacak3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/desktop/cacak3.jpg";
+import cacak4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/desktop/cacak4.jpg";
+import cacak5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/desktop/cacak5.jpg";
+import cacak6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/desktop/cacak6.jpg";
+import cacak7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/desktop/cacak7.jpg";
+import cacak8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/desktop/cacak8.jpg";
+import cacakSpomenBIP1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/desktop/spomenParkBorbeIPobede1.jpg";
+import cacakSpomenBIP2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/desktop/spomenParkBorbeIPobede2.jpg";
+import cacakSpomenBIP3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/desktop/spomenParkBorbeIPobede3.jpg";
+import cacakSpomenBIP4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/desktop/spomenParkBorbeIPobede4.jpg";
+import cacakSpomenBIP5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/desktop/spomenParkBorbeIPobede5.jpg";
+import cacakSpomenBIP6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/desktop/spomenParkBorbeIPobede6.jpg";
+import cacakSpomenBIP7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/desktop/spomenParkBorbeIPobede7.jpg";
+import cacak11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/mobile/Mcacak1.jpg";
+import cacak22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/mobile/Mcacak2.jpg";
+import cacak33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/mobile/Mcacak3.jpg";
+import cacak44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/mobile/Mcacak4.jpg";
+import cacak55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/mobile/Mcacak5.jpg";
+import cacak66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/mobile/Mcacak6.jpg";
+import cacak77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/mobile/Mcacak7.jpg";
+import cacak88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/mobile/Mcacak8.jpg";
+import cacakSpomenBIP11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/mobile/MspomenParkBorbeIPobede1.jpg";
+import cacakSpomenBIP22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/mobile/MspomenParkBorbeIPobede2.jpg";
+import cacakSpomenBIP33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/mobile/MspomenParkBorbeIPobede3.jpg";
+import cacakSpomenBIP44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/mobile/MspomenParkBorbeIPobede4.jpg";
+import cacakSpomenBIP55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/mobile/MspomenParkBorbeIPobede5.jpg";
+import cacakSpomenBIP66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/mobile/MspomenParkBorbeIPobede6.jpg";
+import cacakSpomenBIP77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Cacak/spomenPakrBorbeIPobede/mobile/MspomenParkBorbeIPobede7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -64,31 +79,38 @@ export const Cacak = () => {
 
   const images = [
     {
-      src: cacakSpomenBIP1,
+      desktopSrc: cacakSpomenBIP1,
+      mobileSrc: cacakSpomenBIP11,
       alt: "Spomenik Borbe i Pobede u Čačku 1",
     },
     {
-      src: cacakSpomenBIP2,
+      desktopSrc: cacakSpomenBIP2,
+      mobileSrc: cacakSpomenBIP22,
       alt: "Spomenik Borbe i Pobede u Čačku 2",
     },
     {
-      src: cacakSpomenBIP3,
+      desktopSrc: cacakSpomenBIP3,
+      mobileSrc: cacakSpomenBIP33,
       alt: "Spomenik Borbe i Pobede u Čačku 3",
     },
     {
-      src: cacakSpomenBIP4,
+      desktopSrc: cacakSpomenBIP4,
+      mobileSrc: cacakSpomenBIP44,
       alt: "Spomenik Borbe i Pobede u Čačku 4",
     },
     {
-      src: cacakSpomenBIP5,
+      desktopSrc: cacakSpomenBIP5,
+      mobileSrc: cacakSpomenBIP55,
       alt: "Spomenik Borbe i Pobede u Čačku 5",
     },
     {
-      src: cacakSpomenBIP6,
+      desktopSrc: cacakSpomenBIP6,
+      mobileSrc: cacakSpomenBIP66,
       alt: "Spomenik Borbe i Pobede u Čačku 6",
     },
     {
-      src: cacakSpomenBIP7,
+      desktopSrc: cacakSpomenBIP7,
+      mobileSrc: cacakSpomenBIP77,
       alt: "Spomenik Borbe i Pobede u Čačku 7",
     },
   ];
@@ -98,7 +120,7 @@ export const Cacak = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={cacak1} alt="Grad Čačak 1" />
+      <img srcSet={`${cacak11} 400w, ${cacak1} `} alt="Grad Čačak 1" />
 
       <h2 style={{ color: "white" }}>Čačak</h2>
 
@@ -112,7 +134,7 @@ export const Cacak = () => {
         i toku Zapadne Morave.
       </p>
 
-      <img src={cacak2} alt="Čačak 2" />
+      <img srcSet={`${cacak22} 400w, ${cacak2} `} alt="Čačak 2" />
 
       <p>
         Reljef grada Čačka uglavnom je brdsko-brežuljkasti, dok je u centralnom
@@ -128,7 +150,7 @@ export const Cacak = () => {
         obale Zapadne Morave.
       </p>
 
-      <img src={cacak3} alt="Centar grada Čačka" />
+      <img srcSet={`${cacak33} 400w, ${cacak3} `} alt="Centar grada Čačka" />
 
       <p>
         Centar grada Čačka je urbano i administrativno središte, koje čini
@@ -147,7 +169,7 @@ export const Cacak = () => {
           {images.map((image, index) => (
             <div key={index} style={{ margin: "20px" }}>
               <img
-                src={image.src}
+                srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                 alt={image.alt}
                 loading="lazy"
                 style={{
@@ -173,7 +195,7 @@ export const Cacak = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -207,7 +229,7 @@ export const Cacak = () => {
         divljih zveri iz različitih svetskih mitologija.
       </p>
 
-      <img src={cacak4} alt="Gradski park u Čačku" />
+      <img srcSet={`${cacak44} 400w, ${cacak4} `} alt="Gradski park u Čačku" />
 
       <p>
         Gradski park u Čačku je jedan od omiljenih prostora za odmor i
@@ -220,7 +242,7 @@ export const Cacak = () => {
         posetiocima.
       </p>
 
-      <img src={cacak5} alt="Narodni muzej u Čačku" />
+      <img srcSet={`${cacak55} 400w, ${cacak5} `} alt="Narodni muzej u Čačku" />
 
       <p>
         Narodni muzej u Čačku je značajna kulturna institucija koja čuva i
@@ -236,7 +258,7 @@ export const Cacak = () => {
         ga važnim mestom za očuvanje i proučavanje kulturne baštine Čačka.
       </p>
 
-      <img src={cacak6} alt="Memorijalni kompleks i spomenik na Ljubiću" />
+      <img srcSet={`${cacak66} 400w, ${cacak6} `} alt="Memorijalni kompleks i spomenik na Ljubiću" />
 
       <p>
         Memorijalni kompleks i spomenik na Ljubiću posvećeni su boji na Ljubiću
@@ -249,7 +271,7 @@ export const Cacak = () => {
         Tanaskom Rajićem, koji je poginuo tokom boja, 25. aprila 1815. godine.
       </p>
 
-      <img src={cacak7} alt="Rimske terme u Čačku" />
+      <img srcSet={`${cacak77} 400w, ${cacak7} `} alt="Rimske terme u Čačku" />
 
       <p>
         Rimske terme u Čačku predstavljaju značajan arheološki lokalitet koji
@@ -267,7 +289,7 @@ export const Cacak = () => {
         turistička destinacija i važan deo kulturno-istorijskog nasleđa grada.
       </p>
 
-      <img src={cacak8} alt="Crkva u Čačku" />
+      <img srcSet={`${cacak88} 400w, ${cacak8} `} alt="Crkva u Čačku" />
 
       <p>
         Crkva se nalazi u samom centru Čačka. Ktitor je knez Stracimir, brat

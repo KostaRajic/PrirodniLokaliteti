@@ -1,7 +1,11 @@
-import babickaGora1 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/babickaGora1.jpg'
-import babickaGora2 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/babickaGora2.jpg'
-import babickaGora3 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/babickaGora3.jpg'
-import babickaGora4 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/babickaGora4.jpg'
+import babickaGora1 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/desktop/babickaGora1.jpg'
+import babickaGora2 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/desktop/babickaGora2.jpg'
+import babickaGora3 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/desktop/babickaGora3.jpg'
+import babickaGora4 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/desktop/babickaGora4.jpg'
+import babickaGora11 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/mobile/babickaGoraM1.jpg'
+import babickaGora22 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/mobile/babickaGoraM2.jpg'
+import babickaGora33 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/mobile/babickaGoraM3.jpg'
+import babickaGora44 from '../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BabickaGora/mobile/babickaGoraM4.jpg'
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const PlaninaBabickaGora = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(jablanickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={babickaGora1} alt="Planina Babička Gora 1" />
+      <img srcSet={`${babickaGora11} 400w, ${babickaGora1} `} alt="Planina Babička Gora 1" />
 
       <h2>Planina Babička Gora</h2>
 
@@ -30,7 +34,7 @@ export const PlaninaBabickaGora = () => {
         stena, škriljaca prekambrijumske starosti.
       </p>
 
-      <img src={babickaGora2} alt="Planina Babička Gora 2" />
+      <img srcSet={`${babickaGora22} 400w, ${babickaGora2} `} alt="Planina Babička Gora 2" />
 
       <p>
         Uspon na Krivu buku može se započeti iz Zaplanja, iz sela Gornje
@@ -41,7 +45,7 @@ export const PlaninaBabickaGora = () => {
         vrha sa druge strane, iz Leskovačke kotline.
       </p>
 
-      <img src={babickaGora3} alt="Planina Babička Gora 3" />
+      <img srcSet={`${babickaGora33} 400w, ${babickaGora3} `} alt="Planina Babička Gora 3" />
 
       <p>
         Prva dva kilometra je asfalt, a zatim se prate kolski putevi koji vode
@@ -53,7 +57,7 @@ export const PlaninaBabickaGora = () => {
         svakako prihvaćena kao takva.
       </p>
 
-      <img src={babickaGora4} alt="Planina Babička Gora 4" />
+      <img srcSet={`${babickaGora44} 400w, ${babickaGora4} `} alt="Planina Babička Gora 4" />
 
       <p>
         Markirana planinarska staza Jarsenovo – G. Kupinovica – Kriva Buka

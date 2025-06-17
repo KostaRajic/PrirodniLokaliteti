@@ -1,12 +1,18 @@
-import palicko1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić4.jpg";
-import palicko2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić2.jpg";
-import palicko3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/PalićFilmFestival.jpg";
-import palicko4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palićzoo.jpg";
-import palicko5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/Palić3.jpg";
+import palicko1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/desktop/Palić4.jpg";
+import palicko2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/desktop/Palić2.jpg";
+import palicko3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/desktop/PalićFilmFestival.jpg";
+import palicko4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/desktop/Palićzoo.jpg";
+import palicko5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/desktop/Palić3.jpg";
+import palicko11 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/mobile/MPalić4.jpg";
+import palicko22 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/mobile/MPalić2.jpg";
+import palicko33 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/mobile/MPalićFilmFestival.jpg";
+import palicko44 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/mobile/MPalićzoo.jpg";
+import palicko55 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/PalićkoJezero/mobile/MPalić3.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { servernoBackiPathRoutes } from "./SevernoBackiPathRoutes";
 
 export const PalićkoJezero = () => {
   const navigate = useNavigate();
@@ -14,9 +20,9 @@ export const PalićkoJezero = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(servernoBackiPathRoutes.home)} />
       <header></header>
-      <img src={palicko2} alt="palicko jezero 5" />
+      <img srcSet={`${palicko22} 400w, ${palicko2} `} alt="palicko jezero 5" />
       <h2>Palicko jezero</h2>
 
       <p>
@@ -27,26 +33,26 @@ export const PalićkoJezero = () => {
         uređene plaže, toplu vodu i prijatan ambijent.
       </p>
 
-      <img src={palicko1} alt="palicko jezero 1" />
+      <img  srcSet={`${palicko11} 400w, ${palicko1} `} alt="palicko jezero 1" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Obala jezera je duga 17 kilometara i uređena je celom svojom dužinom.
         Zbog ovoga, atraktivne su i pešačke ture, ali i pecanje, posmatranje
         ptica, kao i obilazak parka prirode oko samog jezera.
       </p>
 
-      <img src={palicko5} alt="palicko jezero 2" />
+      <img  srcSet={`${palicko55} 400w, ${palicko5} `} alt="palicko jezero 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Kada se ovome dodaju i novoizgrađeni hoteli, restorani, manje vile
         različitih smeštajnih kapaciteta, kao i poslovično dobar noćni život,
         Palićko jezero postaje mesto koje ne smete propustiti, koliko god godina
         da imate i kakva god da su vam interesovanja!
       </p>
 
-      <img src={palicko3} alt="palicko jezero 3" />
+      <img  srcSet={`${palicko33} 400w, ${palicko3} `} alt="palicko jezero 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         U letnjim mesecima, na Paliću se održava i Festival evropskog filma, pa
         ovo mesto postaje stecište mnogih, pre svega, regionalnih filmskih
         stvaralaca, glumaca i kritičara. Zaljubljenici u “sedmu umetnost” ovde
@@ -57,9 +63,8 @@ export const PalićkoJezero = () => {
       </p>
 
       <img
-        src={palicko4}
+         srcSet={`${palicko44} 400w, ${palicko4} `}
         alt="palicko jezero 4"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         U neposrednoj blizini jezera se nalazi i atraktivni ZOO vrt u kome

@@ -1,10 +1,17 @@
-import sub6 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub6.jpg";
-import sub2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub2.jpg";
-import sub3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub3.jpg";
-import sub4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub4.jpg";
-import sub5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub5.jpg";
-import sub7 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub7.jpg";
-import sub8 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/sub8.jpg";
+import sub6 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/desktop/sub6.jpg";
+import sub2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/desktop/sub2.jpg";
+import sub3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/desktop/sub3.jpg";
+import sub4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/desktop/sub4.jpg";
+import sub5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/desktop/sub5.jpg";
+import sub7 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/desktop/sub7.jpg";
+import sub8 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/desktop/sub8.jpg";
+import sub66 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/mobile/Msub6.jpg";
+import sub22 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/mobile/Msub2.jpg";
+import sub33 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/mobile/Msub3.jpg";
+import sub44 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/mobile/Msub4.jpg";
+import sub55 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/mobile/Msub5.jpg";
+import sub77 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/mobile/Msub7.jpg";
+import sub88 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/mobile/Msub8.jpg";
 
 import spomenPetarKaradjordjevic from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/Spomenici/spomenPetarKaradjordjevic.jpg";
 import spomenSvetomTrojstvu from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Subotica/Spomenici/spomenSvetoTrojstvo.jpg";
@@ -13,6 +20,7 @@ import spomenIvanuSaricu from "../../../../../assets/images/Vojvodina/SevernoBac
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { servernoBackiPathRoutes } from "./SevernoBackiPathRoutes";
 
 export const Subotica = () => {
   const navigate = useNavigate();
@@ -20,9 +28,9 @@ export const Subotica = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(servernoBackiPathRoutes.home)} />
       <header></header>
-      <img src={sub5} alt="Subotica 1" />
+      <img srcSet={`${sub55} 400w, ${sub5} `} alt="Subotica 1" />
 
       <h2>Subotica</h2>
 
@@ -36,9 +44,9 @@ export const Subotica = () => {
         dok je južno zemljište bogato oranicama.
       </p>
 
-      <img src={sub2} alt="Subotica 2" />
+      <img srcSet={`${sub22} 400w, ${sub2} `} alt="Subotica 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Subotica je grad bogate istorije i kulturne baštine, a njegovi živopisni
         parkovi, šetališta i kafići čine ga jednim od najlepših mesta za
         opuštanje u Srbiji. Grad je poznat po svojoj secesijskoj arhitekturi, a
@@ -56,9 +64,9 @@ export const Subotica = () => {
         stilu secesije, poput Subotičke sinagoge ili Gradske kuće.
       </p>
 
-      <img src={sub3} alt="Subotica 3" />
+      <img srcSet={`${sub33} 400w, ${sub3} `} alt="Subotica 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Danas grad sa okolnim opštinama ima oko 150.000 stanovnika: Mađara,
         Hrvata, Bunjevaca, Srba i drugih naroda. Oko grada je podignuto 18 većih
         naselja: Bajmok, Bački Vinogradi, Bačko Dušanovo, Bikovo, Višnjevac,
@@ -67,8 +75,8 @@ export const Subotica = () => {
         Šupljak. Grad je povezan sa starim letovalištem i jezerom Palić.
       </p>
 
-      <img src={sub4} alt="Subotica 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${sub44} 400w, ${sub4} `} alt="Subotica 4" />
+      <p>
         Pored toga, Subotica je i ekonomski centar, poznata po poljoprivredi,
         trgovini i industriji. Takođe, grad se ponosi bogatom tradicijom u
         obrazovanju i nauci. U njegovoj blizini nalaze se prirodne lepote, poput
@@ -93,7 +101,7 @@ export const Subotica = () => {
         </div>
       </div>
 
-      <img src={sub7} alt="Suboticka sinagoga" style={{ marginTop: "30px" }} />
+      <img srcSet={`${sub77} 400w, ${sub7} `} alt="Suboticka sinagoga" style={{ marginTop: "30px" }} />
 
       <p>
         Subotička sinagoga je jedan od najlepših i najvažnijih arhitektonskih
@@ -114,7 +122,7 @@ export const Subotica = () => {
         čime se i dalje čuva bogato kulturno nasleđe ovog kraja.
       </p>
 
-      <img src={sub6} alt="Subotica 5" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${sub66} 400w, ${sub6} `} alt="Subotica 5" />
       <p>
         Gradska kuća u Subotici je najveća, a po mnogima i najlepša građevina
         Subotice. Podignuta je za dve godine, od 1908. do 1910, ali su vrhunski

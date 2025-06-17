@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
 import { SerbianMap } from "./components/SerbianMap";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
@@ -288,12 +289,29 @@ import { rasinskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaI
 import { raskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/RaskiOkrugPathRoutes";
 import { sumadijskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/SumadijskiOkrugPathRoutes";
 import { zlatiborskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ZlatiborskiOkrugPahtRoutes";
+import { juznoBanatskiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/JuznoBanatskiPathRoutes";
+import { servernoBackiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/SevernoBackiPathRoutes";
+import { severnoBanatskiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/SevernoBanatskiPathRoutes";
+import { srednjeBanatskiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/SrednjeBanatskiPathRoutes";
+import { sremskiOkrugPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SremskiOkrugPathRoutes";
+import { zapadnoBackiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/ZapadnoBackiPathRoutes";
+import { Layout } from "./components/Layout";
+import { HomePage } from "./homePage";
+import React, { Suspense, lazy } from 'react';
+
+
+const Home = lazy(() => import('../src/homePage'));
+const SerbianMapComp = lazy(() => import('../src/components/SerbianMap'));
+
 
 function App() {
   return (
     <BrowserRouter>
+    <Layout>
+       <Suspense fallback={<div>Loading...</div>}></Suspense>
       <Routes>
-        <Route path="/" element={<SerbianMap />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/serbianMap" element={<SerbianMapComp />} />
         <Route path={beogradPathRoutes.home} element={<Beograd />} />
         <Route path={beogradPathRoutes.beograd} element={<Beograd2 />} />
         <Route path={beogradPathRoutes.kalemegdan} element={<Kalemegdan />} />
@@ -305,90 +323,90 @@ function App() {
         <Route path={beogradPathRoutes.adaCiganlija} element={<AdaCiganlija />} />
         <Route path={beogradPathRoutes.kosutnjak} element={<Kosutnjak />} />
  
-        <Route path="/vojvodinaTekstModal" element={<VojvodinaTekstModal />} />
-        <Route path="/vojvodinaTekstModal/Vojvodina" element={<Vojvodina />} />
+        <Route path={serbianMapPathRoutes.VojvodinaTekstModal} element={<VojvodinaTekstModal />} />
+        <Route path={serbianMapPathRoutes.Vojvodina} element={<Vojvodina />} />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki"
+          path={zapadnoBackiPathRoutes.home}
           element={<ZapadnoBacki />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/Sombor"
+          path={zapadnoBackiPathRoutes.sombor}
           element={<Sombor />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/GornjePodunavlje"
+          path={zapadnoBackiPathRoutes.gornjePodunavlje}
           element={<GornjePodunavlje />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/ApatinITerminalneVode"
+          path={zapadnoBackiPathRoutes.apatin}
           element={<Apatin />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/VelikiBackiKanal"
+          path={zapadnoBackiPathRoutes.velikiBackiKanal}
           element={<VelikiBackiKanal />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/ManastirBodjani"
+          path={zapadnoBackiPathRoutes.manastirBodjani}
           element={<ManastirBodjani />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/SalasiUBackoj"
+          path={zapadnoBackiPathRoutes.salasiUBackoj}
           element={<SalasiUBackoj />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/ZapadnoBacki/DunavskeAde"
+          path={zapadnoBackiPathRoutes.dunavskeAde}
           element={<DunavskeAde />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBacki"
+          path={servernoBackiPathRoutes.home}
           element={<SevernoBacki />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBacki/PalickoJezero"
+          path={servernoBackiPathRoutes.palickoJezero}
           element={<PalićkoJezero />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBacki/Subotica"
+          path={servernoBackiPathRoutes.subotica}
           element={<Subotica />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBacki/Tisa"
+          path={servernoBackiPathRoutes.rekaTisa}
           element={<RekaTisa />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBacki/SubotickaPescara"
+          path={servernoBackiPathRoutes.subotickaPescara}
           element={<SubotickaPescara />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBacki/BackaTopola"
+          path={servernoBackiPathRoutes.backaTopola}
           element={<BackaTopola />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBacki/BackoTopolskoJezero"
+          path={servernoBackiPathRoutes.backoTopolskoJezero}
           element={<BackoTopolskoJezero />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBanatski"
+          path={severnoBanatskiPathRoutes.home}
           element={<SevernoBanatski />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBanatski/Kikinda"
+          path={severnoBanatskiPathRoutes.kikinda}
           element={<Kikinda />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBanatski/Kanjiza"
+          path={severnoBanatskiPathRoutes.kanjiza}
           element={<Kanjiza />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBanatski/SelevenjskePustare"
+          path={severnoBanatskiPathRoutes.selevenjskePustare}
           element={<SelevenjskePustare />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBanatski/RezervatVelikeDroplje"
+          path={severnoBanatskiPathRoutes.rezervatVelikeDroplje}
           element={<RezervatVelikeDroplje />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SevernoBanatski/Senta"
+          path={severnoBanatskiPathRoutes.senta}
           element={<Senta />}
         />
         <Route path={JuznoBackiPathRoutes.home} element={<JuznoBacki />} />
@@ -414,91 +432,91 @@ function App() {
           element={<SajkaskaOblast />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SrednjeBanatski"
+          path={srednjeBanatskiPathRoutes.home}
           element={<SrednjeBanatski />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/Zrenjanin"
+          path={srednjeBanatskiPathRoutes.zrenjanin}
           element={<Zrenjanin />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/NoviBecej"
+          path={srednjeBanatskiPathRoutes.noviBecej}
           element={<NoviBecej />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/SlanoKopovo"
+          path={srednjeBanatskiPathRoutes.slanoKopovo}
           element={<SlanoKopovo />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/StaraTisa"
+          path={srednjeBanatskiPathRoutes.staraTisa}
           element={<StaraTisa />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/KupalistePeskara"
+          path={srednjeBanatskiPathRoutes.kupalistePeskara}
           element={<KupalistePeskara />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski"
+          path={sremskiOkrugPathRoutes.home}
           element={<SremskiOkrug />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski/SremskaMitrovica"
+          path={sremskiOkrugPathRoutes.sremskaMitrovica}
           element={<SremskaMitrovica />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski/SRPZasavica"
+          path={sremskiOkrugPathRoutes.srpZasavica}
           element={<SRPZasavica />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski/Indjija"
+          path={sremskiOkrugPathRoutes.indjija}
           element={<Indjija />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski/SotskoJezero"
+          path={sremskiOkrugPathRoutes.sotskoJezero}
           element={<SotskoJezero />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski/NovoHopovo"
+          path={sremskiOkrugPathRoutes.novoHopovo}
           element={<ManastirNovoHopovo />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski/Sid"
+          path={sremskiOkrugPathRoutes.sid}
           element={<Sid />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski/ManastirJazak"
+          path={sremskiOkrugPathRoutes.manastirJazak}
           element={<ManastirJazak />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/Sremski/BesenovackoJezero"
+          path={sremskiOkrugPathRoutes.besenovackoJezero}
           element={<BesenovackoJezero />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBanatski"
+          path={juznoBanatskiPathRoutes.home}
           element={<JuznoBanatski />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBanatski/Pancevo"
+          path={juznoBanatskiPathRoutes.pancevo}
           element={<Pancevo />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBanatski/BelaCrkva"
+          path={juznoBanatskiPathRoutes.belaCrkva}
           element={<BelaCrkva />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBanatski/VracevgajskoJezero"
+          path={juznoBanatskiPathRoutes.vracevgajskoJezero}
           element={<VracevgajskoJezero />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBanatski/DelibaltskaPescaraIZagajickaBrda"
+          path={juznoBanatskiPathRoutes.deliblatskaPescara}
           element={<DelibaltskaPescaraIZagajickaBrda />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBanatski/Vrsac"
+          path={juznoBanatskiPathRoutes.vrsac}
           element={<Vrsac />}
         />
         <Route
-          path="/vojvodinaTekstModal/Vojvodina/JuznoBanatski/SRPKraljevac"
+          path={juznoBanatskiPathRoutes.srpKraljevac}
           element={<SRPKraljevac />}
         />
         
@@ -1185,6 +1203,7 @@ function App() {
         <Route path={gnjilanskiOkrugPathRoutes.podgradje} element={<TvrdjavaPodgradje />} />
 
       </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }

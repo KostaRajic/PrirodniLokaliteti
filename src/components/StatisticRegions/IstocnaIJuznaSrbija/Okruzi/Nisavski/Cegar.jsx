@@ -1,7 +1,11 @@
-import cegar1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/cegar1.jpg";
-import cegar2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/cegar2.jpg";
-import cegar3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/cegar3.jpg";
-import cegar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/cegar4.jpg";
+import cegar1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/desktop/cegar1.jpg";
+import cegar2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/desktop/cegar2.jpg";
+import cegar3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/desktop/cegar3.jpg";
+import cegar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/desktop/cegar4.jpg";
+import cegar11 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/mobile/cegarM1.jpg";
+import cegar22 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/mobile/cegarM2.jpg";
+import cegar33 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/mobile/cegarM3.jpg";
+import cegar44 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/mobile/cegarM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const Cegar = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={cegar1} alt="Čergar 1" />
+      <img srcSet={`${cegar11} 400w, ${cegar1} `} alt="Čergar 1" />
 
       <h2>Čergar</h2>
 
@@ -35,7 +39,7 @@ export const Cegar = () => {
         Sinđelića, rad vajara Slavka Miletića.
       </p>
 
-      <img src={cegar2} alt="Čergar 2" />
+      <img srcSet={`${cegar22} 400w, ${cegar2} `} alt="Čergar 2" />
 
       <p>
         Nedaleko od sela Kameniца, severoistočno od Niša, nalazi se uzvišenje
@@ -52,7 +56,7 @@ export const Cegar = () => {
         Srba na Čegaru, na ulazu u Niš.
       </p>
 
-      <img src={cegar3} alt="Bitka na Čergru" />
+      <img srcSet={`${cegar33} 400w, ${cegar3} `} alt="Bitka na Čergru" />
 
       <p>
         Spomenik je izgrađen prema projektu ruskog arhitekte, emigranta Julijana
@@ -73,7 +77,7 @@ export const Cegar = () => {
         vajara hrvatskog porekla, Slavka Miletića.
       </p>
 
-      <img src={cegar4} alt="Bitka na Čergru - spomenik" />
+      <img srcSet={`${cegar44} 400w, ${cegar4} `} alt="Bitka na Čergru - spomenik" />
 
       <p>
         Osim što je služio za veličanje podviga nacionalnog heroja, spomenik je

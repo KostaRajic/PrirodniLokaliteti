@@ -1,9 +1,15 @@
-import pozarevac1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/pozarevac1.jpg";
-import pozarevac2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/pozarevac2.jpg";
-import pozarevac3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/pozarevac3.jpg";
-import pozarevac4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/pozarevac4.jpg";
-import pozarevac5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/pozarevac5.jpg";
-import pozarevac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/pozarevac6.jpg";
+import pozarevac1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/desktop/pozarevac1.jpg";
+import pozarevac2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/desktop/pozarevac2.jpg";
+import pozarevac3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/desktop/pozarevac3.jpg";
+import pozarevac4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/desktop/pozarevac4.jpg";
+import pozarevac5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/desktop/pozarevac5.jpg";
+import pozarevac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/desktop/pozarevac6.jpg";
+import pozarevac11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/mobile/pozarevacM1.jpg";
+import pozarevac22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/mobile/pozarevacM2.jpg";
+import pozarevac33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/mobile/pozarevacM3.jpg";
+import pozarevac44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/mobile/pozarevacM4.jpg";
+import pozarevac55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/mobile/pozarevacM5.jpg";
+import pozarevac66 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/Pozarevac/mobile/pozarevacM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const Pozarevac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(branicevskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={pozarevac1} alt="Požarevac 1" />
+      <img srcSet={`${pozarevac11} 400w, ${pozarevac1} `} alt="Požarevac 1" />
 
       <h2>Požarevac</h2>
 
@@ -30,7 +36,7 @@ export const Pozarevac = () => {
         Mlavе.
       </p>
 
-      <img src={pozarevac2} alt="Zgrada Okružnog zdanja u Pozarevcu" />
+      <img srcSet={`${pozarevac22} 400w, ${pozarevac2} `} alt="Zgrada Okružnog zdanja u Pozarevcu" />
 
       <p>
         Zgrada Okružnog zdanja, svojim impozantnim dimenzijama i dekorativnim
@@ -47,7 +53,7 @@ export const Pozarevac = () => {
         italijanske renesanse.
       </p>
 
-      <img src={pozarevac3} alt="Spomenik Knezu Milosu u Pozarevcu" />
+      <img srcSet={`${pozarevac33} 400w, ${pozarevac3} `} alt="Spomenik Knezu Milosu u Pozarevcu" />
 
       <p>
         Požarevac je dugo bio druga rezidencija kneza Miloša. On je izgradio
@@ -74,7 +80,7 @@ export const Pozarevac = () => {
         Vasi Pelagiću.
       </p>
 
-      <img src={pozarevac4} alt="Argela Ljubicevo" />
+      <img srcSet={`${pozarevac44} 400w, ${pozarevac4} `} alt="Argela Ljubicevo" />
 
       <p>
         Jednu od najstarijih ergela u Srbiji osnovao je knez Miloš Obrenović
@@ -92,7 +98,7 @@ export const Pozarevac = () => {
         turističko-sportska manifestacija „Ljubičevske konjičke igre“.
       </p>
 
-      <img src={pozarevac5} alt="Narodni muzej u Požarevcu" />
+      <img srcSet={`${pozarevac55} 400w, ${pozarevac5} `} alt="Narodni muzej u Požarevcu" />
       <p>
         Narodni muzej u Požarevcu, osnovan 1895. godine, drugi je najstariji
         muzej u Srbiji, odmah nakon Narodnog muzeja u Beogradu. Pokriva
@@ -110,7 +116,7 @@ export const Pozarevac = () => {
         skulpture, medalje Poožarevačkog mira…
       </p>
 
-      <img src={pozarevac6} alt="Čačalica" />
+      <img srcSet={`${pozarevac66} 400w, ${pozarevac6} `} alt="Čačalica" />
       <p>
         Čačalica je brdo koje se uzdiže iznad grada na 203 metra nadmorske
         visine. Pre 300 godina, ovo područje je bilo močvarno i nepristupačno, o

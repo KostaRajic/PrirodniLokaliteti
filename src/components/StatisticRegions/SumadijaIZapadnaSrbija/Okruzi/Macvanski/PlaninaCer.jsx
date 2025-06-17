@@ -1,14 +1,25 @@
-import cer1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cer1.jpg";
-import cer2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cer2.jpg";
-import cer3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cer3.jpg";
-import cer5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cer5.jpg";
-import cer6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cer6.jpg";
-import cer1M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cerManastirCokesina.jpg";
-import cer2M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cerManastirKaona.jpg";
-import cer3M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cerManastirPetkovica.jpg";
-import cer4M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cerManastirPetraIPavla.jpg";
-import cer5M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cerManastirPreobrazenjeGospodnje.jpg";
-import cer6M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/cerManastirRadovasnica.jpg";
+import cer1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cer1.jpg";
+import cer2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cer2.jpg";
+import cer3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cer3.jpg";
+import cer5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cer5.jpg";
+import cer6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cer6.jpg";
+import cer1M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cerManastirCokesina.jpg";
+import cer2M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cerManastirKaona.jpg";
+import cer3M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cerManastirPetkovica.jpg";
+import cer4M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cerManastirPetraIPavla.jpg";
+import cer5M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cerManastirPreobrazenjeGospodnje.jpg";
+import cer6M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/desktop/cerManastirRadovasnica.jpg";
+import cer11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/Mcer1.jpg";
+import cer22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/Mcer2.jpg";
+import cer33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/Mcer3.jpg";
+import cer55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/Mcer5.jpg";
+import cer66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/Mcer6.jpg";
+import cer11M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/McerManastirCokesina.jpg";
+import cer22M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/McerManastirKaona.jpg";
+import cer33M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/McerManastirPetkovica.jpg";
+import cer44M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/McerManastirPetraIPavla.jpg";
+import cer55M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/McerManastirPreobrazenjeGospodnje.jpg";
+import cer66M from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Cer/mobile/McerManastirRadovasnica.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -61,32 +72,38 @@ export const Cer = () => {
   const images = [
     {
       name: "Manastir Čokešina",
-      src: cer1M,
+      desktopSrc: cer1M,
+      mobileSrc: cer11M,
       alt: "Manastir Cokesina",
     },
     {
       name: "Manastir Kaona",
-      src: cer2M,
+      desktopSrc: cer2M,
+            mobileSrc: cer22M,
       alt: "Manastir Kaona",
     },
     {
       name: "Manastir Petkovica",
-      src: cer3M,
+      desktopSrc: cer3M,
+            mobileSrc: cer33M,
       alt: "Manastir Petkovica",
     },
     {
       name: "Manastir Svetih apostola Petra i Pavla",
-      src: cer4M,
+      desktopSrc: cer4M,
+            mobileSrc: cer44M,
       alt: "Manastir Svetih apostola Petra i Pavla",
     },
     {
       name: "Manastir Preobraženje Gospodnje",
-      src: cer5M,
+      desktopSrc: cer5M,
+            mobileSrc: cer55M,
       alt: "Manastir Preobrazenje Gospodnje",
     },
     {
       name: "Manastir Radovašnica",
-      src: cer6M,
+      desktopSrc: cer6M,
+            mobileSrc: cer66M,
       alt: "Manastir Radovašnica",
     },
   ];
@@ -96,7 +113,7 @@ export const Cer = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={cer1} alt="Planina Cer 1" />
+      <img srcSet={`${cer11} 400w, ${cer1} `} alt="Planina Cer 1" />
       <h2>Planina Cer</h2>
       <p style={{ paddingTop: "50px" }}>
         Cer je planina u blizini Šapca, koja nudi raznovrsne sadržaje za
@@ -110,7 +127,7 @@ export const Cer = () => {
         ove godine.
       </p>
 
-      <img src={cer2} alt="Planina Cer 2" />
+      <img srcSet={`${cer22} 400w, ${cer2} `} alt="Planina Cer 2" />
       <p>
         Pogledi sa ove planine su glavni razlog zbog kojih turisti dolaze na
         Cer. Najviši vrh dostiže visinu od 687 metara, a na planini se nalaze
@@ -122,7 +139,7 @@ export const Cer = () => {
         Cera, kako bi došli do nekog od njih i uživali u moćnom pogledu, često i
         uz fotografiju koja zabeleži taj trenutak.
       </p>
-      <img src={cer3} alt="Planina Cer 3" />
+      <img srcSet={`${cer33} 400w, ${cer3} `} alt="Planina Cer 3" />
 
       <p>
         Jedan od najvažnijih događaja u nacionalnoj istoriji odigrao se upravo
@@ -138,7 +155,7 @@ export const Cer = () => {
         sahranjeni srpski i austrougraski vojnici poginuli tokom Cerske bitke.
       </p>
 
-      <img src={cer6} alt="Planina Cer 4" />
+      <img srcSet={`${cer66} 400w, ${cer6} `} alt="Planina Cer 4" />
       <p>
         Cer se često pominje kao pogodna destinacija za rehabilitaciju osoba
         koje pate od neuroza ili depresije. Međutim, on je savršen i za sve koji
@@ -167,7 +184,7 @@ export const Cer = () => {
             {images.map((image, index) => (
               <div key={index} style={{ margin: "20px" }}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -205,7 +222,7 @@ export const Cer = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -230,7 +247,7 @@ export const Cer = () => {
         </>
       )}
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Zelena planina nije zahtevna destinacija, što znači da vam nije potrebna
         specijalizovana planinarska oprema da biste uživali u šetnjama njenim
         stazama i posetili prelepe vidikovce. Planina je bogata florom, a tokom
@@ -238,7 +255,7 @@ export const Cer = () => {
         hrasta i graba. Ova šumovita planina, koja nije previše naseljena, sa
         laganim i prijatnim stazama, idealna je za beg od gradske gužve.
       </p>
-      <img src={cer5} alt="Planina Cer 5" />
+      <img srcSet={`${cer55} 400w, ${cer5} `} alt="Planina Cer 5" />
       <p>
         Poseban adut su tematske staze koje se organizuju na Ceru. Možete
         krenuti Rimskom stazom i obići Trojanov grad iz trećeg veka, ili

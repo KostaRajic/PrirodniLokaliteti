@@ -1,8 +1,13 @@
-import sicevackaKlisura1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/sicevackaKlisura1.jpg";
-import sicevackaKlisura2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/sicevackaKlisura2.jpg";
-import sicevackaKlisura3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/sicevackaKlisura3.jpg";
-import sicevackaKlisura4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/sicevackaKlisura4.jpg";
-import sicevackaKlisura5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/sicevackaKlisura5.jpg";
+import sicevackaKlisura1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/desktop/sicevackaKlisura1.jpg";
+import sicevackaKlisura2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/desktop/sicevackaKlisura2.jpg";
+import sicevackaKlisura3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/desktop/sicevackaKlisura3.jpg";
+import sicevackaKlisura4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/desktop/sicevackaKlisura4.jpg";
+import sicevackaKlisura5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/desktop/sicevackaKlisura5.jpg";
+import sicevackaKlisura11 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/mobile/sicevackaKlisuraM1.jpg";
+import sicevackaKlisura22 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/mobile/sicevackaKlisuraM2.jpg";
+import sicevackaKlisura33 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/mobile/sicevackaKlisuraM3.jpg";
+import sicevackaKlisura44 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/mobile/sicevackaKlisuraM4.jpg";
+import sicevackaKlisura55 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/mobile/sicevackaKlisuraM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const SicevackaKlisura = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={sicevackaKlisura1} alt="Sićevačka klisura 1" />
+      <img srcSet={`${sicevackaKlisura11} 400w, ${sicevackaKlisura1} `} alt="Sićevačka klisura 1" />
 
       <h2>Sićevačka klisura</h2>
 
@@ -39,7 +44,7 @@ export const SicevackaKlisura = () => {
         Svrljiškim planinama sa severa i obroncima Suve planine sa juga.
       </p>
 
-      <img src={sicevackaKlisura2} alt="Sićevačka klisura 2" />
+      <img srcSet={`${sicevackaKlisura22} 400w, ${sicevackaKlisura2} `} alt="Sićevačka klisura 2" />
       <p>
         Kroz Sićevačku klisuru, paralelno sa Nišavom, izgrađene su železnička
         pruga (1886/1887) i nišavski međunarodni magistralni put (1964).
@@ -60,7 +65,7 @@ export const SicevackaKlisura = () => {
         retkih vrsta biljaka i životinja.
       </p>
 
-      <img src={sicevackaKlisura3} alt="Sićevačka klisura 3" />
+      <img srcSet={`${sicevackaKlisura33} 400w, ${sicevackaKlisura3} `} alt="Sićevačka klisura 3" />
 
       <p>
         Zbog slikovitih predela, očuvanih geomorfoloških osobina i prirodnih
@@ -78,7 +83,7 @@ export const SicevackaKlisura = () => {
         ovom regionu i principima održivog razvoja.
       </p>
 
-      <img src={sicevackaKlisura4} alt="Sićevačka klisura 4" />
+      <img srcSet={`${sicevackaKlisura44} 400w, ${sicevackaKlisura4} `} alt="Sićevačka klisura 4" />
 
       <p>
         Na jugoistočnom ivici Niške kotline, tektonska rasjednost terena
@@ -92,7 +97,7 @@ export const SicevackaKlisura = () => {
         klisura u Srbiji.
       </p>
 
-      <img src={sicevackaKlisura5} alt="Sićevačka klisura 5" />
+      <img srcSet={`${sicevackaKlisura55} 400w, ${sicevackaKlisura5} `} alt="Sićevačka klisura 5" />
 
       <p>
         Sićevačka klisura je duga 17 km, a u najužem delu (Gradištanskom

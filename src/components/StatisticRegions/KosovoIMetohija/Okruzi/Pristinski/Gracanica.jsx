@@ -1,7 +1,11 @@
-import gracanica1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/gracanica2.jpg";
-import gracanica2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/gracanica1.jpg";
-import gracanica3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/gracanica3.jpg";
-import gracanica4 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/gracanica4.jpg";
+import gracanica1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/desktop/gracanica2.jpg";
+import gracanica2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/desktop/gracanica1.jpg";
+import gracanica3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/desktop/gracanica3.jpg";
+import gracanica4 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/desktop/gracanica4.jpg";
+import gracanica11 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/mobile/Mgracanica2.jpg";
+import gracanica22 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/mobile/Mgracanica1.jpg";
+import gracanica33 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/mobile/Mgracanica3.jpg";
+import gracanica44 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gracanica/mobile/Mgracanica4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const ManastirGracanica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pristinskiOkrugPathRoutes.home)}/>
       <header></header>
-      <img src={gracanica1} alt="Manastir Gračanica 1" />
+      <img srcSet={`${gracanica11} 400w, ${gracanica1} `} alt="Manastir Gračanica 1" />
 
       <h2>Manastir Gračanica</h2>
 
@@ -38,7 +42,7 @@ export const ManastirGracanica = () => {
         izgradnju crkve koju je video na nebu.
       </p>
 
-      <img src={gracanica2} alt="Manastir Gračanica 2" />
+      <img srcSet={`${gracanica22} 400w, ${gracanica2} `} alt="Manastir Gračanica 2" />
 
       <p>
         Gračanica je sagrađena nedaleko od Lipljana, antičkog grada Ulpijane, na
@@ -62,7 +66,7 @@ export const ManastirGracanica = () => {
         zajedno sa bogatom zbirkom rukopisnih knjiga.
       </p>
 
-      <img src={gracanica3} alt="Manastir Gračanica 3" />
+      <img srcSet={`${gracanica33} 400w, ${gracanica3} `} alt="Manastir Gračanica 3" />
 
       <p>
         Vizantijsko-srpski stil u srpskoj arhitekturi srednjeg veka obuhvata
@@ -86,7 +90,7 @@ export const ManastirGracanica = () => {
         stvorio ovo remek-delo.
       </p>
 
-      <img src={gracanica4} alt="Spomenik Milosu Obilicu u Gracanici" />
+      <img srcSet={`${gracanica44} 400w, ${gracanica4} `} alt="Spomenik Milosu Obilicu u Gracanici" />
 
       <p>
         Spomenik Milošu Obiliću simbolizuje srpskog srednjovekovnog junaka, koji

@@ -1,7 +1,11 @@
-import zutiKamen1 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/zutiKamen1.jpg";
-import zutiKamen2 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/zutiKamen2.jpg";
-import zutiKamen3 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/zutiKamen3.jpg";
-import zutiKamen4 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/zutiKamen4.jpg";
+import zutiKamen1 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/desktop/zutiKamen1.jpg";
+import zutiKamen2 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/desktop/zutiKamen2.jpg";
+import zutiKamen3 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/desktop/zutiKamen3.jpg";
+import zutiKamen4 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/desktop/zutiKamen4.jpg";
+import zutiKamen11 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/mobile/MzutiKamen1.jpg";
+import zutiKamen22 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/mobile/MzutiKamen2.jpg";
+import zutiKamen33 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/mobile/MzutiKamen3.jpg";
+import zutiKamen44 from "../../../../../assets/images/KosovoIMetohija/Pecki/ZutiKamen/mobile/MzutiKamen4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const PlaninaZutiKamen = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(peckiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zutiKamen2} alt="Planina Žuti Kamen 1" />
+      <img srcSet={`${zutiKamen22} 400w, ${zutiKamen2} `} alt="Planina Žuti Kamen 1" />
 
       <h2>Planina Žuti Kamen</h2>
 
@@ -28,7 +32,7 @@ export const PlaninaZutiKamen = () => {
         jednim od značajnih planinskih masiva u ovom regionu.
       </p>
 
-      <img src={zutiKamen1} alt="Planina Žuti Kamen 2" />
+      <img srcSet={`${zutiKamen11} 400w, ${zutiKamen1} `} alt="Planina Žuti Kamen 2" />
 
       <p>
         Planina Žuti Kamen je poznata po svojoj impresivnoj visini i oštrim,
@@ -40,7 +44,7 @@ export const PlaninaZutiKamen = () => {
         uslove.
       </p>
 
-      <img src={zutiKamen3} alt="Planina Žuti Kamen 3" />
+      <img srcSet={`${zutiKamen33} 400w, ${zutiKamen3} `} alt="Planina Žuti Kamen 3" />
 
       <p>
         Flora planine Žuti Kamen obuhvata raznovrsne biljke, od kojih su mnoge
@@ -50,7 +54,7 @@ export const PlaninaZutiKamen = () => {
         područje interesantnim za biologe i ekologa.
       </p>
 
-      <img src={zutiKamen4} alt="Planina Žuti Kamen 4" />
+      <img srcSet={`${zutiKamen44} 400w, ${zutiKamen4} `} alt="Planina Žuti Kamen 4" />
 
       <p>
         Žuti Kamen je još uvek relativno netaknuti i nedovoljno istraženi

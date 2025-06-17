@@ -1,8 +1,13 @@
-import manastirSukovo1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/manastirSukovo1.jpg";
-import manastirSukovo2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/manastirSukovo2.jpg";
-import manastirSukovo3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/manastirSukovo3.jpg";
-import manastirSukovo4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/manastirSukovo4.jpg";
-import manastirSukovo5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/manastirSukovo5.jpg";
+import manastirSukovo1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/desktop/manastirSukovo1.jpg";
+import manastirSukovo2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/desktop/manastirSukovo2.jpg";
+import manastirSukovo3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/desktop/manastirSukovo3.jpg";
+import manastirSukovo4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/desktop/manastirSukovo4.jpg";
+import manastirSukovo5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/desktop/manastirSukovo5.jpg";
+import manastirSukovo11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/mobile/manastirSukovoM1.jpg";
+import manastirSukovo22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/mobile/manastirSukovoM2.jpg";
+import manastirSukovo33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/mobile/manastirSukovoM3.jpg";
+import manastirSukovo44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/mobile/manastirSukovoM4.jpg";
+import manastirSukovo55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ManastirSukovo/mobile/manastirSukovoM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const ManastirSukovo = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={manastirSukovo1} alt="Manastir Sukovo 1" />
+      <img srcSet={`${manastirSukovo11} 400w, ${manastirSukovo1} `} alt="Manastir Sukovo 1" />
 
       <h2>Manastir Sukovo</h2>
 
@@ -42,7 +47,7 @@ export const ManastirSukovo = () => {
         mu karakterističnu folklornu notu.
       </p>
 
-      <img src={manastirSukovo2} alt="Manastir Sukovo 2" />
+      <img srcSet={`${manastirSukovo22} 400w, ${manastirSukovo2} `} alt="Manastir Sukovo 2" />
 
       <p>
         Današnje celokupno manastirsko imanje pripadalo je Turčinu Sali-begu iz
@@ -59,7 +64,7 @@ export const ManastirSukovo = () => {
         je ukazivalo na postojanje prethodnih temelja Božijeg hrama.
       </p>
 
-      <img src={manastirSukovo3} alt="Manastir Sukovo 3" />
+      <img srcSet={`${manastirSukovo33} 400w, ${manastirSukovo3} `} alt="Manastir Sukovo 3" />
 
       <p>
         Mladog i bahatog Emina razbesaše ova dešavanja, te je hteo da obezvrti
@@ -83,7 +88,7 @@ export const ManastirSukovo = () => {
         na zapadnoj fasadi: POČE SE LETO 1857. ZAVRŠI SE LETO 1859.
       </p>
 
-      <img src={manastirSukovo4} alt="Manastir Sukovo 4" />
+      <img srcSet={`${manastirSukovo44} 400w, ${manastirSukovo4} `} alt="Manastir Sukovo 4" />
 
       <p>
         Hram Presvete Bogorodice je spolja jednostavna longitudinalna građevina
@@ -104,7 +109,7 @@ export const ManastirSukovo = () => {
         pokrivene kupama kanaličama.
       </p>
 
-      <img src={manastirSukovo5} alt="Manastir Sukovo 5" />
+      <img srcSet={`${manastirSukovo55} 400w, ${manastirSukovo5} `} alt="Manastir Sukovo 5" />
 
       <p>
         Trijem ili priprata, kroz koju se ulazi u centralni hram, srušena je

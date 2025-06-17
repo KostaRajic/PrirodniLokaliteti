@@ -1,8 +1,13 @@
-import lazarevaPecina1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/lazarevaPecina1.jpg";
-import lazarevaPecina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/lazarevaPecina2.jpg";
-import lazarevaPecina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/lazarevaPecina3.jpg";
-import lazarevaPecina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/lazarevaPecina4.jpg";
-import lazarevaPecina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/lazarevaPecina5.jpg";
+import lazarevaPecina1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/desktop/lazarevaPecina1.jpg";
+import lazarevaPecina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/desktop/lazarevaPecina2.jpg";
+import lazarevaPecina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/desktop/lazarevaPecina3.jpg";
+import lazarevaPecina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/desktop/lazarevaPecina4.jpg";
+import lazarevaPecina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/desktop/lazarevaPecina5.jpg";
+import lazarevaPecina11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/mobile/lazarevaPecinaM1.jpg";
+import lazarevaPecina22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/mobile/lazarevaPecinaM2.jpg";
+import lazarevaPecina33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/mobile/lazarevaPecinaM3.jpg";
+import lazarevaPecina44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/mobile/lazarevaPecinaM4.jpg";
+import lazarevaPecina55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LazarevaPecina/mobile/lazarevaPecinaM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const LazarevaPecina = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={lazarevaPecina1} alt="Lazareva Pećina 1" />
+      <img srcSet={`${lazarevaPecina11} 400w, ${lazarevaPecina1} `} alt="Lazareva Pećina 1" />
 
       <h2>Lazareva Pećina</h2>
 
@@ -39,7 +44,7 @@ export const LazarevaPecina = () => {
         duga je 800 metara.
       </p>
 
-      <img src={lazarevaPecina2} alt="Lazareva Pećina 2" />
+      <img srcSet={`${lazarevaPecina22} 400w, ${lazarevaPecina2} `} alt="Lazareva Pećina 2" />
 
       <p>
         Prvi opis Lazareve pećine dao je Felix Kanic, dok je prva istraživanja
@@ -53,7 +58,7 @@ export const LazarevaPecina = () => {
         stariji suvi - fosilni i mlađi rečni - aktivni.
       </p>
 
-      <img src={lazarevaPecina3} alt="Lazareva Pećina 3" />
+      <img srcSet={`${lazarevaPecina33} 400w, ${lazarevaPecina3} `} alt="Lazareva Pećina 3" />
 
       <p>
         Četiri najveće i najlepše dvorane u Lazarevoj pećini su: Prestižna
@@ -66,7 +71,7 @@ export const LazarevaPecina = () => {
         Pećina se nalazi unutar spomenika prirode Lazarev kanjon.
       </p>
 
-      <img src={lazarevaPecina4} alt="Lazareva Pećina 4" />
+      <img srcSet={`${lazarevaPecina44} 400w, ${lazarevaPecina4} `} alt="Lazareva Pećina 4" />
 
       <p>
         U Lazarevoj pećini nalazi se i veoma značajan arheološki lokalitet, gde
@@ -81,7 +86,7 @@ export const LazarevaPecina = () => {
         u pećini smatraju se zvanično najstarijim bakarnim nalazima u Srbiji.
       </p>
 
-      <img src={lazarevaPecina5} alt="Lazareva Pećina 5" />
+      <img srcSet={`${lazarevaPecina55} 400w, ${lazarevaPecina5} `} alt="Lazareva Pećina 5" />
       <p>
         Fosilna i danas izumrla fauna Lazareve pećine predstavljena je ostacima
         pećinskog medveda, pećinskog lava i pećinske hijene. Savremena fauna

@@ -1,8 +1,13 @@
-import prohorPcinjski1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/manastirProhoraPcinjskog1.jpg";
-import prohorPcinjski2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/manastirProhoraPcinjskog2.jpg";
-import prohorPcinjski3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/manastirProhoraPcinjskog3.jpg";
-import prohorPcinjski4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/manastirProhoraPcinjskog4.jpg";
-import prohorPcinjski5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/manastirProhoraPcinjskog5.jpg";
+import prohorPcinjski1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/desktop/manastirProhoraPcinjskog1.jpg";
+import prohorPcinjski2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/desktop/manastirProhoraPcinjskog2.jpg";
+import prohorPcinjski3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/desktop/manastirProhoraPcinjskog3.jpg";
+import prohorPcinjski4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/desktop/manastirProhoraPcinjskog4.jpg";
+import prohorPcinjski5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/desktop/manastirProhoraPcinjskog5.jpg";
+import prohorPcinjski11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/mobile/manastirProhoraPcinjskogM1.jpg";
+import prohorPcinjski22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/mobile/manastirProhoraPcinjskogM2.jpg";
+import prohorPcinjski33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/mobile/manastirProhoraPcinjskogM3.jpg";
+import prohorPcinjski44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/mobile/manastirProhoraPcinjskogM4.jpg";
+import prohorPcinjski55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/ManastirSvetogProhoraPcinjskog/mobile/manastirProhoraPcinjskogM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const ManastirProhoraPcinjskog = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pcinjskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={prohorPcinjski1} alt="Manastir Prohora Pčinjskog 1" />
+      <img srcSet={`${prohorPcinjski11} 400w, ${prohorPcinjski1} `} alt="Manastir Prohora Pčinjskog 1" />
 
       <h2>Manastir Prohora Pčinjskog</h2>
 
@@ -40,7 +45,7 @@ export const ManastirProhoraPcinjskog = () => {
         12. veka.
       </p>
 
-      <img src={prohorPcinjski2} alt="Manastir Prohora Pčinjskog 2" />
+      <img srcSet={`${prohorPcinjski22} 400w, ${prohorPcinjski2} `} alt="Manastir Prohora Pčinjskog 2" />
 
       <p>
         Prema rečima Stefana Prvovenčanog, Nemanja je u ratovima sa Vizantijom
@@ -60,7 +65,7 @@ export const ManastirProhoraPcinjskog = () => {
         oslikaju novi hram 1316. ili 1317. godine.
       </p>
 
-      <img src={prohorPcinjski3} alt="Manastir Prohora Pčinjskog 3" />
+      <img srcSet={`${prohorPcinjski33} 400w, ${prohorPcinjski3} `} alt="Manastir Prohora Pčinjskog 3" />
 
       <p>
         Posle Kosovske bitke 1454. godine, manastir su razorili Osmanlije, a
@@ -76,7 +81,7 @@ export const ManastirProhoraPcinjskog = () => {
         štamparija.
       </p>
 
-      <img src={prohorPcinjski4} alt="Manastir Prohora Pčinjskog 4" />
+      <img srcSet={`${prohorPcinjski44} 400w, ${prohorPcinjski4} `} alt="Manastir Prohora Pčinjskog 4" />
 
       <p>
         Još dva puta manastir je stradao od strane Turaka i Arnauta. U prvoj
@@ -95,7 +100,7 @@ export const ManastirProhoraPcinjskog = () => {
         oltaru.
       </p>
 
-      <img src={prohorPcinjski5} alt="Manastir Prohora Pčinjskog 5" />
+      <img srcSet={`${prohorPcinjski55} 400w, ${prohorPcinjski5} `} alt="Manastir Prohora Pčinjskog 5" />
 
       <p>
         Manastir je ponovo ušao u okvire srpske države 1912. godine. Tokom Prvog

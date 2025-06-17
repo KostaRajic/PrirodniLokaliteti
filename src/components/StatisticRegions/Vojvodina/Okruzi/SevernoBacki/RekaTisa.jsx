@@ -7,6 +7,7 @@ import tisa5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/Tisa
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { servernoBackiPathRoutes } from "./SevernoBackiPathRoutes";
 
 export const RekaTisa = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export const RekaTisa = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(servernoBackiPathRoutes.home)} />
       <header></header>
       <img src={tisa1} alt="Tisa 1" />
 

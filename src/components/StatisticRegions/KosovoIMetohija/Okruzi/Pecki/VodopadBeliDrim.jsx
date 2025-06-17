@@ -1,7 +1,11 @@
-import beliDrimVodopad1 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/vodopadBeliDrim1.jpg";
-import beliDrimVodopad2 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/vodopadBeliDrim2.jpg";
-import beliDrimVodopad3 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/vodopadBeliDrim3.jpg";
-import beliDrimVodopad4 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/vodopadBeliDrim4.jpg";
+import beliDrimVodopad1 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/desktop/vodopadBeliDrim1.jpg";
+import beliDrimVodopad2 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/desktop/vodopadBeliDrim2.jpg";
+import beliDrimVodopad3 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/desktop/vodopadBeliDrim3.jpg";
+import beliDrimVodopad4 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/desktop/vodopadBeliDrim4.jpg";
+import beliDrimVodopad11 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/mobile/MvodopadBeliDrim1.jpg";
+import beliDrimVodopad22 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/mobile/MvodopadBeliDrim2.jpg";
+import beliDrimVodopad33 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/mobile/MvodopadBeliDrim3.jpg";
+import beliDrimVodopad44 from "../../../../../assets/images/KosovoIMetohija/Pecki/VodopadBeliDrim/mobile/MvodopadBeliDrim4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const VodopadBeliDrim = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(peckiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={beliDrimVodopad1} alt="Vodopad Beli Drim 1" />
+      <img srcSet={`${beliDrimVodopad11} 400w, ${beliDrimVodopad1} `} alt="Vodopad Beli Drim 1" />
 
       <h2>Vodopad Beli Drim</h2>
 
@@ -35,7 +39,7 @@ export const VodopadBeliDrim = () => {
         240,8 m.
       </p>
 
-      <img src={beliDrimVodopad2} alt="Vodopad Beli Drim 2" />
+      <img srcSet={`${beliDrimVodopad22} 400w, ${beliDrimVodopad2} `} alt="Vodopad Beli Drim 2" />
 
       <p>
         Beli Drim teče prema istoku, pored Pećke banje, a zatim prima vodu od
@@ -46,7 +50,7 @@ export const VodopadBeliDrim = () => {
         Najveće naselje pored Belog Drima je Kline.
       </p>
 
-      <img src={beliDrimVodopad3} alt="Vodopad Beli Drim 3" />
+      <img srcSet={`${beliDrimVodopad33} 400w, ${beliDrimVodopad3} `} alt="Vodopad Beli Drim 3" />
 
       <p>
         Beli Drim ima mnoge značajne pritoke: desne pritoke su Pećka Bistrica,
@@ -54,7 +58,7 @@ export const VodopadBeliDrim = () => {
         Miruša, Rimnik, Topluga i Prizrensksa Bistrica.
       </p>
 
-      <img src={beliDrimVodopad4} alt="Vodopad Beli Drim 4" />
+      <img srcSet={`${beliDrimVodopad44} 400w, ${beliDrimVodopad4} `} alt="Vodopad Beli Drim 4" />
 
       <p>
         Sliv Belog Drima u Srbiji pokriva površinu od 4.360 km², dok je površina

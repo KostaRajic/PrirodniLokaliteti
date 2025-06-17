@@ -1,9 +1,15 @@
-import KnezMihailova1 from "../../../assets/images/Beograd/KnezMihailova/knezMihailova1.jpg";
-import KnezMihailova2 from "../../../assets/images/Beograd/KnezMihailova/knezMihailova2.jpg";
-import KnezMihailova3 from "../../../assets/images/Beograd/KnezMihailova/knezMihailova3.jpg";
-import KnezMihailova4 from "../../../assets/images/Beograd/KnezMihailova/knezMihailova4.jpg";
-import KnezMihailova5 from "../../../assets/images/Beograd/KnezMihailova/knezMihailova5.jpg";
-import KnezMihailova6 from "../../../assets/images/Beograd/KnezMihailova/knezMihailova6.jpg";
+import KnezMihailova1 from "../../../assets/images/Beograd/KnezMihailova/desktop/knezMihailova1.jpg";
+import KnezMihailova2 from "../../../assets/images/Beograd/KnezMihailova/desktop/knezMihailova2.jpg";
+import KnezMihailova3 from "../../../assets/images/Beograd/KnezMihailova/desktop/knezMihailova3.jpg";
+import KnezMihailova4 from "../../../assets/images/Beograd/KnezMihailova/desktop/knezMihailova4.jpg";
+import KnezMihailova5 from "../../../assets/images/Beograd/KnezMihailova/desktop/knezMihailova5.jpg";
+import KnezMihailova6 from "../../../assets/images/Beograd/KnezMihailova/desktop/knezMihailova6.jpg";
+import KnezMihailova11 from "../../../assets/images/Beograd/KnezMihailova/mobile/knezMihailovaM1.jpg";
+import KnezMihailova22 from "../../../assets/images/Beograd/KnezMihailova/mobile/knezMihailovaM2.jpg";
+import KnezMihailova33 from "../../../assets/images/Beograd/KnezMihailova/mobile/knezMihailovaM3.jpg";
+import KnezMihailova44 from "../../../assets/images/Beograd/KnezMihailova/mobile/knezMihailovaM4.jpg";
+import KnezMihailova55 from "../../../assets/images/Beograd/KnezMihailova/mobile/knezMihailovaM5.jpg";
+import KnezMihailova66 from "../../../assets/images/Beograd/KnezMihailova/mobile/knezMihailovaM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const KnezMihailova = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
-      <img src={KnezMihailova1} alt="Knez Mihailova 1" />
+      <img srcSet={`${KnezMihailova11} 400w, ${KnezMihailova1} `} alt="Knez Mihailova 1" />
 
       <h2>Knez Mihajlova</h2>
 
@@ -32,7 +38,7 @@ export const KnezMihailova = () => {
         Beogradske tvrđave, što je označilo kraj turske vladavine u Srbiji.
       </p>
 
-      <img src={KnezMihailova2} alt="Knez Mihailova 2" />
+      <img srcSet={`${KnezMihailova22} 400w, ${KnezMihailova2} `} alt="Knez Mihailova 2" />
 
       <p>
         Realizacija Josimovićevog plana započeta je već dve godine kasnije, a
@@ -51,7 +57,7 @@ export const KnezMihailova = () => {
         prema njegovom planu.
       </p>
 
-      <img src={KnezMihailova3} alt="Knez Mihailova 3" />
+      <img srcSet={`${KnezMihailova33} 400w, ${KnezMihailova3} `} alt="Knez Mihailova 3" />
 
       <p>
         Samo nekoliko kuća koje su u Kneza Mihailova građene pre Josimovićevog
@@ -69,7 +75,7 @@ export const KnezMihailova = () => {
         trgovinom, industrijom, bankarstvom i politikom.
       </p>
 
-      <img src={KnezMihailova4} alt="Knez Mihailova 4" />
+      <img srcSet={`${KnezMihailova44} 400w, ${KnezMihailova4} `} alt="Knez Mihailova 4" />
 
       <p>
         Gradnja velelepnih zdanja u Kneza Mihailova išla je brže od izgradnje
@@ -86,9 +92,8 @@ export const KnezMihailova = () => {
       </p>
 
       <img
-        src={KnezMihailova5}
+        srcSet={`${KnezMihailova55} 400w, ${KnezMihailova5} `}
         alt="Knez Mihailova 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Prema nekim zapisima, Kneza Mihailova je prva beogradska ulica koja je
@@ -99,9 +104,8 @@ export const KnezMihailova = () => {
       </p>
 
       <img
-        src={KnezMihailova6}
+        srcSet={`${KnezMihailova66} 400w, ${KnezMihailova6} `}
         alt="Knez Mihailova 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Potpuna rekonstrukcija Kneza Mihailova ulice izvedena je 1988. godine

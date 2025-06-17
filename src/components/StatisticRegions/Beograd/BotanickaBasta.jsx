@@ -1,9 +1,15 @@
-import botanickaBasta1 from "../../../assets/images/Beograd/BotanickaBasta/botanickaBasta2.jpg";
-import botanickaBasta2 from "../../../assets/images/Beograd/BotanickaBasta/botanickaBasta1.jpg";
-import botanickaBasta3 from "../../../assets/images/Beograd/BotanickaBasta/botanickaBasta3.jpg";
-import botanickaBasta4 from "../../../assets/images/Beograd/BotanickaBasta/botanickaBasta4.jpg";
-import botanickaBasta5 from "../../../assets/images/Beograd/BotanickaBasta/botanickaBasta5.jpg";
-import botanickaBasta6 from "../../../assets/images/Beograd/BotanickaBasta/botanickaBasta6.jpg";
+import botanickaBasta1 from "../../../assets/images/Beograd/BotanickaBasta/desktop/botanickaBasta2.jpg";
+import botanickaBasta2 from "../../../assets/images/Beograd/BotanickaBasta/desktop/botanickaBasta1.jpg";
+import botanickaBasta3 from "../../../assets/images/Beograd/BotanickaBasta/desktop/botanickaBasta3.jpg";
+import botanickaBasta4 from "../../../assets/images/Beograd/BotanickaBasta/desktop/botanickaBasta4.jpg";
+import botanickaBasta5 from "../../../assets/images/Beograd/BotanickaBasta/desktop/botanickaBasta5.jpg";
+import botanickaBasta6 from "../../../assets/images/Beograd/BotanickaBasta/desktop/botanickaBasta6.jpg";
+import botanickaBasta11 from "../../../assets/images/Beograd/BotanickaBasta/mobile/botanickaBastaM2.jpg";
+import botanickaBasta22 from "../../../assets/images/Beograd/BotanickaBasta/mobile/botanickaBastaM1.jpg";
+import botanickaBasta33 from "../../../assets/images/Beograd/BotanickaBasta/mobile/botanickaBastaM3.jpg";
+import botanickaBasta44 from "../../../assets/images/Beograd/BotanickaBasta/mobile/botanickaBastaM4.jpg";
+import botanickaBasta55 from "../../../assets/images/Beograd/BotanickaBasta/mobile/botanickaBastaM5.jpg";
+import botanickaBasta66 from "../../../assets/images/Beograd/BotanickaBasta/mobile/botanickaBastaM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const BotanickaBata = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
-      <img src={botanickaBasta2} alt="Botancika basta 1" />
+      <img srcSet={`${botanickaBasta22} 400w, ${botanickaBasta2} `} alt="Botancika basta 1" />
 
       <h2>Botanička Bašta - Jevremovac</h2>
 
@@ -33,7 +39,7 @@ export const BotanickaBata = () => {
         Jevremovac.
       </p>
 
-      <img src={botanickaBasta1} alt="Botancika basta 2" />
+      <img srcSet={`${botanickaBasta11} 400w, ${botanickaBasta1} `} alt="Botancika basta 2" />
 
       <p>
         Staklena bašta, smeštena u severoistočnom delu Botaničke bašte,
@@ -52,7 +58,7 @@ export const BotanickaBata = () => {
         godine.
       </p>
 
-      <img src={botanickaBasta3} alt="Botancika basta 3" />
+      <img srcSet={`${botanickaBasta33} 400w, ${botanickaBasta3} `} alt="Botancika basta 3" />
 
       <p>
         Japanski vrtovi odražavaju estetski princip jednostavnosti, gde linije i
@@ -75,7 +81,7 @@ export const BotanickaBata = () => {
         podsećaju na neizbežnu prolaznost života, ciklus rođenja i smrti.
       </p>
 
-      <img src={botanickaBasta4} alt="Botancika basta staklenik 1" />
+      <img srcSet={`${botanickaBasta44} 400w, ${botanickaBasta4} `} alt="Botancika basta staklenik 1" />
 
       <p>
         Unutrašnjost staklene Botaničke bašte Jevremovac prava je oaza u kojoj
@@ -92,9 +98,8 @@ export const BotanickaBata = () => {
       </p>
 
       <img
-        src={botanickaBasta5}
+       srcSet={`${botanickaBasta55} 400w, ${botanickaBasta5} `}
         alt="Botancika basta  staklenik 2"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Botanička bašta se prostire na površini od 5 hektara, u okviru kojih se
@@ -110,9 +115,8 @@ export const BotanickaBata = () => {
       </p>
 
       <img
-        src={botanickaBasta6}
-        alt="Kalemegdan 5"
-        style={{ marginBottom: "-10px" }}
+        srcSet={`${botanickaBasta66} 400w, ${botanickaBasta6} `}
+        alt="Botancika basta Beograd"
       />
       <p>
         U severnom delu staklenika, sušnu klimu podsećaju sukulenti i kaktusi.

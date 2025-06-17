@@ -1,9 +1,15 @@
-import trgRepublike1 from "../../../assets/images/Beograd/TrgRepublike/trgRepublike1.jpg";
-import trgRepublike2 from "../../../assets/images/Beograd/TrgRepublike/trgRepublike2.jpg";
-import trgRepublike3 from "../../../assets/images/Beograd/TrgRepublike/trgRepublike3.jpg";
-import trgRepublike4 from "../../../assets/images/Beograd/TrgRepublike/trgRepublike4.jpg";
-import trgRepublike5 from "../../../assets/images/Beograd/TrgRepublike/trgRepublike5.jpg";
-import trgRepublike6 from "../../../assets/images/Beograd/TrgRepublike/trgRepublike6.jpg";
+import trgRepublike1 from "../../../assets/images/Beograd/TrgRepublike/desktop/trgRepublike1.jpg";
+import trgRepublike2 from "../../../assets/images/Beograd/TrgRepublike/desktop/trgRepublike2.jpg";
+import trgRepublike3 from "../../../assets/images/Beograd/TrgRepublike/desktop/trgRepublike3.jpg";
+import trgRepublike4 from "../../../assets/images/Beograd/TrgRepublike/desktop/trgRepublike4.jpg";
+import trgRepublike5 from "../../../assets/images/Beograd/TrgRepublike/desktop/trgRepublike5.jpg";
+import trgRepublike6 from "../../../assets/images/Beograd/TrgRepublike/desktop/trgRepublike6.jpg";
+import trgRepublike11 from "../../../assets/images/Beograd/TrgRepublike/mobile/trgRepublikeM1.jpg";
+import trgRepublike22 from "../../../assets/images/Beograd/TrgRepublike/mobile/trgRepublikeM2.jpg";
+import trgRepublike33 from "../../../assets/images/Beograd/TrgRepublike/mobile/trgRepublikeM3.jpg";
+import trgRepublike44 from "../../../assets/images/Beograd/TrgRepublike/mobile/trgRepublikeM4.jpg";
+import trgRepublike55 from "../../../assets/images/Beograd/TrgRepublike/mobile/trgRepublikeM5.jpg";
+import trgRepublike66 from "../../../assets/images/Beograd/TrgRepublike/mobile/trgRepublikeM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -22,11 +28,11 @@ export const TrgRepublike = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={trgRepublike1} alt="Trg Republike 1" />
+      <img srcSet={`${trgRepublike11} 400w, ${trgRepublike1} `} alt="Trg Republike 1" />
 
       <h2 style={{ color: "white", top: "-30px" }}>Trg Republike</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px"}}>
         Glavni gradski trg prostire se između "Gradske kafane", bioskopa
         "Jadran", Narodnog pozorišta i Centralnog kluba Vojske Srbije. Danšnji
         izgled trga formiran je nakon rušenja Stambol-kapije 1866. godine i
@@ -42,9 +48,9 @@ export const TrgRepublike = () => {
         srpskog ustanka.
       </p>
 
-      <img src={trgRepublike2} alt="Trg Republike  2" />
+      <img srcSet={`${trgRepublike22} 400w, ${trgRepublike2} `} alt="Trg Republike  2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         U čast ovog događaja, ulica u blizini je dobila njegovo ime, a
         postavljen je i spomenik. Nakon što je srpska vlast preuzela kontrolu i
         srušila Stambol-kapiju, prostor današnjeg Trga Republike ostao je
@@ -58,9 +64,8 @@ export const TrgRepublike = () => {
       </p>
 
       <img
-        src={trgRepublike6}
+        srcSet={`${trgRepublike66} 400w, ${trgRepublike6} `}
         alt="Narodni muzej"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Narodni muzej u Beogradu je jedno od najvažnijih kulturnih i istorijskih
@@ -82,9 +87,9 @@ export const TrgRepublike = () => {
         i prateće programe.
       </p>
 
-      <img src={trgRepublike4} alt="Narodno Pozorište" />
+      <img srcSet={`${trgRepublike44} 400w, ${trgRepublike4} `} alt="Narodno Pozorište" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Narodno pozorište u Beogradu je jedan od najvažnijih kulturnih i
         istorijskih simbola grada, smešteno na Trgu Republike. Osnovano 1868.
         godine, ovo impozantno zdanje predstavlja centar srpske dramske,
@@ -101,9 +106,9 @@ export const TrgRepublike = () => {
         zgradu i istražiti njen arhitektonski šarm.
       </p>
 
-      <img src={trgRepublike3} alt="Kolarac" />
+      <img srcSet={`${trgRepublike33} 400w, ${trgRepublike3} `} alt="Kolarac" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         U malom parku pored Narodnog pozorišta, sve do Drugog svetskog rata,
         nalazile su se kafana i bioskop "Kolarac" (u zgradi koja je pripadala
         trgovcu i dobrotvoru Iliji Milosavljeviću Kolarcu). Palata "Riunione",
@@ -123,9 +128,8 @@ export const TrgRepublike = () => {
       
 
       <img
-        src={trgRepublike5}
+        srcSet={`${trgRepublike55} 400w, ${trgRepublike5} `}
         alt="Trg Republike koncerti"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Trg Republike je jedno od najpoznatijih i najposećenijih mesta u

@@ -1,8 +1,13 @@
-import ravanica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/manastirRavanica1.jpg";
-import ravanica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/manastirRavanica2.jpg";
-import ravanica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/manastirRavanica3.jpg";
-import ravanica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/manastirRavanica4.jpg";
-import ravanica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/manastirRavanica5.jpg";
+import ravanica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/desktop/manastirRavanica1.jpg";
+import ravanica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/desktop/manastirRavanica2.jpg";
+import ravanica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/desktop/manastirRavanica3.jpg";
+import ravanica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/desktop/manastirRavanica4.jpg";
+import ravanica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/desktop/manastirRavanica5.jpg";
+import ravanica11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/mobile/MmanastirRavanica1.jpg";
+import ravanica22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/mobile/MmanastirRavanica2.jpg";
+import ravanica33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/mobile/MmanastirRavanica3.jpg";
+import ravanica44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/mobile/MmanastirRavanica4.jpg";
+import ravanica55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirRavanica/mobile/MmanastirRavanica5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const ManastirRavanica = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={ravanica1} alt="Manastir Ravanica 1" />
+      <img srcSet={`${ravanica11} 400w, ${ravanica1} `} alt="Manastir Ravanica 1" />
 
       <h2 style={{ color: "white" }}>Manastir Ravanica</h2>
 
@@ -44,7 +49,7 @@ export const ManastirRavanica = () => {
         godina, kao i svi drugi ugledni manastiri.
       </p>
 
-      <img src={ravanica2} alt="Manastir Ravanica 2" />
+      <img srcSet={`${ravanica22} 400w, ${ravanica2} `} alt="Manastir Ravanica 2" />
 
       <p>
         Kosovska bitka (1389.) u kojoj su oba vladara izgubila život,
@@ -67,7 +72,7 @@ export const ManastirRavanica = () => {
         sačuvano u narodnoj poeziji i predanjima.
       </p>
 
-      <img src={ravanica3} alt="Manastir Ravanica 3" />
+      <img srcSet={`${ravanica33} 400w, ${ravanica3} `} alt="Manastir Ravanica 3" />
 
       <p>
         U skladu sa svojim stvarnim položajem, knez Lazar ističe svoju
@@ -90,7 +95,7 @@ export const ManastirRavanica = () => {
         pojedinih učitelja, daskala, koji su delovali tamo.
       </p>
 
-      <img src={ravanica4} alt="Manastir Ravanica 4" />
+      <img srcSet={`${ravanica44} 400w, ${ravanica4} `} alt="Manastir Ravanica 4" />
 
       <p>
         Zbog svoje neumorne aktivnosti u očuvanju narodnog duha i otpora,
@@ -108,7 +113,7 @@ export const ManastirRavanica = () => {
         Jefimijin pokrov knezu Lazaru.
       </p>
 
-      <img src={ravanica5} alt="Manastir Ravanica 5" />
+      <img srcSet={`${ravanica55} 400w, ${ravanica5} `} alt="Manastir Ravanica 5" />
 
       <p>
         Ravanička crkva, prema svojim arhitektonskim i umetničkim

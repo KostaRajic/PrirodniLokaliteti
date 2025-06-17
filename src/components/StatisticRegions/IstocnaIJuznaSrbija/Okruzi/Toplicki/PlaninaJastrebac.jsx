@@ -1,10 +1,17 @@
-import jastrebac1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/jastrebac1.jpg";
-import jastrebac2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/jastrebac2.jpg";
-import jastrebac3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/jastrebac3.jpg";
-import jastrebac4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/jastrebac4.jpg";
-import jastrebac5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/jastrebac5.jpg";
-import jastrebac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/jastrebac6.jpg";
-import jastrebac7 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/jastrebac7.jpg";
+import jastrebac1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/desktop/jastrebac1.jpg";
+import jastrebac2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/desktop/jastrebac2.jpg";
+import jastrebac3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/desktop/jastrebac3.jpg";
+import jastrebac4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/desktop/jastrebac4.jpg";
+import jastrebac5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/desktop/jastrebac5.jpg";
+import jastrebac6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/desktop/jastrebac6.jpg";
+import jastrebac7 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/desktop/jastrebac7.jpg";
+import jastrebac11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/mobile/jastrebacM1.jpg";
+import jastrebac22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/mobile/jastrebacM2.jpg";
+import jastrebac33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/mobile/jastrebacM3.jpg";
+import jastrebac44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/mobile/jastrebacM4.jpg";
+import jastrebac55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/mobile/jastrebacM5.jpg";
+import jastrebac66 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/mobile/jastrebacM6.jpg";
+import jastrebac77 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/PlaninaJastrebac/mobile/jastrebacM7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +26,7 @@ export const PlaninaJastrebac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
-      <img src={jastrebac1} alt="Planina Jasterbac 1" />
+      <img srcSet={`${jastrebac11} 400w, ${jastrebac1} `} alt="Planina Jasterbac 1" />
 
       <h2>Planina Jasterbac</h2>
 
@@ -30,7 +37,7 @@ export const PlaninaJastrebac = () => {
         je od paleozojskih škrilja i magmatskih stena.
       </p>
 
-      <img src={jastrebac6} alt="Planina Jasterbac 2" />
+      <img srcSet={`${jastrebac66} 400w, ${jastrebac6} `} alt="Planina Jasterbac 2" />
 
       <p>
         Masiv Jastrepcu je odvojen od Kopaonika Jankovom klisurom na reci
@@ -58,7 +65,7 @@ export const PlaninaJastrebac = () => {
         </p>
 
         <img
-          src={jastrebac7}
+          srcSet={`${jastrebac77} 400w, ${jastrebac7} `}
           alt="Majorova česma"
           className="fruskaGoraClassImg"
         />
@@ -69,7 +76,7 @@ export const PlaninaJastrebac = () => {
         style={{ display: "flex", paddingBottom: "50px" }}
       >
         <img
-          src={jastrebac2}
+          srcSet={`${jastrebac22} 400w, ${jastrebac2} `}
           alt="Majorova česma 2"
           className="fruskaGoraClassImg"
         />
@@ -87,7 +94,7 @@ export const PlaninaJastrebac = () => {
         </p>
       </div>
 
-      <img src={jastrebac4} alt="Mečje štene" />
+      <img srcSet={`${jastrebac44} 400w, ${jastrebac4} `} alt="Mečje štene" />
 
       <p>
         Omiljene planinarske rute uključuju one do „Bele Stene“ (1257 m),
@@ -104,7 +111,7 @@ export const PlaninaJastrebac = () => {
         bogatstvu ove planine brojnim i autohtonim divljim životinjama.
       </p>
 
-      <img src={jastrebac5} alt="Bresničko Jezero" />
+      <img srcSet={`${jastrebac55} 400w, ${jastrebac5} `} alt="Bresničko Jezero" />
 
       <p>
         Brestovačko jezero je veštačko jezero koje se nalazi na planini
@@ -121,7 +128,7 @@ export const PlaninaJastrebac = () => {
         znamenitosti.
       </p>
 
-      <img src={jastrebac3} alt="Planina Jastrebac" />
+      <img srcSet={`${jastrebac33} 400w, ${jastrebac3} `} alt="Planina Jastrebac" />
 
       <p>
         Jastrebac se odlikuje bogatom listopadnom šumom, pretežno bukvom i

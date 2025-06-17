@@ -1,7 +1,11 @@
-import banjska1 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/banjska1.jpg";
-import banjska2 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/banjska2.jpg";
-import banjska3 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/banjska3.jpg";
-import banjska4 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/banjska4.jpg";
+import banjska1 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/desktop/banjska1.jpg";
+import banjska2 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/desktop/banjska2.jpg";
+import banjska3 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/desktop/banjska3.jpg";
+import banjska4 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/desktop/banjska4.jpg";
+import banjska11 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/mobile/Mbanjska1.jpg";
+import banjska22 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/mobile/Mbanjska2.jpg";
+import banjska33 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/mobile/Mbanjska3.jpg";
+import banjska44 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirBanjska/mobile/Mbanjska4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const ManastirBanjska = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(mitrovackiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={banjska1} alt="Crkva Svetog Stefana Manastir Banjska" />
+      <img srcSet={`${banjska11} 400w, ${banjska1} `} alt="Crkva Svetog Stefana Manastir Banjska" />
 
       <h2>Manastir Banjska</h2>
 
@@ -36,7 +40,7 @@ export const ManastirBanjska = () => {
         čuvara kraljevske riznice.
       </p>
 
-      <img src={banjska2} alt="Manastir Banjska 2" />
+      <img srcSet={`${banjska22} 400w, ${banjska2} `} alt="Manastir Banjska 2" />
 
       <p>
         Zidanje crkve posvećene Svetom Stefanu, zaštitniku svih Nemanjića i
@@ -50,7 +54,7 @@ export const ManastirBanjska = () => {
         ukrasu", kako tvrde istoričari umetnosti.
       </p>
 
-      <img src={banjska3} alt="Manastir Banjska 3" />
+      <img srcSet={`${banjska33} 400w, ${banjska3} `} alt="Manastir Banjska 3" />
 
       <p>
         Po svojoj arhitekturi, manastir Banjska spada u grupu crkava raškog
@@ -73,7 +77,7 @@ export const ManastirBanjska = () => {
         očuvano samo nekoliko izbledelih fragmenata.
       </p>
 
-      <img src={banjska4} alt="Manastir Banjska 4" />
+      <img srcSet={`${banjska44} 400w, ${banjska4} `} alt="Manastir Banjska 4" />
 
       <p>
         Kada se kralj Milutin 1321. godine упокојио у свом двору у Неродимљу, а

@@ -1,17 +1,31 @@
-import kragujevac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac1.jpg";
-import kragujevac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac2.jpg";
-import kragujevac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac3.jpg";
-import kragujevac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac4.jpg";
-import kragujevac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac5.jpg";
-import kragujevac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac6.jpg";
-import kragujevac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac7.jpg";
-import kragujevac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac8.jpg";
-import kragujevac9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac9.jpg";
-import kragujevac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac1MV.jpg";
-import kragujevac12 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac2MV.jpg";
-import kragujevac13 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac3MV.jpg";
-import kragujevac14 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac4MV.jpg";
-import kragujevac15 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac5MV.jpg";
+import kragujevac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac1.jpg";
+import kragujevac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac2.jpg";
+import kragujevac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac3.jpg";
+import kragujevac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac4.jpg";
+import kragujevac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac5.jpg";
+import kragujevac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac6.jpg";
+import kragujevac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac7.jpg";
+import kragujevac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac8.jpg";
+import kragujevac9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac9.jpg";
+import kragujevac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac1MV.jpg";
+import kragujevac12 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac2MV.jpg";
+import kragujevac13 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac3MV.jpg";
+import kragujevac14 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac4MV.jpg";
+import kragujevac15 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac5MV.jpg";
+import kragujevac110 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac1.jpg";
+import kragujevac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac2.jpg";
+import kragujevac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac3.jpg";
+import kragujevac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac4.jpg";
+import kragujevac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac5.jpg";
+import kragujevac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac6.jpg";
+import kragujevac77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac7.jpg";
+import kragujevac88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac8.jpg";
+import kragujevac99 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac9.jpg";
+import kragujevac111 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac1MV.jpg";
+import kragujevac122 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac2MV.jpg";
+import kragujevac133 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac3MV.jpg";
+import kragujevac144 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac4MV.jpg";
+import kragujevac155 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/mobile/Mkragujevac5MV.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -78,27 +92,32 @@ export const Kragujevac = () => {
   const images = [
     {
       name: "Stara (Pridvorna crkva)",
-      src: kragujevac11,
+      desktopSrc: kragujevac11,
+      mobileSrc: kragujevac110,
       alt: "Stara (Pridvorna crkva)",
     },
     {
       name: "Konak Kneza Mihaila",
-      src: kragujevac12,
+      desktopSrc: kragujevac12,
+      mobileSrc: kragujevac122,
       alt: "Konak Kneza Mihaila",
     },
     {
       name: "Zgrada Gimnazije",
-      src: kragujevac13,
+      desktopSrc: kragujevac13,
+      mobileSrc: kragujevac133,
       alt: "Zgrada Gimnazije",
     },
     {
       name: "Spomenik palim Sumadincima",
-      src: kragujevac14,
+      desktopSrc: kragujevac14,
+      mobileSrc: kragujevac144,
       alt: "Spomenik palim Sumadincima",
     },
     {
       name: "Zgrada stare livnice",
-      src: kragujevac15,
+      desktopSrc: kragujevac15,
+      mobileSrc: kragujevac155,
       alt: "Zgrada stare livnice",
     },
   ];
@@ -132,7 +151,7 @@ export const Kragujevac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <img src={kragujevac1} alt="Kragujevac 1" />
+      <img srcSet={`${kragujevac11} 400w, ${kragujevac1} `} alt="Kragujevac 1" />
 
       <h2>Kragujevac</h2>
 
@@ -151,7 +170,7 @@ export const Kragujevac = () => {
         grada, u ataru sela Drača.
       </p>
 
-      <img src={kragujevac2} alt="Kragujevac 2" />
+      <img srcSet={`${kragujevac22} 400w, ${kragujevac2} `} alt="Kragujevac 2" />
 
       <p>
         Kragujevac se izdvaja po povoljnoj demografskoj situaciji, sa pozitivnim
@@ -173,7 +192,7 @@ export const Kragujevac = () => {
         područja, već i iz drugih delova zemlje.
       </p>
 
-      <img src={kragujevac3} alt="Kragujevac 3" />
+      <img srcSet={`${kragujevac33} 400w, ${kragujevac3} `} alt="Kragujevac 3" />
 
       <p>
         Kragujevac se prvi put pominje 1476. godine, u vreme turskog osvajanja,
@@ -213,7 +232,7 @@ export const Kragujevac = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -243,7 +262,7 @@ export const Kragujevac = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   className="kgImages"
@@ -278,7 +297,7 @@ export const Kragujevac = () => {
       </p>
 
       <img
-        src={kragujevac4}
+        srcSet={`${kragujevac44} 400w, ${kragujevac4} `}
         alt="Spomen park „Kragujevački oktobar“"
       />
 
@@ -294,7 +313,7 @@ export const Kragujevac = () => {
         profesorima.
       </p>
 
-      <img src={kragujevac5} alt="Šumarničko jezero" />
+      <img srcSet={`${kragujevac55} 400w, ${kragujevac5} `} alt="Šumarničko jezero" />
       <p>
         Šumarničko jezero ima dekorativni značaj i podignuto je s ciljem
         uljepšavanja spomen parka Šumarice. Ovo jezero je veoma posećeno,
@@ -304,7 +323,7 @@ export const Kragujevac = () => {
         akumulira oko 800.000 m³ vode, a zauzima površinu od oko 22 hektara.
       </p>
 
-      <img src={kragujevac6} alt="Veliki park u Kragujevac" />
+      <img srcSet={`${kragujevac66} 400w, ${kragujevac6} `} alt="Veliki park u Kragujevac" />
       <p>
         Veliki park je omiljeno mesto za šetnju Kragujevčana svih generacija.
         Osnovan 1898. godine, park je potpuno renoviran povodom svog 110.
@@ -316,7 +335,7 @@ export const Kragujevac = () => {
         i veliki broj ugostiteljskih objekata.
       </p>
 
-      <img src={kragujevac7} alt="Spomen-muzej „21. oktobar“ u Kragujevcu" />
+      <img srcSet={`${kragujevac77} 400w, ${kragujevac7} `} alt="Spomen-muzej „21. oktobar“ u Kragujevcu" />
       <p>
         Spomen-muzej „21. oktobar“ u Kragujevcu je posvećen sećanju na žrtve
         masovnog streljanja koje se desilo 21. oktobra 1941. godine, kada su
@@ -331,7 +350,7 @@ export const Kragujevac = () => {
         đacima i profesorima.
       </p>
 
-      <img src={kragujevac8} alt="Jezero Bubanj" />
+      <img srcSet={`${kragujevac88} 400w, ${kragujevac8} `} alt="Jezero Bubanj" />
       <p>
         Jezero Bubanj nalazi se na samo kilometar od centra grada i, iako se
         smatra veštačkim, formirano je prirodnim putem. Smešteno je na prostoru
@@ -345,7 +364,7 @@ export const Kragujevac = () => {
         jezero Bubanj predstavlja značajnu prirodnu vrednost za Kragujevac.
       </p>
 
-      <img src={kragujevac9} alt="Eko park Ilina voda" />
+      <img srcSet={`${kragujevac99} 400w, ${kragujevac9} `} alt="Eko park Ilina voda" />
       <p>
         Eko park Ilina voda nalazi se u kragujevačkom naselju Ilina voda i
         poznat je kao prvi ekološki park u Srbiji. Otvoren je 1900. godine, što

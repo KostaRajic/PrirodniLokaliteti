@@ -1,8 +1,13 @@
-import planinaRudnik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/rudnik1.jpg";
-import planinaRudnik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/rudnik2.jpg";
-import planinaRudnik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/rudnik3.jpg";
-import planinaRudnik4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/rudnik4.jpg";
-import planinaRudnik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/rudnik5.jpg";
+import planinaRudnik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/desktop/rudnik1.jpg";
+import planinaRudnik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/desktop/rudnik2.jpg";
+import planinaRudnik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/desktop/rudnik3.jpg";
+import planinaRudnik4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/desktop/rudnik4.jpg";
+import planinaRudnik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/desktop/rudnik5.jpg";
+import planinaRudnik11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/mobile/Mrudnik1.jpg";
+import planinaRudnik22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/mobile/Mrudnik2.jpg";
+import planinaRudnik33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/mobile/Mrudnik3.jpg";
+import planinaRudnik44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/mobile/Mrudnik4.jpg";
+import planinaRudnik55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/PlaninaRudnik/mobile/Mrudnik5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const PlaninaRudnik = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={planinaRudnik1} alt="Planina Rudnik 1" />
+      <img srcSet={`${planinaRudnik11} 400w, ${planinaRudnik1} `} alt="Planina Rudnik 1" />
 
       <h2 style={{color: 'white'}}>Planina Rudnik</h2>
 
@@ -32,7 +37,7 @@ export const PlaninaRudnik = () => {
         mleč.
       </p>
 
-      <img src={planinaRudnik2} alt="Planina Rudnik 2" />
+      <img srcSet={`${planinaRudnik22} 400w, ${planinaRudnik2} `} alt="Planina Rudnik 2" />
 
       <p>
         Zahvaljujući izuzetnoj šumovitosti, prirodnim stazama zdravlja i blizini
@@ -47,7 +52,7 @@ export const PlaninaRudnik = () => {
         Jerininog grada.
       </p>
 
-      <img src={planinaRudnik4} alt="Planina Rudnik 3" />
+      <img srcSet={`${planinaRudnik44} 400w, ${planinaRudnik4} `} alt="Planina Rudnik 3" />
 
       <p>
         Planina Rudnik zimi je pravo utočište za ljubitelje prirode i zimskih
@@ -60,7 +65,7 @@ export const PlaninaRudnik = () => {
         najvišeg vrha Rudnika, dok je sve prekriveno snegom.
       </p>
 
-      <img src={planinaRudnik3} alt="Planina Rudnik 4" />
+      <img srcSet={`${planinaRudnik33} 400w, ${planinaRudnik3} `} alt="Planina Rudnik 4" />
 
       <p>
         Planina je poznata i po čistim izvorima vode, a zimi njihova tiha
@@ -70,7 +75,7 @@ export const PlaninaRudnik = () => {
         pruža spokoj i priliku za opuštanje daleko od svakodnevnog stresa.
       </p>
 
-      <img src={planinaRudnik5} alt="Planina Rudnik 5" />
+      <img srcSet={`${planinaRudnik55} 400w, ${planinaRudnik5} `} alt="Planina Rudnik 5" />
 
       <p>
         Između vrha Javor i Cvijićevog vrha, sa njegove jugoistočne strane,

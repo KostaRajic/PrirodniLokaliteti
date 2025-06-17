@@ -1,7 +1,11 @@
-import podgradje1 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/tvrdjavaPodgradja1.jpg";
-import podgradje2 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/tvrdjavaPodgradja2.jpg";
-import podgradje3 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/tvrdjavaPodgradja3.jpg";
-import podgradje4 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/tvrdjavaPodgradja4.jpg";
+import podgradje1 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/desktop/tvrdjavaPodgradja1.jpg";
+import podgradje2 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/desktop/tvrdjavaPodgradja2.jpg";
+import podgradje3 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/desktop/tvrdjavaPodgradja3.jpg";
+import podgradje4 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/desktop/tvrdjavaPodgradja4.jpg";
+import podgradje11 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/mobile/MtvrdjavaPodgradja1.jpg";
+import podgradje22 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/mobile/MtvrdjavaPodgradja2.jpg";
+import podgradje33 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/mobile/MtvrdjavaPodgradja3.jpg";
+import podgradje44 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/PodgradjaTvrdjava/mobile/MtvrdjavaPodgradja4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const TvrdjavaPodgradje = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(gnjilanskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={podgradje1} alt="Tvrđava Podgrađe" />
+      <img srcSet={`${podgradje11} 400w, ${podgradje1} `} alt="Tvrđava Podgrađe" />
 
       <h2>Tvrđava Podgrađe</h2>
 
@@ -39,7 +43,7 @@ export const TvrdjavaPodgradje = () => {
         sačuvane do visine od 4 metra.
       </p>
 
-      <img src={podgradje2} alt="Tvrđava Podgrađe 2" />
+      <img srcSet={`${podgradje22} 400w, ${podgradje2} `} alt="Tvrđava Podgrađe 2" />
 
       <p>
         Tvrđava Podgrađe se nalazi 10 km jugoistočno od Gnjilana, odnosno 1 km
@@ -53,7 +57,7 @@ export const TvrdjavaPodgradje = () => {
         nosi portret Otacije Sever, prve žene cara Filipa.
       </p>
 
-      <img src={podgradje3} alt="Tvrđava Podgrađe 3" />
+      <img srcSet={`${podgradje33} 400w, ${podgradje3} `} alt="Tvrđava Podgrađe 3" />
 
       <p>
         Tvrđava Pogragja ima izgled nepravilnog pentagona, dok južna strana
@@ -66,7 +70,7 @@ export const TvrdjavaPodgradje = () => {
         imaju simetrične kvadratne dimenzije 8x8 metara.
       </p>
 
-      <img src={podgradje4} alt="Tvrđava Podgrađe 4" />
+      <img srcSet={`${podgradje44} 400w, ${podgradje4} `} alt="Tvrđava Podgrađe 4" />
 
       <p>
         Takođe, deo tvrđave čine i manji tornjevi, postavljeni na njenim

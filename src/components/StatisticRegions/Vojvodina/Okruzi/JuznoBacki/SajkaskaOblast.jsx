@@ -1,12 +1,18 @@
-import sajkaska1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/srp koviljsko petrovaradinski rit.jpg";
-import sajkaska2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/titelskiBreg.jpg";
-import sajkaska3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/manastirSvetihArhangela.jpg";
-import sajkaska4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/kapadokija.jpg";
-import sajkaska5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/krcedinska ada.jpg";
+import sajkaska1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/desktop/srp koviljsko petrovaradinski rit.jpg";
+import sajkaska2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/desktop/titelskiBreg.jpg";
+import sajkaska3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/desktop/manastirSvetihArhangela.jpg";
+import sajkaska4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/desktop/kapadokija.jpg";
+import sajkaska5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/desktop/krcedinska ada.jpg";
+import sajkaska11 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/mobile/Msrp koviljsko petrovaradinski rit.jpg";
+import sajkaska22 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/mobile/MtitelskiBreg.jpg";
+import sajkaska33 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/mobile/MmanastirSvetihArhangela.jpg";
+import sajkaska44 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/mobile/Mkapadokija.jpg";
+import sajkaska55 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SajkaskaOblast/mobile/Mkrcedinska ada.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { JuznoBackiPathRoutes } from "./JuznoBackiPathRoutes";
 
 export const SajkaskaOblast = () => {
   const navigate = useNavigate();
@@ -14,13 +20,13 @@ export const SajkaskaOblast = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(JuznoBackiPathRoutes.home)} />
       <header></header>
-      <img src={sajkaska1} alt="Šajkaška oblast" />
+      <img srcSet={`${sajkaska11} 400w, ${sajkaska1} `} alt="Šajkaška oblast" />
 
       <h2>Šajkaška oblast</h2>
 
-      <p style={{ paddingTop: "50px"}}>
+      <p>
         Šajkaška oblast je bila i srce stvaranja Srpske Vojvodine. U toku
         revolucije 1848. godine, Šajkaška je bila ključ organizovanja srpske
         odbrane od mađarskih napada i to ne samo zbog generacija Srba koje su
@@ -35,9 +41,9 @@ export const SajkaskaOblast = () => {
         proleća u sve većem broju.
       </p>
 
-      <img src={sajkaska2} alt="Titelski Breg" />
+      <img srcSet={`${sajkaska22} 400w, ${sajkaska2} `} alt="Titelski Breg" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Titelski breg je lesna zaravan i breg u pokrajini Vojvodini, na severu
         Srbije. Nalazi se u jugoistočnoj Bačkoj (u regiji Šajkaška), između
         gradića Titela na jugu, sela Lok, Vilovo i Šajkaš na jugozapadu, sela
@@ -51,9 +57,9 @@ export const SajkaskaOblast = () => {
         Bačkoj, koja je uglavnom ravnica.
       </p>
 
-      <img src={sajkaska3} alt="Manastir Svetih Arhangela" />
+      <img srcSet={`${sajkaska33} 400w, ${sajkaska3} `} alt="Manastir Svetih Arhangela" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Manastir Sv. Arhangela Mihaila u Kovilju je jedan od najstarijih i
         najznačajnijih manastira u Srbiji. Nalazi se u blizini Novog Sada, u
         selu Kovilj, na levoj obali reke Dunav, i pripada Eparhiji bačkoj Srpske
@@ -66,8 +72,8 @@ export const SajkaskaOblast = () => {
         učestvuju u bogosluženjima.
       </p>
 
-      <img src={sajkaska4} alt="Srpska kapadokija" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${sajkaska44} 400w, ${sajkaska4} `} alt="Srpska kapadokija" />
+      <p>
         Dobrodošli u „Srpsku Kapadokiju“, novu turističku atrakciju u Srbiji,
         koja donosi duh egzotike u naše krajeve. Zamislite moment trenutka kada
         se uzdižete, osećaj slobode dok lagano prelazite preko ritova, reke,
@@ -79,9 +85,8 @@ export const SajkaskaOblast = () => {
       </p>
 
       <img
-        src={sajkaska5}
+        srcSet={`${sajkaska55} 400w, ${sajkaska5} `}
         alt="Krcedinska Ada"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Krčedinska ada je prirodno rečno ostrvo, nastalo na prostoru takozvanog

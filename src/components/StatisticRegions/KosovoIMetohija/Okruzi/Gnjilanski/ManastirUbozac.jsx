@@ -1,7 +1,11 @@
-import ubozac1 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/ubozac1.jpg";
-import ubozac2 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/ubozac2.jpg";
-import ubozac3 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/ubozac3.jpg";
-import ubozac4 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/ubozac4.jpg";
+import ubozac1 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/desktop/ubozac1.jpg";
+import ubozac2 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/desktop/ubozac2.jpg";
+import ubozac3 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/desktop/ubozac3.jpg";
+import ubozac4 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/desktop/ubozac4.jpg";
+import ubozac11 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/mobile/Mubozac1.jpg";
+import ubozac22 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/mobile/Mubozac2.jpg";
+import ubozac33 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/mobile/Mubozac3.jpg";
+import ubozac44 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/ManastirUbozac/mobile/Mubozac4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +24,7 @@ export const ManastirUbozac = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={ubozac1} alt="Ostaci Manastira Ubožac" />
+      <img srcSet={`${ubozac11} 400w, ${ubozac1} `} alt="Ostaci Manastira Ubožac" />
 
       <h2>Ostaci Manastira Ubožac</h2>
 
@@ -39,7 +43,7 @@ export const ManastirUbozac = () => {
         ohriđanski arhiepiskop Prohor.
       </p>
 
-      <img src={ubozac2} alt="Ostaci Manastira Ubožac 2" />
+      <img srcSet={`${ubozac22} 400w, ${ubozac2} `} alt="Ostaci Manastira Ubožac 2" />
 
       <p>
         Manastirski kompleks je sačuvan u ruševinama i predstavlja jedan od
@@ -54,7 +58,7 @@ export const ManastirUbozac = () => {
         kompleksa nalazile su se verovatno monaške kapele.
       </p>
 
-      <img src={ubozac3} alt="Ostaci Manastira Ubožac 3" />
+      <img srcSet={`${ubozac33} 400w, ${ubozac3} `} alt="Ostaci Manastira Ubožac 3" />
 
       <p>
         Zabeleženo je da je 1586. godine u Ubošcu preminuo i sahranjen pećki
@@ -66,7 +70,7 @@ export const ManastirUbozac = () => {
         bilo obnova.
       </p>
 
-      <img src={ubozac4} alt="Ostaci Manastira Ubožac 3" />
+      <img srcSet={`${ubozac44} 400w, ${ubozac4} `} alt="Ostaci Manastira Ubožac 3" />
 
       <p>
         Arheološki i konzervatorski radovi na manastiru sprovedeni su između

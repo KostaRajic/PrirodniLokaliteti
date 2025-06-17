@@ -1,13 +1,23 @@
-import bg1 from "../../../assets/images/Beograd/Beograd/BG1.jpg";
-import bg2 from "../../../assets/images/Beograd/Beograd/BG2.jpg";
-import bg3 from "../../../assets/images/Beograd/Beograd/BG3.jpg";
-import bg4 from "../../../assets/images/Beograd/Beograd/BG4.jpg";
-import bg5 from "../../../assets/images/Beograd/Beograd/BG5.jpg";
-import bg6 from "../../../assets/images/Beograd/Beograd/BG6.jpg";
-import bg7 from "../../../assets/images/Beograd/Beograd/BG7.jpg";
-import bg8 from "../../../assets/images/Beograd/Beograd/BG8.jpg";
-import bg9 from "../../../assets/images/Beograd/Beograd/BG9.jpg";
-import bg10 from "../../../assets/images/Beograd/Beograd/BG10.jpg";
+import bg1 from "../../../assets/images/Beograd/Beograd/desktop/BG1.jpg";
+import bg2 from "../../../assets/images/Beograd/Beograd/desktop/BG2.jpg";
+import bg3 from "../../../assets/images/Beograd/Beograd/desktop/BG3.jpg";
+import bg4 from "../../../assets/images/Beograd/Beograd/desktop/BG4.jpg";
+import bg5 from "../../../assets/images/Beograd/Beograd/desktop/BG5.jpg";
+import bg6 from "../../../assets/images/Beograd/Beograd/desktop/BG6.jpg";
+import bg7 from "../../../assets/images/Beograd/Beograd/desktop/BG7.jpg";
+import bg8 from "../../../assets/images/Beograd/Beograd/desktop/BG8.jpg";
+import bg9 from "../../../assets/images/Beograd/Beograd/desktop/BG9.jpg";
+import bg10 from "../../../assets/images/Beograd/Beograd/desktop/BG10.jpg";
+import bg11 from "../../../assets/images/Beograd/Beograd/mobile/BGM1.jpg";
+import bg22 from "../../../assets/images/Beograd/Beograd/mobile/BGM2.jpg";
+import bg33 from "../../../assets/images/Beograd/Beograd/mobile/BGM3.jpg";
+import bg44 from "../../../assets/images/Beograd/Beograd/mobile/BGM4.jpg";
+import bg55 from "../../../assets/images/Beograd/Beograd/mobile/BGM5.jpg";
+import bg66 from "../../../assets/images/Beograd/Beograd/mobile/BGM6.jpg";
+import bg77 from "../../../assets/images/Beograd/Beograd/mobile/BGM7.jpg";
+import bg88 from "../../../assets/images/Beograd/Beograd/mobile/BGM8.jpg";
+import bg99 from "../../../assets/images/Beograd/Beograd/mobile/BGM9.jpg";
+import bg100 from "../../../assets/images/Beograd/Beograd/mobile/BGM10.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -22,7 +32,7 @@ export const Beograd2 = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
-      <img src={bg3} alt="Beograd 1" />
+      <img srcSet={`${bg33} 400w, ${bg3} `} alt="Beograd 1" />
 
       <h2>Beograd</h2>
 
@@ -40,7 +50,7 @@ export const Beograd2 = () => {
         na Balkanu, poznat po gostoprimstvu i energičnoj atmosferi.
       </p>
 
-      <img src={bg5} alt="Beograd 2" />
+      <img srcSet={`${bg55} 400w, ${bg5} `} alt="Beograd 2" />
 
       <p>
         Beograd je dinamičan grad koji spaja prošlost i savremenost na
@@ -52,7 +62,7 @@ export const Beograd2 = () => {
         ekonomsko srce Srbije, a ujedno i važan centar Balkana.
       </p>
 
-      <img src={bg1} alt="Beograd 3" />
+      <img srcSet={`${bg11} 400w, ${bg1} `} alt="Beograd 3" />
 
       <p>
         Grad se odlikuje prelepim parkovima, promenadama uz reke, ali i modernim
@@ -66,7 +76,7 @@ export const Beograd2 = () => {
         zvezda i Partizan, koji se takmiče u brojnim sportovima.
       </p>
 
-      <img src={bg4} alt="Grad Beograd" />
+      <img srcSet={`${bg44} 400w, ${bg4} `} alt="Grad Beograd" />
       <p>
         Beograd se brzo razvija, sa rastućim sektorima tehnologije i turizma. Sa
         svojom živahnom atmosferom, Beograd privlači turiste iz celog sveta.
@@ -75,7 +85,7 @@ export const Beograd2 = () => {
         spava, uvek je u pokretu i ima mnogo da ponudi svakom posetiocu.
       </p>
 
-      <img src={bg2} alt="Zemun" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${bg22} 400w, ${bg2} `} alt="Zemun" />
       <p>
         Za Zemun se često kaže da je "grad u gradu", a simbol ovog posebnog dela
         Beograda je Milenijumska kula na brdu Gardoš, koja se nalazi u središtu
@@ -92,7 +102,7 @@ export const Beograd2 = () => {
         specijalitetima i opuštati se uz zvuke starogradske muzike.
       </p>
 
-      <img src={bg6} alt="Park Topčider" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${bg66} 400w, ${bg6} `} alt="Park Topčider"/>
       <p>
         Park Topčider predstavlja ostatak nekadašnjih beogradskih šuma i deo
         prirodne baštine grada. Tokom tridesetih godina 19. veka, knez Miloš
@@ -109,7 +119,7 @@ export const Beograd2 = () => {
         stalnu postavku Muzeja istorije Srbije u Konaku kneza Miloša.
       </p>
 
-      <img src={bg7} alt="Savamala" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${bg77} 400w, ${bg7} `} alt="Savamala" />
       <p>
         Savamala, nekada industrijska četvrt, danas je postala epicentar urbane
         kulture u Beogradu. Sa starim zgradama koje odišu baroknim i secesijskim
@@ -131,9 +141,8 @@ export const Beograd2 = () => {
       </p>
 
       <img
-        src={bg8}
+        srcSet={`${bg88} 400w, ${bg8} `}
         alt="Ušće Shopping Center"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Ušće Shopping Center je jedan od najvećih i najmodernijih tržnih centara
@@ -149,9 +158,8 @@ export const Beograd2 = () => {
       </p>
 
       <img
-        src={bg9}
+srcSet={`${bg99} 400w, ${bg9} `}
         alt="Noćni život Beograd"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Beograd, grad koji nikada ne spava, nudi nezaboravan noćni život sa
@@ -171,9 +179,8 @@ export const Beograd2 = () => {
       </p>
 
       <img
-        src={bg10}
+        srcSet={`${bg100} 400w, ${bg10} `}
         alt="Beogradski ZOO vrt"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Beogradski zoološki vrt, poznat i kao "Vrt dobre nade", jedan je od

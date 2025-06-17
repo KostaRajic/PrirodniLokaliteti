@@ -1,12 +1,18 @@
-import beocin1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mBeocin1.jpg";
-import beocin2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mBeocin2.jpg";
-import beocin3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mBeocin3.jpg";
-import beocin4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mBeocin4.jpg";
-import beocin5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mBeocin5.jpg";
+import beocin1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/desktop/mBeocin1.jpg";
+import beocin2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/desktop/mBeocin2.jpg";
+import beocin3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/desktop/mBeocin3.jpg";
+import beocin4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/desktop/mBeocin4.jpg";
+import beocin5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/desktop/mBeocin5.jpg";
+import beocin11 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mobile/mBeocinM1.jpg";
+import beocin22 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mobile/mBeocinM2.jpg";
+import beocin33 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mobile/mBeocinM3.jpg";
+import beocin44 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mobile/mBeocinM4.jpg";
+import beocin55 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/ManastirBeocin/mobile/mBeocinM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { JuznoBackiPathRoutes } from "./JuznoBackiPathRoutes";
 
 export const ManastirBeocin = () => {
   const navigate = useNavigate();
@@ -14,9 +20,9 @@ export const ManastirBeocin = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(JuznoBackiPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={beocin3} alt="Manastir Beočin 1" />
+      <img srcSet={`${beocin33} 400w, ${beocin3} `} alt="Manastir Beočin 1" />
 
       <h2 style={{ color: 'white'}}>
         Manastir Beočin
@@ -30,9 +36,9 @@ export const ManastirBeocin = () => {
         za molitvu, meditaciju i duhovne posete.
       </p>
 
-      <img src={beocin1} alt="Manastir Beočin 2" />
+      <img srcSet={`${beocin11} 400w, ${beocin1} `} alt="Manastir Beočin 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Manastir Beočin ima bogatu istoriju, a osnovan je u 15. veku, tačnije
         1443. godine, iako se neki izvori navode da je manastir postojao i
         ranije. Prema istorijskim podacima, manastir je bio deo bogate tradicije
@@ -40,17 +46,17 @@ export const ManastirBeocin = () => {
         centar duhovnog života i kulturnog stvaralaštva.
       </p>
 
-      <img src={beocin4} alt="Manastir Beočin 3" />
+      <img srcSet={`${beocin44} 400w, ${beocin4} `} alt="Manastir Beočin 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Manastir je nekoliko puta bio uništavan i obnavljan tokom istorije,
         preživljavajući napade i vladavinu različitih političkih režima. Tokom
         osmanske vlasti, manastir je često bio zapušten, ali je nakon
         oslobođenja Srbije obnovljen i ponovo postao aktivno duhovno središte.
       </p>
 
-      <img src={beocin2} alt="Manastir Beočin 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${beocin22} 400w, ${beocin2} `} alt="Manastir Beočin 4" />
+      <p>
         Manastir Beočin je pravi primer tradicionalne srpske pravoslavne
         arhitekture, sa crkvom posvećenom Uspenju Presvete Bogorodice. Crkva je
         izgrađena u baroknom stilu, sa visokim svodom i bogato ukrašenim
@@ -61,7 +67,7 @@ export const ManastirBeocin = () => {
         žele da provedu neko vreme u molitvi i razmišljanju.
       </p>
 
-      <img src={beocin5} alt="Manastir Beočin 5"/>
+      <img srcSet={`${beocin55} 400w, ${beocin5} `} alt="Manastir Beočin 5"/>
       <p>
         Danas je manastir Beočin aktivan manastir, u kojem žive monasi koji se
         bave duhovnim životom, molitvom, a takođe i sačuvavanjem i obnovom

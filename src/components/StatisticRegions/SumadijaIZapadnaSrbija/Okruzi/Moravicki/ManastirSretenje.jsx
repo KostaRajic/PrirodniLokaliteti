@@ -1,7 +1,11 @@
-import sretenje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/manastirSretenje1.jpg";
-import sretenje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/manastirSretenje2.jpg";
-import sretenje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/manastirSretenje3.jpg";
-import sretenje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/manastirSretenje4.jpg";
+import sretenje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/desktop/manastirSretenje1.jpg";
+import sretenje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/desktop/manastirSretenje2.jpg";
+import sretenje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/desktop/manastirSretenje3.jpg";
+import sretenje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/desktop/manastirSretenje4.jpg";
+import sretenje11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/mobile/MmanastirSretenje1.jpg";
+import sretenje22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/mobile/MmanastirSretenje2.jpg";
+import sretenje33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/mobile/MmanastirSretenje3.jpg";
+import sretenje44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirSretenje/mobile/MmanastirSretenje4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const ManastirSretenje = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={sretenje1} alt="Manastir Sretenje" />
+      <img srcSet={`${sretenje11} 400w, ${sretenje1} `} alt="Manastir Sretenje" />
 
       <h2 style={{ color: "white" }}>Manastir Sretenje</h2>
 
@@ -33,7 +37,7 @@ export const ManastirSretenje = () => {
         manastira Sretenje u selu Pakovraće.
       </p>
 
-      <img src={sretenje2} alt="Manastir Sretenje na Ovcaru i Kablaru" />
+      <img srcSet={`${sretenje22} 400w, ${sretenje2} `} alt="Manastir Sretenje na Ovcaru i Kablaru" />
 
       <p>
         Manastirska crkva je obnovljena zahvaljujući trudu monaha Nikifora
@@ -45,7 +49,7 @@ export const ManastirSretenje = () => {
         u crkvi manastira Sretenje.
       </p>
 
-      <img src={sretenje3} alt="Manastir Sretenje u moravickom okrugu" />
+      <img srcSet={`${sretenje33} 400w, ${sretenje3} `} alt="Manastir Sretenje u moravickom okrugu" />
 
       <p>
         Manastirska crkva je izgrađena kao jednobrodna građevina, sa dubokom,
@@ -59,7 +63,7 @@ export const ManastirSretenje = () => {
         manastirsku crkvu na kraj 16. veka.
       </p>
 
-      <img src={sretenje4} alt="Manastir Sretenje 2" />
+      <img srcSet={`${sretenje44} 400w, ${sretenje4} `} alt="Manastir Sretenje 2" />
 
       <p>
         Živopis naosa, oltarskog prostora i zidane oltarske pregrade iz 1844.

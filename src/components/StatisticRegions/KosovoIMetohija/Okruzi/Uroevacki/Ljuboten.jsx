@@ -1,7 +1,11 @@
-import ljuboten1 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/ljuboten1.jpg";
-import ljuboten2 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/ljuboten2.jpg";
-import ljuboten3 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/ljuboten3.jpg";
-import ljuboten5 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/ljuboten5.jpg";
+import ljuboten1 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/desktop/ljuboten1.jpg";
+import ljuboten2 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/desktop/ljuboten2.jpg";
+import ljuboten3 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/desktop/ljuboten3.jpg";
+import ljuboten5 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/desktop/ljuboten5.jpg";
+import ljuboten11 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/mobile/Mljuboten1.jpg";
+import ljuboten22 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/mobile/Mljuboten2.jpg";
+import ljuboten33 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/mobile/Mljuboten3.jpg";
+import ljuboten55 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Ljuboten/mobile/Mljuboten5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const Ljuboten = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(urosevackiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={ljuboten1} alt="Ljuboten Šar Planina 1" />
+      <img srcSet={`${ljuboten11} 400w, ${ljuboten1} `} alt="Ljuboten Šar Planina 1" />
 
       <h2>Ljuboten Šar Planina</h2>
 
@@ -30,7 +34,7 @@ export const Ljuboten = () => {
         penjati gotovo na sve četiri.
       </p>
 
-      <img src={ljuboten2} alt="Ljuboten Šar Planina 2" />
+      <img srcSet={`${ljuboten22} 400w, ${ljuboten2} `} alt="Ljuboten Šar Planina 2" />
 
       <p>
         Na vrhu Ljubotena nalazi se ravno područje od oko 4 kvadratna hvata, sa
@@ -41,7 +45,7 @@ export const Ljuboten = () => {
         njen centralni deo.
       </p>
 
-      <img src={ljuboten3} alt="Ljuboten Šar Planina 3" />
+      <img srcSet={`${ljuboten33} 400w, ${ljuboten3} `} alt="Ljuboten Šar Planina 3" />
 
       <p>
         Ljubotensko jezero se nalazi oko sat vremena hoda od podnožja vrha. Sa
@@ -51,7 +55,7 @@ export const Ljuboten = () => {
         podnožju planine, pored Štrpca, nalazi se i selo Gotovuša.
       </p>
 
-      <img src={ljuboten5} alt="Ljuboten Šar Planina 5" />
+      <img srcSet={`${ljuboten55} 400w, ${ljuboten5} `} alt="Ljuboten Šar Planina 5" />
 
       <p>
       Na vrhu planine Jalič sačuvane su ruševine male kapelice, posvećene

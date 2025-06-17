@@ -1,12 +1,18 @@
-import kopovo1 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/kopovo3.jpg";
-import kopovo2 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/kopovo2.jpg";
-import kopovo3 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/kopovo4.jpg";
-import kopovo4 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/kopovo5.jpg";
-import kopovo5 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/kopovo6.jpg";
+import kopovo1 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/desktop/kopovo3.jpg";
+import kopovo2 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/desktop/kopovo2.jpg";
+import kopovo3 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/desktop/kopovo4.jpg";
+import kopovo4 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/desktop/kopovo5.jpg";
+import kopovo5 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/desktop/kopovo6.jpg";
+import kopovo11 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/mobile/Mkopovo3.jpg";
+import kopovo22 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/mobile/Mkopovo2.jpg";
+import kopovo33 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/mobile/Mkopovo4.jpg";
+import kopovo44 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/mobile/Mkopovo5.jpg";
+import kopovo55 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/SlanoKopovo/mobile/Mkopovo6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { srednjeBanatskiPathRoutes } from "./SrednjeBanatskiPathRoutes";
 
 export const SlanoKopovo = () => {
   const navigate = useNavigate();
@@ -15,11 +21,11 @@ export const SlanoKopovo = () => {
     <>
       <div className="placeBackground">
         <ScrollToTop />
-        <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+        <FaArrowLeft className="arrowLeft" onClick={() => navigate(srednjeBanatskiPathRoutes.home)} />
         <header></header>
-        <img src={kopovo1} alt="Slano Kopovo 1" />
+        <img srcSet={`${kopovo11} 400w, ${kopovo1} `} alt="Slano Kopovo 1" />
 
-        <h2 style={{ right: "50px" }}>
+        <h2>
         Specijalni rezervat prirode "Slano Kopovo"
         </h2>
 
@@ -31,9 +37,9 @@ export const SlanoKopovo = () => {
           u kompleksu vodoplavnih terena Potisja.
         </p>
 
-        <img src={kopovo2} alt="Slano Kopovo 2" />
+        <img srcSet={`${kopovo22} 400w, ${kopovo2} `} alt="Slano Kopovo 2" />
 
-        <p style={{ marginTop: "-10px" }}>
+        <p>
           Ovo panonsko stanište odlikuje se slanim, blatnjavim barama i u
           zavisnosti od klimatskih uslova postaje jezero. U toku letnjih meseci
           kada se voda povuče, Slano kopovo biva pokriveno belom skramom od
@@ -42,9 +48,9 @@ export const SlanoKopovo = () => {
           je oko 20 centimetara.
         </p>
 
-        <img src={kopovo3} alt="Slano Kopovo 3" />
+        <img srcSet={`${kopovo33} 400w, ${kopovo3} `} alt="Slano Kopovo 3" />
 
-        <p style={{ marginTop: "-10px" }}>
+        <p>
           Novi Bečej je poznat po svojoj kulturnoj baštini. Grad se ponosi i
           očuvanim istorijskim spomenicima i tradicionalnim manifestacijama, kao
           i brojnim verskim objektima, kao što je crkva Sv. Đorđa, koja je deo
@@ -55,9 +61,9 @@ export const SlanoKopovo = () => {
           koji žele da uživaju u mirnom okruženju i prirodnim lepotama.
         </p>
 
-        <img src={kopovo4} alt="Slano Kopovo 4" />
+        <img srcSet={`${kopovo44} 400w, ${kopovo4} `} alt="Slano Kopovo 4" />
 
-        <p style={{ marginTop: "-10px" }}>
+        <p>
           Usled isparavanja i povlačenja vode iz najnižih prizemnih oblasti,
           dolazi do nagomilavanja slojeva soli i do nekoliko centimetara. A
           povećano zagrevanje vazduha iznad jezera i razlika u temperaturi sa
@@ -67,8 +73,8 @@ export const SlanoKopovo = () => {
           Poština kopovo.
         </p>
 
-        <img src={kopovo5} alt="Slano Kopovo 5" />
-        <p style={{ marginTop: "-10px" }}>
+        <img srcSet={`${kopovo55} 400w, ${kopovo5} `} alt="Slano Kopovo 5" />
+        <p>
           Rezervat predstavlja jedno od najvažnijih stanica ptica u Srbiji i
           Evropi. Veliki broj vrsta ptica sa svetske crvene liste ugroženih
           ptica, gnezdi se upravo na ovom području. Ovo mesto je i značajna

@@ -1,8 +1,13 @@
-import gostilje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje1.jpg";
-import gostilje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje2.jpg";
-import gostilje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje3.jpg";
-import gostilje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje4.jpg";
-import gostilje5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/vodopadGostilje5.jpg";
+import gostilje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/desktop/vodopadGostilje1.jpg";
+import gostilje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/desktop/vodopadGostilje2.jpg";
+import gostilje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/desktop/vodopadGostilje3.jpg";
+import gostilje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/desktop/vodopadGostilje4.jpg";
+import gostilje5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/desktop/vodopadGostilje5.jpg";
+import gostilje11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/mobile/MvodopadGostilje1.jpg";
+import gostilje22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/mobile/MvodopadGostilje2.jpg";
+import gostilje33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/mobile/MvodopadGostilje3.jpg";
+import gostilje44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/mobile/MvodopadGostilje4.jpg";
+import gostilje55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/VodopadGostilje/mobile/MvodopadGostilje5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,9 +20,9 @@ export const VodopadGostilje = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.vodopadGostilje)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={gostilje2} alt="Vodopad Gostilje 1" />
+      <img srcSet={`${gostilje22} 400w, ${gostilje2} `} alt="Vodopad Gostilje 1" />
 
       <h2>Vodopad Gostilje</h2>
 
@@ -32,7 +37,7 @@ export const VodopadGostilje = () => {
         utopi u reku Katušnicu.
       </p>
 
-      <img src={gostilje5} alt="Vodopad Gostilje 2" />
+      <img srcSet={`${gostilje55} 400w, ${gostilje5} `} alt="Vodopad Gostilje 2" />
 
       <p>
         U blizini vodopada postavljene su klupe za odmor, klackalice i ljuljaške
@@ -43,7 +48,7 @@ export const VodopadGostilje = () => {
         za posetioce.
       </p>
 
-      <img src={gostilje3} alt="Vodopad Gostilje 3" />
+      <img srcSet={`${gostilje33} 400w, ${gostilje3} `} alt="Vodopad Gostilje 3" />
 
       <p>
         Pristup vodopadu je veoma jednostavan i omogućava posetiocima da lako
@@ -56,7 +61,7 @@ export const VodopadGostilje = () => {
         vodopada, dodirujući prve kamenčiće na svom putu.
       </p>
 
-      <img src={gostilje4} alt="Vodopad Gostilje 4" />
+      <img srcSet={`${gostilje44} 400w, ${gostilje4} `} alt="Vodopad Gostilje 4" />
 
       <p>
         Prostor oko vodopada je potpuno prilagođen turističkim posetama. U
@@ -69,7 +74,7 @@ export const VodopadGostilje = () => {
         pastrmke iz obližnjeg ribnjaka kalifornijske pastrmke.
       </p>
 
-      <img src={gostilje1} alt="Vodopad Gostilje 5" />
+      <img srcSet={`${gostilje11} 400w, ${gostilje1} `} alt="Vodopad Gostilje 5" />
       <p>
         Prema starom predanju, na ovom vodopadu su se nekada kupale vile, koje
         su svojim magičnim moćima povezivale zaljubljene parove. Veruje se da,

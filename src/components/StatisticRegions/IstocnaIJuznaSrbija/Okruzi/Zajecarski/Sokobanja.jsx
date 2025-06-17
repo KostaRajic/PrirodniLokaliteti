@@ -1,10 +1,17 @@
-import sokobanja1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/sokobanja1.jpg";
-import sokobanja2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/sokobanja2.jpg";
-import sokobanja3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/sokobanja3.jpg";
-import sokobanja4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/sokobanja4.jpg";
-import sokobanja6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/sokobanja6.jpg";
-import sokobanja7 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/sokobanja7.jpg";
-import sokobanja8 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/sokobanja8.jpg";
+import sokobanja1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/desktop/sokobanja1.jpg";
+import sokobanja2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/desktop/sokobanja2.jpg";
+import sokobanja3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/desktop/sokobanja3.jpg";
+import sokobanja4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/desktop/sokobanja4.jpg";
+import sokobanja6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/desktop/sokobanja6.jpg";
+import sokobanja7 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/desktop/sokobanja7.jpg";
+import sokobanja8 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/desktop/sokobanja8.jpg";
+import sokobanja11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/mobile/sokobanjaM1.jpg";
+import sokobanja22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/mobile/sokobanjaM2.jpg";
+import sokobanja33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/mobile/sokobanjaM3.jpg";
+import sokobanja44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/mobile/sokobanjaM4.jpg";
+import sokobanja66 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/mobile/sokobanjaM6.jpg";
+import sokobanja77 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/mobile/sokobanjaM7.jpg";
+import sokobanja88 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Sokobanja/mobile/sokobanjaM8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +26,7 @@ export const SokoBanja = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={sokobanja2} alt="Sokobanja 1" />
+      <img srcSet={`${sokobanja22} 400w, ${sokobanja2} `} alt="Sokobanja 1" />
 
       <h2>Sokobanja</h2>
 
@@ -36,7 +43,7 @@ export const SokoBanja = () => {
         okolinom.
       </p>
 
-      <img src={sokobanja7} alt="Sokobanja 2" />
+      <img srcSet={`${sokobanja77} 400w, ${sokobanja7} `} alt="Sokobanja 2" />
 
       <p>
         Sokobanja se nalazi na visini od oko 400 metara nadmorske visine. Kroz
@@ -53,7 +60,7 @@ export const SokoBanja = () => {
         Ovde se nalaze termomineralni izvori Sokobanje.
       </p>
 
-      <img src={sokobanja3} alt="Vrelo - Borići" />
+      <img srcSet={`${sokobanja33} 400w, ${sokobanja3} `} alt="Vrelo - Borići" />
 
       <p>
         „Vrelo - Borići“ je popularno izletište, smešteno na oko 300 metara od
@@ -70,7 +77,7 @@ export const SokoBanja = () => {
         kompleks Letnja pozornica „Vrelo“.
       </p>
 
-      <img src={sokobanja4} alt="Tursko kupatilo Amam" />
+      <img srcSet={`${sokobanja44} 400w, ${sokobanja4} `} alt="Tursko kupatilo Amam" />
 
       <p>
         Tursko kupatilo Amam nalazi se u samom centru Sokobanje, u banjskom
@@ -90,7 +97,7 @@ export const SokoBanja = () => {
         termomineralnoj vodi temperature 43 stepena.
       </p>
 
-      <img src={sokobanja8} alt="Izletište Lepterija" />
+      <img srcSet={`${sokobanja88} 400w, ${sokobanja8} `} alt="Izletište Lepterija" />
 
       <p>
         Lepterija je jedinstveni kutak prirode smešten u prelepom području
@@ -122,7 +129,7 @@ export const SokoBanja = () => {
         prirodnog i kulturnog blaga za buduće generacije.
       </p>
 
-      <img src={sokobanja6} alt="Akva park u Sokobanji" />
+      <img srcSet={`${sokobanja66} 400w, ${sokobanja6} `} alt="Akva park u Sokobanji" />
 
       <p>
         Akva park u Sokobanji, smešten samo 1,5 kilometar od centra grada,
@@ -135,7 +142,7 @@ export const SokoBanja = () => {
         bazena za opuštanje i zabavu.
       </p>
 
-      <img src={sokobanja1} alt="Jezero na Ozrenu" />
+      <img srcSet={`${sokobanja11} 400w, ${sokobanja1} `} alt="Jezero na Ozrenu" />
 
       <p>
         Kada spominjemo Ozren, pre svega mislimo na prelepo izletište sa

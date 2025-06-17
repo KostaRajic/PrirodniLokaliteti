@@ -1,7 +1,9 @@
-import prskalo1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/vodopadPrskalo4.jpg";
-import prskalo2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/vodopadPrskalo1.jpg";
-import prskalo3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/vodopadPrskalo2.jpg";
-import prskalo4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/vodopadPrskalo3.jpg";
+import prskalo1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/desktop/vodopadPrskalo4.jpg";
+import prskalo2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/desktop/vodopadPrskalo1.jpg";
+import prskalo3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/desktop/vodopadPrskalo2.jpg";
+import prskalo11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/mobile/MvodopadPrskalo4.jpg";
+import prskalo22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/mobile/MvodopadPrskalo1.jpg";
+import prskalo33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo/mobile/MvodopadPrskalo2.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +22,7 @@ export const VodopadPrskalo = () => {
 
       />
       <header></header>
-      <img src={prskalo1} alt="Vodopad Prskalo 1" />
+      <img srcSet={`${prskalo11} 400w, ${prskalo1} `} alt="Vodopad Prskalo 1" />
 
       <h2 style={{ color: "white" }}>Vodopad Prskalo</h2>
 
@@ -32,7 +34,7 @@ export const VodopadPrskalo = () => {
         Resavicu i Čestobrodicu.
       </p>
 
-      <img src={prskalo2} alt="Vodopad Prskalo 2" />
+      <img srcSet={`${prskalo22} 400w, ${prskalo2} `} alt="Vodopad Prskalo 2" />
 
       <p>
         Vodopad Prskalo ima visinu od 15 metara i nalazi se na nadmorskoj visini
@@ -44,7 +46,7 @@ export const VodopadPrskalo = () => {
         ivice.
       </p>
 
-      <img src={prskalo3} alt="Vodopad Prskalo 3" />
+      <img srcSet={`${prskalo33} 400w, ${prskalo3} `} alt="Vodopad Prskalo 3" />
 
       <p>
         Iako nije daleko od glavnog puta, pristup vodopadu nije nimalo lak, jer

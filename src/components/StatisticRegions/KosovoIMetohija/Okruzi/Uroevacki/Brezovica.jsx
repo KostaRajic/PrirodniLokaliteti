@@ -1,8 +1,13 @@
-import brezovica1 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/brezovica1.jpg";
-import brezovica2 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/brezovica2.jpg";
-import brezovica3 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/brezovica3.jpg";
-import brezovica4 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/brezovica4.jpg";
-import brezovica5 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/brezovica5.jpg";
+import brezovica1 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/desktop/brezovica1.jpg";
+import brezovica2 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/desktop/brezovica2.jpg";
+import brezovica3 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/desktop/brezovica3.jpg";
+import brezovica4 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/desktop/brezovica4.jpg";
+import brezovica5 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/desktop/brezovica5.jpg";
+import brezovica11 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/mobile/Mbrezovica1.jpg";
+import brezovica22 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/mobile/Mbrezovica2.jpg";
+import brezovica33 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/mobile/Mbrezovica3.jpg";
+import brezovica44 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/mobile/Mbrezovica4.jpg";
+import brezovica55 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Brezovica/mobile/Mbrezovica5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const Brezovica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(urosevackiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={brezovica1} alt="Ski centar Brezovica 1" />
+      <img srcSet={`${brezovica11} 400w, ${brezovica1} `} alt="Ski centar Brezovica 1" />
 
       <h2>Ski centar Brezovica</h2>
 
@@ -32,7 +37,7 @@ export const Brezovica = () => {
         u Evropi, pružajući posetiocima izuzetno iskustvo na stazi i u prirodi.
       </p>
 
-      <img src={brezovica2} alt="Ski centar Brezovica 2" />
+      <img srcSet={`${brezovica22} 400w, ${brezovica2} `} alt="Ski centar Brezovica 2" />
 
       <p>
         Stoletne šume, prelepe livade i prostrani pašnjaci bogati su planinskim
@@ -43,7 +48,7 @@ export const Brezovica = () => {
         posebnu lepotu i šarm ovom prirodnom okruženju.
       </p>
 
-      <img src={brezovica3} alt="Ski centar Brezovica 3" />
+      <img srcSet={`${brezovica33} 400w, ${brezovica3} `} alt="Ski centar Brezovica 3" />
 
       <p>
         Niži delovi ovog regiona karakterišu se župskom klimom, sa prijatnim
@@ -56,7 +61,7 @@ export const Brezovica = () => {
         rekreaciju, pa je centar popularan među posetiocima tokom cele godine.
       </p>
 
-      <img src={brezovica4} alt="Ski centar Brezovica 4" />
+      <img srcSet={`${brezovica44} 400w, ${brezovica4} `} alt="Ski centar Brezovica 4" />
 
       <p>
         Tokom leta, posetioci Brezovice uživaju u neposrednom kontaktu sa
@@ -67,7 +72,7 @@ export const Brezovica = () => {
         seminara, simpozijuma, kongresa i naučnih skupova.
       </p>
 
-      <img src={brezovica5} alt="Ski centar Brezovica 5" />
+      <img srcSet={`${brezovica55} 400w, ${brezovica5} `} alt="Ski centar Brezovica 5" />
 
       <p>
         Ski centar Brezovica je domaćin dva evropska prvenstva u alpskom

@@ -1,8 +1,13 @@
-import djakovica1 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/djakovica1.jpg";
-import djakovica2 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/djakovica2.jpg";
-import djakovica3 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/djakovica3.jpg";
-import djakovica4 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/djakovica4.jpg";
-import djakovica5 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/djakovica5.jpg";
+import djakovica1 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/desktop/djakovica1.jpg";
+import djakovica2 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/desktop/djakovica2.jpg";
+import djakovica3 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/desktop/djakovica3.jpg";
+import djakovica4 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/desktop/djakovica4.jpg";
+import djakovica5 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/desktop/djakovica5.jpg";
+import djakovica11 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/mobile/Mdjakovica1.jpg";
+import djakovica22 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/mobile/Mdjakovica2.jpg";
+import djakovica33 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/mobile/Mdjakovica3.jpg";
+import djakovica44 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/mobile/Mdjakovica4.jpg";
+import djakovica55 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Djakovica/mobile/Mdjakovica5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const Djakovica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(djakovickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={djakovica1} alt="Đakovica 1" />
+      <img srcSet={`${djakovica11} 400w, ${djakovica1} `} alt="Đakovica 1" />
 
       <h2>Đakovica</h2>
 
@@ -31,7 +36,7 @@ export const Djakovica = () => {
         Prokletija, Paštrika i Koritnika koji ga okružuju.
       </p>
 
-      <img src={djakovica2} alt="Đakovica 2" />
+      <img srcSet={`${djakovica22} 400w, ${djakovica2} `} alt="Đakovica 2" />
 
       <p>
         Grad je ime dobio po manje poznatom gospodaru i vazalu Vuka Brankovića,
@@ -46,7 +51,7 @@ export const Djakovica = () => {
         verovatno bila albanskog porekla.
       </p>
 
-      <img src={djakovica3} alt="Đakovica 3" />
+      <img srcSet={`${djakovica33} 400w, ${djakovica3} `} alt="Đakovica 3" />
 
       <p>
         Od 16. veka, u vreme obnovljene Pećke patrijaršije, u Đakovici je
@@ -61,7 +66,7 @@ export const Djakovica = () => {
         krajem 1967. godine registrovana kao spomenik kulture.
       </p>
 
-      <img src={djakovica4} alt="Đakovica 4" />
+      <img srcSet={`${djakovica44} 400w, ${djakovica4} `} alt="Đakovica 4" />
 
       <p>
         Razvoj grada može se pratiti od kraja 16. veka, kada je nastala
@@ -74,7 +79,7 @@ export const Djakovica = () => {
         spomenika kulture Srbije.
       </p>
 
-      <img src={djakovica5} alt="Đakovica 4" />
+      <img srcSet={`${djakovica55} 400w, ${djakovica5} `} alt="Đakovica 4" />
 
       <p>
         U Đakovici je bilo sedište kaimakama (sreskog poglavara) i sud, a tu su

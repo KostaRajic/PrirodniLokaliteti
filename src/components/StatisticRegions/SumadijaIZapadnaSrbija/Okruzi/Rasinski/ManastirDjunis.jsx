@@ -1,8 +1,13 @@
-import djunis1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/djunis1.jpg";
-import djunis2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/djunis2.jpg";
-import djunis3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/djunis3.jpg";
-import djunis4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/djunis4.jpg";
-import djunis5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/djunis5.jpg";
+import djunis1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/desktop/djunis1.jpg";
+import djunis2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/desktop/djunis2.jpg";
+import djunis3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/desktop/djunis3.jpg";
+import djunis4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/desktop/djunis4.jpg";
+import djunis5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/desktop/djunis5.jpg";
+import djunis11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/mobile/Mdjunis1.jpg";
+import djunis22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/mobile/Mdjunis2.jpg";
+import djunis33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/mobile/Mdjunis3.jpg";
+import djunis44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/mobile/Mdjunis4.jpg";
+import djunis55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirDjunis/mobile/Mdjunis5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const ManastirDjunis = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={djunis1} alt="Manastir Đunis 1" />
+      <img srcSet={`${djunis11} 400w, ${djunis1} `} alt="Manastir Đunis 1" />
 
       <h2 style={{ color: "white" }}>Manastir Đunis</h2>
 
@@ -39,7 +44,7 @@ export const ManastirDjunis = () => {
         hram posvećen Pokrovu Presvete Bogorodice.
       </p>
 
-      <img src={djunis2} alt="Manastir Đunis 2" />
+      <img srcSet={`${djunis22} 400w, ${djunis2} `} alt="Manastir Đunis 2" />
 
       <p>
         Godine 1977. započeta je izgradnja velikog hrama, ali je zbog zabrane
@@ -52,7 +57,7 @@ export const ManastirDjunis = () => {
         Presvete Bogorodice.
       </p>
 
-      <img src={djunis3} alt="Manastir Đunis 3" />
+      <img srcSet={`${djunis33} 400w, ${djunis3} `} alt="Manastir Đunis 3" />
 
       <p>
         Godine 1964, odlukom Svetog Arhijerejskog Sabora Srpske Pravoslavne
@@ -63,7 +68,7 @@ export const ManastirDjunis = () => {
         igumanija, Minodora, okupila je u ovoj svetinji veliko sestrinstvo.
       </p>
 
-      <img src={djunis4} alt="Manastir Đunis 4" />
+      <img srcSet={`${djunis44} 400w, ${djunis4} `} alt="Manastir Đunis 4" />
 
       <p>
         Ikonostas u velikoj crkvi izradila je ikonopisna škola manastira Žiča,
@@ -78,7 +83,7 @@ export const ManastirDjunis = () => {
         septembra 16/3.“
       </p>
 
-      <img src={djunis5} alt="Manastir Đunis 5" />
+      <img srcSet={`${djunis55} 400w, ${djunis5} `} alt="Manastir Đunis 5" />
 
       <p>
         Na dan Pokrova Presvete Bogorodice u manastiru se održava veliki sabor,

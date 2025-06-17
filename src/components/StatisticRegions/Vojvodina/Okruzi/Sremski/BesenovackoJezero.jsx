@@ -1,12 +1,18 @@
-import besenovackoJezero1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/besenovackoJezero2.jpg";
-import besenovackoJezero2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/besenovackoJezero3.jpg";
-import besenovackoJezero3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/besenovackoJezero4.jpg";
-import besenovackoJezero4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/besenovackoJezero5.jpg";
-import besenovackoJezero5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/besenovackoJezero6.jpg";
+import besenovackoJezero1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/desktop/besenovackoJezero2.jpg";
+import besenovackoJezero2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/desktop/besenovackoJezero3.jpg";
+import besenovackoJezero3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/desktop/besenovackoJezero4.jpg";
+import besenovackoJezero4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/desktop/besenovackoJezero5.jpg";
+import besenovackoJezero5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/desktop/besenovackoJezero6.jpg";
+import besenovackoJezero11 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/mobile/MbesenovackoJezero2.jpg";
+import besenovackoJezero22 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/mobile/MbesenovackoJezero3.jpg";
+import besenovackoJezero33 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/mobile/MbesenovackoJezero4.jpg";
+import besenovackoJezero44 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/mobile/MbesenovackoJezero5.jpg";
+import besenovackoJezero55 from "../../../../../assets/images/Vojvodina/SremskiOkrug/BesenovackoJezero/mobile/MbesenovackoJezero6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 
 export const BesenovackoJezero = () => {
   const navigate = useNavigate();
@@ -16,11 +22,11 @@ export const BesenovackoJezero = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(sremskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={besenovackoJezero1} alt="Bešenovačko jezero 1" />
+      <img srcSet={`${besenovackoJezero11} 400w, ${besenovackoJezero1} `} alt="Bešenovačko jezero 1" />
 
       <h2 style={{ color: "white" }}>Bešenovačko jezero</h2>
 
@@ -39,7 +45,7 @@ export const BesenovackoJezero = () => {
         za koje se takođe smatra da ima terapijska dejstva.
       </p>
 
-      <img src={besenovackoJezero2} alt="Bešenovačko jezero 2" />
+      <img srcSet={`${besenovackoJezero22} 400w, ${besenovackoJezero2} `} alt="Bešenovačko jezero 2" />
 
       <p>
         Bešenovačko jezero se izdvaja od drugih akumulacionih jezera, jer je
@@ -49,7 +55,7 @@ export const BesenovackoJezero = () => {
         mogu videti jata sitnih riba.
       </p>
 
-      <img src={besenovackoJezero3} alt="Bešenovačko jezero 3" />
+      <img srcSet={`${besenovackoJezero33} 400w, ${besenovackoJezero3} `} alt="Bešenovačko jezero 3" />
       <p>
         Iako se nalazi duboko u srcu nacionalnog parka i okruženo netaknutom
         prirodom, Bešenovačko jezero svakodnevno privlači veliki broj
@@ -60,7 +66,7 @@ export const BesenovackoJezero = () => {
         rano ujutro.
       </p>
 
-      <img src={besenovackoJezero5} alt="Bešenovačko jezero 4" />
+      <img srcSet={`${besenovackoJezero55} 400w, ${besenovackoJezero5} `} alt="Bešenovačko jezero 4" />
       <p>
         Jedan deo plaže jezera je uredan i opremljen sa nekoliko kafića gde
         možete da se opustite, uživate u osveženju i pronađete slobodnu
@@ -70,7 +76,7 @@ export const BesenovackoJezero = () => {
         jezera prisutno mnogo sitnog kamenja, što može otežati udoban boravak.
       </p>
 
-      <img src={besenovackoJezero4} alt="Bešenovačko jezero 5" />
+      <img srcSet={`${besenovackoJezero44} 400w, ${besenovackoJezero4} `} alt="Bešenovačko jezero 5" />
 
       <p>
         Bešenovačko jezero smešteno je blizu sela Bešenovački Prnjavor, u

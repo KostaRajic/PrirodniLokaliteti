@@ -1,13 +1,20 @@
-import backaT1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT1.jpg";
-import backaT2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT2.jpg";
-import backaT3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT3.jpg";
-import backaT4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT4.jpg";
-import backaT5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT5.jpg";
-import backaT6 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/BT6.jpg";
+import backaT1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/desktop/BT1.jpg";
+import backaT2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/desktop/BT2.jpg";
+import backaT3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/desktop/BT3.jpg";
+import backaT4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/desktop/BT4.jpg";
+import backaT5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/desktop/BT5.jpg";
+import backaT6 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/desktop/BT6.jpg";
+import backaT11 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/mobile/MBT1.jpg";
+import backaT22 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/mobile/MBT2.jpg";
+import backaT33 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/mobile/MBT3.jpg";
+import backaT44 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/mobile/MBT4.jpg";
+import backaT55 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/mobile/MBT5.jpg";
+import backaT66 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/BackaTopola/mobile/MBT6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { servernoBackiPathRoutes } from "./SevernoBackiPathRoutes";
 
 export const BackaTopola = () => {
   const navigate = useNavigate();
@@ -15,9 +22,9 @@ export const BackaTopola = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(servernoBackiPathRoutes.home)} />
       <header></header>
-      <img src={backaT2} alt="Backa Topola 1" />
+      <img srcSet={`${backaT22} 400w, ${backaT2} `} alt="Backa Topola 1" />
 
       <h2>
       Backa Topola
@@ -33,9 +40,9 @@ export const BackaTopola = () => {
         vojvođanskoj autentičnoj hrani.
       </p>
 
-      <img src={backaT1} alt="Backa Topola 2" />
+      <img srcSet={`${backaT11} 400w, ${backaT1} `} alt="Backa Topola 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Zobnatičko jezero je prirodno jezero koje se nalazi u severnom delu
         Srbije, u pokrajini Vojvodina, u blizini Bačke Topole. Poznato je po
         svojoj prirodnoj lepotu i značaju kao destinacija za rekreaciju i odmor.
@@ -45,9 +52,9 @@ export const BackaTopola = () => {
         stanovništvom i turistima, posebno tokom letnjih meseci.
       </p>
 
-      <img src={backaT3} alt="Backa Topola 3" />
+      <img srcSet={`${backaT33} 400w, ${backaT3} `} alt="Backa Topola 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Turistički kompleks Zobnatice čini nekadašnje imanje porodice Terleeva
         koje je 1882. godine izgradio vlastelin Đula Terleeva. Imanje čini
         dvorac Zobnatica i kula osmatračnica. Zobnatica je poznata po ergeli
@@ -56,8 +63,8 @@ export const BackaTopola = () => {
         terene za jahanje i treninge.
       </p>
 
-      <img src={backaT4} alt="Backa Topola 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${backaT44} 400w, ${backaT4} `} alt="Backa Topola 4" />
+      <p>
         Kaštel Krai – Muzej Bačke Topole predstavlja važan istorijski objekat i
         kulturnu instituciju u Bačkoj Topoli. Ovaj muzej se nalazi u jednom od
         značajnih istorijskih objekata u regionu i pruža uvid u bogatu istoriju,
@@ -70,9 +77,8 @@ export const BackaTopola = () => {
       </p>
 
       <img
-        src={backaT5}
+        srcSet={`${backaT55} 400w, ${backaT5} `}
         alt="Backa Topola 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Dvorac (Kaštel - Panonija) je izgrađen 1846. godine za plemićku porodicu
@@ -90,9 +96,8 @@ export const BackaTopola = () => {
       </p>
 
       <img
-        src={backaT6}
+        srcSet={`${backaT66} 400w, ${backaT6} `}
         alt="Backa Topola 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Ergela Zobnatica, turistička i konjička atrakcija u Bačkoj Topoli,

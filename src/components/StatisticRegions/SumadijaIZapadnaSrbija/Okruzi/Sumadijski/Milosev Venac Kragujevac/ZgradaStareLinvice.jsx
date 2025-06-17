@@ -1,7 +1,7 @@
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import z from "../../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac33MV.jpg";
+import z from "../../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac33MV.jpg";
 
 export const ZgradaStareLivnice = () => {
   const navigate = useNavigate();

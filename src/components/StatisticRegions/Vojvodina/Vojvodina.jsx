@@ -3,9 +3,17 @@
 import { MapContainer, TileLayer, Polygon, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { VojvodinaRegioni } from "./VojvodinaRegioni";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import { zapadnoBackiPathRoutes } from "./Okruzi/ZapadnoBacki/ZapadnoBackiPathRoutes";
+import { severnoBanatskiPathRoutes } from "./Okruzi/SevernoBanatski/SevernoBanatskiPathRoutes";
+import { servernoBackiPathRoutes } from "./Okruzi/SevernoBacki/SevernoBackiPathRoutes";
+import { JuznoBackiPathRoutes } from "./Okruzi/JuznoBacki/JuznoBackiPathRoutes";
+import { srednjeBanatskiPathRoutes } from "./Okruzi/SrednjeBanatski/SrednjeBanatskiPathRoutes";
+import { sremskiOkrugPathRoutes } from "./Okruzi/Sremski/SremskiOkrugPathRoutes";
+import { juznoBanatskiPathRoutes } from "./Okruzi/JuznoBanatski/JuznoBanatskiPathRoutes";
+import { serbianMapPathRoutes } from "../../serbianMapPathRoutes";
 
 export const Vojvodina = () => {
   const center = [45.20313713852372, 20.012617302735283];
@@ -31,19 +39,19 @@ export const Vojvodina = () => {
 
   useEffect(() => {
     if (showZapadnoBacki) {
-      return navigate("ZapadnoBacki");
+      return navigate(zapadnoBackiPathRoutes.home);
     } else if (showSevernoBacki) {
-      return navigate("SevernoBacki");
+      return navigate(servernoBackiPathRoutes.home);
     } else if (showSevernoBanatski) {
-      return navigate("SevernoBanatski");
+      return navigate(severnoBanatskiPathRoutes.home);
     } else if (showJuznoBacki) {
-      return navigate("JuznoBacki");
+      return navigate(JuznoBackiPathRoutes.home);
     } else if (showSrednjeBanatski) {
-      return navigate("SrednjeBanatski");
+      return navigate(srednjeBanatskiPathRoutes.home);
     } else if (showSremski) {
-      return navigate("Sremski");
+      return navigate(sremskiOkrugPathRoutes.home);
     } else if (shoeJuznoBanatski) {
-      return navigate("JuznoBanatski");
+      return navigate(juznoBanatskiPathRoutes.home);
     }
   });
 
@@ -65,7 +73,7 @@ export const Vojvodina = () => {
         />
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.VojvodinaTekstModal)}
           style={{ zIndex: '400' }}
         />
         {VojvodinaRegioni?.features?.map((statisticOkrug, index) => {

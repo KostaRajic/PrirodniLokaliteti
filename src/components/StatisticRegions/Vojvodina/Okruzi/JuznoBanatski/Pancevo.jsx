@@ -1,17 +1,28 @@
-import pancevo1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo2.jpg";
-import pancevo2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo3.jpg";
-import pancevo3narodnaBasta1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo4narodnaBasta1.jpg";
-import pancevo3narodnaBasta2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo4narodnaBasta2.jpg";
-import pancevo3narodnaBasta3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo4narodnaBasta3.jpg";
-import pancevo3narodnaBasta4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo4narodnaBasta4.jpg";
-import pancevo4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo5.jpg";
-import pancevo5 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo6.jpg";
-import pancevo6 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo7.jpg";
-import pancevo7 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/pancevo8.jpg";
+import pancevo1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo2.jpg";
+import pancevo2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo3.jpg";
+import pancevo3narodnaBasta1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo4narodnaBasta1.jpg";
+import pancevo3narodnaBasta2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo4narodnaBasta2.jpg";
+import pancevo3narodnaBasta3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo4narodnaBasta3.jpg";
+import pancevo3narodnaBasta4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo4narodnaBasta4.jpg";
+import pancevo4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo5.jpg";
+import pancevo5 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo6.jpg";
+import pancevo6 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo7.jpg";
+import pancevo7 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/desktop/pancevo8.jpg";
+import pancevo11 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo2.jpg";
+import pancevo22 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo3.jpg";
+import pancevo3narodnaBasta11 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo4narodnaBasta1.jpg";
+import pancevo3narodnaBasta22 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo4narodnaBasta2.jpg";
+import pancevo3narodnaBasta33 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo4narodnaBasta3.jpg";
+import pancevo3narodnaBasta44 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo4narodnaBasta4.jpg";
+import pancevo44 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo5.jpg";
+import pancevo55 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo6.jpg";
+import pancevo66 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo7.jpg";
+import pancevo77 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Pancevo/mobile/Mpancevo8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { juznoBanatskiPathRoutes } from "./JuznoBanatskiPathRoutes";
 
 export const Pancevo = () => {
   const navigate = useNavigate();
@@ -19,9 +30,9 @@ export const Pancevo = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(juznoBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={pancevo4} alt="Pančevo grad" />
+      <img srcSet={`${pancevo44} 400w, ${pancevo4} `} alt="Pančevo grad" />
 
       <h2>Pančevo</h2>
 
@@ -36,9 +47,9 @@ export const Pancevo = () => {
         Otkrijte lepotu Banata i uživajte u svemu što Pančevo nudi!
       </p>
 
-      <img src={pancevo2} alt="Pančevo grad 2" />
+      <img srcSet={`${pancevo22} 400w, ${pancevo2} `} alt="Pančevo grad 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Pančevo, smešteno na ušću reke Tamiš u Dunav, predstavlja značajan grad
         u južnom delu Vojvodine. Osim što je industrijski centar, Pančevo je
         poznato i po svojoj bogatoj istoriji koja datira još od rimskih vremena.
@@ -55,30 +66,30 @@ export const Pancevo = () => {
 
       <div className="fourImages">
         <img
-          src={pancevo3narodnaBasta1}
+          srcSet={`${pancevo3narodnaBasta11} 400w, ${pancevo3narodnaBasta1} `}
           alt="Pančevo Narodna Bašta 1"
-          style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
+          // style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
         />
         <img
-          src={pancevo3narodnaBasta2}
+          srcSet={`${pancevo3narodnaBasta22} 400w, ${pancevo3narodnaBasta2} `}
           alt="Pančevo Narodna Bašta 2"
-          style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
+          // style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
         />
       </div>
       <div className="fourImages">
         <img
-          src={pancevo3narodnaBasta3}
+          srcSet={`${pancevo3narodnaBasta33} 400w, ${pancevo3narodnaBasta3} `}
           alt="Pančevo Narodna Bašta 3"
-          style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
+          // style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
         />
         <img
-          src={pancevo3narodnaBasta4}
+          srcSet={`${pancevo3narodnaBasta44} 400w, ${pancevo3narodnaBasta4} `}
           alt="Pančevo Narodna Bašta 4"
-          style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
+          // style={ window.innerWidth < 600 ? { width: "180px", height: '180px' } : { width: "1250px" }}
         />
       </div>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Na inicijativu brigadnog generala Mihajla Mihaljevića, mala zelena
         površina na ivici grada je 1829. godine uređena i pretvorena u pravi
         zeleni raj, postajući najveći park u Pančevu. Od tog trenutka, Narodna
@@ -95,9 +106,9 @@ export const Pancevo = () => {
         kulturni programi.
       </p>
 
-      <img src={pancevo1} alt="Pančevo Nardoni Muzej" />
+      <img srcSet={`${pancevo11} 400w, ${pancevo1} `} alt="Pančevo Nardoni Muzej" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Narodni muzej je osnovao dr Borisav Jankulov 1923. godine. Mузеј je
         nastao iz privatnih zbirki i spada među starije institucije ovog tipa u
         zemlji. To je muzejski kompleks sa različitim odeljenjima, uključujući
@@ -114,8 +125,8 @@ export const Pancevo = () => {
         vrednošću daleko prevazilaze lokalne okvire.
       </p>
 
-      <img src={pancevo5} alt="Pančevo Park Prirode Ponjavica" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${pancevo55} 400w, ${pancevo5} `} alt="Pančevo Park Prirode Ponjavica" />
+      <p>
         Parka prirode Ponjavica smešten je 15 kilometara od Pančeva, između sela
         Omoљica i Banatski Brestovac. Poњavica se formira kod sela Omoљica i
         proteže se na deset kilometara, od kojih 7,2 kilometra čini zaštićeni
@@ -132,9 +143,8 @@ export const Pancevo = () => {
       </p>
 
       <img
-        src={pancevo6}
+        srcSet={`${pancevo66} 400w, ${pancevo6} `}
         alt="Pančevo Ivanovačka Ada"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Na svega 2,5 kilometra od sela Ivanovo i 21 kilometar od Pančeva, nalazi
@@ -152,9 +162,8 @@ export const Pancevo = () => {
       </p>
 
       <img
-        src={pancevo7}
+        srcSet={`${pancevo77} 400w, ${pancevo7} `}
         alt="Pančevo Gradska Šuma"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Na svega nekoliko minuta hoda od centra Pančeva, na desnoj obali reke

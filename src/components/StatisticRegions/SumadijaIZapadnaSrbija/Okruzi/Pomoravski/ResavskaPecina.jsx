@@ -1,8 +1,13 @@
-import resavskaPecina1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/resavskaPecina1.jpg";
-import resavskaPecina2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/resavskaPecina2.jpg";
-import resavskaPecina3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/resavskaPecina3.jpg";
-import resavskaPecina4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/resavskaPecina4.jpg";
-import resavskaPecina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/resavskaPecina5.jpg";
+import resavskaPecina1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/desktop/resavskaPecina1.jpg";
+import resavskaPecina2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/desktop/resavskaPecina2.jpg";
+import resavskaPecina3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/desktop/resavskaPecina3.jpg";
+import resavskaPecina4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/desktop/resavskaPecina4.jpg";
+import resavskaPecina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/desktop/resavskaPecina5.jpg";
+import resavskaPecina11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/mobile/MresavskaPecina1.jpg";
+import resavskaPecina22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/mobile/MresavskaPecina2.jpg";
+import resavskaPecina33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/mobile/MresavskaPecina3.jpg";
+import resavskaPecina44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/mobile/MresavskaPecina4.jpg";
+import resavskaPecina55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina/mobile/MresavskaPecina5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -22,7 +27,7 @@ export const ResavskaPecina = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={resavskaPecina1} alt="Resavska Pećina 1" />
+      <img srcSet={`${resavskaPecina11} 400w, ${resavskaPecina1} `} alt="Resavska Pećina 1" />
 
       <h2 style={{ color: "white" }}>Resavska Pećina</h2>
 
@@ -37,7 +42,7 @@ export const ResavskaPecina = () => {
         dna Divljakovčke uvale. Obuhvata ukupno 14 i po katastarskih parcela.
       </p>
 
-      <img src={resavskaPecina2} alt="Resavska Pećina 2" />
+      <img srcSet={`${resavskaPecina22} 400w, ${resavskaPecina2} `} alt="Resavska Pećina 2" />
 
       <p>
         Resavska pećina je višenamenski speleološki objekat ukupne dužine
@@ -56,7 +61,7 @@ export const ResavskaPecina = () => {
         Taran" i drugi.
       </p>
 
-      <img src={resavskaPecina3} alt="Resavska Pećina 3" />
+      <img srcSet={`${resavskaPecina33} 400w, ${resavskaPecina3} `} alt="Resavska Pećina 3" />
 
       <p>
         Za pećinu su znali samo stočari koji su se sklanjali od nevremena sa
@@ -71,7 +76,7 @@ export const ResavskaPecina = () => {
         metara.
       </p>
 
-      <img src={resavskaPecina5} alt="Resavska Pećina 4" />
+      <img srcSet={`${resavskaPecina55} 400w, ${resavskaPecina5} `} alt="Resavska Pećina 4" />
 
       <p>
         Temperatura u pećini je konstantna i iznosi 7 °C, dok vlažnost vazduha
@@ -83,7 +88,7 @@ export const ResavskaPecina = () => {
         „Resavska lepotica“.
       </p>
 
-      <img src={resavskaPecina4} alt="Resavska Pećina 5" />
+      <img srcSet={`${resavskaPecina44} 400w, ${resavskaPecina4} `} alt="Resavska Pećina 5" />
 
       <p>
         Nakit pećine počinje već od samog ulaza, koji se nalazi na nadmorskoj

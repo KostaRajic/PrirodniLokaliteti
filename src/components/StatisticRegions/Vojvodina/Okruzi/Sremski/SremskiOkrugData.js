@@ -1,4 +1,4 @@
-import sMitrovica from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica1.png";
+import sMitrovica from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica1.jpg";
 import zasavica from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/zasavica3.jpg";
 import sid from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid1.jpg";
 import novoHopovo from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/novoHopovo1.jpg";

@@ -1,7 +1,11 @@
-import pokajnica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/pokajnica1.jpg";
-import pokajnica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/pokajnica2.jpg";
-import pokajnica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/pokajnica3.jpg";
-import pokajnica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/pokajnica4.jpg";
+import pokajnica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/desktop/pokajnica1.jpg";
+import pokajnica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/desktop/pokajnica2.jpg";
+import pokajnica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/desktop/pokajnica3.jpg";
+import pokajnica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/desktop/pokajnica4.jpg";
+import pokajnica11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/mobile/pokajnicaM1.jpg";
+import pokajnica22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/mobile/pokajnicaM2.jpg";
+import pokajnica33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/mobile/pokajnicaM3.jpg";
+import pokajnica44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirPokajnica/mobile/pokajnicaM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +24,7 @@ export const ManastirPokajnica = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={pokajnica1} alt="Manastir Pokajnica 1" />
+      <img srcSet={`${pokajnica11} 400w, ${pokajnica1} `} alt="Manastir Pokajnica 1" />
 
       <h2>Manastir Pokajnica</h2>
 
@@ -42,7 +46,7 @@ export const ManastirPokajnica = () => {
         ikoni svetog Đorđa: „sie cerkov ogradi gospodar Vuica za pomen 1818“.
       </p>
 
-      <img src={pokajnica2} alt="Manastir Pokajnica 2" />
+      <img srcSet={`${pokajnica22} 400w, ${pokajnica2} `} alt="Manastir Pokajnica 2" />
 
       <p>
         Prema propisima Srpske pravoslavne crkve, običaj je da crkva dobije ime
@@ -74,7 +78,7 @@ export const ManastirPokajnica = () => {
         sećanja na pokajanje Vujice Vulićevića, nazvao Pokajnica.
       </p>
 
-      <img src={pokajnica3} alt="Manastir Pokajnica 3" />
+      <img srcSet={`${pokajnica33} 400w, ${pokajnica3} `} alt="Manastir Pokajnica 3" />
 
       <p>
         Pokajnica je u početku služila kao parohijska crkva za okolna naselja:
@@ -92,7 +96,7 @@ export const ManastirPokajnica = () => {
         izuzetnog značaja.
       </p>
 
-      <img src={pokajnica4} alt="Manastir Pokajnica 4" />
+      <img srcSet={`${pokajnica44} 400w, ${pokajnica4} `} alt="Manastir Pokajnica 4" />
 
       <p>
         Građevina se, za razliku od većine crkava brvnara, ne odlikuje

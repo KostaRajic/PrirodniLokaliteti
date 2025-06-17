@@ -1,8 +1,13 @@
-import mackov1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mackovKamen1.jpg";
-import mackov2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mackovKamen2.jpg";
-import mackov3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mackovKamen3.jpg";
-import mackov4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mackovKamen4.jpg";
-import mackov5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mackovKamen5.jpg";
+import mackov1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/desktop/mackovKamen1.jpg";
+import mackov2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/desktop/mackovKamen2.jpg";
+import mackov3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/desktop/mackovKamen3.jpg";
+import mackov4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/desktop/mackovKamen4.jpg";
+import mackov5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/desktop/mackovKamen5.jpg";
+import mackov11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mobile/MmackovKamen1.jpg";
+import mackov22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mobile/MmackovKamen2.jpg";
+import mackov33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mobile/MmackovKamen3.jpg";
+import mackov44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mobile/MmackovKamen4.jpg";
+import mackov55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/MackovKamen/mobile/MmackovKamen5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const MackovKamen = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={mackov1} alt="Mačkov Kamen 1" />
+      <img srcSet={`${mackov11} 400w, ${mackov1} `} alt="Mačkov Kamen 1" />
 
       <h2>Mačkov Kamen</h2>
 
@@ -33,7 +38,7 @@ export const MackovKamen = () => {
         tokom 2013. i 2014. godine, kako bi se sačuvalo ovo značajno mesto.
       </p>
 
-      <img src={mackov2} alt="Mačkov Kamen 2" />
+      <img srcSet={`${mackov22} 400w, ${mackov2} `} alt="Mačkov Kamen 2" />
 
       <p>
         Bitka na Mačkovom kamenu vođena je od 19. do 22. septembra 1914. godine,
@@ -45,7 +50,7 @@ export const MackovKamen = () => {
         vremena, ostavivši dubok trag u sećanju na Veliki rat.
       </p>
 
-      <img src={mackov3} alt="Mačkov Kamen 3" />
+      <img srcSet={`${mackov33} 400w, ${mackov3} `} alt="Mačkov Kamen 3" />
 
       <p>
         Možda ime potpukovnika Dušana Purića (1873–1914), heroja sa Mačkovog
@@ -65,7 +70,7 @@ export const MackovKamen = () => {
       </p>
 
       <img
-        src={mackov4}
+        srcSet={`${mackov44} 400w, ${mackov4} `}
         alt="Mačkov Kamen 4"
       />
 
@@ -80,7 +85,7 @@ export const MackovKamen = () => {
         prijatnoj atmosferi.
       </p>
 
-      <img src={mackov5} alt="Planina Jagodnja" />
+      <img srcSet={`${mackov55} 400w, ${mackov5} `} alt="Planina Jagodnja" />
       <p>
         Planina Jagodnja prostire se između Borašnje na severu, Sokolskih
         planina i rečice Uzovnice na istoku, Drine na zapadu i jugoistoku, te

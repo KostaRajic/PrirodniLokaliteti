@@ -1,11 +1,19 @@
-import gMilanovac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac1.jpg";
-import gMilanovac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac2.jpg";
-import gMilanovac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac3.jpg";
-import gMilanovac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac4.jpg";
-import gMilanovac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac5.jpg";
-import gMilanovac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac6.jpg";
-import gMilanovac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac7.jpg";
-import gMilanovac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/gornjiMilanovac8.jpg";
+import gMilanovac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/desktop/gornjiMilanovac1.jpg";
+import gMilanovac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/desktop/gornjiMilanovac2.jpg";
+import gMilanovac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/desktop/gornjiMilanovac3.jpg";
+import gMilanovac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/desktop/gornjiMilanovac4.jpg";
+import gMilanovac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/desktop/gornjiMilanovac5.jpg";
+import gMilanovac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/desktop/gornjiMilanovac6.jpg";
+import gMilanovac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/desktop/gornjiMilanovac7.jpg";
+import gMilanovac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/desktop/gornjiMilanovac8.jpg";
+import gMilanovac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/mobile/MgornjiMilanovac1.jpg";
+import gMilanovac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/mobile/MgornjiMilanovac2.jpg";
+import gMilanovac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/mobile/MgornjiMilanovac3.jpg";
+import gMilanovac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/mobile/MgornjiMilanovac4.jpg";
+import gMilanovac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/mobile/MgornjiMilanovac5.jpg";
+import gMilanovac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/mobile/MgornjiMilanovac6.jpg";
+import gMilanovac77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/mobile/MgornjiMilanovac7.jpg";
+import gMilanovac88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/GornjiMilanovac/mobile/MgornjiMilanovac8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +31,7 @@ export const GornjiMilanovac = () => {
         onClick={() => navigate(moravickiOkrugPathRoutes.home)}
       />
       <header></header>
-      <img src={gMilanovac1} alt="Gornji Milanovac" />
+      <img srcSet={`${gMilanovac11} 400w, ${gMilanovac1} `} alt="Gornji Milanovac" />
 
       <h2>Gornji Milanovac</h2>
 
@@ -39,7 +47,7 @@ export const GornjiMilanovac = () => {
         severozapada graniči sa opštinama Požega i Mionica.
       </p>
 
-      <img src={gMilanovac7} alt="Gornji Milanovac" />
+      <img srcSet={`${gMilanovac77} 400w, ${gMilanovac7} `} alt="Gornji Milanovac" />
 
       <p>
         Gornji Milanovac je najveće naselje koje ima sve karakteristike modernog
@@ -55,13 +63,13 @@ export const GornjiMilanovac = () => {
 
       <div className="displayFlexClassic">
         <img
-          src={gMilanovac3}
+          srcSet={`${gMilanovac33} 400w, ${gMilanovac3} `}
           alt="Takovo"
           style={{ padding: "50px", width: "47%" }}
         />
 
         <img
-          src={gMilanovac2}
+          srcSet={`${gMilanovac22} 400w, ${gMilanovac2} `}
           alt="Takovo 2"
           style={{ padding: "50px", width: "47%" }}
         />
@@ -82,7 +90,7 @@ export const GornjiMilanovac = () => {
         Takovskog ustanka za istoriju Srbije.
       </p>
 
-      <img src={gMilanovac4} alt="Gornji Milanovac 3" />
+      <img srcSet={`${gMilanovac44} 400w, ${gMilanovac4} `} alt="Gornji Milanovac 3" />
 
       <p>
         Grebenom Rudnik-Suvobor opština je podeljena na manji severni i znatno
@@ -98,7 +106,7 @@ export const GornjiMilanovac = () => {
         se prvobitni tektonski oblici ne pojavljuju neposredno u crtama reljefa.
       </p>
 
-      <img src={gMilanovac5} alt="Gornji Milanovac 4" />
+      <img srcSet={`${gMilanovac55} 400w, ${gMilanovac5} `} alt="Gornji Milanovac 4" />
 
       <p>
         Crkva Svetog Nikole u Staroj čaršiji, selo Brusnica (Opština Gornji
@@ -117,7 +125,7 @@ export const GornjiMilanovac = () => {
         sanacioni radovi na unutrašnjoj arhitekturi crkve i uređena je porta.
       </p>
 
-      <img src={gMilanovac8} alt="Gornji Milanovac 5" />
+      <img srcSet={`${gMilanovac88} 400w, ${gMilanovac8} `} alt="Gornji Milanovac 5" />
 
       <p>
         Spomen-park Brdo mira je spomenički kompleks u Gornjem Milanovcu koji
@@ -134,7 +142,7 @@ export const GornjiMilanovac = () => {
         posetioce.
       </p>
 
-      <img src={gMilanovac6} alt="Gornji Milanovac 6" />
+      <img srcSet={`${gMilanovac66} 400w, ${gMilanovac6} `} alt="Gornji Milanovac 6" />
 
       <p>
         Savinac, omiljeno izletište Milanovčana nalazi se u zaseoku Šarani 4 km od

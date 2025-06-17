@@ -1,8 +1,13 @@
-import maglic1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/maglic1.jpg";
-import maglic2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/maglic2.jpg";
-import maglic3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/maglic3.jpg";
-import maglic4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/maglic4.jpg";
-import maglic5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/maglic5.jpg";
+import maglic1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/desktop/maglic1.jpg";
+import maglic2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/desktop/maglic2.jpg";
+import maglic3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/desktop/maglic3.jpg";
+import maglic4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/desktop/maglic4.jpg";
+import maglic5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/desktop/maglic5.jpg";
+import maglic11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/mobile/Mmaglic1.jpg";
+import maglic22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/mobile/Mmaglic2.jpg";
+import maglic33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/mobile/Mmaglic3.jpg";
+import maglic44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/mobile/Mmaglic4.jpg";
+import maglic55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic/mobile/Mmaglic5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const TvrdjavaMaglic = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={maglic1} alt="Kraljevo 1" />
+      <img srcSet={`${maglic11} 400w, ${maglic1} `} alt="Kraljevo 1" />
 
       <h2 style={{ color: "white" }}>Tvrđava Maglič</h2>
 
@@ -35,7 +40,7 @@ export const TvrdjavaMaglic = () => {
         postojećih objekata na Magliču, podigao palate i ćelije.
       </p>
 
-      <img src={maglic2} alt="Kraljevo 2" />
+      <img srcSet={`${maglic22} 400w, ${maglic2} `} alt="Kraljevo 2" />
 
       <p>
         Tvrđava Maglič sastoji se od sedam kula visine oko deset metara, dok je
@@ -49,7 +54,7 @@ export const TvrdjavaMaglic = () => {
         „Ironclad“, a filmska ekipa je bila oduševljena očuvanošću zidina.
       </p>
 
-      <img src={maglic3} alt="Narodni muzej u Kraljevu" />
+      <img srcSet={`${maglic33} 400w, ${maglic3} `} alt="Narodni muzej u Kraljevu" />
 
       <p>
         Istorijski podaci o tvrđavi Magliču su prilično oskudni. Na osnovu
@@ -65,7 +70,7 @@ export const TvrdjavaMaglic = () => {
         upade kroz Ibar i zaštitio prilaz manastirima Sopoćanima i Studenici.
       </p>
 
-      <img src={maglic4} alt="Muzej Slatka - Kuća cvetića kraljevo" />
+      <img srcSet={`${maglic44} 400w, ${maglic4} `} alt="Muzej Slatka - Kuća cvetića kraljevo" />
 
       <p>
         Druga teorija postavlja izgradnju tvrđave na početak 13. veka, za vreme
@@ -84,7 +89,7 @@ export const TvrdjavaMaglic = () => {
         knjiga.
       </p>
 
-      <img src={maglic5} alt="Saborna crkva Svete Trojice u Kraljevu" />
+      <img srcSet={`${maglic55} 400w, ${maglic5} `} alt="Saborna crkva Svete Trojice u Kraljevu" />
 
       <p>
         Nema konkretnih podataka o tome kada je Maglič prešao pod tursku vlast,

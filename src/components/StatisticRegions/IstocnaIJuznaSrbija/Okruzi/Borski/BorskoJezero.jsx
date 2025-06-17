@@ -1,8 +1,13 @@
-import borskoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/borskoJezero1.jpg";
-import borskoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/borskoJezero2.jpg";
-import borskoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/borskoJezero3.jpg";
-import borskoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/borskoJezero4.jpg";
-import borskoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/borskoJezero5.jpg";
+import borskoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/desktop/borskoJezero1.jpg";
+import borskoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/desktop/borskoJezero2.jpg";
+import borskoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/desktop/borskoJezero3.jpg";
+import borskoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/desktop/borskoJezero4.jpg";
+import borskoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/desktop/borskoJezero5.jpg";
+import borskoJezero11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/mobile/borskoJezeroM1.jpg";
+import borskoJezero22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/mobile/borskoJezeroM2.jpg";
+import borskoJezero33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/mobile/borskoJezeroM3.jpg";
+import borskoJezero44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/mobile/borskoJezeroM4.jpg";
+import borskoJezero55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/BorskoJezero/mobile/borskoJezeroM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const BorskoJezero = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={borskoJezero1} alt="Borsko Jezero 1" />
+      <img srcSet={`${borskoJezero11} 400w, ${borskoJezero1} `} alt="Borsko Jezero 1" />
 
       <h2>Borsko Jezero</h2>
 
@@ -33,7 +38,7 @@ export const BorskoJezero = () => {
         Rudarsko-topioničarskog basena, ali takođe doprinosi i razvoju turizma.
       </p>
 
-      <img src={borskoJezero2} alt="Borsko Jezero 2" />
+      <img srcSet={`${borskoJezero22} 400w, ${borskoJezero2} `} alt="Borsko Jezero 2" />
 
       <p>
         Tokom leta, turisti provode vreme na Borskom jezeru. Svake godine se u
@@ -42,7 +47,7 @@ export const BorskoJezero = () => {
         temperatura vode dostiže čak 26 stepeni, što je idealno za kupanje.
       </p>
 
-      <img src={borskoJezero3} alt="Borsko Jezero 3" />
+      <img srcSet={`${borskoJezero33} 400w, ${borskoJezero3} `} alt="Borsko Jezero 3" />
 
       <p>
         Zimi je jezero potpuno prekriveno ledom. Najviši vodostaji javljaju se u
@@ -53,7 +58,7 @@ export const BorskoJezero = () => {
         preliva.
       </p>
 
-      <img src={borskoJezero4} alt="Borsko Jezero 4" />
+      <img srcSet={`${borskoJezero44} 400w, ${borskoJezero4} `} alt="Borsko Jezero 4" />
 
       <p>
         Borsko jezero je okruženo listopadnim i četinarskim šumama, prirodnim
@@ -65,7 +70,7 @@ export const BorskoJezero = () => {
         hotela „Jezero“ u pravcu Žagubice.
       </p>
 
-      <img src={borskoJezero5} alt="Borsko Jezero 5" />
+      <img srcSet={`${borskoJezero55} 400w, ${borskoJezero5} `} alt="Borsko Jezero 5" />
       <p>
         Na obali Borskog jezera izgrađene su četiri veće plaže, kao i nekoliko
         manjih. Kupači na glavnoj plaži tokom celokupne sezone imaju nadzor

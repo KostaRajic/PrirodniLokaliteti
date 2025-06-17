@@ -1,7 +1,11 @@
-import koporin1 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/manastirKoporin1.jpg'
-import koporin2 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/manastirKoporin2.jpg'
-import koporin3 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/manastirKoporin3.jpg'
-import koporin4 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/manastirKoporin4.jpg'
+import koporin1 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/desktop/manastirKoporin1.jpg'
+import koporin2 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/desktop/manastirKoporin2.jpg'
+import koporin3 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/desktop/manastirKoporin3.jpg'
+import koporin4 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/desktop/manastirKoporin4.jpg'
+import koporin11 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/mobile/manastirKoporinM1.jpg'
+import koporin22 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/mobile/manastirKoporinM2.jpg'
+import koporin33 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/mobile/manastirKoporinM3.jpg'
+import koporin44 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/mobile/manastirKoporinM4.jpg'
 
 
 import { FaArrowLeft } from "react-icons/fa";
@@ -21,7 +25,7 @@ export const ManastirKoporin = () => {
 
       />
       <header></header>
-      <img src={koporin1} alt="Manastir Koporin 1" />
+      <img srcSet={`${koporin11} 400w, ${koporin1} `} alt="Manastir Koporin 1" />
 
       <h2>Manastir Koporin</h2>
 
@@ -39,7 +43,7 @@ export const ManastirKoporin = () => {
         dolazili do manastira.
       </p>
 
-      <img src={koporin2} alt="Manastir Koporin 2" />
+      <img srcSet={`${koporin22} 400w, ${koporin2} `} alt="Manastir Koporin 2" />
 
       <p>
         Tačno vreme izgradnje manastira Koporin, kao i njegov ktitor, ostaju
@@ -64,7 +68,7 @@ export const ManastirKoporin = () => {
         kao turski vazal, i 1427. godine, kada je preminuo.
       </p>
 
-      <img src={koporin3} alt="Manastir Koporin 3" />
+      <img srcSet={`${koporin33} 400w, ${koporin3} `} alt="Manastir Koporin 3" />
 
       <p>
         O poreklu imena manastira postoji više legendi, koje su svojevremeno
@@ -86,7 +90,7 @@ export const ManastirKoporin = () => {
         naselja, njegovo ime ostalo je sačuvano u imenu manastira.
       </p>
 
-      <img src={koporin4} alt="Manastir Koporin 4" />
+      <img srcSet={`${koporin44} 400w, ${koporin4} `} alt="Manastir Koporin 4" />
 
       <p>
         Istoričarka Olga Zirojević, proučavajući turske deftere, zaključila je

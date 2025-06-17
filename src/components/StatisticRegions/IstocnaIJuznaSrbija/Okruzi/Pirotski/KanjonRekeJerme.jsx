@@ -1,8 +1,13 @@
-import jerma1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/kanjonRekeJerme1.jpg";
-import jerma2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/kanjonRekeJerme2.jpg";
-import jerma3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/kanjonRekeJerme3.jpg";
-import jerma4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/kanjonRekeJerme4.jpg";
-import jerma5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/kanjonRekeJerme5.jpg";
+import jerma1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/desktop/kanjonRekeJerme1.jpg";
+import jerma2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/desktop/kanjonRekeJerme2.jpg";
+import jerma3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/desktop/kanjonRekeJerme3.jpg";
+import jerma4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/desktop/kanjonRekeJerme4.jpg";
+import jerma5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/desktop/kanjonRekeJerme5.jpg";
+import jerma11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/mobile/kanjonRekeJermeM1.jpg";
+import jerma22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/mobile/kanjonRekeJermeM2.jpg";
+import jerma33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/mobile/kanjonRekeJermeM3.jpg";
+import jerma44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/mobile/kanjonRekeJermeM4.jpg";
+import jerma55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/KanjonRekeJerme/mobile/kanjonRekeJermeM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const KanjonRekeJerme = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={jerma1} alt="Kanjon reke Jerme 1" />
+      <img srcSet={`${jerma11} 400w, ${jerma1} `} alt="Kanjon reke Jerme 1" />
 
       <h2>Kanjon reke Jerme</h2>
 
@@ -36,7 +41,7 @@ export const KanjonRekeJerme = () => {
         njegovog karakterističnog oblika.
       </p>
 
-      <img src={jerma2} alt="Kanjon reke Jerme 2" />
+      <img srcSet={`${jerma22} 400w, ${jerma2} `} alt="Kanjon reke Jerme 2" />
 
       <p>
         Kanjon reke Jerme nalazi se u regionu između gradova Pirot, Dimitrovgrad
@@ -51,7 +56,7 @@ export const KanjonRekeJerme = () => {
         kanjona nalazi se i Zvonačka Banja.
       </p>
 
-      <img src={jerma3} alt="Kanjon reke Jerme 3" />
+      <img srcSet={`${jerma33} 400w, ${jerma3} `} alt="Kanjon reke Jerme 3" />
 
       <p>
         Kanjon reke Jerme dom je raznovrsnom biljnom i životinjskom svetu. U
@@ -63,7 +68,7 @@ export const KanjonRekeJerme = () => {
         u posmatranju i fotografisanju ovog bogatog ekosistema.
       </p>
 
-      <img src={jerma4} alt="Kanjon reke Jerme 4" />
+      <img srcSet={`${jerma44} 400w, ${jerma4} `} alt="Kanjon reke Jerme 4" />
 
       <p>
         Do 1927. godine, kanjon reke Jerme bio je potpuno izolovan i
@@ -81,7 +86,7 @@ export const KanjonRekeJerme = () => {
         netaknut od mnogih osvajača kroz svoju istoriju.
       </p>
 
-      <img src={jerma5} alt="Kanjon reke Jerme 5" />
+      <img srcSet={`${jerma55} 400w, ${jerma5} `} alt="Kanjon reke Jerme 5" />
 
       <p>
         Kanjon reke Jerme pruža širok spektar aktivnosti za posetioce koji žele

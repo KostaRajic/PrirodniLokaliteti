@@ -1,8 +1,13 @@
-import gronjak1 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/gornjak1.jpg'
-import gronjak2 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/gornjak2.jpg'
-import gronjak3 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/gornjak3.jpg'
-import gronjak4 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/gornjak4.jpg'
-import gronjak5 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/gornjak5.jpg'
+import gronjak1 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/desktop/gornjak1.jpg'
+import gronjak2 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/desktop/gornjak2.jpg'
+import gronjak3 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/desktop/gornjak3.jpg'
+import gronjak4 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/desktop/gornjak4.jpg'
+import gronjak5 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/desktop/gornjak5.jpg'
+import gronjak11 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/mobile/gornjakM1.jpg'
+import gronjak22 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/mobile/gornjakM2.jpg'
+import gronjak33 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/mobile/gornjakM3.jpg'
+import gronjak44 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/mobile/gornjakM4.jpg'
+import gronjak55 from '../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirGornjak/mobile/gornjakM5.jpg'
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const ManastirGornjak = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={gronjak1} alt="Manastir Gornjak 1" />
+      <img srcSet={`${gronjak11} 400w, ${gronjak1} `} alt="Manastir Gornjak 1" />
 
       <h2>Manastir Gornjak</h2>
 
@@ -45,7 +50,7 @@ export const ManastirGornjak = () => {
         napisao je poemu „Put u Gornjak“.
       </p>
 
-      <img src={gronjak3} alt="Manastir Gornjak 2" />
+      <img srcSet={`${gronjak33} 400w, ${gronjak3} `} alt="Manastir Gornjak 2" />
 
       <p>
         Manastir Ždrelo, kasnije nazvan Gornjak, nalazi se na maloj zaravni
@@ -66,7 +71,7 @@ export const ManastirGornjak = () => {
         zadužbinom.
       </p>
 
-      <img src={gronjak2} alt="Manastir Gornjak 3" />
+      <img srcSet={`${gronjak22} 400w, ${gronjak2} `} alt="Manastir Gornjak 3" />
 
       <p>
         Za vreme trajanja srednjovekovne srpske države, manastir je uživao sva
@@ -88,7 +93,7 @@ export const ManastirGornjak = () => {
         akču.
       </p>
 
-      <img src={gronjak4} alt="Manastir Gornjak 4" />
+      <img srcSet={`${gronjak44} 400w, ${gronjak4} `} alt="Manastir Gornjak 4" />
 
       <p>
         Međutim, popis iz vremena Murata III (1574–1595) pokazuje pad manastira
@@ -102,7 +107,7 @@ export const ManastirGornjak = () => {
         zatvarale taj jedini i teško prohodni prolaz u Homolje.
       </p>
 
-      <img src={gronjak5} alt="Manastir Gornjak 5" />
+      <img srcSet={`${gronjak55} 400w, ${gronjak5} `} alt="Manastir Gornjak 5" />
       <p>
         Manastir Gornjak, iako vladarska zadužbina, skromnih je dimenzija, što
         je često izazivalo sumnju u Lazarovo ktitorstvo. Mnogi manastirski

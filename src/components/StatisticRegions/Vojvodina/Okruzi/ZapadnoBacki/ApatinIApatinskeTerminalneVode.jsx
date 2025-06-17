@@ -1,8 +1,14 @@
-import apatin1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin1.jpg";
-import apatin2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin2.jpg";
-import apatin3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin3.jpg";
-import apatin5 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin5.jpg";
-import apatin6 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/Apatin6.jpg";
+import apatin1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/desktop/Apatin1.jpg";
+import apatin2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/desktop/Apatin2.jpg";
+import apatin3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/desktop/Apatin3.jpg";
+import apatin5 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/desktop/Apatin5.jpg";
+import apatin6 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/desktop/Apatin6.jpg";
+import apatin11 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/mobile/MApatin1.jpg";
+import apatin22 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/mobile/MApatin2.jpg";
+import apatin33 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/mobile/MApatin3.jpg";
+import apatin55 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/mobile/MApatin5.jpg";
+import apatin66 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/mobile/MApatin6.jpg";
+
 import apatinM1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/muzeji/CrkvaSvApostola.jpg";
 import apatinM2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/muzeji/MuzejPodunavskihNemaca.jpg";
 import apatinM3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/ApatinITerminalneVode/muzeji/NikolaTesla.jpg";
@@ -11,6 +17,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { useEffect, useState } from "react";
+import { zapadnoBackiPathRoutes } from "./ZapadnoBackiPathRoutes";
 
 export const Apatin = () => {
   const navigate = useNavigate();
@@ -19,10 +26,10 @@ export const Apatin = () => {
     <>
       <div className="placeBackground">
         <ScrollToTop />
-        <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+        <FaArrowLeft className="arrowLeft" onClick={() => navigate(zapadnoBackiPathRoutes.home)} />
 
         <header></header>
-        <img src={apatin1} alt="apatin1" />
+        <img srcSet={`${apatin11} 400w, ${apatin1} `} alt="apatin1" />
         
           <h2>Apatin i Terminalne Vode</h2>
 
@@ -34,9 +41,9 @@ export const Apatin = () => {
           pejzaža.
         </p>
 
-        <img src={apatin2} alt="apatin2" />
+        <img srcSet={`${apatin22} 400w, ${apatin2} `} alt="apatin2" />
 
-        <p style={{ marginTop: "-10px" }}>
+        <p>
           Apatin je poznat po svojoj Apatinskoj pivari, jednoj od najstarijih u
           regionu, kao i salašima u okolini gde se mogu probati tradicionalna
           jela i uživati u autentičnom vojvođanskom ambijentu. Pored toga,
@@ -60,9 +67,9 @@ export const Apatin = () => {
           </div>
         </div>
 
-        <img src={apatin5} alt="apatin3" />
+        <img srcSet={`${apatin55} 400w, ${apatin5} `} alt="apatin3" />
 
-        <p style={{ marginTop: "-10px" }}>
+        <p>
           Dunav, sa svojim adama i rukavcima, predstavlja srce prirodnih
           atrakcija Apatina. Ova područja pružaju idealne uslove za ribolov,
           plovidbu i uživanje u mirnim pejzažima. Riblji fond privlači sportske
@@ -73,9 +80,9 @@ export const Apatin = () => {
           su za rekreativce i ljubitelje prirode.
         </p>
 
-        <img src={apatin3} alt="apatin4" />
+        <img srcSet={`${apatin33} 400w, ${apatin3} `} alt="apatin4" />
 
-        <p style={{ marginTop: "-10px" }}>
+        <p>
           Poseban značaj imaju termalne vode, poznate po svom lekovitom sastavu
           i temperaturi od oko 50°C. Ove vode se koriste za tretman reumatskih
           bolesti, problema sa mišićima i zglobovima, kao i za oporavak nakon
@@ -84,9 +91,9 @@ export const Apatin = () => {
           opuštanje i poboljšanje opšteg zdravlja u prirodnom okruženju.
         </p>
 
-        <img src={apatin6} alt="apatin4" />
+        <img srcSet={`${apatin66} 400w, ${apatin6} `} alt="apatin4" />
 
-        <p style={{ marginTop: "-10px" }}>
+        <p>
           Posetite Apatin, grad na obali Dunava, gde se spajaju prirodne lepote,
           termalne vode i bogata vojvođanska tradicija, pružajući savršen odmor
           i autentično iskustvo.

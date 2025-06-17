@@ -1,7 +1,11 @@
-import brestovackoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/brestovackoJezero1.jpg";
-import brestovackoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/brestovackoJezero2.jpg";
-import brestovackoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/brestovackoJezero3.jpg";
-import brestovackoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/brestovackoJezero4.jpg";
+import brestovackoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/desktop/brestovackoJezero1.jpg";
+import brestovackoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/desktop/brestovackoJezero2.jpg";
+import brestovackoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/desktop/brestovackoJezero3.jpg";
+import brestovackoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/desktop/brestovackoJezero4.jpg";
+import brestovackoJezero11 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/mobile/brestovackoJezeroM1.jpg";
+import brestovackoJezero22 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/mobile/brestovackoJezeroM2.jpg";
+import brestovackoJezero33 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/mobile/brestovackoJezeroM3.jpg";
+import brestovackoJezero44 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/mobile/brestovackoJezeroM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +24,7 @@ export const BrestovackoJezero = () => {
 
       />
       <header></header>
-      <img src={brestovackoJezero1} alt="Brestovačko jezero 1" />
+      <img srcSet={`${brestovackoJezero11} 400w, ${brestovackoJezero1} `} alt="Brestovačko jezero 1" />
 
       <h2>Brestovačko jezero</h2>
 
@@ -33,7 +37,7 @@ export const BrestovackoJezero = () => {
         gornjem toku. Koristi se za snabdevanje vodom naselja Lebane i Bojnik.
       </p>
 
-      <img src={brestovackoJezero2} alt="Brestovačko jezero 2" />
+      <img srcSet={`${brestovackoJezero22} 400w, ${brestovackoJezero2} `} alt="Brestovačko jezero 2" />
 
       <p>
         Brestovačko jezero prostire se na dužini od 2,8 kilometara i širini od
@@ -43,7 +47,7 @@ export const BrestovackoJezero = () => {
         jezeru dolazi iz Puste reke, koja izvire na planini Radan.
       </p>
 
-      <img src={brestovackoJezero3} alt="Brestovačko jezero 3" />
+      <img srcSet={`${brestovackoJezero33} 400w, ${brestovackoJezero3} `} alt="Brestovačko jezero 3" />
 
       <p>
         Brestovačko jezero je bogato različitim vrstama riba, među kojima se
@@ -55,7 +59,7 @@ export const BrestovackoJezero = () => {
         dozvoljeno kampovanje.
       </p>
 
-      <img src={brestovackoJezero4} alt="Brestovačko jezero 4" />
+      <img srcSet={`${brestovackoJezero44} 400w, ${brestovackoJezero4} `} alt="Brestovačko jezero 4" />
 
       <p>
         Brestovačko jezero je pristupačno iz dva pravca. Ako dolazite iz Niša,

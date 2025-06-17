@@ -1,9 +1,15 @@
-import stariRas1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/tvrdjavaStariRas5.jpg";
-import stariRas2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/tvrdjavaStariRas1.jpg";
-import stariRas3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/tvrdjavaStariRas2.jpg";
-import stariRas4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/tvrdjavaStariRas3.jpg";
-import stariRas5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/tvrdjavaStariRas4.jpg";
-import stariRas6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/tvrdjavaStariRas6.jpg";
+import stariRas1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas5.jpg";
+import stariRas2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas1.jpg";
+import stariRas3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas2.jpg";
+import stariRas4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas3.jpg";
+import stariRas5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas4.jpg";
+import stariRas6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas6.jpg";
+import stariRas11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/mobile/MtvrdjavaStariRas5.jpg";
+import stariRas22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/mobile/MtvrdjavaStariRas1.jpg";
+import stariRas33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/mobile/MtvrdjavaStariRas2.jpg";
+import stariRas44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/mobile/MtvrdjavaStariRas3.jpg";
+import stariRas55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/mobile/MtvrdjavaStariRas4.jpg";
+import stariRas66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/mobile/MtvrdjavaStariRas6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const TvrdjavaStariRas = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={stariRas1} alt="Tvrđava Stari Ras 1" />
+      <img srcSet={`${stariRas11} 400w, ${stariRas1} `} alt="Tvrđava Stari Ras 1" />
 
       <h2 style={{ color: "white" }}>Tvrđava Stari Ras</h2>
 
@@ -52,7 +58,7 @@ export const TvrdjavaStariRas = () => {
         dinastije, koja je u Starom Rasu postavila svoju prestonicu.
       </p>
 
-      <img src={stariRas2} alt="Tvrđava Stari Ras 2" />
+      <img srcSet={`${stariRas22} 400w, ${stariRas2} `} alt="Tvrđava Stari Ras 2" />
 
       <p>
         Stari Ras, kao prestonica prvih Nemanjića, ali i kao region koji je
@@ -75,7 +81,7 @@ export const TvrdjavaStariRas = () => {
         konkurencije prethodnih dinastičkih kuća, pre svega u Zeti.
       </p>
 
-      <img src={stariRas3} alt="Tvrđava Stari Ras 3" />
+      <img srcSet={`${stariRas33} 400w, ${stariRas3} `} alt="Tvrđava Stari Ras 3" />
 
       <p>
         Ako bismo pokušali da generalizujemo stavove istraživača u najširem
@@ -97,7 +103,7 @@ export const TvrdjavaStariRas = () => {
         utvrđenje Gradina u Postenju (Novopazarska banja).
       </p>
 
-      <img src={stariRas4} alt="Tvrđava Stari Ras 4" />
+      <img srcSet={`${stariRas44} 400w, ${stariRas4} `} alt="Tvrđava Stari Ras 4" />
 
       <p>
         U pokušaju da učvrste i dokažu svoje tvrdnje, oba autora iznose niz
@@ -121,7 +127,7 @@ export const TvrdjavaStariRas = () => {
         narodima, nalazimo podatke o Rasu u XXXII glavi.
       </p>
 
-      <img src={stariRas5} alt="Tvrđava Stari Ras 5" />
+      <img srcSet={`${stariRas55} 400w, ${stariRas5} `} alt="Tvrđava Stari Ras 5" />
 
       <p>
         Ovdje je izneta informacija koja se odnosi na srpsko-bugarski rat iz
@@ -148,7 +154,7 @@ export const TvrdjavaStariRas = () => {
         analogije.
       </p>
 
-      <img src={stariRas6} alt="Tvrđava Stari Ras 5" />
+      <img srcSet={`${stariRas66} 400w, ${stariRas6} `} alt="Tvrđava Stari Ras 5" />
 
       <p>
         Iz podataka koje daje Konstantin Porfirogenit, takođe se jasno vidi da

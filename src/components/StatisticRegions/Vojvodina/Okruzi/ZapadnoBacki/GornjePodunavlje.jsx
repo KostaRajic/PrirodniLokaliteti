@@ -1,12 +1,18 @@
-import GP3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/GP3.jpg";
-import GP1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/GP1.jpg";
-import GP4 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/GP4.jpg";
-import GP2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/GP2.jpg";
-import GP5 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/GP5.jpg";
+import GP3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/desktop/GP3.jpg";
+import GP1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/desktop/GP1.jpg";
+import GP4 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/desktop/GP4.jpg";
+import GP2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/desktop/GP2.jpg";
+import GP5 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/desktop/GP5.jpg";
+import GP33 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/mobile/MGP3.jpg";
+import GP11 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/mobile/MGP1.jpg";
+import GP44 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/mobile/MGP4.jpg";
+import GP22 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/mobile/MGP2.jpg";
+import GP55 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/GornjePodunavlje/mobile/MGP5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zapadnoBackiPathRoutes } from "./ZapadnoBackiPathRoutes";
 
 export const GornjePodunavlje = () => {
   const navigate = useNavigate();
@@ -14,9 +20,9 @@ export const GornjePodunavlje = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zapadnoBackiPathRoutes.home)} />
       <header></header>
-      <img src={GP5} alt="Gornje Podunavlje 1" />
+      <img srcSet={`${GP55} 400w, ${GP5} `} alt="Gornje Podunavlje 1" />
         <h2>Gornje Podunavlje</h2>
 
 
@@ -28,9 +34,9 @@ export const GornjePodunavlje = () => {
         zaštićenih područja Evrope.
       </p>
 
-      <img src={GP1} alt="Gornje Podunavlje 2" />
+      <img srcSet={`${GP11} 400w, ${GP1} `} alt="Gornje Podunavlje 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Gornje Podunavlje je popularna destinacija za ekoturizam. Posetioci mogu
         uživati u vožnji čamcima kroz mrežu dunavskih rukavaca, posmatranju
         ptica, planinarenju i biciklizmu. Ribolovci ovde pronalaze bogate riblje
@@ -38,18 +44,18 @@ export const GornjePodunavlje = () => {
         u miru i tišini.
       </p>
 
-      <img src={GP4} alt="Gornje Podunavlje 3" />
+      <img srcSet={`${GP44} 400w, ${GP4} `} alt="Gornje Podunavlje 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Idealno je za porodice, istraživače i ekoturiste koji žele da provedu
         vreme u tišini i miru, daleko od gradske vreve. Ovaj prirodni biser
         pruža priliku da posetioci dožive Dunav na jedinstven način, kroz
         plovidbu njegovim rukavcima i posmatranje bogate flore i faune.
       </p>
 
-      <img src={GP3} alt="Gornje Podunavlje 4" />
+      <img srcSet={`${GP33} 400w, ${GP3} `} alt="Gornje Podunavlje 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ovaj rezervat je pravi biser prirode, značajan ne samo za očuvanje
         biodiverziteta, već i za promovisanje održivog turizma i podizanje
         svesti o važnosti očuvanja prirodnih staništa. Gornje Podunavlje je
@@ -57,7 +63,7 @@ export const GornjePodunavlje = () => {
         povežu sa netaknutim okruženjem.
       </p>
 
-      <img src={GP2} alt="Gornje Podunavlje 5" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${GP22} 400w, ${GP2} `} alt="Gornje Podunavlje 5" />
       <p>
         Istražite Gornje Podunavlje, oazu netaknute prirode uz Dunav, idealnu za
         posmatranje ptica, vožnju čamcem i uživanje u miru močvarnih pejzaža.

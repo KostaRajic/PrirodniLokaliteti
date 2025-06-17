@@ -1,8 +1,13 @@
-import celije1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/manastirCelije1.jpg";
-import celije2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/manastirCelije2.jpg";
-import celije3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/manastirCelije3.jpg";
-import celije4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/manastirCelije4.jpg";
-import celije5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/manastirCelije5.webp";
+import celije1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/desktop/manastirCelije1.jpg";
+import celije2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/desktop/manastirCelije2.jpg";
+import celije3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/desktop/manastirCelije3.jpg";
+import celije4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/desktop/manastirCelije4.jpg";
+import celije5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/desktop/manastirCelije5.webp";
+import celije11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/mobile/MmanastirCelije1.jpg";
+import celije22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/mobile/MmanastirCelije2.jpg";
+import celije33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/mobile/MmanastirCelije3.jpg";
+import celije44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/mobile/MmanastirCelije4.jpg";
+import celije55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirCelije/mobile/MmanastirCelije5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,9 +26,9 @@ export const ManastirCelije = () => {
         style={{fill: 'white'}}
       />
       <header></header>
-      <img src={celije4} alt="Manastir Ćelije 1" />
+      <img srcSet={`${celije44} 400w, ${celije4} `} alt="Manastir Ćelije 1" />
 
-      <h2 style={{marginLeft: '50px', color: 'white'}}>Manastir Ćelije</h2>
+      <h2 style={{color: 'white'}}>Manastir Ćelije</h2>
 
       <p style={{ paddingTop: "50px" }}>
         Manastir Ćelije posvećen svetom velikomučeniku Georgiju nalazi se oko 3
@@ -41,7 +46,7 @@ export const ManastirCelije = () => {
         bilo, već isključivo na izvorima drugačije prirode.
       </p>
 
-      <img src={celije2} alt="Manastir Ćelije 2" />
+      <img srcSet={`${celije22} 400w, ${celije2} `} alt="Manastir Ćelije 2" />
 
       <p>
         Tačan datum nastanka manastira nije poznat, ali prema opštem istorijskom
@@ -56,7 +61,7 @@ export const ManastirCelije = () => {
         okrugu. U ovom manastiru je sveštenički čin primio i Hadži Ruvim.
       </p>
 
-      <img src={celije3} alt="Manastir Ćelije 3" />
+      <img srcSet={`${celije33} 400w, ${celije3} `} alt="Manastir Ćelije 3" />
 
       <p>
         Najstarija ikona u manastiru je ikona Sabora Svetih Arhangela,
@@ -73,7 +78,7 @@ export const ManastirCelije = () => {
         pripadalo proti Matiji Nenadoviću, a ima značajnu istorijsku vrednost.
       </p>
 
-      <img src={celije1} alt="Manastir Ćelije 4" />
+      <img srcSet={`${celije11} 400w, ${celije1} `} alt="Manastir Ćelije 4" />
 
       <p>
         Manastir je bio namenjen za smeštaj manjeg broja monaha, a svojim
@@ -91,7 +96,7 @@ export const ManastirCelije = () => {
         ktitorski grob je bio oštećen.
       </p>
 
-      <img src={celije5} alt="sveti Ava Justin" />
+      <img srcSet={`${celije55} 400w, ${celije5} `} alt="sveti Ava Justin" />
 
       <p>
         Manastir Ćelije poznat je po tome što je u njemu boravio arhimandrit dr

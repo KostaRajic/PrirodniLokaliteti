@@ -1,7 +1,11 @@
-import pec1 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/pec1.jpg'
-import pec2 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/pec2.jpg'
-import pec3 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/pec3.jpg'
-import pec4 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/pec4.jpg'
+import pec1 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/desktop/pec1.jpg'
+import pec2 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/desktop/pec2.jpg'
+import pec3 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/desktop/pec3.jpg'
+import pec4 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/desktop/pec4.jpg'
+import pec11 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/mobile/Mpec1.jpg'
+import pec22 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/mobile/Mpec2.jpg'
+import pec33 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/mobile/Mpec3.jpg'
+import pec44 from '../../../../../assets/images/KosovoIMetohija/Pecki/Pec/mobile/Mpec4.jpg'
 
 
 import { FaArrowLeft } from "react-icons/fa";
@@ -17,7 +21,7 @@ export const Pec = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(peckiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={pec2} alt="Peć 1" />
+      <img srcSet={`${pec22} 400w, ${pec2} `} alt="Peć 1" />
 
       <h2>Peć</h2>
 
@@ -27,7 +31,7 @@ export const Pec = () => {
         od Prokletija.
       </p>
 
-      <img src={pec1} alt="Peć 2" />
+      <img srcSet={`${pec11} 400w, ${pec1} `} alt="Peć 2" />
 
       <p>
         Grad je postao značajno vjersko središte srednjovjekovne Srbije pod
@@ -41,7 +45,7 @@ export const Pec = () => {
         baštine.
       </p>
 
-      <img src={pec3} alt="Peć 3" />
+      <img srcSet={`${pec33} 400w, ${pec3} `} alt="Peć 3" />
 
       <p>
         Grad je krajem 14. veka osvojio Otomanski imperij, što je dovelo do
@@ -61,7 +65,7 @@ export const Pec = () => {
         trgovini ženama, koju je vodio protojerej pećki.
       </p>
 
-      <img src={pec4} alt="Peć 4" />
+      <img srcSet={`${pec44} 400w, ${pec4} `} alt="Peć 4" />
 
       <p>
         Otomanska vlast u Peći završena je tokom Prvog balkanskog rata, kada su

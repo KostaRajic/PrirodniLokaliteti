@@ -1,8 +1,13 @@
-import zica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/zica1.jpg";
-import zica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/zica2.jpg";
-import zica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/zica3.jpg";
-import zica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/zica4.jpg";
-import zica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/zica5.jpg";
+import zica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/desktop/zica1.jpg";
+import zica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/desktop/zica2.jpg";
+import zica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/desktop/zica3.jpg";
+import zica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/desktop/zica4.jpg";
+import zica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/desktop/zica5.jpg";
+import zica11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/mobile/Mzica1.jpg";
+import zica22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/mobile/Mzica2.jpg";
+import zica33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/mobile/Mzica3.jpg";
+import zica44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/mobile/Mzica4.jpg";
+import zica55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica/mobile/Mzica5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const ManastirZica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zica3} alt="Manastir Žiča 1" />
+      <img srcSet={`${zica33} 400w, ${zica3} `} alt="Manastir Žiča 1" />
 
       <h2 style={{ color: "white" }}>Manastir Žiča</h2>
 
@@ -42,7 +47,7 @@ export const ManastirZica = () => {
         bogat žitom.
       </p>
 
-      <img src={zica2} alt="Manastir Žiča 2" />
+      <img srcSet={`${zica22} 400w, ${zica2} `} alt="Manastir Žiča 2" />
 
       <p>
         Tačno vreme izgradnje manastira Žiče nije zabeleženo u izvorima, pa je
@@ -67,7 +72,7 @@ export const ManastirZica = () => {
         već 1220. godine arhiepiskop Sava hirotonisao osmoro episkopa.
       </p>
 
-      <img src={zica1} alt="Manastir Žiča 3" />
+      <img srcSet={`${zica11} 400w, ${zica1} `} alt="Manastir Žiča 3" />
 
       <p>
         Najstariji istorijski izvori o manastiru Žiča su dve povelje kralja
@@ -83,7 +88,7 @@ export const ManastirZica = () => {
         na jugoistoku Evrope, danas ne postoji ni trag – gotovo sve su uništene.
       </p>
 
-      <img src={zica4} alt="Manastir Žiča 4" />
+      <img srcSet={`${zica44} 400w, ${zica4} `} alt="Manastir Žiča 4" />
 
       <p>
         Najveći deo Žičke povelje sadrži podatke o darovima u zemljišnom posedu.
@@ -104,7 +109,7 @@ export const ManastirZica = () => {
         Svetog Đorđa.
       </p>
 
-      <img src={zica5} alt="Manastir Žiča 5" />
+      <img srcSet={`${zica55} 400w, ${zica5} `} alt="Manastir Žiča 5" />
 
       <p>
         Crkva nove Arhiepiskopije, na kojoj je s puno truda, a pre svega

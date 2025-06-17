@@ -1,11 +1,19 @@
-import valjevo1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo1.jpg";
-import valjevo2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo2.jpg";
-import valjevo3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo3.jpg";
-import valjevo4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo4.jpg";
-import valjevo5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo5.jpg";
-import valjevo6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo6.jpg";
-import valjevo7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo7.jpg";
-import valjevo8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/valjevo8.jpg";
+import valjevo1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/desktop/valjevo1.jpg";
+import valjevo2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/desktop/valjevo2.jpg";
+import valjevo3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/desktop/valjevo3.jpg";
+import valjevo4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/desktop/valjevo4.jpg";
+import valjevo5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/desktop/valjevo5.jpg";
+import valjevo6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/desktop/valjevo6.jpg";
+import valjevo7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/desktop/valjevo7.jpg";
+import valjevo8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/desktop/valjevo8.jpg";
+import valjevo11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/mobile/Mvaljevo1.jpg";
+import valjevo22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/mobile/Mvaljevo2.jpg";
+import valjevo33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/mobile/Mvaljevo3.jpg";
+import valjevo44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/mobile/Mvaljevo4.jpg";
+import valjevo55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/mobile/Mvaljevo5.jpg";
+import valjevo66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/mobile/Mvaljevo6.jpg";
+import valjevo77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/mobile/Mvaljevo7.jpg";
+import valjevo88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Valjevo/mobile/Mvaljevo8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +28,7 @@ export const Valjevo = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={valjevo1} alt="Valjevo 1" />
+      <img srcSet={`${valjevo11} 400w, ${valjevo1} `} alt="Valjevo 1" />
 
       <h2>Valjevo</h2>
 
@@ -37,7 +45,7 @@ export const Valjevo = () => {
         okruženju.
       </p>
 
-      <img src={valjevo2} alt="Valjevo 2" />
+      <img srcSet={`${valjevo22} 400w, ${valjevo2} `} alt="Valjevo 2" />
 
       <p>
         Valjevo se nalazi na povoljnom geografskom položaju, udaljeno oko 100 km
@@ -51,7 +59,7 @@ export const Valjevo = () => {
         morem, dodatno povećavajući njegov strateški značaj.
       </p>
 
-      <img src={valjevo3} alt="Narodni Muzej Valjevo" />
+      <img srcSet={`${valjevo33} 400w, ${valjevo3} `} alt="Narodni Muzej Valjevo" />
 
       <p>
         Valjevo se može pohvaliti bogatim kulturnim životom, sa brojnim
@@ -75,7 +83,7 @@ export const Valjevo = () => {
         Maksimović u Brankovini.
       </p>
 
-      <img src={valjevo4} alt="Valjevo 3" />
+      <img srcSet={`${valjevo44} 400w, ${valjevo4} `} alt="Valjevo 3" />
 
       <p>
         Valjevo je grad koji je duboko vezan za istoriju Srbije, a jedan od
@@ -96,7 +104,7 @@ export const Valjevo = () => {
         grada i Srbije uopšte ostaju neizbrisivi.
       </p>
 
-      <img src={valjevo5} alt="čaršija Tešnjar Valjevo" />
+      <img srcSet={`${valjevo55} 400w, ${valjevo5} `} alt="čaršija Tešnjar Valjevo" />
       <p>
         U samom centru grada, na desnoj obali reke Kolubare, nalazi se stara
         čaršija Tešnjar, koja potiče iz 17. veka, ali je današnji izgled dobila
@@ -110,7 +118,7 @@ export const Valjevo = () => {
         barutana, a obnovio ju je knez Miloš Obrenović 1836. godine.
       </p>
 
-      <img src={valjevo8} alt="Valjevo Brankovina" />
+      <img srcSet={`${valjevo88} 400w, ${valjevo8} `} alt="Valjevo Brankovina" />
       <p>
         U blizini Valjeva, nalazi se Brankovina, rodno mesto čuvene srpske
         porodice Nenadović, iz koje su potekli lideri Prvog srpskog ustanka,
@@ -129,7 +137,7 @@ export const Valjevo = () => {
         prelepoj crkvenoj porti Brankovine.
       </p>
 
-      <img src={valjevo6} alt="Dečiji park Pećina Valjevo" />
+      <img srcSet={`${valjevo66} 400w, ${valjevo6} `} alt="Dečiji park Pećina Valjevo" />
       <p>
         Dečiji park Pećina je jedno od omiljenih mesta za decu i roditelje u
         Valjevu. Nalazi se u prirodnoj oazi, koja je poznata po svojoj lepoti i
@@ -144,7 +152,7 @@ export const Valjevo = () => {
         decu, što dodatno doprinosi njegovoj popularnosti i značaju u zajednici.
       </p>
 
-      <img src={valjevo7} alt="Ušće Gradca u Kolubaru" />
+      <img srcSet={`${valjevo77} 400w, ${valjevo7} `} alt="Ušće Gradca u Kolubaru" />
       <p>
         Ušće Gradca u Kolubaru je značajno iz nekoliko razloga, pre svega zbog
         svoje prirodne lepote i ekološke vrednosti. Gradac je mala reka koja

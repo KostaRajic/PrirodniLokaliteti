@@ -1,19 +1,35 @@
-import ovcarIKablar1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura1.jpg";
-import ovcarIKablar2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura2.jpg";
-import ovcarIKablar3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura3.jpg";
-import ovcarIKablar4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura4.jpg";
-import ovcarIKablar5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura5.jpg";
-import ovcarIKablar6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura6.jpg";
-import ovcarIKablar7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura7.jpg";
-import ovcarIKablar8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/klisura8.jpg";
-import ssg2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg2.jpg";
-import ssg4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg4.jpg";
-import ssg5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg5.jpg";
-import ssg6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg6.jpg";
-import ssg7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg7.jpg";
-import ssg8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg8.jpg";
-import ssg9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg9.jpg";
-import ssg10 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/ssg10.jpg";
+import ovcarIKablar1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/desktop/klisura1.jpg";
+import ovcarIKablar2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/desktop/klisura2.jpg";
+import ovcarIKablar3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/desktop/klisura3.jpg";
+import ovcarIKablar4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/desktop/klisura4.jpg";
+import ovcarIKablar5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/desktop/klisura5.jpg";
+import ovcarIKablar6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/desktop/klisura6.jpg";
+import ovcarIKablar7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/desktop/klisura7.jpg";
+import ovcarIKablar8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/desktop/klisura8.jpg";
+import ssg2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/desktop/ssg2.jpg";
+import ssg4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/desktop/ssg4.jpg";
+import ssg5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/desktop/ssg5.jpg";
+import ssg6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/desktop/ssg6.jpg";
+import ssg7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/desktop/ssg7.jpg";
+import ssg8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/desktop/ssg8.jpg";
+import ssg9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/desktop/ssg9.jpg";
+import ssg10 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/desktop/ssg10.jpg";
+import ovcarIKablar11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/mobile/Mklisura1.jpg";
+import ovcarIKablar22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/mobile/Mklisura2.jpg";
+import ovcarIKablar33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/mobile/Mklisura3.jpg";
+import ovcarIKablar44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/mobile/Mklisura4.jpg";
+import ovcarIKablar55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/mobile/Mklisura5.jpg";
+import ovcarIKablar66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/mobile/Mklisura6.jpg";
+import ovcarIKablar77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/mobile/Mklisura7.jpg";
+import ovcarIKablar88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/mobile/Mklisura8.jpg";
+import ssg22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/mobile/Mssg2.jpg";
+import ssg44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/mobile/Mssg4.jpg";
+import ssg55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/mobile/Mssg5.jpg";
+import ssg66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/mobile/Mssg6.jpg";
+import ssg77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/mobile/Mssg7.jpg";
+import ssg88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/mobile/Mssg8.jpg";
+import ssg99 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/mobile/Mssg9.jpg";
+import ssg100 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/OvcarskoKablarskaKlisura/srpskaSvetaGora/mobile/Mssg10.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -80,42 +96,50 @@ export const OvcarskoKablarskaKlisura = () => {
   const images = [
     {
       name: "Manastir Jovanje",
-      src: ssg2,
+      desktopSrc: ssg2,
+      mobileSrc: ssg22,
       alt: "Manastir Jovanje",
     },
     {
       name: "Manastir Nikolje",
-      src: ssg4,
+      desktopSrc: ssg4,
+            mobileSrc: ssg44,
       alt: "Manastir Nikolje",
     },
     {
       name: "Manastir Preobrazenje",
-      src: ssg5,
+      desktopSrc: ssg5,
+            mobileSrc: ssg55,
       alt: "Manastir Preobrazenje",
     },
     {
       name: "Manastir Savinje",
-      src: ssg6,
+      desktopSrc: ssg6,
+            mobileSrc: ssg66,
       alt: "Manastir Savinje",
     },
     {
       name: "Manastir Svete Trojice",
-      src: ssg7,
+      desktopSrc: ssg7,
+            mobileSrc: ssg77,
       alt: "Manastir Svete Trojice",
     },
     {
       name: "Manastir Uspenje",
-      src: ssg8,
+      desktopSrc: ssg8,
+            mobileSrc: ssg88,
       alt: "Manastir Uspenje",
     },
     {
       name: "Manastir Vavedenje",
-      src: ssg9,
+      desktopSrc: ssg9,
+            mobileSrc: ssg99,
       alt: "Manastir Vavedenje",
     },
     {
       name: "Manastir Vaznesenje",
-      src: ssg10,
+      desktopSrc: ssg10,
+            mobileSrc: ssg100,
       alt: "Manastir Vaznesenje",
     },
   ];
@@ -158,7 +182,7 @@ export const OvcarskoKablarskaKlisura = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={ovcarIKablar1} alt="Ovcarsko-kablarska klisura" />
+      <img srcSet={`${ovcarIKablar11} 400w, ${ovcarIKablar1} `} alt="Ovcarsko-kablarska klisura" />
 
       <h2 style={{ color: "white" }}>Ovcarsko - kablarska klisura</h2>
 
@@ -173,7 +197,7 @@ export const OvcarskoKablarskaKlisura = () => {
         organizacija Čačka.
       </p>
 
-      <img src={ovcarIKablar2} alt="Ovčarsko-kablarska klisura" />
+      <img srcSet={`${ovcarIKablar22} 400w, ${ovcarIKablar2} `} alt="Ovčarsko-kablarska klisura" />
 
       <p>
         Reljef je oblikovan tektonskim i erozivnim oblicima reljefa. Planine
@@ -186,7 +210,7 @@ export const OvcarskoKablarskaKlisura = () => {
         oko 20 km i karakterišu je strme strane i uklješteni meandri.
       </p>
 
-      <img src={ovcarIKablar3} alt="Planina Kablar" />
+      <img srcSet={`${ovcarIKablar33} 400w, ${ovcarIKablar3} `} alt="Planina Kablar" />
 
       <p>
         Usečena је do dubine od 550 m u škriljcima i krečnjacima. Počevši od
@@ -201,7 +225,7 @@ export const OvcarskoKablarskaKlisura = () => {
         kanala, ispunjen eruptivnom masom.
       </p>
 
-      <img src={ovcarIKablar4} alt="Planina Kablar 3" />
+      <img srcSet={`${ovcarIKablar44} 400w, ${ovcarIKablar4} `} alt="Planina Kablar 3" />
 
       <p>
         Preko njih dolaze debeli slojevi modrikastog krečnjaka i beli dolomit.
@@ -235,7 +259,7 @@ export const OvcarskoKablarskaKlisura = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -265,7 +289,7 @@ export const OvcarskoKablarskaKlisura = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                   srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   className="kgImages"
@@ -297,7 +321,7 @@ export const OvcarskoKablarskaKlisura = () => {
         Ovčarsko-Kablarskoj klisuri, ona je poznata i kao „Srpska Sveta Gora“.
       </p>
 
-      <img src={ovcarIKablar5} alt="Vidikovac na planini Kablar" />
+      <img  srcSet={`${ovcarIKablar55} 400w, ${ovcarIKablar5} `} alt="Vidikovac na planini Kablar" />
 
       <p>
         Stakleni vidikovac na Kablaru je atraktivna turistička tačka koja nudi
@@ -314,7 +338,7 @@ export const OvcarskoKablarskaKlisura = () => {
         istoriji ovog regiona.
       </p>
 
-      <img src={ovcarIKablar6} alt="Ovčarsko - kablarska klisura 2" />
+      <img  srcSet={`${ovcarIKablar66} 400w, ${ovcarIKablar6} `} alt="Ovčarsko - kablarska klisura 2" />
 
       <p>
         U klisuri, 18 km zapadno od Čačka, nalazi se poznata Ovčar Banja, na
@@ -325,7 +349,7 @@ export const OvcarskoKablarskaKlisura = () => {
         oboljenja.
       </p>
 
-      <img src={ovcarIKablar7} alt="Elitna staza na planini Kablar" />
+      <img  srcSet={`${ovcarIKablar77} 400w, ${ovcarIKablar7} `} alt="Elitna staza na planini Kablar" />
 
       <p>
         Šetnja i planinarenje na Ovčarsko-Kablarskoj klisuri su odličan način da
@@ -335,7 +359,7 @@ export const OvcarskoKablarskaKlisura = () => {
         prirode i aktivnog odmora.
       </p>
 
-      <img src={ovcarIKablar8} alt="Planina Ovčar" />
+      <img  srcSet={`${ovcarIKablar88} 400w, ${ovcarIKablar8} `} alt="Planina Ovčar" />
 
       <p>
         Zapadna Morava je leva sastavnica Velike Morave. Nastaje spajanjem

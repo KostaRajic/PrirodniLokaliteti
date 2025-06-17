@@ -1,11 +1,19 @@
-import zajecar1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/zajecar1.jpg";
-import zajecar2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/zajecar2.jpg";
-import zajecar3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/zajecar3.jpg";
-import zajecar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/zajecar4.jpg";
-import zajecar5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/zajecar5.jpg";
-import zajecar6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/zajecar6.jpg";
-import zajecar8 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/zajecar44.jpg";
-import zajecar7 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/zajecar7.jpg";
+import zajecar1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/desktop/zajecar1.jpg";
+import zajecar2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/desktop/zajecar2.jpg";
+import zajecar3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/desktop/zajecar3.jpg";
+import zajecar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/desktop/zajecar4.jpg";
+import zajecar5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/desktop/zajecar5.jpg";
+import zajecar6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/desktop/zajecar6.jpg";
+import zajecar8 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/desktop/zajecar44.jpg";
+import zajecar7 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/desktop/zajecar7.jpg";
+import zajecar11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/mobile/zajecarM1.jpg";
+import zajecar22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/mobile/zajecarM2.jpg";
+import zajecar33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/mobile/zajecarM3.jpg";
+import zajecar44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/mobile/zajecarM4.jpg";
+import zajecar55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/mobile/zajecarM5.jpg";
+import zajecar66 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/mobile/zajecarM6.jpg";
+import zajecar88 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/mobile/zajecarM44.jpg";
+import zajecar77 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Zajecar/mobile/zajecarM7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -35,7 +43,7 @@ export const Zajecar = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zajecar1} alt="Zaječar 1" />
+      <img srcSet={`${zajecar11} 400w, ${zajecar1} `} alt="Zaječar 1" />
 
       <h2>Zaječar</h2>
 
@@ -50,7 +58,7 @@ export const Zajecar = () => {
         kao i po festivalu "Zalet" posvećenom savremenoj umetnosti.
       </p>
 
-      <img src={zajecar2} alt="Zaječar 2" />
+      <img srcSet={`${zajecar22} 400w, ${zajecar2} `} alt="Zaječar 2" />
 
       <p>
         Legende o nastanku imena Zaječara i danas su deo usmene tradicije u
@@ -71,7 +79,7 @@ export const Zajecar = () => {
         ime Zaječar.
       </p>
 
-      <img src={zajecar3} alt="Zaječarn 3" />
+      <img srcSet={`${zajecar33} 400w, ${zajecar3} `} alt="Zaječarn 3" />
 
       <p>
         Drugo predanje tvrdi da je ime grada poteklo od Saida Ashar paše,
@@ -84,7 +92,7 @@ export const Zajecar = () => {
         Ashar.
       </p>
 
-      <img src={zajecar7} alt="Zaječar 4" />
+      <img srcSet={`${zajecar77} 400w, ${zajecar7} `} alt="Zaječar 4" />
 
       <p>
         Grad je prvobitno bio smešten na desnoj obali Crnog Timoka, prostirući
@@ -102,13 +110,13 @@ export const Zajecar = () => {
       {isMobile ? (
         <div className="displayFlexClassic">
           <img
-            src={zajecar4}
+            srcSet={`${zajecar44} 400w, ${zajecar4} `}
             alt="Kraljevica 1 mob"
             style={{ padding: "20px", width: "47%", height: "250px" }}
           />
 
           <img
-            src={zajecar8}
+            srcSet={`${zajecar88} 400w, ${zajecar8} `}
             alt="Kraljevica 2 mob"
             style={{ padding: "20px", width: "47%", height: "250px" }}
           />
@@ -116,13 +124,13 @@ export const Zajecar = () => {
       ) : (
         <div className="displayFlexClassic">
           <img
-            src={zajecar4}
+            srcSet={`${zajecar44} 400w, ${zajecar4} `}
             alt="Kraljevica 1"
             style={{ padding: "50px", width: "47%" }}
           />
 
           <img
-            src={zajecar8}
+            srcSet={`${zajecar88} 400w, ${zajecar8} `}
             alt="Kraljevica 2"
             style={{ padding: "50px", width: "47%" }}
           />
@@ -149,7 +157,7 @@ export const Zajecar = () => {
         svetskog rata.
       </p>
 
-      <img src={zajecar5} alt="Zaječar 5" />
+      <img srcSet={`${zajecar55} 400w, ${zajecar5} `} alt="Zaječar 5" />
 
       <p>
         Vrška čuka je najseverniji deo Stare planine, smešten 12 km istočno od
@@ -167,7 +175,7 @@ export const Zajecar = () => {
         kamenog uglja.
       </p>
 
-      <img src={zajecar6} alt="Zaječar 6" />
+      <img srcSet={`${zajecar66} 400w, ${zajecar6} `} alt="Zaječar 6" />
 
       <p>
         Grliško jezero je veštačko akumulaciono jezero u istočnoj Srbiji, na

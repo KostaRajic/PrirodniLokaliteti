@@ -1,12 +1,18 @@
-import novoHopovo1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/novoHopovo2.jpg";
-import novoHopovo2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/novoHopovo3.jpg";
-import novoHopovo3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/novoHopovo4.jpg";
-import novoHopovo4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/novoHopovo5.jpg";
-import novoHopovo5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/novoHopovo6.jpg";
+import novoHopovo1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/desktop/novoHopovo2.jpg";
+import novoHopovo2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/desktop/novoHopovo3.jpg";
+import novoHopovo3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/desktop/novoHopovo4.jpg";
+import novoHopovo4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/desktop/novoHopovo5.jpg";
+import novoHopovo5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/desktop/novoHopovo6.jpg";
+import novoHopovo11 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/mobile/MnovoHopovo2.jpg";
+import novoHopovo22 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/mobile/MnovoHopovo3.jpg";
+import novoHopovo33 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/mobile/MnovoHopovo4.jpg";
+import novoHopovo44 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/mobile/MnovoHopovo5.jpg";
+import novoHopovo55 from "../../../../../assets/images/Vojvodina/SremskiOkrug/manastirNovoHopovo/mobile/MnovoHopovo6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 
 export const ManastirNovoHopovo = () => {
   const navigate = useNavigate();
@@ -14,9 +20,9 @@ export const ManastirNovoHopovo = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(sremskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={novoHopovo1} alt="Manastir Novo Hopovo 1" />
+      <img srcSet={`${novoHopovo11} 400w, ${novoHopovo1} `} alt="Manastir Novo Hopovo 1" />
 
       <h2 style={{color: 'white'}}>Manastir Novo Hopovo</h2>
 
@@ -40,7 +46,7 @@ export const ManastirNovoHopovo = () => {
         crkvenih vrata uklesana su njihova imena.
       </p>
 
-      <img src={novoHopovo2} alt="Manastir Novo Hopovo 2" />
+      <img srcSet={`${novoHopovo22} 400w, ${novoHopovo2} `} alt="Manastir Novo Hopovo 2" />
 
       <p>
         Ovo crkveno zdanje, sa tri konhijalne osnove i dvanaestospranim kupolama
@@ -60,7 +66,7 @@ export const ManastirNovoHopovo = () => {
         Danila i Svetog velikomučenika Dimitrija.
       </p>
 
-      <img src={novoHopovo3} alt="Manastir Novo Hopovo 3" />
+      <img srcSet={`${novoHopovo33} 400w, ${novoHopovo3} `} alt="Manastir Novo Hopovo 3" />
       <p>
         Tokom 16. veka, Novi Hopovo je bilo jedno od najvažnijih duhovnih i
         prosvetnih centara srpske Crkve, zbog čega su neki istoričari celu
@@ -76,8 +82,8 @@ export const ManastirNovoHopovo = () => {
         Svetom Stefanu Štiljanoviću.
       </p>
 
-      <img src={novoHopovo4} alt="Manastir Novo Hopovo 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${novoHopovo44} 400w, ${novoHopovo4} `} alt="Manastir Novo Hopovo 4" />
+      <p>
         Tokom 19. veka, graditeljska aktivnost manastirske uprave znatno je
         opala, što se ne može reći za intelektualni rad ove obitelji. Iguman
         Irinej (Radić) je 1847. godine napisao „Kratku istoriju o fruškogorskom
@@ -97,7 +103,7 @@ export const ManastirNovoHopovo = () => {
         postružnika hopovskog, kasnije episkopa erdenskog, 1854.“
       </p>
 
-      <img src={novoHopovo5} alt="Manastir Novo Hopovo 5" />
+      <img srcSet={`${novoHopovo55} 400w, ${novoHopovo5} `} alt="Manastir Novo Hopovo 5" />
 
       <p>
         U 17. veku, monasi iz Novog Hopova prikupljali su milostinju po Rusiji,

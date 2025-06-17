@@ -1,14 +1,25 @@
-import uzice1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice1.jpg";
-import uzice2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice2.jpg";
-import uzice3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice3.jpg";
-import uzice4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice4.jpg";
-import uzice5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice5.jpg";
-import uzice6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice6.jpg";
-import uzice7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice7.jpg";
-import uzice8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice8.jpg";
-import uzice9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice9.jpg";
-import uzice10 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice10.jpg";
-import uzice11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/uzice11.jpg";
+import uzice1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice1.jpg";
+import uzice2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice2.jpg";
+import uzice3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice3.jpg";
+import uzice4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice4.jpg";
+import uzice5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice5.jpg";
+import uzice6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice6.jpg";
+import uzice7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice7.jpg";
+import uzice8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice8.jpg";
+import uzice9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice9.jpg";
+import uzice10 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice10.jpg";
+import uzice11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/desktop/uzice11.jpg";
+import uziceM11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice1.jpg";
+import uzice22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice2.jpg";
+import uzice33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice3.jpg";
+import uzice44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice4.jpg";
+import uzice55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice5.jpg";
+import uzice66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice6.jpg";
+import uzice77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice7.jpg";
+import uzice88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice8.jpg";
+import uzice99 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice9.jpg";
+import uzice100 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice10.jpg";
+import uzice111 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uzice/mobile/Muzice11.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -23,11 +34,11 @@ export const Uzice = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(zlatiborskiOkrugPathRoutes.uzice)}
+        onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={uzice1} alt="Užice 1" />
+      <img srcSet={`${uziceM11} 400w, ${uzice1} `} alt="Užice 1" />
 
       <h2 style={{ color: "white" }}>Užice</h2>
 
@@ -49,7 +60,7 @@ export const Uzice = () => {
         dostupnim, dok njegov šarm i atmosfera privlače sve veći broj turista.
       </p>
 
-      <img src={uzice2} alt="Užice 2" />
+      <img srcSet={`${uzice22} 400w, ${uzice2} `} alt="Užice 2" />
 
       <p>
         Ostaci Užičkog grada nalaze se na stenovitom grebenu koji gotovo u
@@ -67,7 +78,7 @@ export const Uzice = () => {
         kraj njegove vlasti.
       </p>
 
-      <img src={uzice3} alt="Užice 3" />
+      <img srcSet={`${uzice33} 400w, ${uzice3} `} alt="Užice 3" />
 
       <p>
         Krajem XVII i tokom XVIII veka, Užice je, usled austro-turskih ratova,
@@ -83,7 +94,7 @@ export const Uzice = () => {
         čime Užice postaje sve značajnije ekonomsko središte.
       </p>
 
-      <img src={uzice11} alt="Užice 4" />
+      <img srcSet={`${uzice111} 400w, ${uzice11} `} alt="Užice 4" />
 
       <p>
         Trećeg maja 1899. godine, kralj Aleksandar Obrenović postavio je kamen
@@ -96,7 +107,7 @@ export const Uzice = () => {
         čime je Užice postajalo sve moderniji grad.
       </p>
 
-      <img src={uzice4} alt="Narodni muzej u Užicu" />
+      <img srcSet={`${uzice44} 400w, ${uzice4} `} alt="Narodni muzej u Užicu" />
 
       <p>
         Narodni muzej Užica predstavlja jedinstven spomenički kompleks, smešten
@@ -113,7 +124,7 @@ export const Uzice = () => {
         značaja, čime dodatno svedoče o svom istorijskom i kulturnom značaju.
       </p>
 
-      <img src={uzice5} alt="Etno park Terzića avlija" />
+      <img srcSet={`${uzice55} 400w, ${uzice5} `} alt="Etno park Terzića avlija" />
 
       <p>
         Etno park Terzića avlija, kao seosko turističko domaćinstvo iz okoline
@@ -133,7 +144,7 @@ export const Uzice = () => {
         primer dobre prakse.
       </p>
 
-      <img src={uzice6} alt="Crkva Svetog Apostola u Užicu" />
+      <img srcSet={`${uzice66} 400w, ${uzice6} `} alt="Crkva Svetog Apostola u Užicu" />
       <p>
         Crkva Svetog Apostola i Evanđeliste Marka, poznata kao Crkva sv. Marka,
         nalazi se u Užicu, na adresi Nikole Pašića 41, i predstavlja kulturno
@@ -151,7 +162,7 @@ export const Uzice = () => {
         kulturnom nasleđu Užica.
       </p>
 
-      <img src={uzice7} alt="Potpećka pećina" />
+      <img srcSet={`${uzice77} 400w, ${uzice7} `} alt="Potpećka pećina" />
       <p>
         Potpećka pećina se nalazi u selu Potpeć, 14 kilometara od Užica, na
         severnim padinama Drežničke gradine, koja se uzdiže na 932 metra
@@ -168,7 +179,7 @@ export const Uzice = () => {
         površinu kroz pećinu ili vrelo ispred nje, stvarajući pećinsku reku
         poznatu kao Petnica.
       </p>
-      <img src={uzice8} alt="Staparska banja" />
+      <img srcSet={`${uzice88} 400w, ${uzice8} `} alt="Staparska banja" />
       <p>
         Staparska banja, sa nekoliko termalnih izvora, smeštena je u Staparskoj
         klisuri reke Đetinje, na području sela Stapari. Ova banja predstavlja
@@ -181,7 +192,7 @@ export const Uzice = () => {
         poznata po svojim lekovitim svojstvima, naročito u lečenju kožnih
         bolesti i reumatskih oboljenja.
       </p>
-      <img src={uzice9} alt="Klisura reke Đetinje" />
+      <img srcSet={`${uzice99} 400w, ${uzice9} `} alt="Klisura reke Đetinje" />
       <p>
         Klisura reke Đetinje nalazi se u zapadnoj Srbiji, zapadno od Užica, u
         brdsko-planinskom području poznatom kao Stari Vlah. Prostire se od

@@ -1,8 +1,13 @@
-import pirot1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/pirot1.jpg";
-import pirot2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/pirot2.jpg";
-import pirot4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/pirot4.jpg";
-import pirot5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/pirot5.jpg";
-import pirot6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/pirot6.jpg";
+import pirot1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/desktop/pirot1.jpg";
+import pirot2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/desktop/pirot2.jpg";
+import pirot4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/desktop/pirot4.jpg";
+import pirot5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/desktop/pirot5.jpg";
+import pirot6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/desktop/pirot6.jpg";
+import pirot11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/mobile/pirotM1.jpg";
+import pirot22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/mobile/pirotM2.jpg";
+import pirot44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/mobile/pirotM4.jpg";
+import pirot55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/mobile/pirotM5.jpg";
+import pirot66 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/Pirot/mobile/pirotM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const Pirot = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={pirot1} alt="Pirot 1" />
+      <img srcSet={`${pirot11} 400w, ${pirot1} `} alt="Pirot 1" />
 
       <h2>Pirot</h2>
 
@@ -39,7 +44,7 @@ export const Pirot = () => {
         značajno istorijsko mesto od izuzetnog značaja.
       </p>
 
-      <img src={pirot2} alt="Pirot 2" />
+      <img srcSet={`${pirot22} 400w, ${pirot2} `} alt="Pirot 2" />
 
       <p>
         Pirot se nalazi u pograničnom području Srbije prema Bugarskoj i
@@ -58,7 +63,7 @@ export const Pirot = () => {
         reke Nišave i HE "Pirot".
       </p>
 
-      <img src={pirot4} alt="Pirot 3" />
+      <img srcSet={`${pirot44} 400w, ${pirot4} `} alt="Pirot 3" />
 
       <p>
         Klima Pirota je umerena, sa karakterističnim osobinama. Proleća su
@@ -76,7 +81,7 @@ export const Pirot = () => {
         oktobru, dok je sušno u januaru, februaru i julu.
       </p>
 
-      <img src={pirot5} alt="Muzej Ponišavlja" />
+      <img srcSet={`${pirot55} 400w, ${pirot5} `} alt="Muzej Ponišavlja" />
 
       <p>
         Muzej je osnovan oktobra 1947. godine odlukom Gradskog narodnog odbora
@@ -105,7 +110,7 @@ export const Pirot = () => {
         toga, Muzej ima depandanse u Babušnici, Beloj Palanci i Dimitrovgradu.
       </p>
 
-      <img src={pirot6} alt="Pirotski kej" />
+      <img srcSet={`${pirot66} 400w, ${pirot6} `} alt="Pirotski kej" />
 
       <p>
         Pirotski kej je popularno šetalište u Pirotu. Reka Nišava je u početku

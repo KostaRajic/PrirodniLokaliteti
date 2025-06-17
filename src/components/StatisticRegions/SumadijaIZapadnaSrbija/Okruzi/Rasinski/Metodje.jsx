@@ -1,8 +1,13 @@
-import metodje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/metodje1.jpg";
-import metodje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/metodje3.jpg";
-import metodje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/metodje4.jpg";
-import metodje5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/metodje5.jpg";
-import metodje6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/metodje6.jpg";
+import metodje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/desktop/metodje1.jpg";
+import metodje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/desktop/metodje3.jpg";
+import metodje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/desktop/metodje4.jpg";
+import metodje5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/desktop/metodje5.jpg";
+import metodje6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/desktop/metodje6.jpg";
+import metodje11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/mobile/Mmetodje1.jpg";
+import metodje33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/mobile/Mmetodje3.jpg";
+import metodje44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/mobile/Mmetodje4.jpg";
+import metodje55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/mobile/Mmetodje5.jpg";
+import metodje66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Metodje/mobile/Mmetodje6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,10 +23,9 @@ export const SvetilisteMetodje = () => {
       <FaArrowLeft
         className="arrowLeft"
         onClick={() => navigate(rasinskiOkrugPathRoutes.home)}
-
       />
       <header></header>
-      <img src={metodje1} alt='Prirodni rezervat "Metođe" 1' />
+      <img srcSet={`${metodje11} 400w, ${metodje1} `} alt='Prirodni rezervat "Metođe" 1' />
 
       <h2 style={{ color: "white" }}>Prirodni rezervat "Metođe"</h2>
 
@@ -40,7 +44,7 @@ export const SvetilisteMetodje = () => {
         veličanstvenom letu sivog sokola, najpoznatijeg stanovnika Metođa.
       </p>
 
-      <img src={metodje3} alt='Prirodni rezervat "Metođe" 2' />
+      <img srcSet={`${metodje33} 400w, ${metodje3} `} alt='Prirodni rezervat "Metođe" 2' />
 
       <p>
         Ovaj posebni deo Kopaonika ne privlači posetioce samo zbog bogatstva
@@ -59,7 +63,7 @@ export const SvetilisteMetodje = () => {
         ukazuje na njegovu dugu rudarsku tradiciju.
       </p>
 
-      <img src={metodje4} alt='Prirodni rezervat "Metođe" 3' />
+      <img srcSet={`${metodje44} 400w, ${metodje4} `} alt='Prirodni rezervat "Metođe" 3' />
 
       <p>
         Neposredno uz svetilište, u steni, nalazi se izvor koji teče iz njenog
@@ -74,7 +78,7 @@ export const SvetilisteMetodje = () => {
         planine.
       </p>
 
-      <img src={metodje5} alt='Prirodni rezervat "Metođe" 4' />
+      <img srcSet={`${metodje55} 400w, ${metodje5} `} alt='Prirodni rezervat "Metođe" 4' />
 
       <p>
         Posetioci koji odluče da prošeću stazama ovog dela Kopaonika mogu
@@ -85,7 +89,7 @@ export const SvetilisteMetodje = () => {
         metara. Kopaonik je poznat i kao jedna od najvodenijih planina u Evropi.
       </p>
 
-      <img src={metodje6} alt='Prirodni rezervat "Metođe" 5' />
+      <img srcSet={`${metodje66} 400w, ${metodje6} `} alt='Prirodni rezervat "Metođe" 5' />
 
       <p>
         Nedavno je uklonjen masivni barokni ikonostas iz 19. veka, koji, iako

@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { severnoBanatskiData } from "./SevernoBanatskiData";
+import { severnoBanatskiPathRoutes } from "./SevernoBanatskiPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const SevernoBanatski = () => {
   const [slide, setSlide] = useState(0);
@@ -19,15 +21,15 @@ export const SevernoBanatski = () => {
 
   const readMore = (name) => {
     if (name === "Kikinda") {
-      navigate("Kikinda");
+      navigate(severnoBanatskiPathRoutes.kikinda);
     } else if (name === "Kanjiža i termalne vode") {
-      navigate("Kanjiza");
+      navigate(severnoBanatskiPathRoutes.kanjiza);
     } else if (name === "Selevenjske pustare") {
-      navigate("SelevenjskePustare");
+      navigate(severnoBanatskiPathRoutes.selevenjskePustare);
     } else if (name === "Rezervat velike droplje") {
-      navigate("RezervatVelikeDroplje");
+      navigate(severnoBanatskiPathRoutes.rezervatVelikeDroplje);
     } else if (name === "Senta") {
-      navigate("Senta");
+      navigate(severnoBanatskiPathRoutes.senta);
     }
   };
 
@@ -36,7 +38,7 @@ export const SevernoBanatski = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.Vojvodina)}
           style={{ fill: "white"}}
         />
       </header>

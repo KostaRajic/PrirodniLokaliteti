@@ -1,8 +1,13 @@
-import tronosa1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/tronosa1.jpg";
-import tronosa2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/tronosa2.jpg";
-import tronosa3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/tronosa3.jpg";
-import tronosa4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/tronosa4.jpg";
-import tronosa5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/tronosa5.jpg";
+import tronosa1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/desktop/tronosa1.jpg";
+import tronosa2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/desktop/tronosa2.jpg";
+import tronosa3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/desktop/tronosa3.jpg";
+import tronosa4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/desktop/tronosa4.jpg";
+import tronosa5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/desktop/tronosa5.jpg";
+import tronosa11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/mobile/Mtronosa1.jpg";
+import tronosa22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/mobile/Mtronosa2.jpg";
+import tronosa33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/mobile/Mtronosa3.jpg";
+import tronosa44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/mobile/Mtronosa4.jpg";
+import tronosa55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/ManastirTronosa/mobile/Mtronosa5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,11 +22,11 @@ export const ManastirTronosa = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={tronosa1} alt="Manastir Tronoša 1" />
+      <img srcSet={`${tronosa11} 400w, ${tronosa1} `} alt="Manastir Tronoša 1" />
 
       <h2>Manastir Tronoša</h2>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
+      <p style={{ paddingTop: "50px"}}>
         Prema predanju, Tronoša je svoje ime dobila po tri rečice koje nose
         vodu, a koje se kod manastira spajaju u jednu. Po Tronoškom letopisu,
         manastir je podigla Katarina, žena kralja Dragutina. Ovoj kraljevskoj
@@ -35,9 +40,9 @@ export const ManastirTronosa = () => {
         zaboravljene Tronoše.
       </p>
 
-      <img src={tronosa3} alt="Manastir Tronoša 2" />
+      <img srcSet={`${tronosa33} 400w, ${tronosa3} `} alt="Manastir Tronoša 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Dolaskom Makarija Sokolovića na stolicu srpskih patrijarha 1557. godine
         i obnovom Pećke patrijaršije, u narodnom i crkvenom životu došlo je do
         nevrovatnog oživljavanja. Na narodnom saboru u Tronoši, na Uskrs 1559.
@@ -54,9 +59,9 @@ export const ManastirTronosa = () => {
         i nabavljali potrebne materijale.
       </p>
 
-      <img src={tronosa4} alt="Manastir Tronoša 3" />
+      <img srcSet={`${tronosa44} 400w, ${tronosa4} `} alt="Manastir Tronoša 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Za vreme Stefana Jovanovića, Tronoša je bila duhovni i kulturni centar
         severozapadne Srbije. U manastiru je postojala škola koja je obrazovala
         srpsku omladinu, a među učenicima bio je i dečak Vuk Stefanović Karadžić
@@ -68,9 +73,9 @@ export const ManastirTronosa = () => {
         zaviri.
       </p>
 
-      <img src={tronosa2} alt="Manastir Tronoša 4" />
+      <img srcSet={`${tronosa22} 400w, ${tronosa2} `} alt="Manastir Tronoša 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Crkva manastira Tronoše, skromnih dimenzija, izgrađena je u obliku
         slobodnog krsta, sa kupolom iznad centralnog dela. Arhitektonsko rešenje
         ovog hrama podseća na građevine u raškom stilu. Hram je sazdan od
@@ -79,7 +84,7 @@ export const ManastirTronosa = () => {
         odeljkom i pregradom između priprate i srednjeg dela crkve.
       </p>
 
-      <img src={tronosa5} alt="Manastir Tronoša 5" />
+      <img srcSet={`${tronosa55} 400w, ${tronosa5} `} alt="Manastir Tronoša 5" />
       <p>
         Za manastir Tronošu vezan je jedan od najlepših srpskih narodnih običaja
         – zajedničko prikupljanje i darivanje velikih "ratarnih" ili "oračkih"

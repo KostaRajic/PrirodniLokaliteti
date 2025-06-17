@@ -1,9 +1,13 @@
-import sopocani1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/manastirSopocani1.jpg";
-import sopocani2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/manastirSopocani2.jpg";
-import sopocani3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/manastirSopocani3.jpg";
-import sopocani4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/manastirSopocani4.jpg";
-import sopocani5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/manastirSopocani5.jpg";
-import sopocani6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/manastirSopocani6.jpg";
+import sopocani2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/desktop/manastirSopocani2.jpg";
+import sopocani3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/desktop/manastirSopocani3.jpg";
+import sopocani4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/desktop/manastirSopocani4.jpg";
+import sopocani5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/desktop/manastirSopocani5.jpg";
+import sopocani6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/desktop/manastirSopocani6.jpg";
+import sopocani22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/mobile/MmanastirSopocani2.jpg";
+import sopocani33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/mobile/MmanastirSopocani3.jpg";
+import sopocani44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/mobile/MmanastirSopocani4.jpg";
+import sopocani55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/mobile/MmanastirSopocani5.jpg";
+import sopocani66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani/mobile/MmanastirSopocani6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +22,7 @@ export const ManastirSopocani = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={sopocani2} alt="Manastir Sopoćani 1" />
+      <img srcSet={`${sopocani22} 400w, ${sopocani2} `} alt="Manastir Sopoćani 1" />
 
       <h2 style={{ color: "white" }}>Manastir Sopoćani</h2>
 
@@ -36,7 +40,7 @@ export const ManastirSopocani = () => {
         i kao grobnica za kraljeve najodanije ljude.
       </p>
 
-      <img src={sopocani3} alt="Manastir Sopoćani 2" />
+      <img srcSet={`${sopocani33} 400w, ${sopocani3} `} alt="Manastir Sopoćani 2" />
 
       <h3
         style={{
@@ -75,7 +79,7 @@ export const ManastirSopocani = () => {
         skladnih proporcija koja spaja raške i gotičke oblike.
       </p>
 
-      <img src={sopocani4} alt="Manastir Sopoćani 3" />
+      <img srcSet={`${sopocani44} 400w, ${sopocani4} `} alt="Manastir Sopoćani 3" />
 
       <p>
         Hram manastira Sopoćani posvećen je Svetoj Trojici i izgrađen je u duhu
@@ -94,7 +98,7 @@ export const ManastirSopocani = () => {
         kupola nalazi se na uskom, kockastom postolju.
       </p>
 
-      <img src={sopocani5} alt="Manastir Sopoćani 4" />
+      <img srcSet={`${sopocani55} 400w, ${sopocani5} `} alt="Manastir Sopoćani 4" />
 
       <p>
         U skladu sa jednostavnim linijama prvobitno omalterisanih fasada, koje
@@ -115,7 +119,7 @@ export const ManastirSopocani = () => {
         Simeona Mirotocivog (Svetog Stefana Nemanjića) na južnoj strani.
       </p>
 
-      <img src={sopocani6} alt="Manastir Sopoćani 5" />
+      <img srcSet={`${sopocani66} 400w, ${sopocani6} `} alt="Manastir Sopoćani 5" />
 
       <p>
         Drugi veliki ktitor manastira Sopoćani bio je Stefan Dušan, dok je još

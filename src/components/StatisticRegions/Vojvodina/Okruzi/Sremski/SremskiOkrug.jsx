@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { sremskiOkrugData } from "./SremskiOkrugData";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const SremskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -20,21 +22,21 @@ export const SremskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === "Sremska Mitrovica") {
-      navigate("SremskaMitrovica");
+      navigate(sremskiOkrugPathRoutes.sremskaMitrovica);
     } else if (name === 'Specijalni rezervat prirode "Zasavica"') {
-      navigate("SRPZasavica");
+      navigate(sremskiOkrugPathRoutes.srpZasavica);
     } else if (name === "Inđija") {
-      navigate("Indjija");
+      navigate(sremskiOkrugPathRoutes.indjija);
     } else if (name === "Sotsko Jezero") {
-      navigate("SotskoJezero");
+      navigate(sremskiOkrugPathRoutes.sotskoJezero);
     } else if (name === "Manastir Novo Hopovo") {
-      navigate("NovoHopovo");
+      navigate(sremskiOkrugPathRoutes.novoHopovo);
     } else if (name === "Šid") {
-      navigate("Sid");
+      navigate(sremskiOkrugPathRoutes.sid);
     } else if (name === "Manastir Jazak") {
-      navigate("ManastirJazak");
+      navigate(sremskiOkrugPathRoutes.manastirJazak);
     } else if (name === "Bešenovačko Jezero") {
-      navigate("BesenovackoJezero");
+      navigate(sremskiOkrugPathRoutes.besenovackoJezero);
     }
   };
 
@@ -44,7 +46,7 @@ export const SremskiOkrug = () => {
         <header>
           <FaArrowLeft
             className="arrowLeft"
-            onClick={() => navigate(-1)}
+            onClick={() => navigate(serbianMapPathRoutes.Vojvodina)}
             style={{ fill: "white"}}
           />
         </header>

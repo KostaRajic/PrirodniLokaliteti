@@ -1,10 +1,17 @@
-import rajac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/rajac1.jpg";
-import rajac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/rajac2.jpg";
-import rajac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/rajac3.jpg";
-import rajac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/rajac4.jpg";
-import rajac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/rajac5.jpg";
-import rajac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/rajac6.jpg";
-import rajac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/rajac7.jpg";
+import rajac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/desktop/rajac1.jpg";
+import rajac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/desktop/rajac2.jpg";
+import rajac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/desktop/rajac3.jpg";
+import rajac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/desktop/rajac4.jpg";
+import rajac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/desktop/rajac5.jpg";
+import rajac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/desktop/rajac6.jpg";
+import rajac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/desktop/rajac7.jpg";
+import rajac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/mobile/Mrajac1.jpg";
+import rajac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/mobile/Mrajac2.jpg";
+import rajac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/mobile/Mrajac3.jpg";
+import rajac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/mobile/Mrajac4.jpg";
+import rajac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/mobile/Mrajac5.jpg";
+import rajac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/mobile/Mrajac6.jpg";
+import rajac77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Rajac/mobile/Mrajac7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +26,7 @@ export const VrhRajac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={rajac1} alt="Vrh Rajac 1" />
+      <img srcSet={`${rajac11} 400w, ${rajac1} `} alt="Vrh Rajac 1" />
 
       <h2>Vrh Rajac</h2>
 
@@ -38,7 +45,7 @@ export const VrhRajac = () => {
         fotografisanje i uživanje u prirodi.
       </p>
 
-      <img src={rajac2} alt="Vrh Rajac 2" />
+      <img srcSet={`${rajac22} 400w, ${rajac2} `} alt="Vrh Rajac 2" />
 
       <p>
         Osim prirodnih lepota, područje oko Rajca ima i značajan istorijski
@@ -52,7 +59,7 @@ export const VrhRajac = () => {
         gužve.
       </p>
 
-      <img src={rajac3} alt="Vrh Rajac paraglajding" />
+      <img srcSet={`${rajac33} 400w, ${rajac3} `} alt="Vrh Rajac paraglajding" />
 
       <p>
         Rajac je poznat i kao jedno od najatraktivnijih mesta za paraglajding u
@@ -71,7 +78,7 @@ export const VrhRajac = () => {
         se paraglajderi povežu, razmene iskustva i uživaju u zajedničkom hobiju.
       </p>
 
-      <img src={rajac4} alt="Manastir Vavedenje na Rajcu" />
+      <img srcSet={`${rajac44} 400w, ${rajac4} `} alt="Manastir Vavedenje na Rajcu" />
 
       <p>
         Manastir Vavedenje na Rajcu, posvećen Vavedenju Presvete Bogorodice,
@@ -83,7 +90,7 @@ export const VrhRajac = () => {
         vernike i posetioce koji traže duhovnu obnovu i utehu.
       </p>
 
-      <img src={rajac5} alt="Crkva Svetog Jovana Krstitelja na vrhu Rajac" />
+      <img srcSet={`${rajac55} 400w, ${rajac5} `} alt="Crkva Svetog Jovana Krstitelja na vrhu Rajac" />
 
       <p>
         Crkva Svetog Jovana Krstitelja na vrhu Rajac je dragoceno istorijsko i
@@ -97,7 +104,7 @@ export const VrhRajac = () => {
         tradicije, privlačeći turiste, arheologe i vernike.
       </p>
 
-      <img src={rajac6} alt="Kosidba na Rajcu" />
+      <img srcSet={`${rajac66} 400w, ${rajac6} `} alt="Kosidba na Rajcu" />
 
       <p>
         Kosidba na Rajcu je tradicionalna manifestacija koja se svake godine
@@ -116,7 +123,7 @@ export const VrhRajac = () => {
         ljubitelje prirode, istorije i srpske baštine.
       </p>
 
-      <img src={rajac7} alt="Vodopad Crkvine" />
+      <img srcSet={`${rajac77} 400w, ${rajac7} `} alt="Vodopad Crkvine" />
 
       <p>
         Vodopad Crkvine jedno je od najlepših mesta na Rajcu i planini Suvobor,

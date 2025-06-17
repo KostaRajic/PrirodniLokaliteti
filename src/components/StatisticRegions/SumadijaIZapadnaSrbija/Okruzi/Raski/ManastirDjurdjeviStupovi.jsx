@@ -1,8 +1,13 @@
-import stupovi1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/djurdjeviStupovi1.jpg";
-import stupovi2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/djurdjeviStupovi2.jpg";
-import stupovi3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/djurdjeviStupovi3.jpg";
-import stupovi4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/djurdjeviStupovi4.jpg";
-import stupovi5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/djurdjeviStupovi5.jpg";
+import stupovi1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/desktop/djurdjeviStupovi1.jpg";
+import stupovi2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/desktop/djurdjeviStupovi2.jpg";
+import stupovi3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/desktop/djurdjeviStupovi3.jpg";
+import stupovi4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/desktop/djurdjeviStupovi4.jpg";
+import stupovi5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/desktop/djurdjeviStupovi5.jpg";
+import stupovi11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/mobile/MdjurdjeviStupovi1.jpg";
+import stupovi22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/mobile/MdjurdjeviStupovi2.jpg";
+import stupovi33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/mobile/MdjurdjeviStupovi3.jpg";
+import stupovi44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/mobile/MdjurdjeviStupovi4.jpg";
+import stupovi55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi/mobile/MdjurdjeviStupovi5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const ManastirDjurdjeviStupovi = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(rasinskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={stupovi2} alt="Manastir Đurđevi Stupovi 1" />
+      <img srcSet={`${stupovi22} 400w, ${stupovi2} `} alt="Manastir Đurđevi Stupovi 1" />
 
       <h2 style={{ color: "white" }}>Manastir Đurđevi Stupovi</h2>
 
@@ -33,7 +38,7 @@ export const ManastirDjurdjeviStupovi = () => {
         kasniji naziv i crkvi i manastiru – Đurđevim Stupovima.
       </p>
 
-      <img src={stupovi1} alt="Manastir Đurđevi Stupovi 2" />
+      <img srcSet={`${stupovi11} 400w, ${stupovi1} `} alt="Manastir Đurđevi Stupovi 2" />
 
       <p>
         Tokom dinastičkih borbi za vrhovnu vlast u Srbiji, Stefan Nemanja je bio
@@ -56,7 +61,7 @@ export const ManastirDjurdjeviStupovi = () => {
         posadila ljudska ruka.
       </p>
 
-      <img src={stupovi3} alt="Manastir Đurđevi Stupovi 3" />
+      <img srcSet={`${stupovi33} 400w, ${stupovi3} `} alt="Manastir Đurđevi Stupovi 3" />
 
       <p>
         Crkva je završena 1171. godine, što potvrđuje ktitorški natpis na
@@ -78,7 +83,7 @@ export const ManastirDjurdjeviStupovi = () => {
         je stekao svoja prva duhovna iskustva.
       </p>
 
-      <img src={stupovi4} alt="Manastir Đurđevi Stupovi 4" />
+      <img srcSet={`${stupovi44} 400w, ${stupovi4} `} alt="Manastir Đurđevi Stupovi 4" />
 
       <p>
         Kralj Dragutin, poslednji vladar iz loze Nemanjića koji je stolovao u
@@ -98,7 +103,7 @@ export const ManastirDjurdjeviStupovi = () => {
         kao deo jedinstvenog ciklusa državnih sabora Srbije.
       </p>
 
-      <img src={stupovi5} alt="Manastir Đurđevi Stupovi 5" />
+      <img srcSet={`${stupovi55} 400w, ${stupovi5} `} alt="Manastir Đurđevi Stupovi 5" />
 
       <p>
         Ideja o državi i najvišoj vlasti u zemlji, o prestolu i veri predaka,

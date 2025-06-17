@@ -1,11 +1,19 @@
-import smederevo1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/smederevo1.jpg";
-import smederevo2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/smederevo2.jpg";
-import smederevo3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/smederevo3.jpg";
-import smederevo4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/smederevo4.jpg";
-import smederevo5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/smederevo5.jpg";
-import smederevo6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/smederevo6.jpg";
-import smederevo7 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/smederevo7.jpg";
-import smederevo8 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/smederevo8.jpg";
+import smederevo1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/desktop/smederevo1.jpg";
+import smederevo2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/desktop/smederevo2.jpg";
+import smederevo3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/desktop/smederevo3.jpg";
+import smederevo4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/desktop/smederevo4.jpg";
+import smederevo5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/desktop/smederevo5.jpg";
+import smederevo6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/desktop/smederevo6.jpg";
+import smederevo7 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/desktop/smederevo7.jpg";
+import smederevo8 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/desktop/smederevo8.jpg";
+import smederevo11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/mobile/smederevoM1.jpg";
+import smederevo22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/mobile/smederevoM2.jpg";
+import smederevo33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/mobile/smederevoM3.jpg";
+import smederevo44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/mobile/smederevoM4.jpg";
+import smederevo55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/mobile/smederevoM5.jpg";
+import smederevo66 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/mobile/smederevoM6.jpg";
+import smederevo77 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/mobile/smederevoM7.jpg";
+import smederevo88 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/Smederevo/mobile/smederevoM8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +32,7 @@ export const Smederevo = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={smederevo1} alt="Smederevo 1" />
+      <img srcSet={`${smederevo11} 400w, ${smederevo1} `} alt="Smederevo 1" />
 
       <h2>Smederevo</h2>
 
@@ -40,7 +48,7 @@ export const Smederevo = () => {
         centar.
       </p>
 
-      <img src={smederevo2} alt="Smederevo 2" />
+      <img srcSet={`${smederevo22} 400w, ${smederevo2} `} alt="Smederevo 2" />
 
       <p>
         Smederevo ima više stepsku kontinentalnu klimu nego umereno
@@ -53,7 +61,7 @@ export const Smederevo = () => {
         najmanje u februaru (38 mm).
       </p>
 
-      <img src={smederevo3} alt="Smederevo 3" />
+      <img srcSet={`${smederevo33} 400w, ${smederevo3} `} alt="Smederevo 3" />
 
       <p>
         Prvi pisani trag o Smederevu datira iz 1019. godine, u povelji
@@ -69,7 +77,7 @@ export const Smederevo = () => {
       </p>
 
       <img
-        src={smederevo4}
+        srcSet={`${smederevo44} 400w, ${smederevo4} `}
         alt="Smederevo 4"
       />
 
@@ -88,7 +96,7 @@ export const Smederevo = () => {
         Obradovićem, a Smederevo je ponovo postalo prestonica.
       </p>
 
-      <img src={smederevo5} alt="Muzej u Smederevu" />
+      <img srcSet={`${smederevo55} 400w, ${smederevo5} `} alt="Muzej u Smederevu" />
       <p>
         Muzej u Smederevu je lokalna muzejska ustanova kompleksnog tipa, a u
         njegovom sastavu se nalaze zbirke iz oblasti prirodnih nauka,
@@ -105,7 +113,7 @@ export const Smederevo = () => {
         i različite promocije i predavanja.
       </p>
 
-      <img src={smederevo6} alt="Vila Zlatni Breg" />
+      <img srcSet={`${smederevo66} 400w, ${smederevo6} `} alt="Vila Zlatni Breg" />
       <p>
         Vila Zlatni Breg (poznata i kao Kraljev vinograd ili vila/letnjikovac
         dinastije Obrenović) nalazi se na najlepšoj lokaciji u Smederevu, u
@@ -121,7 +129,7 @@ export const Smederevo = () => {
         se dvor preselio u Smederevo.
       </p>
 
-      <img src={smederevo7} alt="Karađorđev dud" />
+      <img srcSet={`${smederevo77} 400w, ${smederevo7} `} alt="Karađorđev dud" />
       <p>
         Karađorđev dud je spomenik prirode botaničkog značaja, ali i istorijsko
         mesto u Smederevu. Na ovom drvetu je 8. novembra 1805. godine vođa Prvog
@@ -137,7 +145,7 @@ export const Smederevo = () => {
         predao ključeve Smedereva Karađorđu.
       </p>
 
-      <img src={smederevo8} alt="Izletište Jugovo" />
+      <img srcSet={`${smederevo88} 400w, ${smederevo8} `} alt="Izletište Jugovo" />
       <p>
         Izletište Jugovo je popularno odredište u okolini Smedereva, koje se
         nalazi na jugoistočnim padinama Avale, a karakteriše ga prirodna lepota,

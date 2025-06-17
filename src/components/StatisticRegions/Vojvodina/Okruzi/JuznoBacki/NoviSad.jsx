@@ -1,14 +1,22 @@
-import NS1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/NS1.jpg";
-import NS2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/NS2.jpg";
-import NS3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/NS3.jpg";
-import NS4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/NS4.jpg";
-import NS5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/NS5.jpg";
-import NS6 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/NS6.jpg";
-import NS7 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/NS7.jpg";
+import NS1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/desktop/NS1.jpg";
+import NS2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/desktop/NS2.jpg";
+import NS3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/desktop/NS3.jpg";
+import NS4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/desktop/NS4.jpg";
+import NS5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/desktop/NS5.jpg";
+import NS6 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/desktop/NS6.jpg";
+import NS7 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/desktop/NS7.jpg";
+import NS11 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/mobile/NSM1.jpg";
+import NS22 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/mobile/NSM2.jpg";
+import NS33 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/mobile/NSM3.jpg";
+import NS44 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/mobile/NSM4.jpg";
+import NS55 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/mobile/NSM5.jpg";
+import NS66 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/mobile/NSM6.jpg";
+import NS77 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NoviSad/mobile/NSM7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { JuznoBackiPathRoutes } from "./JuznoBackiPathRoutes";
 
 export const NoviSad = () => {
   const navigate = useNavigate();
@@ -16,9 +24,9 @@ export const NoviSad = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(JuznoBackiPathRoutes.home)} />
       <header></header>
-      <img src={NS1} alt="Novi Sad 1" />
+      <img srcSet={`${NS11} 400w, ${NS1} `} alt="Novi Sad 1" />
 
       <h2>Novi Sad</h2>
 
@@ -32,9 +40,9 @@ export const NoviSad = () => {
         Dunav—Tisa—Dunav. Bački deo grada je smešten sa obe strane ovog kanala.
       </p>
 
-      <img src={NS3} alt="Novi Sad 2" />
+      <img srcSet={`${NS33} 400w, ${NS3} `} alt="Novi Sad 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Osnovan 1694. godine, Novi Sad je dugo vremena bio centar srpske
         kulture, zbog čega je često nazivan Srpska Atina. Danas je veliki
         industrijski i finansijski centar srpske ekonomije, univerzitetski,
@@ -46,9 +54,9 @@ export const NoviSad = () => {
         Uneskovu listu kreativnih gradova (2023).
       </p>
 
-      <img src={NS4} alt="Novi Sad 3" />
+      <img srcSet={`${NS44} 400w, ${NS4} `} alt="Novi Sad 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ukoliko se izuzme Petrovaradinska tvrđava sa okolinom, gde su nađeni
         tragovi iz skoro svih epoha, od praistorije, preko vremena dominacije
         Rima i potom srednjeg veka, sa bačke strane ima više lokacija raštrkanih
@@ -60,8 +68,8 @@ export const NoviSad = () => {
         tragovi velikog srednjovekovnog sela.
       </p>
 
-      <img src={NS2} alt="Petrovaradinska tvrđava" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${NS22} 400w, ${NS2} `} alt="Petrovaradinska tvrđava" />
+      <p>
         Petrovaradinska tvrđava je verovatno najprepoznatljivija znamenitost
         Novog Sada. Smeštena na desnoj obali Dunava, ova impresivna tvrđava iz
         17. veka poznata je po svom opsežnom kompleksu, uključujući podzemne
@@ -72,9 +80,9 @@ export const NoviSad = () => {
         brodove i za pešake.
       </p>
 
-      <img src={NS7} alt="Petrovaradinska tvrđava" />
+      <img srcSet={`${NS77} 400w, ${NS7} `} alt="Petrovaradinska tvrđava" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Gradska kuća je zgrada u Novom Sadu koja predstavlja sedište
         gradonačelnika ovog grada. Nalazi se na Trgu Slobode. Iako se iz
         današnje zgrade gradom upravlja nešto više od 100 godina, institucija
@@ -98,7 +106,7 @@ export const NoviSad = () => {
         gradonačelnik bio je Svetozar Miletić (1861/62. i 1867.).
       </p>
 
-      <img src={NS5} alt="Novi Sad 5" />
+      <img srcSet={`${NS55} 400w, ${NS5} `} alt="Novi Sad 5" />
       <p>
         Srpska Atina je sinonim Novog Sada. Tokom habsburške uprave, Srbi u
         Novom Sadu su vodili živu političku i kulturnu borbu, a svoj kulturni
@@ -110,7 +118,7 @@ export const NoviSad = () => {
         Sad davao ton i određivao pravac.
       </p>
 
-      <img src={NS6} alt="Novi Sad 6" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${NS66} 400w, ${NS6} `} alt="Novi Sad 6" />
       <p>
         Prvobitna imena Novog Sada bila su Racko (Srpsko) selo, Racka varoš,
         Racki grad (Ratzen Stadt, Ratzenstatt) i Petrovaradinski šanac

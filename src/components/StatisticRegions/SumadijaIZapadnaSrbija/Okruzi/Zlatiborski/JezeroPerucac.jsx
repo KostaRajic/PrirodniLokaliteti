@@ -1,9 +1,15 @@
-import perucac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/jezeroPerucac1.jpg";
-import perucac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/jezeroPerucac2.jpg";
-import perucac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/jezeroPerucac3.jpg";
-import perucac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/jezeroPerucac4.jpg";
-import perucac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/jezeroPerucac5.jpg";
-import perucac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/jezeroPerucac6.jpg";
+import perucac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/desktop/jezeroPerucac1.jpg";
+import perucac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/desktop/jezeroPerucac2.jpg";
+import perucac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/desktop/jezeroPerucac3.jpg";
+import perucac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/desktop/jezeroPerucac4.jpg";
+import perucac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/desktop/jezeroPerucac5.jpg";
+import perucac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/desktop/jezeroPerucac6.jpg";
+import perucac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/mobile/MjezeroPerucac1.jpg";
+import perucac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/mobile/MjezeroPerucac2.jpg";
+import perucac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/mobile/MjezeroPerucac3.jpg";
+import perucac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/mobile/MjezeroPerucac4.jpg";
+import perucac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/mobile/MjezeroPerucac5.jpg";
+import perucac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/JezeroPerucac/mobile/MjezeroPerucac6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,9 +22,9 @@ export const JezeroPerucac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.jezeroPerucac)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={perucac1} alt="Jezero Perućac 1" />
+      <img srcSet={`${perucac11} 400w, ${perucac1} `} alt="Jezero Perućac 1" />
 
       <h2>Jezero Perućac</h2>
 
@@ -33,7 +39,7 @@ export const JezeroPerucac = () => {
         je planinama Javor, Devetak, Zvijezda i Tara.
       </p>
 
-      <img src={perucac2} alt="Jezero Perućac 2" />
+      <img srcSet={`${perucac22} 400w, ${perucac2} `} alt="Jezero Perućac 2" />
 
       <p>
         Jezero je nastalo tokom 60-ih godina prošlog veka pregrađivanjem toka
@@ -48,7 +54,7 @@ export const JezeroPerucac = () => {
         između 3 i 8 metara.
       </p>
 
-      <img src={perucac3} alt="Jezero Perućac 3" />
+      <img srcSet={`${perucac33} 400w, ${perucac3} `} alt="Jezero Perućac 3" />
 
       <p>
         Za ljubitelje avanture i aktivnog odmora, Perućac pruža mnoštvo
@@ -61,7 +67,7 @@ export const JezeroPerucac = () => {
         boravak još zanimljivijim i dinamičnijim.
       </p>
 
-      <img src={perucac4} alt="Jezero Perucac 4" />
+      <img srcSet={`${perucac44} 400w, ${perucac4} `} alt="Jezero Perucac 4" />
 
       <p>
         Turistički potencijal jezera Perućac ogleda se u mogućnosti da posetioci
@@ -77,7 +83,7 @@ export const JezeroPerucac = () => {
         mogućnost privatnog smeštaja.
       </p>
 
-      <img src={perucac6} alt="Jezero Perucac 5" />
+      <img srcSet={`${perucac66} 400w, ${perucac6} `} alt="Jezero Perucac 5" />
       <p>
         Krajem jula, već nekoliko godina unazad, održava se Drinska regata na
         relaciji od brane u Perućcu do Rogačice (25 km). Broj učesnika iz godine
@@ -88,7 +94,7 @@ export const JezeroPerucac = () => {
         igranog filma, poznat kao Bašta Fest, koji se održava u Bajinoj Bašti.
       </p>
 
-      <img src={perucac5} alt="Jezero Perucac 6" />
+      <img srcSet={`${perucac55} 400w, ${perucac5} `} alt="Jezero Perucac 6" />
       <p>
         Na jezeru Perućac postoje restorani koji nude jedinstveno
         iskustvo uživanja u lokalnim specijalitetima i prelepom ambijentu.

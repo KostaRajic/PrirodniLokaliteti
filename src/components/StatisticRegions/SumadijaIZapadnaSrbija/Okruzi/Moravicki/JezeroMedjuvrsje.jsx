@@ -1,8 +1,13 @@
-import medjuvrsje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/jezeroMedjuvrsje1.jpg";
-import medjuvrsje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/jezeroMedjuvrsje2.jpg";
-import medjuvrsje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/jezeroMedjuvrsje3.jpg";
-import medjuvrsje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/jezeroMedjuvrsje4.jpg";
-import medjuvrsje5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/jezeroMedjuvrsje5.jpg";
+import medjuvrsje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/desktop/jezeroMedjuvrsje1.jpg";
+import medjuvrsje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/desktop/jezeroMedjuvrsje2.jpg";
+import medjuvrsje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/desktop/jezeroMedjuvrsje3.jpg";
+import medjuvrsje4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/desktop/jezeroMedjuvrsje4.jpg";
+import medjuvrsje5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/desktop/jezeroMedjuvrsje5.jpg";
+import medjuvrsje11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/mobile/MjezeroMedjuvrsje1.jpg";
+import medjuvrsje22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/mobile/MjezeroMedjuvrsje2.jpg";
+import medjuvrsje33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/mobile/MjezeroMedjuvrsje3.jpg";
+import medjuvrsje44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/mobile/MjezeroMedjuvrsje4.jpg";
+import medjuvrsje55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/JezeroMedjuvrsje/mobile/MjezeroMedjuvrsje5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const JezeroMedjuvrsje = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={medjuvrsje1} alt="Jezero Međuvršje" />
+      <img srcSet={`${medjuvrsje11} 400w, ${medjuvrsje1} `} alt="Jezero Međuvršje" />
 
       <h2 style={{ color: "white" }}>Međuvršje</h2>
 
@@ -32,7 +37,7 @@ export const JezeroMedjuvrsje = () => {
         m.
       </p>
 
-      <img src={medjuvrsje2} alt="Jezero Medjuvrsje" />
+      <img srcSet={`${medjuvrsje22} 400w, ${medjuvrsje2} `} alt="Jezero Medjuvrsje" />
 
       <p>
         U erozivnom proširenju kod ušća Banjskog potoka, u gornjem delu jezera
@@ -42,7 +47,7 @@ export const JezeroMedjuvrsje = () => {
         izvorima i dugoj tradiciji banjskog lečenja.
       </p>
 
-      <img src={medjuvrsje3} alt="OvcarskoKablarska klisura" />
+      <img srcSet={`${medjuvrsje33} 400w, ${medjuvrsje3} `} alt="OvcarskoKablarska klisura" />
 
       <p>
         Ovčar Banja je centar zdravstveno-lečilišnog turizma. Pored jezera je
@@ -53,7 +58,7 @@ export const JezeroMedjuvrsje = () => {
         karaktera, koja dodatno obogaćuje turističku ponudu ovog kraja Srbije.
       </p>
 
-      <img src={medjuvrsje4} alt="Jezero Medjuvrsje 2" />
+      <img srcSet={`${medjuvrsje44} 400w, ${medjuvrsje4} `} alt="Jezero Medjuvrsje 2" />
 
       <p>
         U priobalju jezera Međuvršje, sa obe strane, smešteni su poznati, dobro
@@ -65,7 +70,7 @@ export const JezeroMedjuvrsje = () => {
         naziv Srpska Sveta Gora.
       </p>
 
-      <img src={medjuvrsje5} alt="Jezero u Moravičkom okrugu" />
+      <img srcSet={`${medjuvrsje55} 400w, ${medjuvrsje5} `} alt="Jezero u Moravičkom okrugu" />
 
       <p>
         Turisti mogu da uživaju u odmoru u restoranima-splavovima duž obale ili

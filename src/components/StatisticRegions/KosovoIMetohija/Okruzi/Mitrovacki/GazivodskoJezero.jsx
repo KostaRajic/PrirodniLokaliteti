@@ -1,7 +1,11 @@
-import gazivode1 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/gazivodskoJezero1.jpg";
-import gazivode2 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/gazivodskoJezero2.jpg";
-import gazivode3 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/gazivodskoJezero3.jpg";
-import gazivode4 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/gazivodskoJezero4.jpg";
+import gazivode1 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/desktop/gazivodskoJezero1.jpg";
+import gazivode2 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/desktop/gazivodskoJezero2.jpg";
+import gazivode3 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/desktop/gazivodskoJezero3.jpg";
+import gazivode4 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/desktop/gazivodskoJezero4.jpg";
+import gazivode11 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/mobile/MgazivodskoJezero1.jpg";
+import gazivode22 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/mobile/MgazivodskoJezero2.jpg";
+import gazivode33 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/mobile/MgazivodskoJezero3.jpg";
+import gazivode44 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/GazivodskoJezero/mobile/MgazivodskoJezero4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const GazivodskoJezero = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(mitrovackiOkrugPathRoutes.home)} style={{fill: "white"}} />
       <header></header>
-      <img src={gazivode1} alt="Gazivodsko Jezero 1" />
+      <img srcSet={`${gazivode11} 400w, ${gazivode1} `} alt="Gazivodsko Jezero 1" />
 
       <h2>Gazivodsko Jezero</h2>
 
@@ -27,7 +31,7 @@ export const GazivodskoJezero = () => {
         tokom plivanja za Bogojavljenski krst.
       </p>
 
-      <img src={gazivode2} alt="Gazivodsko Jezero 2" />
+      <img srcSet={`${gazivode22} 400w, ${gazivode2} `} alt="Gazivodsko Jezero 2" />
 
       <p>
         Beogradska firma Hidrotehnika-Hidroenergetika je od 1973. do 1977.
@@ -42,7 +46,7 @@ export const GazivodskoJezero = () => {
         manju hidroelektranu koja se nalazi u istoimenom naselju.
       </p>
 
-      <img src={gazivode3} alt="Gazivodsko Jezero 3" />
+      <img srcSet={`${gazivode33} 400w, ${gazivode3} `} alt="Gazivodsko Jezero 3" />
 
       <p>
         Kanali preusmeravaju vodu iz Gazivoda do Gračaničkog jezera, koja se
@@ -58,7 +62,7 @@ export const GazivodskoJezero = () => {
         i iz udaljenijih delova Kosova i Metohije.
       </p>
 
-      <img src={gazivode4} alt="Gazivodsko Jezero 4" />
+      <img srcSet={`${gazivode44} 400w, ${gazivode4} `} alt="Gazivodsko Jezero 4" />
 
       <p>
         Tokom 2017. i 2018. godine, međunarodni tim arheologa i naučnika

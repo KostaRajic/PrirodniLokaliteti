@@ -1,12 +1,18 @@
-import karlovci1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/karlovci1.jpg";
-import karlovci2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/karlovci2.jpg";
-import karlovci3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/karlovci3.jpg";
-import karlovci4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/karlovci4.jpg";
-import karlovci5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/karlovci5.png";
+import karlovci1 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/desktop/karlovci1.jpg";
+import karlovci2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/desktop/karlovci2.jpg";
+import karlovci3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/desktop/karlovci3.jpg";
+import karlovci4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/desktop/karlovci4.jpg";
+import karlovci5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/desktop/karlovci5.jpg";
+import karlovci11 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/mobile/Mkarlovci1.jpg";
+import karlovci22 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/mobile/Mkarlovci2.jpg";
+import karlovci33 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/mobile/Mkarlovci3.jpg";
+import karlovci44 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/mobile/Mkarlovci4.jpg";
+import karlovci55 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/SremskiKarlovci/mobile/Mkarlovci5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { JuznoBackiPathRoutes } from "./JuznoBackiPathRoutes";
 
 export const SremskiKarlovci = () => {
   const navigate = useNavigate();
@@ -16,11 +22,11 @@ export const SremskiKarlovci = () => {
       <ScrollToTop/>
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(JuznoBackiPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={karlovci1} alt="Sremski Karlovci 1" />
+      <img srcSet={`${karlovci11} 400w, ${karlovci1} `} alt="Sremski Karlovci 1" />
 
       <h2
         style={{color: "white" }}
@@ -36,9 +42,9 @@ export const SremskiKarlovci = () => {
         crkve i jedan od najvažnijih kulturnih centara u regionu.
       </p>
 
-      <img src={karlovci2} alt="Sremski Karlovci 2" />
+      <img srcSet={`${karlovci22} 400w, ${karlovci2} `} alt="Sremski Karlovci 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Kada se uželite unikatne i šarene arhitekture i čase dobrog vina vreme
         je da se uputite u Sremske Karlovce. O ovom malom vojvođanskom mestu
         pisao je Branko Radičević, u njemu možete da lajete na zvezde, pijete
@@ -48,9 +54,9 @@ export const SremskiKarlovci = () => {
         na vama je samo da se spremate za put.
       </p>
 
-      <img src={karlovci3} alt="Sremski Karlovci 3" />
+      <img srcSet={`${karlovci33} 400w, ${karlovci3} `} alt="Sremski Karlovci 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Da li ste spremni za razgibavanje pored česme? Česma Četiri lava može se
         posmatrati i kao spomenik kulture s obzirom na to koliko je čuvena i
         značajna. Ova unikatna česma, čije su slavine simbolično uređene u
@@ -63,8 +69,8 @@ export const SremskiKarlovci = () => {
         se u Karlovce i u njima se venčati!
       </p>
 
-      <img src={karlovci4} alt="Sremski Karlovci 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${karlovci44} 400w, ${karlovci4} `} alt="Sremski Karlovci 4" />
+      <p>
         Jedno je sasvim sigurno, znamenitosti u Sremskim Karlovcima ima zaista
         na pretek. Sremski Karlovci poseduju sve što vam treba za savršen izlet,
         počevši od arhitekture, preko restorana i vinarija sa dugom tradicijom,
@@ -74,9 +80,8 @@ export const SremskiKarlovci = () => {
       </p>
 
       <img
-        src={karlovci5}
+        srcSet={`${karlovci55} 400w, ${karlovci5} `}
         alt="Sremski Karlovci 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Verujemo da će ljubitelji vina i iskusni gurmani biti oduševljeni

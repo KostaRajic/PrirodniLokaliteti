@@ -4,12 +4,13 @@ import { vojvodinaText } from "./VojvodinaTekst";
 import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
+import { serbianMapPathRoutes } from "../../serbianMapPathRoutes";
 
 export const VojvodinaTekstModal = ({ goBack }) => {
     const navigate = useNavigate()
 
     const handleNext = () => {
-      navigate("Vojvodina");
+      navigate(serbianMapPathRoutes.Vojvodina);
     }
 
 
@@ -43,7 +44,7 @@ export const VojvodinaTekstModal = ({ goBack }) => {
             <p style={{margin:'10px 0 10px 0px', textAlign: 'center'}}>Juzno-Banatski</p>
           </>
         <div className="btnClass">
-          <button className="button firstBtn" onClick={() => navigate(-1)}>Nazad</button>
+          <button className="button firstBtn" onClick={() => navigate('/')}>Nazad</button>
           <button className="button secondBtn" onClick={handleNext}>Napred</button>
         </div>
         <Outlet />

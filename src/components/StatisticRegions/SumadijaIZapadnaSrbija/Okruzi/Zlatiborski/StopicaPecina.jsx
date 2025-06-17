@@ -1,9 +1,15 @@
-import stopicaPecina1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/stopicaPecina1.jpg";
-import stopicaPecina2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/stopicaPecina2.jpg";
-import stopicaPecina3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/stopicaPecina3.jpg";
-import stopicaPecina4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/stopicaPecina4.jpg";
-import stopicaPecina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/stopicaPecina5.jpg";
-import stopicaPecina6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/stopicaPecina6.jpg";
+import stopicaPecina1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/desktop/stopicaPecina1.jpg";
+import stopicaPecina2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/desktop/stopicaPecina2.jpg";
+import stopicaPecina3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/desktop/stopicaPecina3.jpg";
+import stopicaPecina4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/desktop/stopicaPecina4.jpg";
+import stopicaPecina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/desktop/stopicaPecina5.jpg";
+import stopicaPecina6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/desktop/stopicaPecina6.jpg";
+import stopicaPecina11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/mobile/MstopicaPecina1.jpg";
+import stopicaPecina22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/mobile/MstopicaPecina2.jpg";
+import stopicaPecina33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/mobile/MstopicaPecina3.jpg";
+import stopicaPecina44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/mobile/MstopicaPecina4.jpg";
+import stopicaPecina55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/mobile/MstopicaPecina5.jpg";
+import stopicaPecina66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/StopicaPecina/mobile/MstopicaPecina6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,9 +22,9 @@ export const StopicaPecina = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.stopicaPecina)} style={{fill: 'white'}} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={stopicaPecina1} alt="Stopica Pecina 1" />
+      <img srcSet={`${stopicaPecina11} 400w, ${stopicaPecina1} `} alt="Stopica Pecina 1" />
 
       <h2 style={{color: 'white'}}>Stopića Pećina</h2>
 
@@ -41,7 +47,7 @@ export const StopicaPecina = () => {
         pešačka staza koja vodi od parkinga do ulaza u pećinu.
       </p>
 
-      <img src={stopicaPecina2} alt="Stopica Pecina 2" />
+      <img srcSet={`${stopicaPecina22} 400w, ${stopicaPecina2} `} alt="Stopica Pecina 2" />
 
       <p>
         Stopića pećina je ime dobila po obližnjem zaseoku Stopići. Današnja
@@ -59,7 +65,7 @@ export const StopicaPecina = () => {
         potpunosti uređena.
       </p>
 
-      <img src={stopicaPecina3} alt="Stopica Pecina 3" />
+      <img srcSet={`${stopicaPecina33} 400w, ${stopicaPecina3} `} alt="Stopica Pecina 3" />
 
       <p>
         Ulaz u Stopića pećinu jedan je od najvećih pećinskih otvora u Srbiji, sa
@@ -75,7 +81,7 @@ export const StopicaPecina = () => {
         rekonstruisan 2018. godine.
       </p>
 
-      <img src={stopicaPecina4} alt="Stopica Pecina 4" />
+      <img srcSet={`${stopicaPecina44} 400w, ${stopicaPecina4} `} alt="Stopica Pecina 4" />
 
       <p>
         Stopića pećina je rečna pećina kroz koju protiče Trnavski potok, a njen
@@ -92,7 +98,7 @@ export const StopicaPecina = () => {
         speleolozi tokom svojih poseta 1983. i 1984. godine.
       </p>
 
-      <img src={stopicaPecina5} alt="Stopica Pecina 5" />
+      <img srcSet={`${stopicaPecina55} 400w, ${stopicaPecina5} `} alt="Stopica Pecina 5" />
       <p>
         Svetla dvorana prostire se od ulaza do granice gde dolazi dnevno svetlo.
         Dugačka je 76 metara i zauzima površinu od 2.800 kvadratnih metara. Na
@@ -112,7 +118,7 @@ export const StopicaPecina = () => {
         korito, dno Tamne dvorane je bilo potpuno poplavljeno pri većim vodama.
       </p>
 
-      <img src={stopicaPecina6} alt="Stopica Pecina 5" />
+      <img srcSet={`${stopicaPecina66} 400w, ${stopicaPecina6} `} alt="Stopica Pecina 5" />
       <p>
         Svetla i Tamna dvorana siromašne su pećinskim nakitom, s golim i
         stenovitim zidovima, dok je značajan deo tavanice takođe bez ukrasa.

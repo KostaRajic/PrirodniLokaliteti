@@ -1,7 +1,11 @@
-import svetaPetkaIverica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/manastirSvetaPetkaIverica1.jpg";
-import svetaPetkaIverica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/manastirSvetaPetkaIverica2.jpg";
-import svetaPetkaIverica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/manastirSvetaPetkaIverica3.jpg";
-import svetaPetkaIverica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/manastirSvetaPetkaIverica4.jpg";
+import svetaPetkaIverica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/desktop/manastirSvetaPetkaIverica1.jpg";
+import svetaPetkaIverica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/desktop/manastirSvetaPetkaIverica2.jpg";
+import svetaPetkaIverica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/desktop/manastirSvetaPetkaIverica3.jpg";
+import svetaPetkaIverica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/desktop/manastirSvetaPetkaIverica4.jpg";
+import svetaPetkaIverica11 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/mobile/manastirSvetaPetkaIvericaM1.jpg";
+import svetaPetkaIverica22 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/mobile/manastirSvetaPetkaIvericaM2.jpg";
+import svetaPetkaIverica33 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/mobile/manastirSvetaPetkaIvericaM3.jpg";
+import svetaPetkaIverica44 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/mobile/manastirSvetaPetkaIvericaM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const ManastirSvetaPetkaIverica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={svetaPetkaIverica2} alt="Manastir Sveta Petka Iverica 1" />
+      <img srcSet={`${svetaPetkaIverica11} 400w, ${svetaPetkaIverica1} `} alt="Manastir Sveta Petka Iverica 1" />
 
       <h2>Manastir Sveta Petka Iverica</h2>
 
@@ -30,7 +34,7 @@ export const ManastirSvetaPetkaIverica = () => {
         jednobrodna građevina sa polukružnom oltarskom apsidom.
       </p>
 
-      <img src={svetaPetkaIverica1} alt="Manastir Sveta Petka Iverica 2" />
+      <img srcSet={`${svetaPetkaIverica22} 400w, ${svetaPetkaIverica2} `} alt="Manastir Sveta Petka Iverica 2" />
       <p>
         Za crkvu Svete Petke vezane su mnoge zanimljive priče. 1896. godine, dok
         je inženjerska jedinica srpske vojske radila na izgradnji pruge i
@@ -45,7 +49,7 @@ export const ManastirSvetaPetkaIverica = () => {
         style={{ display: "flex", paddingBottom: "20px" }}
       >
         <img
-          src={svetaPetkaIverica3}
+          srcSet={`${svetaPetkaIverica33} 400w, ${svetaPetkaIverica3} `}
           alt="Manastir Sveta Petka Iverica 3"
           className="fruskaGoraClassImg"
         />
@@ -71,7 +75,7 @@ export const ManastirSvetaPetkaIverica = () => {
         Manastirski kompleks nalazi se na ulazu u Gradištanski kanjon.
       </p>
 
-      <img src={svetaPetkaIverica4} alt="Manastir Sveta Petka Iverica 4" />
+      <img srcSet={`${svetaPetkaIverica44} 400w, ${svetaPetkaIverica4} `} alt="Manastir Sveta Petka Iverica 4" />
 
       <p>
         Ukazom kralja Aleksandra I Obrenovića od 19. februara 1901. godine, za

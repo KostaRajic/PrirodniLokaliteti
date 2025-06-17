@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { srednjeBanatskiData } from "./SrednjeBanatskiData";
+import { srednjeBanatskiPathRoutes } from "./SrednjeBanatskiPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const SrednjeBanatski = () => {
   const [slide, setSlide] = useState(0);
@@ -19,15 +21,15 @@ export const SrednjeBanatski = () => {
 
   const readMore = (name) => {
     if (name === "Zrenjanin") {
-      navigate("Zrenjanin");
+      navigate(srednjeBanatskiPathRoutes.zrenjanin);
     } else if (name === "Novi Bečej") {
-      navigate("NoviBecej");
+      navigate(srednjeBanatskiPathRoutes.noviBecej);
     } else if (name === 'Specijalni rezervat prirode "Slano kopovo"') {
-      navigate("SlanoKopovo");
+      navigate(srednjeBanatskiPathRoutes.slanoKopovo);
     } else if (name === "Park prirode “Stara Tisa“ kod Bisernog ostrva") {
-      navigate("StaraTisa");
+      navigate(srednjeBanatskiPathRoutes.staraTisa);
     } else if (name === "Kupalište Peskara") {
-      navigate("KupalistePeskara");
+      navigate(srednjeBanatskiPathRoutes.kupalistePeskara);
     }
   };
 
@@ -36,7 +38,7 @@ export const SrednjeBanatski = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.Vojvodina)}
           style={{ fill: "white"}}
         />
       </header>

@@ -1,17 +1,31 @@
-import arandjelovac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac1.jpg";
-import arandjelovac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac2.jpg";
-import arandjelovac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac31.jpg";
-import arandjelovac12 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac32.jpg";
-import arandjelovac13 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac33.jpg";
-import arandjelovac14 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac34.jpg";
-import arandjelovac15 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac35.jpg";
-import arandjelovac16 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac36.jpg";
-import arandjelovac17 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac37.jpg";
-import arandjelovac18 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac38.jpg";
-import arandjelovac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac5.jpg";
-import arandjelovac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac6.jpg";
-import arandjelovac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac7.jpg";
-import arandjelovac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/arandjelovac8.jpg";
+import arandjelovac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac1.jpg";
+import arandjelovac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac2.jpg";
+import arandjelovac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac31.jpg";
+import arandjelovac12 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac32.jpg";
+import arandjelovac13 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac33.jpg";
+import arandjelovac14 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac34.jpg";
+import arandjelovac15 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac35.jpg";
+import arandjelovac16 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac36.jpg";
+import arandjelovac17 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac37.jpg";
+import arandjelovac18 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac38.jpg";
+import arandjelovac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac5.jpg";
+import arandjelovac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac6.jpg";
+import arandjelovac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac7.jpg";
+import arandjelovac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/desktop/arandjelovac8.jpg";
+import arandjelovac110 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac1.jpg";
+import arandjelovac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac2.jpg";
+import arandjelovac111 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac31.jpg";
+import arandjelovac122 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac32.jpg";
+import arandjelovac133 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac33.jpg";
+import arandjelovac144 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac34.jpg";
+import arandjelovac155 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac35.jpg";
+import arandjelovac166 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac36.jpg";
+import arandjelovac177 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac37.jpg";
+import arandjelovac188 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac38.jpg";
+import arandjelovac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac5.jpg";
+import arandjelovac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac6.jpg";
+import arandjelovac77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac7.jpg";
+import arandjelovac88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Arandjelovac/mobile/Marandjelovac8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -62,35 +76,43 @@ export const Arandjelovac = () => {
 
   const images = [
     {
-      src: arandjelovac11,
+      desktopSrc: arandjelovac11,
+      mobileSrc: arandjelovac111,
       alt: "Bukovacka banja 1",
     },
     {
-      src: arandjelovac12,
+      desktopSrc: arandjelovac12,
+      mobileSrc: arandjelovac122,
       alt: "Bukovacka banja 2",
     },
     {
-      src: arandjelovac13,
+      desktopSrc: arandjelovac13,
+      mobileSrc: arandjelovac133,
       alt: "Bukovacka banja 3",
     },
     {
-      src: arandjelovac14,
+      desktopSrc: arandjelovac14,
+      mobileSrc: arandjelovac144,
       alt: "Bukovacka banja 4",
     },
     {
-      src: arandjelovac15,
+      desktopSrc: arandjelovac15,
+      mobileSrc: arandjelovac155,
       alt: "Bukovacka banja 5",
     },
     {
-      src: arandjelovac16,
+      desktopSrc: arandjelovac16,
+      mobileSrc: arandjelovac166,
       alt: "Bukovacka banja 6",
     },
     {
-      src: arandjelovac17,
+      desktopSrc: arandjelovac17,
+      mobileSrc: arandjelovac177,
       alt: "Bukovacka banja 7",
     },
     {
-      src: arandjelovac18,
+      desktopSrc: arandjelovac18,
+      mobileSrc: arandjelovac188,
       alt: "Bukovacka banja 8",
     },
   ];
@@ -100,7 +122,7 @@ export const Arandjelovac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
       <header></header>
-      <img src={arandjelovac1} alt="Aradjelovac 1" />
+      <img srcSet={`${arandjelovac1} 400w, ${arandjelovac110} `} alt="Aradjelovac 1" />
 
       <h2>Aranđelovac</h2>
 
@@ -119,7 +141,7 @@ export const Arandjelovac = () => {
         srpske države.
       </p>
 
-      <img src={arandjelovac2} alt="Narodni muzej u Aranđelovcu" />
+      <img srcSet={`${arandjelovac2} 400w, ${arandjelovac22} `} alt="Narodni muzej u Aranđelovcu" />
 
       <p>
         Narodni muzej u Aranđelovcu čuva i prikazuje brojne eksponate iz oblasti
@@ -148,7 +170,7 @@ export const Arandjelovac = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -167,7 +189,7 @@ export const Arandjelovac = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -200,7 +222,7 @@ export const Arandjelovac = () => {
       </p>
 
       <img
-        src={arandjelovac5}
+        srcSet={`${arandjelovac5} 400w, ${arandjelovac55} `}
         alt="Planina Bukulja"
       />
 
@@ -221,7 +243,7 @@ export const Arandjelovac = () => {
         što dodatno doprinosi njenom značaju.
       </p>
 
-      <img src={arandjelovac6} alt="Pećina Risovača u Arandjelovcu" />
+      <img srcSet={`${arandjelovac6} 400w, ${arandjelovac66} `} alt="Pećina Risovača u Arandjelovcu" />
       <p>
         Pećina Risovača nalazi se na ulazu u Aranđelovac iz pravca Topole i
         predstavlja jedno od najvažnijih paleolitskih nalazišta u Evropi. Ovaj
@@ -240,7 +262,7 @@ export const Arandjelovac = () => {
         značajnim mestom za istraživanje ljudske istorije.
       </p>
 
-      <img src={arandjelovac7} alt="Garaško jezero"  />
+      <img srcSet={`${arandjelovac7} 400w, ${arandjelovac77} `} alt="Garaško jezero"  />
       <p>
         Garaško jezero se odlikuje strmim obalama sa jedne strane, dok je sa
         druge strane lakše pristupačno. Dno jezera je čvrsto, sa blagim
@@ -257,7 +279,7 @@ export const Arandjelovac = () => {
         pesku.
       </p>
 
-      <img src={arandjelovac8} alt="Aqua park Izvor Arandjelovac" />
+      <img srcSet={`${arandjelovac8} 400w, ${arandjelovac88} `} alt="Aqua park Izvor Arandjelovac" />
       <p>
         Aqua park Izvor se nalazi u Aranđelovcu, u Bukovičkoj banji, na samo sat
         vremena vožnje od Beograda. Na površini od 6 ha uz tri bazena sa

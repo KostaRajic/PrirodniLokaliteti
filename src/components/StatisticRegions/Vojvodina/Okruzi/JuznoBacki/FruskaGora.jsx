@@ -1,16 +1,26 @@
 import fruska2 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/Fruska1.jpg";
-import fruska3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/Fruska5.jpg";
-import fruska4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/Fruska3.jpg";
-import fruska5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/Fruska4.jpg";
-import fruska6 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/Fruska8.jpg";
+import fruska3 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/desktop/Fruska5.jpg";
+import fruska4 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/desktop/Fruska3.jpg";
+import fruska5 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/desktop/Fruska4.jpg";
+import fruska6 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/desktop/Fruska8.jpg";
 import fruska11 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/zanimljivosti/1.jpg";
 import fruska12 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/zanimljivosti/2.jpg";
 import fruska13 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/zanimljivosti/dombo1.jpg";
 import fruska14 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/zanimljivosti/gradac.jpg";
+import fruska22 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/mobile/FruskaM1.jpg";
+import fruska33 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/mobile/FruskaM5.jpg";
+import fruska44 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/mobile/FruskaM3.jpg";
+import fruska55 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/mobile/FruskaM4.jpg";
+import fruska66 from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/mobile/FruskaM8.jpg";
+import fruska11M from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/znimljivostimobile/1M.jpg";
+import fruska12M from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/znimljivostimobile/2M.jpg";
+import fruska13M from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/znimljivostimobile/dombo1M.jpg";
+import fruska14M from "../../../../../assets/images/Vojvodina/JuznoBackiOkrug/NacionalniParkFruskaGora/znimljivostimobile/gradacM.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { JuznoBackiPathRoutes } from "./JuznoBackiPathRoutes";
 
 export const FruskaGora = () => {
   const navigate = useNavigate();
@@ -20,11 +30,11 @@ export const FruskaGora = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(JuznoBackiPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={fruska2} alt="Fruska Gora 1" />
+      <img srcSet={`${fruska22} 400w, ${fruska2} `} alt="Fruska Gora 1" />
 
       <h2 style={{ color: "white" }}>Nacionalni Park "Fruška Gora"</h2>
 
@@ -42,7 +52,7 @@ export const FruskaGora = () => {
         {window.innerWidth < 500 ? (
           <>
             <img
-              src={fruska4}
+              srcSet={`${fruska44} 400w, ${fruska4} `}
               alt="Fruska Gora 2"
               className="fruskaGoraClassImg"
             />
@@ -68,7 +78,7 @@ export const FruskaGora = () => {
               parka je u Sremskoj Kamenici.
             </p>
             <img
-              src={fruska4}
+              srcSet={`${fruska44} 400w, ${fruska4} `}
               alt="Fruska Gora 2"
               className="fruskaGoraClassImg"
             />
@@ -78,7 +88,7 @@ export const FruskaGora = () => {
         <hr />
         <div className="flexColumn" style={{ display: "flex" }}>
           <img
-            src={fruska6}
+            srcSet={`${fruska66} 400w, ${fruska6} `}
             alt="Fruska Gora 3"
             className="fruskaGoraClassImg"
           />
@@ -100,7 +110,7 @@ export const FruskaGora = () => {
         {window.innerWidth < 500 ? (
           <>
             <img
-              src={fruska3}
+              srcSet={`${fruska33} 400w, ${fruska3} `}
               alt="Fruska Gora 4"
               className="fruskaGoraClassImg"
             />
@@ -136,7 +146,7 @@ export const FruskaGora = () => {
               Ciganski logor, Ležimir, Rohalj baze, Lipovača i dr.
             </p>
             <img
-              src={fruska3}
+              srcSet={`${fruska33} 400w, ${fruska3} `}
               alt="Fruska Gora 4"
               className="fruskaGoraClassImg"
             />
@@ -148,7 +158,7 @@ export const FruskaGora = () => {
         {window.innerWidth < 500 ? (
           <div>
           <img
-            src={fruska5}
+            srcSet={`${fruska55} 400w, ${fruska5} `}
             alt="Fruska Gora 5"
             className="fruskaGoraClassImg"
           />
@@ -169,7 +179,7 @@ export const FruskaGora = () => {
         ) : (
           <div style={{ display: "flex" }}>
             <img
-              src={fruska5}
+              srcSet={`${fruska55} 400w, ${fruska5} `}
               alt="Fruska Gora 5"
               className="fruskaGoraClassImg"
             />
@@ -205,7 +215,7 @@ export const FruskaGora = () => {
         {window.innerWidth < 500 ? (
           <div>
             <img
-              src={fruska11}
+              srcSet={`${fruska11M} 400w, ${fruska11} `}
               alt="Beli Majdan"
               className="fruskaGoraClassImg"
             />
@@ -239,7 +249,7 @@ export const FruskaGora = () => {
               prirode i turizmom na Fruškoj gori.
             </p>
             <img
-              src={fruska11}
+              srcSet={`${fruska11M} 400w, ${fruska11} `}
               alt="Beli Majdan"
               className="fruskaGoraClassImg"
             />
@@ -248,7 +258,7 @@ export const FruskaGora = () => {
         {window.innerWidth < 500 ? (
           <div>
             <img
-              src={fruska12}
+              srcSet={`${fruska12M} 400w, ${fruska12} `}
               alt="Vrdnicka kula"
               className="fruskaGoraClassImg"
             />
@@ -267,7 +277,7 @@ export const FruskaGora = () => {
         ) : (
           <div style={{ display: "flex" }}>
             <img
-              src={fruska12}
+              srcSet={`${fruska12M} 400w, ${fruska12} `}
               alt="Vrdnicka kula"
               className="fruskaGoraClassImg"
             />
@@ -288,7 +298,7 @@ export const FruskaGora = () => {
         {window.innerWidth < 500 ? (
           <div>
             <img
-              src={fruska13}
+              srcSet={`${fruska13M} 400w, ${fruska131} `}
               alt="Samostan Dombo"
               className="fruskaGoraClassImg"
             />
@@ -316,7 +326,7 @@ export const FruskaGora = () => {
               tragove Keltskog naselja na čijim temeljima je izgrađeno Rimsko.
             </p>
             <img
-              src={fruska13}
+              srcSet={`${fruska13M} 400w, ${fruska13} `}
               alt="Samostan Dombo"
               className="fruskaGoraClassImg"
             />
@@ -326,7 +336,7 @@ export const FruskaGora = () => {
         {window.innerWidth < 500 ? (
           <div>
             <img
-              src={fruska14}
+              srcSet={`${fruska14M} 400w, ${fruska14} `}
               alt="Tvrdjava Gradac"
               className="fruskaGoraClassImg"
             />
@@ -346,7 +356,7 @@ export const FruskaGora = () => {
         ) : (
           <div style={{ display: "flex" }}>
             <img
-              src={fruska14}
+              srcSet={`${fruska14M} 400w, ${fruska14} `}
               alt="Tvrdjava Gradac"
               className="fruskaGoraClassImg"
             />

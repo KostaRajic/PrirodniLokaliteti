@@ -1,12 +1,18 @@
-import peskara1 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/peskara2.jpg";
-import peskara2 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/peskara3.jpg";
-import peskara3 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/peskara4.jpg";
-import peskara4 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/peskara5.jpg";
-import peskara5 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/peskara6.jpg";
+import peskara1 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/desktop/peskara2.jpg";
+import peskara2 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/desktop/peskara3.jpg";
+import peskara3 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/desktop/peskara4.jpg";
+import peskara4 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/desktop/peskara5.jpg";
+import peskara5 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/desktop/peskara6.jpg";
+import peskara11 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/mobile/Mpeskara2.jpg";
+import peskara22 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/mobile/Mpeskara3.jpg";
+import peskara33 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/mobile/Mpeskara4.jpg";
+import peskara44 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/mobile/Mpeskara5.jpg";
+import peskara55 from "../../../../../assets/images/Vojvodina/SrednjeBanatskiOkrug/KupalistePeskara/mobile/Mpeskara6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { srednjeBanatskiPathRoutes } from "./SrednjeBanatskiPathRoutes";
 
 export const KupalistePeskara = () => {
   const navigate = useNavigate();
@@ -14,9 +20,9 @@ export const KupalistePeskara = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(srednjeBanatskiPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={peskara5} alt="Kupalište peskara 1" />
+      <img srcSet={`${peskara55} 400w, ${peskara5} `} alt="Kupalište peskara 1" />
 
       <h2>Kupalište peskara</h2>
 
@@ -28,9 +34,9 @@ export const KupalistePeskara = () => {
         "Peskara", a pruža dovoljno prostora za uživanje u sunčanju i kupanju.
       </p>
 
-      <img src={peskara2} alt="Kupalište peskara 2" />
+      <img srcSet={`${peskara22} 400w, ${peskara2} `} alt="Kupalište peskara 2" />
 
-      <p style={{ marginTop: "-70px", position: "absolute" }}>
+      <p>
         Kupalište je dobro opremljeno sa potrebnim sadržajima, uključujući
         ležaljke, tuševe, kafiće i restorane, kao i prodavnice sa potrebštinama
         za turiste. Na obali se nalaze i sportski tereni za različite aktivnosti
@@ -38,9 +44,9 @@ export const KupalistePeskara = () => {
         aktivno uživanje u prirodi.
       </p>
 
-      <img src={peskara3} alt="Kupalište peskara 3" />
+      <img srcSet={`${peskara33} 400w, ${peskara3} `} alt="Kupalište peskara 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Pored kupanja, posetioci mogu uživati u različitim rekreativnim
         aktivnostima poput vožnje čamcem ili kajakom po jezeru, biciklističkim i
         pešačkim turama, ili pak opuštanju u prirodi. Peskara je popularno i
@@ -49,19 +55,19 @@ export const KupalistePeskara = () => {
         odredište za letnje vikende, ali i za dnevne odmore.
       </p>
         <img
-          src={peskara4}
+          srcSet={`${peskara44} 400w, ${peskara4} `}
           alt="Kupalište peskara 4"
         />
 
-        <p style={{ marginTop: "-10px"}}>
+        <p>
           Kupalište Peskara ima veliki značaj za lokalnu zajednicu jer privlači
           posetioce, podstičući razvoj turizma i povezane industrije. Takođe
           doprinosi promociji prirodnih lepotu i sportskih aktivnosti u regionu.
         </p>
       <div>
-        <img src={peskara1} alt="Kupalište peskara 4" />
+        <img srcSet={`${peskara11} 400w, ${peskara1} `} alt="Kupalište peskara 4" />
 
-        <p style={{ marginTop: "-10px" }}>
+        <p>
           Kupalište Peskara je atraktivno odredište koje pruža posetiocima
           savršen spoj prirode, sporta i rekreacije, idealno za opuštanje i
           uživanje u letnjim mesecima. Zbog svoje blizine Zrenjaninu, lako je

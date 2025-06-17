@@ -1,13 +1,20 @@
-import zagajickaBrda1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/zagajickaBrda2.jpg";
-import zagajickaBrda2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/zagajickaBrda3.jpg";
-import zagajickaBrda3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/zagajickaBrda4.jpg";
-import zagajickaBrda4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/zagajickaBrda5.jpg";
-import zagajickaBrda5 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/zagajickaBrda6.jpg";
-import zagajickaBrda6 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/zagajickaBrda7.jpg";
+import zagajickaBrda1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/desktop/zagajickaBrda2.jpg";
+import zagajickaBrda2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/desktop/zagajickaBrda3.jpg";
+import zagajickaBrda3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/desktop/zagajickaBrda4.jpg";
+import zagajickaBrda4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/desktop/zagajickaBrda5.jpg";
+import zagajickaBrda5 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/desktop/zagajickaBrda6.jpg";
+import zagajickaBrda6 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/desktop/zagajickaBrda7.jpg";
+import zagajickaBrda11 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/mobile/MzagajickaBrda2.jpg";
+import zagajickaBrda22 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/mobile/MzagajickaBrda3.jpg";
+import zagajickaBrda33 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/mobile/MzagajickaBrda4.jpg";
+import zagajickaBrda44 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/mobile/MzagajickaBrda5.jpg";
+import zagajickaBrda55 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/mobile/MzagajickaBrda6.jpg";
+import zagajickaBrda66 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/ZagajickaBrda/mobile/MzagajickaBrda7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { juznoBanatskiPathRoutes } from "./JuznoBanatskiPathRoutes";
 
 export const DelibaltskaPescaraIZagajickaBrda = () => {
   const navigate = useNavigate();
@@ -15,11 +22,11 @@ export const DelibaltskaPescaraIZagajickaBrda = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(juznoBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={zagajickaBrda1} alt="Deliblatska Peščara" />
+      <img srcSet={`${zagajickaBrda11} 400w, ${zagajickaBrda1} `} alt="Deliblatska Peščara" />
 
-      <h2 style={{marginRight: '80px' }}>Deliblatska Peščara i Zagajička Brda</h2>
+      <h2>Deliblatska Peščara i Zagajička Brda</h2>
 
       <p style={{ paddingTop: "50px"}}>
         Deliblatska peščara je jedinstvena prirodna pojava u Evropi, smeštena u
@@ -32,9 +39,9 @@ export const DelibaltskaPescaraIZagajickaBrda = () => {
         peščaru izuzetno raznoliku i interesantnu.
       </p>
 
-      <img src={zagajickaBrda2} alt="Deliblatska Pescara" />
+      <img srcSet={`${zagajickaBrda22} 400w, ${zagajickaBrda2} `} alt="Deliblatska Pescara" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Već više od dve stotine godina, Deliblatska peščara se pošumljava, ali
         šumske površine i dalje čine samo mali deo ove prostrane oblasti.
         Usamljena stabla koja se pojavljuju na širokim prostranstvima postala su
@@ -45,9 +52,9 @@ export const DelibaltskaPescaraIZagajickaBrda = () => {
         najvrednijih stepskih područja u Srbiji.
       </p>
 
-      <img src={zagajickaBrda3} alt="Zajegačko Brdo" />
+      <img srcSet={`${zagajickaBrda33} 400w, ${zagajickaBrda3} `} alt="Zajegačko Brdo" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Tokom mnogih godina, vetrovi su duvali kroz peske, stvarajući drevne
         dine na dnu Panonskog mora. Kroz vreme, te dine su se oblikovale u manja
         brda, a tanak sloj zemlje stvorio je temelje za formiranje zelenih
@@ -61,8 +68,8 @@ export const DelibaltskaPescaraIZagajickaBrda = () => {
         koji bi voleli da se promeni naziv.
       </p>
 
-      <img src={zagajickaBrda4} alt="Zajegacko Brdo" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${zagajickaBrda44} 400w, ${zagajickaBrda4} `} alt="Zajegacko Brdo" />
+      <p>
         Postoji nekoliko načina da se dođe do Zagajićkih brda, a mi smo iz
         Beograda krenule putem preko Pančeva i Kovina, sve do sela Grebenac.
         Kada stignete u Grebenac, skrenite oštro levo prema groblju i nastavite
@@ -72,8 +79,8 @@ export const DelibaltskaPescaraIZagajickaBrda = () => {
         označava Specijalni rezervat prirode Deliblatska peščara.
       </p>
 
-      <img src={zagajickaBrda5} alt="Zajegačko brdo i Delblatska Peščara" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${zagajickaBrda55} 400w, ${zagajickaBrda5} `} alt="Zajegačko brdo i Delblatska Peščara" />
+      <p>
         Peščana tla i jedinstveni ekološki uslovi stvorili su šumo-stepska
         staništa koja podržavaju izuzetno retke i zaštićene vrste biljaka i
         životinja. Flora ovog područja obuhvata više od 900 biljnih vrsta, među
@@ -89,8 +96,8 @@ export const DelibaltskaPescaraIZagajickaBrda = () => {
         specifičnom regionu.
       </p>
 
-      <img src={zagajickaBrda6} alt="Bela Crkva 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${zagajickaBrda66} 400w, ${zagajickaBrda6} `} alt="Bela Crkva 4" />
+      <p>
         Poznato je da vazduh u Deliblatskoj peščari, posebno u području starih
         borovih šuma, ima izuzetna fizičko-hemijska svojstva. Zbog toga se
         boravak u ovom delu preporučuje deci, rekonvalescentima, astmatičarima,

@@ -1,6 +1,9 @@
-import blagovestenje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/manastirBlagovestenje1.jpg";
-import blagovestenje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/manastirBlagovestenje2.jpg";
-import blagovestenje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/manastirBlagovestenje3.jpg";
+import blagovestenje1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/desktop/manastirBlagovestenje1.jpg";
+import blagovestenje2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/desktop/manastirBlagovestenje2.jpg";
+import blagovestenje3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/desktop/manastirBlagovestenje3.jpg";
+import blagovestenje11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/mobile/MmanastirBlagovestenje1.jpg";
+import blagovestenje22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/mobile/MmanastirBlagovestenje2.jpg";
+import blagovestenje33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/ManastirBlagovestenje/mobile/MmanastirBlagovestenje3.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +18,7 @@ export const ManastirBlagovestenje = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={blagovestenje2} alt="Manastir Blagoveštenja na Kablaru" />
+      <img srcSet={`${blagovestenje22} 400w, ${blagovestenje2} `} alt="Manastir Blagoveštenja na Kablaru" />
 
       <h2 style={{ color: "white" }}>Manastir Blagoveštenja</h2>
 
@@ -27,7 +30,7 @@ export const ManastirBlagovestenje = () => {
         manastir osnovan 1602. godine „trudom i nastojanjem igumana Nikodima“.
       </p>
 
-      <img src={blagovestenje1} alt="Manastir Blagoveštenja na Kablaru 2" />
+      <img srcSet={`${blagovestenje11} 400w, ${blagovestenje1} `} alt="Manastir Blagoveštenja na Kablaru 2" />
 
       <p>
         Podaci o freskopisanju hrama nalaze se na pilastru severnog zida, gde je
@@ -38,7 +41,7 @@ export const ManastirBlagovestenje = () => {
         veka. Jovan Vujic je 1826. godine zabeležio da je manastir bio spaljen.
       </p>
 
-      <img src={blagovestenje3} alt="Manastir Blagoveštenja na Kablaru 3" />
+      <img srcSet={`${blagovestenje33} 400w, ${blagovestenje3} `} alt="Manastir Blagoveštenja na Kablaru 3" />
 
       <p>
         Feliks Kanic je 1866. godine zapisao da je uživao u gostoprimstvu

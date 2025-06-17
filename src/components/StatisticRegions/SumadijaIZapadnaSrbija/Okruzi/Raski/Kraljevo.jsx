@@ -1,11 +1,19 @@
-import kraljevo1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/kraljevo1.jpg";
-import kraljevo2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/kraljevo2.jpg";
-import kraljevo3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/kraljevo3.jpg";
-import kraljevo4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/kraljevo4.jpg";
-import kraljevo5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/kraljevo5.jpg";
-import kraljevo6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/kraljevo6.jpg";
-import kraljevo7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/kraljevo7.jpg";
-import kraljevo8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/kraljevo8.jpg";
+import kraljevo1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/desktop/kraljevo1.jpg";
+import kraljevo2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/desktop/kraljevo2.jpg";
+import kraljevo3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/desktop/kraljevo3.jpg";
+import kraljevo4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/desktop/kraljevo4.jpg";
+import kraljevo5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/desktop/kraljevo5.jpg";
+import kraljevo6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/desktop/kraljevo6.jpg";
+import kraljevo7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/desktop/kraljevo7.jpg";
+import kraljevo8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/desktop/kraljevo8.jpg";
+import kraljevo11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/mobile/Mkraljevo1.jpg";
+import kraljevo22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/mobile/Mkraljevo2.jpg";
+import kraljevo33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/mobile/Mkraljevo3.jpg";
+import kraljevo44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/mobile/Mkraljevo4.jpg";
+import kraljevo55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/mobile/Mkraljevo5.jpg";
+import kraljevo66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/mobile/Mkraljevo6.jpg";
+import kraljevo77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/mobile/Mkraljevo7.jpg";
+import kraljevo88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo/mobile/Mkraljevo8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +32,7 @@ export const Kraljevo = () => {
 
       />
       <header></header>
-      <img src={kraljevo1} alt="Kraljevo 1" />
+      <img srcSet={`${kraljevo11} 400w, ${kraljevo1} `} alt="Kraljevo 1" />
 
       <h2 style={{ color: "white" }}>Kraljevo</h2>
 
@@ -37,7 +45,7 @@ export const Kraljevo = () => {
         se nalazi na 5 km od centra grada.
       </p>
 
-      <img src={kraljevo2} alt="Kraljevo 2" />
+      <img srcSet={`${kraljevo22} 400w, ${kraljevo2} `} alt="Kraljevo 2" />
 
       <p>
         Najstarije poznato ime naselja, za koje postoji pisani izvor, bilo je
@@ -56,7 +64,7 @@ export const Kraljevo = () => {
         kada je ponovo vraćeno ime Kraljevo.
       </p>
 
-      <img src={kraljevo4} alt="Narodni muzej u Kraljevu" />
+      <img srcSet={`${kraljevo44} 400w, ${kraljevo4} `} alt="Narodni muzej u Kraljevu" />
 
       <p>
         Narodni muzej Kraljevo osnovan je 1. maja 1950. godine. Muzej je
@@ -70,7 +78,7 @@ export const Kraljevo = () => {
         Ustanove kulture od nacionalnog značaja.
       </p>
 
-      <img src={kraljevo3} alt="Muzej Slatka - Kuća cvetića kraljevo" />
+      <img srcSet={`${kraljevo33} 400w, ${kraljevo3} `} alt="Muzej Slatka - Kuća cvetića kraljevo" />
 
       <p>
         Muzej slatka – Kuća Cvetića je jedinstvena kombinacija gastronomije i
@@ -90,7 +98,7 @@ export const Kraljevo = () => {
         stakla, porcelana i francuskog srebra.
       </p>
 
-      <img src={kraljevo5} alt="Saborna crkva Svete Trojice u Kraljevu" />
+      <img srcSet={`${kraljevo55} 400w, ${kraljevo5} `} alt="Saborna crkva Svete Trojice u Kraljevu" />
 
       <p>
         Saborna crkva Svete Trojice u Kraljevu je glavni i najveći pravoslavni
@@ -109,7 +117,7 @@ export const Kraljevo = () => {
         bogosluženja dok se nova crkva ne završi, što je i učinjeno.
       </p>
 
-      <img src={kraljevo8} alt="Spomenik Srpskim ratnicima u Kraljevu" />
+      <img srcSet={`${kraljevo88} 400w, ${kraljevo8} `} alt="Spomenik Srpskim ratnicima u Kraljevu" />
 
       <p>
         Spomenik srpskim ratnicima u Kraljevu posvećen je poginulim oficirima i
@@ -127,7 +135,7 @@ export const Kraljevo = () => {
         uticaj imala je sudbina Spomenika braniocima Beograda.
       </p>
 
-      <img src={kraljevo6} alt="Ađzića kuća u Kraljevu" />
+      <img srcSet={`${kraljevo66} 400w, ${kraljevo6} `} alt="Ađzića kuća u Kraljevu" />
 
       <p>
         Ađzića kuća u Kraljevu, ili kuća Mihaila Hađi-Aleksića, izgrađena je
@@ -145,7 +153,7 @@ export const Kraljevo = () => {
         belo.
       </p>
 
-      <img src={kraljevo7} alt="Kafici u Kraljevu" />
+      <img srcSet={`${kraljevo77} 400w, ${kraljevo7} `} alt="Kafici u Kraljevu" />
 
       <p>
         Kraljevo, kao grad bogate istorije i tradicije, nudi raznovrsnu ponudu

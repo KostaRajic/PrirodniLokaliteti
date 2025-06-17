@@ -1,9 +1,15 @@
-import divcibare1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/divcibare1.jpg";
-import divcibare2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/divcibare2.jpg";
-import divcibare3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/divcibare3.jpg";
-import divcibare4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/divcibare4.jpg";
-import divcibare5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/divcibare5.jpg";
-import divcibare6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/divcibare6.jpg";
+import divcibare1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/desktop/divcibare1.jpg";
+import divcibare2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/desktop/divcibare2.jpg";
+import divcibare3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/desktop/divcibare3.jpg";
+import divcibare4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/desktop/divcibare4.jpg";
+import divcibare5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/desktop/divcibare5.jpg";
+import divcibare6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/desktop/divcibare6.jpg";
+import divcibare11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/mobile/Mdivcibare1.jpg";
+import divcibare22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/mobile/Mdivcibare2.jpg";
+import divcibare33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/mobile/Mdivcibare3.jpg";
+import divcibare44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/mobile/Mdivcibare4.jpg";
+import divcibare55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/mobile/Mdivcibare5.jpg";
+import divcibare66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/Divcibare/mobile/Mdivcibare6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,11 +24,11 @@ export const Divcibare = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={divcibare1} alt="Divčibare 1" />
+      <img srcSet={`${divcibare11} 400w, ${divcibare1} `} alt="Divčibare 1" />
 
-      <h2 style={{ marginLeft: "50px" }}>Divčibare</h2>
+      <h2>Divčibare</h2>
 
-      <p style={{ paddingTop: "50px" }}>
+      <p>
         Divčibare su gradsko naselje i popularno planinsko-turističko odredište
         grada Valjeva u okrugu Kolubara, smešteno na planini Maljen. Prema
         popisu iz 2022. godine, naselje broji 88 stalnih stanovnika. Divčibare
@@ -32,7 +38,7 @@ export const Divcibare = () => {
         najviši vrh je Kraljev sto, koji se uzdiže na 1.104 metra.
       </p>
 
-      <img src={divcibare2} alt="Divčibare 2" />
+      <img srcSet={`${divcibare22} 400w, ${divcibare2} `} alt="Divčibare 2" />
 
       <p>
         Visoravan je dobila naziv Divčibare, ili devojačke bare, u spomen na
@@ -45,7 +51,7 @@ export const Divcibare = () => {
         građevinske objekte.
       </p>
 
-      <img src={divcibare3} alt="Divčibare 3" />
+      <img srcSet={`${divcibare33} 400w, ${divcibare3} `} alt="Divčibare 3" />
 
       <p>
         Poznato je da je knjaz Miloš često posećivao ovaj kraj, obilazio čobane
@@ -59,7 +65,7 @@ export const Divcibare = () => {
         zajedničko ime Kara-dag, odnosno Crna Gora.
       </p>
 
-      <img src={divcibare4} alt="Planina Divčibare 4" />
+      <img srcSet={`${divcibare44} 400w, ${divcibare4} `} alt="Planina Divčibare 4" />
 
       <p>
         Maljen je planina koja pripada Dinarskom planinskom sistemu u
@@ -72,7 +78,7 @@ export const Divcibare = () => {
         dok je drugi po visini Crni vrh sa 1098 m.
       </p>
 
-      <img src={divcibare6} alt="Divčibare 5" />
+      <img srcSet={`${divcibare66} 400w, ${divcibare6} `} alt="Divčibare 5" />
 
       <p>
         Vis Stražara deli Divčibare na dva dela: Divčibare u užem smislu i
@@ -89,7 +95,7 @@ export const Divcibare = () => {
         atraktivnu destinaciju i uživaju u svim njenim lepotama i blagodetima.
       </p>
 
-      <img src={divcibare5} alt="Divčibare 6" />
+      <img srcSet={`${divcibare55} 400w, ${divcibare5} `} alt="Divčibare 6" />
 
       <p>
         Ljuti krš Vidikovac je popularno izletište na Divčibarama, smešteno na

@@ -1,15 +1,24 @@
-import indjija1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/indjija8.jpg";
-import indjija2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/indjija2.jpg";
-import indjija3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/indjija3.jpg";
-import indjija4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/indjija4.jpg";
-import indjija5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/indjija10.jpg";
-import indjija6 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/indjija6.jpg";
-import indjija7 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/indjija7.jpg";
-import indjija8 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/indjija9.jpg";
+import indjija1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/desktop/indjija8.jpg";
+import indjija2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/desktop/indjija2.jpg";
+import indjija3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/desktop/indjija3.jpg";
+import indjija4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/desktop/indjija4.jpg";
+import indjija5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/desktop/indjija10.jpg";
+import indjija6 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/desktop/indjija6.jpg";
+import indjija7 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/desktop/indjija7.jpg";
+import indjija8 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/desktop/indjija9.jpg";
+import indjija11 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/mobile/Mindjija8.jpg";
+import indjija22 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/mobile/Mindjija2.jpg";
+import indjija33 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/mobile/Mindjija3.jpg";
+import indjija44 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/mobile/Mindjija4.jpg";
+import indjija55 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/mobile/Mindjija10.jpg";
+import indjija66 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/mobile/Mindjija6.jpg";
+import indjija77 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/mobile/Mindjija7.jpg";
+import indjija88 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Indjija/mobile/Mindjija9.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 
 export const Indjija = () => {
   const navigate = useNavigate();
@@ -17,9 +26,9 @@ export const Indjija = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(sremskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={indjija1} alt="Inđija 1" />
+      <img srcSet={`${indjija11} 400w, ${indjija1} `} alt="Inđija 1" />
 
       <h2>Inđija</h2>
 
@@ -38,7 +47,7 @@ export const Indjija = () => {
         omogućava lak pristup tržištima i olakšava privrednu razmenu.
       </p>
 
-      <img src={indjija5} alt="Inđija 5" />
+      <img srcSet={`${indjija55} 400w, ${indjija5} `} alt="Inđija 5" />
 
       <p>
         Indjija je grad bogat zelenim površinama i parkovima, idealnim za odmor
@@ -52,12 +61,12 @@ export const Indjija = () => {
 
       <div className="displayFlexClassic">
         <img
-          src={indjija3}
+          srcSet={`${indjija33} 400w, ${indjija3} `}
           alt="Inđija centar"
           style={{ padding: "50px", width: "47%" }}
         />
         <img
-          src={indjija8}
+          srcSet={`${indjija88} 400w, ${indjija8} `}
           alt="Inđija crkva sv. Georgija"
           style={{ padding: "50px", width: "47%" }}
         />
@@ -77,7 +86,7 @@ export const Indjija = () => {
         život i bogatu kulturnu baštinu.
       </p>
 
-      <img src={indjija2} alt="Inđija 2" />
+      <img srcSet={`${indjija22} 400w, ${indjija2} `} alt="Inđija 2" />
 
       <p>
         Keltsko selo je tematski turistički kompleks smešten u
@@ -95,7 +104,7 @@ export const Indjija = () => {
         interaktivno istraživanje istorije ovog zanimljivog perioda.
       </p>
 
-      <img src={indjija4} alt="Inđija 4" />
+      <img srcSet={`${indjija44} 400w, ${indjija4} `} alt="Inđija 4" />
       <p>
         Zoo VRT Koki je mali zoološki vrt je popularno mesto za porodice i
         školsku decu, jer nudi priliku da se vide različite vrste životinja u
@@ -109,7 +118,7 @@ export const Indjija = () => {
         životinjama u prijatnoj atmosferi.
       </p>
 
-      <img src={indjija6} alt="Inđija 6" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${indjija66} 400w, ${indjija6} `} alt="Inđija 6" />
       <p>
         Dunav protiče kroz teritoriju opštine Inđija u dužini od 27 km,
         formirajući jedan od najlepših i najromantičnijih delova svog toka.
@@ -122,7 +131,7 @@ export const Indjija = () => {
         rekreativnim aktivnostima na vodi.
       </p>
 
-      <img src={indjija7} alt="Inđija 7" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${indjija77} 400w, ${indjija7} `} alt="Inđija 7" />
       <p>
         Krečidinska ada je rečno ostrvo smešteno uz levu obalu Dunava naspram
         naselja Krečidin. Predstavlja veoma značajan deo Specijalnog rezervata

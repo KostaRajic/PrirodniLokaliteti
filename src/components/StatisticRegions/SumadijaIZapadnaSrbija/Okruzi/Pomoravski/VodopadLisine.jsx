@@ -1,8 +1,13 @@
-import lisine1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/vodopadLisine1.jpg";
-import lisine2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/vodopadLisine2.jpg";
-import lisine3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/vodopadLisine3.jpg";
-import lisine4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/vodopadLisine4.jpg";
-import lisine5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/vodopadLisine5.jpg";
+import lisine1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/desktop/vodopadLisine1.jpg";
+import lisine2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/desktop/vodopadLisine2.jpg";
+import lisine3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/desktop/vodopadLisine3.jpg";
+import lisine4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/desktop/vodopadLisine4.jpg";
+import lisine5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/desktop/vodopadLisine5.jpg";
+import lisine11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/mobile/MvodopadLisine1.jpg";
+import lisine22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/mobile/MvodopadLisine2.jpg";
+import lisine33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/mobile/MvodopadLisine3.jpg";
+import lisine44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/mobile/MvodopadLisine4.jpg";
+import lisine55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine/mobile/MvodopadLisine5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const VodopadLisine = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={lisine1} alt="Vodopad Lisine 1" />
+      <img srcSet={`${lisine11} 400w, ${lisine1} `} alt="Vodopad Lisine 1" />
 
       <h2 style={{ color: "white" }}>Vodopad Lisine</h2>
 
@@ -33,7 +38,7 @@ export const VodopadLisine = () => {
         metara, Veliki Buk se smatra jednim od najviših vodopada u Srbiji.
       </p>
 
-      <img src={lisine2} alt="Vodopad Lisine 2" />
+      <img srcSet={`${lisine22} 400w, ${lisine2} `} alt="Vodopad Lisine 2" />
 
       <p>
         Vodopad Veliki Buk, smešten na nadmorskoj visini od oko 380 metara, u
@@ -49,7 +54,7 @@ export const VodopadLisine = () => {
         hidrografska povezanost sa ponornim rekama iz uvala Rečke i Busovate.
       </p>
 
-      <img src={lisine3} alt="Vodopad Lisine 3" />
+      <img srcSet={`${lisine33} 400w, ${lisine3} `} alt="Vodopad Lisine 3" />
 
       <p>
         Područje oko Vodopada Veliki Buk, smeštenog na padinama Beljanice u
@@ -61,7 +66,7 @@ export const VodopadLisine = () => {
         svoj boravak i u potpunosti uživaju u ovoj prelepoj prirodi.
       </p>
 
-      <img src={lisine4} alt="Vodopad Veliki Buk" />
+      <img srcSet={`${lisine44} 400w, ${lisine4} `} alt="Vodopad Veliki Buk" />
 
       <p>
         Hidrosistem Lisine obuhvata izvor Veliko vrelo, vodotok i Vodopad Veliki
@@ -77,7 +82,7 @@ export const VodopadLisine = () => {
         raznih suvenira.
       </p>
 
-      <img src={lisine5} alt="Vodopad Veliki Buk 2" />
+      <img srcSet={`${lisine55} 400w, ${lisine5} `} alt="Vodopad Veliki Buk 2" />
 
       <p>
         Kada posetite Lisine, bićete očarani netaknutom prirodom Južnog Kučaja i

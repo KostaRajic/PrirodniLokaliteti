@@ -1,7 +1,7 @@
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import z from "../../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/kragujevac4MV.jpg";
+import z from "../../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Kragujevac/desktop/kragujevac4MV.jpg";
 
 export const SpomenikPalimSumadincima = () => {
   const navigate = useNavigate();

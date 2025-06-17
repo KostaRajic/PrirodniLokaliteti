@@ -1,9 +1,15 @@
-import goc1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/planinaGoc1.jpg";
-import goc2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/planinaGoc2.jpg";
-import goc3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/planinaGoc3.jpg";
-import goc4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/planinaGoc4.jpg";
-import goc5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/planinaGoc5.jpg";
-import goc6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/planinaGoc6.jpg";
+import goc1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/desktop/planinaGoc1.jpg";
+import goc2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/desktop/planinaGoc2.jpg";
+import goc3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/desktop/planinaGoc3.jpg";
+import goc4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/desktop/planinaGoc4.jpg";
+import goc5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/desktop/planinaGoc5.jpg";
+import goc6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/desktop/planinaGoc6.jpg";
+import goc11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/mobile/MplaninaGoc1.jpg";
+import goc22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/mobile/MplaninaGoc2.jpg";
+import goc33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/mobile/MplaninaGoc3.jpg";
+import goc44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/mobile/MplaninaGoc4.jpg";
+import goc55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/mobile/MplaninaGoc5.jpg";
+import goc66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc/mobile/MplaninaGoc6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const PlaninaGoc = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={goc1} alt="Planina Goč 1" />
+      <img srcSet={`${goc11} 400w, ${goc1} `} alt="Planina Goč 1" />
 
       <h2 style={{ color: "white" }}>Planina Goč</h2>
 
@@ -31,7 +37,7 @@ export const PlaninaGoc = () => {
         ovog kraja.
       </p>
 
-      <img src={goc2} alt="Planina Goč 2" />
+      <img srcSet={`${goc22} 400w, ${goc2} `} alt="Planina Goč 2" />
 
       <p>
         Goč je prekriven uglavnom bukovim, jelovim i borovim šumama, pružajući
@@ -44,7 +50,7 @@ export const PlaninaGoc = () => {
         zabranjeno.
       </p>
 
-      <img src={goc3} alt="Planina Goč 3" />
+      <img srcSet={`${goc33} 400w, ${goc3} `} alt="Planina Goč 3" />
 
       <p>
         Netaknuta priroda, savršen spoj blage klime, čistog vazduha i bogate
@@ -59,7 +65,7 @@ export const PlaninaGoc = () => {
         možete uživati u ski-aktivnostima na Goču za svega pola sata.
       </p>
 
-      <img src={goc4} alt="Planina Goč 4" />
+      <img srcSet={`${goc44} 400w, ${goc4} `} alt="Planina Goč 4" />
 
       <p>
         Goč nudi idealne terene za visinske pripreme sportista. Zbog svojih
@@ -71,7 +77,7 @@ export const PlaninaGoc = () => {
         vreme vladavine dinastije Nemanjića.
       </p>
 
-      <img src={goc5} alt="Planina Goč 5" />
+      <img srcSet={`${goc55} 400w, ${goc5} `} alt="Planina Goč 5" />
 
       <p>
         Goč je lako dostupan zahvaljujući više različitih prilaznih puteva.
@@ -83,7 +89,7 @@ export const PlaninaGoc = () => {
         jednodnevne izlete posetilaca koji borave u ovom banjskom centru.
       </p>
 
-      <img src={goc6} alt="Planina Goč 6" />
+      <img srcSet={`${goc66} 400w, ${goc6} `} alt="Planina Goč 6" />
 
       <p>
         Na Goču postoji pet jasno označenih staza za pešačenje: žuta, zelena,

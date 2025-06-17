@@ -1,8 +1,13 @@
-import djavoljaVaros1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/djavoljaVaros1.jpg";
-import djavoljaVaros2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/djavoljaVaros2.jpg";
-import djavoljaVaros3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/djavoljaVaros3.jpg";
-import djavoljaVaros4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/djavoljaVaros4.jpg";
-import djavoljaVaros5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/djavoljaVaros5.jpg";
+import djavoljaVaros1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/desktop/djavoljaVaros1.jpg";
+import djavoljaVaros2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/desktop/djavoljaVaros2.jpg";
+import djavoljaVaros3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/desktop/djavoljaVaros3.jpg";
+import djavoljaVaros4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/desktop/djavoljaVaros4.jpg";
+import djavoljaVaros5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/desktop/djavoljaVaros5.jpg";
+import djavoljaVaros11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/mobile/djavoljaVarosM1.jpg";
+import djavoljaVaros22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/mobile/djavoljaVarosM2.jpg";
+import djavoljaVaros33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/mobile/djavoljaVarosM3.jpg";
+import djavoljaVaros44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/mobile/djavoljaVarosM4.jpg";
+import djavoljaVaros55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/DjavoljaVaros/mobile/djavoljaVarosM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const DjavoljaVaros = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
-      <img src={djavoljaVaros1} alt="Đavolja Varoš 1" />
+      <img srcSet={`${djavoljaVaros11} 400w, ${djavoljaVaros1} `} alt="Đavolja Varoš 1" />
 
       <h2>Đavolja Varoš</h2>
 
@@ -33,7 +38,7 @@ export const DjavoljaVaros = () => {
         erozivnu čelenku.
       </p>
 
-      <img src={djavoljaVaros2} alt="Đavolja Varoš 2" />
+      <img srcSet={`${djavoljaVaros22} 400w, ${djavoljaVaros2} `} alt="Đavolja Varoš 2" />
       <p>
         Ovaj spomenik kulture čine dva, u svetu retka prirodna fenomena:
         zemljane figure, kao specifični oblici reljefa, i dva izvora veoma
@@ -52,7 +57,7 @@ export const DjavoljaVaros = () => {
         prirode.
       </p>
 
-      <img src={djavoljaVaros3} alt="Đavolja Varoš 3" />
+      <img srcSet={`${djavoljaVaros33} 400w, ${djavoljaVaros3} `} alt="Đavolja Varoš 3" />
 
       <p>
         Kameni stubovi su nastali delovanjem erozije na zemljište sastavljeno od
@@ -75,7 +80,7 @@ export const DjavoljaVaros = () => {
         menjaju se, skraćuju, postepeno nestaju i ponovo se stvaraju.
       </p>
 
-      <img src={djavoljaVaros4} alt="Đavolja Varoš 4" />
+      <img srcSet={`${djavoljaVaros44} 400w, ${djavoljaVaros4} `} alt="Đavolja Varoš 4" />
 
       <p>
         Ovaj geomorfološki fenomen je jedinstven u Srbiji i vrlo redak u svetu.
@@ -93,7 +98,7 @@ export const DjavoljaVaros = () => {
         organizacije Srbije.
       </p>
 
-      <img src={djavoljaVaros5} alt="Đavolja Varoš 5" />
+      <img srcSet={`${djavoljaVaros55} 400w, ${djavoljaVaros5} `} alt="Đavolja Varoš 5" />
 
       <p>
         Pored kamenih kula, Đavolja varoš je poznata i po dva izvora veoma

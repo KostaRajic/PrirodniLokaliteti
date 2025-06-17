@@ -1,8 +1,13 @@
-import grza1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza1.jpg";
-import grza2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza2.jpg";
-import grza3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza3.jpg";
-import grza4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza4.jpg";
-import grza5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/grza5.jpg";
+import grza1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/desktop/grza1.jpg";
+import grza2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/desktop/grza2.jpg";
+import grza3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/desktop/grza3.jpg";
+import grza4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/desktop/grza4.jpg";
+import grza5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/desktop/grza5.jpg";
+import grza11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/mobile/Mgrza1.jpg";
+import grza22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/mobile/Mgrza2.jpg";
+import grza33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/mobile/Mgrza3.jpg";
+import grza44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/mobile/Mgrza4.jpg";
+import grza55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza/mobile/Mgrza5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const Grza = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pomoravskiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={grza1} alt="Grza 1" />
+      <img srcSet={`${grza11} 400w, ${grza1} `} alt="Grza 1" />
 
       <h2 style={{ color: "white" }}>Reka Grza</h2>
 
@@ -32,7 +37,7 @@ export const Grza = () => {
         iznosi više od 250 m.
       </p>
 
-      <img src={grza2} alt="Grza 2" />
+      <img srcSet={`${grza22} 400w, ${grza2} `} alt="Grza 2" />
 
       <p>
         Magistralni put koji povezuje Paraćin i Zaječar prolazi duž reke Grze i
@@ -48,7 +53,7 @@ export const Grza = () => {
         vidikovaca.
       </p>
 
-      <img src={grza3} alt="Grza 3" />
+      <img srcSet={`${grza33} 400w, ${grza3} `} alt="Grza 3" />
 
       <p>
         Vrelo Grze, smešteno u podnožju Južnog Kučaja, jedno je od najpoznatijih
@@ -56,7 +61,7 @@ export const Grza = () => {
         očaravajuća jezera, bistre i blistave vodene površine.
       </p>
 
-      <img src={grza4} alt="Grza 4" />
+      <img srcSet={`${grza44} 400w, ${grza4} `} alt="Grza 4" />
 
       <p>
         Staze koje prolaze kroz šumu, uz reku i jezera, ostavljaju nezaboravan
@@ -65,7 +70,7 @@ export const Grza = () => {
         lepotu ovog područja.
       </p>
 
-      <img src={grza5} alt="Grza 5" />
+      <img srcSet={`${grza55} 400w, ${grza5} `} alt="Grza 5" />
 
       <p>
         Voda je i tokom leta hladna, pa se tek poneki hrabri kupač odlučuje na

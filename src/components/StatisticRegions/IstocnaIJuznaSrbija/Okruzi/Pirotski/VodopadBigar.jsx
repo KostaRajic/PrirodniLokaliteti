@@ -1,7 +1,11 @@
-import bigar1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/vodopadBigar1.jpg";
-import bigar2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/vodopadBigar2.jpg";
-import bigar3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/vodopadBigar3.jpg";
-import bigar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/vodopadBigar4.jpg";
+import bigar1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/desktop/vodopadBigar1.jpg";
+import bigar2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/desktop/vodopadBigar2.jpg";
+import bigar3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/desktop/vodopadBigar3.jpg";
+import bigar4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/desktop/vodopadBigar4.jpg";
+import bigar11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/mobile/vodopadBigarM1.jpg";
+import bigar22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/mobile/vodopadBigarM2.jpg";
+import bigar33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/mobile/vodopadBigarM3.jpg";
+import bigar44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadBigar/mobile/vodopadBigarM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +24,7 @@ export const VodopadBigar = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={bigar1} alt="Vodopad Bigar 1" />
+      <img srcSet={`${bigar11} 400w, ${bigar1} `} alt="Vodopad Bigar 1" />
 
       <h2>Vodopad Bigar</h2>
 
@@ -31,7 +35,7 @@ export const VodopadBigar = () => {
         je vodopad i dobio svoje ime.
       </p>
 
-      <img src={bigar4} alt="Vodopad Bigar 2" />
+      <img srcSet={`${bigar44} 400w, ${bigar4} `} alt="Vodopad Bigar 2" />
 
       <p>
         Vodopad Bigar je pravi dragulj turističke ponude Stare planine. Njegova
@@ -44,7 +48,7 @@ export const VodopadBigar = () => {
         stepenica, stvarajući zaista spektakularan prizor.
       </p>
 
-      <img src={bigar3} alt="Vodopad Bigar 3" />
+      <img srcSet={`${bigar33} 400w, ${bigar3} `} alt="Vodopad Bigar 3" />
 
       <p>
         Do 1927. godine, kanjon reke Jerme bio je potpuno izolovan i
@@ -62,7 +66,7 @@ export const VodopadBigar = () => {
         netaknut od mnogih osvajača kroz svoju istoriju.
       </p>
 
-      <img src={bigar2} alt="Vodopad Bigar 4" />
+      <img srcSet={`${bigar22} 400w, ${bigar2} `} alt="Vodopad Bigar 4" />
 
       <p>
         Kanjon reke Jerme pruža širok spektar aktivnosti za posetioce koji žele

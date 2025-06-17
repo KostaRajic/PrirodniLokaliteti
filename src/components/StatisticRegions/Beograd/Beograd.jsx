@@ -47,28 +47,24 @@ export const Beograd = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/serbianMap')}
           style={{ fill: "white"}}
         />
       </header>
       <section className="beograd">
         <h1>Beograd</h1>
         <form>
-          {" "}
           <p>
-            {" "}
-            <span>Površina: </span>oko 360 km²{" "}
-          </p>{" "}
+            <span>Površina: </span>oko 360 km²
+          </p>
           <p>
-            {" "}
-            <span>Broj stanovnika: </span>približno 1.7 miliona{" "}
-          </p>{" "}
+            <span>Broj stanovnika: </span>približno 1.7 miliona
+          </p>
           <p>
-            {" "}
             <span>Geografske karakteristike: </span>Leži na ušću reka Save i
             Dunava, prostire se kroz ravnicu, sa brojnim brdima i zelenim
-            površinama, idealno za urbanizaciju i rekreaciju.{" "}
-          </p>{" "}
+            površinama, idealno za urbanizaciju i rekreaciju.
+          </p>
         </form>
         <div>
           Beograd, glavni grad Srbije, smešten je na ušću reke Save u Dunav, što

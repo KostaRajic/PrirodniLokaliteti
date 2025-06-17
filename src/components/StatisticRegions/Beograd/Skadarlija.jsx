@@ -1,9 +1,15 @@
-import skadarlija1 from "../../../assets/images/Beograd/Skadarlija/skadarllija1.jpg";
-import skadarlija2 from "../../../assets/images/Beograd/Skadarlija/skadarllija2.jpg";
-import skadarlija3 from "../../../assets/images/Beograd/Skadarlija/skadarllija3.jpg";
-import skadarlija4 from "../../../assets/images/Beograd/Skadarlija/skadarllija4.jpg";
-import skadarlija5 from "../../../assets/images/Beograd/Skadarlija/skadarllija5.jpg";
-import skadarlija6 from "../../../assets/images/Beograd/Skadarlija/skadarllija6.jpg";
+import skadarlija1 from "../../../assets/images/Beograd/Skadarlija/desktop/skadarllija1.jpg";
+import skadarlija2 from "../../../assets/images/Beograd/Skadarlija/desktop/skadarllija2.jpg";
+import skadarlija3 from "../../../assets/images/Beograd/Skadarlija/desktop/skadarllija3.jpg";
+import skadarlija4 from "../../../assets/images/Beograd/Skadarlija/desktop/skadarllija4.jpg";
+import skadarlija5 from "../../../assets/images/Beograd/Skadarlija/desktop/skadarllija5.jpg";
+import skadarlija6 from "../../../assets/images/Beograd/Skadarlija/desktop/skadarllija6.jpg";
+import skadarlija11 from "../../../assets/images/Beograd/Skadarlija/mobile/skadarllijaM1.jpg";
+import skadarlija22 from "../../../assets/images/Beograd/Skadarlija/mobile/skadarllijaM2.jpg";
+import skadarlija33 from "../../../assets/images/Beograd/Skadarlija/mobile/skadarllijaM3.jpg";
+import skadarlija44 from "../../../assets/images/Beograd/Skadarlija/mobile/skadarllijaM4.jpg";
+import skadarlija55 from "../../../assets/images/Beograd/Skadarlija/mobile/skadarllijaM5.jpg";
+import skadarlija66 from "../../../assets/images/Beograd/Skadarlija/mobile/skadarllijaM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const Skadarlija = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={skadarlija1} alt="Sakadrlija 1" />
+      <img srcSet={`${skadarlija11} 400w, ${skadarlija1} `} alt="Sakadrlija 1" />
 
       <h2 style={{color: 'white'}}>Skadarlija</h2>
 
@@ -38,7 +44,7 @@ export const Skadarlija = () => {
         delovala kao deo Beograda sa dušom koja se nije penjala u visine.
       </p>
 
-      <img src={skadarlija6} alt="Sakadrlija 2" />
+      <img srcSet={`${skadarlija66} 400w, ${skadarlija6} `} alt="Sakadrlija 2" />
 
       <p>
         Prema podacima iz 1901. godine, Skadarlija je sve do sredine 19. veka
@@ -53,7 +59,7 @@ export const Skadarlija = () => {
         imenom Šićan-mala, što je značilo ciganska mahala.
       </p>
 
-      <img src={skadarlija3} alt="Sakadrlija 3" />
+      <img srcSet={`${skadarlija33} 400w, ${skadarlija3} `} alt="Sakadrlija 3" />
 
       <p>
         Samo polovinom 19. veka počelo je podizanje kvalitetnijih kuća u
@@ -70,7 +76,7 @@ export const Skadarlija = () => {
         ime koje je kafana zadržala.
       </p>
 
-      <img src={skadarlija4} alt="Sakadrlija 4" />
+      <img srcSet={`${skadarlija44} 400w, ${skadarlija4} `} alt="Sakadrlija 4" />
 
       <p>
         Skadarliju su naseljavali različiti zanatlije, trgovci i ugostitelji, a
@@ -91,9 +97,8 @@ export const Skadarlija = () => {
       </p>
 
       <img
-        src={skadarlija5}
+        srcSet={`${skadarlija55} 400w, ${skadarlija5} `}
         alt="Sakadrlija 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Šetnja Skadarlijom je pravo putovanje kroz vreme, u jednom od najlepših
@@ -114,9 +119,8 @@ export const Skadarlija = () => {
       </p>
 
       <img
-        src={skadarlija2}
+        srcSet={`${skadarlija22} 400w, ${skadarlija2} `}
         alt="Sakadrlija 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Kafane i restorani Skadarlije oduvek su bili srce boemskog života

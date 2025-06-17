@@ -1,16 +1,26 @@
-import vrsac1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac2.jpg";
-import vrsac2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac3.jpg";
-import vrsac3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac4.jpg";
-import vrsac4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac5.jpg";
-import vrsac5 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac6.jpg";
-import vrsac6 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac7.jpg";
-import vrsac7 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac8.jpg";
-import vrsac8 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac9.jpg";
-import vrsac9 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/vrsac10.jpg";
+import vrsac1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac2.jpg";
+import vrsac2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac3.jpg";
+import vrsac3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac4.jpg";
+import vrsac4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac5.jpg";
+import vrsac5 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac6.jpg";
+import vrsac6 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac7.jpg";
+import vrsac7 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac8.jpg";
+import vrsac8 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac9.jpg";
+import vrsac9 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/desktop/vrsac10.jpg";
+import vrsac11 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac2.jpg";
+import vrsac22 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac3.jpg";
+import vrsac33 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac4.jpg";
+import vrsac44 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac5.jpg";
+import vrsac55 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac6.jpg";
+import vrsac66 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac7.jpg";
+import vrsac77 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac8.jpg";
+import vrsac88 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac9.jpg";
+import vrsac99 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/Vrsac/mobile/Mvrsac10.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { juznoBanatskiPathRoutes } from "./JuznoBanatskiPathRoutes";
 
 export const Vrsac = () => {
   const navigate = useNavigate();
@@ -18,9 +28,9 @@ export const Vrsac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(juznoBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={vrsac1} alt="Vršac grad 1" />
+      <img srcSet={`${vrsac11} 400w, ${vrsac1} `} alt="Vršac grad 1" />
 
       <h2>Vršac</h2>
 
@@ -37,9 +47,9 @@ export const Vrsac = () => {
         Kovačicu, Alibunar, Plandište, Bela Crkva, Kovin i Pančevo.
       </p>
 
-      <img src={vrsac2} alt="Vršac grad 2" />
+      <img srcSet={`${vrsac22} 400w, ${vrsac2} `} alt="Vršac grad 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ime grada Vršca prvi put se spominje u pisanim izvorima 1427. godine,
         kada je zabeleženo kao Podvršan. Prva naselja na ovom području datiraju
         još iz neolita, kada su postojali tragovi ljudske aktivnosti u dobu
@@ -64,9 +74,9 @@ export const Vrsac = () => {
         srpskom jeziku.
       </p>
 
-      <img src={vrsac3} alt="Gradski park u Vršcu" />
+      <img srcSet={`${vrsac33} 400w, ${vrsac3} `} alt="Gradski park u Vršcu" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Gradski park u Vršcu je nezaobilazna destinacija za sve koji se nađu u
         ovom prelepom gradu ili njegovoj okolini. Udaljen samo nekoliko minuta
         hoda od centra, ovaj park je pravo mesto za opuštanje i uživanje u
@@ -89,8 +99,8 @@ export const Vrsac = () => {
         istraživanje grada.
       </p>
 
-      <img src={vrsac5} alt="Gradski muzej Konkordija" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${vrsac55} 400w, ${vrsac5} `} alt="Gradski muzej Konkordija" />
+      <p>
         Gradski muzej Konkordija predstavlja značajnu kulturnu i istorijsku
         instituciju, koja čuva bogatstvo prošlosti i tradicije ovog regiona.
         Prvi predmeti za Gradski muzej u Vršcu počeli su da se prikupljaju još
@@ -105,7 +115,7 @@ export const Vrsac = () => {
         terenska iskopavanja i otkup predmeta od kolekcionara.
       </p>
 
-      <img src={vrsac4} alt="Vršačke planine" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${vrsac44} 400w, ${vrsac4} `} alt="Vršačke planine" />
       <p>
         Vršačke planine uzdižu se u srcu Panonske ravnice, na jugoistočnom delu
         Banata. Ove planine protežu se u pravcu istok-zapad, dugačke 19
@@ -128,7 +138,7 @@ export const Vrsac = () => {
         ptica i više od 1000 vrsta retkog bilja.
       </p>
 
-      <img src={vrsac6} alt="Vrščka kula" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${vrsac66} 400w, ${vrsac6} `} alt="Vrščka kula" />
       <p>
         Na krajnjim zapadnim obroncima Vrščkog gorja, na brežuljku koji se strmo
         uzdiže iznad Vršca i širokih prostranstava plodne banatske ravnice,
@@ -141,7 +151,7 @@ export const Vrsac = () => {
         ali i brdo na kojem je izgrađena, dobila ime - Vrščka kula.
       </p>
 
-      <img src={vrsac7} alt="Manastir Mesić" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${vrsac77} 400w, ${vrsac7} `} alt="Manastir Mesić" />
       <p>
         Manastir Mesić je ženski manastir koji se nalazi u podnožju Magarećeg
         brda, u vinogradarskom području istočno od Vršca. Ovaj manastir je jedan
@@ -156,7 +166,7 @@ export const Vrsac = () => {
         kojeg je Sveti Sava lično postavio za igumana.
       </p>
 
-      <img src={vrsac8} alt="Gradsko jezero Vršac" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${vrsac88} 400w, ${vrsac8} `} alt="Gradsko jezero Vršac" />
       <p>
         Na obodu Vršca smešteno je veštačko jezero koje predstavlja pravu oazu
         za meštane tokom vrelih letnjih dana. Sezona kupanja traje od početka
@@ -168,7 +178,7 @@ export const Vrsac = () => {
         mnogo zabave i uživanja.
       </p>
 
-      <img src={vrsac9} alt="Dvor eparhije Banatske" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${vrsac99} 400w, ${vrsac9} `} alt="Dvor eparhije Banatske" />
       <p>
         Glavna ulica u Vršcu, Dvorska, svoj naziv nosi po Episkopskoj palati
         (reč "dvor" na srpskom znači palata). Ova palata je izgrađena 1672.

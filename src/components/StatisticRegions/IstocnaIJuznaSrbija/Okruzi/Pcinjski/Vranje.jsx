@@ -1,12 +1,21 @@
-import vranje1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje1.jpg";
-import vranje2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje2.jpg";
-import vranje3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje3.jpg";
-import vranje4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje4.jpg";
-import vranje5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje5.jpg";
-import vranje6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje6.jpg";
-import vranje7 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje7.jpg";
-import vranje8 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje8.jpg";
-import vranje9 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/vranje9.jpg";
+import vranje1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje1.jpg";
+import vranje2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje2.jpg";
+import vranje3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje3.jpg";
+import vranje4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje4.jpg";
+import vranje5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje5.jpg";
+import vranje6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje6.jpg";
+import vranje7 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje7.jpg";
+import vranje8 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje8.jpg";
+import vranje9 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/desktop/vranje9.jpg";
+import vranje11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM1.jpg";
+import vranje22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM2.jpg";
+import vranje33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM3.jpg";
+import vranje44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM4.jpg";
+import vranje55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM5.jpg";
+import vranje66 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM6.jpg";
+import vranje77 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM7.jpg";
+import vranje88 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM8.jpg";
+import vranje99 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Vranje/mobile/vranjeM9.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +30,7 @@ export const Vranje = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pcinjskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={vranje1} alt="Vranje 1" />
+      <img srcSet={`${vranje11} 400w, ${vranje1} `} alt="Vranje 1" />
 
       <h2>Vranje</h2>
 
@@ -36,7 +45,7 @@ export const Vranje = () => {
         je prouzrokovao značajnu štetu na infrastrukturi.
       </p>
 
-      <img src={vranje2} alt="Vranje 2" />
+      <img srcSet={`${vranje22} 400w, ${vranje2} `} alt="Vranje 2" />
 
       <p>
         Tokom Prvog svetskog rata, Vranje je bilo okupirano od strane Kraljevine
@@ -48,7 +57,7 @@ export const Vranje = () => {
         metalurški centar unutar SFRJ.
       </p>
 
-      <img src={vranje3} alt="Vranje 3" />
+      <img srcSet={`${vranje33} 400w, ${vranje33} `} alt="Vranje 3" />
 
       <p>
         Grad je poznat po muzici i trubačkim orkestrima, kao i po delima čuvenog
@@ -60,7 +69,7 @@ export const Vranje = () => {
         vranjske i 4. brigade Vojske Srbije.
       </p>
 
-      <img src={vranje4} alt="Vranje 4" />
+      <img srcSet={`${vranje44} 400w, ${vranje4} `} alt="Vranje 4" />
 
       <p>
         Ime grada Vranje potiče iz davne prošlosti, iako je kroz istoriju,
@@ -79,7 +88,7 @@ export const Vranje = () => {
         piše Miodrag Pešić u svojoj knjizi „Vranje“.
       </p>
 
-      <img src={vranje5} alt="Vranje 5" />
+      <img srcSet={`${vranje55} 400w, ${vranje5} `} alt="Vranje 5" />
       <p>
         Vranje je ekonomski, politički i kulturni centar Pčinjskog okruga, koji
         obuhvata opštine Bosilegrad, Bujanovac, Vladičin Han, Preševo,
@@ -95,7 +104,7 @@ export const Vranje = () => {
         od Severne Makedonije 40 km.
       </p>
 
-      <img src={vranje8} alt="Narodni muzej u Vranju" />
+      <img srcSet={`${vranje88} 400w, ${vranje8} `} alt="Narodni muzej u Vranju" />
       <p>
         Narodni muzej u Vranju osnovan je 1960. godine u staroj zgradi Selamluk
         (jednoj od zgrada kompleksa Pašinih konaka), ukazom Narodnog odbora
@@ -126,7 +135,7 @@ export const Vranje = () => {
         Haremluka) kompletiran.
       </p>
 
-      <img src={vranje9} alt="Saborna crkva Svete Trojice u Vranju" />
+      <img srcSet={`${vranje99} 400w, ${vranje9} `} alt="Saborna crkva Svete Trojice u Vranju" />
 
       <p>
         Saborna crkva Svete Trojice u Vranju je glavni i najveći pravoslavni
@@ -159,7 +168,7 @@ export const Vranje = () => {
         <br />
       </p>
 
-      <img src={vranje6} alt=" Kuća Bore Stankovića" />
+      <img srcSet={`${vranje66} 400w, ${vranje6} `} alt=" Kuća Bore Stankovića" />
       <p>
         Kuća Bore Stankovića nalazi se u Vranju, u Babi Zlatinoj ulici broj 9, u
         nekadašnjoj Donjoj mali, na placu koji je kupila Borina baka, po kojoj
@@ -173,7 +182,7 @@ export const Vranje = () => {
         pripada Narodnom muzeju u Vranju.
       </p>
 
-      <img src={vranje7} alt="Beli most u Vranju" />
+      <img srcSet={`${vranje77} 400w, ${vranje7} `} alt="Beli most u Vranju" />
       <p>
         Beli most, poznat i kao most ljubavi, izgrađen je 1844. godine u Vranju.
         Most se nalazi iznad Vranjske reke, u ulici Devet Jugovića, i prikazan

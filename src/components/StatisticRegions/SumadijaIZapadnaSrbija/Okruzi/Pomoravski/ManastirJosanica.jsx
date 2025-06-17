@@ -1,8 +1,13 @@
-import josanica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/manastirJosanica1.jpg";
-import josanica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/manastirJosanica2.jpg";
-import josanica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/manastirJosanica3.jpg";
-import josanica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/manastirJosanica4.jpg";
-import josanica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/manastirJosanica5.jpg";
+import josanica1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/desktop/manastirJosanica1.jpg";
+import josanica2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/desktop/manastirJosanica2.jpg";
+import josanica3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/desktop/manastirJosanica3.jpg";
+import josanica4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/desktop/manastirJosanica4.jpg";
+import josanica5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/desktop/manastirJosanica5.jpg";
+import josanica11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/mobile/MmanastirJosanica1.jpg";
+import josanica22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/mobile/MmanastirJosanica2.jpg";
+import josanica33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/mobile/MmanastirJosanica3.jpg";
+import josanica44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/mobile/MmanastirJosanica4.jpg";
+import josanica55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica/mobile/MmanastirJosanica5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const ManastirJosanica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pomoravskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={josanica1} alt="Manastir Jošanica 1" />
+      <img srcSet={`${josanica11} 400w, ${josanica1} `} alt="Manastir Jošanica 1" />
 
       <h2 style={{ color: "white" }}>Manastir Jošanica</h2>
 
@@ -45,7 +50,7 @@ export const ManastirJosanica = () => {
         godine, u konacima je bila bolnica.
       </p>
 
-      <img src={josanica2} alt="Manastir Jošanica 2" />
+      <img srcSet={`${josanica22} 400w, ${josanica2} `} alt="Manastir Jošanica 2" />
 
       <p>
         Manastirska crkva izgrađena je u duhu moravskog graditeljstva. Njena
@@ -65,7 +70,7 @@ export const ManastirJosanica = () => {
         Miloja Teodorovića, vojvode levačkog iz vremena Karađorđa.
       </p>
 
-      <img src={josanica3} alt="Manastir Jošanica 3" />
+      <img srcSet={`${josanica33} 400w, ${josanica3} `} alt="Manastir Jošanica 3" />
 
       <p>
         Manastir Jošanica, smešten u klisuri istoimene rečice, nalazi se na
@@ -83,7 +88,7 @@ export const ManastirJosanica = () => {
         sakralno zdanje.
       </p>
 
-      <img src={josanica4} alt="Manastir Jošanica kod Crnog Vrha" />
+      <img srcSet={`${josanica44} 400w, ${josanica4} `} alt="Manastir Jošanica kod Crnog Vrha" />
 
       <p>
         Činjenica da je hram bio asketerion – kolonija monaha anahoreta, zatim,
@@ -100,7 +105,7 @@ export const ManastirJosanica = () => {
         turskim napadima kasnije pobegla u Ugarsku.
       </p>
 
-      <img src={josanica5} alt="Manastir Jošanica kod Jagodine" />
+      <img srcSet={`${josanica55} 400w, ${josanica5} `} alt="Manastir Jošanica kod Jagodine" />
 
       <p>
         Manastir danas čine dva konaka i ekonomske zgrade, dok je jezgro

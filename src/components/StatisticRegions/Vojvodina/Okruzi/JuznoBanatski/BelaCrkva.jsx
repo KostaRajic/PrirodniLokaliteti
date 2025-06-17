@@ -1,14 +1,22 @@
-import belaC1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/BC1.jpg";
-import belaC2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/BC2.jpg";
-import belaC3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/BC3.jpg";
-import belaC4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/BC4.jpg";
-import belaC5 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/BC5.jpg";
-import belaC6 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/BC6.jpg";
-import belaC7 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/BC7.jpg";
+import belaC1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/desktop/BC1.jpg";
+import belaC2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/desktop/BC2.jpg";
+import belaC3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/desktop/BC3.jpg";
+import belaC4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/desktop/BC4.jpg";
+import belaC5 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/desktop/BC5.jpg";
+import belaC6 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/desktop/BC6.jpg";
+import belaC7 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/desktop/BC7.jpg";
+import belaC11 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/mobile/MBC1.jpg";
+import belaC22 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/mobile/MBC2.jpg";
+import belaC33 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/mobile/MBC3.jpg";
+import belaC44 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/mobile/MBC4.jpg";
+import belaC55 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/mobile/MBC5.jpg";
+import belaC66 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/mobile/MBC6.jpg";
+import belaC77 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/BelaCrkva/mobile/MBC7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { juznoBanatskiPathRoutes } from "./JuznoBanatskiPathRoutes";
 
 export const BelaCrkva = () => {
   const navigate = useNavigate();
@@ -16,9 +24,9 @@ export const BelaCrkva = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(juznoBanatskiPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={belaC5} alt="Bela Crkva 1" />
+      <img srcSet={`${belaC55} 400w, ${belaC5} `} alt="Bela Crkva 1" />
 
       <h2>Bela Crkva</h2>
 
@@ -29,9 +37,9 @@ export const BelaCrkva = () => {
         mogućnosti za ekoturizam, rekreativne aktivnosti i uživanje u prirodi.
       </p>
 
-      <img src={belaC4} alt="Bela Crkva 2" />
+      <img srcSet={`${belaC44} 400w, ${belaC4} `} alt="Bela Crkva 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Bela Crkva se nalazi u blizini reke Tamiš, okružena bogatim šumama,
         močvarama i jezerima, što ovu oblast čini idealnom za ljubitelje
         prirode. Grad je posebno poznat po jezerima u okolini, koja su popularna
@@ -44,9 +52,9 @@ export const BelaCrkva = () => {
         ga čini pogodnim za ekološke ture.
       </p>
 
-      <img src={belaC1} alt="Bela Crkva 3" />
+      <img srcSet={`${belaC11} 400w, ${belaC1} `} alt="Bela Crkva 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Gradski park predstavlja zelenu oazu u samom centru Bele Crkve, koja posetiocima
         pruža prijatan odmor od gradske buke. U središtu parka nalazi se
         paviljon za svečanosti i okupljanja koji podseća na prošla vremena. Prvi
@@ -59,8 +67,8 @@ export const BelaCrkva = () => {
         Spomenik pobedi.
       </p>
 
-      <img src={belaC3} alt="Bela Crkva 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${belaC33} 400w, ${belaC3} `} alt="Bela Crkva 4" />
+      <p>
       Bela Crkva je poznata po svom prirodnom okruženju i blizini nekoliko jezera, koja pružaju odlične uslove za odmor i uživanje u vodi tokom letnjih meseci. Plaža na jezeru u Beloj Crkvi predstavlja popularno mesto za kupanje, opuštanje i rekreaciju. Jezero je poznato po čistoći vode i lepoj prirodi koja ga okružuje, što ga čini atraktivnim za sve koji žele da pobegnu od gradske vreve i uživaju u prirodnom ambijentu.
 
 Plaža na jezeru nudi različite sadržaje za posetioce, uključujući ležaljke, restorane i kafiće, kao i prostrane travnate površine za sunčanje. Voda je pogodna za kupanje, a ljubitelji sportova na vodi mogu uživati u vožnji čamcem ili pedalini. Okolica jezera je idealna za šetnje, a mnogi posetioci koriste priliku da uživaju u prirodi i tišini ovog prelepog mesta.
@@ -74,7 +82,7 @@ Ovaj deo Bele Crkve takođe je popularan među porodicama, jer se ovde mogu prov
         festivali folklora i narodne muzike, kao i sportski događaji.
       </p>
 
-      <img src={belaC2} alt="Bela Crkva 5" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${belaC22} 400w, ${belaC2} `} alt="Bela Crkva 5" />
       <p>
         Gradsko jezero se prostire duž leve strane puta za Kovin, uz zapadni
         obod Bele Crkve. Na severnoj strani je izgrađena betonska obala sa
@@ -84,7 +92,7 @@ Ovaj deo Bele Crkve takođe je popularan među porodicama, jer se ovde mogu prov
         prelazi 6,5 metara.
       </p>
 
-      <img src={belaC6} alt="Bela Crkva 6" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${belaC66} 400w, ${belaC6} `} alt="Bela Crkva 6" />
       <p>
         Reka Tamiš, koja protiče kroz grad, je važna za turizam, jer se u njenoj
         blizini nalaze brojne prirodne lepote. Posetioci mogu uživati u vožnji
@@ -92,7 +100,7 @@ Ovaj deo Bele Crkve takođe je popularan među porodicama, jer se ovde mogu prov
         sportske aktivnosti, kao što su kajak i rafting.
       </p>
 
-      <img src={belaC7} alt="Bela Crkva 7" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${belaC77} 400w, ${belaC7} `} alt="Bela Crkva 7" />
       <p>
         Ovo je stara manifestacija, koja se u ovim krajevima zove „maskembal”.
         Datum manifestacijе se prilagođava početku posta u pravoslavnom

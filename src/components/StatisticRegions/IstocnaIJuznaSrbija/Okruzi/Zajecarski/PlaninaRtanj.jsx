@@ -1,9 +1,15 @@
-import rtanj1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/planinaRtanj1.jpg";
-import rtanj2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/planinaRtanj2.jpg";
-import rtanj3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/planinaRtanj3.jpg";
-import rtanj4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/planinaRtanj4.jpg";
-import rtanj5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/planinaRtanj5.jpg";
-import rtanj6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/planinaRtanj6.jpg";
+import rtanj1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/desktop/planinaRtanj1.jpg";
+import rtanj2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/desktop/planinaRtanj2.jpg";
+import rtanj3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/desktop/planinaRtanj3.jpg";
+import rtanj4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/desktop/planinaRtanj4.jpg";
+import rtanj5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/desktop/planinaRtanj5.jpg";
+import rtanj6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/desktop/planinaRtanj6.jpg";
+import rtanj11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/mobile/planinaRtanjM1.jpg";
+import rtanj22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/mobile/planinaRtanjM2.jpg";
+import rtanj33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/mobile/planinaRtanjM3.jpg";
+import rtanj44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/mobile/planinaRtanjM4.jpg";
+import rtanj55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/mobile/planinaRtanjM5.jpg";
+import rtanj66 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/Rtanj/mobile/planinaRtanjM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const PlaninaRtanj = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={rtanj2} alt="Planina Rtanj 1" />
+      <img srcSet={`${rtanj22} 400w, ${rtanj2} `} alt="Planina Rtanj 1" />
 
       <h2>Planina Rtanj</h2>
 
@@ -33,7 +39,7 @@ export const PlaninaRtanj = () => {
         fenomena u Srbiji.
       </p>
 
-      <img src={rtanj1} alt="Planina Rtanj 2" />
+      <img srcSet={`${rtanj11} 400w, ${rtanj1} `} alt="Planina Rtanj 2" />
 
       <p>
         Južna strana Rtnja odlikuje se blagim padinama i visoravni koja se
@@ -45,7 +51,7 @@ export const PlaninaRtanj = () => {
         njegov najviši vrh, Šiljak, uzdiže na istočnom obodu grebena.
       </p>
 
-      <img src={rtanj3} alt="Planina Rtanj 3" />
+      <img srcSet={`${rtanj33} 400w, ${rtanj3} `} alt="Planina Rtanj 3" />
 
       <p>
         Istorija planine Rtanj usko je povezana sa bogatom jevrejskom porodicom
@@ -61,7 +67,7 @@ export const PlaninaRtanj = () => {
         sakrivenim blagom. Danas su od nje ostali samo tragovi.
       </p>
 
-      <img src={rtanj4} alt="Planina Rtanj 4" />
+      <img srcSet={`${rtanj44} 400w, ${rtanj4} `} alt="Planina Rtanj 4" />
 
       <p>
         Istraživanja su pokazala da se unutar planine Rtanj nalaze prostrane
@@ -73,7 +79,7 @@ export const PlaninaRtanj = () => {
         dubina povećana na 13 metara.
       </p>
 
-      <img src={rtanj5} alt="Planina Rtanj 5" />
+      <img srcSet={`${rtanj55} 400w, ${rtanj5} `} alt="Planina Rtanj 5" />
 
       <p>
         Rtanj se odlikuje tipičnom planinskom klimom, s toplim letima i zimama
@@ -92,7 +98,7 @@ export const PlaninaRtanj = () => {
         mesto u biljnom svetu Rtnja zauzima i srpska ramonda.
       </p>
 
-      <img src={rtanj6} alt="Planina Rtanj 6" />
+      <img srcSet={`${rtanj66} 400w, ${rtanj6} `} alt="Planina Rtanj 6" />
 
       <p>
         Fauna planine Rtanj izuzetno je raznolika i obuhvata sisare, gmizavce,

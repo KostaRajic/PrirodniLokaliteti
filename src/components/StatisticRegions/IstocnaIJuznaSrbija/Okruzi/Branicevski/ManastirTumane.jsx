@@ -1,8 +1,13 @@
-import tumane1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/manastirTumane1.jpg";
-import tumane2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/manastirTumane2.jpg";
-import tumane3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/manastirTumane3.jpg";
-import tumane4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/manastirTumane4.jpg";
-import tumane5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/manastirTumane5.jpg";
+import tumane1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/desktop/manastirTumane1.jpg";
+import tumane2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/desktop/manastirTumane2.jpg";
+import tumane3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/desktop/manastirTumane3.jpg";
+import tumane4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/desktop/manastirTumane4.jpg";
+import tumane5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/desktop/manastirTumane5.jpg";
+import tumane11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/mobile/manastirTumaneM1.jpg";
+import tumane22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/mobile/manastirTumaneM2.jpg";
+import tumane33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/mobile/manastirTumaneM3.jpg";
+import tumane44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/mobile/manastirTumaneM4.jpg";
+import tumane55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/ManastirTumane/mobile/manastirTumaneM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const ManastirTumane = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(branicevskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={tumane1} alt="Manastir Tumane 1" />
+      <img srcSet={`${tumane11} 400w, ${tumane1} `} alt="Manastir Tumane 1" />
 
       <h2>Manastir Tumane</h2>
 
@@ -33,7 +38,7 @@ export const ManastirTumane = () => {
         današnjeg Braničeva.
       </p>
 
-      <img src={tumane2} alt="Manastir Tumane 2" />
+      <img srcSet={`${tumane22} 400w, ${tumane2} `} alt="Manastir Tumane 2" />
 
       <p>
         Prema predanju, Miloš Obilić je lovio u šumama u okolini današnjeg
@@ -47,7 +52,7 @@ export const ManastirTumane = () => {
         blagoslov i pronađu duhovnu utehu.
       </p>
 
-      <img src={tumane3} alt="Manastir Tumane 3" />
+      <img srcSet={`${tumane33} 400w, ${tumane3} `} alt="Manastir Tumane 3" />
 
       <p>
         Manastir se prvi put pominje u turskim popisima iz 1572–1573. godine.
@@ -64,7 +69,7 @@ export const ManastirTumane = () => {
         što je za tadašnje prilike bila prava retkost.
       </p>
 
-      <img src={tumane4} alt="Manastir Tumane 4" />
+      <img srcSet={`${tumane44} 400w, ${tumane4} `} alt="Manastir Tumane 4" />
 
       <p>
         Isposnica Zosima Sinajita nalazi se oko jedan kilometar od manastira
@@ -83,7 +88,7 @@ export const ManastirTumane = () => {
         „Bigrena akumulacija kod manastira Tumane“.
       </p>
 
-      <img src={tumane5} alt="Manastir Tumane 5" />
+      <img srcSet={`${tumane55} 400w, ${tumane5} `} alt="Manastir Tumane 5" />
       <p>
         Crkva koju je opisao Egzarh Maksim bila je prvobitna manastirska crkva,
         koja je postojala sve do Kočine Krajine, kada su je Turci spalili. Narod

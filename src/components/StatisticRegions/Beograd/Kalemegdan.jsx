@@ -1,9 +1,15 @@
-import kalemegdan1 from "../../../assets/images/Beograd/Kalemegdan/kalemegdan2.jpg";
-import kalemegdan2 from "../../../assets/images/Beograd/Kalemegdan/kalemegdan1.jpg";
-import kalemegdan3 from "../../../assets/images/Beograd/Kalemegdan/kalemegdan3.jpg";
-import kalemegdan4 from "../../../assets/images/Beograd/Kalemegdan/kalemegdan4.jpg";
-import kalemegdan5 from "../../../assets/images/Beograd/Kalemegdan/kalemegdan5.jpg";
-import kalemegdan6 from "../../../assets/images/Beograd/Kalemegdan/kalemegdan6.jpg";
+import kalemegdan1 from "../../../assets/images/Beograd/Kalemegdan/desktop/kalemegdan2.jpg";
+import kalemegdan2 from "../../../assets/images/Beograd/Kalemegdan/desktop/kalemegdan1.jpg";
+import kalemegdan3 from "../../../assets/images/Beograd/Kalemegdan/desktop/kalemegdan3.jpg";
+import kalemegdan4 from "../../../assets/images/Beograd/Kalemegdan/desktop/kalemegdan4.jpg";
+import kalemegdan5 from "../../../assets/images/Beograd/Kalemegdan/desktop/kalemegdan5.jpg";
+import kalemegdan6 from "../../../assets/images/Beograd/Kalemegdan/desktop/kalemegdan6.jpg";
+import kalemegdan11 from "../../../assets/images/Beograd/Kalemegdan/mobile/kalemegdanM2.jpg";
+import kalemegdan22 from "../../../assets/images/Beograd/Kalemegdan/mobile/kalemegdanM1.jpg";
+import kalemegdan33 from "../../../assets/images/Beograd/Kalemegdan/mobile/kalemegdanM3.jpg";
+import kalemegdan44 from "../../../assets/images/Beograd/Kalemegdan/mobile/kalemegdanM4.jpg";
+import kalemegdan55 from "../../../assets/images/Beograd/Kalemegdan/mobile/kalemegdanM5.jpg";
+import kalemegdan66 from "../../../assets/images/Beograd/Kalemegdan/mobile/kalemegdanM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const Kalemegdan = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
-      <img src={kalemegdan4} alt="Kalemegdan 1" />
+      <img srcSet={`${kalemegdan44} 400w, ${kalemegdan4} `} alt="Kalemegdan 1" />
 
       <h2>Kalemegdan</h2>
 
@@ -35,7 +41,7 @@ export const Kalemegdan = () => {
         od strane Avara i Slovena.
       </p>
 
-      <img src={kalemegdan2} alt="Kalemegdan 2" />
+      <img srcSet={`${kalemegdan22} 400w, ${kalemegdan2} `} alt="Kalemegdan 2" />
 
       <p>
         Na brdu iznad ušća Save u Dunav nastao je antički Singidunum, a na istom
@@ -55,7 +61,7 @@ export const Kalemegdan = () => {
         promene.
       </p>
 
-      <img src={kalemegdan1} alt="Kalemegdan 3" />
+      <img srcSet={`${kalemegdan11} 400w, ${kalemegdan1} `} alt="Kalemegdan 3" />
 
       <p>
         Novo razdoblje započelo je austrijsko-turskim ratom. Kao ključna utvrda
@@ -74,7 +80,7 @@ export const Kalemegdan = () => {
         gradu su uništeni, a bedemi su pretrpeli ozbiljna oštećenja.
       </p>
 
-      <img src={kalemegdan3} alt="Kalemegdan 4" />
+      <img srcSet={`${kalemegdan33} 400w, ${kalemegdan3} `} alt="Kalemegdan 4" />
 
       <p>
         Beogradska tvrđava ima nekoliko značajnih kapija koje su kroz istoriju
@@ -95,9 +101,8 @@ export const Kalemegdan = () => {
       </p>
 
       <img
-        src={kalemegdan5}
+        srcSet={`${kalemegdan55} 400w, ${kalemegdan5} `}
         alt="Kalemegdan 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         "Pobednik" je naziv trijumfalnog spomenika podignutog na Gornjem gradu
@@ -112,9 +117,8 @@ export const Kalemegdan = () => {
       </p>
 
       <img
-        src={kalemegdan6}
+srcSet={`${kalemegdan66} 400w, ${kalemegdan6} `}
         alt="Kalemegdan 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Život na grebenu iznad ušća Save u Dunav traje neprekidno više od dva

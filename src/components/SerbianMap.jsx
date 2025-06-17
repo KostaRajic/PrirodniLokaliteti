@@ -32,7 +32,7 @@ export const SerbianMap = () => {
 
   useEffect(() => {
     if (showVojvodina) {
-      return navigate("vojvodinaTekstModal");
+      return navigate(serbianMapPathRoutes.VojvodinaTekstModal);
     } else if (showBeograd) {
       return navigate(beogradPathRoutes.home);
     } else if (showSumadijaIZapadnaSrbija) {
@@ -47,8 +47,6 @@ export const SerbianMap = () => {
 
   return (
     <div className="serbianMapClass">
-      {/* <button style={{background: 'blue'}} onClick={toggleMap}>Pogledaj mapu</button>
-{showMap && ( */}
       <MapContainer
         center={center}
         zoom={zoom}
@@ -126,7 +124,9 @@ export const SerbianMap = () => {
           );
         })}
       </MapContainer>
-      {/* )} */}
     </div>
   );
 };
+
+
+export default SerbianMap;

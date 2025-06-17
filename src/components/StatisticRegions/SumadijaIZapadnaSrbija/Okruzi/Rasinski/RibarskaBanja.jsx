@@ -1,8 +1,13 @@
-import ribarskaBanja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/ribarskaBanja1.jpg";
-import ribarskaBanja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/ribarskaBanja2.jpg";
-import ribarskaBanja3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/ribarskaBanja3.jpg";
-import ribarskaBanja4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/ribarskaBanja4.jpg";
-import ribarskaBanja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/ribarskaBanja5.jpg";
+import ribarskaBanja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/desktop/ribarskaBanja1.jpg";
+import ribarskaBanja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/desktop/ribarskaBanja2.jpg";
+import ribarskaBanja3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/desktop/ribarskaBanja3.jpg";
+import ribarskaBanja4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/desktop/ribarskaBanja4.jpg";
+import ribarskaBanja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/desktop/ribarskaBanja5.jpg";
+import ribarskaBanja11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/mobile/MribarskaBanja1.jpg";
+import ribarskaBanja22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/mobile/MribarskaBanja2.jpg";
+import ribarskaBanja33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/mobile/MribarskaBanja3.jpg";
+import ribarskaBanja44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/mobile/MribarskaBanja4.jpg";
+import ribarskaBanja55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/RibarskaBanja/mobile/MribarskaBanja5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const RibarskaBanja = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={ribarskaBanja1} alt="Ribarska Banja 1" />
+      <img srcSet={`${ribarskaBanja11} 400w, ${ribarskaBanja1} `} alt="Ribarska Banja 1" />
 
       <h2 style={{ color: "white" }}>Ribarska Banja</h2>
 
@@ -40,7 +45,7 @@ export const RibarskaBanja = () => {
         preporođeni.
       </p>
 
-      <img src={ribarskaBanja2} alt="Ribarska Banja 2" />
+      <img srcSet={`${ribarskaBanja22} 400w, ${ribarskaBanja2} `} alt="Ribarska Banja 2" />
 
       <p>
         Prema nekim istorijskim istraživanjima, prvo kupatilo u Ribarskoj banji
@@ -61,7 +66,7 @@ export const RibarskaBanja = () => {
         ribom.
       </p>
 
-      <img src={ribarskaBanja3} alt="Ribarska Banja 3" />
+      <img srcSet={`${ribarskaBanja33} 400w, ${ribarskaBanja3} `} alt="Ribarska Banja 3" />
 
       <p>
         Samo lečenje, vežbe, terapija i dijagnostika se odvija u njihovoj
@@ -78,7 +83,7 @@ export const RibarskaBanja = () => {
         preporučuje se i nekim pacijentima sa lakšim plućnim problemima.
       </p>
 
-      <img src={ribarskaBanja4} alt="Ribarska Banja 4" />
+      <img srcSet={`${ribarskaBanja44} 400w, ${ribarskaBanja4} `} alt="Ribarska Banja 4" />
 
       <p>
         U Ribarskoj banji nalaze se čak šest termalnih izvora sa sumporovitom
@@ -95,7 +100,7 @@ export const RibarskaBanja = () => {
         još mnogo toga.
       </p>
 
-      <img src={ribarskaBanja5} alt="Ribarska Banja 5" />
+      <img srcSet={`${ribarskaBanja55} 400w, ${ribarskaBanja5} `} alt="Ribarska Banja 5" />
 
       <p>
         Ako ste ljubitelj uživanja i želite da svoj odmor provedete opuštajući

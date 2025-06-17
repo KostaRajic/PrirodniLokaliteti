@@ -1,11 +1,19 @@
-import tara1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/tara1.jpg";
-import tara2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/tara2.jpg";
-import tara3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/tara3.jpg";
-import tara4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/tara4.jpg";
-import tara5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/tara5.jpg";
-import tara6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/tara6.jpg";
-import tara7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/tara7.jpg";
-import tara8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/tara8.jpg";
+import tara1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara1.jpg";
+import tara2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara2.jpg";
+import tara3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara3.jpg";
+import tara4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara4.jpg";
+import tara5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara5.jpg";
+import tara6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara6.jpg";
+import tara7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara7.jpg";
+import tara8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara8.jpg";
+import tara11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara1.jpg";
+import tara22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara2.jpg";
+import tara33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara3.jpg";
+import tara44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara4.jpg";
+import tara55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara5.jpg";
+import tara66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara6.jpg";
+import tara77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara7.jpg";
+import tara88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,9 +26,9 @@ export const NacionalniParkTara = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.nacionalniParkTara)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={tara1} alt='Nacionalni Park "Tara" 1' />
+      <img srcSet={`${tara11} 400w, ${tara1} `} alt='Nacionalni Park "Tara" 1' />
 
       <h2>Nacionalni Park "Tara"</h2>
 
@@ -33,7 +41,7 @@ export const NacionalniParkTara = () => {
         prirodnu harmoniju.
       </p>
 
-      <img src={tara2} alt="Nacionalni Park Tara" />
+      <img srcSet={`${tara22} 400w, ${tara2} `} alt="Nacionalni Park Tara" />
 
       <p>
         Planina Tara pripada srednje visokim planinama, prepoznatljivim po
@@ -50,7 +58,7 @@ export const NacionalniParkTara = () => {
         bogatim kulturnim nasleđem.
       </p>
 
-      <img src={tara3} alt='Nacionalni Park Tara 2' />
+      <img srcSet={`${tara33} 400w, ${tara3} `} alt='Nacionalni Park Tara 2' />
 
       <p>
         Nacionalni park Tara bogat je arheološkim nalazištima i spomenicima koji
@@ -65,7 +73,7 @@ export const NacionalniParkTara = () => {
         nezaboravno iskustvo prirodnih lepota ovog kraja.
       </p>
 
-      <img src={tara4} alt='Nacionalni Park Tara 3' />
+      <img srcSet={`${tara44} 400w, ${tara4} `} alt='Nacionalni Park Tara 3' />
 
       <p>
         Područje je tipično šumsko područje koje se po očuvanosti i
@@ -80,7 +88,7 @@ export const NacionalniParkTara = () => {
         30 vrsta paprati, 7 vrsta golosemenica i oko 950 vrsta skrivenosemenica.
       </p>
 
-      <img src={tara5} alt="Planina Tara" />
+      <img srcSet={`${tara55} 400w, ${tara5} `} alt="Planina Tara" />
       <p>
         Nacionalni park Tara je dom raznovrsnim životinjskim vrstama. Tu se
         nalazi 12 vrsta vodozemaca, 140 vrsta insekata i 135 vrsta ptica, među
@@ -91,7 +99,7 @@ export const NacionalniParkTara = () => {
         zaštićene vrste poput mrkog medveda i vidre.
       </p>
 
-      <img src={tara6} alt="Ledena pećina" />
+      <img srcSet={`${tara66} 400w, ${tara6} `} alt="Ledena pećina" />
       <p>
         Nacionalni park Tara nudi širok spektar aktivnosti, savršenih za
         uživanje u njegovoj divljoj i netaknutoj prirodi. U ponudi su brojne
@@ -103,7 +111,7 @@ export const NacionalniParkTara = () => {
         uživati u jahanju kroz prelepe pejzaže parka.
       </p>
 
-      <img src={tara7} alt="Tara 1" />
+      <img srcSet={`${tara77} 400w, ${tara7} `} alt="Tara 1" />
       <p>
         Ovo mesto je pravo prirodno blago koje se odlikuje prelepim vodopadima i
         netaknutim pejzažima. Vodopad i rečni tokovi
@@ -114,7 +122,7 @@ export const NacionalniParkTara = () => {
         ljubitelje prirode, istraživače i one koji traže mir i tišinu.
       </p>
 
-      <img src={tara8} alt="Tara 2" />
+      <img srcSet={`${tara88} 400w, ${tara8} `} alt="Tara 2" />
       <p>
         Šetnje i izleti u Nacionalnom parku Tara pružaju nezaboravno iskustvo u
         jednoj od najlepših prirodnih oaza Srbije. Park je prepun označenih

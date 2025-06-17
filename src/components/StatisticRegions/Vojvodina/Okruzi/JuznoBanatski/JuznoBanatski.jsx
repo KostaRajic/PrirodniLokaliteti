@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { juaznoBanatskiData } from "./JuznoBanatskiData";
+import { juznoBanatskiPathRoutes } from "./JuznoBanatskiPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const JuznoBanatski = () => {
   const [slide, setSlide] = useState(0);
@@ -20,17 +22,17 @@ export const JuznoBanatski = () => {
 
   const readMore = (name) => {
     if (name === "Pančevo") {
-      navigate('Pancevo')
+      navigate(juznoBanatskiPathRoutes.pancevo)
     } else if (name === "Vračevgajsko Jezero") {
-      navigate('VracevgajskoJezero')
+      navigate(juznoBanatskiPathRoutes.vracevgajskoJezero)
     } else if (name === "Deliblatska Peščara i Zagajička Brda") {
-      navigate('DelibaltskaPescaraIZagajickaBrda')
+      navigate(juznoBanatskiPathRoutes.deliblatskaPescara)
     } else if (name === "Vršac") {
-      navigate('Vrsac')
+      navigate(juznoBanatskiPathRoutes.vrsac)
     } else if (name === "SRP 'Kraljevac'") {
-      navigate('SRPKraljevac')
+      navigate(juznoBanatskiPathRoutes.srpKraljevac)
     } else if (name === "Bela Crkva") {
-      navigate('BelaCrkva')
+      navigate(juznoBanatskiPathRoutes.belaCrkva)
     }
   };
 
@@ -39,7 +41,7 @@ export const JuznoBanatski = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.Vojvodina)}
           style={{ fill: "white"}}
         />
       </header>

@@ -49,19 +49,19 @@ Beograd je posebna teritorijalna jedinica u Srbiji koja ima svoju lokalnu samoup
     mainText: `Botanička bašta "Jevremovac" u Beogradu je jedan od najlepših zelenih kutaka grada, osnovana 1874. godine. Smestila se u samom centru Beograda, blizu Trga Republike, i predstavlja pravu oazu mira. Bašta obuhvata površinu od 5 hektara i dom je brojnim biljnim vrstama, uključujući retke i egzotične biljke iz različitih delova sveta. Posetioci mogu uživati u šetnjama kroz tematske vrtove, kao što su botanički vrt sa biljkama iz Srbije, kao i staklenici sa tropskim i subtropskim biljkama. Bašta je i naučni centar, u kojem se proučavaju biljke, a čini i popularno mesto za edukaciju i rekreaciju.`,
   },
   {
-    id: 6,
+    id: 7,
     name: "Skadarlija",
     img: skadarlija,
     mainText: `Skadarlija je boemska četvrt u Beogradu, poznata po svom šarmu i istoriji. Smeštena u blizini centra grada, Skadarlija je bila omiljeno mesto umetnika, pisaca i pesnika krajem 19. i početkom 20. veka. Ulica je prepoznatljiva po kamenim trotoarima, starim kafanama, restoranima i galerijama koje čuvaju duh prošlih vremena. Danas je Skadarlija popularna turistička destinacija, a posetioci uživaju u tradicionalnoj srpskoj muzici, hrani i atmosferi. Mnoge kafane, poput "Tri šešira" i "Dva jelena", i dalje nude autentičan doživljaj beogradske boemske scene. Skadarlija je simbol srpske tradicije, umetnosti i gostoljubivosti.`,
   },
   {
-    id: 7,
+    id: 8,
     name: "Ada Ciganlija",
     img: adaCiganlija,
     mainText: `Ada Ciganlija je popularno beogradsko izletište, smešteno na Savi, koje se prostire na površini od oko 8 km². Poznata je kao "beogradska plaža" zbog svojih brojih kupališta i uređenih obala. Ada je omiljeno mesto za rekreaciju, sport, šetnje i opuštanje, sa brojnim sportskim terenima, biciklističkim stazama, restoranima i kafićima. Osim toga, nudi mogućnost za vožnju čamcem, jedrenje i ribolov. Ada Ciganlija je i ekološki značajna, sa bogatim biljnim i životinjskim svetom, a tokom leta postaje centar društvenog života Beograđana i turista. Svojom lepotom i sadržajem predstavlja jedno od najvažnijih rekreativnih područja grada.`,
   },
   {
-    id: 8,
+    id: 9,
     name: "Košutnjak",
     img: kosutnjak,
     mainText: `Košutnjak je jedan od najvećih i najlepših parkova u Beogradu, smešten na jugozapadnom delu grada. To je šumski kompleks, površine oko 330 hektara, koji pruža savršeno okruženje za rekreaciju i opuštanje. Osim bogate flore, Košutnjak nudi brojne staze za pešačenje, biciklističke staze, sportske terene i igrališta. Poznat je po svom sportsko-rekreativnom centru, gde se nalaze tereni za tenis, fudbal, košarku i bazen. Park je takođe dom za beogradski Atletski savez i nekoliko drugih sportskih objekata. Košutnjak je omiljeno mesto za sve koji žele uživati u prirodi, ali i za ljubitelje sporta i aktivnog života.`,

@@ -1,8 +1,13 @@
-import beljanica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/beljanica1.jpg";
-import beljanica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/beljanica2.jpg";
-import beljanica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/beljanica3.jpg";
-import beljanica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/beljanica4.jpg";
-import beljanica5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/beljanica5.jpg";
+import beljanica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/desktop/beljanica1.jpg";
+import beljanica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/desktop/beljanica2.jpg";
+import beljanica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/desktop/beljanica3.jpg";
+import beljanica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/desktop/beljanica4.jpg";
+import beljanica5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/desktop/beljanica5.jpg";
+import beljanica11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/mobile/beljanicaM1.jpg";
+import beljanica22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/mobile/beljanicaM2.jpg";
+import beljanica33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/mobile/beljanicaM3.jpg";
+import beljanica44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/mobile/beljanicaM4.jpg";
+import beljanica55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/PlaninaBeljanica/mobile/beljanicaM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +25,7 @@ export const PlaninaBeljanica = () => {
         onClick={() => navigate(branicevskiOkrugPathRoutes.home)}
       />
       <header></header>
-      <img src={beljanica2} alt="Planina Beljanica 1" />
+      <img srcSet={`${beljanica22} 400w, ${beljanica2} `} alt="Planina Beljanica 1" />
 
       <h2>Planina Beljanica</h2>
 
@@ -40,7 +45,7 @@ export const PlaninaBeljanica = () => {
         severnog oboda nalazi Vrelo Mlave kod Žagubice.
       </p>
 
-      <img src={beljanica1} alt="Planina Beljanica 2" />
+      <img srcSet={`${beljanica11} 400w, ${beljanica1} `} alt="Planina Beljanica 2" />
 
       <p>
         Beljanica je planina bogata vodom, sa brojnim podzemnim i površinskim
@@ -56,7 +61,7 @@ export const PlaninaBeljanica = () => {
         svim vrstama pećinskog nakita.
       </p>
 
-      <img src={beljanica3} alt="Planina Beljanica 3" />
+      <img srcSet={`${beljanica33} 400w, ${beljanica3} `} alt="Planina Beljanica 3" />
 
       <p>
         Pećine izuzetne lepote su Jelarče, Pionirska pećina, Vlaška pećina i
@@ -65,7 +70,7 @@ export const PlaninaBeljanica = () => {
         Atula, kao speleološki objekat od posebnog značaja.
       </p>
 
-      <img src={beljanica4} alt="Planina Beljanica 4" />
+      <img srcSet={`${beljanica44} 400w, ${beljanica4} `} alt="Planina Beljanica 4" />
 
       <p>
         Zapravo, Velika Atula nije do kraja istražena, a najnovija istraživanja
@@ -81,7 +86,7 @@ export const PlaninaBeljanica = () => {
         meštani okolnih sela, koji prave sir izuzetnog kvaliteta.
       </p>
 
-      <img src={beljanica5} alt="Planina Beljanica 5" />
+      <img srcSet={`${beljanica55} 400w, ${beljanica5} `} alt="Planina Beljanica 5" />
       <p>
         Vršni deo planine čine pašnjaci. Sam vrh (1.339 m) je stenovit, a zbog
         svoje beline, iznad padina prekrivenih bukovim i hrastovim šumama,

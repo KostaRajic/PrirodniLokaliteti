@@ -1,11 +1,16 @@
-import VBK2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/VBK2.jpg";
-import VBK3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/VBK3.jpg";
-import VBK1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/VBK4.jpg";
-import VBK5 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/VBK5.jpg";
+import VBK2 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/desktop/VBK2.jpg";
+import VBK3 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/desktop/VBK3.jpg";
+import VBK1 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/desktop/VBK4.jpg";
+import VBK5 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/desktop/VBK5.jpg";
+import VBK22 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/mobile/MVBK2.jpg";
+import VBK33 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/mobile/MVBK3.jpg";
+import VBK11 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/mobile/MVBK4.jpg";
+import VBK55 from "../../../../../assets/images/Vojvodina/ZapadnoBackiOkrug/VelikiBackiKanal/mobile/MVBK5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { zapadnoBackiPathRoutes } from "./ZapadnoBackiPathRoutes";
 
 export const VelikiBackiKanal = () => {
   const navigate = useNavigate();
@@ -13,10 +18,10 @@ export const VelikiBackiKanal = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zapadnoBackiPathRoutes.home)} />
       <header></header>
       
-      <img src={VBK5} alt="Veliki Backi Kanal 1" />
+      <img srcSet={`${VBK55} 400w, ${VBK5} `} alt="Veliki Backi Kanal 1" />
         <h2>Veliki Backi Kanal</h2>
 
       <p>
@@ -27,7 +32,7 @@ export const VelikiBackiKanal = () => {
         više vojvođanskih gradova i sela, uključujući Sombor, Vrbas i Kulu.
       </p>
 
-      <img src={VBK2} alt="Veliki Backi Kanal 2" />
+      <img srcSet={`${VBK22} 400w, ${VBK2} `} alt="Veliki Backi Kanal 2" />
 
       <p>
         Prokopavanje Velikog bačkog kanala predstavljalo je jedan od
@@ -36,7 +41,7 @@ export const VelikiBackiKanal = () => {
         na oranicama, pašnjacima i livadama.
       </p>
 
-      <img src={VBK3} alt="Veliki Backi Kanal 3" />
+      <img srcSet={`${VBK33} 400w, ${VBK3} `} alt="Veliki Backi Kanal 3" />
 
       <p>
         Njegovim prokopavanjem značajno je smanjen broj bara, močvara, mrtvaja,
@@ -47,7 +52,7 @@ export const VelikiBackiKanal = () => {
       </p>
 
       <img
-        src={VBK1}
+        srcSet={`${VBK11} 400w, ${VBK1} `}
         alt="Veliki Backi Kanal 5"
       />
       <p>

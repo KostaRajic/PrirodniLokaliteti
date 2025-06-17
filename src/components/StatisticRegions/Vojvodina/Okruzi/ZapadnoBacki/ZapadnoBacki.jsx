@@ -4,6 +4,8 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import { zapadnoBackiPathRoutes } from "./ZapadnoBackiPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const ZapadnoBacki = () => {
   const [slide, setSlide] = useState(0);
@@ -19,19 +21,19 @@ export const ZapadnoBacki = () => {
 
   const readMore = (name) => {
     if (name === "Sombor") {
-      navigate("Sombor");
+      navigate(zapadnoBackiPathRoutes.sombor);
     } else if (name === "Gornje Podunavlje") {
-      navigate("GornjePodunavlje");
+      navigate(zapadnoBackiPathRoutes.gornjePodunavlje);
     } else if (name === "Apatin i apatinske terminalne vode") {
-      navigate("ApatinITerminalneVode");
+      navigate(zapadnoBackiPathRoutes.apatin);
     } else if (name === "Veliki Bački kanal") {
-      navigate("VelikiBackiKanal");
+      navigate(zapadnoBackiPathRoutes.velikiBackiKanal);
     } else if (name === "Manastir Bodjani") {
-      navigate("ManastirBodjani");
+      navigate(zapadnoBackiPathRoutes.manastirBodjani);
     } else if (name === "Salaši u Bačkoj") {
-      navigate("SalasiUBackoj");
+      navigate(zapadnoBackiPathRoutes.salasiUBackoj);
     } else if (name === "Dunavkse Ade") {
-      navigate("DunavskeAde");
+      navigate(zapadnoBackiPathRoutes.dunavskeAde);
     }
   };
 
@@ -41,7 +43,7 @@ export const ZapadnoBacki = () => {
         <header>
           <FaArrowLeft
             className="arrowLeft"
-            onClick={() => navigate(-1)}
+            onClick={() => navigate(serbianMapPathRoutes.Vojvodina)}
             style={{ fill: "white"}}
           />
         </header>

@@ -1,8 +1,13 @@
-import zavojskoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/zavojskoJezero1.jpg";
-import zavojskoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/zavojskoJezero2.jpg";
-import zavojskoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/zavojskoJezero3.jpg";
-import zavojskoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/zavojskoJezero4.jpg";
-import zavojskoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/zavojskoJezero5.jpg";
+import zavojskoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/desktop/zavojskoJezero1.jpg";
+import zavojskoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/desktop/zavojskoJezero2.jpg";
+import zavojskoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/desktop/zavojskoJezero3.jpg";
+import zavojskoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/desktop/zavojskoJezero4.jpg";
+import zavojskoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/desktop/zavojskoJezero5.jpg";
+import zavojskoJezero11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/mobile/zavojskoJezeroM1.jpg";
+import zavojskoJezero22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/mobile/zavojskoJezeroM2.jpg";
+import zavojskoJezero33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/mobile/zavojskoJezeroM3.jpg";
+import zavojskoJezero44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/mobile/zavojskoJezeroM4.jpg";
+import zavojskoJezero55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/mobile/zavojskoJezeroM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const ZavojskoJezero = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zavojskoJezero1} alt="Zavaojsko jezero 1" />
+      <img srcSet={`${zavojskoJezero11} 400w, ${zavojskoJezero1} `} alt="Zavaojsko jezero 1" />
 
       <h2>Zavaojsko jezero</h2>
 
@@ -31,7 +36,7 @@ export const ZavojskoJezero = () => {
         Zavojsko jezero je omiljeno izletište Piroćanaca i Nišlija.
       </p>
 
-      <img src={zavojskoJezero2} alt="Zavaojsko jezero 2" />
+      <img srcSet={`${zavojskoJezero22} 400w, ${zavojskoJezero2} `} alt="Zavaojsko jezero 2" />
 
       <p>
         Zavojsko jezero se nalazi u jugoistočnom delu Srbije, oko 17 km severno
@@ -45,7 +50,7 @@ export const ZavojskoJezero = () => {
         okolini i blizu jezera nalaze se sela: Pakleštica, Bela i Gostuša.
       </p>
 
-      <img src={zavojskoJezero3} alt="Zavaojsko jezero 3" />
+      <img srcSet={`${zavojskoJezero33} 400w, ${zavojskoJezero3} `} alt="Zavaojsko jezero 3" />
 
       <p>
         Zavojsko jezero je urvinsko jezero koje je nastalo koluvijalnim procesom
@@ -60,7 +65,7 @@ export const ZavojskoJezero = () => {
       </p>
 
       <img
-        src={zavojskoJezero4}
+        srcSet={`${zavojskoJezero44} 400w, ${zavojskoJezero4} `}
         alt="Zavaojsko jezero 4"
       />
 
@@ -81,7 +86,7 @@ export const ZavojskoJezero = () => {
         Hidroelektrane Pirot.
       </p>
 
-      <img src={zavojskoJezero5} alt="Zavaojsko jezero 5" />
+      <img srcSet={`${zavojskoJezero55} 400w, ${zavojskoJezero5} `} alt="Zavaojsko jezero 5" />
 
       <p>
         Temperatura vode nije detaljno pratena; prilikom nastanka, temperatura

@@ -1,8 +1,12 @@
-import lepenskiVir1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/lepenskiVir1.jpg";
-import lepenskiVir2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/lepenskiVir2.jpg";
-import lepenskiVir3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/lepenskiVir3.jpg";
-import lepenskiVir33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/lepenskiVir3_3.jpg";
-import lepenskiVir4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/lepenskiVir4.jpg";
+import lepenskiVir1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/desktop/lepenskiVir1.jpg";
+import lepenskiVir2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/desktop/lepenskiVir2.jpg";
+import lepenskiVir3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/desktop/lepenskiVir3.jpg";
+import lepenskiVir4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/desktop/lepenskiVir4.jpg";
+import lepenskiVir111 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/mobile/lepenskiVirM1.jpg";
+import lepenskiVir22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/mobile/lepenskiVirM2.jpg";
+import lepenskiVir33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/mobile/lepenskiVirM3.jpg";
+import lepenskiVir44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/mobile/lepenskiVirM4.jpg";
+
 import lepenskiVir11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/zbirka/lepenskiVir1_1.jpg";
 import lepenskiVir12 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/zbirka/lepenskiVir1_2.jpg";
 import lepenskiVir13 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/zbirka/lepenskiVir1_3.jpg";
@@ -10,6 +14,8 @@ import lepenskiVir14 from "../../../../../assets/images/JuznaIIstocnaSrbija/Bors
 import lepenskiVir15 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/zbirka/lepenskiVir1_5.jpg";
 import lepenskiVir16 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/zbirka/lepenskiVir1_6.jpg";
 import lepenskiVir17 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/zbirka/lepenskiVir1_7.jpg";
+import lepenskiVir333 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/LepenskiVir/lepenskiVir3_3.jpg";
+
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -95,7 +101,7 @@ export const LepenskiVir = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(borskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={lepenskiVir1} alt="Lepenski Vir 1" />
+      <img srcSet={`${lepenskiVir111} 400w, ${lepenskiVir1} `} alt="Lepenski Vir 1" />
 
       <h2>Lepenski Vir</h2>
 
@@ -120,7 +126,7 @@ export const LepenskiVir = () => {
         arheolog, akademik i profesor Univerziteta u Beogradu.
       </p>
 
-      <img src={lepenskiVir2} alt="Lepenski Vir 2" />
+      <img srcSet={`${lepenskiVir2} 400w, ${lepenskiVir2} `} alt="Lepenski Vir 2" />
 
       <p>
         Najnoviji radiokarbonski i AMS podaci sugerišu da se hronologija
@@ -206,9 +212,8 @@ export const LepenskiVir = () => {
       </p>
 
       <img
-  srcSet={`${lepenskiVir33} 400w, ${lepenskiVir3} 1050w`} 
+srcSet={`${lepenskiVir333} 400w, ${lepenskiVir3} `}
   sizes="(max-width: 600px) 400px, 1050px"
-  src={lepenskiVir33}
   alt="Lepenski Vir 3"
 />
       <p>
@@ -233,7 +238,7 @@ export const LepenskiVir = () => {
         njegovi delovi još uvek nisu otkriveni.
       </p>
 
-      <img src={lepenskiVir4} alt="Lepenski Vir 4" />
+      <img srcSet={`${lepenskiVir44} 400w, ${lepenskiVir4} `} alt="Lepenski Vir 4" />
 
       <p>
         Vrtlozi su nastali usled izbočenih stena, a uskovitlani tok vode

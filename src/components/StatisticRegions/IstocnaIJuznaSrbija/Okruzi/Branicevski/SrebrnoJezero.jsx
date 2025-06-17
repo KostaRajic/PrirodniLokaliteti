@@ -1,8 +1,13 @@
-import srebrnoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/srebrnoJezero1.jpg";
-import srebrnoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/srebrnoJezero2.jpg";
-import srebrnoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/srebrnoJezero3.jpg";
-import srebrnoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/srebrnoJezero4.jpg";
-import srebrnoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/srebrnoJezero5.jpg";
+import srebrnoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/desktop/srebrnoJezero1.jpg";
+import srebrnoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/desktop/srebrnoJezero2.jpg";
+import srebrnoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/desktop/srebrnoJezero3.jpg";
+import srebrnoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/desktop/srebrnoJezero4.jpg";
+import srebrnoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/desktop/srebrnoJezero5.jpg";
+import srebrnoJezero11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/mobile/srebrnoJezeroM1.jpg";
+import srebrnoJezero22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/mobile/srebrnoJezeroM2.jpg";
+import srebrnoJezero33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/mobile/srebrnoJezeroM3.jpg";
+import srebrnoJezero44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/mobile/srebrnoJezeroM4.jpg";
+import srebrnoJezero55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/SrebrnoJezero/mobile/srebrnoJezeroM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const SrebrnoJezero = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(branicevskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={srebrnoJezero1} alt="Srebrno Jezero 1" />
+      <img srcSet={`${srebrnoJezero11} 400w, ${srebrnoJezero1} `} alt="Srebrno Jezero 1" />
 
       <h2>Srebrno Jezero</h2>
 
@@ -29,7 +34,7 @@ export const SrebrnoJezero = () => {
         kilometara.
       </p>
 
-      <img src={srebrnoJezero2} alt="Srebrno Jezero 2" />
+      <img srcSet={`${srebrnoJezero22} 400w, ${srebrnoJezero2} `} alt="Srebrno Jezero 2" />
 
       <p>
         Samo jezero nalazi se u širokoj, maloj dolini Dunava, ali je okruženo
@@ -41,7 +46,7 @@ export const SrebrnoJezero = () => {
         izvor Hajdučka voda.
       </p>
 
-      <img src={srebrnoJezero3} alt="Srebrno Jezero 3" />
+      <img srcSet={`${srebrnoJezero33} 400w, ${srebrnoJezero3} `} alt="Srebrno Jezero 3" />
 
       <p>
         Na oba mesta gde je jezero povezano s Dunavom izgrađene su brane, a
@@ -50,7 +55,7 @@ export const SrebrnoJezero = () => {
         Kisiljevo.
       </p>
 
-      <img src={srebrnoJezero4} alt="Srebrno Jezero 4" />
+      <img srcSet={`${srebrnoJezero44} 400w, ${srebrnoJezero4} `} alt="Srebrno Jezero 4" />
 
       <p>
         Srebrno jezero ima nepravilni lučni oblik i prostire se na površini od 4
@@ -61,7 +66,7 @@ export const SrebrnoJezero = () => {
         druge slatkovodne vrste.
       </p>
 
-      <img src={srebrnoJezero5} alt="Srebrno Jezero 5" />
+      <img srcSet={`${srebrnoJezero55} 400w, ${srebrnoJezero5} `} alt="Srebrno Jezero 5" />
       <p>
         Jezero je već decenijama popularna destinacija za odmor i ribolov, a u
         poslednje vreme sve više privlači turiste iz svih delova centralne

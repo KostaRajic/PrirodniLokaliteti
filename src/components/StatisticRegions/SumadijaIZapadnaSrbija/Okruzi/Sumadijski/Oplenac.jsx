@@ -1,10 +1,17 @@
-import oplenac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/oplenac6.jpg";
-import oplenac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/oplenac1.jpg";
-import oplenac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/oplenac2.jpg";
-import oplenac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/oplenac3.jpg";
-import oplenac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/oplenac4.jpg";
-import oplenac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/oplenac5.jpg";
-import oplenac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/oplenac7.jpg";
+import oplenac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/desktop/oplenac6.jpg";
+import oplenac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/desktop/oplenac1.jpg";
+import oplenac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/desktop/oplenac2.jpg";
+import oplenac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/desktop/oplenac3.jpg";
+import oplenac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/desktop/oplenac4.jpg";
+import oplenac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/desktop/oplenac5.jpg";
+import oplenac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/desktop/oplenac7.jpg";
+import oplenac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/mobile/Moplenac6.jpg";
+import oplenac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/mobile/Moplenac1.jpg";
+import oplenac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/mobile/Moplenac2.jpg";
+import oplenac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/mobile/Moplenac3.jpg";
+import oplenac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/mobile/Moplenac4.jpg";
+import oplenac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/mobile/Moplenac5.jpg";
+import oplenac77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/Oplenac/mobile/Moplenac7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +25,7 @@ export const Oplenac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={oplenac1} alt="Oplenac 1" />
+      <img srcSet={`${oplenac11} 400w, ${oplenac1} `} alt="Oplenac 1" />
 
       <h2 style={{ color: "white" }}>Oplenac</h2>
 
@@ -30,7 +37,7 @@ export const Oplenac = () => {
         seoskim kolima. Tako je brdo i dobilo ime Oplenac.
       </p>
 
-      <img src={oplenac2} alt="Oplenac 2" />
+      <img srcSet={`${oplenac22} 400w, ${oplenac2} `} alt="Oplenac 2" />
 
       <p>
         Izuzetan geografski položaj grada Topola, smeštenog na padinama i
@@ -47,7 +54,7 @@ export const Oplenac = () => {
         ubrzo dobilo ime po njemu, a zatim i celokupno naselje.
       </p>
 
-      <img src={oplenac3} alt="Crkva Svetog Djordja na Oplencu" />
+      <img srcSet={`${oplenac33} 400w, ${oplenac3} `} alt="Crkva Svetog Djordja na Oplencu" />
 
       <p>
         Topola je doživela svoj prvi uspon tokom Prvog srpskog ustanka. Vođa
@@ -65,7 +72,7 @@ export const Oplenac = () => {
         prvobitni značaj.
       </p>
 
-      <img src={oplenac7} alt="Oplenac 3" />
+      <img srcSet={`${oplenac77} 400w, ${oplenac7} `} alt="Oplenac 3" />
 
       <p>
         Ovaj kraj je doživeo novi procvat tokom vladavine Karađorđevog sina,
@@ -85,7 +92,7 @@ export const Oplenac = () => {
       </p>
 
       <img
-        src={oplenac4}
+        srcSet={`${oplenac44} 400w, ${oplenac4} `}
         alt="Oplenac 4"
       />
 
@@ -103,7 +110,7 @@ export const Oplenac = () => {
         Oplenac je delovao kao savršeno mesto za ostvarenje ovog životnog sna.
       </p>
 
-      <img src={oplenac5} alt="Spomenik Karađorđu na Oplencu" />
+      <img srcSet={`${oplenac55} 400w, ${oplenac5} `} alt="Spomenik Karađorđu na Oplencu" />
       <p>
         Spomenik Karađorđu u Oplencu postavljen je 1911. godine kao čast vođi
         Prvog srpskog ustanka, osnivaču dinastije Karađorđević i simbolu borbe
@@ -118,7 +125,7 @@ export const Oplenac = () => {
         postao je jedan od simbola Topole i Oplenca.
       </p>
 
-      <img src={oplenac6} alt="Kuća Kralja Petra Prvog" />
+      <img srcSet={`${oplenac66} 400w, ${oplenac6} `} alt="Kuća Kralja Petra Prvog" />
       <p>
         Kuća Kralja Petra I u Oplencu, poznata i kao "Kraljevska kuća", bila je
         letnjikovac koji je izgradio Kralj Petar I Karađorđević. Smeštena je na

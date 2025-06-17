@@ -1,8 +1,13 @@
-import petnicaPecina1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/petnicaPecina1.jpg";
-import petnicaPecina2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/petnicaPecina2.jpg";
-import petnicaPecina3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/petnicaPecina3.jpg";
-import petnicaPecina4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/petnicaPecina4.jpg";
-import petnicaPecina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/petnicaPecina5.jpg";
+import petnicaPecina1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/desktop/petnicaPecina1.jpg";
+import petnicaPecina2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/desktop/petnicaPecina2.jpg";
+import petnicaPecina3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/desktop/petnicaPecina3.jpg";
+import petnicaPecina4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/desktop/petnicaPecina4.jpg";
+import petnicaPecina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/desktop/petnicaPecina5.jpg";
+import petnicaPecina11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/mobile/MpetnicaPecina1.jpg";
+import petnicaPecina22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/mobile/MpetnicaPecina2.jpg";
+import petnicaPecina33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/mobile/MpetnicaPecina3.jpg";
+import petnicaPecina44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/mobile/MpetnicaPecina4.jpg";
+import petnicaPecina55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/PetnickaPecina/mobile/MpetnicaPecina5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const PetnickaPecina = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={petnicaPecina1} alt="PETNIČKA PEĆINA 1" />
+      <img srcSet={`${petnicaPecina11} 400w, ${petnicaPecina1} `} alt="PETNIČKA PEĆINA 1" />
 
       <h2>Petnička Pećina</h2>
 
@@ -30,7 +35,7 @@ export const PetnickaPecina = () => {
         Valjevo, granica atara sela Klinci i Petnica.
       </p>
 
-      <img src={petnicaPecina2} alt="PETNIČKA PEĆINA 2" />
+      <img srcSet={`${petnicaPecina22} 400w, ${petnicaPecina2} `} alt="PETNIČKA PEĆINA 2" />
 
       <p>
         U pećini i njenoj neposrednoj okolini pronađena su najstarija
@@ -48,7 +53,7 @@ export const PetnickaPecina = () => {
         sklonište ljudima i životnim vrstama koje su retke u ovom području.
       </p>
 
-      <img src={petnicaPecina3} alt="PETNIČKA PEĆINA 3" />
+      <img srcSet={`${petnicaPecina33} 400w, ${petnicaPecina3} `} alt="PETNIČKA PEĆINA 3" />
 
       <p>
         Arheološko-antonološka istraživanja sprovedena 1969. godine potvrdila su
@@ -65,7 +70,7 @@ export const PetnickaPecina = () => {
         stručnjaka iz svih delova Jugoslavije i inostranstva.
       </p>
 
-      <img src={petnicaPecina4} alt="PETNIČKA PEĆINA 4" />
+      <img srcSet={`${petnicaPecina44} 400w, ${petnicaPecina4} `} alt="PETNIČKA PEĆINA 4" />
 
       <p>
         Na mestu Bela stena, oko 5 km od Petnice, pronađeni su uljni škriljci i
@@ -82,7 +87,7 @@ export const PetnickaPecina = () => {
         Visokoj školi u kojoj bi se mladi okupljali i bavili naukom.
       </p>
 
-      <img src={petnicaPecina5} alt="PETNIČKA PEĆINA 5" />
+      <img srcSet={`${petnicaPecina55} 400w, ${petnicaPecina5} `} alt="PETNIČKA PEĆINA 5" />
       <p>
         Istraživačka stanica Petnica je naučno-obrazovni centar smešten u
         blizini grada Valjeva, u Srbiji. Ova stanica je poznata kao najveći i

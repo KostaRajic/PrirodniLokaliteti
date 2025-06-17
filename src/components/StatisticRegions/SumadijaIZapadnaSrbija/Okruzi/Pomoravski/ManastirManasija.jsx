@@ -1,8 +1,13 @@
-import manasija1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/manastirManasija1.jpg";
-import manasija2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/manastirManasija2.jpg";
-import manasija3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/manastirManasija3.jpg";
-import manasija4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/manastirManasija4.jpg";
-import manasija5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/manastirManasija5.jpg";
+import manasija1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/desktop/manastirManasija1.jpg";
+import manasija2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/desktop/manastirManasija2.jpg";
+import manasija3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/desktop/manastirManasija3.jpg";
+import manasija4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/desktop/manastirManasija4.jpg";
+import manasija5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/desktop/manastirManasija5.jpg";
+import manasija11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/mobile/MmanastirManasija1.jpg";
+import manasija22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/mobile/MmanastirManasija2.jpg";
+import manasija33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/mobile/MmanastirManasija3.jpg";
+import manasija44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/mobile/MmanastirManasija4.jpg";
+import manasija55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija/mobile/MmanastirManasija5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const ManastirManasija = () => {
 
       />
       <header></header>
-      <img src={manasija1} alt="Manastir Manasija 1" />
+      <img srcSet={`${manasija11} 400w, ${manasija1} `} alt="Manastir Manasija 1" />
 
       <h2 style={{ color: "white" }}>Manastir Manasija</h2>
 
@@ -40,7 +45,7 @@ export const ManastirManasija = () => {
         ostaci despota Stefana Lazarevića.
       </p>
 
-      <img src={manasija2} alt="Manastir Manasija 2" />
+      <img srcSet={`${manasija22} 400w, ${manasija2} `} alt="Manastir Manasija 2" />
 
       <p>
         Despot Stefan Lazarević, poznat u narodu kao Stefan Visoki zbog svoje
@@ -59,7 +64,7 @@ export const ManastirManasija = () => {
         smatra jednim od najlepših tekstova srpske književnosti.
       </p>
 
-      <img src={manasija3} alt="Manastir Manasija 3" />
+      <img srcSet={`${manasija33} 400w, ${manasija3} `} alt="Manastir Manasija 3" />
 
       <p>
         Manastir Manasija je ubrzo nakon svog osnivanja postao utočište za mnoge
@@ -76,7 +81,7 @@ export const ManastirManasija = () => {
         manastirskog kompleksa i crkve.
       </p>
 
-      <img src={manasija4} alt="Manastir Manasija 4" />
+      <img srcSet={`${manasija44} 400w, ${manasija4} `} alt="Manastir Manasija 4" />
 
       <p>
         Manastir Manasija je poznat po svom jedinstvenom utvrđenju koje okružuje
@@ -94,7 +99,7 @@ export const ManastirManasija = () => {
         četiri impozantna stupa sa polukružnim kolonama.
       </p>
 
-      <img src={manasija5} alt="Manastir Manasija 5" />
+      <img srcSet={`${manasija55} 400w, ${manasija5} `} alt="Manastir Manasija 5" />
 
       <p>
         Iako je pretrpeo značajna oštećenja, živopis crkve Manasije i dalje

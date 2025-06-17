@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { sumadijskiOkrugData } from "./SumadijskiOkrugData";
 import { sumadijskiOkrugPathRoutes } from "./SumadijskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const SumadijskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -41,7 +42,7 @@ export const SumadijskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija)}
           style={{ fill: "white"}}
         />
       </header>

@@ -1,7 +1,11 @@
-import devic1 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/manastirDevic1.jpg";
-import devic2 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/manastirDevic2.jpg";
-import devic3 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/manastirDevic3.jpg";
-import devic4 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/manastirDevic4.jpg";
+import devic1 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/desktop/manastirDevic1.jpg";
+import devic2 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/desktop/manastirDevic2.jpg";
+import devic3 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/desktop/manastirDevic3.jpg";
+import devic4 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/desktop/manastirDevic4.jpg";
+import devic11 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/mobile/MmanastirDevic1.jpg";
+import devic22 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/mobile/MmanastirDevic2.jpg";
+import devic33 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/mobile/MmanastirDevic3.jpg";
+import devic44 from "../../../../../assets/images/KosovoIMetohija/Mitrovacki/ManastirDevic/mobile/MmanastirDevic4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const ManastirDevic = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(mitrovackiOkrugPathRoutes.home)} style={{fill: "white"}}/>
       <header></header>
-      <img src={devic1} alt="Crkva Svetog Stefana Manastir Banjska" />
+      <img srcSet={`${devic11} 400w, ${devic1} `} alt="Crkva Svetog Stefana Manastir Banjska" />
 
       <h2>Manastir Devič</h2>
 
@@ -29,7 +33,7 @@ export const ManastirDevic = () => {
         svetitelj za kojeg je vezana cela prošlost ove svetiinje.
       </p>
 
-      <img src={devic2} alt="Manastir Banjska 2" />
+      <img srcSet={`${devic22} 400w, ${devic2} `} alt="Manastir Banjska 2" />
 
       <p>
         Na tom mestu je oko 1434. godine, u znak zahvalnosti zbog ozdravljenja
@@ -43,7 +47,7 @@ export const ManastirDevic = () => {
         100 rukopisnih i oko 10 štampanih srpskih knjiga).
       </p>
 
-      <img src={devic3} alt="Manastir Banjska 3" />
+      <img srcSet={`${devic33} 400w, ${devic3} `} alt="Manastir Banjska 3" />
 
       <p>
         Balisti su proleća 1941. godine minirali, razorili i spalili crkve i
@@ -54,7 +58,7 @@ export const ManastirDevic = () => {
         uključujući i one koje su pripadale albanskom narodu.
       </p>
 
-      <img src={devic4} alt="Manastir Banjska 4" />
+      <img srcSet={`${devic44} 400w, ${devic4} `} alt="Manastir Banjska 4" />
 
       <p>
         Do danas je manastir četiri puta bio srušen do temelja.

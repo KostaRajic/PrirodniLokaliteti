@@ -1,8 +1,13 @@
-import koznik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/koznik1.jpg";
-import koznik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/koznik2.jpg";
-import koznik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/koznik3.jpg";
-import koznik4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/koznik4.jpg";
-import koznik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/koznik5.jpg";
+import koznik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/desktop/koznik1.jpg";
+import koznik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/desktop/koznik2.jpg";
+import koznik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/desktop/koznik3.jpg";
+import koznik4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/desktop/koznik4.jpg";
+import koznik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/desktop/koznik5.jpg";
+import koznik11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/mobile/Mkoznik1.jpg";
+import koznik22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/mobile/Mkoznik2.jpg";
+import koznik33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/mobile/Mkoznik3.jpg";
+import koznik44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/mobile/Mkoznik4.jpg";
+import koznik55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Koznik/mobile/Mkoznik5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const TvrdjavaKoznik = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={koznik1} alt="Srpski srednjovekovni grad Koznik 1" />
+      <img srcSet={`${koznik11} 400w, ${koznik1} `} alt="Srpski srednjovekovni grad Koznik 1" />
 
       <h2 style={{ color: "white" }}>Srpski srednjovekovni grad Koznik</h2>
 
@@ -36,7 +41,7 @@ export const TvrdjavaKoznik = () => {
         pešačkih tura, ali i blizine velikog turističkog centra Kopaonika.
       </p>
 
-      <img src={koznik2} alt="Srpski srednjovekovni grad Koznik 2" />
+      <img srcSet={`${koznik22} 400w, ${koznik2} `} alt="Srpski srednjovekovni grad Koznik 2" />
 
       <p>
         Koznik je izgrađen na uzvišenju koje sa tri strane okružuju strme stene,
@@ -60,7 +65,7 @@ export const TvrdjavaKoznik = () => {
         prepušten propadanju.
       </p>
 
-      <img src={koznik3} alt="Srpski srednjovekovni grad Koznik 3" />
+      <img srcSet={`${koznik33} 400w, ${koznik3} `} alt="Srpski srednjovekovni grad Koznik 3" />
 
       <p>
         Radič Postupović, živeći u vreme vladavine despota Đurađa Brankovića i
@@ -90,7 +95,7 @@ export const TvrdjavaKoznik = () => {
         hirovi Jerine i njene pratnje.
       </p>
 
-      <img src={koznik4} alt="Jerenin Grad" />
+      <img srcSet={`${koznik44} 400w, ${koznik4} `} alt="Jerenin Grad" />
 
       <p>
         Stari grad Koznik izgrađen je na uzvišenju koje sa tri strane okružuju
@@ -110,7 +115,7 @@ export const TvrdjavaKoznik = () => {
         centralnog gradskog utvrđenja.
       </p>
 
-      <img src={koznik5} alt='Koznik' />
+      <img srcSet={`${koznik55} 400w, ${koznik5} `} alt='Koznik' />
 
       <p>
         Manifestacija "Koznik – grad vitezova" pokrenuta je na inicijativu

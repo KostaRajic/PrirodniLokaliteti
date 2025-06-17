@@ -24,9 +24,9 @@ export const SumadijaIZapadnaSrbija = () => {
   const [showRasinski, setShowRasinski] = useState(false);
   const [zoom, setZoom] = useState(() => {
     if (window.innerWidth < 600) {
-      return 7;
+      return 6;
     } else if (window.innerWidth < 1600) {
-      return 8;
+      return 7;
     } else {
       return 10;
     }
@@ -55,6 +55,9 @@ export const SumadijaIZapadnaSrbija = () => {
   });
 
   return (
+    <div>
+      
+
     <MapContainer
       center={center}
       zoom={zoom}
@@ -69,7 +72,7 @@ export const SumadijaIZapadnaSrbija = () => {
         />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija)}
+        onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal)}
         style={{zIndex: "400" }}
       />
       {SumadijaIZapadnaSrbijaRegioni?.features?.map((statisticRegion) => {
@@ -133,5 +136,6 @@ export const SumadijaIZapadnaSrbija = () => {
         );
       })}
     </MapContainer>
+    </div>
   );
 };

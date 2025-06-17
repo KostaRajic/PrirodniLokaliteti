@@ -1,9 +1,15 @@
-import gnjilane1 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/gnjilane1.jpg";
-import gnjilane2 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/gnjilane2.jpg";
-import gnjilane3 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/gnjilane3.jpg";
-import gnjilane4 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/gnjilane4.jpg";
-import gnjilane5 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/gnjilane5.jpg";
-import gnjilane6 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/gnjilane6.jpg";
+import gnjilane1 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/desktop/gnjilane1.jpg";
+import gnjilane2 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/desktop/gnjilane2.jpg";
+import gnjilane3 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/desktop/gnjilane3.jpg";
+import gnjilane4 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/desktop/gnjilane4.jpg";
+import gnjilane5 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/desktop/gnjilane5.jpg";
+import gnjilane6 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/desktop/gnjilane6.jpg";
+import gnjilane11 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/mobile/Mgnjilane1.jpg";
+import gnjilane22 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/mobile/Mgnjilane2.jpg";
+import gnjilane33 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/mobile/Mgnjilane3.jpg";
+import gnjilane44 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/mobile/Mgnjilane4.jpg";
+import gnjilane55 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/mobile/Mgnjilane5.jpg";
+import gnjilane66 from "../../../../../assets/images/KosovoIMetohija/Gnjilanski/Gnjilane/mobile/Mgnjilane6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const Gnjilane = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(gnjilanskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={gnjilane1} alt="Gnjilane1" />
+      <img srcSet={`${gnjilane11} 400w, ${gnjilane1} `} alt="Gnjilane1" />
 
       <h2>Gnjilane</h2>
 
@@ -37,7 +43,7 @@ export const Gnjilane = () => {
         što znači trulo ili raspadnuto.
       </p>
 
-      <img src={gnjilane2} alt="Gnjilane 2" />
+      <img srcSet={`${gnjilane22} 400w, ${gnjilane2} `} alt="Gnjilane 2" />
 
       <p>
         Gnjilane se nalazi u jugoistočnom delu Kosova i Metohije, u regionu
@@ -52,7 +58,7 @@ export const Gnjilane = () => {
         na istoku graniče sa Bujanovcem (40 km).
       </p>
 
-      <img src={gnjilane3} alt="Gnjilane 3" />
+      <img srcSet={`${gnjilane33} 400w, ${gnjilane3} `} alt="Gnjilane 3" />
 
       <p>
         U srednjem veku grad je bio poznat pod imenom „Morava” i predstavljao je
@@ -67,7 +73,7 @@ export const Gnjilane = () => {
         srpskim stanovništvom, predvođeno jednim sveštenikom.
       </p>
 
-      <img src={gnjilane4} alt="Gnjilane 4" />
+      <img srcSet={`${gnjilane44} 400w, ${gnjilane4} `} alt="Gnjilane 4" />
 
       <p>
         Još od srednjeg veka u Gnjilanu je postojalo više crkava. Jedna od njih
@@ -87,7 +93,7 @@ export const Gnjilane = () => {
         Hrebeljanović.
       </p>
 
-      <img src={gnjilane5} alt="Gnjilane 5" />
+      <img srcSet={`${gnjilane55} 400w, ${gnjilane5} `} alt="Gnjilane 5" />
 
       <p>
         Crkva je više puta stradala u požarima, a jednom je potpuno izgorela. To
@@ -110,7 +116,7 @@ export const Gnjilane = () => {
         kapital su stalno rasli.
       </p>
 
-      <img src={gnjilane6} alt="Gnjilane 6" />
+      <img srcSet={`${gnjilane66} 400w, ${gnjilane6} `} alt="Gnjilane 6" />
 
       <p>
         Postoji više predaja o poreklu naziva Gnjilana. Tokom šezdesetih godina

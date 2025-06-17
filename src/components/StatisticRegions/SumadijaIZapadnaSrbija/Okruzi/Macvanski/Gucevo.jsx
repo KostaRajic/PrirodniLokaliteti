@@ -1,9 +1,15 @@
-import gucevo1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/gucevo1.jpg";
-import gucevo2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/gucevo2.jpg";
-import gucevo3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/gucevo3.jpg";
-import gucevo4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/gucevo4.jpg";
-import gucevo5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/gucevo5.jpg";
-import gucevo6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/gucevo6.jpg";
+import gucevo1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/desktop/gucevo1.jpg";
+import gucevo2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/desktop/gucevo2.jpg";
+import gucevo3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/desktop/gucevo3.jpg";
+import gucevo4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/desktop/gucevo4.jpg";
+import gucevo5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/desktop/gucevo5.jpg";
+import gucevo6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/desktop/gucevo6.jpg";
+import gucevo11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/mobile/Mgucevo1.jpg";
+import gucevo22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/mobile/Mgucevo2.jpg";
+import gucevo33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/mobile/Mgucevo3.jpg";
+import gucevo44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/mobile/Mgucevo4.jpg";
+import gucevo55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/mobile/Mgucevo5.jpg";
+import gucevo66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Gucevo/mobile/Mgucevo6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const Gucevo = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={gucevo1} alt="Gučevo 1" />
+      <img srcSet={`${gucevo11} 400w, ${gucevo1} `} alt="Gučevo 1" />
 
       <h2>Planina Gučevo</h2>
 
@@ -34,7 +40,7 @@ export const Gucevo = () => {
         kao i prisustvo termomineralnih voda, koje koristi Banja Koviljača.
       </p>
 
-      <img src={gucevo2} alt="Gučevo 2" />
+      <img srcSet={`${gucevo22} 400w, ${gucevo2} `} alt="Gučevo 2" />
 
       <p>
         Gučevo je šumovita planina prekrivena gustim šumama graba, hrasta,
@@ -50,7 +56,7 @@ export const Gucevo = () => {
         okršaji u svetu.
       </p>
 
-      <img src={gucevo3} alt="Spomen-kosturnica na Gučevu" />
+      <img srcSet={`${gucevo33} 400w, ${gucevo3} `} alt="Spomen-kosturnica na Gučevu" />
 
       <p>
         Jedno od značajnih mesta na Gučevu je Spomen-kosturnica, u kojoj su
@@ -69,7 +75,7 @@ export const Gucevo = () => {
       </p>
 
       <img
-        src={gucevo4}
+        srcSet={`${gucevo44} 400w, ${gucevo4} `}
         alt="spomenik ruskoj bolničarki Darji Aleksandrovnoj Korobkinoj"
       />
 
@@ -84,7 +90,7 @@ export const Gucevo = () => {
         sto pedeset puta dnevno“, izjavio je gradonačelnik Loznice.
       </p>
 
-      <img src={gucevo6} alt="Banja Koviljača 2" />
+      <img srcSet={`${gucevo66} 400w, ${gucevo6} `} alt="Banja Koviljača 2" />
       <p>
         Banja Koviljača smeštena je u zelenilu jednog od najvećih i najlepših
         parkova Srbije, na desnoj obali donjeg toka Drine, u podnožju planine
@@ -106,7 +112,7 @@ export const Gucevo = () => {
         izgrađena je i pruga Šabac - Koviljača.
       </p>
 
-      <img src={gucevo5} alt="Banja Koviljača 2" />
+      <img srcSet={`${gucevo55} 400w, ${gucevo5} `} alt="Banja Koviljača 2" />
       <p>
         Nakon gotovo 150 godina postojanja, Banja Koviljača danas predstavlja
         jedan od najznačajnijih i najposećenijih balneoloških centara u Srbiji.

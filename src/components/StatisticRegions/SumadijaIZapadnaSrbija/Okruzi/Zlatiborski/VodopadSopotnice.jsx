@@ -1,9 +1,15 @@
-import sopotnice1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/sopotnice1.jpg";
-import sopotnice2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/sopotnice2.jpg";
-import sopotnice3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/sopotnice3.jpg";
-import sopotnice4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/sopotnice4.jpg";
-import sopotnice5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/sopotnice5.jpg";
-import sopotnice6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/sopotnice6.jpg";
+import sopotnice1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/desktop/sopotnice1.jpg";
+import sopotnice2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/desktop/sopotnice2.jpg";
+import sopotnice3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/desktop/sopotnice3.jpg";
+import sopotnice4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/desktop/sopotnice4.jpg";
+import sopotnice5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/desktop/sopotnice5.jpg";
+import sopotnice6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/desktop/sopotnice6.jpg";
+import sopotnice11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/mobile/Msopotnice1.jpg";
+import sopotnice22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/mobile/Msopotnice2.jpg";
+import sopotnice33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/mobile/Msopotnice3.jpg";
+import sopotnice44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/mobile/Msopotnice4.jpg";
+import sopotnice55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/mobile/Msopotnice5.jpg";
+import sopotnice66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/vodopadSopotice/mobile/Msopotnice6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,9 +22,9 @@ export const VodopadSopotnice = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.vodopadSopotnice)} style={{fill: 'white'}} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={sopotnice1} alt="Vodopad Sopotnice 1" />
+      <img srcSet={`${sopotnice11} 400w, ${sopotnice1} `} alt="Vodopad Sopotnice 1" />
 
       <h2>Vodopad Sopotnice</h2>
 
@@ -33,7 +39,7 @@ export const VodopadSopotnice = () => {
         dobro, sa ukupnom površinom od 209,34 hektara.
       </p>
 
-      <img src={sopotnice3} alt="Vodopad Sopotnice 2" />
+      <img srcSet={`${sopotnice33} 400w, ${sopotnice3} `} alt="Vodopad Sopotnice 2" />
 
       <p>
         Slapovi Sopotnice ili vodopadi Sopotnice nastali su zahvaljujući
@@ -46,7 +52,7 @@ export const VodopadSopotnice = () => {
         na mahovinama i lišću, stvarajući poroznu stenu poznatu kao sigu.
       </p>
 
-      <img src={sopotnice2} alt="Vodopad Sopotnice 3" />
+      <img srcSet={`${sopotnice22} 400w, ${sopotnice2} `} alt="Vodopad Sopotnice 3" />
 
       <p>
         Reku Sopotnicu odlikuje velika visinska razlika između njenog ušća, koje
@@ -59,7 +65,7 @@ export const VodopadSopotnice = () => {
         ekološki značajnim.
       </p>
 
-      <img src={sopotnice4} alt="Vodopad Sopotnice 4" />
+      <img srcSet={`${sopotnice44} 400w, ${sopotnice4} `} alt="Vodopad Sopotnice 4" />
 
       <p>
         Najviši slap Sopotnice doseže visinu od približno 25 metara, dok se
@@ -73,7 +79,7 @@ export const VodopadSopotnice = () => {
         resursa.
       </p>
 
-      <img src={sopotnice6} alt="Vodopad Sopotnice 5" />
+      <img srcSet={`${sopotnice66} 400w, ${sopotnice6} `} alt="Vodopad Sopotnice 5" />
       <p>
         Slapovi Sopotnice nalaze se na jugozapadnim obroncima planine Jadovnik,
         u opštini Prijepolje, na jugozapadu Srbije. Okruženi su gustom
@@ -83,7 +89,7 @@ export const VodopadSopotnice = () => {
         pejzaža i bogatog prirodnog sveta.
       </p>
 
-      <img src={sopotnice5} alt="Vodopad Sopotnice 6" />
+      <img srcSet={`${sopotnice55} 400w, ${sopotnice5} `} alt="Vodopad Sopotnice 6" />
       <p>
         O nastanku Sopotničkih vodopada ispričane su mnoge legende koje prenose
         lokalni meštani. Jedna od njih govori o doseljenicima koji su iz

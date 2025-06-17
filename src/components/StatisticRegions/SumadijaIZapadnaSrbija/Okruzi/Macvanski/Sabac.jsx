@@ -1,10 +1,17 @@
-import sabac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/sabac1.jpg";
-import sabac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/sabac2.jpg";
-import sabac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/sabac3.jpg";
-import sabac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/sabac4.jpg";
-import sabac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/sabac5.jpg";
-import sabac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/sabac6.jpg";
-import sabac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/sabac7.jpg";
+import sabac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac1.jpg";
+import sabac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac2.jpg";
+import sabac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac3.jpg";
+import sabac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac4.jpg";
+import sabac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac5.jpg";
+import sabac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac6.jpg";
+import sabac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac7.jpg";
+import sabac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/mobile/Msabac1.jpg";
+import sabac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/mobile/Msabac2.jpg";
+import sabac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/mobile/Msabac3.jpg";
+import sabac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/mobile/Msabac4.jpg";
+import sabac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/mobile/Msabac5.jpg";
+import sabac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/mobile/Msabac6.jpg";
+import sabac77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/mobile/Msabac7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +26,7 @@ export const Sabac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={sabac1} alt="Šabac 1" />
+      <img srcSet={`${sabac11} 400w, ${sabac1} `} alt="Šabac 1" />
 
       <h2 style={{color: 'white'}}>Šabac</h2>
 
@@ -35,9 +42,9 @@ export const Sabac = () => {
         Saobraćajno je odlično povezano sa okolinom.
       </p>
 
-      <img src={sabac2} alt="Šabac 2" />
+      <img srcSet={`${sabac22} 400w, ${sabac2} `} alt="Šabac 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Centar Šapca je atraktivno i dinamično područje koje nudi brojne
         turističke sadržaje i znamenitosti. Grad je bogat istorijskim, kulturnim
         i arhitektonskim nasleđem, a njegov centralni deo je središte kulturnih
@@ -53,9 +60,9 @@ export const Sabac = () => {
         istoriji, kulturi i životnoj energiji ovog grada.
       </p>
 
-      <img src={sabac3} alt="Gradski park Šabac" />
+      <img srcSet={`${sabac33} 400w, ${sabac3} `} alt="Gradski park Šabac" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Gradski park u Šapcu, osnovan u drugoj polovini 19. veka na mestu bivše
         Jevremove bašte, predstavlja jedan od omiljenih prostora za opuštanje i
         rekreaciju. U parku se nalaze biste značajnih ličnosti, kao što su Kneza
@@ -69,9 +76,9 @@ export const Sabac = () => {
         jugoslovenski hit sedamdesetih godina.
       </p>
 
-      <img src={sabac4} alt="Narodni Muzej Šabac" />
+      <img srcSet={`${sabac44} 400w, ${sabac4} `} alt="Narodni Muzej Šabac" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Narodni muzej u Šapcu osnovan je 1934. godine, a od 1954. godine smešten
         je u zgradu bivše Polugimnazije, u kojoj se i danas nalazi. Na 800 m²
         izložbenog prostora nalaze se galerija za izložbe i deo stalne postavke.
@@ -87,7 +94,7 @@ export const Sabac = () => {
         ognjištem, oko kojeg se odvijao svakodnevni život porodice.
       </p>
 
-      <img src={sabac5} alt="Šabačka tvrđava"/>
+      <img srcSet={`${sabac55} 400w, ${sabac5} `} alt="Šabačka tvrđava"/>
       <p>
         Šabačka tvrđava, tihi svedok prošlih vremena na desnoj obali Save,
         vekovima je odolevala sukobima koji su zadesili grad Šabac. I danas,
@@ -107,7 +114,7 @@ export const Sabac = () => {
         od kojih su mnogi nastali u vreme vladavine Nemanjića.
       </p>
 
-      <img src={sabac6} alt="Gospodar Jevremova ulica Šabac" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${sabac66} 400w, ${sabac6} `} alt="Gospodar Jevremova ulica Šabac" />
       <p>
         Gospodar Jevremova ulica je posebna celina koja je, zahvaljujući svojim
         istorijskim i kulturnim spomenicima, stekla status kulturno-istorijskog
@@ -125,7 +132,7 @@ export const Sabac = () => {
         je ovaj prostor obnovljen i zaštićen kao kulturno-istorijska celina.
       </p>
 
-      <img src={sabac7} alt="Saborni hram Svetih Prvovrhovnih Apostola Petra i Pavla u Šapcu" style={{ marginBottom: "-10px" }} />
+      <img srcSet={`${sabac77} 400w, ${sabac7} `} alt="Saborni hram Svetih Prvovrhovnih Apostola Petra i Pavla u Šapcu" style={{ marginBottom: "-10px" }} />
       <p>
         Saborni hram Svetih Prvovrhovnih Apostola Petra i Pavla u Šapcu, poznat
         u pisanim izvorima i u narodnom govoru kao "šabačka crkva", predstavlja

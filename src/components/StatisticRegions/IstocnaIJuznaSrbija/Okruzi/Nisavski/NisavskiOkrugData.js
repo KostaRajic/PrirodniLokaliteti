@@ -3,7 +3,9 @@ import bovanskoJezero from "../../../../../assets/images/JuznaIIstocnaSrbija/Nis
 import cegar from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/Cegar/cegar.jpg";
 import suvaPlanina from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina.jpg";
 import manastirSvetaPetkaIverica from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/ManastirSvetkaPetkaIverica/manastirSvetaPetkaIverica.jpg";
-import niskaBanja from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/niskaBanja.jpg";
+import niskaBanja from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/desktop/niskaBanja.jpg";
+import niskaBanjaM from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/mobile/niskaBanjaM.jpg";
+
 import sicevackaKlisura from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SicevackaKlisura/sicevackaKlisura.jpg";
 
 export const nisavskiOkrugData = [

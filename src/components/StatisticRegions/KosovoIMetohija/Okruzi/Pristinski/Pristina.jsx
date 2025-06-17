@@ -1,8 +1,13 @@
-import pristina1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/pristina1.jpg";
-import pristina2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/pristina2.jpg";
-import pristina3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/pristina3.jpg";
-import pristina4 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/pristina4.jpg";
-import pristina5 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/pristina5.jpg";
+import pristina1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/desktop/pristina1.jpg";
+import pristina2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/desktop/pristina2.jpg";
+import pristina3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/desktop/pristina3.jpg";
+import pristina4 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/desktop/pristina4.jpg";
+import pristina5 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/desktop/pristina5.jpg";
+import pristina11 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/mobile/Mpristina1.jpg";
+import pristina22 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/mobile/Mpristina2.jpg";
+import pristina33 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/mobile/Mpristina3.jpg";
+import pristina44 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/mobile/Mpristina4.jpg";
+import pristina55 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Pristina/mobile/Mpristina5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const Pristina = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pristinskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={pristina1} alt="Priština 1" />
+      <img srcSet={`${pristina11} 400w, ${pristina1} `} alt="Priština 1" />
 
       <h2>Priština</h2>
 
@@ -37,7 +42,7 @@ export const Pristina = () => {
         Osmanskom Carstvu.
       </p>
 
-      <img src={pristina2} alt="Narodna biblioteka u Pristini" />
+      <img srcSet={`${pristina22} 400w, ${pristina2} `} alt="Narodna biblioteka u Pristini" />
 
       <p>
         Narodna i univerzitetska biblioteka „Ivo Andrić” predstavlja najvažniju
@@ -53,7 +58,7 @@ export const Pristina = () => {
         je nekoliko imena.
       </p>
 
-      <img src={pristina3} alt="Muzej Kosova i Metohije" />
+      <img srcSet={`${pristina33} 400w, ${pristina3} `} alt="Muzej Kosova i Metohije" />
 
       <p>
         Muzej Kosova i Metohije nalazi se u Prištini i osnovan je 1949. godine
@@ -70,7 +75,7 @@ export const Pristina = () => {
         starom jezgru gradskog centra.
       </p>
 
-      <img src={pristina4} alt="Noćni život u Prištini" />
+      <img srcSet={`${pristina44} 400w, ${pristina4} `} alt="Noćni život u Prištini" />
 
       <p>
         Noćni život u Prištini je živahna i dinamična, sa brojnim barovima,
@@ -83,7 +88,7 @@ export const Pristina = () => {
         scenu i nudi nešto za svakog.
       </p>
 
-      <img src={pristina5} alt="Park prirode Grmija" />
+      <img srcSet={`${pristina55} 400w, ${pristina5} `} alt="Park prirode Grmija" />
 
       <p>
         Park prirode Grmija smešten je na istočnom rubu Velikokosovske kotline,

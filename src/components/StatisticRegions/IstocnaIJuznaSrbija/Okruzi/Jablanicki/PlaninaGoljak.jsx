@@ -1,9 +1,15 @@
-import goljak1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/goljak1.jpg";
-import goljak2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/goljak2.jpg";
-import goljak3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/goljak3.jpg";
-import goljak4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/goljak4.jpg";
-import goljak5 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/goljak5.jpg";
-import goljak6 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/goljak6.jpg";
+import goljak1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/desktop/goljak1.jpg";
+import goljak2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/desktop/goljak2.jpg";
+import goljak3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/desktop/goljak3.jpg";
+import goljak4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/desktop/goljak4.jpg";
+import goljak5 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/desktop/goljak5.jpg";
+import goljak6 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/desktop/goljak6.jpg";
+import goljak11 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/mobile/goljakM1.jpg";
+import goljak22 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/mobile/goljakM2.jpg";
+import goljak33 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/mobile/goljakM3.jpg";
+import goljak44 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/mobile/goljakM4.jpg";
+import goljak55 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/mobile/goljakM5.jpg";
+import goljak66 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/Goljak/mobile/goljakM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const PlaninaGoljak = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(jablanickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={goljak1} alt="Planina Goljak 1" />
+      <img srcSet={`${goljak11} 400w, ${goljak1} `} alt="Planina Goljak 1" />
 
       <h2>Planina Goljak</h2>
 
@@ -31,7 +37,7 @@ export const PlaninaGoljak = () => {
         a dominiraju graniti i gnejsevi.
       </p>
 
-      <img src={goljak5} alt="Planina Goljak 2" />
+      <img srcSet={`${goljak55} 400w, ${goljak5} `} alt="Planina Goljak 2" />
 
       <p>
         Planinu odlikuju zaobljeni oblici, padine prekrivene šumama i mnoge
@@ -40,7 +46,7 @@ export const PlaninaGoljak = () => {
         izvorima vode temperature 72°C, kao i tragovi rudarskih aktivnosti.
       </p>
 
-      <img src={goljak3} alt="Planina Goljak 3" />
+      <img srcSet={`${goljak33} 400w, ${goljak3} `} alt="Planina Goljak 3" />
 
       <p>
         Do najvišeg vrha Lisica (1184 m) lako se dolazi iz pravca manastira
@@ -52,7 +58,7 @@ export const PlaninaGoljak = () => {
         neprepoznatljiv.
       </p>
 
-      <img src={goljak4} alt="Planina Goljak 4" />
+      <img srcSet={`${goljak44} 400w, ${goljak4} `} alt="Planina Goljak 4" />
 
       <p>
         Puta vodi kroz šumu bukve i hrasta sve do livade i izvora koji se nalazi
@@ -62,7 +68,7 @@ export const PlaninaGoljak = () => {
         gustom žbunovinom. Sa Lisice se pruža lep pogled na Kosovo.
       </p>
 
-      <img src={goljak2} alt="Ćorov vodopad" />
+      <img srcSet={`${goljak22} 400w, ${goljak2} `} alt="Ćorov vodopad" />
 
       <p>
         Ćorov vodopad se nalazi na Ćorovom potoku u ataru sela Petrilje, u
@@ -86,7 +92,7 @@ export const PlaninaGoljak = () => {
         posetioci lakše pronašli ovu prirodnu atrakciju.
       </p>
 
-      <img src={goljak6} alt="Sijarinska Banja" />
+      <img srcSet={`${goljak66} 400w, ${goljak6} `} alt="Sijarinska Banja" />
 
       <p>
         Sijarinska Banja je gradsko naselje u opštini Medveđa, u Jablaničkom

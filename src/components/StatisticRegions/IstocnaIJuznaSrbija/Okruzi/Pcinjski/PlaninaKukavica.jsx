@@ -1,8 +1,13 @@
-import kukavica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/planinaKukavica1.jpg";
-import kukavica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/planinaKukavica2.jpg";
-import kukavica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/planinaKukavica3.jpg";
-import kukavica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/planinaKukavica4.jpg";
-import kukavica5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/planinaKukavica5.jpg";
+import kukavica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/desktop/planinaKukavica1.jpg";
+import kukavica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/desktop/planinaKukavica2.jpg";
+import kukavica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/desktop/planinaKukavica3.jpg";
+import kukavica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/desktop/planinaKukavica4.jpg";
+import kukavica5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/desktop/planinaKukavica5.jpg";
+import kukavica11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/mobile/planinaKukavicaM1.jpg";
+import kukavica22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/mobile/planinaKukavicaM2.jpg";
+import kukavica33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/mobile/planinaKukavicaM3.jpg";
+import kukavica44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/mobile/planinaKukavicaM4.jpg";
+import kukavica55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/PlaninaKukavica/mobile/planinaKukavicaM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const PlaninaKukavica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pcinjskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={kukavica1} alt="Planina Kukavica 1" />
+      <img srcSet={`${kukavica11} 400w, ${kukavica1} `} alt="Planina Kukavica 1" />
 
       <h2>Planina Kukavica</h2>
 
@@ -28,7 +33,7 @@ export const PlaninaKukavica = () => {
         i opuštanja. Planina koja tek treba da doživi pravi procvat.
       </p>
 
-      <img src={kukavica2} alt="Planina Kukavica 2" />
+      <img srcSet={`${kukavica22} 400w, ${kukavica2} `} alt="Planina Kukavica 2" />
 
       <p>
         Prostrla se na teritoriji Vladičinog Hana, Leskovca i Vranja, između
@@ -40,7 +45,7 @@ export const PlaninaKukavica = () => {
         kupastih oblika ponekad smatraju zasebnim planinama.
       </p>
 
-      <img src={kukavica3} alt="Planina Kukavica 3" />
+      <img srcSet={`${kukavica33} 400w, ${kukavica3} `} alt="Planina Kukavica 3" />
 
       <p>
         Kukavica je prekrivena gustim šumama, pretežno bukovim i hrastovim, dok
@@ -51,7 +56,7 @@ export const PlaninaKukavica = () => {
         lekovitog i začinskog bilja.
       </p>
 
-      <img src={kukavica4} alt="Planina Kukavica 4" />
+      <img srcSet={`${kukavica44} 400w, ${kukavica4} `} alt="Planina Kukavica 4" />
 
       <p>
         Ništa manje bogat nije ni životinjski svet. Kukavica je stanište brojnih
@@ -63,7 +68,7 @@ export const PlaninaKukavica = () => {
         potencijala opštine Han.
       </p>
 
-      <img src={kukavica5} alt="Planina Kukavica 5" />
+      <img srcSet={`${kukavica55} 400w, ${kukavica5} `} alt="Planina Kukavica 5" />
 
       <p>
         Na obroncima Kukavice, iznad kanjona Vučjanske reke, na 550 metara

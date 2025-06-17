@@ -1,8 +1,13 @@
-import krupajskoVrelo1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/krupajskoVrelo1.jpg";
-import krupajskoVrelo2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/krupajskoVrelo2.jpg";
-import krupajskoVrelo3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/krupajskoVrelo3.jpg";
-import krupajskoVrelo4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/krupajskoVrelo4.jpg";
-import krupajskoVrelo5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/krupajskoVrelo5.jpg";
+import krupajskoVrelo1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/desktop/krupajskoVrelo1.jpg";
+import krupajskoVrelo2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/desktop/krupajskoVrelo2.jpg";
+import krupajskoVrelo3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/desktop/krupajskoVrelo3.jpg";
+import krupajskoVrelo4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/desktop/krupajskoVrelo4.jpg";
+import krupajskoVrelo5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/desktop/krupajskoVrelo5.jpg";
+import krupajskoVrelo11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/mobile/krupajskoVreloM1.jpg";
+import krupajskoVrelo22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/mobile/krupajskoVreloM2.jpg";
+import krupajskoVrelo33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/mobile/krupajskoVreloM3.jpg";
+import krupajskoVrelo44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/mobile/krupajskoVreloM4.jpg";
+import krupajskoVrelo55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/KrupajskoVrelo/mobile/krupajskoVreloM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const KrupajskoVrelo = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(branicevskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={krupajskoVrelo1} alt="Krupajsko Vrelo 1" />
+      <img srcSet={`${krupajskoVrelo11} 400w, ${krupajskoVrelo1} `} alt="Krupajsko Vrelo 1" />
 
       <h2>Krupajsko Vrelo</h2>
 
@@ -38,7 +43,7 @@ export const KrupajskoVrelo = () => {
         dodatno naglašavajući lepotu ovog prirodnog bisera.
       </p>
 
-      <img src={krupajskoVrelo4} alt="Krupajsko Vrelo 2" />
+      <img srcSet={`${krupajskoVrelo44} 400w, ${krupajskoVrelo4} `} alt="Krupajsko Vrelo 2" />
 
       <p>
         Speleoronilačkim istraživanjima iz 1998. godine, koja su predstavljala
@@ -48,7 +53,7 @@ export const KrupajskoVrelo = () => {
         krečnjačku sutjesku strmih strana i slapovitog korita.
       </p>
 
-      <img src={krupajskoVrelo3} alt="Krupajsko Vrelo 3" />
+      <img srcSet={`${krupajskoVrelo33} 400w, ${krupajskoVrelo3} `} alt="Krupajsko Vrelo 3" />
 
       <p>
         Hidrološki režim vrela i njegova izdašnost nisu dovoljno istraženi. Kao
@@ -65,7 +70,7 @@ export const KrupajskoVrelo = () => {
         bušotini.
       </p>
 
-      <img src={krupajskoVrelo2} alt="Krupajsko Vrelo 4" />
+      <img srcSet={`${krupajskoVrelo22} 400w, ${krupajskoVrelo2} `} alt="Krupajsko Vrelo 4" />
 
       <p>
         Krupajsko vrelo i njegov ambijent, koji obuhvata površinu od 9 hektara,
@@ -81,7 +86,7 @@ export const KrupajskoVrelo = () => {
         najreprezentativnija gravitaciona vrela u zemlji.
       </p>
 
-      <img src={krupajskoVrelo5} alt="Krupajsko Vrelo 5" />
+      <img srcSet={`${krupajskoVrelo55} 400w, ${krupajskoVrelo5} `} alt="Krupajsko Vrelo 5" />
       <p>
         Pored Krupajskog vrela nalazi se restoran koji nudi prijatan ambijent u
         prirodnom okruženju, sa pogledom na samo vrelo i njegovu kristalno čistu

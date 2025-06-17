@@ -1,13 +1,19 @@
-import kanjiza1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/Kanjiza1.jpg";
-import kanjiza2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/Kanjiza3.jpg";
-import kanjiza3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/Kanjiza4.jpg";
-import kanjiza4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/Kanjiza5.jpg";
-import kanjiza5 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/Kanjiza6.jpg";
+import kanjiza1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/desktop/Kanjiza1.jpg";
+import kanjiza2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/desktop/Kanjiza3.jpg";
+import kanjiza3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/desktop/Kanjiza4.jpg";
+import kanjiza4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/desktop/Kanjiza5.jpg";
+import kanjiza5 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/desktop/Kanjiza6.jpg";
+import kanjiza11 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/mobile/MKanjiza1.jpg";
+import kanjiza22 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/mobile/MKanjiza3.jpg";
+import kanjiza33 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/mobile/MKanjiza4.jpg";
+import kanjiza44 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/mobile/MKanjiza5.jpg";
+import kanjiza55 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/mobile/MKanjiza6.jpg";
 
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { severnoBanatskiPathRoutes } from "./SevernoBanatskiPathRoutes";
 
 export const Kanjiza = () => {
   const navigate = useNavigate();
@@ -15,9 +21,9 @@ export const Kanjiza = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(severnoBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={kanjiza2} alt="Kanjiza 1" />
+      <img srcSet={`${kanjiza22} 400w, ${kanjiza2} `} alt="Kanjiza 1" />
 
       <h2>
         Kanjiža i Terminalne vode
@@ -31,16 +37,16 @@ export const Kanjiza = () => {
         Horgoš).
       </p>
 
-      <img src={kanjiza3} alt="Kanjiza 2" />
+      <img srcSet={`${kanjiza33} 400w, ${kanjiza3} `} alt="Kanjiza 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Grad Kanjiža kao centar opštine se više ističe kao središte regionalnog
         značaja, čemu doprinose blizina reke Tise i graničnog prelaza Horgoš.
       </p>
 
-      <img src={kanjiza4} alt="Kanjiza 3" />
+      <img srcSet={`${kanjiza44} 400w, ${kanjiza4} `} alt="Kanjiza 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Upućenost na reku znači mnogo za slikovitost pejzaža, plovidbu, sportski
         ribolov, turizam i druge delatnosti. Bogato zemljište, gline, nafta,
         zemni gas i termalne vode su prirodna blaga na kojima se zasnivaju
@@ -49,8 +55,8 @@ export const Kanjiza = () => {
         turizam.
       </p>
 
-      <img src={kanjiza1} alt="Kanjiza 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${kanjiza11} 400w, ${kanjiza1} `} alt="Kanjiza 4" />
+      <p>
         Festival Vetrenjača u Oromu je jedinstveni događaj koji slavi tradiciju
         i kulturno nasleđe ovog kraja. Tokom festivala, posetioci mogu uživati u
         različitim manifestacijama, koncertima i radionicama, dok se posebno
@@ -60,8 +66,8 @@ export const Kanjiza = () => {
         naselja.
       </p>
 
-      <img src={kanjiza5} alt="Kanjiza 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${kanjiza55} 400w, ${kanjiza5} `} alt="Kanjiza 4" />
+      <p>
         Kajakaška regata u Kanjiži je popularna manifestacija koja okuplja
         ljubitelje kajakarenja i avanturističkog turizma. Takmičari i
         rekreativci plove rekama i kanalima, uživajući u prirodnim lepotama ovog

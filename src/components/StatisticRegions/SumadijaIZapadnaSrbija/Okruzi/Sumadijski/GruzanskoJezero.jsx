@@ -1,8 +1,13 @@
-import gruzanskoJezero1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/gruzanskoJezero1.jpg";
-import gruzanskoJezero2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/gruzanskoJezero2.jpg";
-import gruzanskoJezero3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/gruzanskoJezero3.jpg";
-import gruzanskoJezero4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/gruzanskoJezero4.jpg";
-import gruzanskoJezero5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/gruzanskoJezero5.jpg";
+import gruzanskoJezero1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/desktop/gruzanskoJezero1.jpg";
+import gruzanskoJezero2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/desktop/gruzanskoJezero2.jpg";
+import gruzanskoJezero3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/desktop/gruzanskoJezero3.jpg";
+import gruzanskoJezero4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/desktop/gruzanskoJezero4.jpg";
+import gruzanskoJezero5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/desktop/gruzanskoJezero5.jpg";
+import gruzanskoJezero11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/mobile/MgruzanskoJezero1.jpg";
+import gruzanskoJezero22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/mobile/MgruzanskoJezero2.jpg";
+import gruzanskoJezero33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/mobile/MgruzanskoJezero3.jpg";
+import gruzanskoJezero44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/mobile/MgruzanskoJezero4.jpg";
+import gruzanskoJezero55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/GruzanskoJezero/mobile/MgruzanskoJezero5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +24,7 @@ export const GruzanskoJezero = () => {
         onClick={() => navigate(-1)}
       />
       <header></header>
-      <img src={gruzanskoJezero1} alt="Gružansko jezero 1" />
+      <img srcSet={`${gruzanskoJezero11} 400w, ${gruzanskoJezero1} `} alt="Gružansko jezero 1" />
 
       <h2>Gružansko jezero</h2>
 
@@ -31,7 +36,7 @@ export const GruzanskoJezero = () => {
         1983. godine.
       </p>
 
-      <img src={gruzanskoJezero2} alt="Gružansko jezero 2" />
+      <img srcSet={`${gruzanskoJezero22} 400w, ${gruzanskoJezero2} `} alt="Gružansko jezero 2" />
 
       <p>
         Gružansko jezero je domaćin velikom broju prelepih ptica, sa 87
@@ -46,7 +51,7 @@ export const GruzanskoJezero = () => {
         aktivnosti.
       </p>
 
-      <img src={gruzanskoJezero3} alt="Gružansko jezero 3" />
+      <img srcSet={`${gruzanskoJezero33} 400w, ${gruzanskoJezero3} `} alt="Gružansko jezero 3" />
 
       <p>
         Na Gružanskom jezeru često se organizuju takmičenja u ribolovu. Jezero
@@ -62,7 +67,7 @@ export const GruzanskoJezero = () => {
         „Srbija-jugozapad“.
       </p>
 
-      <img src={gruzanskoJezero4} alt="Gružansko jezero 4"/>
+      <img srcSet={`${gruzanskoJezero44} 400w, ${gruzanskoJezero4} `} alt="Gružansko jezero 4"/>
 
       <p>
         Jezero se prostire na 900 hektara, sa obimom od oko 40 kilometara, a
@@ -73,7 +78,7 @@ export const GruzanskoJezero = () => {
         M-23 (Kragujevac – Čačak) kako bi se omogućio nesmetan saobraćaj.
       </p>
 
-      <img src={gruzanskoJezero5} alt="Gružansko jezero 5" />
+      <img srcSet={`${gruzanskoJezero55} 400w, ${gruzanskoJezero5} `} alt="Gružansko jezero 5" />
 
       <p>
         2019. godine, Gružansko jezero bilo je domaćin 6. Evropskog prvenstva u

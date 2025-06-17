@@ -1,8 +1,13 @@
-import guca1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/guca1.jpg";
-import guca2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/guca2.jpg";
-import guca3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/guca3.jpg";
-import guca4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/guca4.jpg";
-import guca5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/guca5.jpg";
+import guca1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/desktop/guca1.jpg";
+import guca2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/desktop/guca2.jpg";
+import guca3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/desktop/guca3.jpg";
+import guca4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/desktop/guca4.jpg";
+import guca5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/desktop/guca5.jpg";
+import guca11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/mobile/Mguca1.jpg";
+import guca22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/mobile/Mguca2.jpg";
+import guca33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/mobile/Mguca3.jpg";
+import guca44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/mobile/Mguca4.jpg";
+import guca55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/Guca/mobile/Mguca5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const Guca = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(moravickiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={guca1} alt="Guča" />
+      <img srcSet={`${guca11} 400w, ${guca1} `} alt="Guča" />
 
       <h2>Guča</h2>
 
@@ -28,7 +33,7 @@ export const Guca = () => {
         trubača.
       </p>
 
-      <img src={guca3} alt="Guča2 " /> 
+      <img srcSet={`${guca33} 400w, ${guca3} `} alt="Guča2 " /> 
 
       <p>
         Guča se prvi put pominje u turskom katastarskom popisu iz 1476. godine.
@@ -42,7 +47,7 @@ export const Guca = () => {
         kneza Miloša Obrenovića.
       </p>
 
-      <img src={guca2} alt="Guča 3" />
+      <img srcSet={`${guca22} 400w, ${guca2} `} alt="Guča 3" />
 
       <p>
         Dragačevski sabor je godišnji festival trubača koji se održava u Guči, u
@@ -53,7 +58,7 @@ export const Guca = () => {
         festivalu snimljeno je nekoliko dokumentarnih filmova.
       </p>
 
-      <img src={guca4} alt="Guča 4" />
+      <img srcSet={`${guca44} 400w, ${guca4} `} alt="Guča 4" />
 
       <p>
         Prvi Dragačevski sabor u Guči započeo je skromno, sredinom oktobra 1961.
@@ -63,7 +68,7 @@ export const Guca = () => {
         je festivalu dao ime Veliki (narodni) sabor „Sa Ovčara i Kablara“.
       </p>
 
-      <img src={guca5} alt="Guča 5" />
+      <img srcSet={`${guca55} 400w, ${guca5} `} alt="Guča 5" />
 
       <p>
         Za festival su zaslužni i muzički entuzijasti Miodrag Vasiljević,

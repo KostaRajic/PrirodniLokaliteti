@@ -1,11 +1,19 @@
-import staraPlaina1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/staraPlanina1.jpg";
-import staraPlaina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/staraPlanina2.jpg";
-import staraPlaina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/staraPlanina3.jpg";
-import staraPlaina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/staraPlanina4.jpg";
-import staraPlaina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/staraPlanina5.jpg";
-import staraPlaina6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/staraPlanina6.jpg";
-import staraPlaina7 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/staraPlanina7.jpg";
-import staraPlaina8 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/staraPlanina8.jpg";
+import staraPlaina1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/desktop/staraPlanina1.jpg";
+import staraPlaina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/desktop/staraPlanina2.jpg";
+import staraPlaina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/desktop/staraPlanina3.jpg";
+import staraPlaina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/desktop/staraPlanina4.jpg";
+import staraPlaina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/desktop/staraPlanina5.jpg";
+import staraPlaina6 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/desktop/staraPlanina6.jpg";
+import staraPlaina7 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/desktop/staraPlanina7.jpg";
+import staraPlaina8 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/desktop/staraPlanina8.jpg";
+import staraPlaina11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/mobile/staraPlaninaM1.jpg";
+import staraPlaina22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/mobile/staraPlaninaM2.jpg";
+import staraPlaina33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/mobile/staraPlaninaM3.jpg";
+import staraPlaina44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/mobile/staraPlaninaM4.jpg";
+import staraPlaina55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/mobile/staraPlaninaM5.jpg";
+import staraPlaina66 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/mobile/staraPlaninaM6.jpg";
+import staraPlaina77 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/mobile/staraPlaninaM7.jpg";
+import staraPlaina88 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/StaraPlanina/mobile/staraPlaninaM8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +28,7 @@ export const StaraPlanina = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={staraPlaina1} alt="Stara Planina 1" />
+      <img srcSet={`${staraPlaina11} 400w, ${staraPlaina1} `} alt="Stara Planina 1" />
 
       <h2>Nacionalni Park "Stara Planina"</h2>
 
@@ -35,7 +43,7 @@ export const StaraPlanina = () => {
         blaže i pitomije.
       </p>
 
-      <img src={staraPlaina2} alt="Babin Zub" />
+      <img srcSet={`${staraPlaina22} 400w, ${staraPlaina2} `} alt="Babin Zub" />
 
       <p>
         Babin zub je jedan od vrhova planinskog masiva Stara planina, koji se
@@ -66,7 +74,7 @@ export const StaraPlanina = () => {
         pastrmkom i idealne su za ribolov.
       </p>
 
-      <img src={staraPlaina3} alt="Vrh Kopren - Stara Planina" />
+      <img srcSet={`${staraPlaina33} 400w, ${staraPlaina3} `} alt="Vrh Kopren - Stara Planina" />
 
       <p>
         Kopren je vrh na Staroj planini, sa visinom od 1963 m, a ujedno
@@ -81,7 +89,7 @@ export const StaraPlanina = () => {
       </p>
 
       <img
-        src={staraPlaina4}
+       srcSet={`${staraPlaina44} 400w, ${staraPlaina4} `}
         alt="Slavinjsko grlo, ili Rosomački lonci - Stara Planina"
       />
 
@@ -104,7 +112,7 @@ export const StaraPlanina = () => {
         sve ljubitelje prirode.
       </p>
 
-      <img src={staraPlaina5} alt="Stara Planina" />
+      <img srcSet={`${staraPlaina55} 400w, ${staraPlaina5} `} alt="Stara Planina" />
 
       <p>
         Masiv Stare planine smešten je u istočnom delu Karpato-balkanskog
@@ -118,7 +126,7 @@ export const StaraPlanina = () => {
         nalaze na teritoriji Srbije.
       </p>
 
-      <img src={staraPlaina6} alt="Čunguljski vodopad" />
+      <img srcSet={`${staraPlaina66} 400w, ${staraPlaina6} `} alt="Čunguljski vodopad" />
 
       <p>
         Čunguljski vodopad je jedan od najlepših i najimpresivnijih vodopada na
@@ -142,7 +150,7 @@ export const StaraPlanina = () => {
         čineći ga još impozantnijim.
       </p>
 
-      <img src={staraPlaina7} alt="Toplodolska reka" />
+      <img srcSet={`${staraPlaina77} 400w, ${staraPlaina7} `} alt="Toplodolska reka" />
 
       <p>
         Toplodolska reka je druga najvažnija pritoka (sastavnica) u slivu
@@ -154,7 +162,7 @@ export const StaraPlanina = () => {
         pripada opštini Pirot u Pirotskom upravnom okrugu.
       </p>
 
-      <img src={staraPlaina8} alt="Midzor" />
+      <img srcSet={`${staraPlaina88} 400w, ${staraPlaina8} `} alt="Midzor" />
 
       <p>
         Miđor je najviši vrh Stare planine u Srbiji, a ujedno i najviši vrh

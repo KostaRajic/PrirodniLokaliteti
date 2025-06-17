@@ -1,8 +1,13 @@
-import prokletije1 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/prokletije1.jpg";
-import prokletije2 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/prokletije2.jpg";
-import prokletije3 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/prokletije3.jpg";
-import prokletije4 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/prokletije4.jpg";
-import prokletije5 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/prokletije5.jpg";
+import prokletije1 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/desktop/prokletije1.jpg";
+import prokletije2 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/desktop/prokletije2.jpg";
+import prokletije3 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/desktop/prokletije3.jpg";
+import prokletije4 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/desktop/prokletije4.jpg";
+import prokletije5 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/desktop/prokletije5.jpg";
+import prokletije11 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/mobile/Mprokletije1.jpg";
+import prokletije22 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/mobile/Mprokletije2.jpg";
+import prokletije33 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/mobile/Mprokletije3.jpg";
+import prokletije44 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/mobile/Mprokletije4.jpg";
+import prokletije55 from "../../../../../assets/images/KosovoIMetohija/Djakovicki/Prokletije/mobile/Mprokletije5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const Prokletije = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(djakovickiOkrugPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={prokletije1} alt="Planina Prokletije 1" />
+      <img srcSet={`${prokletije11} 400w, ${prokletije1} `} alt="Planina Prokletije 1" />
 
       <h2>Planina Prokletije</h2>
 
@@ -33,7 +38,7 @@ export const Prokletije = () => {
         krečnjaci, argilozisti, peskari i konglomerati.
       </p>
 
-      <img src={prokletije2} alt="Planina Prokletije 2" />
+      <img srcSet={`${prokletije22} 400w, ${prokletije2} `} alt="Planina Prokletije 2" />
 
       <p>
         Prokletije su u prošlosti imale različite nazive: „Beriseldi“,
@@ -54,7 +59,7 @@ export const Prokletije = () => {
         opasnosti i dr.).
       </p>
 
-      <img src={prokletije3} alt="Planina Prokletije 3" />
+      <img srcSet={`${prokletije33} 400w, ${prokletije3} `} alt="Planina Prokletije 3" />
 
       <p>
         Đeravica, sa 2.656 metara nadmorske visine, drugi je najviši vrh Srbije.
@@ -68,7 +73,7 @@ export const Prokletije = () => {
         vodozemaca iz porodice salamandriida, koji se hrane letećim insektima.
       </p>
 
-      <img src={prokletije4} alt="Planina Prokletije 4" />
+      <img srcSet={`${prokletije44} 400w, ${prokletije4} `} alt="Planina Prokletije 4" />
 
       <p>
         U geografskom istraživanju, preovlađuju mišljenja da su Prokletije
@@ -81,7 +86,7 @@ export const Prokletije = () => {
         su facijalno-stratigrafski karakter i pravac pružanja glavnog grebena.
       </p>
 
-      <img src={prokletije5} alt="Planina Prokletije 4" />
+      <img srcSet={`${prokletije55} 400w, ${prokletije5} `} alt="Planina Prokletije 4" />
 
       <p>
         Na Prokletijama se javlja specifična hidrografija, koja je uglavnom

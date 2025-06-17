@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { severnoBackiData } from "./SevernoBackiData";
+import { servernoBackiPathRoutes } from "./SevernoBackiPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const SevernoBacki = () => {
   const [slide, setSlide] = useState(0);
@@ -19,17 +21,17 @@ export const SevernoBacki = () => {
 
   const readMore = (name) => {
     if (name === "Palićko jezero") {
-      navigate("PalickoJezero");
+      navigate(servernoBackiPathRoutes.palickoJezero);
     } else if (name === "Subotica") {
-      navigate("Subotica");
+      navigate(servernoBackiPathRoutes.subotica);
     } else if (name === "Tisa - rečna i prirodna oaza") {
-      navigate("Tisa");
+      navigate(servernoBackiPathRoutes.rekaTisa);
     } else if (name === "Subotička peščara") {
-      navigate("SubotickaPescara");
+      navigate(servernoBackiPathRoutes.subotickaPescara);
     } else if (name === "Bačka Topola") {
-      navigate("BackaTopola");
+      navigate(servernoBackiPathRoutes.backaTopola);
     } else if (name === "Bačkotopolsko Jezero") {
-      navigate("BackoTopolskoJezero");
+      navigate(servernoBackiPathRoutes.backoTopolskoJezero);
     }
   };
 
@@ -38,7 +40,7 @@ export const SevernoBacki = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.Vojvodina)}
           style={{ fill: "white"}}
         />
       </header>

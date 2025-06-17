@@ -1,9 +1,15 @@
-import kopaonik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/kopaonik1.jpg";
-import kopaonik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/kopaonik2.jpg";
-import kopaonik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/kopaonik3.jpg";
-import kopaonik4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/kopaonik4.jpg";
-import kopaonik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/kopaonik5.jpg";
-import kopaonik6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/kopaonik7.jpg";
+import kopaonik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/desktop/kopaonik1.jpg";
+import kopaonik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/desktop/kopaonik2.jpg";
+import kopaonik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/desktop/kopaonik3.jpg";
+import kopaonik4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/desktop/kopaonik4.jpg";
+import kopaonik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/desktop/kopaonik5.jpg";
+import kopaonik6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/desktop/kopaonik7.jpg";
+import kopaonik11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/mobile/Mkopaonik1.jpg";
+import kopaonik22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/mobile/Mkopaonik2.jpg";
+import kopaonik33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/mobile/Mkopaonik3.jpg";
+import kopaonik44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/mobile/Mkopaonik4.jpg";
+import kopaonik55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/mobile/Mkopaonik5.jpg";
+import kopaonik66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik/mobile/Mkopaonik7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const PlaninaKopaonik = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={kopaonik1} alt="Planina Kopaonik 1" />
+      <img srcSet={`${kopaonik11} 400w, ${kopaonik1} `} alt="Planina Kopaonik 1" />
 
       <h2 style={{ color: "white" }}>Planina Kopaonik</h2>
 
@@ -35,7 +41,7 @@ export const PlaninaKopaonik = () => {
         se većina njenog površinskog područja prostire.
       </p>
 
-      <img src={kopaonik2} alt="Planina Kopaonik 2" />
+      <img srcSet={`${kopaonik22} 400w, ${kopaonik2} `} alt="Planina Kopaonik 2" />
 
       <p>
         Osim imena Srebrna planina, Kopaonik je poznat i kao Sunčana planina,
@@ -48,7 +54,7 @@ export const PlaninaKopaonik = () => {
         Celzijusa.
       </p>
 
-      <img src={kopaonik3} alt="Planina Kopaonik 3" />
+      <img srcSet={`${kopaonik33} 400w, ${kopaonik3} `} alt="Planina Kopaonik 3" />
 
       <p>
         Kopaonik je postao popularno mesto za skijaška takmičenja još 1935.
@@ -61,7 +67,7 @@ export const PlaninaKopaonik = () => {
         centra.
       </p>
 
-      <img src={kopaonik4} alt="Planina Kopaonik 4" />
+      <img srcSet={`${kopaonik44} 400w, ${kopaonik4} `} alt="Planina Kopaonik 4" />
 
       <p>
         Kopaonik nudi širok izbor smeštaja, uključujući hotele, vile, privatne
@@ -73,7 +79,7 @@ export const PlaninaKopaonik = () => {
         Kopaoniku ćete sigurno pronaći odgovarajući smeštaj.
       </p>
 
-      <img src={kopaonik5} alt="Planina Kopaonik 5" />
+      <img srcSet={`${kopaonik55} 400w, ${kopaonik5} `} alt="Planina Kopaonik 5" />
 
       <p>
         Sezona skijanja na Kopaoniku traje obično od početka decembra pa sve do
@@ -97,7 +103,7 @@ export const PlaninaKopaonik = () => {
         nauče da skijaju.
       </p>
 
-      <img src={kopaonik6} alt="Planina Kopaonik 6" />
+      <img srcSet={`${kopaonik66} 400w, ${kopaonik6} `} alt="Planina Kopaonik 6" />
 
       <p>
         Za sve koji žele da naprave pauzu od skijanja ili da u svoj boravak na

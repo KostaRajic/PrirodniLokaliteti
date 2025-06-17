@@ -1,13 +1,20 @@
-import pescara1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/pescara1.jpg";
-import pescara2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/pescara2.jpg";
-import pescara3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/pescara3.jpg";
-import pescara4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/pescara4.jpg";
-import pescara5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/pescara5.jpg";
-import pescara6 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/pescara6.jpg";
+import pescara1 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/desktop/pescara1.jpg";
+import pescara2 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/desktop/pescara2.jpg";
+import pescara3 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/desktop/pescara3.jpg";
+import pescara4 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/desktop/pescara4.jpg";
+import pescara5 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/desktop/pescara5.jpg";
+import pescara6 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/desktop/pescara6.jpg";
+import pescara11 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/mobile/Mpescara1.jpg";
+import pescara22 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/mobile/Mpescara2.jpg";
+import pescara33 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/mobile/Mpescara3.jpg";
+import pescara44 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/mobile/Mpescara4.jpg";
+import pescara55 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/mobile/Mpescara5.jpg";
+import pescara66 from "../../../../../assets/images/Vojvodina/SevernoBackiOkrug/SubotickaPescara/mobile/Mpescara6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { servernoBackiPathRoutes } from "./SevernoBackiPathRoutes";
 
 export const SubotickaPescara = () => {
   const navigate = useNavigate();
@@ -15,9 +22,9 @@ export const SubotickaPescara = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop/>
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(servernoBackiPathRoutes.home)} />
       <header></header>
-      <img src={pescara1} alt="Suboticka Pescara 1" />
+      <img srcSet={`${pescara11} 400w, ${pescara1} `} alt="Suboticka Pescara 1" />
 
       <h2>
       Suboticka Peščara
@@ -33,9 +40,9 @@ export const SubotickaPescara = () => {
         zapad.
       </p>
 
-      <img src={pescara4} alt="Suboticka Pescara 2" />
+      <img srcSet={`${pescara44} 400w, ${pescara4} `} alt="Suboticka Pescara 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Ovo područje ima karakter šumo-stepe, sa šumskim kompleksima, većinom
         antropogenog porekla. Prirodna vrednost je uslovljena karakterom i
         mozaičnošću staništa, među kojima peščarska, stepska i močvarna, daju
@@ -45,9 +52,9 @@ export const SubotickaPescara = () => {
         Evropi i svetu.
       </p>
 
-      <img src={pescara2} alt="Suboticka Pescara 3" />
+      <img srcSet={`${pescara22} 400w, ${pescara2} `} alt="Suboticka Pescara 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Flora i vegetacija ovog područja imaju odlike šumo-stepe odnosno čine
         mozaik šumskih zajedica i stepskih fitocenoza. Od drvenastih vrsta to su
         pre svega autohtone sastojine hrasta lužnjaka i manje oaze bele i sive
@@ -62,8 +69,8 @@ export const SubotickaPescara = () => {
         šafranjika (Bulbocodium versicolor) koja je sinoim za ovu peščaru.
       </p>
 
-      <img src={pescara3} alt="Suboticka Pescara 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${pescara33} 400w, ${pescara3} `} alt="Suboticka Pescara 4" />
+      <p>
         Među očuvanim prirodnim retkostima, mora se pomenuti reliktna
         šumo-stepska biljka – šafranjika, koja je sinonim za floru Subotičke
         peščare, s obzirom da je tu njeno jedino nalazište u Vojvodini i Srbiji.
@@ -72,9 +79,8 @@ export const SubotickaPescara = () => {
       </p>
 
       <img
-        src={pescara5}
+        srcSet={`${pescara55} 400w, ${pescara5} `}
         alt="Suboticka Pescara 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Peščara je sve popularnija destinacija za ljubitelje prirode, turiste,

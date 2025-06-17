@@ -1,12 +1,18 @@
-import sotsko1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/sotskoJezero2.jpg";
-import sotsko2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/sotskoJezero3.jpg";
-import sotsko3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/sotskoJezero4.jpg";
-import sotsko4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/sotskoJezero5.jpg";
-import sotsko5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/sotskoJezero6.jpg";
+import sotsko1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/desktop/sotskoJezero2.jpg";
+import sotsko2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/desktop/sotskoJezero3.jpg";
+import sotsko3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/desktop/sotskoJezero4.jpg";
+import sotsko4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/desktop/sotskoJezero5.jpg";
+import sotsko5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/desktop/sotskoJezero6.jpg";
+import sotsko11 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/mobile/MsotskoJezero2.jpg";
+import sotsko22 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/mobile/MsotskoJezero3.jpg";
+import sotsko33 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/mobile/MsotskoJezero4.jpg";
+import sotsko44 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/mobile/MsotskoJezero5.jpg";
+import sotsko55 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SotskoJezero/mobile/MsotskoJezero6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 
 export const SotskoJezero = () => {
   const navigate = useNavigate();
@@ -14,9 +20,9 @@ export const SotskoJezero = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(sremskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={sotsko1} alt="Sotsko Jezero 1" />
+      <img srcSet={`${sotsko11} 400w, ${sotsko1} `} alt="Sotsko Jezero 1" />
 
       <h2>Sotsko Jezero</h2>
 
@@ -29,7 +35,7 @@ export const SotskoJezero = () => {
         netaknuta priroda pružaju idealne uslove za beg od svakodnevnog života.
       </p>
 
-      <img src={sotsko2} alt="Sotsko Jezero 2" />
+      <img srcSet={`${sotsko22} 400w, ${sotsko2} `} alt="Sotsko Jezero 2" />
 
       <p>
         Prelepi pejzaži koji se prostiru do horizonta pružaju osećaj mira i
@@ -44,7 +50,7 @@ export const SotskoJezero = () => {
         svom putu u potragu za hranom.
       </p>
 
-      <img src={sotsko3} alt="Sotsko Jezero 3" />
+      <img srcSet={`${sotsko33} 400w, ${sotsko3} `} alt="Sotsko Jezero 3" />
       <p>
         Uživajte u pesmi brojnih ptica kao što su grmuše, senice i slavuje, dok
         tropski šareno krilo pčelarica i vodomara donosi dodatnu magiju prirode.
@@ -57,7 +63,7 @@ export const SotskoJezero = () => {
         fotoaparate posetilaca.
       </p>
 
-      <img src={sotsko4} alt="Sotsko Jezero 4" />
+      <img srcSet={`${sotsko44} 400w, ${sotsko4} `} alt="Sotsko Jezero 4" />
       <p>
         Kada poželite da se opustite nakon šetnje, raširite svoje ćebe na sveže
         pokošenu travu u šljiviku ili se smestite na obalu ispod vrba i uživajte
@@ -73,7 +79,7 @@ export const SotskoJezero = () => {
         odmah pored plaže.
       </p>
 
-      <img src={sotsko5} alt="Sotsko Jezero 5" />
+      <img srcSet={`${sotsko55} 400w, ${sotsko5} `} alt="Sotsko Jezero 5" />
 
       <p>
         Ako odlučite da prošetate duž obale, na oko 300 metara od plaže pronaći

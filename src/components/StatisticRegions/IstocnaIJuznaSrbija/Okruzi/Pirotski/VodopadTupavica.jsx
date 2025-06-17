@@ -1,7 +1,11 @@
-import vodopadTupavica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/vodopadTupavica1.jpg";
-import vodopadTupavica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/vodopadTupavica2.jpg";
-import vodopadTupavica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/vodopadTupavica3.jpg";
-import vodopadTupavica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/vodopadTupavica4.jpg";
+import vodopadTupavica1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/desktop/vodopadTupavica1.jpg";
+import vodopadTupavica2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/desktop/vodopadTupavica2.jpg";
+import vodopadTupavica3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/desktop/vodopadTupavica3.jpg";
+import vodopadTupavica4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/desktop/vodopadTupavica4.jpg";
+import vodopadTupavica11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/mobile/vodopadTupavicaM1.jpg";
+import vodopadTupavica22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/mobile/vodopadTupavicaM2.jpg";
+import vodopadTupavica33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/mobile/vodopadTupavicaM3.jpg";
+import vodopadTupavica44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/VodopadTupavica/mobile/vodopadTupavicaM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const VodopadTupavica = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={vodopadTupavica1} alt="Vodopad Tupavica 1" />
+      <img srcSet={`${vodopadTupavica11} 400w, ${vodopadTupavica1} `} alt="Vodopad Tupavica 1" />
 
       <h2>Vodopad Tupavica</h2>
 
@@ -28,7 +32,7 @@ export const VodopadTupavica = () => {
         sa visine od oko 15 metara preko stena crvene boje.
       </p>
 
-      <img src={vodopadTupavica2} alt="Vodopad Tupavica 2" />
+      <img srcSet={`${vodopadTupavica22} 400w, ${vodopadTupavica2} `} alt="Vodopad Tupavica 2" />
 
       <p>
         Vodopad Tupavica nalazi se u blizini sela Dojkinci na Dojkinčkoj reci,
@@ -38,7 +42,7 @@ export const VodopadTupavica = () => {
         potrebno je sat i po vremena.
       </p>
 
-      <img src={vodopadTupavica3} alt="Vodopad Tupavica 3" />
+      <img srcSet={`${vodopadTupavica33} 400w, ${vodopadTupavica3} `} alt="Vodopad Tupavica 3" />
 
       <p>
         Vodopad Tupavica ima veliki turistički značaj, kako zbog svog položaja u
@@ -48,7 +52,7 @@ export const VodopadTupavica = () => {
         najtoplijeg perioda voda samo kaplje preko stena.
       </p>
 
-      <img src={vodopadTupavica4} alt="Vodopad Tupavica 4" />
+      <img srcSet={`${vodopadTupavica44} 400w, ${vodopadTupavica4} `} alt="Vodopad Tupavica 4" />
 
       <p>
         U optimalnim uslovima, tokom proleća i leta, vodopad se prikazuje u

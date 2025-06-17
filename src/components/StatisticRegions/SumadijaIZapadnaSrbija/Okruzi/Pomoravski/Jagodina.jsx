@@ -1,11 +1,19 @@
-import jagodina1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina1.jpg";
-import jagodina2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina2.jpg";
-import jagodina3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina3.jpg";
-import jagodina4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina4.jpg";
-import jagodina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina5.jpg";
-import jagodina6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina6.jpg";
-import jagodina7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina7.jpg";
-import jagodina8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/jagodina8.jpg";
+import jagodina1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/desktop/jagodina1.jpg";
+import jagodina2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/desktop/jagodina2.jpg";
+import jagodina3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/desktop/jagodina3.jpg";
+import jagodina4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/desktop/jagodina4.jpg";
+import jagodina5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/desktop/jagodina5.jpg";
+import jagodina6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/desktop/jagodina6.jpg";
+import jagodina7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/desktop/jagodina7.jpg";
+import jagodina8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/desktop/jagodina8.jpg";
+import jagodina11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/mobile/Mjagodina1.jpg";
+import jagodina22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/mobile/Mjagodina2.jpg";
+import jagodina33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/mobile/Mjagodina3.jpg";
+import jagodina44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/mobile/Mjagodina4.jpg";
+import jagodina55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/mobile/Mjagodina5.jpg";
+import jagodina66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/mobile/Mjagodina6.jpg";
+import jagodina77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/mobile/Mjagodina7.jpg";
+import jagodina88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina/mobile/Mjagodina8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +32,7 @@ export const Jagodina = () => {
 
       />
       <header></header>
-      <img src={jagodina2} alt="Jagodina" />
+      <img srcSet={`${jagodina22} 400w, ${jagodina2} `} alt="Jagodina" />
 
       <h2 style={{ color: "white" }}>Jagodina</h2>
 
@@ -40,7 +48,7 @@ export const Jagodina = () => {
         najviša tačka je Đurđev brdo sa 213 m.
       </p>
 
-      <img src={jagodina1} alt="Jagodina Djurdjevo Brdo Vodopad" />
+      <img srcSet={`${jagodina11} 400w, ${jagodina1} `} alt="Jagodina Djurdjevo Brdo Vodopad" />
 
       <p>
         Dana 22. septembra 1946. godine, odlukom opštine, Jagodina je dobila ime
@@ -60,7 +68,7 @@ export const Jagodina = () => {
         utrina, a nekada davno – Jagodina livada.
       </p>
 
-      <img src={jagodina3} alt="Park na Djurdjevom brdu" />
+      <img srcSet={`${jagodina33} 400w, ${jagodina3} `} alt="Park na Djurdjevom brdu" />
 
       <p>
         Šetalište Potok "Đurđevo brdo" je prelep i pažljivo uređen park sa
@@ -74,7 +82,7 @@ export const Jagodina = () => {
         šoping centar VIVO.
       </p>
 
-      <img src={jagodina4} alt="Akva Park Jagodina" />
+      <img srcSet={`${jagodina44} 400w, ${jagodina4} `} alt="Akva Park Jagodina" />
 
       <p>
         Akva park u Jagodini, prvi takav park u Srbiji, otvoren je 2007. godine.
@@ -99,7 +107,7 @@ export const Jagodina = () => {
         osveženju. U baru čak možete naručiti piće dok ste u vodi.
       </p>
 
-      <img src={jagodina5} alt="Zavičajni muzej u Jagodini" />
+      <img srcSet={`${jagodina55} 400w, ${jagodina5} `} alt="Zavičajni muzej u Jagodini" />
 
       <p>
         Zavičajni muzej u Jagodini postao je značajna kulturna institucija u
@@ -116,7 +124,7 @@ export const Jagodina = () => {
         učitelja mladog kneza Milana Obrenovića.
       </p>
 
-      <img src={jagodina6} alt="VIVO shopping PARK u Jagodini" />
+      <img srcSet={`${jagodina66} 400w, ${jagodina6} `} alt="VIVO shopping PARK u Jagodini" />
 
       <p>
         VIVO shopping PARK prostire se na 25.000 m², dok sam objekat zauzima
@@ -133,7 +141,7 @@ export const Jagodina = () => {
         linije i pristupačne cene.
       </p>
 
-      <img src={jagodina7} alt="Muzej naivne i marginalne umetnosti u Jagodini" />
+      <img srcSet={`${jagodina77} 400w, ${jagodina7} `} alt="Muzej naivne i marginalne umetnosti u Jagodini" />
 
       <p>
         Muzej naivne i marginalne umetnosti u Jagodini predstavlja kulturnu
@@ -147,7 +155,7 @@ export const Jagodina = () => {
         se u srcu gradskog parka, pored glavnog šetališta.
       </p>
 
-      <img src={jagodina8} alt="Zoološki vrt u Jagodini" />
+      <img srcSet={`${jagodina88} 400w, ${jagodina8} `} alt="Zoološki vrt u Jagodini" />
 
       <p>
         Zoološki vrt u Jagodini jedan je od četiri zoološka vrta u Srbiji i

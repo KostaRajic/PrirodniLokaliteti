@@ -1,14 +1,22 @@
-import sMitrovica1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica5.jpg";
-import sMitrovica2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica2.jpg";
-import sMitrovica3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica3.jpg";
-import sMitrovica4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica4.jpg";
-import sMitrovica5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica8.jpg";
-import sMitrovica6 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica6.jpg";
-import sMitrovica7 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/sMitrovica7.jpg";
+import sMitrovica1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/desktop/sMitrovica5.jpg";
+import sMitrovica2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/desktop/sMitrovica2.jpg";
+import sMitrovica3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/desktop/sMitrovica3.jpg";
+import sMitrovica4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/desktop/sMitrovica4.jpg";
+import sMitrovica5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/desktop/sMitrovica8.jpg";
+import sMitrovica6 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/desktop/sMitrovica6.jpg";
+import sMitrovica7 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/desktop/sMitrovica7.jpg";
+import sMitrovica11 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/mobile/MsMitrovica5.jpg";
+import sMitrovica22 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/mobile/MsMitrovica2.jpg";
+import sMitrovica33 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/mobile/MsMitrovica3.jpg";
+import sMitrovica44 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/mobile/MsMitrovica4.jpg";
+import sMitrovica55 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/mobile/MsMitrovica8.jpg";
+import sMitrovica66 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/mobile/MsMitrovica6.jpg";
+import sMitrovica77 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SremskaMitrovica/mobile/MsMitrovica7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 
 export const SremskaMitrovica = () => {
   const navigate = useNavigate();
@@ -16,9 +24,9 @@ export const SremskaMitrovica = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(sremskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={sMitrovica7} alt="Sremska Mitrovica 1" />
+      <img srcSet={`${sMitrovica77} 400w, ${sMitrovica7} `} alt="Sremska Mitrovica 1" />
 
       <h2>Sremska Mitrovica</h2>
 
@@ -33,7 +41,7 @@ export const SremskaMitrovica = () => {
         iskustava koja čekaju da ih doživite.
       </p>
 
-      <img src={sMitrovica3} alt="Sremska Mitrovica Muzej Srema" />
+      <img srcSet={`${sMitrovica33} 400w, ${sMitrovica3} `} alt="Sremska Mitrovica Muzej Srema" />
 
       <p>
         Muzej Srema u Sremskoj Mitrovici čuva i prikazuje kulturno nasleđe ovog
@@ -45,7 +53,7 @@ export const SremskaMitrovica = () => {
         iz prošlosti ovog kraja.
       </p>
 
-      <img src={sMitrovica5} alt="Ruinе ekonomskog dela Carske palate" />
+      <img srcSet={`${sMitrovica55} 400w, ${sMitrovica5} `} alt="Ruinе ekonomskog dela Carske palate" />
       <p>
         Ruinе ekonomskog dela Carske palate iz doba starog Rima nalaze se u
         gradskom središtu Sremske Mitrovice, na arheološkom lokalitetu Sirmijum.
@@ -56,7 +64,7 @@ export const SremskaMitrovica = () => {
         govore o velikoj moći i bogatstvu Sirmijuma u to vreme.
       </p>
 
-      <img src={sMitrovica4} alt="Fontana Kameni cvet Sremska Mitrovica" />
+      <img srcSet={`${sMitrovica44} 400w, ${sMitrovica4} `} alt="Fontana Kameni cvet Sremska Mitrovica" />
       <p>
         Fontana Kameni cvet se nalazi u centru gradskog parka u neposrednoj
         blizini Srpskog doma u Sremskoj Mitrovici. Napravljena je 1946. godine,
@@ -72,7 +80,7 @@ export const SremskaMitrovica = () => {
         predstavljali začetak budućeg lapidarijuma.
       </p>
 
-      <img src={sMitrovica2} alt="Gradska plaža u Sremskoj Mitrovici" />
+      <img srcSet={`${sMitrovica22} 400w, ${sMitrovica2} `} alt="Gradska plaža u Sremskoj Mitrovici" />
 
       <p>
         Gradska plaža u Sremskoj Mitrovici je jedno od omiljenih mesta za
@@ -83,9 +91,8 @@ export const SremskaMitrovica = () => {
       </p>
 
       <img
-        src={sMitrovica6}
+        srcSet={`${sMitrovica66} 400w, ${sMitrovica6} `}
         alt="Gradska plaža u Sremskoj Mitrovici 2"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Plaža je opremljena za udoban boravak, sa velikim brojem ležaljki,
@@ -100,9 +107,8 @@ export const SremskaMitrovica = () => {
       </p>
 
       <img
-        src={sMitrovica1}
+        srcSet={`${sMitrovica11} 400w, ${sMitrovica1} `}
         alt="Imperijalna palata u Sirmijumu"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Imperijalna palata u Sirmijumu je značajan arheološki lokalitet u

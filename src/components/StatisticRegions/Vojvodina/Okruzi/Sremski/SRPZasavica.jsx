@@ -1,13 +1,20 @@
-import zasavica1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/zasavica2.jpg";
-import zasavica2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/zasavica1.jpg";
-import zasavica3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/zasavica4.jpg";
-import zasavica4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/zasavica5.jpg";
-import zasavica5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/zasavica6.jpg";
-import zasavica6 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/zasavica7.jpg";
+import zasavica1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/desktop/zasavica2.jpg";
+import zasavica2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/desktop/zasavica1.jpg";
+import zasavica3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/desktop/zasavica4.jpg";
+import zasavica4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/desktop/zasavica5.jpg";
+import zasavica5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/desktop/zasavica6.jpg";
+import zasavica6 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/desktop/zasavica7.jpg";
+import zasavica11 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/mobile/Mzasavica2.jpg";
+import zasavica22 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/mobile/Mzasavica1.jpg";
+import zasavica33 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/mobile/Mzasavica4.jpg";
+import zasavica44 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/mobile/Mzasavica5.jpg";
+import zasavica55 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/mobile/Mzasavica6.jpg";
+import zasavica66 from "../../../../../assets/images/Vojvodina/SremskiOkrug/SRPZasavica/mobile/Mzasavica7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 
 export const SRPZasavica = () => {
   const navigate = useNavigate();
@@ -15,11 +22,11 @@ export const SRPZasavica = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(sremskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zasavica4} alt="Specijalni rezervat prirode 'Zasavica' 1" />
+      <img srcSet={`${zasavica44} 400w, ${zasavica4} `} alt="Specijalni rezervat prirode 'Zasavica' 1" />
 
-      <h2 style={{ right: "50px" }}>Specijalni rezervat prirode "Zasavica"</h2>
+      <h2>Specijalni rezervat prirode "Zasavica"</h2>
 
       <p>
         Specijalni rezervat prirode Zasavica je prirodni rezervat stavljen pod
@@ -31,7 +38,7 @@ export const SRPZasavica = () => {
         Prekopac, i postoji veza sa rekom Savom.
       </p>
 
-      <img src={zasavica1} alt="Specijalni rezervat prirode 'Zasavica' 2" />
+      <img srcSet={`${zasavica11} 400w, ${zasavica1} `} alt="Specijalni rezervat prirode 'Zasavica' 2" />
 
       <p>
         Vizitorski centar predstavlja centralno turističko mesto rezervata.
@@ -41,7 +48,7 @@ export const SRPZasavica = () => {
         7 ležaja, kao i dve pomoćne prostorije.
       </p>
 
-      <img src={zasavica3} alt="Specijalni rezervat prirode 'Zasavica' 3" />
+      <img srcSet={`${zasavica33} 400w, ${zasavica3} `} alt="Specijalni rezervat prirode 'Zasavica' 3" />
       <p>
         Na ovom području do sada je zabeleženo preko 600 biljnih vrsta. Posebno
         je značajno prisustvo: belog i žutog lokvanja , testerice , lokvanjića ,
@@ -49,7 +56,7 @@ export const SRPZasavica = () => {
         videti dabra.
       </p>
 
-      <img src={zasavica2} alt="Specijalni rezervat prirode 'Zasavica' 4" />
+      <img srcSet={`${zasavica22} 400w, ${zasavica2} `} alt="Specijalni rezervat prirode 'Zasavica' 4" />
       <p>
         Danas, kad svaka zemlja vodi računa o očuvanju autohtonih rasa, uz pomoć
         države, Specijalni rezervoar Zasavica postao je čuvar starih rasa,
@@ -60,7 +67,7 @@ export const SRPZasavica = () => {
         sredstvima za negu kože, kao i odličan lek za imunitet.
       </p>
 
-      <img src={zasavica5} alt="Specijalni rezervat prirode 'Zasavica' 5" />
+      <img srcSet={`${zasavica55} 400w, ${zasavica5} `} alt="Specijalni rezervat prirode 'Zasavica' 5" />
 
       <p>
         Zahvaljujući brižljivom upravljanju kroz sve protekle godine, Specijalni
@@ -72,9 +79,8 @@ export const SRPZasavica = () => {
       </p>
 
       <img
-        src={zasavica6}
+        srcSet={`${zasavica66} 400w, ${zasavica6} `}
         alt="Specijalni rezervat prirode 'Zasavica' 6"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Posebno bogatstvo čine i 213 vrsta ptica, a tu je, nakon mnogih

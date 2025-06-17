@@ -1,8 +1,13 @@
-import cemernik1 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/cemernik1.jpg'
-import cemernik2 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/cemernik2.jpg'
-import cemernik3 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/cemernik3.jpg'
-import cemernik4 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/cemernik4.jpg'
-import cemernik5 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/cemernik5.jpg'
+import cemernik1 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/desktop/cemernik1.jpg'
+import cemernik2 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/desktop/cemernik2.jpg'
+import cemernik3 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/desktop/cemernik3.jpg'
+import cemernik4 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/desktop/cemernik4.jpg'
+import cemernik5 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/desktop/cemernik5.jpg'
+import cemernik11 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/mobile/cemernikM1.jpg'
+import cemernik22 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/mobile/cemernikM2.jpg'
+import cemernik33 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/mobile/cemernikM3.jpg'
+import cemernik44 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/mobile/cemernikM4.jpg'
+import cemernik55 from '../../../../../assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/Cemernik/mobile/cemernikM5.jpg'
 
 
 import { FaArrowLeft } from "react-icons/fa";
@@ -18,7 +23,7 @@ export const PlaninaCemernik = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pcinjskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={cemernik1} alt="Planina Čemernik 1" />
+      <img srcSet={`${cemernik11} 400w, ${cemernik1} `} alt="Planina Čemernik 1" />
 
       <h2>Planina Čemernik</h2>
 
@@ -33,7 +38,7 @@ export const PlaninaCemernik = () => {
         Vardenik. Planina se nalazi na teritoriji opštine Surdulica.
       </p>
 
-      <img src={cemernik2} alt="Planina Čemernik 2" />
+      <img srcSet={`${cemernik22} 400w, ${cemernik2} `} alt="Planina Čemernik 2" />
 
       <p>
         Čemernik pripada planinama srednje visine i predstavlja tipičnu
@@ -47,7 +52,7 @@ export const PlaninaCemernik = () => {
         delu naselja Mlačište, Mačkatića, Mañak i Ljutež.
       </p>
 
-      <img src={cemernik3} alt="Planina Čemernik 3" />
+      <img srcSet={`${cemernik33} 400w, ${cemernik3} `} alt="Planina Čemernik 3" />
 
       <p>
         Na Čemerniku su do 1941. godine svoja stada napasali i Ašani ili
@@ -57,7 +62,7 @@ export const PlaninaCemernik = () => {
         Ašanske kolibe i Ašanske livade.
       </p>
 
-      <img src={cemernik4} alt="Planina Čemernik 4" />
+      <img srcSet={`${cemernik44} 400w, ${cemernik4} `} alt="Planina Čemernik 4" />
 
       <p>
         U Mačkatici je novembra 1940. godine jedna nemačka firma započela
@@ -71,7 +76,7 @@ export const PlaninaCemernik = () => {
         Oba vrha se nalaze na ravnom, zaobljenom i pošumljenom bregu.
       </p>
 
-      <img src={cemernik5} alt="Planina Čemernik 5" />
+      <img srcSet={`${cemernik55} 400w, ${cemernik5} `} alt="Planina Čemernik 5" />
 
       <p>
         Do vrha se može stići sa hotela na Vlasinskom Ridu. Dužina staze do vrha

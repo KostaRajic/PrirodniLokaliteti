@@ -1,11 +1,16 @@
-import kraljevac1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/kraljevac2.jpg";
-import kraljevac2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/kraljevac3.jpg";
-import kraljevac3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/kraljevac4.jpg";
-import kraljevac4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/kraljevac5.jpg";
+import kraljevac1 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/desktop/kraljevac2.jpg";
+import kraljevac2 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/desktop/kraljevac3.jpg";
+import kraljevac3 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/desktop/kraljevac4.jpg";
+import kraljevac4 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/desktop/kraljevac5.jpg";
+import kraljevac11 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/mobile/Mkraljevac2.jpg";
+import kraljevac22 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/mobile/Mkraljevac3.jpg";
+import kraljevac33 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/mobile/Mkraljevac4.jpg";
+import kraljevac44 from "../../../../../assets/images/Vojvodina/JuznoBanatskiOkrug/SRPKraljevac/mobile/Mkraljevac5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { juznoBanatskiPathRoutes } from "./JuznoBanatskiPathRoutes";
 
 export const SRPKraljevac = () => {
   const navigate = useNavigate();
@@ -13,9 +18,9 @@ export const SRPKraljevac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(juznoBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={kraljevac1} alt="Bela Crkva 1" />
+      <img srcSet={`${kraljevac11} 400w, ${kraljevac1} `} alt="Bela Crkva 1" />
 
       <h2>Specijlani Rezervat Prirode "Kraljevac"</h2>
 
@@ -32,9 +37,9 @@ export const SRPKraljevac = () => {
         plutajuće ostrvo ima površinu od oko 2 hektara.
       </p>
 
-      <img src={kraljevac2} alt="Bela Crkva 2" />
+      <img srcSet={`${kraljevac22} 400w, ${kraljevac2} `} alt="Bela Crkva 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Odlukom Vlade Republike Srbije, 2009. godine, Specijalni rezervoar
         prirode „Kraljevac” stavljen je pod zaštitu države kao prirodno dobro od
         izuzetnog značaja prve kategorije, sa ukupnom površinom od oko 264
@@ -45,9 +50,9 @@ export const SRPKraljevac = () => {
         uticajem jakog vetra, stalno menjaju izgled okruženja i pejzaža.
       </p>
 
-      <img src={kraljevac3} alt="Bela Crkva 3" />
+      <img srcSet={`${kraljevac33} 400w, ${kraljevac3} `} alt="Bela Crkva 3" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Među biljnim vrstama koje nastanjuju ovo područje nalazi se barska
         paprat, koja potiče iz ledenog doba, kao i močvarna iva. Plutajuća i
         stalna ostrva, sa vodenim oknima i podzemnim izvorima koji ne zmrzavaju
@@ -61,8 +66,8 @@ export const SRPKraljevac = () => {
         pčelariča, a u njemu se može pronaći i oko 20 vrsta dnevnih leptira.
       </p>
 
-      <img src={kraljevac4} alt="Bela Crkva 4" />
-      <p style={{ marginTop: "-10px" }}>
+      <img srcSet={`${kraljevac44} 400w, ${kraljevac4} `} alt="Bela Crkva 4" />
+      <p>
         Obližnji pašnjaci predstavljaju jedno od poslednjih utočišta ugroženih
         vrsta steppskih glodara, poput tekuniče i slepog kučeta, u Srbiji.
         Rezervat nudi posetiocima izvanredne mogućnosti za sportski ribolov,

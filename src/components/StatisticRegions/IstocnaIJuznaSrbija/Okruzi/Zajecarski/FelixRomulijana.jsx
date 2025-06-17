@@ -1,8 +1,13 @@
-import gamzigrad1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/feliksRomulijana1.jpg";
-import gamzigrad2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/feliksRomulijana2.jpg";
-import gamzigrad3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/feliksRomulijana3.jpg";
-import gamzigrad4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/feliksRomulijana9.jpg";
-import gamzigrad5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/feliksRomulijana5.jpg";
+import gamzigrad1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/desktop/feliksRomulijana1.jpg";
+import gamzigrad2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/desktop/feliksRomulijana2.jpg";
+import gamzigrad3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/desktop/feliksRomulijana3.jpg";
+import gamzigrad4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/desktop/feliksRomulijana9.jpg";
+import gamzigrad5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/desktop/feliksRomulijana5.jpg";
+import gamzigrad11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/mobile/feliksRomulijanaM1.jpg";
+import gamzigrad22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/mobile/feliksRomulijanaM2.jpg";
+import gamzigrad33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/mobile/feliksRomulijanaM3.jpg";
+import gamzigrad44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/mobile/feliksRomulijanaM9.jpg";
+import gamzigrad55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/FeliksRomulijana/mobile/feliksRomulijanaM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const FelixRomulijana = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(zajecarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={gamzigrad1} alt="Gamzigrad 1" />
+      <img srcSet={`${gamzigrad11} 400w, ${gamzigrad1} `} alt="Gamzigrad 1" />
 
       <h2>Felix Romulijana - Gamzigrad</h2>
 
@@ -32,7 +37,7 @@ export const FelixRomulijana = () => {
         bi zatim, u samo nekoliko decenija, iščezle bez traga.
       </p>
 
-      <img src={gamzigrad2} alt="Felix Romulijana 1" />
+      <img srcSet={`${gamzigrad22} 400w, ${gamzigrad2} `} alt="Felix Romulijana 1" />
 
       <p>
         Palata je podignuta krajem 3. i početkom 4. veka nove ere, u periodu
@@ -46,7 +51,7 @@ export const FelixRomulijana = () => {
         Romulijana.
       </p>
 
-      <img src={gamzigrad3} alt="Gamzigrad 2" />
+      <img srcSet={`${gamzigrad33} 400w, ${gamzigrad3} `} alt="Gamzigrad 2" />
 
       <p>
         Galerijev uspon do carskih visina bio je neverovatno brz, a njegova
@@ -70,7 +75,7 @@ export const FelixRomulijana = () => {
         same Italije.
       </p>
 
-      <img src={gamzigrad4} alt="Felix Romulijana 2" />
+      <img srcSet={`${gamzigrad44} 400w, ${gamzigrad4} `} alt="Felix Romulijana 2" />
 
       <p>
         Feliks Romulijana je dugo smatrana običnim rimskim utvrđenjem (castrum),
@@ -86,7 +91,7 @@ export const FelixRomulijana = () => {
         rimskog panteona, već i bogova istočnjačkog porekla.
       </p>
 
-      <img src={gamzigrad5} alt="Gamzigrad 3" />
+      <img srcSet={`${gamzigrad55} 400w, ${gamzigrad5} `} alt="Gamzigrad 3" />
 
       <p>
         Galerije je bio ambiciozan i nesumnjivo kontroverzan čovek.

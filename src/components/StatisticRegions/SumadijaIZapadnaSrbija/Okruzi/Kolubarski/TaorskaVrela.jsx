@@ -1,8 +1,13 @@
-import taorskaVrela1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/taorskaVrela1.jpg";
-import taorskaVrela2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/taorskaVrela2.jpg";
-import taorskaVrela3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/taorskaVrela3.jpg";
-import taorskaVrela4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/taorskaVrela4.jpg";
-import taorskaVrela5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/taorskaVrela5.webp";
+import taorskaVrela1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/desktop/taorskaVrela1.jpg";
+import taorskaVrela2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/desktop/taorskaVrela2.jpg";
+import taorskaVrela3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/desktop/taorskaVrela3.jpg";
+import taorskaVrela4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/desktop/taorskaVrela4.jpg";
+import taorskaVrela5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/desktop/taorskaVrela5.jpg";
+import taorskaVrela11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/mobile/MtaorskaVrela1.jpg";
+import taorskaVrela22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/mobile/MtaorskaVrela2.jpg";
+import taorskaVrela33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/mobile/MtaorskaVrela3.jpg";
+import taorskaVrela44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/mobile/MtaorskaVrela4.jpg";
+import taorskaVrela55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/TaorskaVrela/mobile/MtaorskaVrela5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const TaorskaVrela = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={taorskaVrela1} alt="Taorska Vrela" />
+      <img srcSet={`${taorskaVrela11} 400w, ${taorskaVrela1} `} alt="Taorska Vrela" />
 
       <h2 style={{ color: "white" }}>Taorska VrelaA</h2>
 
@@ -40,7 +45,7 @@ export const TaorskaVrela = () => {
         turističkim ponudama koje uključuju ova mesta.
       </p>
 
-      <img src={taorskaVrela2} alt="Taorska Vrela" />
+      <img srcSet={`${taorskaVrela22} 400w, ${taorskaVrela2} `} alt="Taorska Vrela" />
 
       <p>
         Taorska vrela bez sumnje spadaju među najlepše prirodne kreacije u našoj
@@ -56,7 +61,7 @@ export const TaorskaVrela = () => {
         slapovi, stvarajući slikovite i zadivljujuće prizore.
       </p>
 
-      <img src={taorskaVrela3} alt="Taorska Vrela" />
+      <img srcSet={`${taorskaVrela33} 400w, ${taorskaVrela3} `} alt="Taorska Vrela" />
 
       <p>
         Taorski slapovi slivaju se u mali vodopad visine 4,5 metara, koji pada u
@@ -70,7 +75,7 @@ export const TaorskaVrela = () => {
         na ovom prirodnom biseru.
       </p>
 
-      <img src={taorskaVrela4} alt="Taorska Vrela" />
+      <img srcSet={`${taorskaVrela44} 400w, ${taorskaVrela4} `} alt="Taorska Vrela" />
 
       <p>
         Prema sećanjima, izvor pod Povlenom bio je toliko očaravajući da je
@@ -82,7 +87,7 @@ export const TaorskaVrela = () => {
         treba posetiti.
       </p>
 
-      <img src={taorskaVrela5} alt="Taorska Vrela" />
+      <img srcSet={`${taorskaVrela55} 400w, ${taorskaVrela5} `} alt="Taorska Vrela" />
       <p>
         Ako odlučite da posetite Taorska vrela i lično doživite njihovu lepotu,
         kao i tajne starih vodenica, postoji nekoliko opcija kako da dođete do

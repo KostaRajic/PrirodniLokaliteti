@@ -1,8 +1,13 @@
-import ljubostinja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/ljubostinja1.jpg";
-import ljubostinja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/ljubostinja2.jpg";
-import ljubostinja3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/ljubostinja3.jpg";
-import ljubostinja4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/ljubostinja4.jpg";
-import ljubostinja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/ljubostinja5.jpg";
+import ljubostinja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/desktop/ljubostinja1.jpg";
+import ljubostinja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/desktop/ljubostinja2.jpg";
+import ljubostinja3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/desktop/ljubostinja3.jpg";
+import ljubostinja4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/desktop/ljubostinja4.jpg";
+import ljubostinja5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/desktop/ljubostinja5.jpg";
+import ljubostinja11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/mobile/Mljubostinja1.jpg";
+import ljubostinja22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/mobile/Mljubostinja2.jpg";
+import ljubostinja33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/mobile/Mljubostinja3.jpg";
+import ljubostinja44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/mobile/Mljubostinja4.jpg";
+import ljubostinja55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/ManastirLjubostinja/mobile/Mljubostinja5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const ManastirLjubostinja = () => {
 
       />
       <header></header>
-      <img src={ljubostinja1} alt="Manastir Ljubostinja 1" />
+      <img srcSet={`${ljubostinja11} 400w, ${ljubostinja1} `} alt="Manastir Ljubostinja 1" />
 
       <h2 style={{ color: "white" }}>Manastir Ljubostinja</h2>
 
@@ -34,7 +39,7 @@ export const ManastirLjubostinja = () => {
         zaštitom.
       </p>
 
-      <img src={ljubostinja2} alt="Manastir Ljubostinja 2" />
+      <img srcSet={`${ljubostinja22} 400w, ${ljubostinja2} `} alt="Manastir Ljubostinja 2" />
 
       <p>
         Prema istoriji manastira, kneginja Milica je dala naređenje za izgradnju
@@ -58,7 +63,7 @@ export const ManastirLjubostinja = () => {
         priprate u naos.
       </p>
 
-      <img src={ljubostinja3} alt="Manastir Ljubostinja 3" />
+      <img srcSet={`${ljubostinja33} 400w, ${ljubostinja3} `} alt="Manastir Ljubostinja 3" />
 
       <p>
         Freske koje danas ukrašavaju zidove manastira Ljubostinja većinom potiču
@@ -81,7 +86,7 @@ export const ManastirLjubostinja = () => {
         prostoru crkve dodatnu dimenziju.
       </p>
 
-      <img src={ljubostinja4} alt="Manastir Ljubostinja 4" />
+      <img srcSet={`${ljubostinja44} 400w, ${ljubostinja4} `} alt="Manastir Ljubostinja 4" />
 
       <p>
         Na zapadnom zidu priprate manastira Ljubostinja, prikazana je porodica
@@ -96,7 +101,7 @@ export const ManastirLjubostinja = () => {
         Srpskog.
       </p>
 
-      <img src={ljubostinja5} alt="Manastir Ljubostinja 5" />
+      <img srcSet={`${ljubostinja55} 400w, ${ljubostinja5} `} alt="Manastir Ljubostinja 5" />
 
       <p>
         Prema verovanju, kneginja Milica, poznata i kao monahinja Evgenija, i

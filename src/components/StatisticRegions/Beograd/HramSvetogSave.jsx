@@ -1,11 +1,19 @@
-import hramSvetogSave1 from "../../../assets/images/Beograd/HramSvetogSave/hramSvetogSave1.jpg";
-import hramSvetogSave2 from "../../../assets/images/Beograd/HramSvetogSave/hramSvetogSave2.jpg";
-import hramSvetogSave3 from "../../../assets/images/Beograd/HramSvetogSave/hramSvetogSave3.jpg";
-import hramSvetogSave4 from "../../../assets/images/Beograd/HramSvetogSave/hramSvetogSave4.jpg";
-import hramSvetogSave5 from "../../../assets/images/Beograd/HramSvetogSave/hramSvetogSave5.jpg";
-import hramSvetogSave6 from "../../../assets/images/Beograd/HramSvetogSave/hramSvetogSave6.jpg";
-import hramSvetogSave7 from "../../../assets/images/Beograd/HramSvetogSave/hramSvetogSave7.jpg";
-import hramSvetogSave8 from "../../../assets/images/Beograd/HramSvetogSave/hramSvetogSave8.jpg";
+import hramSvetogSave1 from "../../../assets/images/Beograd/HramSvetogSave/desktop/hramSvetogSave1.jpg";
+import hramSvetogSave2 from "../../../assets/images/Beograd/HramSvetogSave/desktop/hramSvetogSave2.jpg";
+import hramSvetogSave3 from "../../../assets/images/Beograd/HramSvetogSave/desktop/hramSvetogSave3.jpg";
+import hramSvetogSave4 from "../../../assets/images/Beograd/HramSvetogSave/desktop/hramSvetogSave4.jpg";
+import hramSvetogSave5 from "../../../assets/images/Beograd/HramSvetogSave/desktop/hramSvetogSave5.jpg";
+import hramSvetogSave6 from "../../../assets/images/Beograd/HramSvetogSave/desktop/hramSvetogSave6.jpg";
+import hramSvetogSave7 from "../../../assets/images/Beograd/HramSvetogSave/desktop/hramSvetogSave7.jpg";
+import hramSvetogSave8 from "../../../assets/images/Beograd/HramSvetogSave/desktop/hramSvetogSave8.jpg";
+import hramSvetogSave11 from "../../../assets/images/Beograd/HramSvetogSave/mobile/hramSvetogSaveM1.jpg";
+import hramSvetogSave22 from "../../../assets/images/Beograd/HramSvetogSave/mobile/hramSvetogSaveM2.jpg";
+import hramSvetogSave33 from "../../../assets/images/Beograd/HramSvetogSave/mobile/hramSvetogSaveM3.jpg";
+import hramSvetogSave44 from "../../../assets/images/Beograd/HramSvetogSave/mobile/hramSvetogSaveM4.jpg";
+import hramSvetogSave55 from "../../../assets/images/Beograd/HramSvetogSave/mobile/hramSvetogSaveM5.jpg";
+import hramSvetogSave66 from "../../../assets/images/Beograd/HramSvetogSave/mobile/hramSvetogSaveM6.jpg";
+import hramSvetogSave77 from "../../../assets/images/Beograd/HramSvetogSave/mobile/hramSvetogSaveM7.jpg";
+import hramSvetogSave88 from "../../../assets/images/Beograd/HramSvetogSave/mobile/hramSvetogSaveM8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +28,7 @@ export const HramSvetogSave = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} />
       <header></header>
-      <img src={hramSvetogSave1} alt="Hram Svetog Save 1" />
+      <img srcSet={`${hramSvetogSave11} 400w, ${hramSvetogSave1} `} alt="Hram Svetog Save 1" />
 
       <h2>Hram Svetog Save</h2>
 
@@ -34,7 +42,7 @@ export const HramSvetogSave = () => {
         istoriji.
       </p>
 
-      <img src={hramSvetogSave2} alt="Hram Svetog Save 2" />
+      <img srcSet={`${hramSvetogSave22} 400w, ${hramSvetogSave2} `} alt="Hram Svetog Save 2" />
 
       <p>
         Hram je izgrađen u neovizantijskom stilu, u obliku grčkog krsta, sa
@@ -48,7 +56,7 @@ export const HramSvetogSave = () => {
         istovremeno završavani mozaici na kupoli i unutrašnjim zidovima crkve.
       </p>
 
-      <img src={hramSvetogSave4} alt="Hram Svetog Save 3" />
+      <img srcSet={`${hramSvetogSave44} 400w, ${hramSvetogSave4} `} alt="Hram Svetog Save 3" />
 
       <p>
         Hram Svetog Save predstavlja pravu ikonu srpske arhitekture i likovne
@@ -65,7 +73,7 @@ export const HramSvetogSave = () => {
         biblioteke.
       </p>
 
-      <img src={hramSvetogSave3} alt="Hram Svetog Save 4" />
+      <img srcSet={`${hramSvetogSave33} 400w, ${hramSvetogSave3} `} alt="Hram Svetog Save 4" />
 
       <p>
         Hram Svetog Save se izdiže u centru Beograda, na vrhu Avalskog brda, i
@@ -84,9 +92,8 @@ export const HramSvetogSave = () => {
       </p>
 
       <img
-        src={hramSvetogSave5}
+        srcSet={`${hramSvetogSave55} 400w, ${hramSvetogSave5} `}
         alt="Hram Svetog Save 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Veći deo vidljivih zidnih površina u Hramu obrađuje se mozaikom, dok je
@@ -103,9 +110,8 @@ export const HramSvetogSave = () => {
       </p>
 
       <img
-        src={hramSvetogSave7}
+        srcSet={`${hramSvetogSave77} 400w, ${hramSvetogSave7} `}
         alt="Hram Svetog Save 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Razradom sadržaja i uslova za likovne kriterijume mozaika bavi se
@@ -120,9 +126,8 @@ export const HramSvetogSave = () => {
       </p>
 
       <img
-        src={hramSvetogSave8}
+        srcSet={`${hramSvetogSave88} 400w, ${hramSvetogSave8} `}
         alt="Hram Svetog Save 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Život Svetog Save objedinjuje informacije o njegovoj mladosti,

@@ -1,7 +1,11 @@
-import radovanjskiLug1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/radovanskiLug1.jpg";
-import radovanjskiLug2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/radovanskiLug2.jpg";
-import radovanjskiLug3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/radovanskiLug3.jpg";
-import radovanjskiLug4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/radovanskiLug4.jpg";
+import radovanjskiLug1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/desktop/radovanskiLug1.jpg";
+import radovanjskiLug2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/desktop/radovanskiLug2.jpg";
+import radovanjskiLug3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/desktop/radovanskiLug3.jpg";
+import radovanjskiLug4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/desktop/radovanskiLug4.jpg";
+import radovanjskiLug11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/mobile/radovanskiLugM1.jpg";
+import radovanjskiLug22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/mobile/radovanskiLugM2.jpg";
+import radovanjskiLug33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/mobile/radovanskiLugM3.jpg";
+import radovanjskiLug44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/RadovanjskiLug/mobile/radovanskiLugM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const RadovanjskiLug = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(podunavskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={radovanjskiLug1} alt="Radovanjski Lug 1" />
+      <img srcSet={`${radovanjskiLug11} 400w, ${radovanjskiLug1} `} alt="Radovanjski Lug 1" />
 
       <h2>Radovanjski Lug</h2>
 
@@ -34,7 +38,7 @@ export const RadovanjskiLug = () => {
         kapiju u Radovanjski lug.
       </p>
 
-      <img src={radovanjskiLug2} alt="Radovanjski Lug 2" />
+      <img srcSet={`${radovanjskiLug22} 400w, ${radovanjskiLug2} `} alt="Radovanjski Lug 2" />
 
       <p>
         Vožd Đorđe Petrović – Karađorđe zauzima posebno mesto u srpskoj
@@ -53,7 +57,7 @@ export const RadovanjskiLug = () => {
         praznik Arhangela Gavrila, zaverenici su ga ubili sekirom.
       </p>
 
-      <img src={radovanjskiLug3} alt="Radovanjski Lug 3" />
+      <img srcSet={`${radovanjskiLug33} 400w, ${radovanjskiLug3} `} alt="Radovanjski Lug 3" />
 
       <p>
         Karađorđe je sahranjen u grobu, sto koraka od kolibe prema potoku, bez
@@ -69,7 +73,7 @@ export const RadovanjskiLug = () => {
         ploča sa natpisom, veliki drveni krst i gvozdena ograda.
       </p>
 
-      <img src={radovanjskiLug4} alt="Radovanjski Lug 4" />
+      <img srcSet={`${radovanjskiLug44} 400w, ${radovanjskiLug4} `} alt="Radovanjski Lug 4" />
 
       <p>
         Na mestu gde je ubijen vožd Karađorđe, 1920. godine postavljen je kamen

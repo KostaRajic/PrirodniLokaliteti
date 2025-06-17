@@ -1,12 +1,18 @@
-import jazak1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/jazak2.jpg";
-import jazak2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/jazak3.jpg";
-import jazak3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/jazak4.jpg";
-import jazak4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/jazak5.jpg";
-import jazak5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/jazak6.jpg";
+import jazak1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/desktop/jazak2.jpg";
+import jazak2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/desktop/jazak3.jpg";
+import jazak3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/desktop/jazak4.jpg";
+import jazak4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/desktop/jazak5.jpg";
+import jazak5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/desktop/jazak6.jpg";
+import jazak11 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/mobile/Mjazak2.jpg";
+import jazak22 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/mobile/Mjazak3.jpg";
+import jazak33 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/mobile/Mjazak4.jpg";
+import jazak44 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/mobile/Mjazak5.jpg";
+import jazak55 from "../../../../../assets/images/Vojvodina/SremskiOkrug/ManastirJazak/mobile/Mjazak6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 
 export const ManastirJazak = () => {
   const navigate = useNavigate();
@@ -16,11 +22,11 @@ export const ManastirJazak = () => {
       <ScrollToTop />
       <FaArrowLeft
         className="arrowLeft"
-        onClick={() => navigate(-1)}
+        onClick={() => navigate(sremskiOkrugPathRoutes.home)}
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={jazak1} alt="Manastir Jazak 1" />
+      <img srcSet={`${jazak11} 400w, ${jazak1} `} alt="Manastir Jazak 1" />
 
       <h2 style={{ color: "white" }}>Manastir Jazak</h2>
 
@@ -40,7 +46,7 @@ export const ManastirJazak = () => {
         monaha.
       </p>
 
-      <img src={jazak2} alt="Manastir Jazak 2" />
+      <img srcSet={`${jazak22} 400w, ${jazak2} `} alt="Manastir Jazak 2" />
 
       <p>
         Povećanje broja vernika, kao i monaha koji su želeli da nađu večnu
@@ -55,7 +61,7 @@ export const ManastirJazak = () => {
         dvorska crkva „sremkog“ kralja Dragutina.
       </p>
 
-      <img src={jazak4} alt="Manastir Jazak 3" />
+      <img srcSet={`${jazak44} 400w, ${jazak4} `} alt="Manastir Jazak 3" />
       <p>
         Iako je manastir više puta obnavljan, ne mogu se primetiti značajnija
         odstupanja u odnosu na stanje prikazano na litografiji Mihajla Troha iz
@@ -73,7 +79,7 @@ export const ManastirJazak = () => {
         izbijanja Drugog svetskog rata.
       </p>
 
-      <img src={jazak3} alt="Manastir Jazak 4" />
+      <img srcSet={`${jazak33} 400w, ${jazak3} `} alt="Manastir Jazak 4" />
       <p>
         Pod okupacijom Nezavisne Države Hrvatske, manastir Jazak je pretrpeo
         ogromna stradanja. Sa dolaskom okupatorskih snaga, manastir su napustili
@@ -97,7 +103,7 @@ export const ManastirJazak = () => {
         bi mogao služiti Svetu liturgiju.
       </p>
 
-      <img src={jazak5} alt="Manastir Jazak 5" />
+      <img srcSet={`${jazak55} 400w, ${jazak5} `} alt="Manastir Jazak 5" />
 
       <p>
         Kao što je već pomenuto, manastirska riznica je opljačkana tokom Drugog

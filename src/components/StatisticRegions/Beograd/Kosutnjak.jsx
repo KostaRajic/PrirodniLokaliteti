@@ -1,9 +1,15 @@
-import kosutnjak1 from "../../../assets/images/Beograd/Kosutnjak/kosutnjak1.jpg";
-import kosutnjak2 from "../../../assets/images/Beograd/Kosutnjak/kosutnjak2.jpg";
-import kosutnjak3 from "../../../assets/images/Beograd/Kosutnjak/kosutnjak3.jpg";
-import kosutnjak4 from "../../../assets/images/Beograd/Kosutnjak/kosutnjak4.jpg";
-import kosutnjak5 from "../../../assets/images/Beograd/Kosutnjak/kosutnjak5.jpg";
-import kosutnjak6 from "../../../assets/images/Beograd/Kosutnjak/kosutnjak6.jpg";
+import kosutnjak1 from "../../../assets/images/Beograd/Kosutnjak/desktop/kosutnjak1.jpg";
+import kosutnjak2 from "../../../assets/images/Beograd/Kosutnjak/desktop/kosutnjak2.jpg";
+import kosutnjak3 from "../../../assets/images/Beograd/Kosutnjak/desktop/kosutnjak3.jpg";
+import kosutnjak4 from "../../../assets/images/Beograd/Kosutnjak/desktop/kosutnjak4.jpg";
+import kosutnjak5 from "../../../assets/images/Beograd/Kosutnjak/desktop/kosutnjak5.jpg";
+import kosutnjak6 from "../../../assets/images/Beograd/Kosutnjak/desktop/kosutnjak6.jpg";
+import kosutnjak11 from "../../../assets/images/Beograd/Kosutnjak/mobile/kosutnjakM1.jpg";
+import kosutnjak22 from "../../../assets/images/Beograd/Kosutnjak/mobile/kosutnjakM2.jpg";
+import kosutnjak33 from "../../../assets/images/Beograd/Kosutnjak/mobile/kosutnjakM3.jpg";
+import kosutnjak44 from "../../../assets/images/Beograd/Kosutnjak/mobile/kosutnjakM4.jpg";
+import kosutnjak55 from "../../../assets/images/Beograd/Kosutnjak/mobile/kosutnjakM5.jpg";
+import kosutnjak66 from "../../../assets/images/Beograd/Kosutnjak/mobile/kosutnjakM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const Kosutnjak = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(beogradPathRoutes.home)} style={{fill: 'white'}} />
       <header></header>
-      <img src={kosutnjak1} alt="Kalemegdan 1" />
+      <img srcSet={`${kosutnjak11} 400w, ${kosutnjak1} `} alt="Kalemegdan 1" />
 
       <h2>Košutnjak</h2>
 
@@ -35,7 +41,7 @@ export const Kosutnjak = () => {
         resurs.
       </p>
 
-      <img src={kosutnjak2} alt="Kalemegdan 2" />
+      <img srcSet={`${kosutnjak22} 400w, ${kosutnjak2} `} alt="Kalemegdan 2" />
 
       <p>
         Košutnjak je od Zavoda za zaštitu prirode Srbije proglašen za "Spomenik
@@ -50,7 +56,7 @@ export const Kosutnjak = () => {
         kao i 227 vrsta insekata.
       </p>
 
-      <img src={kosutnjak4} alt="Kalemegdan 3" />
+      <img srcSet={`${kosutnjak44} 400w, ${kosutnjak4} `} alt="Kalemegdan 3" />
 
       <p>
         Košutnjak se prvi put pominje u dokumentima iz 1831. godine, kada se
@@ -65,7 +71,7 @@ export const Kosutnjak = () => {
         sahranjeno telo.
       </p>
 
-      <img src={kosutnjak3} alt="Kalemegdan 4" />
+      <img srcSet={`${kosutnjak33} 400w, ${kosutnjak3} `} alt="Kalemegdan 4" />
 
       <p>
         Pored spomen-obilježja, jedno od najpoznatijih i najomiljenijih mesta
@@ -88,9 +94,8 @@ export const Kosutnjak = () => {
       </p>
 
       <img
-        src={kosutnjak6}
+        srcSet={`${kosutnjak66} 400w, ${kosutnjak6} `}
         alt="Kalemegdan 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Košutnjak je domaćin jednog od najpoznatijih otvorenih bazena u
@@ -103,9 +108,8 @@ export const Kosutnjak = () => {
       </p>
 
       <img
-        src={kosutnjak5}
+        srcSet={`${kosutnjak55} 400w, ${kosutnjak5} `}
         alt="Kalemegdan 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Košutnjak je idealno mesto za izlete, roštiljanja i druženja na

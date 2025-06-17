@@ -1,9 +1,15 @@
-import vucjanke1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/kanjonVucjanke1.jpg";
-import vucjanke2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/kanjonVucjanke2.jpg";
-import vucjanke3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/kanjonVucjanke3.jpg";
-import vucjanke4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/kanjonVucjanke4.jpg";
-import vucjanke5 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/kanjonVucjanke5.jpg";
-import vucjanke6 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/kanjonVucjanke6.jpg";
+import vucjanke1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/desktop/kanjonVucjanke1.jpg";
+import vucjanke2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/desktop/kanjonVucjanke2.jpg";
+import vucjanke3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/desktop/kanjonVucjanke3.jpg";
+import vucjanke4 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/desktop/kanjonVucjanke4.jpg";
+import vucjanke5 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/desktop/kanjonVucjanke5.jpg";
+import vucjanke6 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/desktop/kanjonVucjanke6.jpg";
+import vucjanke11 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/mobile/kanjonVucjankeM1.jpg";
+import vucjanke22 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/mobile/kanjonVucjankeM2.jpg";
+import vucjanke33 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/mobile/kanjonVucjankeM3.jpg";
+import vucjanke44 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/mobile/kanjonVucjankeM4.jpg";
+import vucjanke55 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/mobile/kanjonVucjankeM5.jpg";
+import vucjanke66 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/KanjonVucjanke/mobile/kanjonVucjankeM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const KanjonVucjanke = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(jablanickiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={vucjanke1} alt="Kanjon Vučjanke 1" />
+      <img srcSet={`${vucjanke11} 400w, ${vucjanke1} `} alt="Kanjon Vučjanke 1" />
 
       <h2>Kanjon Vučjanke</h2>
 
@@ -28,7 +34,7 @@ export const KanjonVucjanke = () => {
         erozivnom proširenju gde se nalazi hotel "Vlaina" (686 m).
       </p>
 
-      <img src={vucjanke2} alt="Kanjon Vučjanke 2" />
+      <img srcSet={`${vucjanke22} 400w, ${vucjanke2} `} alt="Kanjon Vučjanke 2" />
 
       <p>
         Kanjon je uscepen u severne padine planine Kukavica i nalazi se 18 km
@@ -37,7 +43,7 @@ export const KanjonVucjanke = () => {
         Kitka (988 m) i Samaric (619 m).
       </p>
 
-      <img src={vucjanke3} alt="Kanjon Vučjanke 3" />
+      <img srcSet={`${vucjanke33} 400w, ${vucjanke3} `} alt="Kanjon Vučjanke 3" />
 
       <p>
         Ulaz u kanjon nalazi se na oko 500 metara n.v., a izlaz na oko 340
@@ -46,7 +52,7 @@ export const KanjonVucjanke = () => {
         hidroelektrana Vučje, izgrađena 1903. godine.
       </p>
 
-      <img src={vucjanke4} alt="Kanjon Vučjanke 4" />
+      <img srcSet={`${vucjanke44} 400w, ${vucjanke4} `} alt="Kanjon Vučjanke 4" />
 
       <p>
         Korito u kanjonu puno je „virova”, vodopada i slapova. „Virovi” privlače
@@ -57,7 +63,7 @@ export const KanjonVucjanke = () => {
         u stenovitom rečnom koritu.
       </p>
 
-      <img src={vucjanke5} alt="Kanjon Vučjanke 5" />
+      <img srcSet={`${vucjanke55} 400w, ${vucjanke5} `} alt="Kanjon Vučjanke 5" />
 
       <p>
         Lonci u kanjonu poznati su pod nazivom Đokini virovi. Oni su udubljeni u
@@ -66,7 +72,7 @@ export const KanjonVucjanke = () => {
         već i cele Leskovačke opštine.
       </p>
 
-      <img src={vucjanke6} alt="Kanjon Vučjanke 6" />
+      <img srcSet={`${vucjanke66} 400w, ${vucjanke6} `} alt="Kanjon Vučjanke 6" />
 
       <p>
         Od vodopada izdvaja se:<br/><br/> Vodopad bezimenog potoka visine preko 30 metara,

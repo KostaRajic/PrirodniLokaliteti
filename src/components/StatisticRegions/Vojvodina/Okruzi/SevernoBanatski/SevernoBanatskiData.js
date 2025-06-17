@@ -2,7 +2,6 @@ import kikinda from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug
 import kanjiza from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/KanjizaITerminalneVode/Kanjiza2.jpg";
 import selevenjskePustare from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/SelevenjskePustare/selevnskePustare3.jpg";
 import droplja from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/droplja1.jpg";
-import dropljaMob from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/droplja1Responsive.jpg";
 import senta from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/senta1.jpg";
 
 export const severnoBanatskiData = [
@@ -28,7 +27,6 @@ export const severnoBanatskiData = [
     id: 4,
     name: "Rezervat velike droplje",
     img: droplja,
-    imgMobile: dropljaMob,
     mainText: `Rezervat velike droplje je zaštićeno područje u Srbiji, osnovano radi očuvanja vrste velike droplje (Otis tarda), jednog od najvećih ptica u Evropi, koja je u opasnosti od izumiranja. Ovaj rezervat se prostire na područjima sa suvim livadama i stepenastim zemljištima, idealnim za život ove ptice. Velika droplja se nastanjuje u oblastima gde ima dovoljno hrane i prostora za parenje. Zaštićena je zbog opasnosti od gubitka staništa, lova i intenzivnog poljoprivrednog razvoja. Rezervat ima važnu ulogu u očuvanju biodiverziteta i očuvanju ove vrste ptica.`,
   },
   {

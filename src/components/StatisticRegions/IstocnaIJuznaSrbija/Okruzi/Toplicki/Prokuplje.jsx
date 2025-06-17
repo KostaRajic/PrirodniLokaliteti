@@ -1,11 +1,19 @@
-import prokuplje1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/prokuplje1.jpg";
-import prokuplje2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/prokuplje2.jpg";
-import prokuplje4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/prokuplje4.jpg";
-import prokuplje5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/prokuplje5.jpg";
-import prokuplje6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/prokuplje6.jpg";
-import prokuplje7 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/prokuplje7.jpg";
-import prokuplje8 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/prokuplje8.jpg";
-import prokuplje9 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/prokuplje9.jpg";
+import prokuplje1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/desktop/prokuplje1.jpg";
+import prokuplje2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/desktop/prokuplje2.jpg";
+import prokuplje4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/desktop/prokuplje4.jpg";
+import prokuplje5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/desktop/prokuplje5.jpg";
+import prokuplje6 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/desktop/prokuplje6.jpg";
+import prokuplje7 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/desktop/prokuplje7.jpg";
+import prokuplje8 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/desktop/prokuplje8.jpg";
+import prokuplje9 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/desktop/prokuplje9.jpg";
+import prokuplje11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/mobile/prokupljeM1.jpg";
+import prokuplje22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/mobile/prokupljeM2.jpg";
+import prokuplje44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/mobile/prokupljeM4.jpg";
+import prokuplje55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/mobile/prokupljeM5.jpg";
+import prokuplje66 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/mobile/prokupljeM6.jpg";
+import prokuplje77 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/mobile/prokupljeM7.jpg";
+import prokuplje88 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/mobile/prokupljeM8.jpg";
+import prokuplje99 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/Prokuplje/mobile/prokupljeM9.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +28,7 @@ export const Prokuplje = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
-      <img src={prokuplje1} alt="Prokuplje 1" />
+      <img srcSet={`${prokuplje11} 400w, ${prokuplje1} `} alt="Prokuplje 1" />
 
       <h2>Prokuplje</h2>
 
@@ -38,7 +46,7 @@ export const Prokuplje = () => {
         svoja naselja, što je i potvrđeno arheološkim istraživanjima.
       </p>
 
-      <img src={prokuplje2} alt="Prokuplje 2" />
+      <img srcSet={`${prokuplje22} 400w, ${prokuplje2} `} alt="Prokuplje 2" />
       <p>
         Prokuplje je prema popisu iz 1878. godine imalo 1804 stanovnika, a prema
         popisu iz 1879. godine 2560 stanovnika. Broj stanovnika u Prokuplju se
@@ -64,7 +72,7 @@ export const Prokuplje = () => {
         sa radom 1912. godine.
       </p>
 
-      <img src={prokuplje4} alt="Prokuplje 3" />
+      <img srcSet={`${prokuplje44} 400w, ${prokuplje4} `} alt="Prokuplje 3" />
 
       <p>
         Centar Prokuplja je mesto bogato istorijskim i kulturnim spomenicima,
@@ -85,7 +93,7 @@ export const Prokuplje = () => {
         kraja.
       </p>
 
-      <img src={prokuplje5} alt="Spomen park Junacima Gvozdenog puka u Prokuplju" />
+      <img srcSet={`${prokuplje55} 400w, ${prokuplje5} `} alt="Spomen park Junacima Gvozdenog puka u Prokuplju" />
 
       <p>
         Spomen park Junacima Gvozdenog puka nalazi se na mestu odakle su
@@ -106,7 +114,7 @@ export const Prokuplje = () => {
         pešadijskog puka 1. poziva "Knjaz Mihajlo".
       </p>
 
-      <img src={prokuplje6} alt="Crkva Svetog Prokopija" />
+      <img srcSet={`${prokuplje66} 400w, ${prokuplje6} `} alt="Crkva Svetog Prokopija" />
 
       <p>
         Crkva Svetog Prokopija nalazi se u današnjem Prokuplju, gradu koji je
@@ -131,7 +139,7 @@ export const Prokuplje = () => {
         style={{ display: "flex", paddingBottom: "20px" }}
       >
         <img
-          src={prokuplje7}
+          srcSet={`${prokuplje77} 400w, ${prokuplje7} `}
           alt="Narodni muzej Toplice 1"
           className="fruskaGoraClassImg"
         />
@@ -165,7 +173,7 @@ export const Prokuplje = () => {
         </p>
 
         <img
-          src={prokuplje8}
+          srcSet={`${prokuplje88} 400w, ${prokuplje8} `}
           alt="Narodni muzej Toplice 2"
           className="fruskaGoraClassImg"
         />
@@ -182,7 +190,7 @@ export const Prokuplje = () => {
         Žitoradju i Blače. Tada počinje renesansa Narodnog muzeja Toplice.
       </p>
 
-      <img src={prokuplje9} alt="Astronomska opservatorija Vidojevica" />
+      <img srcSet={`${prokuplje99} 400w, ${prokuplje9} `} alt="Astronomska opservatorija Vidojevica" />
 
       <p>
         Astronomska opservatorija Vidojevica nalazi se na istoimenoj planini

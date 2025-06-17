@@ -1,7 +1,11 @@
-import gazimestan1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/gazimestan1.jpg";
-import gazimestan2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/gazimestan2.jpg";
-import gazimestan3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/gazimestan3.jpg";
-import gazimestan4 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/gazimestan4.jpg";
+import gazimestan1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/desktop/gazimestan1.jpg";
+import gazimestan2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/desktop/gazimestan2.jpg";
+import gazimestan3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/desktop/gazimestan3.jpg";
+import gazimestan4 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/desktop/gazimestan4.jpg";
+import gazimestan11 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/mobile/Mgazimestan1.jpg";
+import gazimestan22 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/mobile/Mgazimestan2.jpg";
+import gazimestan33 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/mobile/Mgazimestan3.jpg";
+import gazimestan44 from "../../../../../assets/images/KosovoIMetohija/Pristinski/Gazimestan/mobile/Mgazimestan4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const Gazimestan = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pristinskiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={gazimestan1} alt="Gazimestan 1" />
+      <img srcSet={`${gazimestan11} 400w, ${gazimestan1} `} alt="Gazimestan 1" />
 
       <h2>Gazimestan</h2>
 
@@ -39,7 +43,7 @@ export const Gazimestan = () => {
         jugu, na 500 m, Barjaktarovo turbe.
       </p>
 
-      <img src={gazimestan2} alt="Gazimestan 2" />
+      <img srcSet={`${gazimestan22} 400w, ${gazimestan2} `} alt="Gazimestan 2" />
 
       <p>
         Područje spomeničkog kompleksa Gazimestana, Plandišta, Treševine i
@@ -54,7 +58,7 @@ export const Gazimestan = () => {
         pogled na prostor Kosovske bitke.
       </p>
 
-      <img src={gazimestan3} alt="Gazimestan 3" />
+      <img srcSet={`${gazimestan33} 400w, ${gazimestan3} `} alt="Gazimestan 3" />
 
       <p>
         Kompleks Gazimestana sa spomenicima i božurima bio je pod zaštitom
@@ -74,7 +78,7 @@ export const Gazimestan = () => {
         skinu majice sa ćiriličnim natpisima ili bilo čim što podseća na Srbiju.
       </p>
 
-      <img src={gazimestan4} alt="Kosovska bitka" />
+      <img srcSet={`${gazimestan44} 400w, ${gazimestan4} `} alt="Kosovska bitka" />
 
       <p>
         Kosovski boj, poznata i kao Kosovska bitka, odigrala se 28. juna 1389.

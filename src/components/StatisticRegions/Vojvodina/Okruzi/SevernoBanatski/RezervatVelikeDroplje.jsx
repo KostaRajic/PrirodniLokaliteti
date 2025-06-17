@@ -1,15 +1,24 @@
-import vd1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/pasnjaciVD1.jpg";
-import vd2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/pasnjaciVD2.jpg";
-import vd3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/pasnjaciVD3.jpg";
-import vd4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/pasnjaciVD4.jpg";
-import droplja1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/droplja2.jpg";
-import droplja2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/droplja3.jpg";
-import droplja3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/droplja4.jpg";
-import droplja4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/droplja5.jpg";
+import vd1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/desktop/pasnjaciVD1.jpg";
+import vd2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/desktop/pasnjaciVD2.jpg";
+import vd3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/desktop/pasnjaciVD3.jpg";
+import vd4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/desktop/pasnjaciVD4.jpg";
+import droplja1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/mobile/Mdroplja2.jpg";
+import droplja2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/mobile/Mdroplja3.jpg";
+import droplja3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/mobile/Mdroplja4.jpg";
+import droplja4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/mobile/Mdroplja5.jpg";
+import vd11 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/desktop/pasnjaciVD1.jpg";
+import vd22 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/desktop/pasnjaciVD2.jpg";
+import vd33 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/desktop/pasnjaciVD3.jpg";
+import vd44 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/desktop/pasnjaciVD4.jpg";
+import droplja11 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/mobile/Mdroplja2.jpg";
+import droplja22 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/mobile/Mdroplja3.jpg";
+import droplja33 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/mobile/Mdroplja4.jpg";
+import droplja44 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/PasnjaciVelikeDroplje/mobile/Mdroplja5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { severnoBanatskiPathRoutes } from "./SevernoBanatskiPathRoutes";
 
 
 export const RezervatVelikeDroplje = () => {
@@ -18,9 +27,9 @@ export const RezervatVelikeDroplje = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(severnoBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={vd1} alt="Rezervat Velike Droplje 1" />
+      <img srcSet={`${vd11} 400w, ${vd1} `} alt="Rezervat Velike Droplje 1" />
 
       <h2>Specijalni rezervat "Pašnjaci Velike Doplje"</h2>
 
@@ -32,9 +41,9 @@ export const RezervatVelikeDroplje = () => {
         Banatskog Aranđelova) i najmanji Kočovat (pored sela Vrbiца).
       </p>
 
-      <img src={vd2} alt="Rezervat Velike Droplje 2" />
+      <img srcSet={`${vd22} 400w, ${vd2} `} alt="Rezervat Velike Droplje 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Osnovni značaj Specijalnog rezervata Pašnjaci velike droplje je što se u
         njemu nalazi poslednja populacija velike droplje (lat. Otis tarda) u
         Srbiji. Ova vrsta nalazi se na „Crvenoj listi“ ugroženih vrsta i strogo
@@ -45,13 +54,13 @@ export const RezervatVelikeDroplje = () => {
       <div
         className="fourImages"
       >
-        <img src={droplja1} alt="Velika droplja 1" />
-        <img src={droplja2} alt="Velika droplja 2" />
-        <img src={droplja3} alt="Velika droplja 3" />
-        <img src={droplja4} alt="Velika droplja 4" />
+        <img srcSet={`${droplja11} 400w, ${droplja1} `} alt="Velika droplja 1" />
+        <img srcSet={`${droplja22} 400w, ${droplja2} `} alt="Velika droplja 2" />
+        <img srcSet={`${droplja33} 400w, ${droplja3} `} alt="Velika droplja 3" />
+        <img srcSet={`${droplja44} 400w, ${droplja4} `} alt="Velika droplja 4" />
       </div>
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Pored velike droplje, rezervat je stanište i sledećih vrsta ptica: eja
         livadarka, siva vetruška, stepski sokol, prepelica, ždral, ritska sova,
         pupavac, modrovrana, stepska trepteljka, žuta pliska, obična beloguza,
@@ -67,9 +76,8 @@ export const RezervatVelikeDroplje = () => {
       </p>
 
       <img
-        src={vd4}
+        srcSet={`${vd44} 400w, ${vd4} `}
         alt="Rezervat Velike Droplje 4"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Danas je njihov broj spao na par desetina jedinki. Područje rezervata

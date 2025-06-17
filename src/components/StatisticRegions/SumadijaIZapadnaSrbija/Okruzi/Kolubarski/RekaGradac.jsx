@@ -1,15 +1,27 @@
-import gradac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac1.jpg";
-import gradac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac2.jpg";
-import gradac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac3.jpg";
-import gradac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac4.jpg";
-import gradac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac5.jpg";
-import gradac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac6.jpg";
-import gradac21 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac21.jpg";
-import gradac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac22.jpg";
-import gradac23 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac23.jpg";
-import gradac24 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac24.jpg";
-import gradac25 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac25.jpg";
-import gradac26 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/gradac26.jpg";
+import gradac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac1.jpg";
+import gradac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac2.jpg";
+import gradac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac3.jpg";
+import gradac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac4.jpg";
+import gradac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac5.jpg";
+import gradac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac6.jpg";
+import gradac21 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac21.jpg";
+import gradac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac22.jpg";
+import gradac23 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac23.jpg";
+import gradac24 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac24.jpg";
+import gradac25 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac25.jpg";
+import gradac26 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/desktop/gradac26.jpg";
+import gradac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac1.jpg";
+import gradac220 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac2.jpg";
+import gradac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac3.jpg";
+import gradac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac4.jpg";
+import gradac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac5.jpg";
+import gradac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac6.jpg";
+import gradac211 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac21.jpg";
+import gradac222 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac22.jpg";
+import gradac233 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac23.jpg";
+import gradac244 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac24.jpg";
+import gradac255 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac25.jpg";
+import gradac266 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/RekaGradac/mobile/Mgradac26.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -61,27 +73,33 @@ export const RekaGradac = () => {
 
   const images = [
     {
-      src: gradac21,
+      desktopSrc: gradac21,
+      mobileSrc: gradac211,
       alt: "Reka Gradac 21",
     },
     {
-      src: gradac22,
+      desktopSrc: gradac22,
+      mobileSrc: gradac222,
       alt: "Reka Gradac 22",
     },
     {
-      src: gradac23,
+      desktopSrc: gradac23,
+      mobileSrc: gradac233,
       alt: "Reka Gradac 23",
     },
     {
-      src: gradac24,
+      desktopSrc: gradac24,
+      mobileSrc: gradac244,
       alt: "Reka Gradac 24",
     },
     {
-      src: gradac25,
+      desktopSrc: gradac25,
+      mobileSrc: gradac255,
       alt: "Reka Gradac 25",
     },
     {
-      src: gradac26,
+      desktopSrc: gradac26,
+      mobileSrc: gradac266,
       alt: "Reka Gradac 26",
     },
   ];
@@ -95,7 +113,7 @@ export const RekaGradac = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={gradac1} alt="Reka Gradac 1" />
+      <img srcSet={`${gradac11} 400w, ${gradac1} `} alt="Reka Gradac 1" />
 
       <h2 style={{ color: "white" }}>Reka Gradac</h2>
 
@@ -108,7 +126,7 @@ export const RekaGradac = () => {
         najlepših reka u Srbiji.
       </p>
 
-      <img src={gradac3} alt="Reka Gradac 2" />
+      <img srcSet={`${gradac33} 400w, ${gradac3} `} alt="Reka Gradac 2" />
 
       <p>
         Izvire na planini Maljen i teče kroz Valjevske planine, stvarajući
@@ -126,7 +144,7 @@ export const RekaGradac = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -153,7 +171,7 @@ export const RekaGradac = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img
-                  src={image.src}
+                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
                   alt={image.alt}
                   loading="lazy"
                   style={{
@@ -189,7 +207,7 @@ export const RekaGradac = () => {
         specifičnom i vrednom istraživanja.
       </p>
 
-      <img src={gradac2} alt="Reka Gradac 3" />
+      <img srcSet={`${gradac220} 400w, ${gradac2} `} alt="Reka Gradac 3" />
 
       <p>
         Reka Gradac obiluje prirodnim bogatstvima, od pećina i jama, do livada i
@@ -204,12 +222,12 @@ export const RekaGradac = () => {
 
       { isMobile ? (<div className="displayFlexClassic">
         <img
-          src={gradac4}
+          srcSet={`${gradac44} 400w, ${gradac4} `}
           alt="Reka Gradac 31"
           style={{ margin: '0 10px', width: "40%", height: "200px" }}
         />
         <img
-          src={gradac6}
+          srcSet={`${gradac66} 400w, ${gradac6} `}
           alt="Reka Gradac 32"
           style={{ margin: "0 10px", width: "40%", height: "200px" }}
         />
@@ -217,12 +235,12 @@ export const RekaGradac = () => {
       :
       (<div className="displayFlexClassic">
         <img
-          src={gradac4}
+srcSet={`${gradac44} 400w, ${gradac4} `}
           alt="Reka Gradac 31"
           style={{ margin: "0 50px", width: "600px", height: "600px" }}
         />
         <img
-          src={gradac6}
+ srcSet={`${gradac66} 400w, ${gradac6} `}
           alt="Reka Gradac 32"
           style={{ margin: "0 50px", width: "600px", height: "600px" }}
         />
@@ -240,7 +258,7 @@ export const RekaGradac = () => {
         i uživati u čistoj vodi koja je pogodna za piće.
       </p>
 
-      <img src={gradac5} alt="Reka Gradac 5" />
+      <img srcSet={`${gradac55} 400w, ${gradac5} `} alt="Reka Gradac 5" />
 
       <p>
         Reka Gradac, osim što je prirodni raj za ljubitelje prirode, nudi i

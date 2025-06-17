@@ -1,8 +1,13 @@
-import smederevskaTvrdjava1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/smederevskaTvrdjava1.jpg";
-import smederevskaTvrdjava2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/smederevskaTvrdjava2.jpg";
-import smederevskaTvrdjava3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/smederevskaTvrdjava3.jpg";
-import smederevskaTvrdjava4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/smederevskaTvrdjava4.jpg";
-import smederevskaTvrdjava5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/smederevskaTvrdjava5.jpg";
+import smederevskaTvrdjava1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/desktop/smederevskaTvrdjava1.jpg";
+import smederevskaTvrdjava2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/desktop/smederevskaTvrdjava2.jpg";
+import smederevskaTvrdjava3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/desktop/smederevskaTvrdjava3.jpg";
+import smederevskaTvrdjava4 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/desktop/smederevskaTvrdjava4.jpg";
+import smederevskaTvrdjava5 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/desktop/smederevskaTvrdjava5.jpg";
+import smederevskaTvrdjava11 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/mobile/smederevskaTvrdjavaM1.jpg";
+import smederevskaTvrdjava22 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/mobile/smederevskaTvrdjavaM2.jpg";
+import smederevskaTvrdjava33 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/mobile/smederevskaTvrdjavaM3.jpg";
+import smederevskaTvrdjava44 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/mobile/smederevskaTvrdjavaM4.jpg";
+import smederevskaTvrdjava55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava/mobile/smederevskaTvrdjavaM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const SmederevskaTvrdjava = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={smederevskaTvrdjava1} alt="Smederevska Tvrđava 1" />
+      <img srcSet={`${smederevskaTvrdjava11} 400w, ${smederevskaTvrdjava1} `} alt="Smederevska Tvrđava 1" />
 
       <h2>Smederevska Tvrđava</h2>
 
@@ -48,7 +53,7 @@ export const SmederevskaTvrdjava = () => {
         bedemi i kule Velikog grada i dalje čekaju na obimnu obnovu.
       </p>
 
-      <img src={smederevskaTvrdjava3} alt="Smederevska Tvrđava 2" />
+      <img srcSet={`${smederevskaTvrdjava33} 400w, ${smederevskaTvrdjava3} `} alt="Smederevska Tvrđava 2" />
 
       <p>
         Prvi pisani pomen Smedereva datira iz početka 11. veka. Nalazimo ga u
@@ -61,7 +66,7 @@ export const SmederevskaTvrdjava = () => {
         obližnji Beograd.
       </p>
 
-      <img src={smederevskaTvrdjava2} alt="Smederevska Tvrđava 3" />
+      <img srcSet={`${smederevskaTvrdjava22} 400w, ${smederevskaTvrdjava2} `} alt="Smederevska Tvrđava 3" />
 
       <p>
         Međutim, pravi procvat ovog grada počinje tek dolaskom na vlast despota
@@ -79,7 +84,7 @@ export const SmederevskaTvrdjava = () => {
         predstavljala tampon zonu između ove dve suprotstavljene sile.
       </p>
 
-      <img src={smederevskaTvrdjava4} alt="Smederevska Tvrđava 4" />
+      <img srcSet={`${smederevskaTvrdjava44} 400w, ${smederevskaTvrdjava4} `} alt="Smederevska Tvrđava 4" />
 
       <p>
         U to vreme, sudbina Srbije u velikoj meri zavisila je od odnosa između
@@ -92,7 +97,7 @@ export const SmederevskaTvrdjava = () => {
         polagao nade u savez sa Mađarima.
       </p>
 
-      <img src={smederevskaTvrdjava5} alt="Smederevska Tvrđava 4" />
+      <img srcSet={`${smederevskaTvrdjava55} 400w, ${smederevskaTvrdjava5} `} alt="Smederevska Tvrđava 4" />
 
       <p>
         Sve do 1459. godine, grad je bio sedište Despotovine, osim u periodu

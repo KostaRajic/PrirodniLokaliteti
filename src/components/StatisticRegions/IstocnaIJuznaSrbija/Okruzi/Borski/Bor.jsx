@@ -1,10 +1,17 @@
-import bor1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/bor1.jpg";
-import bor2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/bor2.jpg";
-import bor3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/bor3.jpg";
-import bor4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/bor4.jpg";
-import bor5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/bor5.jpg";
-import bor6 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/bor6.jpg";
-import bor7 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/bor7.jpg";
+import bor1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/desktop/bor1.jpg";
+import bor2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/desktop/bor2.jpg";
+import bor3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/desktop/bor3.jpg";
+import bor4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/desktop/bor4.jpg";
+import bor5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/desktop/bor5.jpg";
+import bor6 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/desktop/bor6.jpg";
+import bor7 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/desktop/bor7.jpg";
+import bor11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/mobile/borM1.jpg";
+import bor22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/mobile/borM2.jpg";
+import bor33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/mobile/borM3.jpg";
+import bor44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/mobile/borM4.jpg";
+import bor55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/mobile/borM5.jpg";
+import bor66 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/mobile/borM6.jpg";
+import bor77 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/Bor/mobile/borM7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +30,7 @@ export const Bor = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={bor1} alt="Krupajsko Vrelo 1" />
+      <img srcSet={`${bor11} 400w, ${bor1} `} alt="Bor 1" loading="lazy"/>
 
       <h2>Bor</h2>
 
@@ -37,7 +44,7 @@ export const Bor = () => {
         stanovnika na km².
       </p>
 
-      <img src={bor2} alt="Krupajsko Vrelo 2" />
+      <img srcSet={`${bor22} 400w, ${bor2} `} alt="Bor 2" loading="lazy"/>
 
       <p>
         Grad Bor se sastoji od centralnog naselja i sedišta grada – gradskog
@@ -54,7 +61,7 @@ export const Bor = () => {
         Miloševe kule dužine oko 205 km.
       </p>
 
-      <img src={bor3} alt="Krupajsko Vrelo 3" />
+      <img srcSet={`${bor33} 400w, ${bor3} `} alt="Bor 3" loading="lazy" />
 
       <p>
         Prirodni resursi Bora ne obuhvataju samo nalazišta ruda bogatih bakrom i
@@ -67,7 +74,7 @@ export const Bor = () => {
         zlotske pećine Vernjikica i Lazareva, sa izvanrednim pećinskim ukrasima.
       </p>
 
-      <img src={bor4} alt="Krupajsko Vrelo 4" />
+      <img srcSet={`${bor44} 400w, ${bor4} `} alt="Bor 4" loading="lazy"/>
 
       <p>
         Zapadni deo grada pripada planinskom kompleksu Južnog Kučaja. Svojom
@@ -84,7 +91,7 @@ export const Bor = () => {
         116 pećina i 14 jama.
       </p>
 
-      <img src={bor5} alt="Zoo Park u Boru" />
+      <img srcSet={`${bor55} 400w, ${bor5} `} alt="Zoo Park u Boru" loading="lazy"/>
       <p>
         Zoo park Bor je smešten u blizini centra Bora i predstavlja jednu od
         atrakcija u ovom području. Ovaj zoološki vrt ima bogatstvo različitih
@@ -96,7 +103,7 @@ export const Bor = () => {
         ugroženih vrsta.
       </p>
 
-      <img src={bor6} alt="Planine Stol, Veliki Krš, Deli Jovan" />
+      <img srcSet={`${bor66} 400w, ${bor6} `} alt="Planine Stol, Veliki Krš, Deli Jovan" loading="lazy"/>
       <p>
         Istočni deo zahvataju planine: Stol, koji je drugi po visini vrh na
         teritoriji grada, čiji zaravnjeni vrhovi i strme litice pružaju pogodne
@@ -106,7 +113,7 @@ export const Bor = () => {
         uzdižu ove planine.
       </p>
 
-      <img src={bor7} alt="Brestovačka banja" />
+      <img srcSet={`${bor77} 400w, ${bor7} `} alt="Brestovačka banja" loading="lazy"/>
       <p>
         Brestovačka banja, koja se nalazi u blizini Bora, jedan je od
         najpoznatijih termalnih izvora u Srbiji. Poznata je po svojim lekovitim

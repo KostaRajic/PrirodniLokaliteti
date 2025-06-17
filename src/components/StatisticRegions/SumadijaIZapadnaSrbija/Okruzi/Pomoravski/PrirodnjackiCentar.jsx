@@ -1,8 +1,13 @@
-import prirodnjackiCentar1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/prirodnjackiCentar1.jpg";
-import prirodnjackiCentar2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/prirodnjackiCentar2.jpg";
-import prirodnjackiCentar3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/prirodnjackiCentar3.jpg";
-import prirodnjackiCentar4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/prirodnjackiCentar4.jpg";
-import prirodnjackiCentar5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/prirodnjackiCentar5.jpg";
+import prirodnjackiCentar1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/desktop/prirodnjackiCentar1.jpg";
+import prirodnjackiCentar2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/desktop/prirodnjackiCentar2.jpg";
+import prirodnjackiCentar3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/desktop/prirodnjackiCentar3.jpg";
+import prirodnjackiCentar4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/desktop/prirodnjackiCentar4.jpg";
+import prirodnjackiCentar5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/desktop/prirodnjackiCentar5.jpg";
+import prirodnjackiCentar11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/mobile/MprirodnjackiCentar1.jpg";
+import prirodnjackiCentar22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/mobile/MprirodnjackiCentar2.jpg";
+import prirodnjackiCentar33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/mobile/MprirodnjackiCentar3.jpg";
+import prirodnjackiCentar44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/mobile/MprirodnjackiCentar4.jpg";
+import prirodnjackiCentar55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar/mobile/MprirodnjackiCentar5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const PrirodnjackiCentar = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={prirodnjackiCentar1} alt="Prirodnjački Centar u Svilajncu 1" />
+      <img srcSet={`${prirodnjackiCentar11} 400w, ${prirodnjackiCentar1} `} alt="Prirodnjački Centar u Svilajncu 1" />
 
       <h2 style={{ color: "white" }}>Prirodnjački Centar u Svilajncu</h2>
 
@@ -34,7 +39,7 @@ export const PrirodnjackiCentar = () => {
         30 replika dinosaurusa u prirodnoj veličini.
       </p>
 
-      <img src={prirodnjackiCentar2} alt="Prirodnjački Centar u Svilajncu 2" />
+      <img srcSet={`${prirodnjackiCentar22} 400w, ${prirodnjackiCentar2} `} alt="Prirodnjački Centar u Svilajncu 2" />
 
       <p>
         Osim već pomenutih, Prirodnjački centar nudi i razgledanje postavki kao
@@ -45,7 +50,7 @@ export const PrirodnjackiCentar = () => {
         posetilaca.
       </p>
 
-      <img src={prirodnjackiCentar3} alt="Prirodnjački Centar u Svilajncu 3" />
+      <img srcSet={`${prirodnjackiCentar33} 400w, ${prirodnjackiCentar3} `} alt="Prirodnjački Centar u Svilajncu 3" />
 
       <p>
         Izložba "Svet dinosaurusa" izaziva najveće interesovanje, naročito među
@@ -57,7 +62,7 @@ export const PrirodnjackiCentar = () => {
         porodice.
       </p>
 
-      <img src={prirodnjackiCentar4} alt="Prirodnjački Centar u Svilajncu 4" />
+      <img srcSet={`${prirodnjackiCentar44} 400w, ${prirodnjackiCentar4} `} alt="Prirodnjački Centar u Svilajncu 4" />
 
       <p>
         Ova jedinstvena institucija zapošljava veliki broj ljudi koji se
@@ -66,7 +71,7 @@ export const PrirodnjackiCentar = () => {
         sa decom u igraonici.
       </p>
 
-      <img src={prirodnjackiCentar5} alt="Prirodnjački Centar u Svilajncu 5" />
+      <img srcSet={`${prirodnjackiCentar55} 400w, ${prirodnjackiCentar5} `} alt="Prirodnjački Centar u Svilajncu 5" />
 
       <p>
         Prirodnjački centar je otvoren svaki dan, uključujući vikende i

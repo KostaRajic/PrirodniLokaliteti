@@ -1,9 +1,15 @@
-import suvaPlanina1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina1.jpg";
-import suvaPlanina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina2.jpg";
-import suvaPlanina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina3.jpg";
-import suvaPlanina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina4.jpg";
-import suvaPlanina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina5.jpg";
-import suvaPlanina6 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/suvaPlanina6.jpg";
+import suvaPlanina1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/desktop/suvaPlanina1.jpg";
+import suvaPlanina2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/desktop/suvaPlanina2.jpg";
+import suvaPlanina3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/desktop/suvaPlanina3.jpg";
+import suvaPlanina4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/desktop/suvaPlanina4.jpg";
+import suvaPlanina5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/desktop/suvaPlanina5.jpg";
+import suvaPlanina6 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/desktop/suvaPlanina6.jpg";
+import suvaPlanina11 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/mobile/suvaPlaninaM1.jpg";
+import suvaPlanina22 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/mobile/suvaPlaninaM2.jpg";
+import suvaPlanina33 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/mobile/suvaPlaninaM3.jpg";
+import suvaPlanina44 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/mobile/suvaPlaninaM4.jpg";
+import suvaPlanina55 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/mobile/suvaPlaninaM5.jpg";
+import suvaPlanina66 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/SuvaPlanina/mobile/suvaPlaninaM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +24,7 @@ export const SuvaPlanina = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={suvaPlanina1} alt="Suva Planina 1" />
+      <img srcSet={`${suvaPlanina11} 400w, ${suvaPlanina1} `} alt="Suva Planina 1" />
 
       <h2>Suva Planina</h2>
 
@@ -31,7 +37,7 @@ export const SuvaPlanina = () => {
         Babušnice u Lužničkoj kotlini kroz koju protiče reka Lužnica.
       </p>
 
-      <img src={suvaPlanina2} alt="Suva Planina 2" />
+      <img srcSet={`${suvaPlanina22} 400w, ${suvaPlanina2} `} alt="Suva Planina 2" />
       <p>
         Sa severozapadne i severne strane Suva planina se graniči rekama Nišavom
         (oko koje se formiraju Belopalanačka, Ostričička i Niška kotlina), sa
@@ -50,7 +56,7 @@ export const SuvaPlanina = () => {
         Palanka, Babušnica i Vlasotince.
       </p>
 
-      <img src={suvaPlanina3} alt="Suva Planina 3" />
+      <img srcSet={`${suvaPlanina33} 400w, ${suvaPlanina3} `} alt="Suva Planina 3" />
 
       <p>
         Suva planina je masiv sa izuzetnim pojavnim oblicima krasnog reljefa,
@@ -63,14 +69,14 @@ export const SuvaPlanina = () => {
         područje sa statusom rezervata prirode i objektom geonasleđa Srbije.
       </p>
 
-      <img src={suvaPlanina6} alt="Suva Planina 6" />
+      <img srcSet={`${suvaPlanina66} 400w, ${suvaPlanina6} `} alt="Suva Planina 6" />
       <p>
         Od ukupno 31.860 ha površine zaštićenog područja Specijalnog rezervata
         prirode „Suva planina”, 18.176 ha ima prvi (4,5%), drugi (8,5%) i treći
         stepen zaštite (87%).
       </p>
 
-      <img src={suvaPlanina4} alt="Suva Planina 4" />
+      <img srcSet={`${suvaPlanina44} 400w, ${suvaPlanina4} `} alt="Suva Planina 4" />
 
       <p>
         Suva planina se nalazi na jugoistoku Srbije, pored magistralnog pravca
@@ -83,7 +89,7 @@ export const SuvaPlanina = () => {
         3 km od Niške Banje, 17 km od Niša i 256 km od Beograda.
       </p>
 
-      <img src={suvaPlanina5} alt="Suva Planina 5" />
+      <img srcSet={`${suvaPlanina55} 400w, ${suvaPlanina5} `} alt="Suva Planina 5" />
 
       <p>
         Suva planina se prostire pravcem severozapad—jugoistok u visinskim

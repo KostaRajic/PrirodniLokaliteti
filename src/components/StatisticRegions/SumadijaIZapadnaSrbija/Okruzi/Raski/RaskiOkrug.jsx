@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { raskiOkrugData } from "./raskiOkrugData";
 import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const RaskiOkrug = () => {
   const [slide, setSlide] = useState(0);
@@ -47,7 +48,7 @@ export const RaskiOkrug = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbija)}
           style={{ fill: "white"}}
         />
       </header>

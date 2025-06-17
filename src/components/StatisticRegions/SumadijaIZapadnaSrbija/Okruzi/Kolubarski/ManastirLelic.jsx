@@ -1,7 +1,11 @@
-import lelic1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/manastirLelic1.jpg";
-import lelic2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/manastirLelic2.jpg";
-import lelic3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/manastirLelic3.jpg";
-import lelic4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/manastirLelic4.jpg";
+import lelic1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/desktop/manastirLelic1.jpg";
+import lelic2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/desktop/manastirLelic2.jpg";
+import lelic3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/desktop/manastirLelic3.jpg";
+import lelic4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/desktop/manastirLelic4.jpg";
+import lelic11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/mobile/MmanastirLelic1.jpg";
+import lelic22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/mobile/MmanastirLelic2.jpg";
+import lelic33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/mobile/MmanastirLelic3.jpg";
+import lelic44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/ManastirLelic/mobile/MmanastirLelic4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +24,7 @@ export const ManastirLelic = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={lelic4} alt="Manastir Lelić 1" />
+      <img srcSet={`${lelic44} 400w, ${lelic4} `} alt="Manastir Lelić 1" />
 
       <h2 style={{ color: "white" }}>Manastir Lelić</h2>
 
@@ -38,7 +42,7 @@ export const ManastirLelic = () => {
         način, manastir Lelić postaje metoh manastira Kaone.
       </p>
 
-      <img src={lelic2} alt="Manastir Lelić 2" />
+      <img srcSet={`${lelic22} 400w, ${lelic2} `} alt="Manastir Lelić 2" />
 
       <p>
         Odluka o pretvaranju parohijskog hrama u Leliću u manastir doneta je 12.
@@ -54,7 +58,7 @@ export const ManastirLelic = () => {
         a ispred crkve nalaze se veliki zvonik i crkveni dom.
       </p>
 
-      <img src={lelic3} alt="Manastir Lelić 3" />
+      <img srcSet={`${lelic33} 400w, ${lelic3} `} alt="Manastir Lelić 3" />
 
       <p>
         Živopis crkve osmišljen je prema zamisli Vladike Nikolaja, a odlikuje se
@@ -67,7 +71,7 @@ export const ManastirLelic = () => {
         takođe zadužbina episkopa Nikolaja.
       </p>
 
-      <img src={lelic1} alt="Manastir Lelić 4" />
+      <img srcSet={`${lelic11} 400w, ${lelic1} `} alt="Manastir Lelić 4" />
 
       <p>
         Godine 1991. u okviru manastirskog kompleksa otvoren je muzej posvećen

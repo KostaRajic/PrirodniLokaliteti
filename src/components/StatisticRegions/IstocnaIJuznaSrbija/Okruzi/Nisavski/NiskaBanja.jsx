@@ -1,8 +1,13 @@
-import niskaBanja1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/niskaBanja1.jpg";
-import niskaBanja2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/niskaBanja2.jpg";
-import niskaBanja3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/niskaBanja3.jpg";
-import niskaBanja4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/niskaBanja4.jpg";
-import niskaBanja5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/niskaBanja5.jpg";
+import niskaBanja1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/desktop/niskaBanja1.jpg";
+import niskaBanja2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/desktop/niskaBanja2.jpg";
+import niskaBanja3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/desktop/niskaBanja3.jpg";
+import niskaBanja4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/desktop/niskaBanja4.jpg";
+import niskaBanja5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/desktop/niskaBanja5.jpg";
+import niskaBanja11 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/mobile/niskaBanjaM1.jpg";
+import niskaBanja22 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/mobile/niskaBanjaM2.jpg";
+import niskaBanja33 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/mobile/niskaBanjaM3.jpg";
+import niskaBanja44 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/mobile/niskaBanjaM4.jpg";
+import niskaBanja55 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/NiskaBanja/mobile/niskaBanjaM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,9 +20,12 @@ export const NiskaBanja = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
+      <FaArrowLeft
+        className="arrowLeft"
+        onClick={() => navigate(nisavskiOkrugPathRoutes.home)}
+      />
       <header></header>
-      <img src={niskaBanja2} alt="Niška Banja 1" />
+      <img  alt="Niška Banja 1" srcSet={`${niskaBanja22} 400w, ${niskaBanja2} `} />
 
       <h2>Niška Banja</h2>
 
@@ -34,7 +42,7 @@ export const NiskaBanja = () => {
         faktora.
       </p>
 
-      <img src={niskaBanja1} alt="Niška Banja 2" />
+      <img  srcSet={`${niskaBanja11} 400w, ${niskaBanja1} `} alt="Niška Banja 2" />
       <p>
         Niška Banja se nalazi na jugoistoku Srbije, uz magistralni put
         Beograd–Niš–Sofija–Istanbul (poznat i kao nišavsko-marička magistrala),
@@ -51,7 +59,7 @@ export const NiskaBanja = () => {
         planine.
       </p>
 
-      <img src={niskaBanja3} alt="Niška Banja 3" />
+      <img srcSet={`${niskaBanja33} 400w, ${niskaBanja3} `}  alt="Niška Banja 3" />
 
       <p>
         Površina na kojoj se nalazi Niška Banja iznosi 6,43 km². Ovaj prostor
@@ -67,7 +75,7 @@ export const NiskaBanja = () => {
         krečnjačkog brda Koritnjaka, koje se strmo uzdiže iznad Niške Banje.
       </p>
 
-      <img src={niskaBanja4} alt="Niška Banja 4" />
+      <img srcSet={`${niskaBanja44} 400w, ${niskaBanja4} `}  alt="Niška Banja 4" />
 
       <p>
         Na nadmorskoj visini od 248 m nalazi se centralni deo Niške Banje, koji
@@ -88,7 +96,7 @@ export const NiskaBanja = () => {
         opštinu Prva Kutina.
       </p>
 
-      <img src={niskaBanja5} alt="Niška Banja 5" />
+      <img srcSet={`${niskaBanja55} 400w, ${niskaBanja5} `}  alt="Niška Banja 5" />
 
       <p>
         Niška Banja se nalazi na granici najstarije rodopske mase na Balkanskom

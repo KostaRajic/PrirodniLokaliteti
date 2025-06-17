@@ -1,7 +1,11 @@
-import manastirSvetihArhangela1 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/manastirSvetihArhangela1.jpg";
-import manastirSvetihArhangela2 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/manastirSvetihArhangela2.jpg";
-import manastirSvetihArhangela3 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/manastirSvetihArhangela3.jpg";
-import manastirSvetihArhangela4 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/manastirSvetihArhangela4.jpg";
+import manastirSvetihArhangela1 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/desktop/manastirSvetihArhangela1.jpg";
+import manastirSvetihArhangela2 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/desktop/manastirSvetihArhangela2.jpg";
+import manastirSvetihArhangela3 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/desktop/manastirSvetihArhangela3.jpg";
+import manastirSvetihArhangela4 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/desktop/manastirSvetihArhangela4.jpg";
+import manastirSvetihArhangela11 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/mobile/MmanastirSvetihArhangela1.jpg";
+import manastirSvetihArhangela22 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/mobile/MmanastirSvetihArhangela2.jpg";
+import manastirSvetihArhangela33 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/mobile/MmanastirSvetihArhangela3.jpg";
+import manastirSvetihArhangela44 from "../../../../../assets/images/KosovoIMetohija/Prizrenski/ManastirSvetihArhangela/mobile/MmanastirSvetihArhangela4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const ManastirSvetihArhangela = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(prizrenskiOkrugPathRoutes.home)} style={{fill: 'white'}}/>
       <header></header>
-      <img src={manastirSvetihArhangela1} alt="Manastir Svetih Arhangela 1" />
+      <img srcSet={`${manastirSvetihArhangela11} 400w, ${manastirSvetihArhangela1} `} alt="Manastir Svetih Arhangela 1" />
 
       <h2>Manastir Svetih Arhangela</h2>
 
@@ -34,7 +38,7 @@ export const ManastirSvetihArhangela = () => {
         vremena, a meštani ga zovu Gornji grad.
       </p>
 
-      <img src={manastirSvetihArhangela2} alt="Manastir Svetih Arhangela 2" />
+      <img srcSet={`${manastirSvetihArhangela22} 400w, ${manastirSvetihArhangela2} `} alt="Manastir Svetih Arhangela 2" />
 
       <p>
         Odlučujući da sagradi manastir Svetih Arhangela kod Prizrena, Dušan je
@@ -54,7 +58,7 @@ export const ManastirSvetihArhangela = () => {
         postoji nešto slično pod suncem.
       </p>
 
-      <img src={manastirSvetihArhangela3} alt="Manastir Svetih Arhangela 3" />
+      <img srcSet={`${manastirSvetihArhangela33} 400w, ${manastirSvetihArhangela3} `} alt="Manastir Svetih Arhangela 3" />
 
       <p>
         Prema arheološkim istraživanjima iz 1927. godine, sprovedenim pod
@@ -85,7 +89,7 @@ export const ManastirSvetihArhangela = () => {
         <br />- Drugi prateći objekti manastirske ekonomije
       </p>
 
-      <img src={manastirSvetihArhangela4} alt="Manastir Svetih Arhangela 4" />
+      <img srcSet={`${manastirSvetihArhangela44} 400w, ${manastirSvetihArhangela4} `} alt="Manastir Svetih Arhangela 4" />
 
       <p>
         Glavna crkva, posvećena Svetim Arhangelima, danas sačuvana samo u

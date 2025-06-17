@@ -1,8 +1,13 @@
-import djerdap1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/djerdap1.jpg";
-import djerdap2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/djerdap6.jpg";
-import djerdap3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/djerdap3.jpg";
-import djerdap4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/djerdap4.jpg";
-import djerdap5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/djerdap5.jpg";
+import djerdap1 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/desktop/djerdap1.jpg";
+import djerdap2 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/desktop/djerdap6.jpg";
+import djerdap3 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/desktop/djerdap3.jpg";
+import djerdap4 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/desktop/djerdap4.jpg";
+import djerdap5 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/desktop/djerdap5.jpg";
+import djerdap11 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/mobile/djerdapM1.jpg";
+import djerdap22 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/mobile/djerdapM6.jpg";
+import djerdap33 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/mobile/djerdapM3.jpg";
+import djerdap44 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/mobile/djerdapM4.jpg";
+import djerdap55 from "../../../../../assets/images/JuznaIIstocnaSrbija/BorskiOkrug/DjerdapskaKlisura/mobile/djerdapM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const DjerdapskaKlisura = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={djerdap1} alt="Đerdapska Klisura 1" />
+      <img srcSet={`${djerdap11} 400w, ${djerdap1} `} alt="Đerdapska Klisura 1" />
 
       <h2>Đerdapska Klisura</h2>
 
@@ -39,7 +44,7 @@ export const DjerdapskaKlisura = () => {
         svojim jedinstvenim karakteristikama i prirodnim lepotama.
       </p>
 
-      <img src={djerdap4} alt="Đerdapska Klisura 2" />
+      <img srcSet={`${djerdap44} 400w, ${djerdap4} `} alt="Đerdapska Klisura 2" />
 
       <p>
         Tragovi ljudskih nastojanja da osvoje i prilagode ove surove predele
@@ -56,7 +61,7 @@ export const DjerdapskaKlisura = () => {
         podvodnih stena i hridina.
       </p>
 
-      <img src={djerdap3} alt="Đerdapska Klisura 3" />
+      <img srcSet={`${djerdap33} 400w, ${djerdap3} `} alt="Đerdapska Klisura 3" />
 
       <p>
         Pre izgradnje hidroenergetskog sistema „Đerdap I“, Dunav je na najužem
@@ -73,7 +78,7 @@ export const DjerdapskaKlisura = () => {
         mogao preći reku s obale na obalu.
       </p>
 
-      <img src={djerdap2} alt="Đerdapska Klisura 4" />
+      <img srcSet={`${djerdap22} 400w, ${djerdap2} `} alt="Đerdapska Klisura 4" />
 
       <p>
         Đerdapska klisura, poznata i kao Železna vrata, nosi svoje ime
@@ -90,7 +95,7 @@ export const DjerdapskaKlisura = () => {
         poprima oblik nalik posudi – po čemu je ovaj deo klisure i dobio ime.
       </p>
 
-      <img src={djerdap5} alt="Đerdapska Klisura 5" />
+      <img srcSet={`${djerdap55} 400w, ${djerdap5} `} alt="Đerdapska Klisura 5" />
       <p>
         Nacionalni park Đerdap odlikuje se izuzetno bogatim biljnim i
         životinjskim svetom, a u njegovom sklopu nalazi se i jedna od najvećih

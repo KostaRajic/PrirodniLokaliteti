@@ -1,19 +1,30 @@
-import senta1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/senta2.jpg";
-import senta2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/senta3.jpg";
-import senta3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/senta4.jpg";
-import senta4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/senta5.jpg";
+import senta1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/desktop/senta2.jpg";
+import senta2 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/desktop/senta3.jpg";
+import senta3 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/desktop/senta4.jpg";
+import senta4 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/desktop/senta5.jpg";
+import senta11 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/mobile/Msenta2.jpg";
+import senta22 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/mobile/Msenta3.jpg";
+import senta33 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/mobile/Msenta4.jpg";
+import senta44 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/mobile/Msenta5.jpg";
 
-import stevanSremac from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/stevanSremac2.jpg";
-import jovanDjordjevic from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/jovanDjordjevic2.jpg";
-import bistaTotIštvana from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/bistaTotIštvana2.jpg";
-import svJovan from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/svJovan2.jpg";
-import zrtve1944 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/zrtve19442.jpg";
-import skeledzija from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/statuaSkeledzije2.jpg";
+import stevanSremac from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MstevanSremac2.jpg";
+import jovanDjordjevic from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MjovanDjordjevic2.jpg";
+import bistaTotIštvana from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MbistaTotIštvana2.jpg";
+import svJovan from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MsvJovan2.jpg";
+import zrtve1944 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/Mzrtve19442.jpg";
+import skeledzija from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MstatuaSkeledzije2.jpg";
+import stevanSremac1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MstevanSremac2.jpg";
+import jovanDjordjevic1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MjovanDjordjevic2.jpg";
+import bistaTotIštvana1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MbistaTotIštvana2.jpg";
+import svJovan1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MsvJovan2.jpg";
+import zrtve19441 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/Mzrtve19442.jpg";
+import skeledzija1 from "../../../../../assets/images/Vojvodina/SevernoBanatskiOkrug/Senta/spomenici/mobile/MstatuaSkeledzije2.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { useEffect, useRef, useState } from "react";
+import { severnoBanatskiPathRoutes } from "./SevernoBanatskiPathRoutes";
 
 export const Senta = () => {
   const navigate = useNavigate();
@@ -36,9 +47,9 @@ export const Senta = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(severnoBanatskiPathRoutes.home)} />
       <header></header>
-      <img src={senta3} alt="Senta 1" />
+      <img srcSet={`${senta33} 400w, ${senta3} `} alt="Senta 1" />
 
       <h2>Senta</h2>
 
@@ -51,9 +62,9 @@ export const Senta = () => {
         tipa: Gornji Breg, Bogaraš, Tornjoš i Kevi.
       </p>
 
-      <img src={senta1} alt="Senta 2" />
+      <img srcSet={`${senta11} 400w, ${senta1} `} alt="Senta 2" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Zgrada izgrađena u secesionom stilu koja gleda na glavni trg je glavna
         karakteristika panorame grada. Masivni toranj, visok skoro 50 metara,
         deluje pomalo romantično, međutim, u ukrasima nosi na sebi znakove
@@ -64,7 +75,7 @@ export const Senta = () => {
         pogled na grad i njegovu okolinu.
       </p>
 
-      <img src={senta2} alt="Senta 3" />
+      <img srcSet={`${senta22} 400w, ${senta2} `} alt="Senta 3" />
 
       <p>
         U Senti postoje nekoliko parkova i zelenih površina, među kojima se
@@ -82,33 +93,33 @@ export const Senta = () => {
 
         >
           <div>
-            <img src={jovanDjordjevic} alt="Jovan Djordjevic" />
+            <img srcSet={`${jovanDjordjevic1} 400w, ${jovanDjordjevic} `} alt="Jovan Djordjevic" />
             <p style={{ padding: "20px", textAlign: "center" }}>
               Jovam Đorđević
             </p>
           </div>
           <div>
-            <img src={svJovan} alt="Sveti Jovan" />
+            <img srcSet={`${svJovan1} 400w, ${svJovan} `} alt="Sveti Jovan" />
             <p style={{ padding: "20px", textAlign: "center" }}>Sveti Jovan</p>
           </div>
           <div>
-            <img src={skeledzija} alt="Skeledzija" />
+            <img srcSet={`${skeledzija1} 400w, ${skeledzija} `} alt="Skeledzija" />
             <p style={{ padding: "20px", textAlign: "center" }}>Skeledžija</p>
           </div>
           <div>
-            <img src={stevanSremac} alt="Stevan Sremac" />
+            <img srcSet={`${stevanSremac1} 400w, ${stevanSremac} `} alt="Stevan Sremac" />
             <p style={{ padding: "20px", textAlign: "center" }}>
               Stevan Sremac
             </p>
           </div>
           <div>
-            <img src={zrtve1944} alt="Zrtve 1944" />
+            <img srcSet={`${zrtve19441} 400w, ${zrtve1944} `} alt="Zrtve 1944" />
             <p style={{ padding: "20px", textAlign: "center" }}>
               Žrtve u drugom svetskom ratu
             </p>
           </div>
           <div>
-            <img src={bistaTotIštvana} alt="Bista Tot Istvana" />
+            <img srcSet={`${bistaTotIštvana1} 400w, ${bistaTotIštvana} `} alt="Bista Tot Istvana" />
             <p style={{ padding: "20px", textAlign: "center" }}>
               Bista Tot Ištvana
             </p>
@@ -118,19 +129,19 @@ export const Senta = () => {
         <>
           <div className="fourImages" style={{ padding: "20px", gap: "100px" }}>
             <div style={{ width: "20vw" }}>
-              <img src={jovanDjordjevic} alt="Jovan Djordjevic" />
+              <img srcSet={`${jovanDjordjevic1} 400w, ${jovanDjordjevic} `} alt="Jovan Djordjevic" />
               <p style={{ padding: "20px", textAlign: "center" }}>
                 Žrtve u drugom svetskom ratu
               </p>
             </div>
             <div style={{ width: "20vw" }}>
-              <img src={svJovan} alt="Sveti Jovan" />
+              <img srcSet={`${svJovan1} 400w, ${svJovan} `} alt="Sveti Jovan" />
               <p style={{ padding: "20px", textAlign: "center" }}>
                 Žrtve u drugom svetskom ratu
               </p>
             </div>
             <div style={{ width: "20vw" }}>
-              <img src={skeledzija} alt="Skeledzija" />
+              <img srcSet={`${skeledzija1} 400w, ${skeledzija} `} alt="Skeledzija" />
               <p style={{ padding: "20px", textAlign: "center" }}>
                 Žrtve u drugom svetskom ratu
               </p>
@@ -138,19 +149,19 @@ export const Senta = () => {
           </div>
           <div className="fourImages" style={{ padding: "20px", gap: "100px" }}>
             <div style={{ width: "20vw" }}>
-              <img src={stevanSremac} alt="Stevan Sremac" />
+              <img srcSet={`${stevanSremac1} 400w, ${stevanSremac} `} alt="Stevan Sremac" />
               <p style={{ padding: "20px", textAlign: "center" }}>
                 Stevan Sremac
               </p>
             </div>
             <div style={{ width: "20vw" }}>
-              <img src={zrtve1944} alt="Zrtve 1944" />
+              <img srcSet={`${zrtve19441} 400w, ${zrtve1944} `} alt="Zrtve 1944" />
               <p style={{ padding: "20px", textAlign: "center" }}>
                 Žrtve u drugom svetskom ratu
               </p>
             </div>
             <div style={{ width: "20vw" }}>
-              <img src={bistaTotIštvana} alt="Bista Tot Istvana" />
+              <img srcSet={`${bistaTotIštvana1} 400w, ${bistaTotIštvana} `} alt="Bista Tot Istvana" />
               <p style={{ padding: "20px", textAlign: "center" }}>
                 Bista Tot Ištvana
               </p>
@@ -159,7 +170,7 @@ export const Senta = () => {
         </>
       )}
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Na teritoriji grada, ali i cele opštine, može se naći srazmerno mali
         broj statua, odnosno spomenika. Statua Svetom Jovanu iz Nepomuka (delo
         Ištvana Tota, vajara) postavljena je 1914. godine na svoju današnju
@@ -173,9 +184,9 @@ export const Senta = () => {
         koji je takođe rodom iz Sente.
       </p>
 
-      <img src={senta4} alt="Senta 4" />
+      <img srcSet={`${senta44} 400w, ${senta4} `} alt="Senta 4" />
 
-      <p style={{ marginTop: "-10px" }}>
+      <p>
         Pravoslavna (srpska) Crkva Svetog Arhangela Mihaila je važan verski i
         kulturni spomenik grada. Izgrađena je u baroknom stilu, a njen početak
         izgradnje datira iz 18. veka, tačnije 1751. godine. Ova crkva je jedna

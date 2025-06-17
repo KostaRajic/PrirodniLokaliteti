@@ -1,8 +1,13 @@
-import manastirSvetogNikole1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/manastirSvetogNikole1.jpg";
-import manastirSvetogNikole2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/manastirSvetogNikole2.jpg";
-import manastirSvetogNikole3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/manastirSvetogNikole3.jpg";
-import manastirSvetogNikole4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/manastirSvetogNikole4.jpg";
-import manastirSvetogNikole5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/manastirSvetogNikole5.jpg";
+import manastirSvetogNikole1 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/desktop/manastirSvetogNikole1.jpg";
+import manastirSvetogNikole2 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/desktop/manastirSvetogNikole2.jpg";
+import manastirSvetogNikole3 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/desktop/manastirSvetogNikole3.jpg";
+import manastirSvetogNikole4 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/desktop/manastirSvetogNikole4.jpg";
+import manastirSvetogNikole5 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/desktop/manastirSvetogNikole5.jpg";
+import manastirSvetogNikole11 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/mobile/manastirSvetogNikoleM1.jpg";
+import manastirSvetogNikole22 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/mobile/manastirSvetogNikoleM2.jpg";
+import manastirSvetogNikole33 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/mobile/manastirSvetogNikoleM3.jpg";
+import manastirSvetogNikole44 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/mobile/manastirSvetogNikoleM4.jpg";
+import manastirSvetogNikole55 from "../../../../../assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/ManastirSvetogNikole/mobile/manastirSvetogNikoleM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +23,7 @@ export const ManastirSvetogNikole = () => {
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(toplickiOkurgPathRoutes.home)} />
       <header></header>
       <img
-        src={manastirSvetogNikole1}
+        srcSet={`${manastirSvetogNikole11} 400w, ${manastirSvetogNikole1} `}
         alt="Manastir Svteog Nikole kod Kuršumlije 1"
       />
 
@@ -37,7 +42,7 @@ export const ManastirSvetogNikole = () => {
       </p>
 
       <img
-        src={manastirSvetogNikole2}
+        srcSet={`${manastirSvetogNikole22} 400w, ${manastirSvetogNikole2} `}
         alt="Manastir Svteog Nikole kod Kuršumlije 2"
       />
       <p>
@@ -52,7 +57,7 @@ export const ManastirSvetogNikole = () => {
       </p>
 
       <img
-        src={manastirSvetogNikole3}
+        srcSet={`${manastirSvetogNikole33} 400w, ${manastirSvetogNikole3} `}
         alt="Manastir Svteog Nikole kod Kuršumlije 3"
       />
 
@@ -69,7 +74,7 @@ export const ManastirSvetogNikole = () => {
       </p>
 
       <img
-        src={manastirSvetogNikole4}
+        srcSet={`${manastirSvetogNikole44} 400w, ${manastirSvetogNikole4} `}
         alt="Manastir Svteog Nikole kod Kuršumlije 4"
       />
 
@@ -83,7 +88,7 @@ export const ManastirSvetogNikole = () => {
       </p>
 
       <img
-        src={manastirSvetogNikole5}
+        srcSet={`${manastirSvetogNikole55} 400w, ${manastirSvetogNikole5} `}
         alt="Manastir Svteog Nikole kod Kuršumlije 5"
       />
 

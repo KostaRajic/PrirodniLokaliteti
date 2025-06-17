@@ -1,9 +1,15 @@
-import uvac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/uvac1.jpg";
-import uvac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/uvac2.jpg";
-import uvac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/uvac3.jpg";
-import uvac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/uvac4.jpg";
-import uvac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/uvac5.jpg";
-import uvac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/uvac6.jpg";
+import uvac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/desktop/uvac1.jpg";
+import uvac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/desktop/uvac2.jpg";
+import uvac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/desktop/uvac3.jpg";
+import uvac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/desktop/uvac4.jpg";
+import uvac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/desktop/uvac5.jpg";
+import uvac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/desktop/uvac6.jpg";
+import uvac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/mobile/Muvac1.jpg";
+import uvac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/mobile/Muvac2.jpg";
+import uvac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/mobile/Muvac3.jpg";
+import uvac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/mobile/Muvac4.jpg";
+import uvac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/mobile/Muvac5.jpg";
+import uvac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Uvac/mobile/Muvac6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,9 +22,9 @@ export const RekaUvac = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.rekaUvac)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={uvac2} alt="Reka Uvac 1" />
+      <img srcSet={`${uvac22} 400w, ${uvac2} `} alt="Reka Uvac 1" />
 
       <h2>Reka Uvac</h2>
 
@@ -39,7 +45,7 @@ export const RekaUvac = () => {
         i kao Kokin Brod), Sjeničko ili Uvačko jezero i Radoinjsko jezero.
       </p>
 
-      <img src={uvac1} alt="Reka Uvac 2" />
+      <img srcSet={`${uvac11} 400w, ${uvac1} `} alt="Reka Uvac 2" />
 
       <p>
         Posebnu vrednost doline Uvca predstavljaju jedinstveni uklješteni
@@ -58,7 +64,7 @@ export const RekaUvac = () => {
         prostoru daju jedinstvenu estetsku vrednost.
       </p>
 
-      <img src={uvac3} alt='Prirodni rezervat "Uvac"' />
+      <img srcSet={`${uvac33} 400w, ${uvac3} `} alt='Prirodni rezervat "Uvac"' />
 
       <p>
         Prirodni rezervat "Uvac" poznat je po izuzetno bogatoj fauni, a posebno
@@ -78,7 +84,7 @@ export const RekaUvac = () => {
       </p>
 
       <img
-        src={uvac4}
+        srcSet={`${uvac44} 400w, ${uvac4} `}
         alt='Prirodni rezervat "Uvac"'
       />
 
@@ -99,7 +105,7 @@ export const RekaUvac = () => {
         ovog jedinstvenog prirodnog blaga.
       </p>
 
-      <img src={uvac5} alt="Ušačka pećina" />
+      <img srcSet={`${uvac55} 400w, ${uvac5} `} alt="Ušačka pećina" />
       <p>
         Ušačka pećina je deo Ušačkog pećinskog sistema, jednog od najdužih i
         najznačajnijih speleoloških objekata u Srbiji, sa ukupnom dužinom od
@@ -116,7 +122,7 @@ export const RekaUvac = () => {
         nalazišta u Srbiji i regionu.
       </p>
 
-      <img src={uvac6} alt="Ledena pećina" />
+      <img srcSet={`${uvac66} 400w, ${uvac6} `} alt="Ledena pećina" />
       <p>
         Ledena pećina je fascinantna podzemna formacija smeštena u Specijalnom
         rezervatu prirode "Uvac". Prostire se na dužini od oko 2.500 metara.

@@ -1,8 +1,13 @@
-import zlatibor1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/zlatibor1.jpg";
-import zlatibor2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/zlatibor2.jpg";
-import zlatibor3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/zlatibor3.jpg";
-import zlatibor4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/zlatibor4.jpg";
-import zlatibor5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/zlatibor5.jpg";
+import zlatibor1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/desktop/zlatibor1.jpg";
+import zlatibor2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/desktop/zlatibor2.jpg";
+import zlatibor3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/desktop/zlatibor3.jpg";
+import zlatibor4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/desktop/zlatibor4.jpg";
+import zlatibor5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/desktop/zlatibor5.jpg";
+import zlatibor11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/mobile/Mzlatibor1.jpg";
+import zlatibor22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/mobile/Mzlatibor2.jpg";
+import zlatibor33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/mobile/Mzlatibor3.jpg";
+import zlatibor44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/mobile/Mzlatibor4.jpg";
+import zlatibor55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Zlatibor/mobile/Mzlatibor5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,9 +20,9 @@ export const PlaninaZlatibor = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.planinaZlatibor)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zlatibor1} alt="Planina Zlatibor 1" />
+      <img srcSet={`${zlatibor11} 400w, ${zlatibor1} `} alt="Planina Zlatibor 1" />
 
       <h2>Planina Zlatibor</h2>
 
@@ -31,7 +36,7 @@ export const PlaninaZlatibor = () => {
         uključuje i Alin Potok kao deo zlatiborske visoravni.
       </p>
 
-      <img src={zlatibor2} alt="Planina Zlatibor 2" />
+      <img srcSet={`${zlatibor22} 400w, ${zlatibor2} `} alt="Planina Zlatibor 2" />
 
       <p>
         Prema jugu, padine Zlatibora se šire do izvorišta Ljubiške reke, gde
@@ -49,7 +54,7 @@ export const PlaninaZlatibor = () => {
         geomorfološkom smislu.
       </p>
 
-      <img src={zlatibor5} alt="Planina Zlatibor 3" />
+      <img srcSet={`${zlatibor55} 400w, ${zlatibor5} `} alt="Planina Zlatibor 3" />
 
       <p>
         Ime Zlatibor prvi put se zvanično pominje u okviru nove administrativne
@@ -67,7 +72,7 @@ export const PlaninaZlatibor = () => {
       </p>
 
       <img
-        src={zlatibor4}
+        srcSet={`${zlatibor44} 400w, ${zlatibor4} `}
         alt="Planina Zlatibor 4"
       />
 
@@ -83,7 +88,7 @@ export const PlaninaZlatibor = () => {
         za lečenje bronhijalne astme i drugih alergijskih bolesti.
       </p>
 
-      <img src={zlatibor3} alt="Planina Zlatibor 5" />
+      <img srcSet={`${zlatibor33} 400w, ${zlatibor3} `} alt="Planina Zlatibor 5" />
       <p>
         Životinjski svet Zlatibora je izuzetno bogat i raznovrstan. Tradicija
         "Zlatiborske hajke na vuka" podrazumeva godišnje smanjenje broja vukova,

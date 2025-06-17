@@ -1,12 +1,21 @@
-import krusevac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac1.jpg";
-import krusevac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac2.jpg";
-import krusevac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac3.jpg";
-import krusevac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac4.jpg";
-import krusevac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac5.jpg";
-import krusevac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac6.jpg";
-import krusevac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac7.jpg";
-import krusevac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac8.jpg";
-import krusevac9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/krusevac9.jpg";
+import krusevac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac1.jpg";
+import krusevac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac2.jpg";
+import krusevac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac3.jpg";
+import krusevac4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac4.jpg";
+import krusevac5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac5.jpg";
+import krusevac6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac6.jpg";
+import krusevac7 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac7.jpg";
+import krusevac8 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac8.jpg";
+import krusevac9 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/desktop/krusevac9.jpg";
+import krusevac11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac1.jpg";
+import krusevac22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac2.jpg";
+import krusevac33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac3.jpg";
+import krusevac44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac4.jpg";
+import krusevac55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac5.jpg";
+import krusevac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac6.jpg";
+import krusevac77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac7.jpg";
+import krusevac88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac8.jpg";
+import krusevac99 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/Krusevac/mobile/Mkrusevac9.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +30,7 @@ export const Krusevac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(rasinskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={krusevac2} alt="Krusevac 1" />
+      <img srcSet={`${krusevac22} 400w, ${krusevac2} `} alt="Krusevac 1" />
 
       <h2 style={{ color: "white" }}>Kruševac</h2>
 
@@ -37,7 +46,7 @@ export const Krusevac = () => {
         Lazara.
       </p>
 
-      <img src={krusevac1} alt="Krusevac Lazarev Grad" />
+      <img srcSet={`${krusevac11} 400w, ${krusevac1} `} alt="Krusevac Lazarev Grad" />
 
       <p>
         Kada je srpski knez Lazar izabrao Kruševac kao mesto za odbranu
@@ -51,7 +60,7 @@ export const Krusevac = () => {
         nalazi se na glavnom trgu u Kruševcu.
       </p>
 
-      <img src={krusevac3} alt="Spomenik Despotu Stefanu Lazarevicu u Krusevcu" />
+      <img srcSet={`${krusevac33} 400w, ${krusevac3} `} alt="Spomenik Despotu Stefanu Lazarevicu u Krusevcu" />
 
       <p>
         Na Vidovdan 2020. godine, na Trgu „Kosturnica“ u Kruševcu, svečano je
@@ -66,7 +75,7 @@ export const Krusevac = () => {
         Boris Stajkovac.
       </p>
 
-      <img src={krusevac4} alt="Krusevac 2" />
+      <img srcSet={`${krusevac44} 400w, ${krusevac4} `} alt="Krusevac 2" />
 
       <p>
         Prema predaji, Kruševac je dobio ime po velikom rečnom kamenu, korsu,
@@ -84,7 +93,7 @@ export const Krusevac = () => {
         nečujno su se približili Turcima u samo čarapama i pobili ih.
       </p>
 
-      <img src={krusevac5} alt="Crkva Lazarica" />
+      <img srcSet={`${krusevac55} 400w, ${krusevac5} `} alt="Crkva Lazarica" />
 
       <p>
         Crkva Lazarica, koja se nalazi u samom jezgru Kruševca, zajedno sa
@@ -102,7 +111,7 @@ export const Krusevac = () => {
         oslobođen od Turaka.
       </p>
 
-      <img src={krusevac6} alt="Spomenik kosovskim junacima u Kruševcu" />
+      <img srcSet={`${krusevac66} 400w, ${krusevac6} `} alt="Spomenik kosovskim junacima u Kruševcu" />
 
       <p>
         Spomenik kosovskim junacima u Kruševcu je najpoznatije vajarsko delo
@@ -117,7 +126,7 @@ export const Krusevac = () => {
         sadrži jasne vajarske simbole.
       </p>
 
-      <img src={krusevac7} alt="Narodni muzej Kruševac" />
+      <img srcSet={`${krusevac77} 400w, ${krusevac7} `} alt="Narodni muzej Kruševac" />
 
       <p>
         Narodni muzej u Kruševacu je regionalni muzej koji pokriva područje
@@ -138,7 +147,7 @@ export const Krusevac = () => {
         posvećena kulturnoj istoriji grada.
       </p>
 
-      <img src={krusevac8} alt="Kruševac noću" />
+      <img srcSet={`${krusevac88} 400w, ${krusevac8} `} alt="Kruševac noću" />
 
       <p>
         Kruševac noću ima poseban šarm. Grad se smiruje, ali život na glavnim
@@ -152,7 +161,7 @@ export const Krusevac = () => {
         ovoj tišini.
       </p>
 
-      <img src={krusevac9} alt="Spomenik osnivaču Kruševca, knezu Lazaru" />
+      <img srcSet={`${krusevac99} 400w, ${krusevac9} `} alt="Spomenik osnivaču Kruševca, knezu Lazaru" />
 
       <p>
         Spomenik osnivaču Kruševca, knezu Lazaru, nalazi se u istočnom delu

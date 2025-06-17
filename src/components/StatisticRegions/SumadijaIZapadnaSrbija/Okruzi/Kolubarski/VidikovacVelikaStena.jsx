@@ -1,8 +1,13 @@
-import velikaStena1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/velikaStena5.jpg";
-import velikaStena2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/velikaStena1.jpg";
-import velikaStena3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/velikaStena2.jpg";
-import velikaStena4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/velikaStena3.jpg";
-import velikaStena5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/velikaStena4.jpg";
+import velikaStena1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/desktop/velikaStena5.jpg";
+import velikaStena2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/desktop/velikaStena1.jpg";
+import velikaStena3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/desktop/velikaStena2.jpg";
+import velikaStena4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/desktop/velikaStena3.jpg";
+import velikaStena5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/desktop/velikaStena4.jpg";
+import velikaStena11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/mobile/MvelikaStena5.jpg";
+import velikaStena22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/mobile/MvelikaStena1.jpg";
+import velikaStena33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/mobile/MvelikaStena2.jpg";
+import velikaStena44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/mobile/MvelikaStena3.jpg";
+import velikaStena55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/VidikovacVelikaStena/mobile/MvelikaStena4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const VidikovacVelikaStena = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(kulubarskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={velikaStena1} alt="Vidikovac Velika Stena 1" />
+      <img srcSet={`${velikaStena11} 400w, ${velikaStena1} `} alt="Vidikovac Velika Stena 1" />
 
       <h2>Vidikovac Velika Stena</h2>
 
@@ -32,7 +37,7 @@ export const VidikovacVelikaStena = () => {
         uživaju u spektakularnim prizorima.
       </p>
 
-      <img src={velikaStena2} alt="Vidikovac Velika Stena 2" />
+      <img srcSet={`${velikaStena22} 400w, ${velikaStena2} `} alt="Vidikovac Velika Stena 2" />
 
       <p>
         Jezero Rovni, koje se vidi sa stene, veštački je rezervoar koji je
@@ -44,7 +49,7 @@ export const VidikovacVelikaStena = () => {
         dodatno doprinosi atraktivnosti ovog područja.
       </p>
 
-      <img src={velikaStena3} alt="Vidikovac Lazareva Stena 1" />
+      <img srcSet={`${velikaStena33} 400w, ${velikaStena3} `} alt="Vidikovac Lazareva Stena 1" />
 
       <p>
         Velika stena se nalazi u blizini sela Stubo, poznatog po svojoj očuvanoj
@@ -57,7 +62,7 @@ export const VidikovacVelikaStena = () => {
         šuma i neba.
       </p>
 
-      <img src={velikaStena4} alt="Veštačko jezero Rovni" />
+      <img srcSet={`${velikaStena44} 400w, ${velikaStena4} `} alt="Veštačko jezero Rovni" />
 
       <p>
         Veštačko jezero Rovni, poznato i kao Akumulacija Stubo-Rovni, formirano
@@ -73,7 +78,7 @@ export const VidikovacVelikaStena = () => {
         količine vode tokom kišnih sezona i sprečiti potencijalne štete.
       </p>
 
-      <img src={velikaStena5} alt="Vidikovac Lazareva Stena 2" />
+      <img srcSet={`${velikaStena55} 400w, ${velikaStena5} `} alt="Vidikovac Lazareva Stena 2" />
 
       <p>
         Osim prirodnih lepota, područje oko Velike stene i jezera Rovni ima i

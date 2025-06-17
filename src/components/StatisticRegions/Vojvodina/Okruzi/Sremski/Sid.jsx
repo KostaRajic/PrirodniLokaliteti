@@ -1,15 +1,24 @@
-import sid1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid2.jpg";
-import sid2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid3.jpg";
-import sid3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid4.jpg";
-import sid4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid5.jpg";
-import sid5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid6.jpg";
-import sid6 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid7.jpg";
-import sid7 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid8.jpg";
-import sid8 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/sid9.jpg";
+import sid1 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/desktop/sid2.jpg";
+import sid2 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/desktop/sid3.jpg";
+import sid3 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/desktop/sid4.jpg";
+import sid4 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/desktop/sid5.jpg";
+import sid5 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/desktop/sid6.jpg";
+import sid6 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/desktop/sid7.jpg";
+import sid7 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/desktop/sid8.jpg";
+import sid8 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/desktop/sid9.jpg";
+import sid11 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/mobile/Msid2.jpg";
+import sid22 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/mobile/Msid3.jpg";
+import sid33 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/mobile/Msid4.jpg";
+import sid44 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/mobile/Msid5.jpg";
+import sid55 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/mobile/Msid6.jpg";
+import sid66 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/mobile/Msid7.jpg";
+import sid77 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/mobile/Msid8.jpg";
+import sid88 from "../../../../../assets/images/Vojvodina/SremskiOkrug/Sid/mobile/Msid9.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
+import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 
 export const Sid = () => {
   const navigate = useNavigate();
@@ -17,9 +26,9 @@ export const Sid = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(-1)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(sremskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={sid5} alt="Šid 1" />
+      <img srcSet={`${sid5} 400w, ${sid5} `} alt="Šid 1" />
       <h2>Šid</h2>
       <p>
         Smeštena sa jedne strane uz Dunav i Frušku Goru, a sa druge uz Savu i
@@ -34,7 +43,7 @@ export const Sid = () => {
         ljudi, kao i visoko kvalifikovani radnici i obrazovani kadrovi doprinose
         povoljnoj perspektivi ovog regiona.
       </p>
-      <img src={sid2} alt="Šid 2" />
+      <img srcSet={`${sid22} 400w, ${sid2} `} alt="Šid 2" />
       <p>
         Nadmorska visina je 104 m. To je sedište najzapadnije opštine Srema,
         smešteno između reke Dunav i obronaka Fruške gore na severu, te reke
@@ -47,7 +56,7 @@ export const Sid = () => {
         su takođe zatvorene posle demokratskih promena 2000-ih). U gradu se
         nalazi spomen-kuća i galerija poznatog slikara Save Šumanovića.
       </p>
-      <img src={sid7} alt="Šid 3" />
+      <img srcSet={`${sid77} 400w, ${sid7} `} alt="Šid 3" />
       <p>
         Ako postoji mesto gde se snovi i stvarnost, talenat i upornost,
         marljivost i sreća spajaju, onda je to sigurno sremaska ravnica i njena
@@ -59,7 +68,7 @@ export const Sid = () => {
         Upravo ovaj kontrast u pejzažima čini Šid posebnom i veoma atraktivnom.
       </p>
 
-      <img src={sid4} alt="Šid 4" />
+      <img srcSet={`${sid5} 400w, ${sid5} `} alt="Šid 4" />
       <p>
         Teritorija opštine Šid bila je naseljavana još u praistoriji. Prva
         naselja su nastajala na mestima koja su bila blizu vode, ali i drugih
@@ -74,7 +83,7 @@ export const Sid = () => {
         puteva.
       </p>
 
-      <img src={sid6} alt="Šid 5" />
+      <img srcSet={`${sid66} 400w, ${sid6} `} alt="Šid 5" />
       <p>
         Nakon Rimljana, ove prostore su naselili Huni, Germani i Avari, koji su
         vladali Sremom više od dva veka. Zajedno sa Avarima dolaze i Sloveni,
@@ -86,7 +95,7 @@ export const Sid = () => {
         vojnim centrom u Petrovaradinu, koja je bila zamišljena kao zaštita od
         turskih upada.
       </p>
-      <img src={sid1} alt="Šid 6" />
+      <img srcSet={`${sid11} 400w, ${sid1} `} alt="Šid 6" />
       <p>
         Galerija slika „Sava Šumanović“ nalazi se u Šidu, u ulici Svetog Save
         br. 7, nekadašnjoj Maršala Tita br. 11, i u njoj je smešten najveći broj
@@ -99,7 +108,7 @@ export const Sid = () => {
         predstavlja nepokretno kulturno dobro i spomenik kulture od velikog
         značaja.
       </p>
-      <img src={sid8} alt="Šid 7" />
+      <img srcSet={`${sid88} 400w, ${sid8} `} alt="Šid 7" />
       <p>
         Srpska pravoslavna crkva Svetog Nikole u Šidu je značajna verska i
         kulturna građevina. Smeštena u samom centru grada, ova crkva predstavlja

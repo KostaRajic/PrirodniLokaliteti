@@ -1,8 +1,13 @@
-import bovanskoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/bovanskoJezero1.jpg";
-import bovanskoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/bovanskoJezero2.jpg";
-import bovanskoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/bovanskoJezero3.jpg";
-import bovanskoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/bovanskoJezero4.jpg";
-import bovanskoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/bovanskoJezero5.jpg";
+import bovanskoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/desktop/bovanskoJezero1.jpg";
+import bovanskoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/desktop/bovanskoJezero2.jpg";
+import bovanskoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/desktop/bovanskoJezero3.jpg";
+import bovanskoJezero4 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/desktop/bovanskoJezero4.jpg";
+import bovanskoJezero5 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/desktop/bovanskoJezero5.jpg";
+import bovanskoJezero11 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/mobile/bovanskoJezeroM1.jpg";
+import bovanskoJezero22 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/mobile/bovanskoJezeroM2.jpg";
+import bovanskoJezero33 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/mobile/bovanskoJezeroM3.jpg";
+import bovanskoJezero44 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/mobile/bovanskoJezeroM4.jpg";
+import bovanskoJezero55 from "../../../../../assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/BovanskoJezero/mobile/bovanskoJezeroM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const BovanskoJezero = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(nisavskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={bovanskoJezero1} alt="Bovansko Jezero 1" />
+      <img srcSet={`${bovanskoJezero11} 400w, ${bovanskoJezero1} `} alt="Bovansko Jezero 1" />
 
       <h2>Bovansko Jezero</h2>
 
@@ -30,7 +35,7 @@ export const BovanskoJezero = () => {
         jedno od popularnijih odredišta u ovom delu Srbije.
       </p>
 
-      <img src={bovanskoJezero2} alt="Bovansko Jezero 2" />
+      <img srcSet={`${bovanskoJezero22} 400w, ${bovanskoJezero2} `} alt="Bovansko Jezero 2" />
 
       <p>
         Bovansko jezero je nastalo izgradnjom brane na reci Sokobanjskoj
@@ -42,7 +47,7 @@ export const BovanskoJezero = () => {
         posebno se izdvaja kao omiljena destinacija za odmor i zabavu.
       </p>
 
-      <img src={bovanskoJezero3} alt="Bovansko Jezero 3" />
+      <img srcSet={`${bovanskoJezero33} 400w, ${bovanskoJezero3} `} alt="Bovansko Jezero 3" />
 
       <p>
         Bovansko jezero, smešteno u prelepom prirodnom okruženju, deluje kao da
@@ -61,7 +66,7 @@ export const BovanskoJezero = () => {
         je odlično za one koji žele da uživaju u prirodi.
       </p>
 
-      <img src={bovanskoJezero4} alt="Bovansko Jezero 4" />
+      <img srcSet={`${bovanskoJezero44} 400w, ${bovanskoJezero4} `} alt="Bovansko Jezero 4" />
 
       <p>
         U blizini sela Bovan imate priliku da iznajmite pedalinu ili čamac i
@@ -72,7 +77,7 @@ export const BovanskoJezero = () => {
         koji žele uživanje u prirodi, a ne na moru.
       </p>
 
-      <img src={bovanskoJezero5} alt="Bovansko Jezero 5" />
+      <img srcSet={`${bovanskoJezero55} 400w, ${bovanskoJezero5} `} alt="Bovansko Jezero 5" />
 
       <p>
         Bovansko jezero takođe domaćin je jedriličarske regate "Bovan", koja se

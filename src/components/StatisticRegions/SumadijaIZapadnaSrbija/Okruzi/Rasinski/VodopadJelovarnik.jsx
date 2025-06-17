@@ -1,8 +1,13 @@
-import jelovarnik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/jelovarnik1.jpg";
-import jelovarnik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/jelovarnik2.jpg";
-import jelovarnik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/jelovarnik3.jpg";
-import jelovarnik4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/jelovarnik4.jpg";
-import jelovarnik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/jelovarnik5.jpg";
+import jelovarnik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/desktop/jelovarnik1.jpg";
+import jelovarnik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/desktop/jelovarnik2.jpg";
+import jelovarnik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/desktop/jelovarnik3.jpg";
+import jelovarnik4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/desktop/jelovarnik4.jpg";
+import jelovarnik5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/desktop/jelovarnik5.jpg";
+import jelovarnik11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/mobile/Mjelovarnik1.jpg";
+import jelovarnik22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/mobile/Mjelovarnik2.jpg";
+import jelovarnik33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/mobile/Mjelovarnik3.jpg";
+import jelovarnik44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/mobile/Mjelovarnik4.jpg";
+import jelovarnik55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/mobile/Mjelovarnik5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +26,7 @@ export const VodopadJelovarnik = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={jelovarnik1} alt="Vodopad Jelovarnik 1" />
+      <img srcSet={`${jelovarnik11} 400w, ${jelovarnik1} `} alt="Vodopad Jelovarnik 1" />
 
       <h2 style={{ color: "white" }}>Vodopad Jelovarnik</h2>
 
@@ -37,7 +42,7 @@ export const VodopadJelovarnik = () => {
         posebnom šarmu.
       </p>
 
-      <img src={jelovarnik2} alt="Vodopad Jelovarnik 2" />
+      <img srcSet={`${jelovarnik22} 400w, ${jelovarnik2} `} alt="Vodopad Jelovarnik 2" />
 
       <p>
         Kako se približavate vodopadu, osećate snagu vode koja se obrušava niz
@@ -47,7 +52,7 @@ export const VodopadJelovarnik = () => {
         moćniji zbog topljenja snega.
       </p>
 
-      <img src={jelovarnik3} alt="Vodopad Jelovarnik 3" />
+      <img srcSet={`${jelovarnik33} 400w, ${jelovarnik3} `} alt="Vodopad Jelovarnik 3" />
 
       <p>
         Jelovarnik privlači ljubitelje prirode, planinare i fotografe koji žele
@@ -57,7 +62,7 @@ export const VodopadJelovarnik = () => {
         se netaknutoj lepoti prirode.
       </p>
 
-      <img src={jelovarnik4} alt="Vodopad Jelovarnik 4" />
+      <img srcSet={`${jelovarnik44} 400w, ${jelovarnik4} `} alt="Vodopad Jelovarnik 4" />
 
       <p>
         Pored samog vodopada, okolna područja Jelovarnika nude mnoge druge
@@ -66,7 +71,7 @@ export const VodopadJelovarnik = () => {
         prirodom.
       </p>
 
-      <img src={jelovarnik5} alt="Vodopad Jelovarnik 5" />
+      <img srcSet={`${jelovarnik55} 400w, ${jelovarnik5} `} alt="Vodopad Jelovarnik 5" />
 
       <p>
         Obilazak vodopada Jelovarnik na Kopaoniku je iskustvo koje ne treba

@@ -5,6 +5,7 @@ import { Outlet } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { juznoBackiData } from "./JuznoBackiData";
 import { JuznoBackiPathRoutes } from "./JuznoBackiPathRoutes";
+import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
 
 export const JuznoBacki = () => {
   const [slide, setSlide] = useState(0);
@@ -39,7 +40,7 @@ export const JuznoBacki = () => {
       <header>
         <FaArrowLeft
           className="arrowLeft"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(serbianMapPathRoutes.Vojvodina)}
           style={{ fill: "white"}}
         />
       </header>

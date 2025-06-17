@@ -1,9 +1,15 @@
-import adaCiganlija1 from "../../../assets/images/Beograd/AdaCiganlija/adaCiganlija1.jpg";
-import adaCiganlija2 from "../../../assets/images/Beograd/AdaCiganlija/adaCiganlija2.jpg";
-import adaCiganlija3 from "../../../assets/images/Beograd/AdaCiganlija/adaCiganlija3.jpg";
-import adaCiganlija4 from "../../../assets/images/Beograd/AdaCiganlija/adaCiganlija4.jpg";
-import adaCiganlija5 from "../../../assets/images/Beograd/AdaCiganlija/adaCiganlija5.jpg";
-import adaCiganlija6 from "../../../assets/images/Beograd/AdaCiganlija/adaCiganlija6.jpg";
+import adaCiganlija1 from "../../../assets/images/Beograd/AdaCiganlija/desktop/adaCiganlija1.jpg";
+import adaCiganlija2 from "../../../assets/images/Beograd/AdaCiganlija/desktop/adaCiganlija2.jpg";
+import adaCiganlija3 from "../../../assets/images/Beograd/AdaCiganlija/desktop/adaCiganlija3.jpg";
+import adaCiganlija4 from "../../../assets/images/Beograd/AdaCiganlija/desktop/adaCiganlija4.jpg";
+import adaCiganlija5 from "../../../assets/images/Beograd/AdaCiganlija/desktop/adaCiganlija5.jpg";
+import adaCiganlija6 from "../../../assets/images/Beograd/AdaCiganlija/desktop/adaCiganlija6.jpg";
+import adaCiganlija11 from "../../../assets/images/Beograd/AdaCiganlija/mobile/adaCiganlijaM1.jpg";
+import adaCiganlija22 from "../../../assets/images/Beograd/AdaCiganlija/mobile/adaCiganlijaM2.jpg";
+import adaCiganlija33 from "../../../assets/images/Beograd/AdaCiganlija/mobile/adaCiganlijaM3.jpg";
+import adaCiganlija44 from "../../../assets/images/Beograd/AdaCiganlija/mobile/adaCiganlijaM4.jpg";
+import adaCiganlija55 from "../../../assets/images/Beograd/AdaCiganlija/mobile/adaCiganlijaM5.jpg";
+import adaCiganlija66 from "../../../assets/images/Beograd/AdaCiganlija/mobile/adaCiganlijaM6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -22,7 +28,10 @@ export const AdaCiganlija = () => {
         style={{ fill: "white" }}
       />
       <header></header>
-      <img src={adaCiganlija6} alt="Ada Ciganlija 1" />
+      <img
+        srcSet={`${adaCiganlija66} 400w, ${adaCiganlija6} `}
+        alt="Ada Ciganlija 1"
+      />
 
       <h2>Ada Ciganlija</h2>
 
@@ -39,7 +48,10 @@ export const AdaCiganlija = () => {
         proglašena je državnim dobrom, status koji i danas ima.
       </p>
 
-      <img src={adaCiganlija2} alt="Ada Ciganlija 2" />
+      <img
+        srcSet={`${adaCiganlija22} 400w, ${adaCiganlija2} `}
+        alt="Ada Ciganlija 2"
+      />
 
       <p>
         Donja i gornja pregrada na rukavcu reke Save izgrađene su 1967. godine,
@@ -54,15 +66,18 @@ export const AdaCiganlija = () => {
         temperaturama u poređenju sa ostatkom Beograda.
       </p>
 
-      <img src={adaCiganlija3} alt="Ada Ciganlija 3" />
+      <img
+        srcSet={`${adaCiganlija33} 400w, ${adaCiganlija3} `}
+        alt="Ada Ciganlija 3"
+      />
 
       <p>
-        Savsko jezero (Ada Ciganlija) je idealno za vrhunska takmičenja na mirnim vodama,
-        zahvaljujući svom položaju, kvalitetu vode, opremljenosti objekata i
-        dužini staza. Pogodno je za različite vodene sportove kao što su
-        plivanje, veslanje, kajak, vaterpolo, skakanje u vodu, jedrenje na dasci
-        i mnoge druge aktivnosti. Na jezeru su se održavala brojna svetska i
-        domaća prvenstva. Ada Ciganlija nudi više od 50 sportskih terena na
+        Savsko jezero (Ada Ciganlija) je idealno za vrhunska takmičenja na
+        mirnim vodama, zahvaljujući svom položaju, kvalitetu vode, opremljenosti
+        objekata i dužini staza. Pogodno je za različite vodene sportove kao što
+        su plivanje, veslanje, kajak, vaterpolo, skakanje u vodu, jedrenje na
+        dasci i mnoge druge aktivnosti. Na jezeru su se održavala brojna svetska
+        i domaća prvenstva. Ada Ciganlija nudi više od 50 sportskih terena na
         otvorenom, uključujući golf teren i žičaru za skijanje na vodi. Tu se
         nalaze i fudbalski, teniski, rukometni, odbojkaški i košarkaški tereni,
         kao i igrališta za bejzbol, ragbi i hokej na travi. Pored toga, postoje
@@ -71,7 +86,10 @@ export const AdaCiganlija = () => {
         peintbolu. Za ljubitelje ribolova tu je i jezero Ada safari.
       </p>
 
-      <img src={adaCiganlija4} alt="Ada Ciganlija 4" />
+      <img
+        srcSet={`${adaCiganlija44} 400w, ${adaCiganlija4} `}
+        alt="Ada Ciganlija 4"
+      />
 
       <p>
         Glavna vrsta vegetacije na Adi Ciganliji su hrastove i brestove šume.
@@ -89,9 +107,8 @@ export const AdaCiganlija = () => {
       </p>
 
       <img
-        src={adaCiganlija5}
+        srcSet={`${adaCiganlija55} 400w, ${adaCiganlija5} `}
         alt="Ada Ciganlija 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Ada Ciganlija je kulturno-zabavni centar Beograda, posebno u letnjem
@@ -109,9 +126,8 @@ export const AdaCiganlija = () => {
       </p>
 
       <img
-        src={adaCiganlija1}
+        srcSet={`${adaCiganlija11} 400w, ${adaCiganlija1} `}
         alt="Ada Ciganlija 5"
-        style={{ marginBottom: "-10px" }}
       />
       <p>
         Ada Ciganlija je poznata i po svojoj ponudi ekstremnih sportova, a jedan

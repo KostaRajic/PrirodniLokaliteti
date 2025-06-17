@@ -1,8 +1,13 @@
-import urosevac1 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/urosevac1.jpg";
-import urosevac2 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/urosevac2.jpg";
-import urosevac3 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/urosevac3.jpg";
-import urosevac4 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/urosevac4.jpg";
-import urosevac5 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/urosevac5.jpg";
+import urosevac1 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/desktop/urosevac1.jpg";
+import urosevac2 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/desktop/urosevac2.jpg";
+import urosevac3 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/desktop/urosevac3.jpg";
+import urosevac4 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/desktop/urosevac4.jpg";
+import urosevac5 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/desktop/urosevac5.jpg";
+import urosevac11 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/mobile/Murosevac1.jpg";
+import urosevac22 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/mobile/Murosevac2.jpg";
+import urosevac33 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/mobile/Murosevac3.jpg";
+import urosevac44 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/mobile/Murosevac4.jpg";
+import urosevac55 from "../../../../../assets/images/KosovoIMetohija/Urosevacki/Urosevac/mobile/Murosevac5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +22,7 @@ export const Urosevac = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(urosevackiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={urosevac1} alt="Prizren 1" />
+      <img srcSet={`${urosevac11} 400w, ${urosevac1} `} alt="Prizren 1" />
 
       <h2>Uroševac</h2>
 
@@ -32,7 +37,7 @@ export const Urosevac = () => {
         Države podigle u jugoistočnoj Evropi još od vremena Vijetnamskog rata.
       </p>
 
-      <img src={urosevac2} alt="Prizren 2" />
+      <img srcSet={`${urosevac22} 400w, ${urosevac2} `} alt="Prizren 2" />
 
       <p>
         Uroševac je poznat i po jedinstvenom geografskom fenomenu – bifurkaciji
@@ -45,7 +50,7 @@ export const Urosevac = () => {
         strateškom značaju grada u regionu.
       </p>
 
-      <img src={urosevac3} alt="Kameni most u Prizrenu" />
+      <img srcSet={`${urosevac33} 400w, ${urosevac3} `} alt="Kameni most u Prizrenu" />
 
       <p>
         Grad, koji je tokom osmanske vladavine nosio ime Ferizović, bio je tek
@@ -62,7 +67,7 @@ export const Urosevac = () => {
         bavili se oranjem i uzgojem biljaka.
       </p>
 
-      <img src={urosevac5} alt="Prizrenska Bogoslovija" />
+      <img srcSet={`${urosevac55} 400w, ${urosevac5} `} alt="Prizrenska Bogoslovija" />
 
       <p>
         Nakon Starčevačke kulture, na teritoriji Kosova i Metohije nastanjuje se
@@ -81,7 +86,7 @@ export const Urosevac = () => {
         današnjih dana.
       </p>
 
-      <img src={urosevac4} alt="Bogorodica Ljeviška" />
+      <img srcSet={`${urosevac44} 400w, ${urosevac4} `} alt="Bogorodica Ljeviška" />
 
       <p>
         Aqua park u Uroševcu je popularno odredište za sve ljubitelje vodenih

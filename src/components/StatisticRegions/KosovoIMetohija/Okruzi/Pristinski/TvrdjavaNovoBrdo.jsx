@@ -1,7 +1,11 @@
-import novoBrdo1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/tvrdjavaNovoBrdo1.jpg";
-import novoBrdo2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/tvrdjavaNovoBrdo2.jpg";
-import novoBrdo3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/tvrdjavaNovoBrdo3.jpg";
-import novoBrdo4 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/tvrdjavaNovoBrdo4.jpg";
+import novoBrdo1 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/desktop/tvrdjavaNovoBrdo1.jpg";
+import novoBrdo2 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/desktop/tvrdjavaNovoBrdo2.jpg";
+import novoBrdo3 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/desktop/tvrdjavaNovoBrdo3.jpg";
+import novoBrdo4 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/desktop/tvrdjavaNovoBrdo4.jpg";
+import novoBrdo11 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/mobile/MtvrdjavaNovoBrdo1.jpg";
+import novoBrdo22 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/mobile/MtvrdjavaNovoBrdo2.jpg";
+import novoBrdo33 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/mobile/MtvrdjavaNovoBrdo3.jpg";
+import novoBrdo44 from "../../../../../assets/images/KosovoIMetohija/Pristinski/TvrdjavaNovoBrdo/mobile/MtvrdjavaNovoBrdo4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +20,7 @@ export const TvrdjavaNovoBrdo = () => {
       <ScrollToTop />
       <FaArrowLeft className="arrowLeft" onClick={() => navigate(pristinskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={novoBrdo1} alt="Tvrđava Novo Brdo 1" />
+      <img srcSet={`${novoBrdo11} 400w, ${novoBrdo1} `} alt="Tvrđava Novo Brdo 1" />
 
       <h2>Tvrđava Novo Brdo</h2>
 
@@ -35,7 +39,7 @@ export const TvrdjavaNovoBrdo = () => {
         srednjem veku.
       </p>
 
-      <img src={novoBrdo2} alt="Tvrđava Novo Brdo 2" />
+      <img srcSet={`${novoBrdo22} 400w, ${novoBrdo2} `} alt="Tvrđava Novo Brdo 2" />
 
       <p>
         Tvrđava Novo Brdo sagrađena je početkom 14. veka kako bi štitila bogato
@@ -56,7 +60,7 @@ export const TvrdjavaNovoBrdo = () => {
         (1439–1441), u periodu kada srpska despotovina više nije postojala.
       </p>
 
-      <img src={novoBrdo3} alt="Tvrđava Novo Brdo 3" />
+      <img srcSet={`${novoBrdo33} 400w, ${novoBrdo3} `} alt="Tvrđava Novo Brdo 3" />
 
       <p>
         Novo Brdo se sa estetskog aspekta izdvaja korišćenjem mrkocrvene breče,
@@ -69,7 +73,7 @@ export const TvrdjavaNovoBrdo = () => {
         nekadašnjem bogatstvu.
       </p>
 
-      <img src={novoBrdo4} alt="Tvrđava Novo Brdo 4" />
+      <img srcSet={`${novoBrdo44} 400w, ${novoBrdo4} `} alt="Tvrđava Novo Brdo 4" />
 
       <p>
         Jedan od glavnih problema novobrdske tvrđave su stalni pokušaji da se

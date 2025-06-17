@@ -1,9 +1,15 @@
-import zaovinskoJezero1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/zaovinskoJezero1.jpg";
-import zaovinskoJezero2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/zaovinskoJezero2.jpg";
-import zaovinskoJezero3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/zaovinskoJezero3.jpg";
-import zaovinskoJezero4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/zaovinskoJezero4.jpg";
-import zaovinskoJezero5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/zaovinskoJezero5.jpg";
-import zaovinskoJezero6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/zaovinskoJezero6.jpg";
+import zaovinskoJezero1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/desktop/zaovinskoJezero1.jpg";
+import zaovinskoJezero2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/desktop/zaovinskoJezero2.jpg";
+import zaovinskoJezero3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/desktop/zaovinskoJezero3.jpg";
+import zaovinskoJezero4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/desktop/zaovinskoJezero4.jpg";
+import zaovinskoJezero5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/desktop/zaovinskoJezero5.jpg";
+import zaovinskoJezero6 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/desktop/zaovinskoJezero6.jpg";
+import zaovinskoJezero11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/mobile/MzaovinskoJezero1.jpg";
+import zaovinskoJezero22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/mobile/MzaovinskoJezero2.jpg";
+import zaovinskoJezero33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/mobile/MzaovinskoJezero3.jpg";
+import zaovinskoJezero44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/mobile/MzaovinskoJezero4.jpg";
+import zaovinskoJezero55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/mobile/MzaovinskoJezero5.jpg";
+import zaovinskoJezero66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/ZaovinskoJezero/mobile/MzaovinskoJezero6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -16,9 +22,9 @@ export const ZaovinskoJezero = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.zaovinskoJezero)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={zaovinskoJezero1} alt="Zaovinsko jezero 1" />
+      <img srcSet={`${zaovinskoJezero11} 400w, ${zaovinskoJezero1} `} alt="Zaovinsko jezero 1" />
 
       <h2>Zaovinsko jezero</h2>
 
@@ -33,7 +39,7 @@ export const ZaovinskoJezero = () => {
         dubina doseže čak 110 metara.
       </p>
 
-      <img src={zaovinskoJezero2} alt="Zaovinsko jezero 2" />
+      <img srcSet={`${zaovinskoJezero22} 400w, ${zaovinskoJezero2} `} alt="Zaovinsko jezero 2" />
 
       <p>
         Jezero Zaovine nije samo poznato po svojoj prirodnoj lepoti, već i po
@@ -47,7 +53,7 @@ export const ZaovinskoJezero = () => {
         značajnost.
       </p>
 
-      <img src={zaovinskoJezero3} alt="Zaovinsko jezro 3" />
+      <img srcSet={`${zaovinskoJezero33} 400w, ${zaovinskoJezero3} `} alt="Zaovinsko jezro 3" />
 
       <p>
         Zaovinsko jezero ima brojne funkcije koje ga čine jedinstvenim. Pored
@@ -59,7 +65,7 @@ export const ZaovinskoJezero = () => {
         jezera postaju popularna destinacija za ljubitelje kupanja.
       </p>
 
-      <img src={zaovinskoJezero4} alt="Jezero Zaovine 4" />
+      <img srcSet={`${zaovinskoJezero44} 400w, ${zaovinskoJezero4} `} alt="Jezero Zaovine 4" />
 
       <p>
         Pored svoje impresivne vodene lepote, Zaovinsko jezero je i pravo
@@ -72,7 +78,7 @@ export const ZaovinskoJezero = () => {
         zaštićeno kao prirodne retkosti.
       </p>
 
-      <img src={zaovinskoJezero5} alt="Jezero Zaovine 5" />
+      <img srcSet={`${zaovinskoJezero55} 400w, ${zaovinskoJezero5} `} alt="Jezero Zaovine 5" />
       <p>
         Osim prirodnih lepota, Zaovinsko jezero pruža i bogato
         kulturno-istorijsko iskustvo. U blizini brane, posetioci mogu obići
@@ -85,7 +91,7 @@ export const ZaovinskoJezero = () => {
         Pančićeve omorike dodaje poseban značaj ovom području.
       </p>
 
-      <img src={zaovinskoJezero6} alt="Jezero Zaovine 5" />
+      <img srcSet={`${zaovinskoJezero66} 400w, ${zaovinskoJezero6} `} alt="Jezero Zaovine 5" />
       <p>
         Za ljubitelje avantura i aktivnog odmora, uređene staze za šetnje i
         vožnju biciklom nude jedinstven način za istraživanje prirodnih lepota

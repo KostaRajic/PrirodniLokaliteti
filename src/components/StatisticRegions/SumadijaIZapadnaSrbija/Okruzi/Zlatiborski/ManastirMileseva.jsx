@@ -1,8 +1,13 @@
-import mileseva1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/miloseva1.jpg";
-import mileseva2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/miloseva2.jpg";
-import mileseva3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/miloseva3.jpg";
-import mileseva4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/miloseva4.jpg";
-import mileseva5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/miloseva5.jpg";
+import mileseva1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/desktop/miloseva1.jpg";
+import mileseva2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/desktop/miloseva2.jpg";
+import mileseva3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/desktop/miloseva3.jpg";
+import mileseva4 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/desktop/miloseva4.jpg";
+import mileseva5 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/desktop/miloseva5.jpg";
+import mileseva11 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/mobile/Mmiloseva1.jpg";
+import mileseva22 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/mobile/Mmiloseva2.jpg";
+import mileseva33 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/mobile/Mmiloseva3.jpg";
+import mileseva44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/mobile/Mmiloseva4.jpg";
+import mileseva55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/Miloseva/mobile/Mmiloseva5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -15,9 +20,9 @@ export const ManastirMileseva = () => {
   return (
     <div className="placeBackground">
       <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.manastirMileseva)} />
+      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
       <header></header>
-      <img src={mileseva4} alt='Manastir Mileševa 1' />
+      <img srcSet={`${mileseva44} 400w, ${mileseva4} `} alt='Manastir Mileševa 1' />
 
       <h2>Manastir Mileševa</h2>
 
@@ -35,7 +40,7 @@ export const ManastirMileseva = () => {
         Mileševa je zauzimala drugo mesto, odmah nakon Studenice.
       </p>
 
-      <img src={mileseva2} alt="Manastir Mileševa 2" />
+      <img srcSet={`${mileseva22} 400w, ${mileseva2} `} alt="Manastir Mileševa 2" />
 
       <p>
         Turci su prvi put poharali Mileševu 1459. godine, ali je ubrzo
@@ -55,7 +60,7 @@ export const ManastirMileseva = () => {
         živopisom.
       </p>
 
-      <img src={mileseva3} alt="Manastir Mileševa 3" />
+      <img srcSet={`${mileseva33} 400w, ${mileseva3} `} alt="Manastir Mileševa 3" />
 
       <p>
         U XVI i XVII veku mnogi ugledni putnici posećivali su manastir, ponekad
@@ -72,7 +77,7 @@ export const ManastirMileseva = () => {
         srušene i da ih podržavaju samo delovi svodova.
       </p>
 
-      <img src={mileseva1} alt="Manastir Mileševa 4" />
+      <img srcSet={`${mileseva11} 400w, ${mileseva1} `} alt="Manastir Mileševa 4" />
 
       <p>
         Najvažnija obnova manastira Mileševe izvršena je od 1863. do 1865.
@@ -90,7 +95,7 @@ export const ManastirMileseva = () => {
         uklonili, proširujući time samu crkvu.
       </p>
 
-      <img src={mileseva5} alt="Manastir Mileševa 5" />
+      <img srcSet={`${mileseva55} 400w, ${mileseva5} `} alt="Manastir Mileševa 5" />
       <p>
         Mileševarska crkva Svetog Vaznesenja Gospodnjeg izgrađena je po uzoru na
         ranije vladarske zadužbine, Studenicu i Žiču, u raškom stilu. Ovaj stil
