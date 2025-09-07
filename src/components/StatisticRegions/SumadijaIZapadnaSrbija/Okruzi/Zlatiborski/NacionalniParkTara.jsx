@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import tara1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara1.jpg";
 import tara2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara2.jpg";
 import tara3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/desktop/tara3.jpg";
@@ -16,126 +17,228 @@ import tara77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Zlatibor
 import tara88 from "../../../../../assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/NacionalniParkTara/mobile/Mtara8.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { zlatiborskiOkrugPathRoutes } from "./ZlatiborskiOkrugPahtRoutes";
+import { useContextAuth } from "../../../../../Context";
+import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
-export const NacionalniParkTara = () => {
+const NacionalniParkTara = () => {
   const navigate = useNavigate();
+  const { switchLanguage } = useContextAuth();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && lang !== switchLanguage) {
+      const newPath = window.location.pathname.replace(/^\/[^\/]+/, `/${switchLanguage}`);
+      navigate(newPath, { replace: true });
+    }
+  }, [switchLanguage, lang, navigate]);
 
   return (
-    <div className="placeBackground">
-      <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home)} />
-      <header></header>
-      <img srcSet={`${tara11} 400w, ${tara1} `} alt='Nacionalni Park "Tara" 1' />
+    <>
 
-      <h2>Nacionalni Park "Tara"</h2>
+      <Helmet>
+        <title>
+          {switchLanguage === 'rs'
+            ? "Nacionalni park Tara | Priroda, vidikovci, Pančićeva omorika, aktivnosti i smeštaj"
+            : "Tara National Park | Nature, viewpoints, Pancic Spruce, activities and accommodation"}
+        </title>
 
-      <p style={{ paddingTop: "50px" }}>
-        Nacionalni park Tara, pravo prirodno blago zapadne Srbije, uživa status
-        zaštićenog područja od 1981. godine. Prostire se na površini od skoro
-        25.000 hektara, obuhvatajući ključne predele planinskog masiva Tare i
-        Zvijezde. Park se nalazi uz reku Drinu, koja deli Bajinu Baštu u Srbiji
-        od Višegrada u Bosni, pružajući spektakularne pejzaže i jedinstvenu
-        prirodnu harmoniju.
-      </p>
+        <meta
+          name="description"
+          content={
+            switchLanguage === 'rs'
+              ? "Nacionalni park Tara je jedno od najlepših prirodnih područja Srbije, dom Pančićeve omorike i mrkog medveda. Otkrijte šume, vidikovce, jezera i raznovrsne aktivnosti u srcu zapadne Srbije."
+              : "Tara National Park is one of Serbia's most beautiful natural areas, home to Pancic Spruce and brown bears. Discover forests, viewpoints, lakes, and diverse outdoor activities in western Serbia."
+          }
+        />
 
-      <img srcSet={`${tara22} 400w, ${tara2} `} alt="Nacionalni Park Tara" />
+        <meta
+          name="keywords"
+          content={
+            switchLanguage === 'rs'
+              ? "Nacionalni park Tara, Tara Srbija, Pančićeva omorika, Banjska stena, vidikovci Tara, priroda Srbije, turizam u Srbiji, Tara smeštaj, Bajina Bašta, jezero Perućac, planinarenje, medvedi u Srbiji"
+              : "Tara National Park, Serbia nature, Pancic Spruce, Banjska Stena viewpoint, hiking in Serbia, Tara viewpoints, Perucac Lake, Bajina Basta, brown bears, ecotourism Serbia, Tara accommodation"
+          }
+        />
 
-      <p>
-        Planina Tara pripada srednje visokim planinama, prepoznatljivim po
-        krečnjačkom reljefu i nadmorskim visinama koje se uglavnom kreću između
-        1.000 i 1.200 metara. Njeni upečatljivi pejzaži obuhvataju vrhove poput
-        Kozjeg rida, Zborišta, Janjača, Smiljevca i Galinika, dok se najniža
-        tačka, reka Vrelo, nalazi na 234 metra nadmorske visine. Nacionalni park
-        Tara prepoznatljiv je po bogatim mešovitim šumama koje prekrivaju više
-        od 80% njegove površine. Ovaj jedinstveni ekosistem dom je raznovrsnom
-        biljnom i životinjskom svetu, uključujući Pančićevu omoriku, endemičnu
-        vrstu iz doba ledenog doba. U parku živi preko 140 vrsta ptica, 19 vrsta
-        riba i 60 vrsta sisavaca, među kojima se izdvaja najveća populacija
-        mrkih medveda u Srbiji. Uz prirodne lepote, Tara se može pohvaliti i
-        bogatim kulturnim nasleđem.
-      </p>
+        <meta name="author" content="Serbia Wonders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.serbiawonders.com/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/nacionalni-park-tara`}
+        />
+        <link
+          rel="alternate"
+          hreflang="sr"
+          href="https://www.serbiawonders.com/sr/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/nacionalni-park-tara"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/nacionalni-park-tara"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/nacionalni-park-tara"
+        />
+      </Helmet>
 
-      <img srcSet={`${tara33} 400w, ${tara3} `} alt='Nacionalni Park Tara 2' />
 
-      <p>
-        Nacionalni park Tara bogat je arheološkim nalazištima i spomenicima koji
-        svedoče o istoriji od neolita do kasnog srednjeg veka. Među
-        najznačajnijima su manastir Rača, zadužbina kralja Dragutina iz 13.
-        veka, kao i nekropole sa stećcima u Perućcu i Rastištu, koje su 2016.
-        godine uvrštene na UNESKO-vu listu svetske kulturne baštine. Posebnu
-        pažnju posetilaca privlače impresivni vidikovci poput Banjske i Bilješke
-        stene, Sjeniča, Crnjeskova, Sokolarice i Osluše, sa kojih se pružaju
-        očaravajući pogledi. Dodatna atrakcija je kanjon reke Drine, uz jezero
-        Perućac, gde se često organizuju krstarenja brodom, pružajući
-        nezaboravno iskustvo prirodnih lepota ovog kraja.
-      </p>
+      <div className="placeBackground">
+        <ScrollToTop />
+        <FaArrowLeft className="arrowLeft" onClick={() => navigate(zlatiborskiOkrugPathRoutes.home(switchLanguage))} />
+        <header></header>
+        <img srcSet={`${tara11} 450w, ${tara1} `} alt='Nacionalni Park "Tara" 1' loading="lazy" />
 
-      <img srcSet={`${tara44} 400w, ${tara4} `} alt='Nacionalni Park Tara 3' />
+        {switchLanguage === 'rs' ?
+          (
+            <>
 
-      <p>
-        Područje je tipično šumsko područje koje se po očuvanosti i
-        raznovrsnosti šumskih ekosistema, mnogi od njih reliktnog porekla,
-        svrstava među najvrednija i najbogatija šumska područja u Evropi. Često
-        nazivan „plućima Srbije“, Tara se ponosi statusom najšumovitijeg
-        područja u zemlji. Dominiraju šume jele, bukve i smrče, a posebnu
-        važnost ima retka endemska vrsta – Pančićeva omorika, koja je strogo
-        zaštićena. Ovaj nacionalni park je pravi raj za ljubitelje prirode i
-        mira. U njemu raste više od 1.100 biljnih vrsta, što čini skoro trećinu
-        flore Srbije. Zabeleženo je oko 96 vrsta lišajeva, 171 vrsta mahovina,
-        30 vrsta paprati, 7 vrsta golosemenica i oko 950 vrsta skrivenosemenica.
-      </p>
+              <h2>Nacionalni Park "Tara"</h2>
 
-      <img srcSet={`${tara55} 400w, ${tara5} `} alt="Planina Tara" />
-      <p>
-        Nacionalni park Tara je dom raznovrsnim životinjskim vrstama. Tu se
-        nalazi 12 vrsta vodozemaca, 140 vrsta insekata i 135 vrsta ptica, među
-        kojima su i impresivne vrste poput belog orla, beloglavog supa, surog
-        orla, sivog sokola, šumske šljuke i velikog tetreba. U ovom prirodnom
-        okruženju nastanjuje se i oko 55 vrsta sisavaca, među kojima se mogu
-        sresti divokoze, srne, risi, vukovi, šakali, divlje svinje i kune, ali i
-        zaštićene vrste poput mrkog medveda i vidre.
-      </p>
+              <section lang="sr">
+                <p>
+                  <strong>Nacionalni park Tara</strong>, pravo prirodno blago zapadne Srbije, uživa status
+                  zaštićenog područja od <strong>1981. godine</strong>. Prostire se na površini od skoro
+                  <strong>25.000 hektara</strong>, obuhvatajući ključne predele planinskog masiva <strong>Tare</strong> i
+                  <strong>Zvijezde</strong>. Park se nalazi uz reku <strong>Drinu</strong>, koja deli <strong>Bajinu Baštu</strong> u Srbiji
+                  od <strong>Višegrada</strong> u Bosni, pružajući spektakularne pejzaže i jedinstvenu
+                  prirodnu harmoniju.
+                </p>
+              </section>
 
-      <img srcSet={`${tara66} 400w, ${tara6} `} alt="Ledena pećina" />
-      <p>
-        Nacionalni park Tara nudi širok spektar aktivnosti, savršenih za
-        uživanje u njegovoj divljoj i netaknutoj prirodi. U ponudi su brojne
-        pešačke i biciklističke ture, kanjoning, skijanje, plivanje, kao i
-        vođene ture za istraživanje okolnih predela, uz mnoštvo drugih
-        uzbudljivih avantura. Ljubitelji životinja mogu imati priliku da
-        posmatraju medvede u njihovom prirodnom staništu sa sigurne udaljenosti,
-        koristeći specijalizovane osmatračnice. Takođe, ljubitelji konja mogu
-        uživati u jahanju kroz prelepe pejzaže parka.
-      </p>
+              <img srcSet={`${tara22} 450w, ${tara2}`} alt="Nacionalni Park Tara" loading="lazy" />
 
-      <img srcSet={`${tara77} 400w, ${tara7} `} alt="Tara 1" />
-      <p>
-        Ovo mesto je pravo prirodno blago koje se odlikuje prelepim vodopadima i
-        netaknutim pejzažima. Vodopad i rečni tokovi
-        oduzimaju dah svojom lepotom i snažnom vodom koja se sipa niz stene.
-        Osim ovih, u parku se nalaze i mnogi manji vodopadi, potoci i izvori
-        koji čine jedinstveni vodni sistem ovog područja. U kombinaciji sa
-        šumama, planinskim vrhovima i rekama, Tara pruža savršeno okruženje za
-        ljubitelje prirode, istraživače i one koji traže mir i tišinu.
-      </p>
+              <section lang="sr">
+                <p>
+                  Planina Tara pripada <strong>srednje visokim planinama</strong>, prepoznatljivim po
+                  <strong>krečnjačkom reljefu</strong> i nadmorskim visinama između <strong>1.000 i 1.200 metara</strong>. Neki
+                  od njenih najviših vrhova su <strong>Kozji rid</strong>, <strong>Zborište</strong>, <strong>Janjač</strong>, <strong>Smiljevac</strong>
+                  i <strong>Galinika</strong>. Najniža tačka je reka <strong>Vrelo</strong> na 234 metra. Više od <strong>80%</strong> parka
+                  prekriveno je <strong>mešovitim šumama</strong>. Ovaj jedinstveni ekosistem dom je mnogim
+                  biljnim i životinjskim vrstama, uključujući <strong>Pančićevu omoriku</strong>, endemsku
+                  vrstu iz ledenog doba. Tu živi preko <strong>140 vrsta ptica</strong>, <strong>19 vrsta riba</strong> i
+                  <strong>60 vrsta sisavaca</strong>, uključujući najveću populaciju <strong>mrkih medveda</strong> u Srbiji.
+                </p>
+              </section>
 
-      <img srcSet={`${tara88} 400w, ${tara8} `} alt="Tara 2" />
-      <p>
-        Šetnje i izleti u Nacionalnom parku Tara pružaju nezaboravno iskustvo u
-        jednoj od najlepših prirodnih oaza Srbije. Park je prepun označenih
-        pešačkih staza koje vode kroz guste šume, uz planinske vrhove, do
-        spektakularnih vidikovaca sa kojih se pružaju neverovatni pogledi na
-        reku Drinu i okolne predele. Popularni izleti uključuju šetnje do
-        vodopada, kanjona Drine, kao i ture do istorijskih
-        lokaliteta. Za ljubitelje prirode i tišine,
-        Tara nudi savršeno utočište, gde svaki korak vodi do novih, fascinantnih
-        pejzaža i mirnih kutaka, idealnih za opuštanje i uživanje u prirodi.
-        Ukoliko ste avanturista, možete se upustiti u duže ture koje uključuju
-        uspon na visoke vrhove, dok su kraće šetnje idealne za obitelj sa decom.
-      </p>
-    </div>
+              <img srcSet={`${tara33} 450w, ${tara3}`} alt="Nacionalni Park Tara 2" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Nacionalni park Tara bogat je <strong>arheološkim nalazištima</strong> i spomenicima od
+                  neolita do kasnog srednjeg veka. Najznačajniji su <strong>manastir Rača</strong> iz
+                  <strong>13. veka</strong> i <strong>nekropole sa stećcima</strong> u <strong>Perućcu</strong> i <strong>Rastištu</strong>, na
+                  <strong>UNESKO-voj listi</strong> od 2016. Posebnu pažnju privlače vidikovci poput
+                  <strong>Banjske stene</strong>, <strong>Bilješke stene</strong>, <strong>Sjeniča</strong>, <strong>Crnjeskova</strong>, <strong>Sokolarice</strong> i
+                  <strong>Osluše</strong>. Uz to, tu je i <strong>kanjon Drine</strong> i <strong>jezero Perućac</strong>, idealno za
+                  krstarenja brodom.
+                </p>
+              </section>
+
+              <img srcSet={`${tara44} 450w, ${tara4}`} alt="Nacionalni Park Tara 3" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Ovo područje je jedno od <strong>najbogatijih šumskih ekosistema</strong> u Evropi i često se
+                  naziva <strong>„plućima Srbije“</strong>. Dominiraju šume <strong>jele</strong>, <strong>bukve</strong> i <strong>smrče</strong>, a
+                  posebno se izdvaja <strong>Pančićeva omorika</strong>. Tara je dom za više od <strong>1.100 biljnih
+                    vrsta</strong>, što čini skoro <strong>trećinu flore Srbije</strong>. Zabeleženo je i <strong>96 vrsta lišajeva</strong>,
+                  <strong>171 vrsta mahovina</strong>, <strong>30 paprati</strong>, <strong>7 golosemenica</strong> i oko <strong>950
+                    skrivenosemenica</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${tara55} 450w, ${tara5}`} alt="Planina Tara" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Tara je dom <strong>raznovrsnim životinjskim vrstama</strong>: <strong>12 vodozemaca</strong>,
+                  <strong>140 insekata</strong>, <strong>135 ptica</strong> – uključujući <strong>belog orla</strong>, <strong>beloglavog supa</strong>,
+                  <strong>surog orla</strong>, <strong>sivog sokola</strong>, <strong>šumsku šljuku</strong> i <strong>velikog tetreba</strong>. Među
+                  <strong>55 vrsta sisavaca</strong> nalaze se <strong>divokoze</strong>, <strong>srne</strong>, <strong>risi</strong>, <strong>vukovi</strong>,
+                  <strong>šakali</strong>, <strong>divlje svinje</strong>, <strong>kune</strong> i zaštićene vrste poput <strong>vidre</strong> i
+                  <strong>mrkog medveda</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${tara66} 450w, ${tara6}`} alt="Ledena pećina" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Park nudi brojne aktivnosti: <strong>planinarenje</strong>, <strong>biciklizam</strong>, <strong>kanjoning</strong>,
+                  <strong>skijanje</strong>, <strong>plivanje</strong>, kao i <strong>vođene ture</strong>. Ljubitelji divljih životinja
+                  mogu posmatrati <strong>medvede</strong> iz specijalnih osmatračnica, dok je za
+                  <strong>ljubitelje jahanja</strong> organizovano jahanje kroz prelepe pejzaže parka.
+                </p>
+              </section>
+
+              <img srcSet={`${tara77} 450w, ${tara7}`} alt="Tara 1" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Tara je bogata <strong>vodopadima</strong>, <strong>potocima</strong> i <strong>izvorima</strong> koji čine poseban
+                  <strong>vodni sistem</strong>. Vodopadi i rečni tokovi ostavljaju snažan utisak svojom
+                  lepotom. U kombinaciji sa <strong>šumama</strong>, <strong>planinskim vrhovima</strong> i <strong>rekama</strong>, Tara
+                  predstavlja savršeno mesto za <strong>ljubitelje prirode</strong> i <strong>mira</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${tara88} 450w, ${tara8}`} alt="Tara 2" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Šetnje i izleti u parku vode kroz <strong>označene staze</strong>, guste šume i do
+                  <strong>vidikovaca</strong> sa kojih se pruža pogled na <strong>Drinu</strong> i okolinu. Popularne ture
+                  uključuju posete <strong>vodopadima</strong>, <strong>kanjonu Drine</strong> i <strong>istorijskim lokalitetima</strong>.
+                  Duže ture uključuju <strong>uspon na vrhove</strong>, dok su kraće idealne za <strong>porodice sa
+                    decom</strong>. Tara je pravo utočište za <strong>avanturiste</strong> i <strong>ljubitelje tišine</strong>.
+                </p>
+              </section>
+
+
+            </>
+          )
+          :
+          (
+            <>
+
+              <h2>Tara National Park</h2>
+
+              <section lang="en"> <p> <strong>Tara National Park</strong>, a true natural treasure of western Serbia, has enjoyed protected status since <strong>1981</strong>. It covers an area of nearly <strong>25,000 hectares</strong>, encompassing key parts of the mountainous massifs of <strong>Tara</strong> and <strong>Zvijezda</strong>. The park lies along the <strong>Drina River</strong>, which separates <strong>Bajina Bašta</strong> in Serbia from <strong>Višegrad</strong> in Bosnia, offering spectacular landscapes and a unique natural harmony. </p> </section>
+              <img srcSet={`${tara22} 450w, ${tara2}`} alt="Tara National Park" loading="lazy" />
+
+              <section lang="en"> <p> Tara Mountain belongs to the group of <strong>mid-altitude mountains</strong>, recognizable for its <strong>limestone relief</strong> and elevations ranging between <strong>1,000 and 1,200 meters</strong>. Some of its highest peaks are <strong>Kozji rid</strong>, <strong>Zborište</strong>, <strong>Janjač</strong>, <strong>Smiljevac</strong>, and <strong>Galinika</strong>. The lowest point is the <strong>Vrelo River</strong> at 234 meters. More than <strong>80%</strong> of the park is covered in <strong>mixed forests</strong>. This unique ecosystem is home to many plant and animal species, including the endemic <strong>Pančić's spruce</strong>, a relic from the Ice Age. Over <strong>140 bird species</strong>, <strong>19 fish species</strong>, and <strong>60 mammal species</strong> live here, including Serbia’s largest population of <strong>brown bears</strong>. </p> </section>
+              <img srcSet={`${tara33} 450w, ${tara3}`} alt="Tara National Park 2" loading="lazy" />
+
+              <section lang="en"> <p> Tara National Park is rich in <strong>archaeological sites</strong> and monuments from the Neolithic to the late Middle Ages. The most significant are the <strong>Rača Monastery</strong> from the <strong>13th century</strong> and the <strong>necropolises with stećci</strong> in <strong>Perućac</strong> and <strong>Rastište</strong>, which have been on the <strong>UNESCO list</strong> since 2016. The park's most captivating viewpoints include <strong>Banjka Stena</strong>, <strong>Bilješka Stena</strong>, <strong>Sjeniča</strong>, <strong>Crnjeskovo</strong>, <strong>Sokolarica</strong>, and <strong>Osluša</strong>. Additionally, the <strong>Drina Canyon</strong> and <strong>Perućac Lake</strong> are ideal for boat cruises. </p> </section>
+              <img srcSet={`${tara44} 450w, ${tara4}`} alt="Tara National Park 3" loading="lazy" />
+
+              <section lang="en"> <p> This area is one of the <strong>richest forest ecosystems</strong> in Europe and is often called the <strong>"lungs of Serbia"</strong>. The forests are dominated by <strong>fir</strong>, <strong>beech</strong>, and <strong>spruce</strong>, with the particularly notable <strong>Pančić's spruce</strong>. Tara is home to more than <strong>1,100 plant species</strong>, making up nearly <strong>a third of Serbia’s flora</strong>. It also has recorded <strong>96 species of lichens</strong>, <strong>171 species of mosses</strong>, <strong>30 types of ferns</strong>, <strong>7 gymnosperms</strong>, and around <strong>950 angiosperms</strong>. </p> </section>
+              <img srcSet={`${tara55} 450w, ${tara5}`} alt="Tara Mountain" loading="lazy" />
+
+              <section lang="en"> <p> Tara is home to a <strong>diverse range of animal species</strong>: <strong>12 amphibians</strong>, <strong>140 insects</strong>, and <strong>135 bird species</strong> – including the <strong>white-tailed eagle</strong>, <strong>griffon vulture</strong>, <strong>golden eagle</strong>, <strong>peregrine falcon</strong>, <strong>woodcock</strong>, and <strong>western capercaillie</strong>. Among the <strong>55 mammal species</strong> are <strong>chamois</strong>, <strong>roe deer</strong>, <strong>lynx</strong>, <strong>wolves</strong>, <strong>jackals</strong>, <strong>wild boars</strong>, <strong>martens</strong>, and protected species like the <strong>otter</strong> and <strong>brown bear</strong>. </p> </section>
+              <img srcSet={`${tara66} 450w, ${tara6}`} alt="Ice Cave" loading="lazy" />
+
+              <section lang="en"> <p> The park offers a wide range of activities: <strong>hiking</strong>, <strong>cycling</strong>, <strong>canyoning</strong>, <strong>skiing</strong>, <strong>swimming</strong>, as well as <strong>guided tours</strong>. Wildlife enthusiasts can observe <strong>bears</strong> from specially designed viewing shelters, while <strong>horseback riding</strong> is organized through the park’s beautiful landscapes. </p> </section>
+              <img srcSet={`${tara77} 450w, ${tara7}`} alt="Tara 1" loading="lazy" />
+
+              <section lang="en"> <p> Tara is rich in <strong>waterfalls</strong>, <strong>streams</strong>, and <strong>springs</strong> that form a unique <strong>water system</strong>. The waterfalls and river flows make a powerful impression with their beauty. Combined with the <strong>forests</strong>, <strong>mountain peaks</strong>, and <strong>rivers</strong>, Tara is the perfect place for <strong>nature lovers</strong> and seekers of <strong>peace</strong>. </p> </section>
+              <img srcSet={`${tara88} 450w, ${tara8}`} alt="Tara 2" loading="lazy" />
+
+              <section lang="en"> <p> Walks and excursions in the park lead along <strong>marked trails</strong>, dense forests, and to <strong>viewpoints</strong> overlooking the <strong>Drina River</strong> and its surroundings. Popular tours include visits to <strong>waterfalls</strong>, the <strong>Drina Canyon</strong>, and <strong>historical sites</strong>. Longer tours include <strong>climbing to mountain peaks</strong>, while shorter ones are ideal for <strong>families with children</strong>. Tara is a true haven for <strong>adventurers</strong> and <strong>lovers of silence</strong>. </p> </section>
+
+            </>
+          )}
+
+      </div>
+    </>
   );
 };
+
+
+export default NacionalniParkTara;

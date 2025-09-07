@@ -1,6 +1,6 @@
 export const urosevackiOkrugPathRoutes = {
-    home: "/KosovoIMetohijaTekstModal/KosovoIMetohija/UrosevackiOkrug",
-    urosevac: "/KosovoIMetohijaTekstModal/KosovoIMetohija/UrosevackiOkrug/Urosevac",
-    brezovica: "/KosovoIMetohijaTekstModal/KosovoIMetohija/UrosevackiOkrug/Brezovica",
-    ljuboten: "/KosovoIMetohijaTekstModal/KosovoIMetohija/UrosevackiOkrug/Ljuboten",
+    home: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/urosevacki-okrug`,
+    urosevac: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/urosevacki-okrug/urosevac`,
+    brezovica: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/urosevacki-okrug/brezovica`,
+    ljuboten: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/urosevacki-okrug/ljuboten`
 }

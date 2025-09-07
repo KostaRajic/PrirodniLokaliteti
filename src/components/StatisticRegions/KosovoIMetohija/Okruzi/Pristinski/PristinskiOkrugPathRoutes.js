@@ -1,8 +1,8 @@
 export const pristinskiOkrugPathRoutes = {
-    home: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PristinskiOkrug",
-    pristina: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PristinskiOkrug/Pristina",
-    gracanica: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PristinskiOkrug/Gracanica",
-    gazimestan: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PristinskiOkrug/Gazimestan",
-    mermernaPecina: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PristinskiOkrug/MermernaPecina",
-    tvrdjavaNovoBrdo: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PristinskiOkrug/TvrdjavaNovoBrdo"
+    home: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug`,
+    pristina: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/pristina`,
+    gracanica: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/gracanica`,
+    gazimestan: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/gazimestan`,
+    mermernaPecina: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/mermerna-pecina`,
+    tvrdjavaNovoBrdo: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/tvrdjava-novo-brdo`
 }

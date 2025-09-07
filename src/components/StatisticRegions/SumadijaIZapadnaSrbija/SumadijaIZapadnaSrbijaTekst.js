@@ -17,3 +17,23 @@ text17: `* Uvac – Poznato jezero i prirodni rezervat, gde možete videti retke
 Ovi regioni su poznati po bogatoj i raznovrsnoj gastronomiji, koja se bazira na tradicionalnim jelima poput pečenja, sarme, ajvara, kajmaka, i mnogim vrstama domaćih rakija. Takođe, na ovim prostorima proizvodnja vina ima dugu tradiciju, a vina iz Šumadije i Zapadne Srbije postaju sve popularnija.
 Šumadija i Zapadna Srbija nude brojne kulturne manifestacije, festivale i sajmove, među kojima se izdvaja Šumadijski sabor, Saborski dani u Kraljevu, te tradicionalne manifestacije posvećene narodnim običajima, muzici i plesu. Posetioci će uživati u autentičnim etno-selima i seoskom turizmu koji omogućava blizak susret sa prirodom i tradicijom ovog kraja.`,
 }
+
+export const sumadijaIZapadnaSrbijaTextENG = {
+    name: "Šumadija and Western Serbia",
+mainText: `Šumadija and Western Serbia are regions in the central and western parts of Serbia, known for their beautiful mountainous terrain, rich history, tradition, and authentic rural life. Šumadija is considered the heart of Serbia, with numerous towns and settlements that preserve Serbian traditions, while Western Serbia offers diverse natural beauties, mountains, and rivers. These regions host many cultural and historical monuments and are also important centers for agriculture and livestock farming.
+The main city of Šumadija is Kragujevac, while significant cities in Western Serbia include Užice, Čačak, Požega, and Kraljevo. These regions are rich in cultural heritage, folk customs, and events that attract visitors throughout the year.`,
+topic1: `Tourist and Natural Attractions`,
+text1: `
+Šumadija and Western Serbia are home to many natural beauties and tourist sites, among which stand out:`,
+text11: `* Tara National Park – Located in western Serbia, this park offers impressive mountainous landscapes, lakes, rivers, and a rich variety of flora and fauna. Tara is known for its unique plant and animal life, as well as viewpoints with breathtaking views.`,
+text12: `* Kragujevac and its surroundings – Kragujevac is a city in central Serbia, known for its industrial tradition, historical monuments, and significance in contemporary culture. The surroundings of Kragujevac are rich in natural beauty, with numerous mountains, rivers, and villages making this area ideal for rural tourism.`,
+text13: `* Gradac River – One of the most beautiful rivers in Serbia, known for its clear water and picturesque landscapes. It flows through the cities of Valjevo and Mionica, with many nearby picnic spots and natural resources.`,
+text14: `* Rudnik – A mountain massif and one of the most scenic parts of Western Serbia, known for its stunning viewpoints, hiking trails, and pristine nature.`,
+text15: `* Western Morava River – This river flows through one of the most beautiful regions in Serbia, offering many opportunities for fishing, cycling, and enjoying nature.`,
+text16: `* Monasteries – Šumadija and Western Serbia are rich in monasteries such as Ljubostinja, Studenica, and Žiča, which hold significant spiritual and cultural value.`,
+text17: `* Uvac – A famous lake and nature reserve where you can see rare bird species like griffon vultures and enjoy boat rides through the Uvac canyon.`,
+topic2: `Cultural and Gastronomic Offerings`,
+text2: `
+These regions are known for their rich and diverse gastronomy, based on traditional dishes such as roasted meats, sarma (stuffed cabbage rolls), ajvar, kajmak, and many types of homemade brandies. Also, wine production in these areas has a long tradition, and wines from Šumadija and Western Serbia are becoming increasingly popular.
+Šumadija and Western Serbia offer numerous cultural events, festivals, and fairs, including the Šumadija Assembly, the Assembly Days in Kraljevo, and traditional events dedicated to folk customs, music, and dance. Visitors will enjoy authentic ethno-villages and rural tourism that allow close encounters with the nature and tradition of this region.`,
+}

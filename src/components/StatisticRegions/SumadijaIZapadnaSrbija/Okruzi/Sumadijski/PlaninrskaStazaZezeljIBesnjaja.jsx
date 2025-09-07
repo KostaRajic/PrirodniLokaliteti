@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import zezeljIBesnjaja1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja1.jpg";
 import zezeljIBesnjaja2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja2.jpg";
 import zezeljIBesnjaja31 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/desktop/zezeljIBesnjaja31.jpg";
@@ -22,16 +23,30 @@ import zezeljIBesnjaja44 from "../../../../../assets/images/SumadijaIZapadnaSrbi
 import zezeljIBesnjaja55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/ZezeljIBesnjaja/mobile/MzezeljIBesnjaja5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useContextAuth } from "../../../../../Context";
+import { sumadijskiOkrugPathRoutes } from "./SumadijskiOkrugPathRoutes";
+import { Helmet } from "react-helmet-async";
 
-export const PlaninarskaStazaZezeljIBesnjaja = () => {
+const PlaninarskaStazaZezeljIBesnjaja = () => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
+  const { switchLanguage } = useContextAuth();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && lang !== switchLanguage) {
+      const newPath = window.location.pathname.replace(/^\/[^\/]+/, `/${switchLanguage}`);
+      navigate(newPath, { replace: true });
+    }
+  }, [switchLanguage, lang, navigate]);
+
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -48,25 +63,25 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
 
   const settings = isMobile
     ? {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        pauseOnHover: false,
-        arrows: false,
-      }
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      pauseOnHover: false,
+      arrows: false,
+    }
     : {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        pauseOnHover: false,
-        arrows: false,
-      };
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      pauseOnHover: false,
+      arrows: false,
+    };
 
   const images = [
     {
@@ -107,108 +122,267 @@ export const PlaninarskaStazaZezeljIBesnjaja = () => {
   ];
 
   return (
-    <div className="placeBackground">
-      <ScrollToTop />
-      <FaArrowLeft
-        className="arrowLeft"
-        onClick={() => navigate(-1)}
-        style={{ fill: "white" }}
-      />
-      <header></header>
-      <img srcSet={`${zezeljIBesnjaja11} 400w, ${zezeljIBesnjaja1} `} alt="Planinarska staza Žeželj i Bešnjaja 1" />
+    <>
 
-      <h2 style={{ color: "white" }}>Planinarska staza Žeželj i Bešnjaja</h2>
+      <Helmet>
+        <title>
+          {switchLanguage === 'rs'
+            ? "Planinarska staza Žeželj – Bešnjaja | Kragujevac priroda i avantura"
+            : "Žeželj – Bešnjaja Hiking Trail | Kragujevac Nature and Adventure"}
+        </title>
 
-      <p style={{ paddingTop: "50px" }}>
-        Žeželj je brdo koje se nalazi u kragujevačkom naselju Ždraljica. Vrh se
-        uzdiže na 486 metara nadmorske visine, sa kojeg se pruža pogled na grad
-        Kragujevac, dolinu reke Ždraljice i Gledićke planine na horizontu. Od
-        centra Kragujevca udaljeno je 4-5 km. Poznato je kao planinarski teren i
-        izletnička destinacija. Kroz njega prolazi registrovana Kragujevačka
-        planinarska staza Žežel-Bešnaja. Po ovom brdu je ime dobilo i
-        kragujevačko Planinarsko društvo Žeželj.
-      </p>
+        <meta
+          name="description"
+          content={
+            switchLanguage === 'rs'
+              ? "Planinarska staza Žeželj-Bešnjaja kod Kragujevca vodi kroz bukove šume, proplanke i pored vodopada Buk. Idealna je za izletnike, ljubitelje prirode i planinare."
+              : "The Žeželj–Bešnjaja hiking trail near Kragujevac offers scenic views, beech forests, meadows, and the tallest waterfall in Šumadija – Buk. Perfect for hikers and nature lovers."
+          }
+        />
 
-      <img srcSet={`${zezeljIBesnjaja22} 400w, ${zezeljIBesnjaja2} `} alt="Planinarska staza Žeželj i Bešnjaja 2" />
+        <meta
+          name="keywords"
+          content={
+            switchLanguage === 'rs'
+              ? "Žeželj, Bešnjaja, planinarenje Kragujevac, Buk vodopad, planinarska staza, priroda Šumadije, izletište Kragujevac, šume, vrh Cerjak, Gledićke planine"
+              : "Zezelj, Besnjaja, hiking Kragujevac, Buk waterfall, hiking trail Serbia, Šumadija nature, Cerjak peak, beech forest, scenic hike Serbia"
+          }
+        />
 
-      <p>
-        Planinarska staza Žeželj-Bešnjaja je popularna izletnička tura koja
-        povezuje brdo Žeželj i planinu Bešnjaju. Duga je 19 km i polazi iz
-        naselja Ždraljica, sa obližnjeg vodopada Buk (Duboki potok), a završava
-        kod Momičilove vodeniče u naselju Bukovac. Staza počinje u naselju
-        Ždraljica, prati put prema starom selu Ždraljica na oko stotinu metara,
-        a zatim skreće prema vodopadu Buk.
-      </p>
+        <meta name="author" content="Serbia Wonders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.serbiawonders.com/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/zezelj-i-besnjaja`}
+        />
+        <link
+          rel="alternate"
+          hreflang="sr"
+          href="https://www.serbiawonders.com/sr/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/zezelj-i-besnjaja"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/zezelj-i-besnjaja"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/zezelj-i-besnjaja"
+        />
+      </Helmet>
 
-      {isMobile ? (
-        <>
-          <Slider {...settings}>
-            {images.map((image, index) => (
-              <div key={index}>
-                <img
-                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
-                  alt={image.alt}
-                  loading="lazy"
-                  style={{
-                    width: "80%",
-                    height: "200px",
-                    margin: "0 8% 0 12%",
-                  }}
-                />
-              </div>
-            ))}
-          </Slider>
-        </>
-      ) : (
-        <>
-          <Slider {...settings}>
-            {images.map((image, index) => (
-              <div key={index}>
-                <img
-                  srcSet={`${image.mobileSrc} 400w, ${image.desktopSrc} `}
-                  alt={image.alt}
-                  loading="lazy"
-                  style={{
-                    width: "400px",
-                    height: "400px",
-                    margin: "0 0 50px 50px",
-                  }}
-                />
-              </div>
-            ))}
-          </Slider>
-        </>
-      )}
+      <div className="placeBackground">
+        <ScrollToTop />
+        <FaArrowLeft
+          className="arrowLeft"
+          onClick={() => navigate(sumadijskiOkrugPathRoutes.home(switchLanguage))}
+          style={{ fill: "white" }}
+        />
+        <header></header>
+        <img srcSet={`${zezeljIBesnjaja11} 450w, ${zezeljIBesnjaja1} `} alt="Planinarska staza Žeželj i Bešnjaja 1" />
 
-      <p>
-        Ispred vodopada nalazi se platforma za razgledanje. Buk je najviši
-        vodopad u Šumadiji i glavna atrakcija ove ture. Staza zatim vodi
-        grebenom kroz pojas stoletne bukove šume i proplanke, sve do vrha Žeželj
-        (486 m), sa kojeg se pruža pogled na grad Kragujevac, dolinu reke
-        Ždraljice i Gledićke planine.
-      </p>
+        {switchLanguage === 'rs' ?
+          (
+            <>
 
-      <img srcSet={`${zezeljIBesnjaja44} 400w, ${zezeljIBesnjaja4} `} alt="Planinarska staza Žeželj i Bešnjaja 4" />
 
-      <p>
-        Na vrhu se nalaze ostaci planinarskog doma koji je uništen u požaru.
-        Staza od vodopada do vrha Žeželj duga je 2,5 km i sve vreme vodi kroz
-        šumu. Sa Žeželja, staza se spušta do zaseoka Srednja mala u Donjoj
-        Sabanti, prolazi pored nekoliko stoletnih spomenika i spušta se do ušća
-        Mamutovačkog potoka u reku Osanicu. Odatle sledi uspon ka vrhu Cerjak
-        (507 m), do dela puta zvanog Prlić, sa kojeg se ponovo pružaju lepi
-        pogledi na okolinu.
-      </p>
+              <h2 style={{ color: "white" }}>Planinarska staza Žeželj i Bešnjaja</h2>
 
-      <img srcSet={`${zezeljIBesnjaja55} 400w, ${zezeljIBesnjaja5} `} alt="Planinarska staza Žeželj i Bešnjaja 5" />
 
-      <p>
-        Dalje, staza prolazi ispod vrha Lisin Laz (613 m). Odatle se put spušta
-        i prolazi iznad izvora "Đurina česma", odakle, preko kosine Veliko brdo,
-        izlazi na greben Bešnjaje. Nastavlja u pravcu naselja Gornje Komarice,
-        skreće prema Gigovskom potoku i odatle, nakon kraćeg uspona, spušta se u
-        Bukovac, do Momičilove vodeniče.
-      </p>
-    </div>
+              <section lang="sr">
+                <p>
+                  <strong>Žeželj</strong> je brdo koje se nalazi u kragujevačkom naselju <em>Ždraljica</em>. Vrh se
+                  uzdiže na <strong>486 metara</strong> nadmorske visine, sa kojeg se pruža pogled na grad
+                  <strong>Kragujevac</strong>, dolinu reke <em>Ždraljice</em> i <strong>Gledićke planine</strong> na horizontu. Od
+                  centra <strong>Kragujevca</strong> udaljeno je <em>4-5 km</em>. Poznato je kao planinarski teren i
+                  izletnička destinacija. Kroz njega prolazi registrovana <strong>Kragujevačka planinarska staza Žeželj-Bešnjaja</strong>. Po ovom brdu je ime dobilo i
+                  kragujevačko Planinarsko društvo <strong>Žeželj</strong>.
+                </p>
+              </section>
+
+              <img
+                srcSet={`${zezeljIBesnjaja22} 450w, ${zezeljIBesnjaja2}`}
+                alt="Planinarska staza Žeželj i Bešnjaja 2"
+              />
+
+              <section lang="sr">
+                <p>
+                  Planinarska staza <strong>Žeželj-Bešnjaja</strong> je popularna izletnička tura koja
+                  povezuje brdo <strong>Žeželj</strong> i planinu <strong>Bešnjaju</strong>. Duga je <em>19 km</em> i polazi iz
+                  naselja <em>Ždraljica</em>, sa obližnjeg vodopada <strong>Buk (Duboki potok)</strong>, a završava
+                  kod <strong>Momičilove vodeniče</strong> u naselju <em>Bukovac</em>. Staza počinje u naselju
+                  <em>Ždraljica</em>, prati put prema starom selu <em>Ždraljica</em> na oko stotinu metara,
+                  a zatim skreće prema vodopadu <strong>Buk</strong>.
+                </p>
+              </section>
+
+              {isMobile ? (
+                <>
+                  <Slider {...settings}>
+                    {images.map((image, index) => (
+                      <div key={index}>
+                        <img
+                          srcSet={`${image.mobileSrc} 450w, ${image.desktopSrc} `}
+                          alt={image.alt}
+                          loading="lazy"
+                          style={{
+                            width: "80%",
+                            height: "200px",
+                            margin: "0 8% 0 12%",
+                          }}
+                        />
+                      </div>
+                    ))}
+                  </Slider>
+                </>
+              ) : (
+                <>
+                  <Slider {...settings}>
+                    {images.map((image, index) => (
+                      <div key={index}>
+                        <img
+                          srcSet={`${image.mobileSrc} 450w, ${image.desktopSrc} `}
+                          alt={image.alt}
+                          loading="lazy"
+                          style={{
+                            width: "400px",
+                            height: "400px",
+                            margin: "0 0 50px 50px",
+                          }}
+                        />
+                      </div>
+                    ))}
+                  </Slider>
+                </>
+              )}
+
+              <section lang="sr">
+                <p>
+                  Ispred vodopada nalazi se platforma za razgledanje. <strong>Buk</strong> je najviši
+                  vodopad u <em>Šumadiji</em> i glavna atrakcija ove ture. Staza zatim vodi
+                  grebenom kroz pojas stoletne <strong>bukove šume</strong> i proplanke, sve do vrha <strong>Žeželj</strong>
+                  (<em>486 m</em>), sa kojeg se pruža pogled na grad <strong>Kragujevac</strong>, dolinu reke
+                  <em>Ždraljice</em> i <strong>Gledićke planine</strong>.
+                </p>
+              </section>
+
+              <img
+                srcSet={`${zezeljIBesnjaja44} 450w, ${zezeljIBesnjaja4}`}
+                alt="Planinarska staza Žeželj i Bešnjaja 4"
+              />
+
+              <section lang="sr">
+                <p>
+                  Na vrhu se nalaze ostaci planinarskog doma koji je uništen u požaru.
+                  Staza od vodopada do vrha <strong>Žeželj</strong> duga je <em>2,5 km</em> i sve vreme vodi kroz
+                  šumu. Sa <strong>Žeželja</strong>, staza se spušta do zaseoka <em>Srednja mala</em> u <em>Donjoj Sabanti</em>,
+                  prolazi pored nekoliko stoletnih spomenika i spušta se do ušća
+                  <strong>Mamutovačkog potoka</strong> u reku <strong>Osanicu</strong>. Odatle sledi uspon ka vrhu <strong>Cerjak</strong>
+                  (<em>507 m</em>), do dela puta zvanog <em>Prlić</em>, sa kojeg se ponovo pružaju lepi
+                  pogledi na okolinu.
+                </p>
+              </section>
+
+              <img
+                srcSet={`${zezeljIBesnjaja55} 450w, ${zezeljIBesnjaja5}`}
+                alt="Planinarska staza Žeželj i Bešnjaja 5"
+              />
+
+              <section lang="sr">
+                <p>
+                  Dalje, staza prolazi ispod vrha <strong>Lisin Laz</strong> (<em>613 m</em>). Odatle se put spušta
+                  i prolazi iznad izvora <em>"Đurina česma"</em>, odakle, preko kosine <strong>Veliko brdo</strong>,
+                  izlazi na greben <strong>Bešnjaje</strong>. Nastavlja u pravcu naselja <em>Gornje Komarice</em>,
+                  skreće prema <strong>Gigovskom potoku</strong> i odatle, nakon kraćeg uspona, spušta se u
+                  <em>Bukovac</em>, do <strong>Momičilove vodeniče</strong>.
+                </p>
+              </section>
+
+
+            </>
+          )
+          :
+          (
+            <>
+
+
+              <h2 style={{ color: "white" }}>Hiking Trail Žeželj and Bešnjaja</h2>
+
+
+              <section lang="en">
+                <p> <strong>Žeželj</strong> is a hill located in the Kragujevac neighborhood of <em>Ždraljica</em>. The peak rises to an altitude of <strong>486 meters</strong>, offering views of the city of <strong>Kragujevac</strong>, the valley of the <em>Ždraljica</em> river, and the <strong>Gledić Mountains</strong> on the horizon. It is located about <em>4-5 km</em> from the center of <strong>Kragujevac</strong>. It is known as a hiking area and a popular excursion destination. The registered <strong>Kragujevac hiking trail Žeželj-Bešnjaja</strong> passes through it. The Kragujevac Hiking Society named <strong>Žeželj</strong> after this hill. </p>
+              </section>
+
+
+              <img
+                srcSet={`${zezeljIBesnjaja22} 450w, ${zezeljIBesnjaja2}`}
+                alt="Hiking trail Žeželj and Bešnjaja 2"
+              />
+
+              <section lang="en"> <p> The hiking trail <strong>Žeželj-Bešnjaja</strong> is a popular excursion route connecting the hill <strong>Žeželj</strong> and the mountain <strong>Bešnjaja</strong>. It is <em>19 km</em> long and starts from the neighborhood of <em>Ždraljica</em>, near the waterfall <strong>Buk (Duboki potok)</strong>, and ends at <strong>Momićil's Watermill</strong> in the settlement of <em>Bukovac</em>. The trail begins in <em>Ždraljica</em>, follows the road toward the old village of <em>Ždraljica</em> for about one hundred meters, then turns toward the <strong>Buk</strong> waterfall. </p> </section>
+
+              {isMobile ? (
+                <>
+                  <Slider {...settings}>
+                    {images.map((image, index) => (
+                      <div key={index}>
+                        <img
+                          srcSet={`${image.mobileSrc} 450w, ${image.desktopSrc} `}
+                          alt={image.alt}
+                          loading="lazy"
+                          style={{
+                            width: "80%",
+                            height: "200px",
+                            margin: "0 8% 0 12%",
+                          }}
+                        />
+                      </div>
+                    ))}
+                  </Slider>
+                </>
+              ) : (
+                <>
+                  <Slider {...settings}>
+                    {images.map((image, index) => (
+                      <div key={index}>
+                        <img
+                          srcSet={`${image.mobileSrc} 450w, ${image.desktopSrc} `}
+                          alt={image.alt}
+                          loading="lazy"
+                          style={{
+                            width: "400px",
+                            height: "400px",
+                            margin: "0 0 50px 50px",
+                          }}
+                        />
+                      </div>
+                    ))}
+                  </Slider>
+                </>
+              )}
+
+              <section lang="en"> <p> In front of the waterfall there is a viewing platform. <strong>Buk</strong> is the highest waterfall in <em>Šumadija</em> and the main attraction of this tour. The trail then leads along the ridge through a belt of century-old <strong>beech forest</strong> and clearings, up to the peak of <strong>Žeželj</strong> (<em>486 m</em>), offering views of the city of <strong>Kragujevac</strong>, the valley of the <em>Ždraljica</em> river, and the <strong>Gledić Mountains</strong>. </p> </section>
+              <img
+                srcSet={`${zezeljIBesnjaja44} 450w, ${zezeljIBesnjaja4}`}
+                alt="Hiking trail Žeželj and Bešnjaja 4"
+              />
+
+              <section lang="en"> <p> At the peak are the remains of a hikers’ lodge that was destroyed by fire. The trail from the waterfall to the peak of <strong>Žeželj</strong> is <em>2.5 km</em> long and leads entirely through the forest. From <strong>Žeželj</strong>, the trail descends to the hamlet of <em>Srednja Mala</em> in <em>Donja Sabanta</em>, passes by several century-old monuments, and descends to the confluence of <strong>Mamutovački Creek</strong> into the <strong>Osanica</strong> river. From there, the trail climbs to the peak of <strong>Cerjak</strong> (<em>507 m</em>), to a part of the trail called <em>Prlić</em>, which offers beautiful views of the surroundings again. </p> </section>
+              <img
+                srcSet={`${zezeljIBesnjaja55} 450w, ${zezeljIBesnjaja5}`}
+                alt="Hiking trail Žeželj and Bešnjaja 5"
+              />
+
+              <section lang="en"> <p> Further on, the trail passes below the peak of <strong>Lisin Laz</strong> (<em>613 m</em>). From there, the path descends and passes above the spring called <em>"Đurina česma"</em>, then over the slope of <strong>Veliko brdo</strong>, emerging onto the ridge of <strong>Bešnjaja</strong>. It continues toward the settlement of <em>Gornje Komarice</em>, turns toward <strong>Gigovski Creek</strong>, and from there, after a short ascent, descends into <em>Bukovac</em>, to <strong>Momićil's Watermill</strong>. </p> </section>
+
+            </>
+          )}
+
+      </div>
+    </>
   );
 };
+
+
+export default PlaninarskaStazaZezeljIBesnjaja;

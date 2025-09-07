@@ -4,7 +4,7 @@ export const serbianMapData = {
     {
       type: "Feature",
       id: 1,
-      properties: {name: 'Vojvodina'},
+      properties: {nameSrb: 'Vojvodina', nameEng: 'Vojvodina'},
       geometry: {
         type: "Polygon",
         coordinates: [
@@ -84,7 +84,7 @@ export const serbianMapData = {
     {
       type: "Feature",
       id: 2,
-      properties: { name: "Beograd" },
+      properties: { nameSrb: "Beograd", nameEng: 'Belgrade' },
       geometry: {
         type: "Polygon",
         coordinates: [
@@ -119,7 +119,7 @@ export const serbianMapData = {
     {
       type: "Feature",
       id: 3,
-      properties: {name: 'Šumadija i zapadna Srbija'},
+      properties: {nameSrb: 'Šumadija i zapadna Srbija', nameEng: 'Šumadija and Western Serbia'},
       geometry: {
         coordinates: [
           [
@@ -217,7 +217,7 @@ export const serbianMapData = {
     {
       type: "Feature",
       id: 4,
-      properties: { name: "Južna i istočna Srbija" },
+      properties: { nameSrb: "Južna i istočna Srbija", nameEng: 'Southern and Eastern Serbia' },
       geometry: {
         type: "Polygon",
         coordinates: [
@@ -296,7 +296,7 @@ export const serbianMapData = {
     {
       type: "Feature",
       id: 5,
-      properties: { name: "Kosovo i Metohija" },
+      properties: { nameSrb: "Kosovo i Metohija", nameEng: 'Kosovo and Metohija' },
       geometry: {
         type: "Polygon",
         coordinates: [

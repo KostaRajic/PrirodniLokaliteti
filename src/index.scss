@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/src/assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --someBlueColor: rgb(19 17 35);
 }
@@ -6,7 +14,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
   color: white;
   font-display: swap;
 }
@@ -20,71 +28,86 @@ body {
   width: 100vw;
 }
 
-.homePage {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), 
-  url('/src/assets/images/landingPage.jpg');
-  height: 100vh;
-  background-size: cover;
-}
-
 .leaflet-control-container {
   display: none;
 }
 
-.homePage div {
-  //margin-top: -100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh; 
+.homePage .carouselImg {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(0.8);
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.homePage div h1 {
-text-align: center;
-margin: 0 40px;
+.homePage .carouselImg-active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: visible;
 }
 
-.homePage div h2 {
+.carouselOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.4) 20%,
+    rgba(0, 0, 0, 0.6) 70%,
+    // rgba(0, 0, 0, 0.6) 80%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 1;
+}
+
+.homePage .homePageTextContent {
+  top: 40%;
+  left: 20%;
+  position: absolute;
+}
+
+.homePage h1 {
   text-align: center;
-    padding-top: 20px;
+  margin: 0 40px;
 }
 
+.homePage h2 {
+  text-align: center;
+  padding-top: 20px;
+}
 
-.homePage h2 span {
-  position: relative;
+.homePage h2 button {
   cursor: pointer;
-  color: chartreuse;
+  color: yellow;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  margin-left: 10px;
-
+  margin-left: 15px;
+  background: transparent;
+  border: none;
+  font-size: 23px;
 }
 
-.homePage h2 span::after {
-  content: '';
+.homePage h2 button::after {
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
   left: 0;
   bottom: -4px;
-  background-color: white;
+  background-color: yellow;
   transition: width 1s ease;
 }
 
-.homePage h2 span:hover {
-  transform: scale(1.1);
+.homePage h2 button:hover {
+  transform: scale(1.05);
 }
 
-.homePage h2 span:hover::after {
+.homePage h2 button:hover::after {
   width: 100%;
+  background-color: yellow;
 }
-
-.headerClass {
-  background-color: transparent;
-}
-
 
 .headerClass .logo-and-nav {
   position: absolute;
@@ -93,18 +116,12 @@ margin: 0 40px;
   align-items: center;
   padding: 10px 40px;
   width: 100%;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .headerClass .logo-and-nav img {
   width: 80px;
   z-index: 10000;
-}
-
-.headerClass .logo-and-nav ul {
-  margin-right: 50px;
-  display: flex;
-
 }
 
 .headerClass .logo-and-nav ul li {
@@ -113,58 +130,201 @@ margin: 0 40px;
   margin: 0 20px;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   text-shadow: 5px 5px 5px black;
   border-radius: 10px;
   padding: 10px 30px;
   font-style: italic;
 }
 
-// .headerClass .logo-and-nav ul li::after {
-//   content: '';
-//   position: absolute;
-//   width: 0;
-//   height: 2px;
-//   left: 20px;
-//   bottom: 6px;
-//   background-color: white;
-//   transition: width 0.3s ease;
-// }
-
-.headerClass .logo-and-nav ul li:hover {
-  transform: scale(1.2);
+.headerClass .logo-and-nav div div {
+  color: white;
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  font-style: italic;
+  padding: 10px 30px;
 }
 
-// .headerClass .logo-and-nav ul li:hover::after {
-//   width: 65%;
-// }
+.headerClass .logo-and-nav div {
+  display: flex;
+}
+
+.headerClass .logo-and-nav p {
+  margin-right: 10px;
+}
+
+.headerClass .logo-and-nav select,
+.headerClass .logo-and-nav option {
+  color: black;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  cursor: pointer;
+  transform: translate(-47px, -10px);
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  height: 400px;
+  overflow: auto;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown-menu .menu-items {
+  position: relative;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  cursor: pointer;
+  transform: translate(-30px, -10px);
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent::-webkit-scrollbar {
+  display: none;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent input {
+  border-radius: 10px;
+  color: var(--someBlueColor);
+  min-height: 30px;
+  padding: 0 10px;
+  border: none;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent div {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent p {
+  padding: 10px;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent p:active {
+  scale: (1);
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  cursor: pointer;
+  transform: translate(-120px, -10px);
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent input {
+  border-radius: 10px;
+  color: var(--someBlueColor);
+  min-height: 30px;
+  padding: 0 10px;
+  border: none;
+  margin: 10px 10px 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  width: 420px;
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent div {
+  display: flex;
+  padding: 0;
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent div .searchButton {
+  height: 35px;
+  margin: auto 0 auto 5px;
+  border-radius: 10px;
+  color: var(--someBlueColor);
+  font-size: 25px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent div button {
+  background-color: black;
+  border: none;
+}
+
+.headerClass
+  .logo-and-nav
+  .navbar
+  .searchWeatherComponent
+  div
+  .searchButton:hover {
+  transform: scale(1.1);
+}
+
+.loadingClass {
+  position: absolute;
+  top: 100%;
+}
+
+.selected-item {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+
+.headerClass .logo-and-nav .navbar-nav .dropdown-menu .okrugClass {
+  background: transparent;
+  padding: 5px 20px;
+}
+
+.navbar-nav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 
 .serbianMapClass {
   position: relative;
   z-index: 2;
-  //margin-top: -100px;
 }
 
 .modalBackground {
-  cursor: default;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  pointer-events: auto;
-  //margin-top: -100px;
-  z-index: 199999;
-  position: relative;
+  text-shadow: 5px 5px 5px black;
 }
 
 .modalContent {
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  overflow: auto;
+  width: 100vw;
+  z-index: 2200;
   background-color: white;
   font-size: 20px;
+  cursor: default;
   padding: 30px;
-  max-height: 100vh;
-  overflow: auto;
 
   h1 {
     padding-bottom: 20px;
@@ -202,17 +362,17 @@ margin: 0 40px;
 .firstBtn {
   margin: 40px 50px;
   width: 150px;
-      color: var(--someBlueColor);
-      background: white;
-      border-radius: 999px;
-      box-shadow: #5E5DF0 0 10px 20px -10px;
-      cursor: pointer;
-      font-size: 19px;
-      font-weight: 700;
-      line-height: 24px;
-      opacity: 1;
-      outline: 0 solid transparent;
-      border: 0;
+  color: var(--someBlueColor);
+  background: white;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  border: 0;
 }
 
 .firstBtn:hover {
@@ -227,21 +387,21 @@ margin: 0 40px;
 
 .secondBtn {
   margin: 40px 50px;
-      width: 150px;
-      color: var(--someBlueColor);
-      background: white;
-      border-radius: 999px;
-      box-shadow: #5E5DF0 0 10px 20px -10px;
-      cursor: pointer;
-      font-size: 19px;
-      font-weight: 700;
-      line-height: 24px;
-      opacity: 1;
-      outline: 0 solid transparent;
+  width: 150px;
+  color: var(--someBlueColor);
+  background: white;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
 
-      height: 60px;
+  height: 60px;
 
-      border: 0;
+  border: 0;
 }
 
 .secondBtn:hover {
@@ -271,17 +431,19 @@ margin: 0 40px;
   background-repeat: no-repeat;
   background-position: 50% 10%;
   text-shadow: 5px 5px 5px black;
+  padding-top: 85px;
 }
 
-.sumadijaTekstModalBackground {
+.sumadijaBGD {
   background-image: url(./assets/images/SumadijaIZapadnaSrbija/sumadijaTeksBackround.jpg);
   color: white;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.65);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: 50% 10%;
   text-shadow: 5px 5px 5px black;
+  padding-top: 85px;
 }
 
 .istocnaIJuznaSrbijaTekstModalBackground {
@@ -293,6 +455,7 @@ margin: 0 40px;
   background-repeat: no-repeat;
   background-position: 50% 10%;
   text-shadow: 5px 5px 5px black;
+  padding-top: 85px;
 }
 
 .kosovoIMetohijaTekstModalBackgorund {
@@ -304,6 +467,7 @@ margin: 0 40px;
   background-repeat: no-repeat;
   background-position: 50% 10%;
   text-shadow: 5px 5px 5px black;
+  padding-top: 85px;
 }
 
 .toolTipClass {
@@ -314,14 +478,29 @@ margin: 0 40px;
 }
 
 .okrugBackground {
-
   width: 100vw;
-
   z-index: 2200;
   background-color: white;
   font-size: 25px;
   cursor: default;
- // margin-top: -200px;
+
+  .okrugButton {
+    color: var(--someBlueColor);
+    background: white;
+    border-radius: 999px;
+    box-shadow: #5e5df0 0 10px 20px -10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    word-break: break-word;
+    border: 0;
+    margin: 20px 0 20px 50%;
+    transform: translateX(-50%);
+  }
 
   .okrug {
     background-position: 50%;
@@ -333,17 +512,20 @@ margin: 0 40px;
     font-size: 26px;
     text-shadow: 5px 5px 5px black;
 
-
+    article,
     div {
       padding: 0 50px;
       word-spacing: 1.5px;
+
+      p {
+        padding: 10px 0;
+      }
     }
   }
 
   .rasinski {
     background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/rasinskiOkrug.jpg);
   }
-  
 
   .raski {
     background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/raskiOkrug.jpg);
@@ -408,7 +590,7 @@ margin: 0 40px;
   .branicevski {
     background-image: url(../src/assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/branicevskiOkug.jpg);
   }
-  
+
   .borski {
     background-image: url(../src/assets/images/JuznaIIstocnaSrbija/BorskiOkrug/borskiOkrug.jpg);
   }
@@ -470,7 +652,7 @@ margin: 0 40px;
     font-size: 50px;
   }
 
-  form {
+  .basicInfo {
     padding: 0px 50px 50px 50px;
 
     h3 {
@@ -481,9 +663,6 @@ margin: 0 40px;
     p {
       font-size: 31px;
       padding: 5px;
-    }
-    span {
-      font-weight: 700;
     }
   }
 
@@ -507,7 +686,8 @@ margin: 0 40px;
 .citatClass {
   background-color: white;
 
-  p {
+  blockquote,
+  em {
     text-align: center;
     padding: 50px;
     font-style: italic;
@@ -624,23 +804,22 @@ margin: 0 40px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     width: 400px;
-    height: 500px;
+    height: 450px;
     margin-top: 7%;
     margin-left: 10%;
 
     h3 {
-
       padding: 30px;
     }
 
     p {
       line-height: 23px;
-      letter-spacing: 1.1px;
       word-spacing: 1.2px;
       overflow: scroll;
       padding: 0 30px 30px 30px;
       height: 210px;
       font-size: 17px;
+      text-align: justify;
     }
 
     ::-webkit-scrollbar {
@@ -653,7 +832,7 @@ margin: 0 40px;
       color: var(--someBlueColor);
       background: white;
       border-radius: 999px;
-      box-shadow: #5E5DF0 0 10px 20px -10px;
+      box-shadow: #5e5df0 0 10px 20px -10px;
       cursor: pointer;
       font-size: 16px;
       font-weight: 700;
@@ -686,7 +865,6 @@ margin: 0 40px;
   width: 100vw;
   overflow-y: auto;
   z-index: 100000;
- // margin-top: -100px;
 
   h2 {
     position: absolute;
@@ -696,12 +874,22 @@ margin: 0 40px;
     font-style: italic;
   }
 
-  p {
+  section {
     background-color: white;
-    color: var(--someBlueColor);
+
     padding: 50px;
     font-size: 27px;
     line-height: 40px;
+
+    p,
+    strong,
+    em {
+      color: var(--someBlueColor);
+    }
+  }
+
+  .sectionTextClass p {
+    padding: 10px 0;
   }
 
   .fruskaGoraParagh {
@@ -764,13 +952,40 @@ margin: 0 40px;
     display: flex;
     background-color: white;
     justify-content: center;
-    gap: 50px;
-    padding: 50px;
+    gap: 40px;
+    padding: 40px;
     align-content: center;
 
     img {
-      width: 300px;
-      height: 400px;
+      width: 22%;
+      height: 300px;
+    }
+
+    p {
+      color: var(--someBlueColor);
+      text-align: center;
+    }
+  }
+
+  .fourImagesSenta {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    align-content: center;
+
+    img {
+      width: 400px;
+      height: 300px;
+      padding: 0 20px;
+    }
+
+    p {
+      color: var(--someBlueColor);
+      font-size: 25px;
+      padding: 20px;
+      text-align: center;
     }
   }
 
@@ -809,12 +1024,33 @@ margin: 0 40px;
     font-style: italic;
     text-shadow: 5px 5px 5px black;
   }
+
+  .milosevVenac {
+    text-align: center;
+    margin: 10px 0 45px 0;
+    color: rgb(19 17 35);
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .milosevVenacName {
+    color: var(--someBlueColor);
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+  }
 }
 
 .displayFlexClassic {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    padding: 55px;
+    width: 65%;
+  }
 }
 
 .arrowLeft {
@@ -824,7 +1060,7 @@ margin: 0 40px;
   font-size: 40px;
   cursor: pointer;
   fill: var(--someBlueColor);
-  z-index: 10000;
+  z-index: 100000000;
 
   :hover {
     transform: scale(1.2);
@@ -853,11 +1089,12 @@ margin: 0 40px;
   cursor: pointer;
   z-index: 12000;
   transition: background-color 0.3s ease;
+  background-color: var(--someBlueColor);
+  color: white;
 }
 
 .scroll-to-top-btn:hover {
-  background-color: var(--someBlueColor);
-  color: white;
+  transform: scale(1.1);
 }
 
 .scroll-to-top-btn.show {
@@ -900,19 +1137,74 @@ margin: 0 40px;
 }
 
 @media (max-width: 600px) {
+  .dropdown-menu::-webkit-scrollbar {
+    display: none;
+  }
 
   .headerClass .logo-and-nav ul {
-    margin: 0 0 0 25%;
+    margin-left: 70px;
+    color: yellow;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu {
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 120px;
+    padding: 7px;
+    color: yellow;
+    text-align: center;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li ul {
+    margin: 0;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li ul a {
+    text-decoration: none;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li ul a:hover {
+    transform: scale(1.1);
   }
 
   .headerClass .logo-and-nav ul li {
-    width: 50px;
-    height: 20px;
     display: flex;
     align-items: center;
+    width: 60px;
     justify-content: center;
+    font-size: 11px;
     margin: 0 10px;
-    font-size: 10px;
+  }
+
+  .headerClass .logo-and-nav div div {
+    position: absolute;
+    width: 48px;
+    left: 58px;
+    justify-content: flex-start;
+    top: 21px;
+  }
+
+  .headerClass .logo-and-nav div div select {
+    height: 13px;
+    width: 40px;
+
+    position: absolute;
+    left: 8px;
+    font-size: 8px;
+  }
+
+  .headerClass .logo-and-nav div div p {
+    display: none;
   }
 
   .headerClass .logo-and-nav img {
@@ -922,22 +1214,16 @@ margin: 0 40px;
     z-index: 100000;
   }
 
-  .homePage div {
-    transform: translateY(-80px);
+  .homePage .homePageTextContent {
+    top: 40%;
+    left: 0%;
   }
-
-  //   h4 {
-  //   font-family: 'Merriweather', serif;
-
-  //   font-weight: 400;
-  //   margin: 0;
-  // }
 
   .homePage div h1 {
     text-align: center;
     line-height: 1.5;
     margin: 0 60px;
-        font-size: 18px;
+    font-size: 18px;
   }
 
   .homePage h2 {
@@ -945,11 +1231,29 @@ margin: 0 40px;
     text-align: center;
   }
 
+  .headerClass .logo-and-nav .navbar .searchComponent p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerClass .logo-and-nav .navbar .searchComponent input {
+    min-height: 20px;
+    margin: 5px -13px;
+    font-size: 11px;
+  }
+
+  .headerClass .logo-and-nav .navbar .searchComponent {
+    max-height: 200px;
+  }
+
+  .carouselOverlay {
+    height: 100vh;
+  }
+
   .modalContent {
     p {
       font-size: 11px;
       margin: 30px 0 0 10px;
-      
     }
 
     h1 {
@@ -968,30 +1272,57 @@ margin: 0 40px;
     }
   }
 
+  .displayFlexClassic {
+    img {
+      padding: 25px;
+      width: 48%;
+    }
+  }
+
   .okrugBackground {
-
-    //margin-top: -160px;
-
-    form {
-      padding: 0px 50px 30px 50px;
+    .okrugButton {
+      color: var(--someBlueColor);
+      background: white;
+      border-radius: 999px;
+      box-shadow: #5e5df0 0 10px 20px -10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      padding: 8px 18px;
+      user-select: none;
+      -webkit-user-select: none;
+      word-break: break-word;
+      border: 0;
+      margin: 20px 0 20px 50%;
+      transform: translateX(-50%);
     }
 
     h1 {
       font-size: 33px;
-
     }
 
-    form span {
+    article strong {
       padding-right: 5px;
     }
-    form p {
+    article p {
       font-size: 18px;
       padding: 5px 0;
+      text-align: justify;
     }
 
+    .basicInfo {
+      strong {
+        line-height: 1.2;
+        font-size: 20px;
+      }
+      p {
+        font-size: 20px;
+        text-align: justify;
+      }
+    }
     div {
-      font-size: 15px;
-      line-height: 21px;
+      line-height: 25px;
     }
   }
 
@@ -1022,7 +1353,6 @@ margin: 0 40px;
           height: 39px;
           width: 126px;
           font-size: 13px;
-
         }
 
         p {
@@ -1032,25 +1362,23 @@ margin: 0 40px;
 
         h3 {
           margin-top: 5px;
-          padding-top: 15px;
+          padding: 15px 0 10px 30px;
           color: white;
           font-weight: 700;
           font-size: 16px;
-      
         }
       }
     }
   }
 
-  .citatClass p {
-    font-size: 18px;
+  .citatClass blockquote {
+    font-size: 21px;
+    padding: 40px;
   }
 
   .placeBackground {
-
-    //margin-top: -62px;
     h2 {
-      font-size: 43px;
+      font-size: 25px;
       margin: 65px 70px 0 30px;
       padding: 10px;
       top: 0;
@@ -1060,10 +1388,15 @@ margin: 0 40px;
       padding: 30px;
       font-size: 16px;
       line-height: 30px;
+      color: var(--someBlueColor);
+    }
+
+    section {
+      padding: 10px 0;
     }
 
     img {
-      height: 60vh;
+      height: 45vh;
     }
 
     .displayFlex {
@@ -1103,11 +1436,43 @@ margin: 0 40px;
     }
 
     .fourImages {
-      margin-left: 10px;
-      gap: 15px;
       padding: 15px;
       overflow: scroll;
-      justify-content: flex-start;
+
+      img {
+        height: 200px;
+      }
+    }
+
+    .fourImagesSenta {
+      display: flex;
+      background-color: white;
+      justify-content: space-evenly;
+      margin: 10px;
+      padding: 5px;
+      align-content: center;
+      gap: 15px;
+
+      div {
+        text-align: center;
+      }
+
+      img {
+        width: 110px;
+        height: 100px;
+        padding: 0 5px;
+      }
+
+      p {
+        color: var(--someBlueColor);
+        font-size: 10px;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+
+    .milosevVenac {
+      font-size: 30px;
     }
   }
 
@@ -1118,9 +1483,10 @@ margin: 0 40px;
   }
 
   .arrowLeft {
-    top: 50px;
-    right: 20px;
+    top: 18px;
+    right: 10px;
     font-size: 25px;
+    z-index: 1000000;
   }
 
   .secondBtn {

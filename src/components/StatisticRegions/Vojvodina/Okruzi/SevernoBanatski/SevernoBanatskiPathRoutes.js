@@ -1,8 +1,8 @@
 export const severnoBanatskiPathRoutes = {
-    home: "/vojvodinaTekstModal/Vojvodina/SevernoBanatski",
-    kikinda: "/vojvodinaTekstModal/Vojvodina/SevernoBanatski/Kikinda",
-    kanjiza: "/vojvodinaTekstModal/Vojvodina/SevernoBanatski/Kanjiza",
-    selevenjskePustare: "/vojvodinaTekstModal/Vojvodina/SevernoBanatski/SelevenjskePustare",
-    rezervatVelikeDroplje: "/vojvodinaTekstModal/Vojvodina/SevernoBanatski/RezervatVelikeDroplje",
-    senta: "/vojvodinaTekstModal/Vojvodina/SevernoBanatski/Senta"
+    home:  (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-banatski`,
+    kikinda:  (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-banatski/kikinda`,
+    kanjiza:  (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-banatski/kanjiza`,
+    selevenjskePustare:  (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-banatski/selevenjske-pustare`,
+    rezervatVelikeDroplje:  (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-banatski/rezervat-velike-droplje`,
+    senta:  (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-banatski/senta`
 }

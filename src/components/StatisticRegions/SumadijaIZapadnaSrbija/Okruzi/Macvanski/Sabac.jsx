@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-useless-escape */
 import sabac1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac1.jpg";
 import sabac2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac2.jpg";
 import sabac3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/desktop/sabac3.jpg";
@@ -14,138 +16,282 @@ import sabac66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Macvans
 import sabac77 from "../../../../../assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/Sabac/mobile/Msabac7.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { macvanskiOkrugPathRoutes } from "./MacvanskiOkrugPathRoutes";
+import { useContextAuth } from "../../../../../Context";
+import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
-export const Sabac = () => {
+const Sabac = () => {
   const navigate = useNavigate();
+  const { switchLanguage } = useContextAuth();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && lang !== switchLanguage) {
+      const newPath = window.location.pathname.replace(/^\/[^\/]+/, `/${switchLanguage}`);
+      navigate(newPath, { replace: true });
+    }
+  }, [switchLanguage, lang, navigate]);
 
   return (
-    <div className="placeBackground">
-      <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home)} />
-      <header></header>
-      <img srcSet={`${sabac11} 400w, ${sabac1} `} alt="Šabac 1" />
+    <>
 
-      <h2 style={{color: 'white'}}>Šabac</h2>
+      <Helmet>
+        <title>
+          {switchLanguage === 'rs'
+            ? "Šabac – Grad istorije, kulture i reke Save | Serbia Wonders"
+            : "Šabac – City of History, Culture and the Sava River | Serbia Wonders"}
+        </title>
 
-      <p style={{ paddingTop: "50px", marginTop: "-10px" }}>
-        Šabac je jedan od značajnijih i prepoznatljivijih gradova u Srbiji,
-        smešten u severozapadnom delu zemlje, na tromeđi Mačve, Pocerine i
-        Posavine, na desnoj obali reke Save. Grad pokriva površinu od 795 km² i
-        sastoji se od 49 katastarskih opština i 52 naselja, sa ukupnim brojem
-        stanovnika od 122.893. Granici sa opštinama Bogatić, Loznica, Vladimirci
-        i Koceljeva. U njegovom zaleđu nalaze se tri mikroregije: Mačva na
-        zapadu, Pocerina na jugu i Posavina na istoku. Šabac se nalazi na 80
-        metara nadmorske visine i ima ravničarski, nizijski i dolinski karakter.
-        Saobraćajno je odlično povezano sa okolinom.
-      </p>
+        <meta
+          name="description"
+          content={
+            switchLanguage === 'rs'
+              ? "Šabac, grad na Savi, bogat je istorijom, kulturom i arhitekturom. Posetite šabačku tvrđavu, Narodni muzej, gradski park i Saborni hram, i otkrijte jedinstven duh severozapadne Srbije."
+              : "Šabac, a city on the Sava River, is rich in history, culture and architecture. Visit the Šabac Fortress, National Museum, City Park, and Cathedral Church, and discover the unique spirit of northwest Serbia."
+          }
+        />
 
-      <img srcSet={`${sabac22} 400w, ${sabac2} `} alt="Šabac 2" />
+        <meta
+          name="keywords"
+          content={
+            switchLanguage === 'rs'
+              ? "Šabac, Sava, Šabačka tvrđava, Narodni muzej Šabac, Gospodar Jevremova ulica, Saborni hram, istorija Šapca, kultura, Mačva, Pocerina, Posavina, Srbija"
+              : "Šabac, Sava River, Šabac Fortress, National Museum Šabac, Gospodar Jevremova Street, Cathedral Church, Šabac history, culture, Mačva, Pocerina, Posavina, Serbia"
+          }
+        />
 
-      <p>
-        Centar Šapca je atraktivno i dinamično područje koje nudi brojne
-        turističke sadržaje i znamenitosti. Grad je bogat istorijskim, kulturnim
-        i arhitektonskim nasleđem, a njegov centralni deo je središte kulturnih
-        i društvenih dešavanja. U centru Šapca se nalaze i značajne institucije,
-        kao što su Muzej Šabac, gde posetioci mogu saznati više o istoriji grada
-        i regiona, kao i Narodna biblioteka, koja nudi bogat fond knjiga i
-        organizuje različite kulturne događaje. Za ljubitelje kulture, u centru
-        grada se povremeno organizuju koncerti, izložbe i pozorišne predstave, a
-        Šabačko pozorište je jedno od važnih kulturnih mesta. Šabac je takođe
-        poznat po manifestacijama kao što su Šabački festival i proslava
-        Mišarske bitke, koje privlače posetioce iz zemlje i inostranstva. Sve u
-        svemu, centar Šapca je savršen za sve one koji žele da uživaju u
-        istoriji, kulturi i životnoj energiji ovog grada.
-      </p>
+        <meta name="author" content="Serbia Wonders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.serbiawonders.com/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/sabac`}
+        />
+        <link
+          rel="alternate"
+          hreflang="sr"
+          href="https://www.serbiawonders.com/sr/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/sabac"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/sabac"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/sabac"
+        />
+      </Helmet>
 
-      <img srcSet={`${sabac33} 400w, ${sabac3} `} alt="Gradski park Šabac" />
 
-      <p>
-        Gradski park u Šapcu, osnovan u drugoj polovini 19. veka na mestu bivše
-        Jevremove bašte, predstavlja jedan od omiljenih prostora za opuštanje i
-        rekreaciju. U parku se nalaze biste značajnih ličnosti, kao što su Kneza
-        Ive od Semberije, Kosta Abrašević i Janko Veselinović, čime se odaje
-        počast kulturnoj baštini. Park je takođe dom dvema fontanama, koje
-        pružaju osveženje tokom letnjih meseci, i sportskim terenima koji su
-        popularno mesto za fizičke aktivnosti i druženje. Šetajući parkom,
-        dolazite do Knez Mihailove ulice, gde možete uživati u hladu jorgovana,
-        čije su grane bile inspiracija za pesmu "Ulica jorgovana", koju je
-        šabački pesnik Ivan Glišić napisao i koja je postala veliki
-        jugoslovenski hit sedamdesetih godina.
-      </p>
 
-      <img srcSet={`${sabac44} 400w, ${sabac4} `} alt="Narodni Muzej Šabac" />
+      <div className="placeBackground">
+        <ScrollToTop />
+        <FaArrowLeft className="arrowLeft" onClick={() => navigate(macvanskiOkrugPathRoutes.home(switchLanguage))} />
+        <header></header>
+        <img srcSet={`${sabac11} 450w, ${sabac1} `} alt="Šabac 1" />
 
-      <p>
-        Narodni muzej u Šapcu osnovan je 1934. godine, a od 1954. godine smešten
-        je u zgradu bivše Polugimnazije, u kojoj se i danas nalazi. Na 800 m²
-        izložbenog prostora nalaze se galerija za izložbe i deo stalne postavke.
-        Muzej u Šapcu posjeduje bogate muzejske zbirke koje obuhvataju period
-        praistorije, antike i numizmatike. Posebno se izdvaja zbirka likovne
-        umetnosti, koja uključuje dela značajnih umetnika kao što su Stevan
-        Čalić, Mara Lukić-Jelešić, Branko Lala Stanković, Milić od Mačve i drugi
-        poznati slikari iz šabačkog kraja. Istorijsko odeljenje muzeja čuva tri
-        odlikovanja koja je Šabac dobio zbog stradanja u Prvom svetskom ratu:
-        Francuski ratni krst sa palminom grančicom, Češkoslovački ratni krst i
-        Karađorđevu zvezdu sa mačevima 4. reda. Etno-zbirka je najatraktivniji
-        deo stalne postavke muzeja, koja prikazuje enterijer seoske kuće sa
-        ognjištem, oko kojeg se odvijao svakodnevni život porodice.
-      </p>
+        <h2 style={{ color: 'white' }}>Šabac</h2>
 
-      <img srcSet={`${sabac55} 400w, ${sabac5} `} alt="Šabačka tvrđava"/>
-      <p>
-        Šabačka tvrđava, tihi svedok prošlih vremena na desnoj obali Save,
-        vekovima je odolevala sukobima koji su zadesili grad Šabac. I danas,
-        njeni ostaci, nekadašnje artiljerijsko utvrđenje, prkose vetrovima sa
-        reke. Njena pozicija, tik uz Savu, označava i kraj i početak današnjeg
-        grada Šapca. Prva tvrđava na ovom mestu podignuta je 1470. godine, dok
-        današnja datira iz 17. veka. Prethodnik današnje tvrđave bila je masivna
-        građevina koja je prema mišljenju stručnjaka služila kao odbrambeni
-        štit, jer se nalazila na granici, uz reku Savu. Bila je to vrsta zaštite
-        za sve one koji su pokušavali da pređu Savi i nastave put ka Evropi. O
-        njenoj burnoj istoriji svedoči činjenica da je više od deset puta
-        prelazila iz ruku u ruke. Današnje utvrđenje, novijeg datuma, ima osnovu
-        pravilnog četvorougla sa po jednom kružnom kulom na svakom od temena.
-        Slične tvrđave mogu se pronaći duž obala reka Save i Dunava. Ostatci
-        starih gradova otkrivaju dramatičnu priču o usponu, padu i obnovi srpske
-        države. U srednjem veku, Srbija je imala više od 200 „tvrdih gradova“,
-        od kojih su mnogi nastali u vreme vladavine Nemanjića.
-      </p>
+        {switchLanguage === 'rs' ?
+          (
+            <>
 
-      <img srcSet={`${sabac66} 400w, ${sabac6} `} alt="Gospodar Jevremova ulica Šabac" />
-      <p>
-        Gospodar Jevremova ulica je posebna celina koja je, zahvaljujući svojim
-        istorijskim i kulturnim spomenicima, stekla status kulturno-istorijskog
-        dobra. Danas se može pohvaliti autentičnim izgledom, iako je tokom svoje
-        istorije prošla kroz mnoge promene i obnavljanja. Ova ulica je nazvana
-        po Jevremu Obrenoviću 1890. godine, a od samog početka bila je deo
-        centra grada Šapca. Kroz nju je prolazilo mnogo ljudi, a ovde se
-        razvijala trgovina i društveni život, naročito među uglednijim građanima
-        koji su u ovoj ulici gradili svoje kuće. U početku je ulica imala
-        orijentalni karakter, ali je tokom druge polovine 19. veka počela da se
-        menja pod uticajem srednjoevropske arhitekture. Na početku 20. veka,
-        nove moderne zgrade su počele da prete da unište autentičan izgled
-        ulice. U tom periodu srušen je i konak Gospodara Jevrema, što je
-        pokrenulo inicijativu za očuvanje njenog karakterističnog izgleda. Danas
-        je ovaj prostor obnovljen i zaštićen kao kulturno-istorijska celina.
-      </p>
+              <section lang="sr">
+                <p>
+                  <strong>Šabac</strong> je jedan od <strong>značajnijih i prepoznatljivijih gradova</strong> u <em>Srbiji</em>,
+                  smešten u <em>severozapadnom delu zemlje</em>, na tromeđi <strong>Mačve</strong>, <strong>Pocerine</strong> i
+                  <strong>Posavine</strong>, na desnoj obali reke <strong>Save</strong>. Grad pokriva površinu od <strong>795 km²</strong> i
+                  sastoji se od <strong>49 katastarskih opština</strong> i <strong>52 naselja</strong>, sa ukupnim brojem
+                  stanovnika od <strong>122.893</strong>. Graniči se sa opštinama <strong>Bogatić</strong>, <strong>Loznica</strong>, <strong>Vladimirci</strong>
+                  i <strong>Koceljeva</strong>. U njegovom zaleđu nalaze se tri <em>mikroregije</em>: <strong>Mačva</strong> na
+                  zapadu, <strong>Pocerina</strong> na jugu i <strong>Posavina</strong> na istoku. Šabac se nalazi na <strong>80 metara</strong>
+                  nadmorske visine i ima <em>ravničarski, nizijski i dolinski karakter</em>. <strong>Saobraćajno</strong> je
+                  odlično povezan sa okolinom.
+                </p>
+              </section>
 
-      <img srcSet={`${sabac77} 400w, ${sabac7} `} alt="Saborni hram Svetih Prvovrhovnih Apostola Petra i Pavla u Šapcu" style={{ marginBottom: "-10px" }} />
-      <p>
-        Saborni hram Svetih Prvovrhovnih Apostola Petra i Pavla u Šapcu, poznat
-        u pisanim izvorima i u narodnom govoru kao "šabačka crkva", predstavlja
-        katedralnu crkvu šabačkih episkopa i najstariju do danas očuvanu crkvu
-        na teritoriji grada Šapca. Takođe, ovo je jedna od najstarijih crkava u
-        okviru današnje Šabačke eparhije. Izgradnja Sabornog hrama u Šapcu
-        odvijala se u periodu nakon velikih i krvavih ustanka srpskog naroda za
-        slobodu, vođenih pod vođstvom Karađorđa i Miloša, od 1804. do 1815.
-        godine. Ovaj period označava početak nove epohe za srpski narod, koji je
-        živeo unutar granica tadašnjeg Beogradskog pašaluka. Srbija je počela da
-        se budi iz višestoljetnog sna, praveći prve korake ka boljem i mirnijem
-        životu, lečeći rane iz prošlih bitaka.
-      </p>
-    </div>
+              <img srcSet={`${sabac22} 450w, ${sabac2}`} alt="Šabac 2" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Centar Šapca</strong> je <em>atraktivno i dinamično područje</em> koje nudi brojne
+                  <strong>turističke sadržaje</strong> i <strong>znamenitosti</strong>. Grad je bogat <em>istorijskim, kulturnim</em>
+                  i <em>arhitektonskim nasleđem</em>, a njegov centralni deo je <strong>središte kulturnih i društvenih dešavanja</strong>.
+                  U centru se nalaze i važne institucije kao što su <strong>Muzej Šabac</strong> i <strong>Narodna biblioteka</strong>.
+                  Za ljubitelje kulture, organizuju se <em>koncerti, izložbe i pozorišne predstave</em>, a
+                  <strong>Šabačko pozorište</strong> je jedno od važnijih kulturnih mesta. Grad je poznat i po
+                  manifestacijama poput <strong>Šabačkog festivala</strong> i <strong>proslave Mišarske bitke</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac33} 450w, ${sabac3}`} alt="Gradski park Šabac" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Gradski park u Šapcu</strong>, osnovan u <strong>19. veku</strong>, nalazi se na mestu bivše
+                  <em>Jevremove bašte</em>. U njemu su postavljene biste značajnih ličnosti poput
+                  <strong>Kneza Ive od Semberije</strong>, <strong>Koste Abraševića</strong> i <strong>Janka Veselinovića</strong>.
+                  Park ima i <em>dve fontane</em>, <em>sportske terene</em>, i povezan je sa <strong>Knez Mihailovom ulicom</strong>,
+                  poznatom po stihovima pesme <em>„Ulica jorgovana“</em> koju je napisao <strong>Ivan Glišić</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac44} 450w, ${sabac4}`} alt="Narodni Muzej Šabac" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Narodni muzej u Šapcu</strong> osnovan je <strong>1934. godine</strong> i od <strong>1954. godine</strong> se
+                  nalazi u zgradi bivše <strong>Polugimnazije</strong>. Muzej sadrži <em>izložbeni prostor od 800 m²</em>,
+                  zbirke iz <strong>praistorije, antike, numizmatike</strong> i <strong>likovne umetnosti</strong>, sa delima
+                  umetnika kao što su <strong>Stevan Čalić</strong>, <strong>Mara Lukić-Jelešić</strong>, <strong>Milić od Mačve</strong>.
+                  <strong>Istorijsko odeljenje</strong> čuva ordenje: <strong>Francuski ratni krst</strong>, <strong>Češkoslovački ratni krst</strong>,
+                  <strong>Karađorđeva zvezda sa mačevima</strong>. <strong>Etno-zbirka</strong> prikazuje enterijer <em>seoske kuće sa ognjištem</em>.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac55} 450w, ${sabac5}`} alt="Šabačka tvrđava" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Šabačka tvrđava</strong> se nalazi na desnoj obali <strong>Save</strong> i potiče iz <strong>1470. godine</strong>,
+                  a današnja forma potiče iz <strong>17. veka</strong>. Bila je <em>odbrambeni objekat</em> na granici sa
+                  <strong>Evropom</strong>, i više puta je prelazila <em>iz ruke u ruku</em>. Ima osnovu <strong>četvorougla</strong>
+                  sa <em>četiri kružne kule</em>. Pripada redu <strong>„tvrdih gradova”</strong> kakvih je Srbija imala
+                  preko <strong>200 u srednjem veku</strong>, posebno u vreme <strong>Nemanjića</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac66} 450w, ${sabac6}`} alt="Gospodar Jevremova ulica Šabac" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Gospodar Jevremova ulica</strong> ima status <strong>kulturno-istorijskog dobra</strong>. Nazvana
+                  je po <strong>Jevremu Obrenoviću</strong> <em>1890. godine</em> i od samog početka je bila deo
+                  <strong>centra Šapca</strong>. Imala je <em>orijentalni karakter</em>, koji se u <strong>19. veku</strong> menjao
+                  pod uticajem <em>srednjoevropske arhitekture</em>. Početkom <strong>20. veka</strong> dolazi do
+                  <em>modernizacije i gubitka autentičnosti</em>. Danas je ulica obnovljena i <strong>zaštićena</strong> kao
+                  kulturna celina.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac77} 450w, ${sabac7}`} alt="Saborni hram Šabac" style={{ marginBottom: "-10px" }} />
+
+              <section lang="sr">
+                <p>
+                  <strong>Saborni hram Svetih Prvovrhovnih Apostola Petra i Pavla</strong>, poznat kao
+                  <em>„šabačka crkva“</em>, je <strong>najstarija očuvana crkva</strong> u <em>Šapcu</em> i <strong>katedralni hram šabačkih episkopa</strong>.
+                  Gradnja se odvijala nakon <strong>ustanka od 1804. do 1815.</strong>, kada je <em>Srbija ulazila u novo doba</em>.
+                  Hram simbolizuje <em>duhovni oporavak</em> srpskog naroda i njegove <strong>prve korake ka slobodi</strong>.
+                </p>
+              </section>
+
+            </>
+          )
+          :
+          (
+            <>
+
+              <section lang="en">
+                <p>
+                  <strong>Šabac</strong> is one of the <strong>most important and recognizable cities</strong> in <em>Serbia</em>,
+                  located in the <em>northwestern part of the country</em>, at the crossroads of <strong>Mačva</strong>, <strong>Pocerina</strong>, and
+                  <strong>Posavina</strong>, on the right bank of the <strong>Sava River</strong>. The city covers an area of <strong>795 km²</strong> and
+                  consists of <strong>49 cadastral municipalities</strong> and <strong>52 settlements</strong>, with a total population of <strong>122,893</strong>.
+                  It borders the municipalities of <strong>Bogatić</strong>, <strong>Loznica</strong>, <strong>Vladimirci</strong>, and <strong>Koceljeva</strong>.
+                  Behind the city lie three <em>microregions</em>: <strong>Mačva</strong> to the west, <strong>Pocerina</strong> to the south, and <strong>Posavina</strong> to the east.
+                  Šabac is situated at an elevation of <strong>80 meters</strong> above sea level and features a <em>lowland, plain, and valley character</em>.
+                  It is <strong>well-connected</strong> in terms of transportation.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac22} 450w, ${sabac2}`} alt="Šabac 2" />
+
+              <section lang="en">
+                <p>
+                  <strong>The center of Šabac</strong> is an <em>attractive and dynamic area</em> offering numerous
+                  <strong>tourist attractions</strong> and <strong>landmarks</strong>. The city is rich in <em>historical, cultural</em>,
+                  and <em>architectural heritage</em>, and its central part serves as the <strong>hub of cultural and social events</strong>.
+                  Important institutions such as the <strong>Šabac Museum</strong> and the <strong>National Library</strong> are located in the city center.
+                  For culture enthusiasts, there are <em>concerts, exhibitions, and theater performances</em>, and
+                  the <strong>Šabac Theater</strong> is one of the city's key cultural venues. The city is also known for
+                  events such as the <strong>Šabac Festival</strong> and the <strong>Mišar Battle Commemoration</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac33} 450w, ${sabac3}`} alt="Šabac City Park" />
+
+              <section lang="en">
+                <p>
+                  <strong>The Šabac City Park</strong>, founded in the <strong>19th century</strong>, is located on the site of the former
+                  <em>Jevrem's Garden</em>. It features busts of notable figures such as
+                  <strong>Knez Ivo of Semberija</strong>, <strong>Kosta Abrašević</strong>, and <strong>Janko Veselinović</strong>.
+                  The park includes <em>two fountains</em>, <em>sports courts</em>, and connects to <strong>Knez Mihailova Street</strong>,
+                  known for the lyrics of the song <em>“Lilac Street”</em> written by <strong>Ivan Glišić</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac44} 450w, ${sabac4}`} alt="National Museum Šabac" />
+
+              <section lang="en">
+                <p>
+                  The <strong>National Museum in Šabac</strong> was founded in <strong>1934</strong> and since <strong>1954</strong> has been
+                  located in the building of the former <strong>Junior High School</strong>. The museum contains <em>800 m² of exhibition space</em>,
+                  collections from <strong>prehistory, antiquity, numismatics</strong>, and <strong>fine arts</strong>, featuring works
+                  by artists such as <strong>Stevan Čalić</strong>, <strong>Mara Lukić-Jelešić</strong>, and <strong>Milić of Mačva</strong>.
+                  The <strong>historical department</strong> houses decorations including the <strong>French War Cross</strong>, <strong>Czechoslovak War Cross</strong>,
+                  and the <strong>Order of Karađorđe’s Star with Swords</strong>. The <strong>ethnographic collection</strong> showcases the interior of a <em>traditional rural house with a hearth</em>.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac55} 450w, ${sabac5}`} alt="Šabac Fortress" />
+
+              <section lang="en">
+                <p>
+                  The <strong>Šabac Fortress</strong>, located on the right bank of the <strong>Sava River</strong>, dates back to <strong>1470</strong>,
+                  while its current form originates from the <strong>17th century</strong>. It served as a <em>defensive structure</em> on the border with
+                  <strong>Europe</strong> and changed hands <em>numerous times</em>. Its layout is a <strong>quadrilateral</strong>
+                  with <em>four round towers</em>. It belongs to the group of <strong>“fortified towns”</strong> of which Serbia had
+                  more than <strong>200 during the Middle Ages</strong>, especially during the rule of the <strong>Nemanjić dynasty</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac66} 450w, ${sabac6}`} alt="Gospodar Jevremova Street, Šabac" />
+
+              <section lang="en">
+                <p>
+                  <strong>Gospodar Jevremova Street</strong> holds the status of a <strong>cultural and historical landmark</strong>.
+                  It was named after <strong>Jevrem Obrenović</strong> in <em>1890</em> and has been part of
+                  <strong>Šabac's city center</strong> since its early days. It originally had an <em>oriental character</em>,
+                  which changed under <em>Central European architectural influences</em> in the <strong>19th century</strong>.
+                  In the early <strong>20th century</strong>, it underwent <em>modernization and lost its authenticity</em>.
+                  Today, the street is restored and <strong>protected</strong> as a cultural site.
+                </p>
+              </section>
+
+              <img srcSet={`${sabac77} 450w, ${sabac7}`} alt="Cathedral Church of Šabac" style={{ marginBottom: "-10px" }} />
+
+              <section lang="en">
+                <p>
+                  The <strong>Cathedral Church of the Holy Foremost Apostles Peter and Paul</strong>, commonly known as
+                  <em>“the Šabac church”</em>, is the <strong>oldest preserved church</strong> in <em>Šabac</em> and the <strong>cathedral of the bishops of Šabac</strong>.
+                  Its construction took place after the <strong>uprisings from 1804 to 1815</strong>, during a time when <em>Serbia was entering a new era</em>.
+                  The church symbolizes the <em>spiritual renewal</em> of the Serbian people and their <strong>first steps toward freedom</strong>.
+                </p>
+              </section>
+
+
+            </>
+          )}
+
+
+      </div>
+    </>
   );
 };
+
+
+export default Sabac;

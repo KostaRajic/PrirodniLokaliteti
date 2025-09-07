@@ -1,7 +1,7 @@
 export const mitrovackiOkrugPathRoutes = {
-    home: "/KosovoIMetohijaTekstModal/KosovoIMetohija/MitrovackiOkrug",
-    mitrovica: "/KosovoIMetohijaTekstModal/KosovoIMetohija/MitrovackiOkrug/KosovksaMitrovica",
-    banjska: "/KosovoIMetohijaTekstModal/KosovoIMetohija/MitrovackiOkrug/ManatirBanjska",
-    gazivode: "/KosovoIMetohijaTekstModal/KosovoIMetohija/MitrovackiOkrug/GazivodskoJezero",
-    devic: "/KosovoIMetohijaTekstModal/KosovoIMetohija/MitrovackiOkrug/ManastirDevic"
+    home: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug`,
+    mitrovica: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug/kosovksa-mitrovica`,
+    banjska: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug/manatir-banjska`,
+    gazivode: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug/gazivodsko-jezero`,
+    devic: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug/manastir-devic`
 }

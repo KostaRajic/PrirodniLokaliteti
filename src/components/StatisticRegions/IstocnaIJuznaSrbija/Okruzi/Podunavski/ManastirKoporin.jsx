@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-useless-escape */
 import koporin1 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/desktop/manastirKoporin1.jpg'
 import koporin2 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/desktop/manastirKoporin2.jpg'
 import koporin3 from '../../../../../assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/ManastirKoporin/desktop/manastirKoporin3.jpg'
@@ -9,104 +11,153 @@ import koporin44 from '../../../../../assets/images/JuznaIIstocnaSrbija/Podunavs
 
 
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { podunavskiOkrugPathRoutes } from './PodunavskiOkrugPathRouts';
+import { useContextAuth } from '../../../../../Context'
+import { Helmet } from "react-helmet-async";
+import { useEffect } from 'react'
 
-export const ManastirKoporin = () => {
+const ManastirKoporin = () => {
   const navigate = useNavigate();
+  const { switchLanguage } = useContextAuth();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && lang !== switchLanguage) {
+      const newPath = window.location.pathname.replace(/^\/[^\/]+/, `/${switchLanguage}`);
+      navigate(newPath, { replace: true });
+    }
+  }, [switchLanguage, lang, navigate]);
+
 
   return (
-    <div className="placeBackground">
-      <ScrollToTop />
-      <FaArrowLeft
-        className="arrowLeft"
-        onClick={() => navigate(podunavskiOkrugPathRoutes.home)}
+    <>
 
-      />
-      <header></header>
-      <img srcSet={`${koporin11} 400w, ${koporin1} `} alt="Manastir Koporin 1" />
+      <Helmet>
 
-      <h2>Manastir Koporin</h2>
+        <title>{switchLanguage === 'rs' ? "Manastir Koporin – Istorija i Legende Šumadije | Serbia Wonders" : "Koporin Monastery – History and Legends of Šumadija | Serbia Wonders"}</title>
+        <meta
+          name="description"
+          content={switchLanguage === 'rs' ?
+            "Manastir Koporin, smešten u dolini istoimene reke kod Velike Plane, poznat po vezama sa despotom Stefanom Lazarevićem i bogatoj istoriji Šumadije. Saznajte više o njegovim legendama i značaju."
+            :
+            "Koporin Monastery, located in the valley of the Koporin river near Velika Plana, is linked to despot Stefan Lazarević and rich medieval Serbian history. Discover its legends and cultural significance."
+          }
+        />
+        <meta
+          name="keywords"
+          content={switchLanguage === 'rs' ?
+            "Manastir Koporin, Stefan Lazarević, Velika Plana, Šumadija, srpski manastiri, srednjovekovni manastiri, prenosa moštiju svetog Stefana"
+            :
+            "Koporin Monastery, Stefan Lazarević, Velika Plana, Šumadija, Serbian monasteries, medieval monasteries, relics of Saint Stefan"
+          }
+        />
+        <meta name="author" content="Serbia Wonders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.serbiawonders.com/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/manastir-koporin`}
+        />
+        <link
+          rel="alternate"
+          hreflang="sr"
+          href="https://www.serbiawonders.com/sr/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/manastir-koporin"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.serbiawonders.com/en/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/manastir-koporin"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://www.serbiawonders.com/en/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/manastir-koporin"
+        />
 
-      <p style={{ paddingTop: "50px" }}>
-        Manastir Koporin smešten je u dolini istoimene reke, oko 3 km od Velike
-        Plane, u trouglu koji formira put Velika Plana – Smederevska Palanka –
-        Rača. Nalazi se u pitomom predelu valovite Šumadije, okružen prostranim
-        poljima pšenice i kukuruza, kao i zasadima vinograda i voćnjaka. Istočno
-        od manastira teče Koporinska rečica, zapadno se uzdiže Koporinska kosa,
-        severno se prostire plodna dolina reke Jasenice, dok se južno nalazi
-        selo Radovanje. U srednjem veku ovuda je prolazio važan put koji je
-        povezivao Beograd sa Carigradom. Veruje se da je bio od velikog značaja
-        dok je trajala srpska srednjovekovna država, ali da je postao opasan
-        tokom turske vlasti, jer su njime osmanski pljačkaški odredi lako
-        dolazili do manastira.
-      </p>
+      </Helmet>
 
-      <img srcSet={`${koporin22} 400w, ${koporin2} `} alt="Manastir Koporin 2" />
 
-      <p>
-        Tačno vreme izgradnje manastira Koporin, kao i njegov ktitor, ostaju
-        nepoznati jer nisu sačuvani primarni izvori karakteristični za srpske
-        srednjovekovne manastire, poput osnivačke povelje, ktitorskog natpisa
-        ili ktitorske kompozicije. U pisanim izvorima iz srednjeg veka takođe
-        nema podataka o njegovom podizanju i osnivaču. Prema narodnom predanju,
-        manastir je podigao despot Stefan Lazarević. Njegov portret na južnoj
-        strani zapadnog zida hrama ukazuje na neku vrstu njegovog učešća, ali s
-        obzirom na to da u ruci ne drži model crkve – što je u tadašnjoj
-        ikonografiji bio simbol ktitorstva – mnogi istraživači sumnjaju da je
-        ovako skroman manastir mogao biti njegova zadužbina. Umesto toga,
-        pretpostavlja se da je Stefan bio „suktitor“, odnosno da je završio već
-        započeti manastir ili ga preuzeo od nekog velikaša zbog „neverstva“.{" "}
-        <br />
-        <br /> U nedostatku pisanih dokaza, vreme osnivanja manastira procenjuje
-        se na osnovu analize starosti i sadržaja portreta despota Stefana. Ako
-        se pretpostavi da je portret ujedno i ktitorska kompozicija, a budući da
-        je Stefan na slici predstavljen sa simbolima despotskog dostojanstva –
-        krunom, skiptrom i dolamom – može se zaključiti da je manastir podignut
-        između 1402. godine, nakon bitke kod Angore u kojoj je Stefan učestvovao
-        kao turski vazal, i 1427. godine, kada je preminuo.
-      </p>
 
-      <img srcSet={`${koporin33} 400w, ${koporin3} `} alt="Manastir Koporin 3" />
+      <div className="placeBackground">
+        <ScrollToTop />
+        <FaArrowLeft
+          className="arrowLeft"
+          onClick={() => navigate(podunavskiOkrugPathRoutes.home(switchLanguage))}
 
-      <p>
-        O poreklu imena manastira postoji više legendi, koje su svojevremeno
-        zabeležili Dušan Milovanović i Dušan Mitošević. Sve te priče povezuju
-        ime manastira sa glagolom „kopati“ ili „ukopavati“, a takođe pominju i
-        neku vrstu učešća despota Stefana.
-        <br />
-        <br /> Prema tim predanjima, manastir je podignut na mestu gde je
-        bratoubica sahranio svoje nevine žrtve, ili se do njega silazilo strmom
-        stazom kao u ukop, ili je delimično bio ukopan u brdo Koporinske kose.
-        Takođe, postoji priča da je narod svetište
-        <br /><br /> S obzirom na to da je reka Koporinska, poznata i kao Koporinski
-        potok ili Koporinka, starija od manastira, verovatno je da je upravo po
-        njoj svetište dobilo ime. Prema novijim istraživanjima, toponim
-        „Koporin“ potiče od dve reči – „kopo“, što se odnosi na rudarsko
-        kopanje, i „rin“, što upućuje na rudare nemačkog porekla sa obala Rajne.
-        Ovaj naziv može označavati naselje rudara poreklom iz tog kraja ili reku
-        na čijoj obali su živeli. Iako su kasniji vekovi izbrisali tragove ovog
-        naselja, njegovo ime ostalo je sačuvano u imenu manastira.
-      </p>
+        />
+        <header></header>
+        <img srcSet={`${koporin11} 450w, ${koporin1} `} alt="Manastir Koporin 1" loading="lazy" />
 
-      <img srcSet={`${koporin44} 400w, ${koporin4} `} alt="Manastir Koporin 4" />
+        {switchLanguage === 'rs' ?
+          (
+            <>
 
-      <p>
-        Istoričarka Olga Zirojević, proučavajući turske deftere, zaključila je
-        da se manastir prvobitno zvao Sveti Arhanđeo. Pošto izvori ne navode
-        kojem je tačno arhanđelu bio posvećen, pretpostavlja se da je bio
-        posvećen svetom arhanđelu Mihailu, svetom arhanđelu Gavrilu ili možda
-        obojici, s obzirom na to da se njihov zajednički prikaz nalazi na južnom
-        zidu crkve. <br />
-        <br /> Međutim, u 19. veku, kada je manastir obnovljen, iz neznanja
-        ili pod uticajem narodnog predanja, posvećen je svetom arhiđakonu i
-        prvomučeniku Stefanu, prvom od sedmorice jerusalimskih đakona. On se u
-        kalendaru Pravoslavne crkve slavi dva puta – 27. decembra (9. januara po
-        novom kalendaru) i 2. avgusta (15. avgusta po novom kalendaru), na
-        praznik Prenosa moštiju svetog Stefana. Manastir proslavlja upravo ovaj
-        drugi praznik.
-      </p>
-    </div>
+              <h2>Manastir Koporin</h2>
+
+              <section lang="sr">
+                <p>
+                  <strong>Manastir Koporin</strong> smešten je u dolini istoimene reke, oko 3 km od <em>Velike Plane</em>, u trouglu koji formira put <em>Velika Plana – Smederevska Palanka – Rača</em>. Nalazi se u valovitoj <em>Šumadiji</em>, okružen poljima pšenice i kukuruza, kao i vinogradima i voćnjacima. Istočno teče <em>Koporinska rečica</em>, zapadno se uzdiže <em>Koporinska kosa</em>, severno se prostire dolina <em>reke Jasenice</em>, a južno se nalazi <em>selo Radovanje</em>. U srednjem veku ovuda je prolazio važan put od <em>Beograda</em> do <em>Carigrada</em>, koji je tokom turske vlasti postao opasan zbog pljačkaških odreda.
+                </p>
+              </section>
+
+              <img srcSet={`${koporin22} 450w, ${koporin2}`} alt="Manastir Koporin 2" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Tačno vreme izgradnje i ktitor manastira nisu poznati, jer nisu sačuvani primarni izvori kao što su povelje, natpisi ili ktitorske kompozicije. U narodnom predanju se navodi da ga je podigao <strong>despot Stefan Lazarević</strong>. Njegov portret na zidu hrama ukazuje na učešće, ali s obzirom da ne drži model crkve, istraživači smatraju da možda nije bio ktitor već <em>suktitor</em> – neko ko je manastir dovršio ili preuzeo.
+                  <br /><br />
+                  Na osnovu portreta sa simbolima despotske vlasti (kruna, skiptar, dolama), manastir se datuje između <strong>1402. i 1427. godine</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${koporin33} 450w, ${koporin3}`} alt="Manastir Koporin 3" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  O imenu manastira postoji više legendi, koje povezuju naziv sa glagolom <em>kopati</em> ili <em>ukopavati</em>. Neka predanja govore da je podignut na mestu zločina, da se do njega silazilo kao u ukop ili da je delimično bio ukopan u brdo.
+                  <br /><br />
+                  Ipak, verovatnije je da je ime manastir dobio po <em>Koporinskoj reci</em>. Prema novijim istraživanjima, toponim „<strong>Koporin</strong>“ potiče od reči <em>„kopo“</em> (rudarsko kopanje) i <em>„rin“</em> (aluzija na nemačke rudare sa obala Rajne). Iako su tragovi tog naselja nestali, ime je sačuvano u nazivu manastira.
+                </p>
+              </section>
+
+              <img srcSet={`${koporin44} 450w, ${koporin4}`} alt="Manastir Koporin 4" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Istoričarka <strong>Olga Zirojević</strong> pronašla je u turskim defterima da se manastir prvobitno zvao <em>Sveti Arhanđeo</em>. Iako nije jasno kojem arhanđelu je bio posvećen, pretpostavlja se <em>Mihailu</em>, <em>Gavrilu</em> ili obojici.
+                  <br /><br />
+                  U <strong>19. veku</strong>, manastir je obnovljen i posvećen <strong>svetom arhiđakonu Stefanu</strong>. On se slavi <em>27. decembra</em> i <em>2. avgusta</em> (po novom kalendaru <em>9. januara</em> i <em>15. avgusta</em>). Manastir Koporin proslavlja ovaj drugi datum – praznik Prenosa moštiju svetog Stefana.
+                </p>
+              </section>
+
+
+            </>
+          )
+          :
+          (
+            <>
+
+              <h2>Koporin Monastery</h2>
+
+              <section lang="en"> <p> <strong>Koporin Monastery</strong> is located in the valley of the river of the same name, about 3 km from <em>Velika Plana</em>, in the triangle formed by the road <em>Velika Plana – Smederevska Palanka – Rača</em>. It lies in the rolling hills of <em>Šumadija</em>, surrounded by wheat and corn fields, as well as vineyards and orchards. To the east flows the <em>Koporin River</em>, to the west rises the <em>Koporin Hill</em>, to the north stretches the valley of the <em>Jasenica River</em>, and to the south lies the <em>village of Radovanje</em>. In the Middle Ages, an important road from <em>Belgrade</em> to <em>Constantinople</em> passed through this area, which became dangerous during Ottoman rule due to raiding bands. </p> </section>
+              <img srcSet={`${koporin22} 450w, ${koporin2}`} alt="Koporin Monastery 2" loading="lazy" />
+
+              <section lang="en"> <p> The exact time of construction and the founder of the monastery are unknown, as primary sources such as charters, inscriptions, or donor portraits have not been preserved. Folk tradition attributes its construction to <strong>Despot Stefan Lazarević</strong>. His portrait on the church wall suggests his involvement, but since he is not depicted holding a model of the church, researchers believe he may not have been the original founder but rather a <em>co-founder</em>—someone who completed or took over the monastery. <br /><br /> Based on the portrait featuring symbols of despot authority (crown, scepter, robe), the monastery is dated between <strong>1402 and 1427</strong>. </p> </section>
+              <img srcSet={`${koporin33} 450w, ${koporin3}`} alt="Koporin Monastery 3" loading="lazy" />
+
+              <section lang="en"> <p> There are several legends about the name of the monastery, linking it to the verb <em>to dig</em> or <em>to bury</em>. Some stories claim it was built at the site of a crime, that it was accessed by descending as into a grave, or that it was partially buried in a hill. <br /><br /> However, it is more likely that the monastery was named after the <em>Koporin River</em>. According to recent research, the toponym "<strong>Koporin</strong>" derives from the word <em>"kopo"</em> (mining excavation) and <em>"rin"</em> (an allusion to German miners from the Rhine region). Although traces of that settlement have disappeared, the name has been preserved in the monastery’s title. </p> </section>
+              <img srcSet={`${koporin44} 450w, ${koporin4}`} alt="Koporin Monastery 4" loading="lazy" />
+
+              <section lang="en"> <p> Historian <strong>Olga Zirojević</strong> found in Ottoman tax records that the monastery was originally called <em>Saint Archangel</em>. Although it is not clear to which archangel it was dedicated, it is assumed to be <em>Michael</em>, <em>Gabriel</em>, or both. <br /><br /> In the <strong>19th century</strong>, the monastery was restored and dedicated to <strong>Saint Stephen the Archdeacon</strong>. He is commemorated on <em>December 27</em> and <em>August 2</em> (according to the new calendar, <em>January 9</em> and <em>August 15</em>). Koporin Monastery celebrates the latter date—the Feast of the Translation of the Relics of Saint Stephen. </p> </section>
+
+            </>
+          )}
+
+      </div>
+    </>
   );
 };
+
+
+export default ManastirKoporin;

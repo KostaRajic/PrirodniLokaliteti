@@ -1,1210 +1,1193 @@
 /* eslint-disable no-unused-vars */
+import React, { Suspense, lazy } from 'react';
 import "./App.css";
-import { SerbianMap } from "./components/SerbianMap";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
-import { VojvodinaTekstModal } from "./components/StatisticRegions/Vojvodina/VojvodinaTekstModal";
-import { Vojvodina } from "./components/StatisticRegions/Vojvodina/Vojvodina";
-import { ZapadnoBacki } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/ZapadnoBacki";
-import { Sombor } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/Sombor";
-import { GornjePodunavlje } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/GornjePodunavlje";
-import { Apatin } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/ApatinIApatinskeTerminalneVode";
-import { VelikiBackiKanal } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/VelikiBackiKanal";
-import { ManastirBodjani } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/Manastir Bodjani";
-import { SalasiUBackoj } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/SalasiUBackoj";
-import { DunavskeAde } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/DunavskeAde";
-import { SevernoBacki } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/SevernoBacki";
-import { PalićkoJezero } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/PalićkoJezero";
-import { Subotica } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/Subotica";
-import { RekaTisa } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/RekaTisa";
-import { SubotickaPescara } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/SubotickaPescara";
-import { BackaTopola } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/BackaTopola";
-import { BackoTopolskoJezero } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/BackoTopolskoJezero";
-import { SevernoBanatski } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/SevernoBanatski";
-import { Kikinda } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/Kikinda";
-import { Kanjiza } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/KanjizaITermalneVode";
-import { SelevenjskePustare } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/SelevenjskePustare";
-import { RezervatVelikeDroplje } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/RezervatVelikeDroplje";
-import { Senta } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/Senta";
-import { JuznoBacki } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/JuznoBacki";
-import { FruskaGora } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/FruskaGora";
-import { NoviSad } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/NoviSad";
-import { BelaCrkva } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/BelaCrkva";
-import { ManastirKrusedol } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/ManastirKrusedol";
-import { SremskiKarlovci } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/SremskiKarlovci";
-import { ManastirBeocin } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/ManastirBeocin";
-import { SrednjeBanatski } from "./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/SrednjeBanatski";
-import { Zrenjanin } from "./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/Zrenjanin";
-import { SajkaskaOblast } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/SajkaskaOblast";
-import { NoviBecej } from "./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/NoviBecej";
-import { SlanoKopovo } from "./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/SlanoKopovo";
-import { StaraTisa } from "./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/StaraTisa";
-import { KupalistePeskara } from "./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/KupalistePeskara";
-import { SremskiOkrug } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SremskiOkrug";
-import { SremskaMitrovica } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SremskaMitrovica";
-import { SRPZasavica } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SRPZasavica";
-import { Indjija } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/Inđija";
-import { SotskoJezero } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SotskoJezero";
-import { ManastirNovoHopovo } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/ManastirNovoHopovo";
-import { Sid } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/Sid";
-import { ManastirJazak } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/ManastirJazak";
-import { BesenovackoJezero } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/BesenovackoJezero";
-import { JuznoBanatski } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/JuznoBanatski";
-import { Pancevo } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/Pancevo";
-import { VracevgajskoJezero } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/VracevgajskoJezero";
-import { DelibaltskaPescaraIZagajickaBrda } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/DelibaltskaPescaraIZagajickaBrda";
-import { Vrsac } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/Vrsac";
-import { SRPKraljevac } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/SRPKraljevac";
-import { Beograd } from "./components/StatisticRegions/Beograd/Beograd";
-import { Beograd2 } from "./components/StatisticRegions/Beograd/Beograd2";
-import { Kalemegdan } from "./components/StatisticRegions/Beograd/Kalemegdan";
-import { HramSvetogSave } from "./components/StatisticRegions/Beograd/HramSvetogSave";
-import { KnezMihailova } from "./components/StatisticRegions/Beograd/KnezMihajlova";
-import { TrgRepublike } from "./components/StatisticRegions/Beograd/TrgRepublike";
-import { BotanickaBata } from "./components/StatisticRegions/Beograd/BotanickaBasta";
-import { Skadarlija } from "./components/StatisticRegions/Beograd/Skadarlija";
-import { AdaCiganlija } from "./components/StatisticRegions/Beograd/AdaCiganlija";
-import { Kosutnjak } from "./components/StatisticRegions/Beograd/Kosutnjak";
-import { SumadijaIZapadnaSrbijaTekstModal } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/SumdijaIZapadnaSrbijaTekstModal";
-import { SumadijaIZapadnaSrbija } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/SumadijaIZapadnaSrbija";
-import { Sabac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Sabac";
-import { Gucevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Gucevo";
-import { ZvornickoJezero } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/ZvornickoJezero";
-import { ManastirTronosa } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/ManastirTronosa";
-import { Cer } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/PlaninaCer";
-import { MackovKamen } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MackovKamen";
-import { Trsic } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Trsic";
-import { KolubarskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/KulubarskiOkrug";
-import { Valjevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/Valjevo";
-import { TaorskaVrela } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/TaorskaVrela";
-import { PetnickaPecina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/PetnickaPecina";
-import { RekaGradac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/RekaGradac";
-import { ManastirLelic } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/ManastirLelic";
-import { VidikovacVelikaStena } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/VidikovacVelikaStena";
-import { VrhRajac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/VrhRajac";
-import { ManastirCelije } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/ManastirCelije";
-import { Divcibare } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/Divcibare";
-import { SumadijskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/SumadijskiOkrug";
-import { Kragujevac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Kragujevac";
-import { StaraPridvornaCrkva } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Milosev Venac Kragujevac/StaraPridvornacrkva";
-import { KonakKnezaMihaila } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Milosev Venac Kragujevac/KonakKnezaMihaila";
-import { ZgradaGimnazije } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Milosev Venac Kragujevac/ZgradaGimnazije";
-import { SpomenikPalimSumadincima } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Milosev Venac Kragujevac/SpomenikPalimZumadincima";
-import { ZgradaStareLivnice } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Milosev Venac Kragujevac/ZgradaStareLinvice";
-import { Arandjelovac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Arandjelovac";
-import { Oplenac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Oplenac";
-import { GruzanskoJezero } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/GruzanskoJezero";
-import { ManastirBlagovestenjeRudnicko } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/ManastirBlagovestenjeRudnicko";
-import { ManastirPetkovica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/ManastirPetkovica";
-import { PlaninarskaStazaZezeljIBesnjaja } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/PlaninrskaStazaZezeljIBesnjaja";
-import { ZlatiborskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ZlatiborskiOkrug";
-import { Uzice } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/Uzice";
-import { RekaUvac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/Uvac";
-import { NacionalniParkTara } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/NacionalniParkTara";
-import { PlaninaZlatibor } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/PlaninaZlatibor";
-import { ManastirMileseva } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ManastirMileseva";
-import { JezeroPerucac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/JezeroPerucac";
-import { VodopadSopotnice } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/VodopadSopotnice";
-import { ManastirRujan } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ManastirRujan";
-import { PlaninaZlatar } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/PlaninaZlatar";
-import { ZaovinskoJezero } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ZaovinskoJezero";
-import { StopicaPecina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/StopicaPecina";
-import { VodopadGostilje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/VodopadGostilje";
-import { MokraGora } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/MokraGora";
-import { MoravickiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/MoravickiOkrug";
-import { Cacak } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/Cacak";
-import { JezeroMedjuvrsje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/JezeroMedjuvrsje";
-import { ManastirBlagovestenje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/ManastirBlagovestenje";
-import { Guca } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/Guca";
-import { GornjiMilanovac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/GornjiMilanovac";
-import { OvcarskoKablarskaKlisura } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/OvcarskoKablarskaKlisura";
-import { ManastirJovanje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirJovanje";
-import { ManastirNikolje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirNikolje";
-import { ManastirPreobraženje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirPreobrazenje";
-import { ManastirSavinje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirSavinje";
-import { ManastirSveteTrojice } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirSveteTrojice";
-import { ManastirUspenje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirUspenje";
-import { ManastirVavedenje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirVavedenje";
-import { ManastirVaznesenje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirVaznesenje";
-import { PlaninaRudnik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/PlaninaRudnik";
-import { ManastirSretenje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/ManastirSretenje";
-import { PomoravskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/PomoravskiOkrug";
-import { Jagodina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/Jagodina";
-import { Grza } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/Grza";
-import { ManastirManasija } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirManasija";
-import { VodopadLisine } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/VodopadLisine";
-import { ManastirJosanica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirJosanica";
-import { ResavskaPecina } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ResavskaPecina";
-import { VodopadPrskalo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/VodopadPrskalo";
-import { ManastirRavanica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirRavanica";
-import { PrirodnjackiCentar } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/PrirodnjackiCentar";
-import { RaskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/RaskiOkrug";
-import { Kraljevo } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/Kraljevo";
-import { ManastirStudenica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirStudenica";
-import { PlaninaKopaonik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/PlaninaKopaonik";
-import { VrnjackaBanja } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/VrnjackaBanja";
-import { ManastirZica } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirZica";
-import { TvrdjavaMaglic } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/TvrdjavaMaglic";
-import { PlaninaGoc } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/PlaninaGoc";
-import { ManastirDjurdjeviStupovi } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirDjurdjeviStupovi";
-import { TvrdjavaStariRas } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/TvrdjavaStariRas";
-import { ManastirSopocani } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirSopocani";
-import { MacvanskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MacvanskiOkrug";
-import { RasinskiOkrug } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/RasinskiOkrug";
-import { Krusevac } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/Krusevac";
-import { JezeroCelije } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/JezeroCelije";
-import { TvrdjavaKoznik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/SrednjovekovnaTvrdjavaKoznik";
-import { ManastirDjunis } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/ManastirDjunis";
-import { SvetilisteMetodje } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/Metodje";
-import { RibarskaBanja } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/RibarskaBanja";
-import { ManastirLjubostinja } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/ManastirLjubostinja";
-import { VodopadJelovarnik } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/VodopadJelovarnik";
-import { JuznaIIStocnaSrbijaTekstModal } from "./components/StatisticRegions/IstocnaIJuznaSrbija/IstocnaIJuznaSrbijaTekstModal";
-import { IstocnaiJuznaSrbija } from "./components/StatisticRegions/IstocnaIJuznaSrbija/IstocnaIJuznaSrbija";
-import { PodunavskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/PodunavskiOkrug";
-import { Smederevo } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/Smederevo";
-import { ManastirPokajnica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/ManastirPokajnica";
-import { SmederevskaTvrdjava } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/SmederevskaTvrdjava";
-import { RadovanjskiLug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/RadovanjskiLug";
-import { ManastirKoporin } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/ManastirKoporin";
-import { BranicevskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/BranicevskiOkrug";
-import { Pozarevac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/Pozarevac";
-import { TvrdjavaGolubac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/TvrdjavaGolubac";
-import { SrebrnoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/SrebrnoJezero";
-import { ManastirTumane } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/ManastirTumane";
-import { KrupajskoVrelo } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/KrupajskoVrelo";
-import { ManastirGornjak } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/ManastirGornjak";
-import { PlaninaBeljanica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/PlaninaBeljanica";
-import { BorskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/BorskiOkrug";
-import { Bor } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/Bor";
-import { DjerdapskaKlisura } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/DjerdapskaKlisura";
-import { LazarevKanjon } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LazarevKanjon";
-import { LazarevaPecina } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LazarevaPecina";
-import { BorskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/BorskoJezero";
-import { LepenskiVir } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LepenskiVir";
-import { RajkovaPecina } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/RajkovaPecina";
-import { ZajecarskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/ZajecarskiOkrug";
-import { Zajecar } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/Zajecar";
-import { SokoBanja } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/Sokobanja";
-import { PlaninaRtanj } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/PlaninaRtanj";
-import { VodopadRipaljka } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/VodopadRipaljka";
-import { SokoGrad } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/SokoGrad";
-import { FelixRomulijana } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/FelixRomulijana";
-import { NisavskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/NisavskiOkrug";
-import { JuznoBackiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/JuznoBackiPathRoutes";
-import { nisavskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/NisavskiOkrugPathRoutes";
-import { Nis } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/Nis";
-import { Cegar } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/Cegar";
-import { BovanskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/BovanskoJezero";
-import { SuvaPlanina } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/SuvaPlanina";
-import { SicevackaKlisura } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/SicevackaKlisura";
-import { ManastirSvetaPetkaIverica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/ManastirSvetaPetkaIverica";
-import { NiskaBanja } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/NiskaBanja";
-import { ToplickiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/ToplickiOkrug";
-import { toplickiOkurgPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/ToplickiOkurgPathRoutes";
-import { Prokuplje } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/Prokuplje";
-import { DjavoljaVaros } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/DjavoljaVaros";
-import { PlaninaJastrebac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/PlaninaJastrebac";
-import { TvrdjavaHisar } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/HisarProkuplje";
-import { ManastirSvetogNikole } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/ManastirSvetogNikole";
-import { PlaninaRadan } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/PlaninaRadan";
-import { pirotskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/PirotskiOkrugPathRoutes";
-import { PirotskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/PIrotskiOkrug";
-import { Pirot } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/Pirot";
-import { StaraPlanina } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/StaraPlanina";
-import { ZavojskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/ZavojskoJezero";
-import { VodopadTupavica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/VodopadTupavica";
-import { ManastirSukovo } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/ManastirSukovo";
-import { VodopadBigar } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/VodopadBigar";
-import { KanjonRekeJerme } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/KanjonRekeJerme";
-import { jablanickiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/JablanickiOkrugPathRoutes";
-import { JablanickiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/JablanickiOkrug";
-import { Leskovac } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/Leskovac";
-import { BrestovackoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/BrestovackoJezero";
-import { PlaninaBabickaGora } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/PlaninaBabickaGora";
-import { KanjonVucjanke } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/KanjonVucjanke";
-import { PlaninaGoljak } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/PlaninaGoljak";
-import { TularskaBanja } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/TularskaBanja";
-import { pcinjskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PcinjskiOkrugPathRoutes";
-import { PcinjskiOkrug } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PcinjskiOkrug";
-import { Vranje } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/Vranje";
-import { VlasinskoJezero } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/VlasinskoJezero";
-import { PlaninaBesnaKobila } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaBesnaKobila";
-import { ManastirProhoraPcinjskog } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/ManastirProhoraPcinjskog";
-import { PlaninaKukavica } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaKukavica";
-import { PlaninaCemernik } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaCemernik";
-import { KosovoIMetohijaTekstModal } from "./components/StatisticRegions/KosovoIMetohija/KosovoIMetohijaTekstModal";
-import { KosovoIMetohija } from "./components/StatisticRegions/KosovoIMetohija/KosovoIMetohija";
-import { peckiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckiOkrugPathRoutes";
-import { PeckiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckiOkrug";
-import { Pec } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/Pec";
-import { PeckaPatrijarsija } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckaPatrijarsija";
-import { PlaninaMokraGora } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaMokraGora";
-import { VodopadBeliDrim } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/VodopadBeliDrim";
-import { PlaninaZutiKamen } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaZutiKamen";
-import { mitrovackiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/MitrovackiOkrugPathRoutes";
-import { MitrovackiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/MitrovackiOkrug";
-import { KosovskaMitrovica } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/KMitrovica";
-import { ManastirBanjska } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/manastirBanjska";
-import { GazivodskoJezero } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/GazivodskoJezero";
-import { ManastirDevic } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/ManastirDevic";
-import { pristinskiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/PristinskiOkrugPathRoutes";
-import { PristinskiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/PristinskiOkrug";
-import { Pristina } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Pristina";
-import { ManastirGracanica } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Gracanica";
-import { Gazimestan } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Gazimestan";
-import { MermernaPecina } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/MermernaPecina";
-import { TvrdjavaNovoBrdo } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/TvrdjavaNovoBrdo";
-import { prizrenskiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/PrizrenskiOkrugPathRoutes";
-import { PrizrenskiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/PrizrenskiOkrug";
-import { Prizren } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/Prizren";
-import { ManastirSvetihArhangela } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/ManastirSvetihArhangela";
-import { VodopadMirusa } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Prizrenski/VodopadMirusa";
-import { djakovickiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/DjakovickiOkrugPathRoutes";
-import { DjakovickiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/DjakovickiOkrug";
-import { Djakovica } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/Djakovica";
-import { ManastirVisokiDecani } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/ManastirVisokiDecani";
-import { Prokletije } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/Prokletije";
-import { urosevackiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/UrosevackiOkrugPathRoutes";
-import { UrosevackiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/UrosevackiOkrug";
-import { Urosevac } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/Urosevac";
-import { Brezovica } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/Brezovica";
-import { Ljuboten } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Uroevacki/Ljuboten";
-import { gnjilanskiOkrugPathRoutes } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/GnjilanskiOkrugPathRoutes";
-import { GnjilanskiOkrug } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/GnjilanskiOkrug";
-import { Gnjilane } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/Gnjilane";
-import { ManastirUbozac } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/ManastirUbozac";
-import { TvrdjavaPodgradje } from "./components/StatisticRegions/KosovoIMetohija/Okruzi/Gnjilanski/PodgradjeTvrdjava";
-import { beogradPathRoutes } from "./components/StatisticRegions/Beograd/BeogradPathRoutes";
-import { borskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/BorskiOkrugPathRoutes";
-import { branicevskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/BranicevskiOkrugPathRoutes";
-import { podunavskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/PodunavskiOkrugPathRouts";
-import { zajecarskiOkrugPathRoutes } from "./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/ZajecarskiOkrugPathRoutes";
-import { kulubarskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/KolubarskiOkrugPathRoutes";
-import { macvanskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MacvanskiOkrugPathRoutes";
-import { serbianMapPathRoutes } from "./components/serbianMapPathRoutes";
-import { moravickiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/MoravickiOkrugPathRoutes";
-import { pomoravskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/PomoravskiOkrugPathRoutes";
-import { rasinskiOkrugData } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/rasinskiOkrugData";
-import { rasinskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/RasinskiOkrugPathRoutes";
-import { raskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/RaskiOkrugPathRoutes";
-import { sumadijskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/SumadijskiOkrugPathRoutes";
-import { zlatiborskiOkrugPathRoutes } from "./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ZlatiborskiOkrugPahtRoutes";
-import { juznoBanatskiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/JuznoBanatskiPathRoutes";
-import { servernoBackiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/SevernoBackiPathRoutes";
-import { severnoBanatskiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/SevernoBanatskiPathRoutes";
-import { srednjeBanatskiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/SrednjeBanatskiPathRoutes";
-import { sremskiOkrugPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SremskiOkrugPathRoutes";
-import { zapadnoBackiPathRoutes } from "./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/ZapadnoBackiPathRoutes";
+const VojvodinaTekstModal = lazy(() => import("./components/StatisticRegions/Vojvodina/VojvodinaTekstModal"))
+const Vojvodina = lazy(() => import("./components/StatisticRegions/Vojvodina/Vojvodina"))
+const ZapadnoBacki = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/ZapadnoBacki"))
+const Sombor = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/Sombor"))
+const GornjePodunavlje = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/GornjePodunavlje"))
+const Apatin = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/ApatinIApatinskeTerminalneVode"))
+const VelikiBackiKanal = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/VelikiBackiKanal"))
+const ManastirBodjani = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/ManastirBodjani"))
+const SalasiUBackoj = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/SalasiUBackoj"))
+const DunavskeAde = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/ZapadnoBacki/DunavskeAde"))
+const SevernoBacki = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/SevernoBacki"))
+const PalićkoJezero = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/PalićkoJezero"))
+const Subotica = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/Subotica"))
+const RekaTisa = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/RekaTisa"))
+const SubotickaPescara = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/SubotickaPescara"))
+const BackaTopola = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/BackaTopola"))
+const BackoTopolskoJezero = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBacki/BackoTopolskoJezero"))
+const SevernoBanatski = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/SevernoBanatski"))
+const Kikinda = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/Kikinda"))
+const Kanjiza = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/KanjizaITermalneVode"))
+const SelevenjskePustare = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/SelevenjskePustare"))
+const RezervatVelikeDroplje = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/RezervatVelikeDroplje"))
+const Senta = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SevernoBanatski/Senta"))
+const JuznoBacki = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/JuznoBacki"))
+const FruskaGora = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/FruskaGora"))
+const NoviSad = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/NoviSad"))
+const BelaCrkva = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/BelaCrkva"))
+const ManastirKrusedol = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/ManastirKrusedol"))
+const SremskiKarlovci = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/SremskiKarlovci"))
+const ManastirBeocin = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/ManastirBeocin"))
+const SrednjeBanatski = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/SrednjeBanatski"))
+const Zrenjanin = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/Zrenjanin"))
+const SajkaskaOblast = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBacki/SajkaskaOblast"))
+const NoviBecej = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/NoviBecej"))
+const SlanoKopovo = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/SlanoKopovo"))
+const StaraTisa = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/StaraTisa"))
+const KupalistePeskara = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/SrednjeBanatski/KupalistePeskara"))
+const SremskiOkrug = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SremskiOkrug"))
+const SremskaMitrovica = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SremskaMitrovica"))
+const SRPZasavica = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SRPZasavica"))
+const Indjija = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/Inđija"))
+const SotskoJezero = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/SotskoJezero"))
+const ManastirNovoHopovo = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/ManastirNovoHopovo"))
+const Sid = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/Sid"))
+const ManastirJazak = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/ManastirJazak"))
+const BesenovackoJezero = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/Sremski/BesenovackoJezero"))
+const JuznoBanatski = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/JuznoBanatski"))
+const Pancevo = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/Pancevo"))
+const VracevgajskoJezero = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/VracevgajskoJezero"))
+const DelibaltskaPescaraIZagajickaBrda = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/DelibaltskaPescaraIZagajickaBrda"))
+const Vrsac = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/Vrsac"))
+const SRPKraljevac = lazy(() => import("./components/StatisticRegions/Vojvodina/Okruzi/JuznoBanatski/SRPKraljevac"))
+const Beograd = lazy(() => import("./components/StatisticRegions/Beograd/Beograd"))
+const Beograd2 = lazy(() => import("./components/StatisticRegions/Beograd/Beograd2"))
+const Kalemegdan = lazy(() => import("./components/StatisticRegions/Beograd/Kalemegdan"))
+const HramSvetogSave = lazy(() => import("./components/StatisticRegions/Beograd/HramSvetogSave"))
+const KnezMihailova = lazy(() => import("./components/StatisticRegions/Beograd/KnezMihajlova"))
+const TrgRepublike = lazy(() => import("./components/StatisticRegions/Beograd/TrgRepublike"))
+const BotanickaBata = lazy(() => import("./components/StatisticRegions/Beograd/BotanickaBasta"))
+const Skadarlija = lazy(() => import("./components/StatisticRegions/Beograd/Skadarlija"))
+const AdaCiganlija = lazy(() => import("./components/StatisticRegions/Beograd/AdaCiganlija"))
+const Kosutnjak = lazy(() => import("./components/StatisticRegions/Beograd/Kosutnjak"))
+const SumadijaIZapadnaSrbijaTekstModal = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/SumdijaIZapadnaSrbijaTekstModal"))
+const SumadijaIZapadnaSrbija = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/SumadijaIZapadnaSrbija"))
+const MacvanskiOkrug = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MacvanskiOkrug"))
+const Sabac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Sabac"))
+const Gucevo = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Gucevo"))
+const ZvornickoJezero = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/ZvornickoJezero"))
+const ManastirTronosa = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/ManastirTronosa"))
+const Cer = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/PlaninaCer"))
+const MackovKamen = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/MackovKamen"))
+const Trsic = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Macvanski/Trsic"))
+const KolubarskiOkrug = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/KulubarskiOkrug"))
+const Valjevo = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/Valjevo"))
+const TaorskaVrela = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/TaorskaVrela"))
+const PetnickaPecina = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/PetnickaPecina"))
+const RekaGradac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/RekaGradac"))
+const ManastirLelic = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/ManastirLelic"))
+const VidikovacVelikaStena = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/VidikovacVelikaStena"))
+const VrhRajac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/VrhRajac"))
+const ManastirCelije = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/ManastirCelije"))
+const Divcibare = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Kolubarski/Divcibare"))
+const SumadijskiOkrug = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/SumadijskiOkrug"))
+const Kragujevac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Kragujevac"))
+const StaraPridvornaCrkva = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/MilosevVenacKragujevac/StaraPridvornacrkva"))
+const KonakKnezaMihaila = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/MilosevVenacKragujevac/KonakKnezaMihaila"))
+const ZgradaGimnazije = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/MilosevVenacKragujevac/ZgradaGimnazije"))
+const SpomenikPalimSumadincima = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/MilosevVenacKragujevac/SpomenikPalimZumadincima"))
+const ZgradaStareLivnice = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/MilosevVenacKragujevac/ZgradaStareLinvice"))
+const Arandjelovac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Arandjelovac"))
+const Oplenac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/Oplenac"))
+const GruzanskoJezero = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/GruzanskoJezero"))
+const ManastirBlagovestenjeRudnicko = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/ManastirBlagovestenjeRudnicko"))
+const ManastirPetkovica = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/ManastirPetkovica"))
+const PlaninarskaStazaZezeljIBesnjaja = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Sumadijski/PlaninrskaStazaZezeljIBesnjaja"))
+const ZlatiborskiOkrug = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ZlatiborskiOkrug"))
+const Uzice = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/Uzice"))
+const RekaUvac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/Uvac"))
+const NacionalniParkTara = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/NacionalniParkTara"))
+const PlaninaZlatibor = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/PlaninaZlatibor"))
+const ManastirMileseva = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ManastirMileseva"))
+const JezeroPerucac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/JezeroPerucac"))
+const VodopadSopotnice = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/VodopadSopotnice"))
+const ManastirRujan = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ManastirRujan"))
+const PlaninaZlatar = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/PlaninaZlatar"))
+const ZaovinskoJezero = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/ZaovinskoJezero"))
+const StopicaPecina = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/StopicaPecina"))
+const VodopadGostilje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/VodopadGostilje"))
+const MokraGora = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Zlatiborski/MokraGora"))
+const MoravickiOkrug = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/MoravickiOkrug"))
+const Cacak = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/Cacak"))
+const JezeroMedjuvrsje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/JezeroMedjuvrsje"))
+const ManastirBlagovestenje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/ManastirBlagovestenje"))
+const Guca = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/Guca"))
+const GornjiMilanovac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/GornjiMilanovac"))
+const OvcarskoKablarskaKlisura = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/OvcarskoKablarskaKlisura"))
+const ManastirJovanje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirJovanje"))
+const ManastirNikolje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirNikolje"))
+const ManastirPreobraženje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirPreobrazenje"))
+const ManastirSavinje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirSavinje"))
+const ManastirSveteTrojice = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirSveteTrojice"))
+const ManastirUspenje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirUspenje"))
+const ManastirVavedenje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirVavedenje"))
+const ManastirVaznesenje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/SrpskaSvetaGora/ManastirVaznesenje"))
+const PlaninaRudnik = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/PlaninaRudnik"))
+const ManastirSretenje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Moravicki/ManastirSretenje"))
+const PomoravskiOkrug = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/PomoravskiOkrug"))
+const Jagodina = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/Jagodina"))
+const Grza = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/Grza"))
+const ManastirManasija = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirManasija"))
+const VodopadLisine = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/VodopadLisine"))
+const ManastirJosanica = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirJosanica"))
+const ResavskaPecina = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ResavskaPecina"))
+const VodopadPrskalo = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/VodopadPrskalo"))
+const ManastirRavanica = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/ManastirRavanica"))
+const PrirodnjackiCentar = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Pomoravski/PrirodnjackiCentar"))
+const RaskiOkrug = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/RaskiOkrug"))
+const Kraljevo = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/Kraljevo"))
+const ManastirStudenica = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirStudenica"))
+const PlaninaKopaonik = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/PlaninaKopaonik"))
+const VrnjackaBanja = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/VrnjackaBanja"))
+const ManastirZica = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirZica"))
+const TvrdjavaMaglic = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/TvrdjavaMaglic"))
+const PlaninaGoc = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/PlaninaGoc"))
+const ManastirDjurdjeviStupovi = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirDjurdjeviStupovi"))
+const TvrdjavaStariRas = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/TvrdjavaStariRas"))
+const ManastirSopocani = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Raski/ManastirSopocani"))
+const RasinskiOkrug = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/RasinskiOkrug"))
+const Krusevac = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/Krusevac"))
+const JezeroCelije = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/JezeroCelije"))
+const TvrdjavaKoznik = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/SrednjovekovnaTvrdjavaKoznik"))
+const ManastirDjunis = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/ManastirDjunis"))
+const SvetilisteMetodje = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/Metodje"))
+const RibarskaBanja = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/RibarskaBanja"))
+const ManastirLjubostinja = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/ManastirLjubostinja"))
+const VodopadJelovarnik = lazy(() => import("./components/StatisticRegions/SumadijaIZapadnaSrbija/Okruzi/Rasinski/VodopadJelovarnik"))
+const JuznaIIStocnaSrbijaTekstModal = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/IstocnaIJuznaSrbijaTekstModal"))
+const IstocnaiJuznaSrbija = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/IstocnaIJuznaSrbija"))
+const PodunavskiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/PodunavskiOkrug"))
+const Smederevo = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/Smederevo"))
+const ManastirPokajnica = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/ManastirPokajnica"))
+const SmederevskaTvrdjava = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/SmederevskaTvrdjava"))
+const RadovanjskiLug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/RadovanjskiLug"))
+const ManastirKoporin = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Podunavski/ManastirKoporin"))
+const BranicevskiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/BranicevskiOkrug"))
+const Pozarevac = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/Pozarevac"))
+const TvrdjavaGolubac = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/TvrdjavaGolubac"))
+const SrebrnoJezero = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/SrebrnoJezero"))
+const ManastirTumane = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/ManastirTumane"))
+const KrupajskoVrelo = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/KrupajskoVrelo"))
+const ManastirGornjak = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/ManastirGornjak"))
+const PlaninaBeljanica = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Branicevski/PlaninaBeljanica"))
+const BorskiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/BorskiOkrug"))
+const Bor = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/Bor"))
+const DjerdapskaKlisura = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/DjerdapskaKlisura"))
+const LazarevKanjon = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LazarevKanjon"))
+const LazarevaPecina = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LazarevaPecina"))
+const BorskoJezero = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/BorskoJezero"))
+const LepenskiVir = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/LepenskiVir"))
+const RajkovaPecina = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Borski/RajkovaPecina"))
+const ZajecarskiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/ZajecarskiOkrug"))
+const Zajecar = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/Zajecar"))
+const SokoBanja = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/Sokobanja"))
+const PlaninaRtanj = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/PlaninaRtanj"))
+const VodopadRipaljka = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/VodopadRipaljka"))
+const SokoGrad = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/SokoGrad"))
+const FelixRomulijana = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Zajecarski/FelixRomulijana"))
+const NisavskiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/NisavskiOkrug"))
+const Nis = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/Nis"))
+const Cegar = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/Cegar"))
+const BovanskoJezero = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/BovanskoJezero"))
+const SuvaPlanina = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/SuvaPlanina"))
+const SicevackaKlisura = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/SicevackaKlisura"))
+const ManastirSvetaPetkaIverica = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/ManastirSvetaPetkaIverica"))
+const NiskaBanja = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Nisavski/NiskaBanja"))
+const ToplickiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/ToplickiOkrug"))
+const Prokuplje = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/Prokuplje"))
+const DjavoljaVaros = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/DjavoljaVaros"))
+const PlaninaJastrebac = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/PlaninaJastrebac"))
+const TvrdjavaHisar = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/HisarProkuplje"))
+const ManastirSvetogNikole = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/ManastirSvetogNikole"))
+const PlaninaRadan = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Toplicki/PlaninaRadan"))
+const PirotskiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/PIrotskiOkrug"))
+const Pirot = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/Pirot"))
+const StaraPlanina = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/StaraPlanina"))
+const ZavojskoJezero = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/ZavojskoJezero"))
+const VodopadTupavica = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/VodopadTupavica"))
+const ManastirSukovo = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/ManastirSukovo"))
+const VodopadBigar = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/VodopadBigar"))
+const KanjonRekeJerme = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pirotski/KanjonRekeJerme"))
+const JablanickiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/JablanickiOkrug"))
+const Leskovac = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/Leskovac"))
+const BrestovackoJezero = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/BrestovackoJezero"))
+const PlaninaBabickaGora = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/PlaninaBabickaGora"))
+const KanjonVucjanke = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/KanjonVucjanke"))
+const PlaninaGoljak = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/PlaninaGoljak"))
+const TularskaBanja = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Jablanicki/TularskaBanja"))
+const PcinjskiOkrug = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PcinjskiOkrug"))
+const Vranje = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/Vranje"))
+const VlasinskoJezero = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/VlasinskoJezero"))
+const PlaninaBesnaKobila = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaBesnaKobila"))
+const ManastirProhoraPcinjskog = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/ManastirProhoraPcinjskog"))
+const PlaninaKukavica = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaKukavica"))
+const PlaninaCemernik = lazy(() => import("./components/StatisticRegions/IstocnaIJuznaSrbija/Okruzi/Pcinjski/PlaninaCemernik"))
+const KosovoIMetohijaTekstModal = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/KosovoIMetohijaTekstModal"))
+const KosovoIMetohija = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/KosovoIMetohija"))
+const PeckiOkrug = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckiOkrug"))
+const Pec = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/Pec"))
+const PeckaPatrijarsija = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckaPatrijarsija"))
+const PlaninaMokraGora = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaMokraGora"))
+const VodopadBeliDrim = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/VodopadBeliDrim"))
+const PlaninaZutiKamen = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaZutiKamen"))
+const MitrovackiOkrug = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/MitrovackiOkrug"))
+const KosovskaMitrovica = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/KMitrovica"))
+const ManastirBanjska = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/manastirBanjska"))
+const GazivodskoJezero = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/GazivodskoJezero"))
+const ManastirDevic = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/ManastirDevic"))
+const PristinskiOkrug = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/PristinskiOkrug"))
+const Pristina = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Pristina"))
+const ManastirGracanica = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaZutiKamen"))
+const Gazimestan = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Gazimestan"))
+const MermernaPecina = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/MermernaPecina"))
+const TvrdjavaNovoBrdo = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckiOkrug"))
+const PrizrenskiOkrug = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/Pec"))
+const Prizren = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckaPatrijarsija"))
+const ManastirSvetihArhangela = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaMokraGora"))
+const VodopadMirusa = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/VodopadBeliDrim"))
+const DjakovickiOkrug = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/DjakovickiOkrug"))
+const Djakovica = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/Djakovica"))
+const ManastirVisokiDecani = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/ManastirVisokiDecani"))
+const Prokletije = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Djakovicki/Prokletije"))
+const UrosevackiOkrug = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Mitrovacki/ManastirDevic"))
+const Urosevac = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/PristinskiOkrug"))
+const Brezovica = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pristinski/Pristina"))
+const Ljuboten = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PlaninaZutiKamen"))
+const GnjilanskiOkrug = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/KosovoIMetohijaTekstModal"))
+const Gnjilane = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/KosovoIMetohija"))
+const ManastirUbozac = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/PeckiOkrug"))
+const TvrdjavaPodgradje = lazy(() => import("./components/StatisticRegions/KosovoIMetohija/Okruzi/Pecki/Pec"))
 import { Layout } from "./components/Layout";
 import { HomePage } from "./homePage";
-import React, { Suspense, lazy } from 'react';
-
-
 const Home = lazy(() => import('../src/homePage'));
 const SerbianMapComp = lazy(() => import('../src/components/SerbianMap'));
 
 
+
 function App() {
   return (
-    <BrowserRouter>
+
     <Layout>
-       <Suspense fallback={<div>Loading...</div>}></Suspense>
+
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/serbianMap" element={<SerbianMapComp />} />
-        <Route path={beogradPathRoutes.home} element={<Beograd />} />
-        <Route path={beogradPathRoutes.beograd} element={<Beograd2 />} />
-        <Route path={beogradPathRoutes.kalemegdan} element={<Kalemegdan />} />
-        <Route path={beogradPathRoutes.hramSvetogSave} element={<HramSvetogSave />} />
-        <Route path={beogradPathRoutes.knezMihajlova} element={<KnezMihailova />} />
-        <Route path={beogradPathRoutes.trgRepublike} element={<TrgRepublike />} />
-        <Route path={beogradPathRoutes.botanickaBasta} element={<BotanickaBata />} />
-        <Route path={beogradPathRoutes.skadarlija} element={<Skadarlija />} />
-        <Route path={beogradPathRoutes.adaCiganlija} element={<AdaCiganlija />} />
-        <Route path={beogradPathRoutes.kosutnjak} element={<Kosutnjak />} />
- 
-        <Route path={serbianMapPathRoutes.VojvodinaTekstModal} element={<VojvodinaTekstModal />} />
-        <Route path={serbianMapPathRoutes.Vojvodina} element={<Vojvodina />} />
+
+
+        <Route path="/" element={<Suspense fallback={<div>Loading...</div>}>
+          <HomePage />
+        </Suspense>} />
+
+        <Route path="/serbianMap"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <SerbianMapComp />
+            </Suspense>} />
+
+
+        <Route path="/:lang/beograd" element={<Suspense fallback={<div>Loading...</div>}><Beograd /></Suspense>} />
+        <Route path="/:lang/beograd/beograd2" element={<Suspense fallback={<div>Loading...</div>}><Beograd2 /></Suspense>} />
+        <Route path="/:lang/beograd/kalemegdan" element={<Suspense fallback={<div>Loading...</div>}><Kalemegdan /></Suspense>} />
+        <Route path="/:lang/beograd/hram-svetog-save" element={<Suspense fallback={<div>Loading...</div>}><HramSvetogSave /></Suspense>} />
+        <Route path="/:lang/beograd/knez-mihajlova" element={<Suspense fallback={<div>Loading...</div>}><KnezMihailova /></Suspense>} />
+        <Route path="/:lang/beograd/trg-republike" element={<Suspense fallback={<div>Loading...</div>}><TrgRepublike /></Suspense>} />
+        <Route path="/:lang/beograd/botanicka-basta" element={<Suspense fallback={<div>Loading...</div>}><BotanickaBata /></Suspense>} />
+        <Route path="/:lang/beograd/skadarlija" element={<Suspense fallback={<div>Loading...</div>}><Skadarlija /></Suspense>} />
+        <Route path="/:lang/beograd/ada-ciganlija" element={<Suspense fallback={<div>Loading...</div>}><AdaCiganlija /></Suspense>} />
+        <Route path="/:lang/beograd/kosutnjak" element={<Suspense fallback={<div>Loading...</div>}><Kosutnjak /></Suspense>} />
+
         <Route
-          path={zapadnoBackiPathRoutes.home}
-          element={<ZapadnoBacki />}
+          path="/:lang/vojvodina-tekst-modal"
+          element={<Suspense fallback={<div>Loading...</div>}><VojvodinaTekstModal /></Suspense>}
         />
+
         <Route
-          path={zapadnoBackiPathRoutes.sombor}
-          element={<Sombor />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina"
+          element={<Suspense fallback={<div>Loading...</div>}><Vojvodina /></Suspense>}
         />
+
         <Route
-          path={zapadnoBackiPathRoutes.gornjePodunavlje}
-          element={<GornjePodunavlje />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/zapadno-backi"
+          element={<Suspense fallback={<div>Loading...</div>}><ZapadnoBacki /></Suspense>}
         />
         <Route
-          path={zapadnoBackiPathRoutes.apatin}
-          element={<Apatin />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/zapadno-backi/sombor"
+          element={<Suspense fallback={<div>Loading...</div>}><Sombor /></Suspense>}
         />
         <Route
-          path={zapadnoBackiPathRoutes.velikiBackiKanal}
-          element={<VelikiBackiKanal />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/zapadno-backi/gornje-podunavlje"
+          element={<Suspense fallback={<div>Loading...</div>}><GornjePodunavlje /></Suspense>}
         />
         <Route
-          path={zapadnoBackiPathRoutes.manastirBodjani}
-          element={<ManastirBodjani />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/zapadno-backi/apatin-i-terminalne-vode"
+          element={<Suspense fallback={<div>Loading...</div>}><Apatin /></Suspense>}
         />
         <Route
-          path={zapadnoBackiPathRoutes.salasiUBackoj}
-          element={<SalasiUBackoj />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/zapadno-backi/veliki-backi-kanal"
+          element={<Suspense fallback={<div>Loading...</div>}><VelikiBackiKanal /></Suspense>}
         />
         <Route
-          path={zapadnoBackiPathRoutes.dunavskeAde}
-          element={<DunavskeAde />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/zapadno-backi/manastir-bodjani"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirBodjani /></Suspense>}
         />
         <Route
-          path={servernoBackiPathRoutes.home}
-          element={<SevernoBacki />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/zapadno-backi/salasi-u-backoj"
+          element={<Suspense fallback={<div>Loading...</div>}><SalasiUBackoj /></Suspense>}
         />
         <Route
-          path={servernoBackiPathRoutes.palickoJezero}
-          element={<PalićkoJezero />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/zapadno-backi/dunavske-ade"
+          element={<Suspense fallback={<div>Loading...</div>}><DunavskeAde /></Suspense>}
         />
         <Route
-          path={servernoBackiPathRoutes.subotica}
-          element={<Subotica />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-backi"
+          element={<Suspense fallback={<div>Loading...</div>}><SevernoBacki /></Suspense>}
         />
         <Route
-          path={servernoBackiPathRoutes.rekaTisa}
-          element={<RekaTisa />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-backi/palicko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><PalićkoJezero /></Suspense>}
         />
         <Route
-          path={servernoBackiPathRoutes.subotickaPescara}
-          element={<SubotickaPescara />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-backi/subotica"
+          element={<Suspense fallback={<div>Loading...</div>}><Subotica /></Suspense>}
         />
         <Route
-          path={servernoBackiPathRoutes.backaTopola}
-          element={<BackaTopola />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-backi/tisa"
+          element={<Suspense fallback={<div>Loading...</div>}><RekaTisa /></Suspense>}
         />
         <Route
-          path={servernoBackiPathRoutes.backoTopolskoJezero}
-          element={<BackoTopolskoJezero />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-backi/suboticka-pescara"
+          element={<Suspense fallback={<div>Loading...</div>}><SubotickaPescara /></Suspense>}
         />
         <Route
-          path={severnoBanatskiPathRoutes.home}
-          element={<SevernoBanatski />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-backi/backa-topola"
+          element={<Suspense fallback={<div>Loading...</div>}><BackaTopola /></Suspense>}
         />
         <Route
-          path={severnoBanatskiPathRoutes.kikinda}
-          element={<Kikinda />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-backi/backo-topolsko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><BackoTopolskoJezero /></Suspense>}
         />
         <Route
-          path={severnoBanatskiPathRoutes.kanjiza}
-          element={<Kanjiza />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-banatski"
+          element={<Suspense fallback={<div>Loading...</div>}><SevernoBanatski /></Suspense>}
         />
         <Route
-          path={severnoBanatskiPathRoutes.selevenjskePustare}
-          element={<SelevenjskePustare />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-banatski/kikinda"
+          element={<Suspense fallback={<div>Loading...</div>}><Kikinda /></Suspense>}
         />
         <Route
-          path={severnoBanatskiPathRoutes.rezervatVelikeDroplje}
-          element={<RezervatVelikeDroplje />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-banatski/kanjiza"
+          element={<Suspense fallback={<div>Loading...</div>}><Kanjiza /></Suspense>}
         />
         <Route
-          path={severnoBanatskiPathRoutes.senta}
-          element={<Senta />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-banatski/selevenjske-pustare"
+          element={<Suspense fallback={<div>Loading...</div>}><SelevenjskePustare /></Suspense>}
         />
-        <Route path={JuznoBackiPathRoutes.home} element={<JuznoBacki />} />
         <Route
-          path={JuznoBackiPathRoutes.fruskaGora}
-          element={<FruskaGora />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-banatski/rezervat-velike-droplje"
+          element={<Suspense fallback={<div>Loading...</div>}><RezervatVelikeDroplje /></Suspense>}
         />
-        <Route path={JuznoBackiPathRoutes.noviSad} element={<NoviSad />} />
         <Route
-          path={JuznoBackiPathRoutes.manastirKrusedol}
-          element={<ManastirKrusedol />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/severno-banatski/senta"
+          element={<Suspense fallback={<div>Loading...</div>}><Senta /></Suspense>}
         />
+        <Route path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-backi" element={<Suspense fallback={<div>Loading...</div>}><JuznoBacki /></Suspense>} />
         <Route
-          path={JuznoBackiPathRoutes.sremskiKarlovci}
-          element={<SremskiKarlovci />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-backi/fruska-gora"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <FruskaGora />
+            </Suspense>
+          }
         />
+        <Route path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-backi/novi-sad" element={<Suspense fallback={<div>Loading...</div>}><NoviSad /></Suspense>} />
         <Route
-          path={JuznoBackiPathRoutes.manastirBeocin}
-          element={<ManastirBeocin />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-backi/manastir-krusedol"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirKrusedol /></Suspense>}
         />
         <Route
-          path={JuznoBackiPathRoutes.sajkaskaOblast}
-          element={<SajkaskaOblast />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-backi/sremski-karlovci"
+          element={<Suspense fallback={<div>Loading...</div>}><SremskiKarlovci /></Suspense>}
         />
         <Route
-          path={srednjeBanatskiPathRoutes.home}
-          element={<SrednjeBanatski />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-backi/manastir-beocin"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirBeocin /></Suspense>}
         />
         <Route
-          path={srednjeBanatskiPathRoutes.zrenjanin}
-          element={<Zrenjanin />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-backi/sajkaska-oblast"
+          element={<Suspense fallback={<div>Loading...</div>}><SajkaskaOblast /></Suspense>}
         />
         <Route
-          path={srednjeBanatskiPathRoutes.noviBecej}
-          element={<NoviBecej />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/srednje-banatski"
+          element={<Suspense fallback={<div>Loading...</div>}><SrednjeBanatski /></Suspense>}
         />
         <Route
-          path={srednjeBanatskiPathRoutes.slanoKopovo}
-          element={<SlanoKopovo />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/srednje-banatski/zrenjanin"
+          element={<Suspense fallback={<div>Loading...</div>}><Zrenjanin /></Suspense>}
         />
         <Route
-          path={srednjeBanatskiPathRoutes.staraTisa}
-          element={<StaraTisa />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/srednje-banatski/novi-becej"
+          element={<Suspense fallback={<div>Loading...</div>}><NoviBecej /></Suspense>}
         />
         <Route
-          path={srednjeBanatskiPathRoutes.kupalistePeskara}
-          element={<KupalistePeskara />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/srednje-banatski/slano-kopovo"
+          element={<Suspense fallback={<div>Loading...</div>}><SlanoKopovo /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.home}
-          element={<SremskiOkrug />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/srednje-banatski/stara-tisa"
+          element={<Suspense fallback={<div>Loading...</div>}><StaraTisa /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.sremskaMitrovica}
-          element={<SremskaMitrovica />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/srednje-banatski/kupaliste-peskara"
+          element={<Suspense fallback={<div>Loading...</div>}><KupalistePeskara /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.srpZasavica}
-          element={<SRPZasavica />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><SremskiOkrug /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.indjija}
-          element={<Indjija />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug/sremska-mitrovica"
+          element={<Suspense fallback={<div>Loading...</div>}><SremskaMitrovica /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.sotskoJezero}
-          element={<SotskoJezero />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug/srp-sasavica"
+          element={<Suspense fallback={<div>Loading...</div>}><SRPZasavica /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.novoHopovo}
-          element={<ManastirNovoHopovo />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug/indjija"
+          element={<Suspense fallback={<div>Loading...</div>}><Indjija /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.sid}
-          element={<Sid />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug/sotsko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><SotskoJezero /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.manastirJazak}
-          element={<ManastirJazak />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug/novo-hopovo"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirNovoHopovo /></Suspense>}
         />
         <Route
-          path={sremskiOkrugPathRoutes.besenovackoJezero}
-          element={<BesenovackoJezero />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug/sid"
+          element={<Suspense fallback={<div>Loading...</div>}><Sid /></Suspense>}
         />
         <Route
-          path={juznoBanatskiPathRoutes.home}
-          element={<JuznoBanatski />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug/manastir-jazak"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirJazak /></Suspense>}
         />
         <Route
-          path={juznoBanatskiPathRoutes.pancevo}
-          element={<Pancevo />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/sremski-okrug/besenovacko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><BesenovackoJezero /></Suspense>}
         />
         <Route
-          path={juznoBanatskiPathRoutes.belaCrkva}
-          element={<BelaCrkva />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-banatski"
+          element={<Suspense fallback={<div>Loading...</div>}><JuznoBanatski /></Suspense>}
         />
         <Route
-          path={juznoBanatskiPathRoutes.vracevgajskoJezero}
-          element={<VracevgajskoJezero />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-banatski/pancevo"
+          element={<Suspense fallback={<div>Loading...</div>}><Pancevo /></Suspense>}
         />
         <Route
-          path={juznoBanatskiPathRoutes.deliblatskaPescara}
-          element={<DelibaltskaPescaraIZagajickaBrda />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-banatski/bela-crkva"
+          element={<Suspense fallback={<div>Loading...</div>}><BelaCrkva /></Suspense>}
         />
         <Route
-          path={juznoBanatskiPathRoutes.vrsac}
-          element={<Vrsac />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-banatski/vracevgajsko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><VracevgajskoJezero /></Suspense>}
         />
         <Route
-          path={juznoBanatskiPathRoutes.srpKraljevac}
-          element={<SRPKraljevac />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-banatski/delibaltska-pescara-i-zagajicka-brda"
+          element={<Suspense fallback={<div>Loading...</div>}><DelibaltskaPescaraIZagajickaBrda /></Suspense>}
         />
-        
         <Route
-          path={serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal}
-          element={<SumadijaIZapadnaSrbijaTekstModal />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-banatski/vrsac"
+          element={<Suspense fallback={<div>Loading...</div>}><Vrsac /></Suspense>}
         />
         <Route
-          path={serbianMapPathRoutes.SumadijaIZapadnaSrbija}
-          element={<SumadijaIZapadnaSrbija />}
+          path="/:lang/vojvodina-tekst-modal/vojvodina/juzno-banatski/srp-kraljevac"
+          element={<Suspense fallback={<div>Loading...</div>}><SRPKraljevac /></Suspense>}
         />
+
         <Route
-          path={macvanskiOkrugPathRoutes.home}
-          element={<MacvanskiOkrug />}
+          path="/:lang/sumadija-tekst-modal"
+          element={<Suspense fallback={<div>Loading...</div>}><SumadijaIZapadnaSrbijaTekstModal /></Suspense>}
         />
         <Route
-          path={macvanskiOkrugPathRoutes.sabac}
-          element={<Sabac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija"
+          element={<Suspense fallback={<div>Loading...</div>}><SumadijaIZapadnaSrbija /></Suspense>}
         />
         <Route
-          path={macvanskiOkrugPathRoutes.gucevo}
-          element={<Gucevo />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><MacvanskiOkrug /></Suspense>}
         />
         <Route
-          path={macvanskiOkrugPathRoutes.zvornickoJezero}
-          element={<ZvornickoJezero />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/sabac"
+          element={<Suspense fallback={<div>Loading...</div>}><Sabac /></Suspense>}
         />
         <Route
-          path={macvanskiOkrugPathRoutes.manastirTronosa}
-          element={<ManastirTronosa />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/gucevo"
+          element={<Suspense fallback={<div>Loading...</div>}><Gucevo /></Suspense>}
         />
         <Route
-          path={macvanskiOkrugPathRoutes.planinaCer}
-          element={<Cer />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/zvornicko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><ZvornickoJezero /></Suspense>}
         />
         <Route
-          path={macvanskiOkrugPathRoutes.mackovKamen}
-          element={<MackovKamen />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/manastir-tronosa"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirTronosa /></Suspense>}
         />
         <Route
-          path={macvanskiOkrugPathRoutes.trsic}
-          element={<Trsic />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/planina-cer"
+          element={<Suspense fallback={<div>Loading...</div>}><Cer /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.home}
-          element={<KolubarskiOkrug />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/mackov-kamen"
+          element={<Suspense fallback={<div>Loading...</div>}><MackovKamen /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.valjevo}
-          element={<Valjevo />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/macvanski-okrug/trsic"
+          element={<Suspense fallback={<div>Loading...</div>}><Trsic /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.taorskaVrela}
-          element={<TaorskaVrela />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><KolubarskiOkrug /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.petnickaPecina}
-          element={<PetnickaPecina />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/valjevo"
+          element={<Suspense fallback={<div>Loading...</div>}><Valjevo /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.rekaGradac}
-          element={<RekaGradac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/taorska-vrela"
+          element={<Suspense fallback={<div>Loading...</div>}> <TaorskaVrela /> </Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.manastirLelic}
-          element={<ManastirLelic />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/petnicka-pecina"
+          element={<Suspense fallback={<div>Loading...</div>}><PetnickaPecina /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.vidikovacVelikaStena}
-          element={<VidikovacVelikaStena />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/reka-gradac"
+          element={<Suspense fallback={<div>Loading...</div>}><RekaGradac /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.vrhRajac}
-          element={<VrhRajac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/manastir-lelic"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirLelic /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.manastirCelije}
-          element={<ManastirCelije />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/vidikovac-velika-stena"
+          element={<Suspense fallback={<div>Loading...</div>}><VidikovacVelikaStena /></Suspense>}
         />
         <Route
-          path={kulubarskiOkrugPathRoutes.divcibare}
-          element={<Divcibare />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/vrh-rajac"
+          element={<Suspense fallback={<div>Loading...</div>}><VrhRajac /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.home}
-          element={<SumadijskiOkrug />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/manastir-celije"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirCelije /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.kragujevac}
-          element={<Kragujevac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/kolubarski-okrug/divcibare"
+          element={<Suspense fallback={<div>Loading...</div>}><Divcibare /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.staraPridvornaCrkva}
-          element={<StaraPridvornaCrkva />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><SumadijskiOkrug /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.konakKnezaMihaila}
-          element={<KonakKnezaMihaila />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/kragujevac/"
+          element={<Suspense fallback={<div>Loading...</div>}><Kragujevac /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.zgradaGimnazije}
-          element={<ZgradaGimnazije />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/kragujevac/stara-pridvorna-crkva"
+          element={<Suspense fallback={<div>Loading...</div>}><StaraPridvornaCrkva /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.spomenikStarimSumadincima}
-          element={<SpomenikPalimSumadincima />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/kragujevac/konak-kneza-mihaila"
+          element={<Suspense fallback={<div>Loading...</div>}><KonakKnezaMihaila /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.zgradaGimnazije}
-          element={<ZgradaStareLivnice />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/kragujevac/zgrada-gimnazije"
+          element={<Suspense fallback={<div>Loading...</div>}><ZgradaGimnazije /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.arandjelovac}
-          element={<Arandjelovac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/kragujevac/spomenik-palim-sumadincima"
+          element={<Suspense fallback={<div>Loading...</div>}><SpomenikPalimSumadincima /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.oplenac}
-          element={<Oplenac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/kragujevac/zgrada-stare-livnice"
+          element={<Suspense fallback={<div>Loading...</div>}><ZgradaStareLivnice /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.gruzanskoJezero}
-          element={<GruzanskoJezero />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/arandjelovac"
+          element={<Suspense fallback={<div>Loading...</div>}><Arandjelovac /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.manastirBlagovestenjeRudnicko}
-          element={<ManastirBlagovestenjeRudnicko />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/oplenac"
+          element={<Suspense fallback={<div>Loading...</div>}><Oplenac /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.manastirPetkovica}
-          element={<ManastirPetkovica />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/gruzansko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><GruzanskoJezero /></Suspense>}
         />
         <Route
-          path={sumadijskiOkrugPathRoutes.planinarskaStazaZezeljIBesnjaja}
-          element={<PlaninarskaStazaZezeljIBesnjaja />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/manastir-blagovestenje-rudnciko"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirBlagovestenjeRudnicko /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.home}
-          element={<ZlatiborskiOkrug />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/manastir-petkovica"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirPetkovica /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.uzice}
-          element={<Uzice />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/sumadijski-okrug/zezelj-i-besnjaja"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninarskaStazaZezeljIBesnjaja /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.rekaUvac}
-          element={<RekaUvac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><ZlatiborskiOkrug /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.nacionalniParkTara}
-          element={<NacionalniParkTara />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/uzice"
+          element={<Suspense fallback={<div>Loading...</div>}><Uzice /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.planinaZlatibor}
-          element={<PlaninaZlatibor />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/reka-uvac"
+          element={<Suspense fallback={<div>Loading...</div>}><RekaUvac /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.manastirMileseva}
-          element={<ManastirMileseva />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/nacionalni-park-tara"
+          element={<Suspense fallback={<div>Loading...</div>}><NacionalniParkTara /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.jezeroPerucac}
-          element={<JezeroPerucac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/planina-zlatibor"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaZlatibor /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.vodopadSopotnice}
-          element={<VodopadSopotnice />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/manastir-mileseva"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirMileseva /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.manastirRujan}
-          element={<ManastirRujan />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/jezero-perucac"
+          element={<Suspense fallback={<div>Loading...</div>}><JezeroPerucac /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.planinaZlatar}
-          element={<PlaninaZlatar />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/vodopad-sopotnice"
+          element={<Suspense fallback={<div>Loading...</div>}><VodopadSopotnice /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.zaovinskoJezero}
-          element={<ZaovinskoJezero />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/manastir-rujan"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirRujan /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.stopicaPecina}
-          element={<StopicaPecina />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/planina-zlatar"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaZlatar /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.vodopadGostilje}
-          element={<VodopadGostilje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/zaovinsko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><ZaovinskoJezero /></Suspense>}
         />
         <Route
-          path={zlatiborskiOkrugPathRoutes.mokraGora}
-          element={<MokraGora />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/stopica-pecina"
+          element={<Suspense fallback={<div>Loading...</div>}><StopicaPecina /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.home}
-          element={<MoravickiOkrug />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/vodopad-gostilje"
+          element={<Suspense fallback={<div>Loading...</div>}><VodopadGostilje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.cacak}
-          element={<Cacak />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/zlatiborski-okrug/mokra-gora"
+          element={<Suspense fallback={<div>Loading...</div>}><MokraGora /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.ovcarskoKablarskaKlisura}
-          element={<OvcarskoKablarskaKlisura />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><MoravickiOkrug /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirJovanje}
-          element={<ManastirJovanje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/cacak"
+          element={<Suspense fallback={<div>Loading...</div>}><Cacak /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirNikolje}
-          element={<ManastirNikolje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/ovcarsko-kablarska-klisura"
+          element={<Suspense fallback={<div>Loading...</div>}><OvcarskoKablarskaKlisura /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirPreobrazenje}
-          element={<ManastirPreobraženje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-jovanje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirJovanje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirSavinje}
-          element={<ManastirSavinje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-nikolje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirNikolje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirSveteTrojice}
-          element={<ManastirSveteTrojice />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-preobrazenje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirPreobraženje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirUspenje}
-          element={<ManastirUspenje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-savinje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirSavinje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirVavedenje}
-          element={<ManastirVavedenje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-svete-trojice"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirSveteTrojice /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirVaznesenje}
-          element={<ManastirVaznesenje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-uspenje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirUspenje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.jezeroMedjuvrsje}
-          element={<JezeroMedjuvrsje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-vavedenje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirVavedenje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirBlagovestenje}
-          element={<ManastirBlagovestenje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-vaznesenje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirVaznesenje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.guca}
-          element={<Guca />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/jezero-medjuvrsje"
+          element={<Suspense fallback={<div>Loading...</div>}><JezeroMedjuvrsje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.gornjiMilanovac}
-          element={<GornjiMilanovac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-blagovestenje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirBlagovestenje /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.planinaRudnik}
-          element={<PlaninaRudnik />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/guca"
+          element={<Suspense fallback={<div>Loading...</div>}><Guca /></Suspense>}
         />
         <Route
-          path={moravickiOkrugPathRoutes.manastirSretenje}
-          element={<ManastirSretenje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/gornji-milanovac"
+          element={<Suspense fallback={<div>Loading...</div>}><GornjiMilanovac /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.home}
-          element={<PomoravskiOkrug />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/planina-rudnik"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaRudnik /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.jagodina}
-          element={<Jagodina />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/moravicki-okrug/manastir-sretenje"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirSretenje /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.grza}
-          element={<Grza />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><PomoravskiOkrug /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.manastirManasija}
-          element={<ManastirManasija />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/jagodina"
+          element={<Suspense fallback={<div>Loading...</div>}><Jagodina /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.vodopadLisine}
-          element={<VodopadLisine />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/grza"
+          element={<Suspense fallback={<div>Loading...</div>}><Grza /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.manastirJosanica}
-          element={<ManastirJosanica />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/manastir-manasija"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirManasija /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.resavskaPecina}
-          element={<ResavskaPecina />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/vodopad-lisine"
+          element={<Suspense fallback={<div>Loading...</div>}><VodopadLisine /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.vodopadPrskalo}
-          element={<VodopadPrskalo />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/manastir-josanica"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirJosanica /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.manastirRavanica}
-          element={<ManastirRavanica />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/resavska-pecina"
+          element={<Suspense fallback={<div>Loading...</div>}><ResavskaPecina /></Suspense>}
         />
         <Route
-          path={pomoravskiOkrugPathRoutes.prirodnjackiCentar}
-          element={<PrirodnjackiCentar />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/vodopad-prskalo"
+          element={<Suspense fallback={<div>Loading...</div>}><VodopadPrskalo /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.home}
-          element={<RaskiOkrug />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/manatir-ravanica"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirRavanica /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.kraljevo}
-          element={<Kraljevo />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/prirodnjacki-centar"
+          element={<Suspense fallback={<div>Loading...</div>}><PrirodnjackiCentar /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.manastirStudenica}
-          element={<ManastirStudenica />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><RaskiOkrug /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.planinaKopaonik}
-          element={<PlaninaKopaonik />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/kraljevo"
+          element={<Suspense fallback={<div>Loading...</div>}><Kraljevo /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.vrnjackaBanja}
-          element={<VrnjackaBanja />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/manastir-studenica"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirStudenica /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.manastirZica}
-          element={<ManastirZica />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/planina-kopaonik"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaKopaonik /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.tvrdjavaMaglic}
-          element={<TvrdjavaMaglic />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/vrnjacka-banja"
+          element={<Suspense fallback={<div>Loading...</div>}><VrnjackaBanja /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.planinaGoc}
-          element={<PlaninaGoc />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/manastir-zica"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirZica /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.manastirDjurdjeviStupovi}
-          element={<ManastirDjurdjeviStupovi />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/tvrdjava-maglic"
+          element={<Suspense fallback={<div>Loading...</div>}><TvrdjavaMaglic /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.tvrdjavaStariRas}
-          element={<TvrdjavaStariRas />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/planina-goc"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaGoc /></Suspense>}
         />
         <Route
-          path={raskiOkrugPathRoutes.manastirSopocani}
-          element={<ManastirSopocani />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/manastir-djurdjevi-stupovi"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirDjurdjeviStupovi /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugData.home}
-          element={<RasinskiOkrug />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/tvrdjava-stari-ras"
+          element={<Suspense fallback={<div>Loading...</div>}><TvrdjavaStariRas /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugPathRoutes.krusevac}
-          element={<Krusevac />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/manastir-sopocani"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirSopocani /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugPathRoutes.jezeroCelije}
-          element={<JezeroCelije />}
+          path="/:lang/:sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><RasinskiOkrug /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugPathRoutes.tvrdjavaKoznik}
-          element={<TvrdjavaKoznik />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/krusevac"
+          element={<Suspense fallback={<div>Loading...</div>}><Krusevac /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugPathRoutes.manastirDjunis}
-          element={<ManastirDjunis />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/jezero-celije"
+          element={<Suspense fallback={<div>Loading...</div>}><JezeroCelije /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugPathRoutes.svetilisteMetodje}
-          element={<SvetilisteMetodje />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/tvrdjava-koznik"
+          element={<Suspense fallback={<div>Loading...</div>}><TvrdjavaKoznik /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugData.ribarskaBanja}
-          element={<RibarskaBanja />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/manastir-djunis"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirDjunis /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugPathRoutes.manastirLjubostinja}
-          element={<ManastirLjubostinja />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/svetiliste-metodje"
+          element={<Suspense fallback={<div>Loading...</div>}><SvetilisteMetodje /></Suspense>}
         />
         <Route
-          path={rasinskiOkrugPathRoutes.vodopadJelovarnik}
-          element={<VodopadJelovarnik />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/ribarska-banja"
+          element={<Suspense fallback={<div>Loading...</div>}><RibarskaBanja /></Suspense>}
         />
         <Route
-          path={serbianMapPathRoutes.IstocnaSrbijaTekstModal}
-          element={<JuznaIIStocnaSrbijaTekstModal />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/manastir-ljubostinja"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirLjubostinja /></Suspense>}
         />
         <Route
-          path={serbianMapPathRoutes.IstocnaSrbija}
-          element={<IstocnaiJuznaSrbija />}
+          path="/:lang/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/vodopad-jelovarnik"
+          element={<Suspense fallback={<div>Loading...</div>}><VodopadJelovarnik /></Suspense>}
         />
         <Route
-          path={podunavskiOkrugPathRoutes.home}
-          element={<PodunavskiOkrug />}
+          path="/:lang/istocna-srbija-tekst-modal"
+          element={<Suspense fallback={<div>Loading...</div>}><JuznaIIStocnaSrbijaTekstModal /></Suspense>}
         />
         <Route
-          path={podunavskiOkrugPathRoutes.smederevo}
-          element={<Smederevo />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija"
+          element={<Suspense fallback={<div>Loading...</div>}><IstocnaiJuznaSrbija /></Suspense>}
         />
         <Route
-          path={podunavskiOkrugPathRoutes.manastirPokajnica}
-          element={<ManastirPokajnica />}
+          path="/:lang/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/podunavski-okrug/"
+          element={<Suspense fallback={<div>Loading...</div>}><PodunavskiOkrug /></Suspense>}
         />
         <Route
-          path={podunavskiOkrugPathRoutes.smedervskaTvrdjava}
-          element={<SmederevskaTvrdjava />}
+          path="/:lang/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/podunavski-okrug/smederevo"
+          element={<Suspense fallback={<div>Loading...</div>}><Smederevo /></Suspense>}
         />
         <Route
-          path={podunavskiOkrugPathRoutes.radovanjskiLug}
-          element={<RadovanjskiLug />}
+          path="/:lang/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/podunavski-okrug/manastir-pokajnica"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirPokajnica /></Suspense>}
         />
         <Route
-          path={podunavskiOkrugPathRoutes.manastirKoporin}
-          element={<ManastirKoporin />}
+          path="/:lang/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/podunavski-okrug/smederevska-tvrdjava"
+          element={<Suspense fallback={<div>Loading...</div>}><SmederevskaTvrdjava /></Suspense>}
         />
         <Route
-          path={branicevskiOkrugPathRoutes.home}
-          element={<BranicevskiOkrug />}
+          path="/:lang/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/podunavski-okrug/radovanjski-lug"
+          element={<Suspense fallback={<div>Loading...</div>}><RadovanjskiLug /></Suspense>}
         />
         <Route
-          path={branicevskiOkrugPathRoutes.pozarevac}
-          element={<Pozarevac />}
+          path="/:lang/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/podunavski-okrug/manastir-koporin"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirKoporin /></Suspense>}
         />
         <Route
-          path={branicevskiOkrugPathRoutes.tvrdjavaGolubac}
-          element={<TvrdjavaGolubac />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><BranicevskiOkrug /></Suspense>}
         />
         <Route
-          path={branicevskiOkrugPathRoutes.srebrnoJezero}
-          element={<SrebrnoJezero />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/pozarevac"
+          element={<Suspense fallback={<div>Loading...</div>}><Pozarevac /></Suspense>}
         />
         <Route
-          path={branicevskiOkrugPathRoutes.manastirTumane}
-          element={<ManastirTumane />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/tvrdjava-golubac"
+          element={<Suspense fallback={<div>Loading...</div>}><TvrdjavaGolubac /></Suspense>}
         />
         <Route
-          path={branicevskiOkrugPathRoutes.krupajskoVrelo}
-          element={<KrupajskoVrelo />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/srebrno-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><SrebrnoJezero /></Suspense>}
         />
         <Route
-          path={branicevskiOkrugPathRoutes.manastirGornjak}
-          element={<ManastirGornjak />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/manastir-tumane"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirTumane /></Suspense>}
         />
         <Route
-          path={branicevskiOkrugPathRoutes.planinaBeljanica}
-          element={<PlaninaBeljanica />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/krupajsko-vrelo"
+          element={<Suspense fallback={<div>Loading...</div>}><KrupajskoVrelo /></Suspense>}
         />
         <Route
-          path={borskiOkrugPathRoutes.home}
-          element={<BorskiOkrug />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/manastir-gornjak"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirGornjak /></Suspense>}
         />
         <Route
-          path={borskiOkrugPathRoutes.bor}
-          element={<Bor />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/planina-beljanica"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaBeljanica /></Suspense>}
         />
         <Route
-          path={borskiOkrugPathRoutes.djerdapskaKlisura}
-          element={<DjerdapskaKlisura />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><BorskiOkrug /></Suspense>}
         />
         <Route
-          path={borskiOkrugPathRoutes.lazarevKanjon}
-          element={<LazarevKanjon />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/bor"
+          element={<Suspense fallback={<div>Loading...</div>}><Bor /></Suspense>}
         />
         <Route
-          path={borskiOkrugPathRoutes.lazarevaPecina}
-          element={<LazarevaPecina />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/djerdapska-klisura"
+          element={<Suspense fallback={<div>Loading...</div>}><DjerdapskaKlisura /></Suspense>}
         />
         <Route
-          path={borskiOkrugPathRoutes.borskoJezero}
-          element={<BorskoJezero />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/lazarev-kanjon"
+          element={<Suspense fallback={<div>Loading...</div>}><LazarevKanjon /></Suspense>}
         />
         <Route
-          path={borskiOkrugPathRoutes.lepenskiVir}
-          element={<LepenskiVir />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/lazareva-pecina"
+          element={<Suspense fallback={<div>Loading...</div>}><LazarevaPecina /></Suspense>}
         />
         <Route
-          path={borskiOkrugPathRoutes.rajkovaPecina}
-          element={<RajkovaPecina />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/borsko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><BorskoJezero /></Suspense>}
         />
         <Route
-          path={zajecarskiOkrugPathRoutes.home}
-          element={<ZajecarskiOkrug />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/lepenski-vir"
+          element={<Suspense fallback={<div>Loading...</div>}><LepenskiVir /></Suspense>}
         />
         <Route
-          path={zajecarskiOkrugPathRoutes.zajecar}
-          element={<Zajecar />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/rajkova-pecina"
+          element={<Suspense fallback={<div>Loading...</div>}><RajkovaPecina /></Suspense>}
         />
         <Route
-          path={zajecarskiOkrugPathRoutes.sokoBanja}
-          element={<SokoBanja />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><ZajecarskiOkrug /></Suspense>}
         />
         <Route
-          path={zajecarskiOkrugPathRoutes.planinaRtanj}
-          element={<PlaninaRtanj />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/zajecar"
+          element={<Suspense fallback={<div>Loading...</div>}><Zajecar /></Suspense>}
         />
         <Route
-          path={zajecarskiOkrugPathRoutes.vodopadRipaljka}
-          element={<VodopadRipaljka />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/soko-banja"
+          element={<Suspense fallback={<div>Loading...</div>}><SokoBanja /></Suspense>}
         />
         <Route
-          path={zajecarskiOkrugPathRoutes.sokoGrad}
-          element={<SokoGrad />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/planina-rtanj"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaRtanj /></Suspense>}
         />
         <Route
-          path={zajecarskiOkrugPathRoutes.gamzigrad}
-          element={<FelixRomulijana />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/vodopad-ripaljka"
+          element={<Suspense fallback={<div>Loading...</div>}><VodopadRipaljka /></Suspense>}
         />
         <Route
-          path={nisavskiOkrugPathRoutes.home}
-          element={<NisavskiOkrug />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/soko-grad"
+          element={<Suspense fallback={<div>Loading...</div>}><SokoGrad /></Suspense>}
         />
-        <Route path={nisavskiOkrugPathRoutes.nis} element={<Nis />} />
-        <Route path={nisavskiOkrugPathRoutes.cegar} element={<Cegar />} />
         <Route
-          path={nisavskiOkrugPathRoutes.bovanskoJezero}
-          element={<BovanskoJezero />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/gamzigrad"
+          element={<Suspense fallback={<div>Loading...</div>}><FelixRomulijana /></Suspense>}
         />
         <Route
-          path={nisavskiOkrugPathRoutes.suvaPlanina}
-          element={<SuvaPlanina />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><NisavskiOkrug /></Suspense>}
         />
+        <Route path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/nis" element={<Suspense fallback={<div>Loading...</div>}><Nis /></Suspense>} />
+        <Route path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/cegar" element={<Suspense fallback={<div>Loading...</div>}><Cegar /></Suspense>} />
         <Route
-          path={nisavskiOkrugPathRoutes.sicevackaKlisura}
-          element={<SicevackaKlisura />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/bovansko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><BovanskoJezero /></Suspense>}
         />
         <Route
-          path={nisavskiOkrugPathRoutes.manastirSvetaPetkaIverica}
-          element={<ManastirSvetaPetkaIverica />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/suva-planina"
+          element={<Suspense fallback={<div>Loading...</div>}><SuvaPlanina /></Suspense>}
         />
         <Route
-          path={nisavskiOkrugPathRoutes.niskaBanja}
-          element={<NiskaBanja />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/sicevacka-klisura"
+          element={<Suspense fallback={<div>Loading...</div>}><SicevackaKlisura /></Suspense>}
         />
         <Route
-          path={toplickiOkurgPathRoutes.home}
-          element={<ToplickiOkrug />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/manastir-sveta-petka-iverica"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirSvetaPetkaIverica /></Suspense>}
         />
         <Route
-          path={toplickiOkurgPathRoutes.prokuplje}
-          element={<Prokuplje />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/niska-banja"
+          element={<Suspense fallback={<div>Loading...</div>}><NiskaBanja /></Suspense>}
         />
         <Route
-          path={toplickiOkurgPathRoutes.djavoljaVaros}
-          element={<DjavoljaVaros />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/toplicki-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><ToplickiOkrug /></Suspense>}
         />
         <Route
-          path={toplickiOkurgPathRoutes.jastrebac}
-          element={<PlaninaJastrebac />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/toplicki-okrug/prokuplje"
+          element={<Suspense fallback={<div>Loading...</div>}><Prokuplje /></Suspense>}
         />
         <Route
-          path={toplickiOkurgPathRoutes.hisar}
-          element={<TvrdjavaHisar />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/toplicki-okrug/djavolja-varos"
+          element={<Suspense fallback={<div>Loading...</div>}><DjavoljaVaros /></Suspense>}
         />
         <Route
-          path={toplickiOkurgPathRoutes.hisar}
-          element={<TvrdjavaHisar />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/toplicki-okrug/jastrebac"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaJastrebac /></Suspense>}
         />
         <Route
-          path={toplickiOkurgPathRoutes.manastirSvetogNikole}
-          element={<ManastirSvetogNikole />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/toplicki-okrug/tvrdajva-hisar"
+          element={<Suspense fallback={<div>Loading...</div>}><TvrdjavaHisar /></Suspense>}
         />
         <Route
-          path={toplickiOkurgPathRoutes.planinaRadan}
-          element={<PlaninaRadan />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/toplicki-okrug/manastir-svetog-nikole"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirSvetogNikole /></Suspense>}
         />
         <Route
-          path={pirotskiOkrugPathRoutes.home}
-          element={<PirotskiOkrug />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/toplicki-okrug/planina-radan"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaRadan /></Suspense>}
         />
-        <Route path={pirotskiOkrugPathRoutes.pirot} element={<Pirot />} />
         <Route
-          path={pirotskiOkrugPathRoutes.staraPlanina}
-          element={<StaraPlanina />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><PirotskiOkrug /></Suspense>}
         />
+        <Route path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/pirot" element={<Suspense fallback={<div>Loading...</div>}><Pirot /></Suspense>} />
         <Route
-          path={pirotskiOkrugPathRoutes.zavojskoJezero}
-          element={<ZavojskoJezero />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/stara-planina"
+          element={<Suspense fallback={<div>Loading...</div>}><StaraPlanina /></Suspense>}
         />
         <Route
-          path={pirotskiOkrugPathRoutes.vodopadTupavica}
-          element={<VodopadTupavica />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/zavojsko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><ZavojskoJezero /></Suspense>}
         />
         <Route
-          path={pirotskiOkrugPathRoutes.manastirSukovo}
-          element={<ManastirSukovo />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/vodopad-tupavica"
+          element={<Suspense fallback={<div>Loading...</div>}><VodopadTupavica /></Suspense>}
         />
         <Route
-          path={pirotskiOkrugPathRoutes.vodopadBigar}
-          element={<VodopadBigar />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/manastir-sukovo"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirSukovo /></Suspense>}
         />
         <Route
-          path={pirotskiOkrugPathRoutes.jerma}
-          element={<KanjonRekeJerme />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/vodopad-bigar"
+          element={<Suspense fallback={<div>Loading...</div>}><VodopadBigar /></Suspense>}
         />
         <Route
-          path={jablanickiOkrugPathRoutes.home}
-          element={<JablanickiOkrug />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/kanjon-reke-jerme"
+          element={<Suspense fallback={<div>Loading...</div>}><KanjonRekeJerme /></Suspense>}
         />
         <Route
-          path={jablanickiOkrugPathRoutes.leskovac}
-          element={<Leskovac />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/jablanicki-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><JablanickiOkrug /></Suspense>}
         />
         <Route
-          path={jablanickiOkrugPathRoutes.brestovackoJezero}
-          element={<BrestovackoJezero />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/jablanicki-okrug/leskovac"
+          element={<Suspense fallback={<div>Loading...</div>}><Leskovac /></Suspense>}
         />
         <Route
-          path={jablanickiOkrugPathRoutes.babickaGora}
-          element={<PlaninaBabickaGora />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/jablanicki-okrug/brestovacko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><BrestovackoJezero /></Suspense>}
         />
         <Route
-          path={jablanickiOkrugPathRoutes.kanjonVucjanke}
-          element={<KanjonVucjanke />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/jablanicki-okrug/babicka-gora"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaBabickaGora /></Suspense>}
         />
         <Route
-          path={jablanickiOkrugPathRoutes.planinaGoljak}
-          element={<PlaninaGoljak />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/jablanicki-okrug/kanjon-vucjanke"
+          element={<Suspense fallback={<div>Loading...</div>}><KanjonVucjanke /></Suspense>}
         />
         <Route
-          path={jablanickiOkrugPathRoutes.tularskaBanja}
-          element={<TularskaBanja />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/jablanicki-okrug/planina-goljak"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaGoljak /></Suspense>}
         />
         <Route
-          path={pcinjskiOkrugPathRoutes.home}
-          element={<PcinjskiOkrug />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/jablanicki-okrug/tularska-banja"
+          element={<Suspense fallback={<div>Loading...</div>}><TularskaBanja /></Suspense>}
         />
-        <Route path={pcinjskiOkrugPathRoutes.vranje} element={<Vranje />} />
         <Route
-          path={pcinjskiOkrugPathRoutes.vlasinskoJezero}
-          element={<VlasinskoJezero />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pcinjski-okrug"
+          element={<Suspense fallback={<div>Loading...</div>}><PcinjskiOkrug /></Suspense>}
         />
+        <Route path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pcinjski-okrug/vranje" element={<Suspense fallback={<div>Loading...</div>}><Vranje /></Suspense>} />
         <Route
-          path={pcinjskiOkrugPathRoutes.besnaKobila}
-          element={<PlaninaBesnaKobila />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pcinjski-okrug/vlasinsko-jezero"
+          element={<Suspense fallback={<div>Loading...</div>}><VlasinskoJezero /></Suspense>}
         />
         <Route
-          path={pcinjskiOkrugPathRoutes.prohorPcinjski}
-          element={<ManastirProhoraPcinjskog />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pcinjski-okrug/besna-kobila"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaBesnaKobila /></Suspense>}
         />
         <Route
-          path={pcinjskiOkrugPathRoutes.planinaKukavica}
-          element={<PlaninaKukavica />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pcinjski-okrug/prohor-pcinjski"
+          element={<Suspense fallback={<div>Loading...</div>}><ManastirProhoraPcinjskog /></Suspense>}
         />
         <Route
-          path={pcinjskiOkrugPathRoutes.planinaCemernik}
-          element={<PlaninaCemernik />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pcinjski-okrug/planina-kukavica"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaKukavica /></Suspense>}
         />
         <Route
-          path={"/KosovoIMetohijaTekstModal"}
-          element={<KosovoIMetohijaTekstModal />}
+          path="/:lang/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pcinjski-okrug/planina-cemernik"
+          element={<Suspense fallback={<div>Loading...</div>}><PlaninaCemernik /></Suspense>}
         />
         <Route
-          path={"/KosovoIMetohijaTekstModal/KosovoIMetohija"}
-          element={<KosovoIMetohija />}
+          path="/:lang/kosovo-i-metohija-tekst-modal"
+          element={<Suspense fallback={<div>Loading...</div>}><KosovoIMetohijaTekstModal /></Suspense>}
         />
-        <Route path={peckiOkrugPathRoutes.home} element={<PeckiOkrug />} />
-        <Route path={peckiOkrugPathRoutes.pec} element={<Pec />} />
-        <Route path={peckiOkrugPathRoutes.peckaPatrijarsija} element={<PeckaPatrijarsija />} />
-        <Route path={peckiOkrugPathRoutes.mokraGora} element={<PlaninaMokraGora />} />
-        <Route path={peckiOkrugPathRoutes.vodopadBeliDrim} element={<VodopadBeliDrim />} />
-        <Route path={peckiOkrugPathRoutes.planinaZutiKamen} element={<PlaninaZutiKamen />} />
-        <Route path={mitrovackiOkrugPathRoutes.home} element={<MitrovackiOkrug />} />
-        <Route path={mitrovackiOkrugPathRoutes.mitrovica} element={<KosovskaMitrovica />} />
-        <Route path={mitrovackiOkrugPathRoutes.banjska} element={<ManastirBanjska />} />
-        <Route path={mitrovackiOkrugPathRoutes.gazivode} element={<GazivodskoJezero />} />
-        <Route path={mitrovackiOkrugPathRoutes.devic} element={<ManastirDevic />} />
-        <Route path={pristinskiOkrugPathRoutes.home} element={<PristinskiOkrug />} />
-        <Route path={pristinskiOkrugPathRoutes.pristina} element={<Pristina />} />
-        <Route path={pristinskiOkrugPathRoutes.gracanica} element={<ManastirGracanica />} />
-        <Route path={pristinskiOkrugPathRoutes.gazimestan} element={<Gazimestan />} />
-        <Route path={pristinskiOkrugPathRoutes.mermernaPecina} element={<MermernaPecina />} />
-        <Route path={pristinskiOkrugPathRoutes.tvrdjavaNovoBrdo} element={<TvrdjavaNovoBrdo />} />
-        <Route path={prizrenskiOkrugPathRoutes.home} element={<PrizrenskiOkrug />} />
-        <Route path={prizrenskiOkrugPathRoutes.prizren} element={<Prizren />} />
-        <Route path={prizrenskiOkrugPathRoutes.manastirSvetihArhangela} element={<ManastirSvetihArhangela />} />
-        <Route path={prizrenskiOkrugPathRoutes.vodopadMirusa} element={<VodopadMirusa />} />
-        <Route path={djakovickiOkrugPathRoutes.home} element={<DjakovickiOkrug />} />
-        <Route path={djakovickiOkrugPathRoutes.djakovica} element={<Djakovica />} />
-        <Route path={djakovickiOkrugPathRoutes.decani} element={<ManastirVisokiDecani />} />
-        <Route path={djakovickiOkrugPathRoutes.prokletije} element={<Prokletije />} />
-        <Route path={urosevackiOkrugPathRoutes.home} element={<UrosevackiOkrug />} />
-        <Route path={urosevackiOkrugPathRoutes.urosevac} element={<Urosevac />} />
-        <Route path={urosevackiOkrugPathRoutes.brezovica} element={<Brezovica />} />
-        <Route path={urosevackiOkrugPathRoutes.ljuboten} element={<Ljuboten />} />
-        <Route path={gnjilanskiOkrugPathRoutes.home} element={<GnjilanskiOkrug />} />
-        <Route path={gnjilanskiOkrugPathRoutes.gnjilane} element={<Gnjilane />} />
-        <Route path={gnjilanskiOkrugPathRoutes.ubozac} element={<ManastirUbozac />} />
-        <Route path={gnjilanskiOkrugPathRoutes.podgradje} element={<TvrdjavaPodgradje />} />
+        <Route
+          path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija"
+          element={<Suspense fallback={<div>Loading...</div>}><KosovoIMetohija /></Suspense>}
+        />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pecki-okrug" element={<Suspense fallback={<div>Loading...</div>}><PeckiOkrug /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pecki-okrug/pec" element={<Suspense fallback={<div>Loading...</div>}><Pec /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pecki-okrug/pecka-patrijarsija" element={<Suspense fallback={<div>Loading...</div>}><PeckaPatrijarsija /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pecki-okrug/mokra-gora" element={<Suspense fallback={<div>Loading...</div>}><PlaninaMokraGora /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pecki-okrug/vodopad-beli-drim" element={<Suspense fallback={<div>Loading...</div>}><VodopadBeliDrim /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pecki-okrug/planina-zuti-kamen" element={<Suspense fallback={<div>Loading...</div>}><PlaninaZutiKamen /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug" element={<Suspense fallback={<div>Loading...</div>}><MitrovackiOkrug /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug/kosovksa-mitrovica" element={<Suspense fallback={<div>Loading...</div>}><KosovskaMitrovica /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug/manatir-banjska" element={<Suspense fallback={<div>Loading...</div>}><ManastirBanjska /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug/gazivodsko-jezero" element={<Suspense fallback={<div>Loading...</div>}><GazivodskoJezero /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/mitrovacki-okrug/manastir-devic" element={<Suspense fallback={<div>Loading...</div>}><ManastirDevic /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug" element={<Suspense fallback={<div>Loading...</div>}><PristinskiOkrug /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/pristina" element={<Suspense fallback={<div>Loading...</div>}><Pristina /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/gracanica" element={<Suspense fallback={<div>Loading...</div>}><ManastirGracanica /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/gazimestan" element={<Suspense fallback={<div>Loading...</div>}><Gazimestan /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/mermerna-pecina" element={<Suspense fallback={<div>Loading...</div>}><MermernaPecina /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/pristinski-okrug/tvrdjava-novo-brdo" element={<Suspense fallback={<div>Loading...</div>}><TvrdjavaNovoBrdo /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/prizrenski-okrug" element={<Suspense fallback={<div>Loading...</div>}><PrizrenskiOkrug /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/prizrenski-okrug/prizren" element={<Suspense fallback={<div>Loading...</div>}><Prizren /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/prizrenski-okrug/manastir-svetih-arhangela" element={<Suspense fallback={<div>Loading...</div>}><ManastirSvetihArhangela /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/prizrenski-okrug/vodopad-mirusa" element={<Suspense fallback={<div>Loading...</div>}><VodopadMirusa /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/djakovicki-okrug/" element={<Suspense fallback={<div>Loading...</div>}><DjakovickiOkrug /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/djakovicki-okrug/djakovica" element={<Suspense fallback={<div>Loading...</div>}><Djakovica /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/djakovicki-okrug/manastir-visoki-decani" element={<Suspense fallback={<div>Loading...</div>}><ManastirVisokiDecani /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/djakovicki-okrug/planina-prokletije" element={<Suspense fallback={<div>Loading...</div>}><Prokletije /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/urosevacki-okrug" element={<Suspense fallback={<div>Loading...</div>}><UrosevackiOkrug /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/urosevacki-okrug/urosevac" element={<Suspense fallback={<div>Loading...</div>}><Urosevac /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/urosevacki-okrug/brezovica" element={<Suspense fallback={<div>Loading...</div>}><Brezovica /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/urosevacki-okrug/ljuboten" element={<Suspense fallback={<div>Loading...</div>}><Ljuboten /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/gnjilanski-okrug" element={<Suspense fallback={<div>Loading...</div>}><GnjilanskiOkrug /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/gnjilanski-okrug/gnjilane" element={<Suspense fallback={<div>Loading...</div>}><Gnjilane /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/gnjilanski-okrug/manastir-ubozac" element={<Suspense fallback={<div>Loading...</div>}><ManastirUbozac /></Suspense>} />
+        <Route path="/:lang/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/gnjilanski-okrug/tvrdjava-podgradje" element={<Suspense fallback={<div>Loading...</div>}><TvrdjavaPodgradje /></Suspense>} />
 
       </Routes>
-      </Layout>
-    </BrowserRouter>
+
+    </Layout>
   );
 }
 

@@ -10,8 +10,14 @@ import { macvanskiOkrugPathRoutes } from "./Okruzi/Macvanski/MacvanskiOkrugPathR
 import { moravickiOkrugPathRoutes } from "./Okruzi/Moravicki/MoravickiOkrugPathRoutes";
 import { pomoravskiOkrugPathRoutes } from "./Okruzi/Pomoravski/PomoravskiOkrugPathRoutes";
 import { serbianMapPathRoutes } from "../../serbianMapPathRoutes";
+import { useContextAuth } from "../../../Context";
+import { raskiOkrugPathRoutes } from "./Okruzi/Raski/RaskiOkrugPathRoutes";
+import { rasinskiOkrugPathRoutes } from "./Okruzi/Rasinski/RasinskiOkrugPathRoutes";
+import { sumadijskiOkrugPathRoutes } from "./Okruzi/Sumadijski/SumadijskiOkrugPathRoutes";
+import { zlatiborskiOkrugData } from "./Okruzi/Zlatiborski/ZlatiborskiOkrugData";
+import { zlatiborskiOkrugPathRoutes } from "./Okruzi/Zlatiborski/ZlatiborskiOkrugPahtRoutes";
 
-export const SumadijaIZapadnaSrbija = () => {
+const SumadijaIZapadnaSrbija = () => {
   const center = [43.92543064661552, 20.38526435851563];
   const navigate = useNavigate();
   const [showMacvanski, setShowMacvanski] = useState(false);
@@ -22,6 +28,7 @@ export const SumadijaIZapadnaSrbija = () => {
   const [showPomoravski, setShowPomoravski] = useState(false);
   const [showRaski, setShowRaski] = useState(false);
   const [showRasinski, setShowRasinski] = useState(false);
+  const { switchLanguage } = useContextAuth();
   const [zoom, setZoom] = useState(() => {
     if (window.innerWidth < 600) {
       return 6;
@@ -36,106 +43,109 @@ export const SumadijaIZapadnaSrbija = () => {
 
   useEffect(() => {
     if (showMacvanski) {
-      return navigate(macvanskiOkrugPathRoutes.home);
+      return navigate(macvanskiOkrugPathRoutes.home(switchLanguage));
     } else if (showKolubarski) {
-      return navigate(kulubarskiOkrugPathRoutes.home);
+      return navigate(kulubarskiOkrugPathRoutes.home(switchLanguage));
     } else if (showSumadijski) {
-      return navigate("Sumadijski");
+      return navigate(sumadijskiOkrugPathRoutes.home(switchLanguage));
     } else if (showZlatiborski) {
-      return navigate("ZlatiborskiOkrug");
+      return navigate(zlatiborskiOkrugPathRoutes.home(switchLanguage));
     } else if (showMoravicki) {
-      return navigate(moravickiOkrugPathRoutes.home);
+      return navigate(moravickiOkrugPathRoutes.home(switchLanguage));
     } else if (showPomoravski) {
-      return navigate(pomoravskiOkrugPathRoutes.home);
+      return navigate(pomoravskiOkrugPathRoutes.home(switchLanguage));
     } else if (showRaski) {
-      return navigate("RaskiOkrug");
+      return navigate(raskiOkrugPathRoutes.home(switchLanguage));
     } else if (showRasinski) {
-      return navigate("RasinskiOkrug");
+      return navigate(rasinskiOkrugPathRoutes.home(switchLanguage));
     }
   });
 
   return (
     <div>
-      
-
-    <MapContainer
-      center={center}
-      zoom={zoom}
-      style={{ width: "100vw", height: "100vh", position: "none" }}
-      //maxBounds={bounds}
-      maxBoundsViscosity={1.0}
-      scrollWheelZoom={false}
-    >
+      <MapContainer
+        center={center}
+        zoom={zoom}
+        style={{ width: "100vw", height: "100vh", position: "none" }}
+        //maxBounds={bounds}
+        maxBoundsViscosity={1.0}
+        scrollWheelZoom={false}
+      >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-      <FaArrowLeft
-        className="arrowLeft"
-        onClick={() => navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal)}
-        style={{zIndex: "400" }}
-      />
-      {SumadijaIZapadnaSrbijaRegioni?.features?.map((statisticRegion) => {
-        const cordinates = statisticRegion?.geometry?.coordinates[0]?.map(
-          (item) => [item[1], item[0]]
-        );
+        <FaArrowLeft
+          className="arrowLeft"
+          onClick={() =>
+            navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal(switchLanguage))
+          }
+          style={{ zIndex: "40000", position: "absolute" }}
+        />
+        {SumadijaIZapadnaSrbijaRegioni?.features?.map((statisticRegion) => {
+          const cordinates = statisticRegion?.geometry?.coordinates[0]?.map(
+            (item) => [item[1], item[0]]
+          );
 
-        return (
-          <Polygon
-            pathOptions={{
-              fillColor: "green",
-              fillOpacity: 0.8,
-              weight: 2,
-              opacity: 1,
-              color: "white",
-            }}
-            positions={cordinates}
-            eventHandlers={{
-              mouseover: (e) => {
-                const layer = e.target;
-                layer.setStyle({
-                  fillOpacity: 3,
-                  weight: 5,
-                });
-              },
-              mouseout: (e) => {
-                const layer = e.target;
-                layer.setStyle({
-                  fillColor: "green",
-                  fillOpacity: 0.8,
-                  weight: 2,
-                  color: "white",
-                });
-              },
-              click: (e) => {
-                statisticRegion?.properties?.name === "Mačvanski" &&
-                  setShowMacvanski(true);
-                statisticRegion?.properties?.name === "Kolubarski" &&
-                  setShowKolubarski(true);
-                statisticRegion?.properties?.name === "Šumadijski" &&
-                  setShowSumadijski(true);
-                statisticRegion?.properties?.name === "Zlatiborski" &&
-                  setShowZlatiborski(true);
-                statisticRegion?.properties?.name === "Moravički" &&
-                  setShowMoravicki(true);
-                statisticRegion?.properties?.name === "Pomoravski" &&
-                  setShowPomoravski(true);
-                statisticRegion?.properties?.name === "Raški" &&
-                  setShowRaski(true);
-                statisticRegion?.properties?.name === "Rasinski" &&
-                  setShowRasinski(true);
-              },
-            }}
-          >
-            <Tooltip>
-              <span className="toolTipClass">
-                {statisticRegion?.properties?.name}
-              </span>
-            </Tooltip>
-          </Polygon>
-        );
-      })}
-    </MapContainer>
+          return (
+            <Polygon
+              pathOptions={{
+                fillColor: "green",
+                fillOpacity: 0.8,
+                weight: 2,
+                opacity: 1,
+                color: "white",
+              }}
+              positions={cordinates}
+              eventHandlers={{
+                mouseover: (e) => {
+                  const layer = e.target;
+                  layer.setStyle({
+                    fillOpacity: 3,
+                    weight: 5,
+                  });
+                },
+                mouseout: (e) => {
+                  const layer = e.target;
+                  layer.setStyle({
+                    fillColor: "green",
+                    fillOpacity: 0.8,
+                    weight: 2,
+                    color: "white",
+                  });
+                },
+                click: (e) => {
+                  statisticRegion?.properties?.name === "Mačvanski" &&
+                    setShowMacvanski(true);
+                  statisticRegion?.properties?.name === "Kolubarski" &&
+                    setShowKolubarski(true);
+                  statisticRegion?.properties?.name === "Šumadijski" &&
+                    setShowSumadijski(true);
+                  statisticRegion?.properties?.name === "Zlatiborski" &&
+                    setShowZlatiborski(true);
+                  statisticRegion?.properties?.name === "Moravički" &&
+                    setShowMoravicki(true);
+                  statisticRegion?.properties?.name === "Pomoravski" &&
+                    setShowPomoravski(true);
+                  statisticRegion?.properties?.name === "Raški" &&
+                    setShowRaski(true);
+                  statisticRegion?.properties?.name === "Rasinski" &&
+                    setShowRasinski(true);
+                },
+              }}
+            >
+              <Tooltip>
+                <span className="toolTipClass">
+                  {statisticRegion?.properties?.name}
+                </span>
+              </Tooltip>
+            </Polygon>
+          );
+        })}
+      </MapContainer>
     </div>
   );
 };
+
+
+export default SumadijaIZapadnaSrbija;

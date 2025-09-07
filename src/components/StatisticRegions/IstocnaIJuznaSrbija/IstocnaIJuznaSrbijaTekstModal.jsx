@@ -5,13 +5,14 @@ import { Outlet } from "react-router-dom";
 import { ScrollToTop } from "../../../ScrollToTop";
 import { IstocnaIJuznaSrbijaText } from "./IstocnaIJuznaSrbijaTekst";
 import { serbianMapPathRoutes } from "../../serbianMapPathRoutes";
+import { useContextAuth } from "../../../Context";
 
-export const JuznaIIStocnaSrbijaTekstModal = ({ goBack }) => {
-
+const JuznaIIStocnaSrbijaTekstModal = ({ goBack }) => {
+  const { switchLanguage } = useContextAuth();
   const navigate = useNavigate();
 
   const handleNext = () => {
-    navigate(serbianMapPathRoutes.IstocnaSrbija);
+    navigate(serbianMapPathRoutes.IstocnaSrbija(switchLanguage));
   };
 
   return (
@@ -79,3 +80,5 @@ export const JuznaIIStocnaSrbijaTekstModal = ({ goBack }) => {
     </div>
   );
 };
+
+export default JuznaIIStocnaSrbijaTekstModal;

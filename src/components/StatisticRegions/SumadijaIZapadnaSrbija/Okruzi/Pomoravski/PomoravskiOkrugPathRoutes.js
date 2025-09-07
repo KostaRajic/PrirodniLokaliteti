@@ -1,12 +1,12 @@
 export const pomoravskiOkrugPathRoutes = {
-    home: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug",
-    jagodina: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/Jagodina",
-    grza: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/Grza",
-    manastirManasija: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirManasija",
-    vodopadLisine: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadLisine",
-    manastirJosanica: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManastirJosanica",
-    resavskaPecina: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ResavskaPecina",
-    vodopadPrskalo: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/VodopadPrskalo",
-    manastirRavanica: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/ManatirRavanica",
-    prirodnjackiCentar: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/PomoravskiOkrug/PrirodnjackiCentar"
+    home: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug`,
+    jagodina: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/jagodina`,
+    grza: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/grza`,
+    manastirManasija: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/manastir-manasija`,
+    vodopadLisine: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/vodopad-lisine`,
+    manastirJosanica: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/manastir-josanica`,
+    resavskaPecina: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/resavska-pecina`,
+    vodopadPrskalo: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/vodopad-prskalo`,
+    manastirRavanica: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/manatir-ravanica`,
+    prirodnjackiCentar: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/pomoravski-okrug/prirodnjacki-centar`
 }

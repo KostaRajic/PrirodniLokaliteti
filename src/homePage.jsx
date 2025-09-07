@@ -1,37 +1,41 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useContextAuth } from "./Context";
+import ImageBackgroundSlider from "./components/ImageBackground";
 
 export const HomePage = () => {
   const navigate = useNavigate();
-  // const [isMobile, setIsMobile] = useState(false);
+  const { switchLanguage } = useContextAuth();
+  const [lang, setLang] = useState("rs");
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth < 600);
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-  //   handleResize();
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
+  useEffect(() => {
+    if (switchLanguage) setLang(switchLanguage);
+  }, [switchLanguage]);
 
   return (
     <>
       <div className="homePage">
-        <div>
+        <ImageBackgroundSlider  />
+        <div className="homePageTextContent">
+          <h1>
+            {lang === "rs"
+              ? "Otkrijte čuda i skrivene dragulje Srbije."
+              : "Discover the Wonders and Hidden Gems of Serbia"}
+          </h1>
 
-            <h1>
-              "Explore the Hidden Gems of Serbia: Unforgettable Travel
-              Destinations"
-            </h1>
+          {lang === "rs" ? (
+            <h2>
+               Istražite ih na
+              <button  onClick={() => navigate("/serbianMap")}>interaktivnoj mapi Srbije</button>
+            </h2>
+          ) : (
+            <h2>
+              Explore them on the
+              <button  onClick={() => navigate("/serbianMap")}>INTERACTIVE MAP OF SERBIA</button>
+            </h2>
+          )}
 
-          <h2>
-            View them on the{" "}
-            <span onClick={() => navigate("/serbianMap")}>Map of Serbia</span>
-          </h2>
+
         </div>
       </div>
     </>

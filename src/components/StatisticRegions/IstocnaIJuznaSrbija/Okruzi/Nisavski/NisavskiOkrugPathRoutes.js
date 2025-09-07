@@ -1,10 +1,10 @@
 export const nisavskiOkrugPathRoutes = {
-    home: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/NisavskiOkrug",
-    nis: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/NisavskiOkrug/Nis",
-    cegar: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/NisavskiOkrug/Cegar",
-    bovanskoJezero: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/NisavskiOkrug/BovanskoJezero",
-    suvaPlanina: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/NisavskiOkrug/SuvaPlanina",
-    sicevackaKlisura: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/NisavskiOkrug/SicevackaKlisura",
-    manastirSvetaPetkaIverica: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/NisavskiOkrug/ManastirSvetaPetkaIverica",
-    niskaBanja: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/NisavskiOkrug/NiskaBanja"
+    home: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug`,
+    nis: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/nis`,
+    cegar: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/cegar`,
+    bovanskoJezero: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/bovansko-jezero`,
+    suvaPlanina: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/suva-planina`,
+    sicevackaKlisura: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/sicevacka-klisura`,
+    manastirSvetaPetkaIverica: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/manastir-sveta-petka-iverica`,
+    niskaBanja: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/nisavski-okrug/niska-banja`
 }

@@ -1,6 +1,6 @@
 export const prizrenskiOkrugPathRoutes = {
-    home: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PrizrenskiOkrug",
-    prizren: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PrizrenskiOkrug/Prizren",
-    manastirSvetihArhangela: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PrizrenskiOkrug/ManastirSvetihArhangela",
-    vodopadMirusa: "/KosovoIMetohijaTekstModal/KosovoIMetohija/PrizrenskiOkrug/VodopadMirusa"
+    home: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/prizrenski-okrug`,
+    prizren: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/prizrenski-okrug/prizren`,
+    manastirSvetihArhangela: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/prizrenski-okrug/manastir-svetih-arhangela`,
+    vodopadMirusa: (lang) => `/${lang}/kosovo-i-metohija-tekst-modal/kosovo-i-metohija/prizrenski-okrug/vodopad-mirusa`
 }

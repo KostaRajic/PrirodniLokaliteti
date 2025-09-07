@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import brestovackoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/desktop/brestovackoJezero1.jpg";
 import brestovackoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/desktop/brestovackoJezero2.jpg";
 import brestovackoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/desktop/brestovackoJezero3.jpg";
@@ -8,66 +9,168 @@ import brestovackoJezero33 from "../../../../../assets/images/JuznaIIstocnaSrbij
 import brestovackoJezero44 from "../../../../../assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/BrestovackoJezero/mobile/brestovackoJezeroM4.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { jablanickiOkrugPathRoutes } from "./JablanickiOkrugPathRoutes";
+import { useContextAuth } from "../../../../../Context";
+import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
-export const BrestovackoJezero = () => {
+const BrestovackoJezero = () => {
   const navigate = useNavigate();
+  const { switchLanguage } = useContextAuth();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && lang !== switchLanguage) {
+      const newPath = window.location.pathname.replace(/^\/[^\/]+/, `/${switchLanguage}`);
+      navigate(newPath, { replace: true });
+    }
+  }, [switchLanguage, lang, navigate]);
+
 
   return (
-    <div className="placeBackground">
-      <ScrollToTop />
-      <FaArrowLeft
-        className="arrowLeft"
-        onClick={() => navigate(jablanickiOkrugPathRoutes.home)}
+    <>
 
-      />
-      <header></header>
-      <img srcSet={`${brestovackoJezero11} 400w, ${brestovackoJezero1} `} alt="Brestovačko jezero 1" />
+      <Helmet>
 
-      <h2>Brestovačko jezero</h2>
+        <title>{switchLanguage === 'rs' ? "Brestovačko jezero – Veštačka akumulacija ispod Radana | Serbia Wonders" : "Brestovačko Lake – An Artificial Reservoir Below Radan | Serbia Wonders"}</title>
+        <meta
+          name="description"
+          content={switchLanguage === 'rs' ?
+            "Brestovačko jezero, poznato i kao Bojničko, Bubličko ili Magaško, nalazi se u selu Brestovac, 10 km zapadno od Bojnika. Jezero se koristi za snabdevanje vodom, ali i kao omiljeno mesto za kupanje i ribolov."
+            :
+            "Brestovačko Lake, also known as Bojnička, Bublička or Magaška Lake, is located in the village of Brestovac, 10 km west of Bojnik. It serves for water supply and is a popular destination for swimming and fishing."
+          }
+        />
+        <meta
+          name="keywords"
+          content={switchLanguage === 'rs' ?
+            "Brestovačko jezero, Bojničko jezero, Bubličko jezero, Magaško jezero, Pusta reka, planina Radan, ribolov, kupanje, kampovanje, veštačka akumulacija, jezera u Srbiji, Bojnik, Lebane, Brestovac"
+            :
+            "Brestovačko Lake, Bojnička Lake, Bublička Lake, Magaška Lake, Pusta River, Radan Mountain, fishing, swimming, camping, artificial reservoir, lakes in Serbia, Bojnik, Lebane, Brestovac"
+          }
+        />
+        <meta name="author" content="Serbia Wonders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.serbiawonders.com/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/brestovacko-jezero`}
+        />
+        <link
+          rel="alternate"
+          hreflang="sr"
+          href="https://www.serbiawonders.com/sr/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/brestovacko-jezero"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.serbiawonders.com/en/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/brestovacko-jezero"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://www.serbiawonders.com/en/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/branicevski-okrug/brestovacko-jezero"
+        />
 
-      <p style={{ paddingTop: "50px" }}>
-        Brestovačko, Bojničko, Bubličko i Magaško jezero predstavljaju različite
-        nazive za veštačku akumulaciju koja se nalazi u selu Brestovac,
-        otprilike 10 kilometara zapadno od Bojnika. Jezero je smešteno u
-        podnožju planine Radan na visini od 400 metara nadmorske visine.
-        Napravljeno je krajem 1970-ih godina pregrađivanjem Puste reke u njenom
-        gornjem toku. Koristi se za snabdevanje vodom naselja Lebane i Bojnik.
-      </p>
+      </Helmet>
 
-      <img srcSet={`${brestovackoJezero22} 400w, ${brestovackoJezero2} `} alt="Brestovačko jezero 2" />
 
-      <p>
-        Brestovačko jezero prostire se na dužini od 2,8 kilometara i širini od
-        500 metara. Najveća dubina jezera je 28 metara, dok prosečna dubina
-        iznosi 12 metara. Površina jezera je oko 75 hektara. Obalu jezera čine
-        brojna poluostrva, jedan rt (istureni deo kopna) i dva zaliva. Voda u
-        jezeru dolazi iz Puste reke, koja izvire na planini Radan.
-      </p>
+      <div className="placeBackground">
+        <ScrollToTop />
+        <FaArrowLeft
+          className="arrowLeft"
+          onClick={() => navigate(jablanickiOkrugPathRoutes.home(switchLanguage))}
 
-      <img srcSet={`${brestovackoJezero33} 400w, ${brestovackoJezero3} `} alt="Brestovačko jezero 3" />
+        />
+        <header></header>
+        <img srcSet={`${brestovackoJezero11} 450w, ${brestovackoJezero1} `} alt="Brestovačko jezero 1" loading="lazy" />
 
-      <p>
-        Brestovačko jezero je bogato različitim vrstama riba, među kojima se
-        nalaze som, šaran, klen, amur, štuka, babuška, bodorka, belica i
-        deverika. Ova akumulacija privlači brojne ribolovce tokom cele godine.
-        Tokom letnjih meseci, jezero postaje popularno odredište za kupače, jer
-        su dani topli, što ga čini savršenim mestom za uživanje u kupanju. Na
-        obali je uređen parking, kao i sportski tereni. Takođe, na plaži je
-        dozvoljeno kampovanje.
-      </p>
+        {switchLanguage === 'rs' ?
+          (
+            <>
 
-      <img srcSet={`${brestovackoJezero44} 400w, ${brestovackoJezero4} `} alt="Brestovačko jezero 4" />
+              <h2>Brestovačko jezero</h2>
 
-      <p>
-        Brestovačko jezero je pristupačno iz dva pravca. Ako dolazite iz Niša,
-        put vas vodi preko Doljevca i Žitorađe, a do jezera se dolazi skretanjem
-        sa autoputa kod naselja Brestovac, pre nego što se stigne do Leskovca. S
-        druge strane, ako dolazite iz pravca Prokuplja, potrebno je preći prevor
-        Beli kamen.
-      </p>
-    </div>
+              <section lang="sr">
+                <p>
+                  <strong>Brestovačko</strong>, <strong>Bojničko</strong>, <strong>Bubličko</strong> i <strong>Magaško jezero</strong> predstavljaju različite nazive za <em>veštačku akumulaciju</em> koja se nalazi u selu <strong>Brestovac</strong>, otprilike 10 kilometara zapadno od <strong>Bojnika</strong>. Jezero je smešteno u podnožju planine <strong>Radan</strong> na visini od <strong>400 metara</strong> nadmorske visine. Napravljeno je krajem 1970-ih godina pregrađivanjem <strong>Puste reke</strong> u njenom gornjem toku. Koristi se za snabdevanje vodom naselja <strong>Lebane</strong> i <strong>Bojnik</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${brestovackoJezero22} 450w, ${brestovackoJezero2}`} alt="Brestovačko jezero 2" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Brestovačko jezero</strong> prostire se na dužini od <strong>2,8 kilometara</strong> i širini od <strong>500 metara</strong>. Najveća dubina jezera je <strong>28 metara</strong>, dok prosečna dubina iznosi <strong>12 metara</strong>. Površina jezera je oko <strong>75 hektara</strong>. Obalu jezera čine brojna <em>poluostrva</em>, jedan <em>rt</em> (istureni deo kopna) i dva <em>zaliva</em>. Voda u jezeru dolazi iz <strong>Puste reke</strong>, koja izvire na planini <strong>Radan</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${brestovackoJezero33} 450w, ${brestovackoJezero3}`} alt="Brestovačko jezero 3" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Brestovačko jezero</strong> je bogato različitim vrstama riba, među kojima se nalaze <strong>som</strong>, <strong>šaran</strong>, <strong>klen</strong>, <strong>amur</strong>, <strong>štuka</strong>, <strong>babuška</strong>, <strong>bodorka</strong>, <strong>belica</strong> i <strong>deverika</strong>. Ova akumulacija privlači brojne ribolovce tokom cele godine. Tokom letnjih meseci, jezero postaje popularno odredište za <em>kupače</em>, jer su dani topli, što ga čini savršenim mestom za uživanje u kupanju. Na obali je uređen <strong>parking</strong>, kao i <strong>sportski tereni</strong>. Takođe, na plaži je dozvoljeno <em>kampovanje</em>.
+                </p>
+              </section>
+
+              <img srcSet={`${brestovackoJezero44} 450w, ${brestovackoJezero4}`} alt="Brestovačko jezero 4" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Brestovačko jezero</strong> je pristupačno iz dva pravca. Ako dolazite iz <strong>Niša</strong>, put vas vodi preko <strong>Doljevca</strong> i <strong>Žitorađe</strong>, a do jezera se dolazi skretanjem sa autoputa kod naselja <strong>Brestovac</strong>, pre nego što se stigne do <strong>Leskovca</strong>. S druge strane, ako dolazite iz pravca <strong>Prokuplja</strong>, potrebno je preći prevor <strong>Beli kamen</strong>.
+                </p>
+              </section>
+
+            </>
+          )
+          :
+          (
+            <>
+
+              <h2>Brestovac Lake</h2>
+
+              <section lang="en">
+                <p>
+                  <strong>Brestovac</strong>, <strong>Bojnik</strong>, <strong>Bubličko</strong>, and <strong>Magaško Lake</strong> are different names for the <em>artificial reservoir</em> located in the village of <strong>Brestovac</strong>, approximately 10 kilometers west of <strong>Bojnik</strong>. The lake is situated at the foothills of the <strong>Radan</strong> mountain at an altitude of <strong>400 meters</strong> above sea level. It was created in the late 1970s by damming the <strong>Pusta River</strong> in its upper course. It is used to supply water to the settlements of <strong>Lebane</strong> and <strong>Bojnik</strong>.
+                </p>
+              </section>
+
+
+              <img srcSet={`${brestovackoJezero22} 450w, ${brestovackoJezero2}`} alt="Brestovac Lake 2" loading="lazy" />
+
+              <section lang="en">
+                <p>
+                  <strong>Brestovac Lake</strong> stretches over a length of <strong>2.8 kilometers</strong> and a width of <strong>500 meters</strong>. The maximum depth of the lake is <strong>28 meters</strong>, while the average depth is <strong>12 meters</strong>. The surface area of the lake is about <strong>75 hectares</strong>. The shoreline consists of numerous <em>peninsulas</em>, one <em>cape</em> (a protruding part of the land), and two <em>bays</em>. Water in the lake comes from the <strong>Pusta River</strong>, which springs from the <strong>Radan</strong> mountain.
+                </p>
+              </section>
+
+              <img srcSet={`${brestovackoJezero33} 450w, ${brestovackoJezero3}`} alt="Brestovac Lake 3" loading="lazy" />
+
+              <section lang="en">
+                <p>
+                  <strong>Brestovac Lake</strong> is rich in various fish species, including <strong>catfish</strong>, <strong>carp</strong>, <strong>chub</strong>, <strong>grass carp</strong>, <strong>pike</strong>, <strong>bream</strong>, <strong>bleak</strong>, <strong>whitefish</strong>, and <strong>roach</strong>. This reservoir attracts many anglers throughout the year. During the summer months, the lake becomes a popular destination for <em>swimmers</em> because the days are warm, making it a perfect place to enjoy swimming. There is a designated <strong>parking lot</strong> and <strong>sports fields</strong> on the shore. Also, camping is allowed on the beach.
+                </p>
+              </section>
+
+              <img srcSet={`${brestovackoJezero44} 450w, ${brestovackoJezero4}`} alt="Brestovac Lake 4" loading="lazy" />
+
+              <section lang="en">
+                <p>
+                  <strong>Brestovac Lake</strong> is accessible from two directions. If you come from <strong>Niš</strong>, the road leads you through <strong>Doljevac</strong> and <strong>Žitorađa</strong>, and you reach the lake by turning off the highway near the settlement of <strong>Brestovac</strong>, before arriving at <strong>Leskovac</strong>. On the other hand, if you come from the direction of <strong>Prokuplje</strong>, you need to cross the <strong>Beli Kamen</strong> mountain pass.
+                </p>
+              </section>
+
+            </>
+          )
+        }
+
+      </div >
+
+
+    </>
   );
 };
+
+
+export default BrestovackoJezero;

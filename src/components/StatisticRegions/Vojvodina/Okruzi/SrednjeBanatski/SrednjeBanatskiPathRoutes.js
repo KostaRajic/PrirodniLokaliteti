@@ -1,8 +1,8 @@
 export const srednjeBanatskiPathRoutes = {
-    home: "/vojvodinaTekstModal/Vojvodina/SrednjeBanatski",
-    zrenjanin: "/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/Zrenjanin",
-    noviBecej: "/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/NoviBecej",
-    slanoKopovo: "/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/SlanoKopovo",
-    staraTisa: "/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/StaraTisa",
-    kupalistePeskara: "/vojvodinaTekstModal/Vojvodina/SrednjeBanatski/KupalistePeskara"
+    home: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/srednje-banatski`,
+    zrenjanin: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/srednje-banatski/zrenjanin`,
+    noviBecej: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/srednje-banatski/novi-becej`,
+    slanoKopovo: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/srednje-banatski/slano-kopovo`,
+    staraTisa: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/srednje-banatski/stara-tisa`,
+    kupalistePeskara: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/srednje-banatski/kupaliste-peskara`
 }

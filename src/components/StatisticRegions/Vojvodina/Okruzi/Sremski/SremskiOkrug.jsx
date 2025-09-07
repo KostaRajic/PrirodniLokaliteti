@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { Outlet } from "react-router-dom";
@@ -6,9 +6,26 @@ import { FaArrowLeft } from "react-icons/fa";
 import { sremskiOkrugData } from "./SremskiOkrugData";
 import { sremskiOkrugPathRoutes } from "./SremskiOkrugPathRoutes";
 import { serbianMapPathRoutes } from "../../../../serbianMapPathRoutes";
+import { useContextAuth } from "../../../../../Context";
 
-export const SremskiOkrug = () => {
+const SremskiOkrug = () => {
   const [slide, setSlide] = useState(0);
+  const { switchLanguage } = useContextAuth();
+  const [showArticle, setShowArticle] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 600);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const navigate = useNavigate();
 
@@ -22,21 +39,21 @@ export const SremskiOkrug = () => {
 
   const readMore = (name) => {
     if (name === "Sremska Mitrovica") {
-      navigate(sremskiOkrugPathRoutes.sremskaMitrovica);
+      navigate(sremskiOkrugPathRoutes.sremskaMitrovica(switchLanguage));
     } else if (name === 'Specijalni rezervat prirode "Zasavica"') {
-      navigate(sremskiOkrugPathRoutes.srpZasavica);
+      navigate(sremskiOkrugPathRoutes.srpZasavica(switchLanguage));
     } else if (name === "Inđija") {
-      navigate(sremskiOkrugPathRoutes.indjija);
+      navigate(sremskiOkrugPathRoutes.indjija(switchLanguage));
     } else if (name === "Sotsko Jezero") {
-      navigate(sremskiOkrugPathRoutes.sotskoJezero);
+      navigate(sremskiOkrugPathRoutes.sotskoJezero(switchLanguage));
     } else if (name === "Manastir Novo Hopovo") {
-      navigate(sremskiOkrugPathRoutes.novoHopovo);
+      navigate(sremskiOkrugPathRoutes.novoHopovo(switchLanguage));
     } else if (name === "Šid") {
-      navigate(sremskiOkrugPathRoutes.sid);
+      navigate(sremskiOkrugPathRoutes.sid(switchLanguage));
     } else if (name === "Manastir Jazak") {
-      navigate(sremskiOkrugPathRoutes.manastirJazak);
+      navigate(sremskiOkrugPathRoutes.manastirJazak(switchLanguage));
     } else if (name === "Bešenovačko Jezero") {
-      navigate(sremskiOkrugPathRoutes.besenovackoJezero);
+      navigate(sremskiOkrugPathRoutes.besenovackoJezero(switchLanguage));
     }
   };
 
@@ -46,52 +63,107 @@ export const SremskiOkrug = () => {
         <header>
           <FaArrowLeft
             className="arrowLeft"
-            onClick={() => navigate(serbianMapPathRoutes.Vojvodina)}
-            style={{ fill: "white"}}
+            onClick={() => navigate(serbianMapPathRoutes.Vojvodina(switchLanguage))}
+            style={{ fill: "white" }}
           />
         </header>
-        <section className="sremski okrug">
-          <h1>Sremski Okrug</h1>
-          <form>
-            <p>
-              <span>Površina: </span>oko 3.500 km²
-            </p>
-            <p>
-              <span>Broj stanovnika: </span>približno 800.000
-            </p>
-            <p>
-              <span>Geografske karakteristike: </span>Ravnica sa plodnim
-              zemljištem, bogata poljoprivredna područja, delimično planinsko
-              područje.
-            </p>
-          </form>
-          <div>
-            Sremski okrug je jedan od okruga koji je smešten u Vojvodini. Ovaj
-            okrug obuhvata nekoliko gradova i opština, među kojima se ističu
-            gradovi Novi Sad, Sremska Mitrovica i Inđija, kao i brojne manje
-            opštine poput Rume, Šida i Pećinaca. Geografski, Sremski okrug je
-            prepoznatljiv po ravničarskim područjima koja su pogodna za
-            poljoprivredu, ali i po blizini reke Save. U jugoistočnom delu
-            okruga prostire se Fruška gora, planinsko područje koje je deo
-            Nacionalnog parka Fruška gora, poznato po bogatoj flore i faune, kao
-            i manastirima. Ovaj okrug ima veoma razvijen poljoprivredni sektor,
-            sa naglaskom na ratarstvo, voćarstvo i stočarstvo, zbog čega je
-            važno područje za proizvodnju hrane. Sremski okrug je značajan i
-            zbog svoje privrede, sa razvijenim industrijskim i uslužnim
-            sektorima, dok su i infrastrukturni projekti, kao što su autoputevi
-            i železnica, omogućili dobru povezanost sa drugim delovima zemlje.
-            Kultura i tradicija ovog okruga su bogate i raznovrsne, a i turizam
-            se sve više razvija zahvaljujući prirodnim lepotama i istorijskim
-            lokalitetima.
-          </div>
-        </section>
-        <section className="citatClass">
-          <p>
-            Za dvadeset godina bićeš više razočaran stvarima koje nisi uradio
-            nego onima koje jesi. Isplovi, zato, iz sigurne luke. Otkrivaj,
-            sanjaj, istražuj! (Mark Tven)
-          </p>
-        </section>
+        {switchLanguage === 'rs' ?
+          (
+            <>
+              <section className="sremski okrug" lang="sr">
+                <h1>Sremski okrug</h1>
+                <div className="basicInfo">
+                  <p>
+                    <strong>Površina: </strong>oko 3.500 km²
+                  </p>
+                  <p>
+                    <strong>Broj stanovnika: </strong>približno 800.000
+                  </p>
+                  <p>
+                    <strong>Geografske karakteristike: </strong>Ravnica sa plodnim zemljištem, bogata poljoprivredna područja, delimično planinsko područje.
+                  </p>
+                </div>
+                <button className="okrugButton" onClick={() => setShowArticle(prev => !prev)}>
+                  {showArticle ? (switchLanguage === 'rs' ? 'Pokaži manje' : 'Show less') : (switchLanguage === 'rs' ? 'Pokaži više' : 'Show more')}
+                </button>
+
+                {showArticle &&
+                  <article lang="sr">
+                    <p>
+                      <strong>Sremski okrug</strong> je jedan od okruga smešten u Vojvodini. Ovaj okrug obuhvata više gradova i opština, među kojima se ističu <strong>Novi Sad</strong>, <strong>Sremska Mitrovica</strong> i <strong>Inđija</strong>, kao i manje opštine poput <strong>Rume</strong>, <strong>Šida</strong> i <strong>Pećinaca</strong>.
+                    </p>
+                    <p>
+                      Geografski je prepoznatljiv po plodnim ravnicama pogodnim za <strong>poljoprivredu</strong>, ali i po blizini reke <strong>Save</strong>. U jugoistočnom delu okruga nalazi se <strong>Fruška gora</strong>, planinsko područje koje je deo <strong>Nacionalnog parka Fruška gora</strong>, poznato po bogatoj flori, fauni i pravoslavnim manastirima.
+                    </p>
+                    <p>
+                      Poljoprivreda je snažno razvijena, sa naglaskom na <strong>ratarstvo</strong>, <strong>voćarstvo</strong> i <strong>stočarstvo</strong>, što čini region važnim za proizvodnju hrane.
+                    </p>
+                    <p>
+                      Okrug je značajan i po razvijenoj <strong>privredi</strong>, industrijskim i uslužnim delatnostima, dok moderna <strong>infrastruktura</strong> – uključujući autoputeve i železnicu – omogućava odličnu povezanost sa ostatkom zemlje.
+                    </p>
+                    <p>
+                      Kultura i tradicija su bogate i raznovrsne, a <strong>turizam</strong> se sve više razvija zahvaljujući prirodnim lepotama i istorijskim lokalitetima.
+                    </p>
+                  </article>
+                }
+              </section>
+
+              <section className="citatClass">
+                <blockquote>
+                  Za dvadeset godina bićeš više razočaran stvarima koje nisi uradio nego onima koje jesi. Isplovi, zato, iz sigurne luke. Otkrivaj, sanjaj, istražuj! (Mark Tven)
+                </blockquote>
+              </section>
+            </>
+          )
+          :
+          (
+            <>
+              <section className="sremski okrug" lang="en">
+                <h1>Srem District</h1>
+                <div className="basicInfo">
+                  <p>
+                    <strong>Area: </strong>approximately 3,500 km²
+                  </p>
+                  <p>
+                    <strong>Population: </strong>around 800,000
+                  </p>
+                  <p>
+                    <strong>Geographical features: </strong>A plain with fertile soil, rich agricultural areas, and partially mountainous terrain.
+                  </p>
+                </div>
+                <button className="okrugButton" onClick={() => setShowArticle(prev => !prev)}>
+                  {showArticle ? (switchLanguage === 'rs' ? 'Pokaži manje' : 'Show less') : (switchLanguage === 'rs' ? 'Pokaži više' : 'Show more')}
+                </button>
+
+                {showArticle &&
+                  <article lang="en">
+                    <p>
+                      <strong>The Srem District</strong> is one of the districts located in Vojvodina. This district includes several cities and municipalities, among which <strong>Novi Sad</strong>, <strong>Sremska Mitrovica</strong>, and <strong>Inđija</strong> stand out, along with smaller municipalities such as <strong>Ruma</strong>, <strong>Šid</strong>, and <strong>Pećinci</strong>.
+                    </p>
+                    <p>
+                      Geographically, it is known for its fertile plains suitable for <strong>agriculture</strong>, as well as its proximity to the <strong>Sava River</strong>. In the southeastern part of the district lies <strong>Fruška Gora</strong>, a mountainous area that is part of the <strong>Fruška Gora National Park</strong>, known for its rich flora, fauna, and Orthodox monasteries.
+                    </p>
+                    <p>
+                      Agriculture is highly developed, with a focus on <strong>crop farming</strong>, <strong>fruit growing</strong>, and <strong>livestock breeding</strong>, making the region important for food production.
+                    </p>
+                    <p>
+                      The district is also significant for its developed <strong>economy</strong>, including industrial and service sectors, while modern <strong>infrastructure</strong>—such as highways and railways—provides excellent connectivity with other parts of the country.
+                    </p>
+                    <p>
+                      The district’s <strong>culture and tradition</strong> are rich and diverse, and <strong>tourism</strong> is increasingly developing thanks to its natural beauty and historical landmarks.
+                    </p>
+                  </article>
+                }
+              </section>
+
+              <section className="citatClass">
+                <blockquote>
+                  In twenty years, you will be more disappointed by the things you didn’t do than by the ones you did. So, sail away from the safe harbor. Explore, dream, discover! (Mark Twain)
+                </blockquote>
+              </section>
+            </>
+          )}
+
         <section>
           <div className="caruoselClass" style={{ padding: "0" }}>
             {sremskiOkrugData?.map((okrug, index) => (
@@ -109,11 +181,11 @@ export const SremskiOkrug = () => {
                   onClick={prevContent}
                 />
                 <div className="caruoselInfo">
-                  <h3>{okrug.name}</h3>
-                  <p>{okrug.mainText}</p>
+                  <h3>{switchLanguage === 'en' ? okrug.nameENG ? okrug.nameENG : okrug.name : okrug.name}</h3>
+                  <p>{switchLanguage === 'en' ? okrug.mainTextENG : okrug.mainTextSRB}</p>
 
                   <button onClick={() => readMore(okrug.name)}>
-                    Pročitaj više
+                    {switchLanguage === 'rs' ? 'Pročitaj više' : 'Read more'}
                   </button>
                 </div>
                 <BsArrowRightCircleFill
@@ -130,3 +202,6 @@ export const SremskiOkrug = () => {
     </>
   );
 };
+
+
+export default SremskiOkrug;

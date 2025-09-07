@@ -1,9 +1,9 @@
 export const juznoBanatskiPathRoutes = {
-    home: "/vojvodinaTekstModal/Vojvodina/JuznoBanatski",
-    pancevo: "/vojvodinaTekstModal/Vojvodina/JuznoBanatski/Pancevo",
-    belaCrkva: "/vojvodinaTekstModal/Vojvodina/JuznoBanatski/BelaCrkva",
-    vracevgajskoJezero: "/vojvodinaTekstModal/Vojvodina/JuznoBanatski/VracevgajskoJezero",
-    deliblatskaPescara: "/vojvodinaTekstModal/Vojvodina/JuznoBanatski/DelibaltskaPescaraIZagajickaBrda",
-    vrsac: "/vojvodinaTekstModal/Vojvodina/JuznoBanatski/Vrsac",
-    srpKraljevac: "/vojvodinaTekstModal/Vojvodina/JuznoBanatski/SRPKraljevac"
+    home: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-banatski`,
+    pancevo: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-banatski/pancevo`,
+    belaCrkva: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-banatski/bela-crkva`,
+    vracevgajskoJezero: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-banatski/vracevgajsko-jezero`,
+    deliblatskaPescara: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-banatski/delibaltska-pescara-i-zagajicka-brda`,
+    vrsac: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-banatski/vrsac`,
+    srpKraljevac: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-banatski/srp-kraljevac`
 }

@@ -1,3 +1,5 @@
+/* eslint-disable no-useless-escape */
+/* eslint-disable react/no-unknown-property */
 import stariRas1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas5.jpg";
 import stariRas2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas1.jpg";
 import stariRas3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/desktop/tvrdjavaStariRas2.jpg";
@@ -12,170 +14,193 @@ import stariRas55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Rask
 import stariRas66 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas/mobile/MtvrdjavaStariRas6.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { raskiOkrugPathRoutes } from "./RaskiOkrugPathRoutes";
+import { useContextAuth } from "../../../../../Context";
+import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
-export const TvrdjavaStariRas = () => {
+const TvrdjavaStariRas = () => {
   const navigate = useNavigate();
+  const { switchLanguage } = useContextAuth();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && lang !== switchLanguage) {
+      const newPath = window.location.pathname.replace(/^\/[^\/]+/, `/${switchLanguage}`);
+      navigate(newPath, { replace: true });
+    }
+  }, [switchLanguage, lang, navigate]);
+
 
   return (
-    <div className="placeBackground">
-      <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home)} style={{fill: 'white'}} />
-      <header></header>
-      <img srcSet={`${stariRas11} 400w, ${stariRas1} `} alt="Tvrđava Stari Ras 1" />
+    <>
 
-      <h2 style={{ color: "white" }}>Tvrđava Stari Ras</h2>
+      <Helmet>
+        <title>
+          {switchLanguage === 'rs'
+            ? "Tvrđava Stari Ras – Kolevka srpske državnosti i dinastije Nemanjić | Srbija Wonders"
+            : "Stari Ras Fortress – Cradle of Serbian Statehood and the Nemanjić Dynasty | Serbia Wonders"}
+        </title>
 
-      <p style={{ paddingTop: "50px" }}>
-        U Starom Rasu je stavaran prva prestonica dinastije Nemanjić. Dinastija
-        Nemanjića vladala je Srbijom od 1168. do 1371. godine. U osam generacija
-        Nemanjića, koliko ih je bilo po muškoj liniji, od kojih je više od
-        šezdeset poznato po imenima, kao svetitelje slavimo devetnaest
-        Nemanjića, a broj svetaca može biti i veći kada uzmemo u obzir i ženske
-        potomke. Osnivač dinastije Nemanjića bio je veliki župan Stefan Nemanja,
-        sin Zavide. Stefan Nemanja bio je povezan sa Vukanovićima po muškoj
-        liniji i sa Vojslavljevićima po ženskoj liniji. U dinastiji Nemanjića
-        bilo je jedanaest vladara, a dinastija se nastavlja kroz žensku liniju,
-        u dinastiju Lazarevića, a potom i Brankovića, koji su vladali delom
-        Srbije do prve polovine šesnaestog veka. Vladari dinastije Nemanjića
-        bili su: veliki župan Stefan Nemanja (1166–1196), kralj Stefan
-        Prvovenčani (1196–1228), kralj Radoslav (1228–1233), kralj Vladislav
-        (1233–1243), kralj Stefan Uroš I (1243–1276), kralj Stefan Dragutin
-        (1276–1282), kralj Stefan Uroš II Milutin (1282–1321), kralj Stefan Uroš
-        III Dečanski (1321–1331), kralj i car Stefan Uroš IV Dušan (1331–1355),
-        car Stefan Uroš (1355–1371). <br />
-        <br /> Kao najvažnija srpska dinastija, Nemanjići potiču od loze raških
-        župana, koji su vladali delom srpskog naroda u periodu
-        vizantijsko-ugarskih sukoba tokom 12. veka. Jedna od nekoliko srpskih
-        zemalja koje su se formirale nakon doseljavanja Slovena, Raška se u 12.
-        veku izdvojila kao centralno područje i osnova srpskog naroda. Raški
-        veliki župani su u vezi sa Ugarskom videli šansu za jačanje i
-        oslobađanje od vizantijske dominacije. Nakon pobede kod Panatina, Stefan
-        Nemanja je, pobedivši svoju braću, uspeo da osigura vrhovnu vlast.
-        Smatra se da je Stefan Nemanja osnivač i prvi vladar najpoznatije srpske
-        dinastije, koja je u Starom Rasu postavila svoju prestonicu.
-      </p>
+        <meta
+          name="description"
+          content={
+            switchLanguage === 'rs'
+              ? "Stari Ras je jedna od najstarijih srpskih tvrđava i simbol početka vladavine dinastije Nemanjić. Istorijsko, kulturno i arheološko blago u blizini Novog Pazara koje svedoči o srednjovekovnoj Srbiji."
+              : "Stari Ras is one of the oldest Serbian fortresses and a symbol of the rise of the Nemanjić dynasty. A historical, cultural, and archaeological treasure near Novi Pazar that reflects medieval Serbia."}
+        />
 
-      <img srcSet={`${stariRas22} 400w, ${stariRas2} `} alt="Tvrđava Stari Ras 2" />
+        <meta
+          name="keywords"
+          content={
+            switchLanguage === 'rs'
+              ? "Stari Ras, tvrđava Stari Ras, dinastija Nemanjić, Raška, Stefan Nemanja, Nova Pazar, srednjovekovna Srbija, srpska istorija, arheološki lokalitet"
+              : "Stari Ras, Stari Ras fortress, Nemanjić dynasty, Raška, Stefan Nemanja, Novi Pazar, medieval Serbia, Serbian history, archaeological site"}
+        />
 
-      <p>
-        Stari Ras, kao prestonica prvih Nemanjića, ali i kao region koji je
-        predstavljao epicentar tadašnje Srbije u drugoj polovini 12. i prvoj
-        polovini 13. veka, već duži niz godina privlači pažnju naučnika i
-        istraživača. U domaćoj nauci postoje različiti stavovi među
-        istraživačima u vezi sa identifikacijom same prestonice prvih vladara
-        dinastije Nemanjića, ali i u vezi sa pojmom „Raška” kao centralne
-        oblasti tadašnje srpske države. Važno je naglasiti da Stari Ras nikako
-        nije bio prva prestonica Srbije kao organizovane države, već da sama
-        „institucija srpske države” ima mnogo dublje korene, što je potvrđeno
-        brojnim relevantnim dokazima i činjenicama koje su neki istraživači
-        često negirali ili ignorisali. Takođe, postojala je određena vrsta
-        nemanjićke propagande, koja je nastojala da prikaže Stefana Nemanju kao
-        osnivača i tvorca organizovane srpske državnosti, često umanjivajući
-        značaj prethodnih dinastija koje su vladale srpskim zemljama, poput
-        Duklje, kao i same Raške. Ovi postupci se, međutim, mogu delimično
-        opravdati, jer je sasvim prirodno da nova, moćna dinastija, koja je
-        anektirala nove teritorije, nastojala da se što efikasnije reši
-        konkurencije prethodnih dinastičkih kuća, pre svega u Zeti.
-      </p>
+        <meta name="author" content="Serbia Wonders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.serbiawonders.com/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/tvrdjava-stari-ras`}
+        />
+        <link
+          rel="alternate"
+          hreflang="sr"
+          href="https://www.serbiawonders.com/sr/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/tvrdjava-stari-ras"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/tvrdjava-stari-ras"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/tvrdjava-stari-ras"
+        />
+      </Helmet>
 
-      <img srcSet={`${stariRas33} 400w, ${stariRas3} `} alt="Tvrđava Stari Ras 3" />
 
-      <p>
-        Ako bismo pokušali da generalizujemo stavove istraživača u najširem
-        smislu, mogli bismo da prepoznamo dva osnovna tumačenja, odnosno dve
-        različite potencijalne lokacije koje istraživači pokušavaju da predstave
-        kao Stari Ras. Marko Popović u svom delu Tvrdjava Ras pokušava da
-        utvrđenje na Gradini, koje se nalazi na steni iznad ušća Sebečeve reke u
-        reku Rašku, predstavi kao jedno od vladarskih sedišta i identifikuje ga
-        kao tvrđavu Arsu (Ras). Međutim, prema njegovom mišljenju, ovo utvrđenje
-        ne može se smatrati prestonicom u užem smislu, već kao jedno od upravnih
-        centara. S druge strane, Jovanka Kalić, u nizu objavljenih radova,
-        odbacuje identifikovanje ove Gradine, koja se nalazi oko sedam
-        kilometara od Novog Pazara, kao tvrđave Ras. Prema njenim stavovima,
-        lokaciju Starog Rasa kao „stolnog mesta Srbije” treba tražiti u okolini
-        crkve Svetih apostola Petra i Pavla (Petrove crkve), koja je bila
-        najvažnije crkveno sedište tadašnje Srbije. U tom kontekstu, ona Stari
-        Ras locira na mestu koje danas zauzima Novi Pazar, u blizini episkopskog
-        centra. Takođe, kao moguću lokaciju tvrđave Stari Ras, ona pominje i
-        utvrđenje Gradina u Postenju (Novopazarska banja).
-      </p>
+      <div className="placeBackground">
+        <ScrollToTop />
+        <FaArrowLeft className="arrowLeft" onClick={() => navigate(raskiOkrugPathRoutes.home(switchLanguage))} style={{ fill: 'white' }} />
+        <header></header>
+        <img srcSet={`${stariRas11} 450w, ${stariRas1} `} alt="Tvrđava Stari Ras 1" />
 
-      <img srcSet={`${stariRas44} 400w, ${stariRas4} `} alt="Tvrđava Stari Ras 4" />
 
-      <p>
-        U pokušaju da učvrste i dokažu svoje tvrdnje, oba autora iznose niz
-        argumenata, koristeći pored arheoloških i istorijskih metoda i
-        lingvistiku, konkretno značenje samog toponima Ras (Arsa), a time i
-        pojam Raška, koji se u drugoj polovini XII veka koristio kao ekvivalent
-        za naziv Srbija, kao i precizno određivanje granica tadašnje „Raške
-        župe”. <br />
-        <br />
-        Najstariji sačuvani pomen toponima Arsa (Rasa) potiče iz dela Prokopija
-        iz Cezareje, koji je živeo u šestom veku. On je, opisujući građevinsku
-        delatnost cara Justinijana (527–565), naveo veliki broj tvrđava i drugih
-        objekata koje je ovaj znameniti vladar obnovio ili ponovo izgradio širom
-        carstva. Jedno od tih utvrđenja bilo je i Ras, koji se kod njega
-        pojavljuje pod imenom Arsa. Vizantijski izvori pružaju nam
-        najobjektivnije i najbrojnije podatke kako o samom utvrđenju, tako i o
-        Rasu kao geografskom prostoru. Značajne podatke o Rasui ostavio je i
-        poznati car Konstantin VII Porfirogenit, čije delo De administrando
-        imperio sadrži mnoge važne informacije za našu nacionalnu istoriju. U
-        njegovom delu, poznatom kao Spis o upravljanju državom ili Spis o
-        narodima, nalazimo podatke o Rasu u XXXII glavi.
-      </p>
+        {switchLanguage === 'rs' ?
+          (
+            <>
 
-      <img srcSet={`${stariRas55} 400w, ${stariRas5} `} alt="Tvrđava Stari Ras 5" />
+              <h2 style={{ color: "white" }}>Tvrđava Stari Ras</h2>
 
-      <p>
-        Ovdje je izneta informacija koja se odnosi na srpsko-bugarski rat iz
-        devetog veka (880. godine). Naime, pominjući razloge sukoba,
-        Porfirijogenit navodi kako su, nakon bugarskog poraza, sinovi kneza
-        Mutimira, kao garant da im se ništa neće desiti, dopratili poraženog
-        bugarskog vladara Mihaila Borisa do granice kod Rasa. Tamo ih je on, iz
-        zahvalnosti, nagradio brojnim darovima, a oni su mu tom prilikom
-        poklonili dva roba, dva psa, dva sokola i osamdeset krznenih kaputa, što
-        su Bugari prihvatili kao znak „sklapanja prijateljstva”. Ovdje
-        primećujemo da se „Rasa” nalazila negde na granici između Srbije i
-        Bugarske. Međutim, otvara se pitanje na šta konkretno Porfirijogenit
-        misli pod tim pojmom. Mnogi autori (M. Dinić, S. Novaković i N.
-        Novaković) bavili su se ovim problemom, a neki od njih su u ovom nazivu
-        videli grad, dok su drugi smatrali da se odnosi na ime oblasti, reke ili
-        župe. Takođe, ostaje otvoreno pitanje ako se radilo o gradu kao
-        utvrđenju, sa koje strane granice se nalazio; pri čemu ga neki autori
-        svrstavaju u Bugarsku. J. Kalić je iznela problematiku samog naziva
-        Arsa, a oslanjajući se na lingvistička istraživanja, ističe sledeće:
-        „Naime, danas se u stručnoj lingvističkoj literaturi smatra dokazanim da
-        je slovenski oblik ’Rasa’ mogao nastati jedino metatezom likvida od
-        predslovenskog ’Arsa’ i to se ubraja u dobro poznate jezičke pojave u
-        Evropi.” U ovom delu njenog članka, ona takođe navodi određene primere i
-        analogije.
-      </p>
 
-      <img srcSet={`${stariRas66} 400w, ${stariRas6} `} alt="Tvrđava Stari Ras 5" />
+              <section lang="sr">
+                <p>
+                  U <strong>Starom Rasu</strong> je stvarana prva prestonica <strong>dinastije Nemanjić</strong>.
+                  Dinastija Nemanjića vladala je <strong>Srbijom od 1168. do 1371. godine</strong>. U osam generacija Nemanjića, od kojih je više od šezdeset poznato po imenima,
+                  <strong>kao svetitelje slavimo devetnaest</strong>, a broj svetaca može biti i veći kada uzmemo u obzir i <em>ženske potomke</em>. Osnivač dinastije bio je
+                  <strong>veliki župan Stefan Nemanja</strong>, sin <strong>Zavide</strong>. Bio je povezan sa <strong>Vukanovićima</strong> po muškoj i sa
+                  <strong>Vojslavljevićima</strong> po ženskoj liniji. Dinastija se nastavila kroz <em>žensku liniju</em> u <strong>dinastiju Lazarevića</strong>, a potom i
+                  <strong>Brankovića</strong>. Vladari su bili: Nemanja, Prvovenčani, Radoslav, Vladislav, Uroš I, Dragutin, Milutin, Uroš III Dečanski,
+                  Dušan Silni i Uroš Nejak.
+                </p>
+              </section>
 
-      <p>
-        Iz podataka koje daje Konstantin Porfirogenit, takođe se jasno vidi da
-        on pod pojmom Rasa nikako ne misli na Srbiju, jer pominje Ras kao mesto
-        (oblast) na granici, dok posebno spominje Srbiju kao zemlju koju u to
-        vreme vodi Mutimir. To znači da se u devetom i desetom veku pod nazivom
-        „Rasa” nije smatralo „zemljom Srba”. Naziv Raska kao ekvivalent za
-        zemlju Srba, tj. Srbiju, prvi put se pojavljuje tek nakon što je Ras kao
-        grad (po kojem je verovatno cela oblast dobila ime) osvojio srpski narod
-        i postao prestonica države, ali nikako pre toga. Ovom tematikom se
-        posebno bavila J. Kalić, koja je rezultate svojih istraživanja iznela u
-        svom opsežnom i vrlo temeljnom radu o nazivu Raska u periodu od IX do
-        XII veka. Prema njenim zaključcima, do XII veka nije bilo pomena naziva
-        Raska za srpske zemlje na Balkanu, kao ni pojma Ršani kao stanovnici,
-        već su uvek pominjani samo Srbi i Srbija. Ona takođe navodi i nekoliko
-        drugih argumenata u prilog ovoj tezi, poput činjenice da se srpski
-        vladari iz dinastije Nemanjića do kraja XII veka nisu nazivani „raškim”,
-        već isključivo „srpskim” vladarima. Najraniji pomen Rške kao ekvivalenta
-        srpskoj državi javljaju se prvo u izvorima iz Kotora i Bara, a kasnije i
-        kod nekih ugarskih autora, odnosno najranije 1186. godine.
-      </p>
-    </div>
+              <img srcSet={`${stariRas22} 450w, ${stariRas2}`} alt="Tvrđava Stari Ras 2" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Stari Ras</strong>, kao prestonica prvih Nemanjića, bio je <em>epicentar tadašnje Srbije</em>. Istraživači imaju različita mišljenja o tačnoj
+                  lokaciji prestonice i značenju pojma <strong>Raška</strong>. Iako važan, <strong>Stari Ras nije bio prva prestonica Srbije</strong> kao organizovane države.
+                  Postojala je i <strong>propaganda dinastije Nemanjić</strong> koja je želela da prikaže Nemanju kao <em>osnivača državnosti</em>,
+                  često zanemarujući <strong>ranije dinastije</strong> kao što su <strong>Dukljani</strong> i župani Raške.
+                </p>
+              </section>
+
+              <img srcSet={`${stariRas33} 450w, ${stariRas3}`} alt="Tvrđava Stari Ras 3" />
+
+              <section lang="sr">
+                <p>
+                  Istraživači prepoznaju <strong>dve osnovne lokacije</strong> za Stari Ras. <strong>Marko Popović</strong> smatra da je utvrđenje na
+                  <strong>Gradini</strong>, iznad ušća Sebečeve reke u Rašku, jedno od vladarskih sedišta, ali ne i sama prestonica. <strong>Jovanka Kalić</strong>, s druge strane,
+                  tvrdi da se Stari Ras nalazio u okolini <strong>Petrove crkve</strong>, blizu današnjeg <strong>Novog Pazara</strong>, kao i da se
+                  <em>utvrđenje u Postenju</em> može uzeti kao još jedna moguća lokacija.
+                </p>
+              </section>
+
+              <img srcSet={`${stariRas44} 450w, ${stariRas4}`} alt="Tvrđava Stari Ras 4" />
+
+              <section lang="sr">
+                <p>
+                  Autori se oslanjaju na <strong>arheološke, istorijske i lingvističke metode</strong>. Pojam <strong>Ras</strong> (ili <em>Arsa</em>) se
+                  u 12. veku koristio kao <strong>ekvivalent za Srbiju</strong>, a granice <em>Raške župe</em> bile su važne za definisanje tog prostora.
+                  Prvi pomen toponima Arsa potiče iz 6. veka, kod <strong>Prokopija iz Cezareje</strong>, dok su značajni izvori i delo <strong>Konstantina VII Porfirogenita</strong>,
+                  naročito njegovo delo <em>De administrando imperio</em>, gde se Ras pominje u vezi sa <strong>granicom između Srbije i Bugarske</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${stariRas55} 450w, ${stariRas5}`} alt="Tvrđava Stari Ras 5" />
+
+              <section lang="sr">
+                <p>
+                  Porfirogenit beleži događaj iz <strong>880. godine</strong>, gde sinovi kneza <strong>Mutimira</strong> odvode poraženog bugarskog vladara
+                  <strong>Borisa Mihaila</strong> do <strong>granice kod Rasa</strong>. Tada dolazi do razmene poklona i sklapanja prijateljstva. Ipak,
+                  ostaje <em>nejasno da li se pojam "Ras" odnosi na grad, oblast ili reku</em>. Jezička analiza pokazuje da je <strong>naziv "Ras"</strong> proizašao iz
+                  <em>metateze likvida</em> predslovenskog oblika <strong>Arsa</strong>, što je poznata lingvistička pojava.
+                </p>
+              </section>
+
+              <img srcSet={`${stariRas66} 450w, ${stariRas6}`} alt="Tvrđava Stari Ras 6" />
+
+              <section lang="sr">
+                <p>
+                  Iz izvora Konstantina Porfirogenita jasno se vidi da <strong>Ras nije sinonim za Srbiju</strong> u 9. i 10. veku. <em>Ras se pominje kao granična oblast</em>,
+                  dok se <strong>Srbijom upravlja knez Mutimir</strong>. Pojam <strong>Raška kao ime za Srbiju</strong> počinje da se koristi tek nakon što je grad Ras
+                  postao prestonica. <strong>Jovanka Kalić</strong> je u svom radu pokazala da se <strong>do 12. veka</strong> naziv Raška ne koristi za srpske zemlje,
+                  već se uvek govori o <strong>„Srbima”</strong> i <strong>„Srbiji”</strong>. Najraniji pomen Raške u značenju Srbije potiče iz <strong>1186. godine</strong>.
+                </p>
+              </section>
+
+
+            </>
+          )
+          :
+          (
+            <>
+
+              <h2 style={{ color: "white" }}>Fortress Stari Ras</h2>
+
+              <section lang="en">
+                <p> In <strong>Stari Ras</strong>, the first capital of the <strong>Nemanjić dynasty</strong> was established. The Nemanjić dynasty ruled <strong>Serbia from 1168 to 1371</strong>. Across eight generations of the Nemanjić family, more than sixty are known by name, and <strong>nineteen are celebrated as saints</strong>, with the number possibly even higher if <em>female descendants</em> are included. The founder of the dynasty was <strong>Grand Prince Stefan Nemanja</strong>, son of <strong>Zavida</strong>. He was related to the <strong>Vukanović family</strong> on his father’s side and to the <strong>Vojslavljević family</strong> on his mother’s side. The dynasty continued through the <em>female line</em> into the <strong>Lazarević dynasty</strong>, and later the <strong>Branković dynasty</strong>. The rulers were: Nemanja, Prvovenčani, Radoslav, Vladislav, Uroš I, Dragutin, Milutin, Uroš III Dečanski, Dušan the Mighty, and Uroš the Weak. </p>
+              </section>
+
+              <img srcSet={`${stariRas22} 450w, ${stariRas2}`} alt="Fortress Stari Ras 2" />
+
+              <section lang="en"> <p> <strong>Stari Ras</strong>, as the capital of the first Nemanjić rulers, was the <em>epicenter of Serbia at the time</em>. Researchers have differing opinions about the exact location of the capital and the meaning of the term <strong>Raška</strong>. Although important, <strong>Stari Ras was not the first capital of Serbia</strong> as an organized state. There was also <strong>Nemanjić dynasty propaganda</strong> that sought to portray Nemanja as the <em>founder of statehood</em>, often neglecting <strong>earlier dynasties</strong> such as the <strong>Dukljans</strong> and the župans of Raška. </p> </section>
+              <img srcSet={`${stariRas33} 450w, ${stariRas3}`} alt="Fortress Stari Ras 3" />
+
+              <section lang="en"> <p> Researchers recognize <strong>two main locations</strong> for Stari Ras. <strong>Marko Popović</strong> believes that the fortress on <strong>Gradina</strong>, above the mouth of the Sebečeva River into Raška, was one of the royal seats, but not the capital itself. <strong>Jovanka Kalić</strong>, on the other hand, argues that Stari Ras was located near <strong>Petrova Church</strong>, close to modern-day <strong>Novi Pazar</strong>, and that the <em>fortress in Postenje</em> can be considered another possible location. </p> </section>
+              <img srcSet={`${stariRas44} 450w, ${stariRas4}`} alt="Fortress Stari Ras 4" />
+
+              <section lang="en"> <p> The authors rely on <strong>archaeological, historical, and linguistic methods</strong>. The term <strong>Ras</strong> (or <em>Arsa</em>) in the 12th century was used as an <strong>equivalent for Serbia</strong>, and the boundaries of the <em>Raška župa</em> were important in defining this area. The first mention of the toponym Arsa dates back to the 6th century by <strong>Procopius of Caesarea</strong>, while important sources include the work of <strong>Constantine VII Porphyrogenitus</strong>, especially his book <em>De administrando imperio</em>, where Ras is mentioned in relation to the <strong>border between Serbia and Bulgaria</strong>. </p> </section>
+              <img srcSet={`${stariRas55} 450w, ${stariRas5}`} alt="Fortress Stari Ras 5" />
+
+              <section lang="en"> <p> Porphyrogenitus records an event from <strong>880 AD</strong>, where the sons of Prince <strong>Mutimir</strong> escort the defeated Bulgarian ruler <strong>Boris Michael</strong> to the <strong>border at Ras</strong>. Gifts were exchanged and friendship was established. However, it remains <em>unclear whether the term "Ras" refers to a town, a region, or a river</em>. Linguistic analysis shows that the name "Ras" originated from the <em>liquid metathesis</em> of the pre-Slavic form <strong>Arsa</strong>, which is a well-known linguistic phenomenon. </p> </section>
+              <img srcSet={`${stariRas66} 450w, ${stariRas6}`} alt="Fortress Stari Ras 6" />
+
+              <section lang="en"> <p> From the sources of Constantine Porphyrogenitus, it is clear that <strong>Ras was not synonymous with Serbia</strong> in the 9th and 10th centuries. <em>Ras is mentioned as a border area</em>, while <strong>Serbia was ruled by Prince Mutimir</strong>. The term <strong>Raška as the name for Serbia</strong> began to be used only after the city of Ras became the capital. <strong>Jovanka Kalić</strong> showed in her work that until the <strong>12th century</strong>, the name Raška was not used for Serbian lands, and that the terms <strong>"Serbs"</strong> and <strong>"Serbia"</strong> were always used instead. The earliest mention of Raška meaning Serbia dates back to <strong>1186</strong>. </p> </section>
+
+            </>
+          )}
+
+      </div>
+    </>
   );
 };
+
+
+export default TvrdjavaStariRas;

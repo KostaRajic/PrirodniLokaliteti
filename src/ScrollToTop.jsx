@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
+
 
 export const ScrollToTop = () => {
   const [scrollButton, setScrollButton] = useState(false);
@@ -31,11 +33,11 @@ export const ScrollToTop = () => {
     <>
       {scrollButton && (
         <button
-        className={`scroll-to-top-btn`}
+          className={`scroll-to-top-btn`}
 
           onClick={scrollToTop}
         >
-          ^
+          <FaArrowUp style={{fontSize: '32px', marginBottom: '9px'}}/>
         </button>
       )}
     </>

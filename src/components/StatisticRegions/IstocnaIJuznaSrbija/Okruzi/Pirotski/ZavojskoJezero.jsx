@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import zavojskoJezero1 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/desktop/zavojskoJezero1.jpg";
 import zavojskoJezero2 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/desktop/zavojskoJezero2.jpg";
 import zavojskoJezero3 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/desktop/zavojskoJezero3.jpg";
@@ -10,101 +11,153 @@ import zavojskoJezero44 from "../../../../../assets/images/JuznaIIstocnaSrbija/P
 import zavojskoJezero55 from "../../../../../assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/ZavojskoJezero/mobile/zavojskoJezeroM5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { pirotskiOkrugPathRoutes } from "./PirotskiOkrugPathRoutes";
+import { useContextAuth } from "../../../../../Context";
+import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
-export const ZavojskoJezero = () => {
+const ZavojskoJezero = () => {
   const navigate = useNavigate();
+  const { switchLanguage } = useContextAuth();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && lang !== switchLanguage) {
+      const newPath = window.location.pathname.replace(/^\/[^\/]+/, `/${switchLanguage}`);
+      navigate(newPath, { replace: true });
+    }
+  }, [switchLanguage, lang, navigate]);
+
 
   return (
-    <div className="placeBackground">
-      <ScrollToTop />
-      <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home)} />
-      <header></header>
-      <img srcSet={`${zavojskoJezero11} 400w, ${zavojskoJezero1} `} alt="Zavaojsko jezero 1" />
+    <>
 
-      <h2>Zavaojsko jezero</h2>
+      <Helmet>
 
-      <p style={{ paddingTop: "50px" }}>
-        Zavojsko jezero je veštačko jezero koje se nalazi u jugoistočnom delu
-        Srbije, 17 km severoistočno od Pirota, na srednjem toku reke Visočice.
-        Nastalo je 1963. godine, kada je veliko klizište stvorilo prirodnu
-        branu, koja je kasnije povećana izgradnjom veštačke brane.
-        <br />
-        <br />
-        Zavojsko jezero je omiljeno izletište Piroćanaca i Nišlija.
-      </p>
+        <title>{switchLanguage === 'rs' ? "Zavojsko jezero – Prirodni dragulj jugoistočne Srbije | Serbia Wonders" : "Zavoj Lake – A Natural Gem of Southeastern Serbia | Serbia Wonders"}</title>
+        <meta
+          name="description"
+          content={switchLanguage === 'rs' ?
+            "Zavojsko jezero je veštačko jezero nastalo 1963. godine nakon velikog klizišta na Staroj planini. Omiljeno izletište sa značajem za hidroelektranu i prirodu regiona."
+            :
+            "Zavojsko Lake is an artificial lake formed in 1963 after a major landslide on Stara Planina. A popular excursion site with importance for the local hydroelectric plant and nature."
+          }
+        />
+        <meta
+          name="keywords"
+          content={switchLanguage === 'rs' ?
+            "Zavojsko jezero, Stara planina, Pirot, hidroelektrana Pirot, veštačko jezero, klizište, priroda jugoistočne Srbije, Visočica, turistička mesta"
+            :
+            "Zavojsko Lake, Stara Planina, Pirot, Pirot Hydroelectric Power Plant, artificial lake, landslide, southeastern Serbia nature, Visočica River, tourist attractions"
+          }
+        />
+        <meta name="author" content="Serbia Wonders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.serbiawonders.com/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/zavojsko-jezero`}
+        />
+        <link
+          rel="alternate"
+          hreflang="sr"
+          href="https://www.serbiawonders.com/sr/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/zavojsko-jezero"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.serbiawonders.com/en/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pirotski-okrug/zavojsko-jezero"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://www.serbiawonders.com/en/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/pcinjski-okrug/zavojsko-jezero"
+        />
 
-      <img srcSet={`${zavojskoJezero22} 400w, ${zavojskoJezero2} `} alt="Zavaojsko jezero 2" />
+      </Helmet>
 
-      <p>
-        Zavojsko jezero se nalazi u jugoistočnom delu Srbije, oko 17 km severno
-        od Pirota. Smešteno je na Staroj planini, u delu zvanom Visok, na
-        srednjem toku reke Visočice. Savremena veštačka brana se nalazi oko 1 km
-        nizvodno od nekadašnjeg sela Zavoj, koje je potopljeno stvaranjem jezera
-        i po kojem je jezero dobilo ime. Prilazi Zavojskom jezeru su reke
-        Visočica, Gostuška reka i Belska reka, dok je jedini izlaz iz jezera
-        reke Visočica. Velika količina vode iz jezera se kroz tunel odvodi do
-        Hidroelektrane Pirot, koja je koristi za pokretanje generatora. U
-        okolini i blizu jezera nalaze se sela: Pakleštica, Bela i Gostuša.
-      </p>
 
-      <img srcSet={`${zavojskoJezero33} 400w, ${zavojskoJezero3} `} alt="Zavaojsko jezero 3" />
+      <div className="placeBackground">
+        <ScrollToTop />
+        <FaArrowLeft className="arrowLeft" onClick={() => navigate(pirotskiOkrugPathRoutes.home(switchLanguage))} />
+        <header></header>
+        <img srcSet={`${zavojskoJezero11} 450w, ${zavojskoJezero1} `} alt="Zavaojsko jezero 1" loading="lazy" />
 
-      <p>
-        Zavojsko jezero je urvinsko jezero koje je nastalo koluvijalnim procesom
-        i, zajedno sa Jovačkim jezerima, predstavlja jedinstveni fenomen te
-        vrste na teritoriji Srbije. Prirodna brana je nastala nakon obilnih
-        padavina tokom zime 1963. godine. Padine Stare planine počele su da
-        klize, a velike količine zemlje su pregrabile reku. Do toga je došlo
-        zbog iskrčenja šuma i erozije zemljišta koja je nastala usled naglog
-        otapanja snega koji je obilno padao te zime. Meštani nisu pridavali
-        veliku pažnju toj pojavi, jer se nešto slično dešavalo i ranije nakon
-        padavina, pa su smatrali da će i ovaj put sve proći bez većih posledica.
-      </p>
+        {switchLanguage === 'rs' ?
+          (
+            <>
 
-      <img
-        srcSet={`${zavojskoJezero44} 400w, ${zavojskoJezero4} `}
-        alt="Zavaojsko jezero 4"
-      />
+              <h2>Zavaojsko jezero</h2>
 
-      <p>
-        Međutim, desetak dana nakon toga, u noći između 23. i 24. februara,
-        izvorima doline potekla je bujica rastresite i vlažne zemlje usled
-        velikog klizanja. Najveće pomeranje tla desilo se 25. februara. Masa tla
-        koja je klizila bila je duga 1,3 km i širine od 160 do 220 m, što je
-        predstavljalo zapreminu od oko 240.000 m³. Prirodna brana bila je visoka
-        preko 50 m, a njena nestabilnost pretila je da izazove njen probijanje i
-        naglo izlivanje akumulirane vode, čime bi bila potopljena sva naselja
-        nizvodno; postojale su tvrdnje da bi čak i Niš mogao biti ugrožen. Brzom
-        reakcijom vojske, prirodna brana je probijena, što je omogućilo njeno
-        nadvišenje i izgradnju veštačke brane koja postoji i danas.
-        <br />
-        <br />
-        Voda ovog jezera se danas koristi za pokretanje generatora
-        Hidroelektrane Pirot.
-      </p>
+              <section lang="sr">
+                <p>
+                  <strong>Zavojsko jezero</strong> je veštačko jezero koje se nalazi u jugoistočnom delu Srbije, 17 km severoistočno od <em>Pirota</em>, na srednjem toku reke <em>Visočice</em>. Nastalo je <strong>1963. godine</strong> kada je veliko klizište stvorilo prirodnu branu, koja je kasnije povećana izgradnjom veštačke brane. Danas je ovo jezero omiljeno izletište <em>Piroćanaca</em> i <em>Nišlija</em>.
+                </p>
+              </section>
 
-      <img srcSet={`${zavojskoJezero55} 400w, ${zavojskoJezero5} `} alt="Zavaojsko jezero 5" />
+              <img srcSet={`${zavojskoJezero22} 450w, ${zavojskoJezero2}`} alt="Zavojsko jezero 2" loading="lazy" />
 
-      <p>
-        Temperatura vode nije detaljno pratena; prilikom nastanka, temperatura
-        vode kretala se između 4 i 5 °C, dok je tokom leta površinski sloj imao
-        temperaturu i do 20 °C. Jezero je isušeno 1965. godine zbog nemogućnosti
-        prirodne brane da zadrži veliku količinu vode, pa je zbog toga
-        projektovano njeno nadvišenje do visine od 75 m, odnosno do visinske
-        kote od 615 m. Novom branom trebalo je omogućiti akumulaciju oko 147
-        miliona m³ korisne vode i ukupnu količinu od oko 160 miliona m³.
-        Projektovana površina je bila oko 5,53 km², a dužina 16,35 km. To je
-        podrazumevalo maksimalnu dubinu od 60 m i obim od 40 km. Jezero je
-        trebalo da prima vodu iz Visočice i Toplodolske reke. Toplodolska reka
-        trebala je povećati dotok vode za 36 miliona m³ godišnje, a predviđeni
-        protok kroz jezero bio je 10,4 m³/s. Zahvat vode za hidroelektranu
-        projektovan je 3 km uzvodno od brane, zajedno sa tunelom prečnika 2,6 m
-        i dužine 7,5 km, kao i cevovodom dužine 1,45 km do samih turbina.
-        Planirana je proizvodnja električne energije od 149 GWh godišnje.
-      </p>
-    </div>
+              <section lang="sr">
+                <p>
+                  <strong>Zavojsko jezero</strong> se nalazi na <em>Staroj planini</em>, u delu zvanom <em>Visok</em>, na srednjem toku reke <em>Visočice</em>. Veštačka brana se nalazi oko 1 km nizvodno od nekadašnjeg sela <em>Zavoj</em>, koje je potopljeno stvaranjem jezera. Jezero se puni vodama reka <em>Visočica</em>, <em>Gostuška reka</em> i <em>Belska reka</em>, dok je jedini izlaz voda reke <em>Visočice</em>. Voda se koristi za <strong>Hidroelektranu Pirot</strong>, a u okolini se nalaze sela <em>Pakleštica</em>, <em>Bela</em> i <em>Gostuša</em>.
+                </p>
+              </section>
+
+              <img srcSet={`${zavojskoJezero33} 450w, ${zavojskoJezero3}`} alt="Zavojsko jezero 3" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  <strong>Zavojsko jezero</strong> je urvinsko jezero nastalo <em>koluvijalnim procesom</em>. Prirodna brana formirana je posle obilnih padavina zime <strong>1963. godine</strong>, kada je došlo do velikih klizišta usled otapanja snega i iskrčenih šuma. Meštani u početku nisu pridavali značaj pojavi jer se slično dešavalo i ranije.
+                </p>
+              </section>
+
+              <img srcSet={`${zavojskoJezero44} 450w, ${zavojskoJezero4}`} alt="Zavojsko jezero 4" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  U noći između <strong>23. i 24. februara 1963.</strong> došlo je do velikog klizanja tla, a <strong>25. februara</strong> dogodilo se najveće pomeranje. Masa zemlje duga <strong>1,3 km</strong> i široka do <strong>220 m</strong> stvorila je prirodnu branu visoku preko <strong>50 m</strong>. Postojala je opasnost od njenog pucanja, što bi ugrozilo naselja nizvodno, pa čak i grad <em>Niš</em>. Brzom intervencijom vojske brana je stabilizovana, a potom dograđena.
+                </p>
+              </section>
+
+              <img srcSet={`${zavojskoJezero55} 450w, ${zavojskoJezero5}`} alt="Zavojsko jezero 5" loading="lazy" />
+
+              <section lang="sr">
+                <p>
+                  Temperatura vode u jezeru prilikom nastanka iznosila je između <strong>4 i 5 °C</strong>, a leti površinski sloj dostiže i do <strong>20 °C</strong>. Godine <strong>1965.</strong> jezero je isušeno zbog nestabilnosti prirodne brane, nakon čega je projektovana nova brana visine <strong>75 m</strong>, za akumulaciju oko <strong>160 miliona m³</strong> vode. Površina jezera je <strong>5,53 km²</strong>, a dužina <strong>16,35 km</strong>. Voda iz <em>Toplodolske reke</em> dodatno je povećavala protok. Planirana proizvodnja električne energije iznosi <strong>149 GWh godišnje</strong>.
+                </p>
+              </section>
+
+
+            </>
+          )
+          :
+          (
+            <>
+
+              <h2>Zavoj Lake</h2>
+
+              <section lang="en"> <p> <strong>Zavojsko Lake</strong> is an artificial lake located in the southeastern part of Serbia, 17 km northeast of <em>Pirot</em>, on the middle course of the <em>Visočica River</em>. It was formed in <strong>1963</strong> when a large landslide created a natural dam, which was later reinforced with the construction of an artificial dam. Today, the lake is a popular excursion spot for people from <em>Pirot</em> and <em>Niš</em>. </p> </section>
+              <img srcSet={`${zavojskoJezero22} 450w, ${zavojskoJezero2}`} alt="Zavojsko Lake 2" loading="lazy" />
+
+              <section lang="en"> <p> <strong>Zavojsko Lake</strong> is located on <em>Stara Planina</em> (the Balkan Mountains), in an area called <em>Visok</em>, along the middle course of the <em>Visočica River</em>. The artificial dam is about 1 km downstream from the former village of <em>Zavoj</em>, which was submerged when the lake was formed. The lake is fed by the <em>Visočica</em>, <em>Gostuša River</em>, and <em>Bela River</em>, while the <em>Visočica River</em> is its only outflow. The water is used for the <strong>Pirot Hydroelectric Power Plant</strong>, and nearby villages include <em>Pakleštica</em>, <em>Bela</em>, and <em>Gostuša</em>. </p> </section>
+              <img srcSet={`${zavojskoJezero33} 450w, ${zavojskoJezero3}`} alt="Zavojsko Lake 3" loading="lazy" />
+
+              <section lang="en"> <p> <strong>Zavojsko Lake</strong> is a landslide lake created by a <em>colluvial process</em>. The natural dam was formed after heavy rainfall in the winter of <strong>1963</strong>, when melting snow and deforested slopes triggered major landslides. Initially, locals did not give much importance to the event, as similar things had happened before. </p> </section>
+              <img srcSet={`${zavojskoJezero44} 450w, ${zavojskoJezero4}`} alt="Zavojsko Lake 4" loading="lazy" />
+
+              <section lang="en"> <p> During the night between <strong>February 23 and 24, 1963</strong>, a major landslide occurred, with the largest displacement happening on <strong>February 25</strong>. A mass of earth 1.3 km long and up to 220 m wide created a natural dam over <strong>50 m</strong> high. There was a risk of the dam breaking, which could have endangered downstream settlements and even the city of <em>Niš</em>. The army quickly intervened to stabilize the dam, which was later reinforced. </p> </section>
+              <img srcSet={`${zavojskoJezero55} 450w, ${zavojskoJezero5}`} alt="Zavojsko Lake 5" loading="lazy" />
+
+              <section lang="en"> <p> The water temperature in the lake at the time of formation ranged between <strong>4 and 5 °C</strong>, while in summer the surface layer can reach up to <strong>20 °C</strong>. In <strong>1965</strong>, the lake was drained due to the instability of the natural dam, after which a new dam was designed with a height of <strong>75 m</strong>, capable of holding about <strong>160 million m³</strong> of water. The lake covers an area of <strong>5.53 km²</strong> and stretches <strong>16.35 km</strong> in length. Water from the <em>Toplodolska River</em> further increased the flow. The planned electricity production is <strong>149 GWh per year</strong>. </p> </section>
+
+            </>
+          )}
+
+      </div>
+    </>
   );
 };
+
+
+export default ZavojskoJezero;

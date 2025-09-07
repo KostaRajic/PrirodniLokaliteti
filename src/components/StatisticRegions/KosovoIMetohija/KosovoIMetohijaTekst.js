@@ -16,3 +16,21 @@ export const KosovoIMetohijaTekst = {
   Kosovo i Metohija nude bogatu gastronomsku ponudu, zasnovanu na tradicionalnim jelima poput pečenih jagnjećih butova, sarme, pasulja, pite, kao i specijalitetima od ribe iz reka i jezera. Takođe, vina iz Metohije su poznata širom Balkana. Ovi regioni su domaćini brojnim kulturnim manifestacijama, festivalima i sajmovima, među kojima se ističu Dani Gračanice, Sunny Hill Festival, Kosovski boj i Čuvari tradicije u Prištini. Etno-sela i seoski turizam nude autentično iskustvo tradicionalnog načina života i gostoprimstva karakterističnog za ove krajeve.`
   };
   
+  export const KosovoIMetohijaTekstENG = {
+    
+  name: "Kosovo and Metohija",
+  mainText: `Kosovo and Metohija are regions rich in natural beauty, cultural heritage, and historical significance. These areas are known for their beautiful mountains, rivers, monasteries, and archaeological sites. Kosovo is home to spectacular natural phenomena, while Metohija offers an authentic atmosphere, rich tradition, and warm hospitality. These regions are key centers for tourism, agriculture, and livestock farming. The main city of the region is Pristina, and important towns include Peć, Đakovica, and Prizren. These areas abound with cultural events, folk customs, and are among the most interesting gastronomically in the Balkans.`,
+  topic1: `Touristic and Natural Sites`,
+  text1: `
+  Kosovo and Metohija are home to many natural beauties and tourist sites, among which stand out:`,
+  text11: `* Peć Patriarchate – One of the most important monasteries in the Balkans, protected by UNESCO, serving as a center of spirituality and history of the Serbian church.`,
+  text12: `* Gračanica – A 14th-century monastery, also protected by UNESCO, known for its exceptional frescoes and historical significance.`,
+  text13: `* Đakovica – A town known for its history, tradition, beautiful architecture, and numerous cultural events.`,
+  text14: `* Prokletije – A mountain range stretching along the border between Kosovo and Montenegro, known for its wild landscapes, peaks, and rivers, ideal for hiking and adventure tourism.`,
+  text15: `* Šar Mountain – One of the most beautiful mountains in the Balkans, known for its peaks, rivers, lakes, and rich flora and fauna.`,
+  text16: `* Brezovica – A popular skiing destination located on Šar Mountain, attracting winter sports enthusiasts.`,
+  text17: `* Visoki Dečani Monastery – One of the most beautiful Serbian monasteries, protected by UNESCO, with rich frescoes and historical significance.`,
+  topic2: `Cultural and Gastronomic Offer`,
+  text2: `
+  Kosovo and Metohija offer a rich gastronomic selection based on traditional dishes such as roasted lamb legs, sarma (cabbage rolls), beans, pies, as well as fish specialties from rivers and lakes. Also, wines from Metohija are famous throughout the Balkans. These regions host numerous cultural events, festivals, and fairs, among which stand out the Days of Gračanica, Sunny Hill Festival, Kosovo Battle reenactment, and Guardians of Tradition in Pristina. Ethno villages and rural tourism provide an authentic experience of the traditional lifestyle and hospitality characteristic of these areas.`
+  }

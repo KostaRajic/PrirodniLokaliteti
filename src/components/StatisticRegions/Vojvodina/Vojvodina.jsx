@@ -14,8 +14,9 @@ import { srednjeBanatskiPathRoutes } from "./Okruzi/SrednjeBanatski/SrednjeBanat
 import { sremskiOkrugPathRoutes } from "./Okruzi/Sremski/SremskiOkrugPathRoutes";
 import { juznoBanatskiPathRoutes } from "./Okruzi/JuznoBanatski/JuznoBanatskiPathRoutes";
 import { serbianMapPathRoutes } from "../../serbianMapPathRoutes";
+import { useContextAuth } from "../../../Context";
 
-export const Vojvodina = () => {
+const Vojvodina = () => {
   const center = [45.20313713852372, 20.012617302735283];
   const navigate = useNavigate();
   const [showZapadnoBacki, setZapadnoBacki] = useState(false);
@@ -25,11 +26,12 @@ export const Vojvodina = () => {
   const [showSrednjeBanatski, setSrednjeBanatski] = useState(false);
   const [showSremski, setSremski] = useState(false);
   const [shoeJuznoBanatski, setJuznoBanatski] = useState(false);
+  const { switchLanguage } = useContextAuth();
   const [zoom, setZoom] = useState(() => {
     if (window.innerWidth < 600) {
-      return 7;
+      return 6;
     } else if (window.innerWidth < 1600) {
-      return 8;
+      return 7;
     } else {
       return 10;
     }
@@ -39,30 +41,33 @@ export const Vojvodina = () => {
 
   useEffect(() => {
     if (showZapadnoBacki) {
-      return navigate(zapadnoBackiPathRoutes.home);
+      return navigate(zapadnoBackiPathRoutes.home(switchLanguage));
     } else if (showSevernoBacki) {
-      return navigate(servernoBackiPathRoutes.home);
+      return navigate(servernoBackiPathRoutes.home(switchLanguage));
     } else if (showSevernoBanatski) {
-      return navigate(severnoBanatskiPathRoutes.home);
+      return navigate(severnoBanatskiPathRoutes.home(switchLanguage));
     } else if (showJuznoBacki) {
-      return navigate(JuznoBackiPathRoutes.home);
+      return navigate(JuznoBackiPathRoutes.home(switchLanguage));
     } else if (showSrednjeBanatski) {
-      return navigate(srednjeBanatskiPathRoutes.home);
+      return navigate(srednjeBanatskiPathRoutes.home(switchLanguage));
     } else if (showSremski) {
-      return navigate(sremskiOkrugPathRoutes.home);
+      return navigate(sremskiOkrugPathRoutes.home(switchLanguage));
     } else if (shoeJuznoBanatski) {
-      return navigate(juznoBanatskiPathRoutes.home);
+      return navigate(juznoBanatskiPathRoutes.home(switchLanguage));
     }
   });
 
-
-
   return (
-    <div className="serbianMapClass">
+    <div>
+      <FaArrowLeft
+        className="arrowLeft"
+        onClick={() => navigate(serbianMapPathRoutes.VojvodinaTekstModal(switchLanguage))}
+
+      />
       <MapContainer
         center={center}
         zoom={zoom}
-        style={{ width: "100vw", height: "100vh" }}
+        style={{ width: "100vw", height: "100vh", position: "none" }}
         maxBounds={bounds}
         maxBoundsViscosity={1.0}
         scrollWheelZoom={false}
@@ -71,11 +76,7 @@ export const Vojvodina = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-        <FaArrowLeft
-          className="arrowLeft"
-          onClick={() => navigate(serbianMapPathRoutes.VojvodinaTekstModal)}
-          style={{ zIndex: '400' }}
-        />
+
         {VojvodinaRegioni?.features?.map((statisticOkrug, index) => {
           const cordinates = statisticOkrug?.geometry?.coordinates[0]?.map(
             (item) => [item[1], item[0]]
@@ -111,26 +112,28 @@ export const Vojvodina = () => {
                     });
                   },
                   click: (e) => {
-                    statisticOkrug?.properties?.name === "Zapadno-Backi" &&
+                    statisticOkrug?.properties?.nameSrb === "Zapadno-Backi" &&
                       setZapadnoBacki(true);
-                    statisticOkrug?.properties?.name === "Severno-Backi" &&
+                    statisticOkrug?.properties?.nameSrb === "Severno-Backi" &&
                       setSevernoBacki(true);
-                    statisticOkrug?.properties?.name === "Severno-Banatski" &&
-                      setSevernoBanatski(true);
-                    statisticOkrug?.properties?.name === "Juzno-Backi" &&
+                    statisticOkrug?.properties?.nameSrb ===
+                      "Severno-Banatski" && setSevernoBanatski(true);
+                    statisticOkrug?.properties?.nameSrb === "Juzno-Backi" &&
                       setJuznoBacki(true);
-                    statisticOkrug?.properties?.name === "Srednje-Banatski" &&
-                      setSrednjeBanatski(true);
-                    statisticOkrug?.properties?.name === "Sremski" &&
+                    statisticOkrug?.properties?.nameSrb ===
+                      "Srednje-Banatski" && setSrednjeBanatski(true);
+                    statisticOkrug?.properties?.nameSrb === "Sremski" &&
                       setSremski(true);
-                    statisticOkrug?.properties?.name === "Juzno-Banatski" &&
+                    statisticOkrug?.properties?.nameSrb === "Juzno-Banatski" &&
                       setJuznoBanatski(true);
                   },
                 }}
               >
                 <Tooltip>
                   <span className="toolTipClass">
-                    {statisticOkrug?.properties?.name}
+                    {switchLanguage === "en"
+                      ? statisticOkrug?.properties?.nameEng
+                      : statisticOkrug?.properties?.nameSrb}
                   </span>
                 </Tooltip>
               </Polygon>
@@ -141,3 +144,6 @@ export const Vojvodina = () => {
     </div>
   );
 };
+
+
+export default Vojvodina;

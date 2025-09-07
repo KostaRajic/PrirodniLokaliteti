@@ -5,21 +5,17 @@ import { visualizer } from 'rollup-plugin-visualizer';
 export default defineConfig({
   build: {
     sourcemap: true,
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules/leaflet')) {
-            return 'leaflet';
-          }
-          if (id.includes('node_modules/react-dom')) {
-            return 'react-dom';
-          }
-          if (id.includes('node_modules/react-router')) {
-            return 'react-router';
-          }
-        }
-      }
-    }
+    // rollupOptions: {
+    //   output: {
+    //     manualChunks(id) {
+    //       if (id.includes('node_modules')) {
+    //         if (id.includes('leaflet')) return 'leaflet';
+    //         if (id.includes('react')) return 'react';
+    //         return 'vendor';
+    //       }
+    //     }
+    //   }
+    // }
   },
   plugins: [
     react(),

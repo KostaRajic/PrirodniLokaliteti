@@ -1,9 +1,9 @@
 export const servernoBackiPathRoutes = {
-    home: "/vojvodinaTekstModal/Vojvodina/SevernoBacki",
-    palickoJezero: "/vojvodinaTekstModal/Vojvodina/SevernoBacki/PalickoJezero",
-    subotica: "/vojvodinaTekstModal/Vojvodina/SevernoBacki/Subotica",
-    rekaTisa: "/vojvodinaTekstModal/Vojvodina/SevernoBacki/Tisa",
-    subotickaPescara: "/vojvodinaTekstModal/Vojvodina/SevernoBacki/SubotickaPescara",
-    backaTopola: "/vojvodinaTekstModal/Vojvodina/SevernoBacki/BackaTopola",
-    backoTopolskoJezero: "/vojvodinaTekstModal/Vojvodina/SevernoBacki/BackoTopolskoJezero",
+    home: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-backi`,
+    palickoJezero: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-backi/palicko-jezero`,
+    subotica: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-backi/subotica`,
+    rekaTisa: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-backi/tisa`,
+    subotickaPescara: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-backi/suboticka-pescara`,
+    backaTopola: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-backi/backa-topola`,
+    backoTopolskoJezero: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/severno-backi/backo-topolsko-jezero`,
 }

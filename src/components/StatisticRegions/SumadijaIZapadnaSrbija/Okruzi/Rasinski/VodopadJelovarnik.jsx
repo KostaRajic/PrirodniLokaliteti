@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import jelovarnik1 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/desktop/jelovarnik1.jpg";
 import jelovarnik2 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/desktop/jelovarnik2.jpg";
 import jelovarnik3 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/desktop/jelovarnik3.jpg";
@@ -10,75 +11,244 @@ import jelovarnik44 from "../../../../../assets/images/SumadijaIZapadnaSrbija/Ra
 import jelovarnik55 from "../../../../../assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/VodopadJelovarnik/mobile/Mjelovarnik5.jpg";
 
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ScrollToTop } from "../../../../../ScrollToTop";
 import { rasinskiOkrugPathRoutes } from "./RasinskiOkrugPathRoutes";
+import { useContextAuth } from "../../../../../Context";
+import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
-export const VodopadJelovarnik = () => {
+const VodopadJelovarnik = () => {
   const navigate = useNavigate();
+  const { switchLanguage } = useContextAuth();
+  const { lang } = useParams();
+
+  useEffect(() => {
+    if (lang && lang !== switchLanguage) {
+      const newPath = window.location.pathname.replace(/^\/[^\/]+/, `/${switchLanguage}`);
+      navigate(newPath, { replace: true });
+    }
+  }, [switchLanguage, lang, navigate]);
+
 
   return (
-    <div className="placeBackground">
-      <ScrollToTop />
-      <FaArrowLeft
-        className="arrowLeft"
-        onClick={() => navigate(rasinskiOkrugPathRoutes.home)}
-        style={{ fill: "white" }}
-      />
-      <header></header>
-      <img srcSet={`${jelovarnik11} 400w, ${jelovarnik1} `} alt="Vodopad Jelovarnik 1" />
+    <>
+      <Helmet>
+        <title>
+          {switchLanguage === 'rs'
+            ? 'Vodopad Jelovarnik – Najviši vodopad Kopaonika i prirodni biser Srbije | Srbija Wonders'
+            : 'Jelovarnik Waterfall – Tallest Waterfall of Kopaonik and a Natural Gem of Serbia | Serbia Wonders'}
+        </title>
 
-      <h2 style={{ color: "white" }}>Vodopad Jelovarnik</h2>
+        <meta
+          name="description"
+          content={
+            switchLanguage === 'rs'
+              ? 'Vodopad Jelovarnik, visok 71 metar, jedan je od najviših u Srbiji. Smešten u srcu Kopaonika, okružen gustom šumom i spektakularnim pejzažima.'
+              : 'Jelovarnik Waterfall, standing at 71 meters, is one of Serbia’s tallest. Nestled in Kopaonik’s forested heart, it offers breathtaking scenery and serenity.'
+          }
+        />
 
-      <p style={{ paddingTop: "50px" }}>
-        Jelovarnik je očaravajući vodopad smešten na planini Kopaonik u Srbiji.
-        Sa visinom od oko 71 metar, jedan je od najviših vodopada u zemlji i
-        predstavlja spektakularan prizor koji oduzima dah svim posetiocima.
-        Smesten je na istočnom delu planine, nedaleko od popularnog turističkog
-        naselja Brzeće. Da biste došli do vodopada, potrebno je da prođete kroz
-        šumu i pratite nekoliko staza koje vode do samog vodopada. Okružen
-        bogatom vegetacijom, Jelovarnik je ujedno i dom raznovrsnih biljnih
-        vrsta, uključujući borove i hrastove šume, što doprinosi njegovom
-        posebnom šarmu.
-      </p>
+        <meta
+          name="keywords"
+          content={
+            switchLanguage === 'rs'
+              ? 'Vodopad Jelovarnik, Kopaonik, prirodni rezervat, planinarenje, priroda Srbije, Jelovarnik, Brzeće, najviši vodopad, Srbija, turizam'
+              : 'Jelovarnik Waterfall, Kopaonik, nature Serbia, hiking, Serbia waterfalls, Brzeće, tallest waterfall Serbia, travel Serbia'
+          }
+        />
 
-      <img srcSet={`${jelovarnik22} 400w, ${jelovarnik2} `} alt="Vodopad Jelovarnik 2" />
+        <meta name="author" content="Serbia Wonders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="canonical"
+          href={`https://www.serbiawonders.com/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/vodopad-jelovarnik`}
+        />
+        <link
+          rel="alternate"
+          hreflang="sr"
+          href="https://www.serbiawonders.com/sr/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/vodopad-jelovarnik"
+        />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/vodopad-jelovarnik"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://www.serbiawonders.com/en/sumadija-tekst-modal/sumadija-i-zapadna-srbija/rasinski-okrug/vodopad-jelovarnik"
+        />
+      </Helmet>
 
-      <p>
-        Kako se približavate vodopadu, osećate snagu vode koja se obrušava niz
-        stene. Voda stvara impozantan vodeni zid, a magla i sprej koji se šire
-        oko vodopada dodatno pojačavaju doživljaj. Ovaj prizor je zaista
-        očaravajuć, naročito tokom toplijih meseci kada vodopad postaje još
-        moćniji zbog topljenja snega.
-      </p>
 
-      <img srcSet={`${jelovarnik33} 400w, ${jelovarnik3} `} alt="Vodopad Jelovarnik 3" />
+      <div className="placeBackground">
+        <ScrollToTop />
+        <FaArrowLeft
+          className="arrowLeft"
+          onClick={() => navigate(rasinskiOkrugPathRoutes.home(switchLanguage))}
+          style={{ fill: "white" }}
+        />
+        <header></header>
+        <img srcSet={`${jelovarnik11} 450w, ${jelovarnik1} `} alt="Vodopad Jelovarnik 1" />
 
-      <p>
-        Jelovarnik privlači ljubitelje prirode, planinare i fotografe koji žele
-        da istraže ovaj prirodni biser. Avanturisti mogu da se popnu do vrha
-        vodopada i uživaju u zadivljujućem pogledu na okolne planine i doline.
-        Mnogi posetioci se zadrže na obližnjim stenama, gde se opuštaju i dive
-        se netaknutoj lepoti prirode.
-      </p>
+        {switchLanguage === 'rs' ?
+          (
+            <>
 
-      <img srcSet={`${jelovarnik44} 400w, ${jelovarnik4} `} alt="Vodopad Jelovarnik 4" />
+              <h2 style={{ color: "white" }}>Vodopad Jelovarnik</h2>
 
-      <p>
-        Pored samog vodopada, okolna područja Jelovarnika nude mnoge druge
-        prirodne lepote. Planinarske staze vode do drugih očaravajućih lokacija,
-        a posetioci mogu uživati u piknicima i kampovanju, okruženi netaknutom
-        prirodom.
-      </p>
+              <section lang="sr">
+                <p>
+                  <strong>Jelovarnik</strong> je očaravajući <strong>vodopad</strong> smešten na planini <strong>Kopaonik</strong>.
+                  Sa visinom od oko <strong>71 metar</strong>, jedan je od <strong>najviših vodopada u Srbiji</strong> i predstavlja
+                  <strong> spektakularan prizor</strong> koji ostavlja bez daha. Nalazi se na <strong>istočnom delu Kopaonika</strong>,
+                  u blizini turističkog mesta <strong>Brzeće</strong>, a do njega vodi staza kroz <strong>gustu šumu</strong>.
+                  <br />
+                  <br />
+                  Okružen <strong>bogatom vegetacijom</strong>, Jelovarnik je dom mnogim <strong>biljnim vrstama</strong>,
+                  uključujući <strong>borove</strong> i <strong>hrastove šume</strong>, što dodatno doprinosi njegovoj
+                  <strong> prirodnoj čaroliji</strong>.
+                </p>
+              </section>
 
-      <img srcSet={`${jelovarnik55} 400w, ${jelovarnik5} `} alt="Vodopad Jelovarnik 5" />
+              <img srcSet={`${jelovarnik22} 450w, ${jelovarnik2}`} alt="Vodopad Jelovarnik 2" />
 
-      <p>
-        Obilazak vodopada Jelovarnik na Kopaoniku je iskustvo koje ne treba
-        propustiti ako ste u Srbiji. Ovaj zadivljujući prirodni fenomen nudi
-        spokoj i očaravajuću lepotu koja ostavlja dubok utisak na svakog
-        posetioca.
-      </p>
-    </div>
+              <section lang="sr">
+                <p>
+                  Kako se približavate vodopadu, odmah osećate <strong>snagu vode</strong> koja se
+                  <strong> obrušava niz stene</strong>. Voda formira <strong>impozantan vodeni zid</strong>,
+                  dok <strong>magla i vodena prašina</strong> dodatno pojačavaju <strong>dramatičnost prizora</strong>.
+                  <br />
+                  <br />
+                  Najlepši je tokom <strong>proleća i leta</strong>, kada se <strong>sneg topi</strong> i količina vode
+                  se značajno povećava, čineći <strong>Jelovarnik</strong> još snažnijim i impresivnijim.
+                </p>
+              </section>
+
+              <img srcSet={`${jelovarnik33} 450w, ${jelovarnik3}`} alt="Vodopad Jelovarnik 3" />
+
+              <section lang="sr">
+                <p>
+                  Jelovarnik je omiljeno mesto za <strong>ljubitelje prirode</strong>, <strong>planinare</strong> i
+                  <strong> fotografe</strong>. Avanturisti mogu da se <strong>popnu do vrha vodopada</strong> i uživaju
+                  u <strong>zapanjujućem pogledu</strong> na okolne <strong>planine i doline</strong>.
+                  <br />
+                  <br />
+                  Mnogi posetioci se zadržavaju na <strong>obližnjim stenama</strong>, gde se opuštaju i dive se
+                  <strong> netaknutoj prirodi</strong> koja Jelovarnik čini pravim <strong>skrivenim draguljem</strong> Kopaonika.
+                </p>
+              </section>
+
+              <img srcSet={`${jelovarnik44} 450w, ${jelovarnik4}`} alt="Vodopad Jelovarnik 4" />
+
+              <section lang="sr">
+                <p>
+                  Okolina vodopada nudi brojne <strong>planinarske staze</strong> koje vode do drugih
+                  <strong> atraktivnih lokacija</strong>. Idealan je za <strong>izlete</strong>,
+                  <strong> piknike</strong> i čak <strong>kampovanje</strong>, zahvaljujući
+                  <strong>netaknutoj prirodi</strong> koja ga okružuje.
+                  <br />
+                  <br />
+                  Ova oblast pruža <strong>spokoj</strong> i <strong>mir</strong>, savršen za one koji žele
+                  da se <strong>odmore od gradske buke</strong> i povežu sa prirodom.
+                </p>
+              </section>
+
+              <img srcSet={`${jelovarnik55} 450w, ${jelovarnik5}`} alt="Vodopad Jelovarnik 5" />
+
+              <section lang="sr">
+                <p>
+                  Poseta <strong>vodopadu Jelovarnik</strong> predstavlja <strong>nezaboravno iskustvo</strong>.
+                  Ovaj <strong>prirodni fenomen</strong> ostavlja dubok utisak na svakog posetioca i nezaobilazna je
+                  destinacija za sve koji borave na <strong>Kopaoniku</strong> ili okolini.
+                </p>
+              </section>
+
+            </>
+          )
+          :
+          (
+            <>
+
+              <h2 style={{ color: "white" }}>Jelovarnik Waterfall</h2>
+
+              <section lang="en">
+                <p>
+                  <strong>Jelovarnik</strong> is a stunning <strong>waterfall</strong> located on <strong>Mount Kopaonik</strong>.
+                  With a height of around <strong>71 meters</strong>, it is one of the <strong>tallest waterfalls in Serbia</strong>
+                  and offers a <strong>spectacular sight</strong> that takes your breath away. It is situated on the
+                  <strong> eastern side of Kopaonik</strong>, near the tourist village of <strong>Brzeće</strong>, and is accessible
+                  by a trail that winds through a <strong>dense forest</strong>.
+                  <br />
+                  <br />
+                  Surrounded by <strong>lush vegetation</strong>, Jelovarnik is home to many <strong>plant species</strong>,
+                  including <strong>pine</strong> and <strong>oak forests</strong>, which further contribute to its
+                  <strong> natural charm</strong>.
+                </p>
+              </section>
+
+              <img srcSet={`${jelovarnik22} 450w, ${jelovarnik2}`} alt="Jelovarnik Waterfall 2" />
+
+              <section lang="en">
+                <p>
+                  As you approach the waterfall, you immediately feel the <strong>power of the water</strong>
+                  crashing <strong>down the rocks</strong>. The water forms a <strong>massive wall</strong>,
+                  while the <strong>mist and spray</strong> amplify the <strong>drama of the scene</strong>.
+                  <br />
+                  <br />
+                  It is most beautiful during <strong>spring and summer</strong>, when the <strong>snow melts</strong>
+                  and the water volume increases significantly, making <strong>Jelovarnik</strong> even more
+                  powerful and impressive.
+                </p>
+              </section>
+
+              <img srcSet={`${jelovarnik33} 450w, ${jelovarnik3}`} alt="Jelovarnik Waterfall 3" />
+
+              <section lang="en">
+                <p>
+                  Jelovarnik is a favorite destination for <strong>nature lovers</strong>, <strong>hikers</strong>,
+                  and <strong>photographers</strong>. Adventurers can <strong>climb to the top of the waterfall</strong>
+                  and enjoy <strong>breathtaking views</strong> of the surrounding <strong>mountains and valleys</strong>.
+                  <br />
+                  <br />
+                  Many visitors spend time on the <strong>nearby rocks</strong>, relaxing and admiring the
+                  <strong> untouched nature</strong> that makes Jelovarnik a true <strong>hidden gem</strong> of Kopaonik.
+                </p>
+              </section>
+
+              <img srcSet={`${jelovarnik44} 450w, ${jelovarnik4}`} alt="Jelovarnik Waterfall 4" />
+
+              <section lang="en">
+                <p>
+                  The area around the waterfall offers numerous <strong>hiking trails</strong> leading to other
+                  <strong> scenic spots</strong>. It is ideal for <strong>day trips</strong>,
+                  <strong> picnics</strong>, and even <strong>camping</strong>, thanks to the
+                  <strong>unspoiled nature</strong> that surrounds it.
+                  <br />
+                  <br />
+                  This area provides <strong>peace</strong> and <strong>tranquility</strong>, perfect for those
+                  looking to <strong>escape city noise</strong> and connect with nature.
+                </p>
+              </section>
+
+              <img srcSet={`${jelovarnik55} 450w, ${jelovarnik5}`} alt="Jelovarnik Waterfall 5" />
+
+              <section lang="en">
+                <p>
+                  Visiting the <strong>Jelovarnik Waterfall</strong> is a truly <strong>unforgettable experience</strong>.
+                  This <strong>natural wonder</strong> leaves a lasting impression on every visitor and is a must-see
+                  destination for anyone staying on <strong>Kopaonik</strong> or nearby.
+                </p>
+              </section>
+
+            </>
+          )}
+
+      </div>
+    </>
   );
 };
+
+
+export default VodopadJelovarnik;

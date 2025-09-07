@@ -1,9 +1,9 @@
 export const JuznoBackiPathRoutes = {
-    home: "/vojvodinaTekstModal/Vojvodina/JuznoBacki",
-    fruskaGora: "/vojvodinaTekstModal/Vojvodina/JuznoBacki/FruskaGora",
-    noviSad: "/vojvodinaTekstModal/Vojvodina/JuznoBacki/NoviSad",
-    manastirKrusedol: "/vojvodinaTekstModal/Vojvodina/JuznoBacki/ManastirKrusedol",
-    sremskiKarlovci: "/vojvodinaTekstModal/Vojvodina/JuznoBacki/SremskiKarlovci",
-    manastirBeocin: "/vojvodinaTekstModal/Vojvodina/JuznoBacki/ManastirBeocin",
-    sajkaskaOblast: "/vojvodinaTekstModal/Vojvodina/JuznoBacki/SajkaskaOblast",
+    home: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-backi`,
+    fruskaGora: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-backi/fruska-gora`,
+    noviSad: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-backi/novi-sad`,
+    manastirKrusedol: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-backi/manastir-krusedol`,
+    sremskiKarlovci: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-backi/sremski-karlovci`,
+    manastirBeocin: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-backi/manastir-beocin`,
+    sajkaskaOblast: (lang) => `/${lang}/vojvodina-tekst-modal/vojvodina/juzno-backi/sajkaska-oblast`,
 }

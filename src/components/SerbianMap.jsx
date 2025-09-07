@@ -7,8 +7,9 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { serbianMapPathRoutes } from "./serbianMapPathRoutes";
 import { beogradPathRoutes } from "./StatisticRegions/Beograd/BeogradPathRoutes";
+import { useContextAuth } from "../Context";
 
-export const SerbianMap = () => {
+const SerbianMap = () => {
   const center = [44.02543064661552, 20.888526435851563];
   const [showVojvodina, setShowVojvodina] = useState(false);
   const [showBeograd, setShowBeograd] = useState(false);
@@ -21,29 +22,38 @@ export const SerbianMap = () => {
     if (window.innerWidth < 600) {
       return 6;
     } else if (window.innerWidth < 1600) {
-      return 7;
+      return 6;
     } else {
       return 10;
     }
   });
   const [showMap, setShowMap] = useState(false);
+  const { switchLanguage } = useContextAuth();
 
   const bounds = [[44.02543064661552, 20.888526435851563]];
 
   useEffect(() => {
     if (showVojvodina) {
-      return navigate(serbianMapPathRoutes.VojvodinaTekstModal);
+      return navigate(serbianMapPathRoutes.VojvodinaTekstModal(switchLanguage));
     } else if (showBeograd) {
-      return navigate(beogradPathRoutes.home);
+      return navigate(beogradPathRoutes.home(switchLanguage));
     } else if (showSumadijaIZapadnaSrbija) {
-      return navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal);
+      return navigate(serbianMapPathRoutes.SumadijaIZapadnaSrbijaModal(switchLanguage));
     } else if (showIstocnaiJuznaSrbija) {
-      return navigate(serbianMapPathRoutes.IstocnaSrbijaTekstModal);
+      return navigate(serbianMapPathRoutes.IstocnaSrbijaTekstModal(switchLanguage));
     } else if (showKosovoIMetohija) {
-      return navigate(serbianMapPathRoutes.KosovoIMetohijaTekstModal);
+      return navigate(serbianMapPathRoutes.KosovoIMetohijaTekstModal(switchLanguage));
     }
-  });
-
+  },
+    [
+      showVojvodina,
+      showBeograd,
+      showSumadijaIZapadnaSrbija,
+      showIstocnaiJuznaSrbija,
+      showKosovoIMetohija,
+      switchLanguage,
+      navigate
+    ]);
 
   return (
     <div className="serbianMapClass">
@@ -64,7 +74,6 @@ export const SerbianMap = () => {
         attribution='<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
       /> */}
         {serbianMapData?.features?.map((statisticRegion, index) => {
-          console.log(statisticRegion);
           const cordinates = statisticRegion?.geometry?.coordinates[0]?.map(
             (item) => [item[1], item[0]]
           );
@@ -99,24 +108,26 @@ export const SerbianMap = () => {
                     });
                   },
                   click: (e) => {
-                    statisticRegion?.properties?.name === "Vojvodina" &&
+                    statisticRegion?.properties?.nameSrb === "Vojvodina" &&
                       setShowVojvodina(true);
-                    statisticRegion?.properties?.name === "Beograd" &&
+                    statisticRegion?.properties?.nameSrb === "Beograd" &&
                       setShowBeograd(true);
-                    statisticRegion?.properties?.name ===
+                    statisticRegion?.properties?.nameSrb ===
                       "Južna i istočna Srbija" &&
                       setShowIstocnaiJuznaSrbija(true);
-                    statisticRegion?.properties?.name ===
+                    statisticRegion?.properties?.nameSrb ===
                       "Šumadija i zapadna Srbija" &&
                       setShowSumadijaIZapadnaSrbija(true);
-                    statisticRegion?.properties?.name === "Kosovo i Metohija" &&
-                      setShowKosovoIMethoija(true);
+                    statisticRegion?.properties?.nameSrb ===
+                      "Kosovo i Metohija" && setShowKosovoIMethoija(true);
                   },
                 }}
               >
                 <Tooltip>
                   <span className="toolTipClass">
-                    {statisticRegion?.properties?.name}
+                    {switchLanguage === "en"
+                      ? statisticRegion?.properties?.nameEng
+                      : statisticRegion?.properties?.nameSrb}
                   </span>
                 </Tooltip>
               </Polygon>
@@ -127,6 +138,5 @@ export const SerbianMap = () => {
     </div>
   );
 };
-
 
 export default SerbianMap;

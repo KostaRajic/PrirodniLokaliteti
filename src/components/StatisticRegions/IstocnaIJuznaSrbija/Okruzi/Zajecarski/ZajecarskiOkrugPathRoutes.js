@@ -1,9 +1,9 @@
 export const zajecarskiOkrugPathRoutes = {
-    home: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug",
-    zajecar: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/Zajecar",
-    sokoBanja: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/SokoBanja",
-    planinaRtanj: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/PlaninaRtanj",
-    vodopadRipaljka: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/VodopadRipaljka",
-    sokoGrad: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/SokoGrad",
-    gamzigrad: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/ZajecarskiOkrug/Gamzigrad"
+    home: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug`,
+    zajecar: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/zajecar`,
+    sokoBanja: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/soko-banja`,
+    planinaRtanj: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/planina-rtanj`,
+    vodopadRipaljka: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/vodopad-ripaljka`,
+    sokoGrad: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/soko-grad`,
+    gamzigrad: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/zajecarski-okrug/gamzigrad`
 }

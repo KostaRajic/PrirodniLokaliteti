@@ -3,7 +3,7 @@ export const VojvodinaRegioni = {
     "features": [
       {
         "type": "Feature",
-        "properties": {"name": "Zapadno-Backi"},
+        "properties": {"nameSrb": "Zapadno-Backi", 'nameEng': "West Bačka"},
         "geometry": {
           "coordinates": [
             [
@@ -190,7 +190,7 @@ export const VojvodinaRegioni = {
       },
       {
         "type": "Feature",
-        "properties": {"name": "Severno-Backi"},
+        "properties": {"nameSrb": "Severno-Backi", "nameEng": "North Bačka"},
         "geometry": {
           "coordinates": [
             [
@@ -329,7 +329,7 @@ export const VojvodinaRegioni = {
       },
       {
         "type": "Feature",
-        "properties": {"name": "Severno-Banatski"},
+        "properties": {"nameSrb": "Severno-Banatski", "nameEng": "North Banat"},
         "geometry": {
           "coordinates": [
             [
@@ -488,7 +488,7 @@ export const VojvodinaRegioni = {
       },
       {
         "type": "Feature",
-        "properties": {"name": "Juzno-Backi"},
+        "properties": {"nameSrb": "Juzno-Backi", "nameEng": "South Bačka"},
         "geometry": {
           "coordinates": [
             [
@@ -823,7 +823,7 @@ export const VojvodinaRegioni = {
       },
       {
         "type": "Feature",
-        "properties": {"name": "Srednje-Banatski"},
+        "properties": {"nameSrb": "Srednje-Banatski", "nameEng": "Middle Banat"},
         "geometry": {
           "coordinates": [
             [
@@ -1194,7 +1194,7 @@ export const VojvodinaRegioni = {
       },
       {
         "type": "Feature",
-        "properties": {"name": "Sremski"},
+        "properties": {"nameSrb": "Sremski", "nameEng": "Srem"},
         "geometry": {
           "coordinates": [
             [
@@ -1657,7 +1657,7 @@ export const VojvodinaRegioni = {
       },
       {
         "type": "Feature",
-        "properties": {"name": "Juzno-Banatski"},
+        "properties": {"nameSrb": "Juzno-Banatski", "nameEng": "South Banat"},
         "geometry": {
           "coordinates": [
             [

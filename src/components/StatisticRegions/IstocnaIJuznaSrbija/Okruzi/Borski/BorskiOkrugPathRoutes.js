@@ -1,10 +1,10 @@
-export const borskiOkrugPathRoutes =  {
-    home: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug",
-    bor: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/Bor",
-    djerdapskaKlisura: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/DjerdapskaKlisura",
-    lazarevKanjon :"/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LazarevKanjon",
-    lazarevaPecina: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LazarevaPecina",
-    borskoJezero: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/BorskoJezero",
-    lepenskiVir: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/LepenskiVir",
-    rajkovaPecina: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/BorskiOkrug/RajkovaPecina"
+export const borskiOkrugPathRoutes = {
+    home: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug`,
+    bor: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/bor`,
+    djerdapskaKlisura: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/djerdapska-klisura`,
+    lazarevKanjon: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/lazarev-kanjon`,
+    lazarevaPecina: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/lazareva-pecina`,
+    borskoJezero: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/borsko-jezero`,
+    lepenskiVir: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/lepenski-vir`,
+    rajkovaPecina: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/borski-okrug/rajkova-pecina`
 }

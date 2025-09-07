@@ -1,13 +1,13 @@
 export const raskiOkrugPathRoutes = {
-    home: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug",
-    kraljevo: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/Kraljevo",
-    manastirStudenica: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirStudenica",
-    planinaKopaonik: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaKopaonik",
-    vrnjackaBanja: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/VrnjackaBanja",
-    manastirZica: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirZica",
-    tvrdjavaMaglic: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaMaglic",
-    planinaGoc: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/PlaninaGoc",
-    manastirDjurdjeviStupovi: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirDjurdjeviStupovi",
-    tvrdjavaStariRas: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/TvrdjavaStariRas",
-    manastirSopocani: "/sumadijaTekstModal/SumadijaIZapadnaSrbija/RaskiOkrug/ManastirSopocani"
+    home: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug`,
+    kraljevo: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/kraljevo`,
+    manastirStudenica: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/manastir-studenica`,
+    planinaKopaonik: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/planina-kopaonik`,
+    vrnjackaBanja: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/vrnjacka-banja`,
+    manastirZica: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/manastir-zica`,
+    tvrdjavaMaglic: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/tvrdjava-maglic`,
+    planinaGoc: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/planina-goc`,
+    manastirDjurdjeviStupovi: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/manastir-djurdjevi-stupovi`,
+    tvrdjavaStariRas: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/tvrdjava-stari-ras`,
+    manastirSopocani: (lang) => `/${lang}/sumadija-tekst-modal/sumadija-i-zapadna-srbija/raski-okrug/manastir-sopocani`
 }

@@ -1,8 +1,8 @@
 export const podunavskiOkrugPathRoutes = {
-    home: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug",
-    smederevo: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/Smederevo",
-    manastirPokajnica: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/ManastirPokajnica",
-    smedervskaTvrdjava: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/SmederevskaTvrdjava",
-    radovanjskiLug: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/RadovanjskiLug",
-    manastirKoporin: "/istocnaSrbijaTekstModal/IstocnaIZapadnaSrbija/PodunavskiOkrug/ManastirKoporin"
+    home: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug`,
+    smederevo: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/smederevo`,
+    manastirPokajnica: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/manastir-pokajnica`,
+    smedervskaTvrdjava: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/smederevska-tvrdjava`,
+    radovanjskiLug: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/radovanjski-lug`,
+    manastirKoporin: (lang) => `/${lang}/istocna-srbija-tekst-modal/istocna-i-juzna-srbija/podunavski-okrug/manastir-koporin`
 }
