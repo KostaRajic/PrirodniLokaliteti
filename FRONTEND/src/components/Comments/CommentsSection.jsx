@@ -5,13 +5,13 @@ export default function CommentsSection() {
     const [comments, setComments] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.serbiawonders.com/api/comments')
+        fetch('https://prirodnilokaliteti.onrender.com/tps://api.serbiawonders.com/api/comments')
             .then((res) => res.json())
             .then((data) => setComments(data))
     }, [])
 
     const addComment = async (newComment) => {
-        const res = await fetch('https://api.serbiawonders.com/api/comments', {
+        const res = await fetch('https://prirodnilokaliteti.onrender.com/api/comments', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newComment),
