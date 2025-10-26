@@ -1,0 +1,66 @@
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+
+const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
+const mongoURI = "mongodb+srv://kostarajic2:Sector111@serbiawonders.o83nxvk.mongodb.net/";
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('MongoDB connected!'))
+    .catch(err => console.log('MongoDV connection error:', err))
+
+const commentSchema = new mongoose.Schema({
+    name: { type: String, required: true },
+    email: String,
+    comment: { type: String, required: true },
+    approved: { type: Boolean, default: false },
+    date: { type: Date, default: Date.now }
+})
+
+const Comment = mongoose.model('Comment', commentSchema)
+
+app.post('/api/comments', async (req, res) => {
+    const { name, email, comment } = req.body;
+
+    if (!name || !comment) {
+        return res.status(400).json({ error: 'Ime i komentar su obavezni.' });
+    }
+
+    try {
+        const newComment = new Comment({ name, email, comment });
+        await newComment.save();
+        res.status(201).json({ message: 'Komentar poslat, čeka se odobrenje!' });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ error: 'Greška pri čuvanju komentara.' })
+    }
+
+})
+
+app.post('/api/approve/:id', async (req, res) => {
+    try {
+        const comment = await Comment.findById(req.params.id);
+        if (!comment) return res.status(404).json({ error: 'Komentar nije pronađen!' });
+        comment.approved = true;
+        await comment.save();
+        res.json({ message: 'Komentar odobren!' });
+    } catch (err) {
+        res.status(500).json({ error: 'Greška pri odobravanju komentara' })
+    }
+});
+
+app.get('/api/comments', async (req, res) => {
+    try {
+        const approvedComments = await Comment.find({ approved: true }).sort({ date: -1 });
+        res.json(approvedComments)
+    } catch (err) {
+        res.status(500).json({ error: "Greška pri učitavanju komentara."})
+    }
+})
+
+app.listen(5000, () => {
+    console.log('Server running on http://localhost:5000')
+})

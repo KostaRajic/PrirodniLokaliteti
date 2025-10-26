@@ -1,0 +1,1824 @@
+.leaflet-control-container {
+  display: none;
+}
+
+.homePage {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.homePage .carouselImg {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.homePage .carouselImg-active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.carouselOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    rgba(19, 17, 35, 0.5) 20%,
+    rgba(19, 17, 35, 0.6) 70%,
+    rgba(19, 17, 35, 0.7) 100%
+  );
+  z-index: 1;
+}
+
+.homePage .homePageTextContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+
+    button {
+      position: relative;
+      cursor: pointer;
+      color: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      border-radius: 10px;
+      margin-top: 15px;
+      background: transparent;
+      border: none;
+      font-size: 23px;
+      margin-left: 10px;
+      padding: 5px;
+    }
+  }
+}
+
+.homePage .homePage h2 .homePage h2 button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: yellow;
+  transition: width 1s ease;
+}
+
+.homePage h2 button:hover {
+  transform: scale(1.05);
+}
+
+.homePage h2 button:hover::after {
+  width: 100%;
+  background-color: yellow;
+}
+
+.headerClass .logo-and-nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.headerClass .logo-and-nav img {
+  width: 80px;
+  z-index: 10000;
+}
+
+.headerClass .logo-and-nav ul li {
+  color: white;
+  list-style-type: none;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-style: italic;
+}
+
+.headerClass .logo-and-nav div {
+  display: flex;
+}
+
+.headerClass .logo-and-nav p {
+  margin-right: 10px;
+}
+
+.headerClass .logo-and-nav select,
+.headerClass .logo-and-nav option {
+  color: black;
+  width: 90px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  cursor: pointer;
+  transform: translate(-47px, -10px);
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  height: 400px;
+  overflow: auto;
+
+  li {
+    padding: 5px 0;
+    margin: 5px auto;
+    font-size: 15px;
+  }
+}
+
+.dropdown-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown-menu .menu-items {
+  position: relative;
+
+  li {
+    padding: 5px 0;
+    margin: 5px auto;
+    font-size: 17px;
+    width: 300px;
+  }
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  cursor: pointer;
+  transform: translate(-135px, -10px);
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent::-webkit-scrollbar {
+  display: none;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent input {
+  border-radius: 10px;
+  color: var(--someBlueColor);
+  min-height: 30px;
+  padding: 0 10px;
+  border: none;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent div {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent p {
+  padding: 10px;
+}
+
+.headerClass .logo-and-nav .navbar .searchComponent p:active {
+  scale: (1);
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent {
+  position: absolute;
+  left: 70%;
+  top: 100%;
+  z-index: 1000;
+  cursor: pointer;
+  transform: translate(-120px, -10px);
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 5px 20px;
+  border-radius: 10px;
+
+  .weatherDescriptions {
+    margin: 5px auto;
+    font-size: 22px;
+  }
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent input {
+  border-radius: 10px;
+  color: var(--someBlueColor);
+  min-height: 30px;
+  padding: 0 10px;
+  border: none;
+  margin: 10px 10px 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  width: 420px;
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent div {
+  display: flex;
+  padding: 0;
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent div .searchButton {
+  height: 35px;
+  margin: auto 0 auto 5px;
+  border-radius: 10px;
+  color: var(--someBlueColor);
+  font-size: 25px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.headerClass .logo-and-nav .navbar .searchWeatherComponent div button {
+  background-color: black;
+  border: none;
+}
+
+.languageClass {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  list-style-type: none;
+  transition: all 0.3s ease-in;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  font-style: italic;
+  padding: 10px 30px;
+  position: absolute;
+}
+
+.languageText {
+  position: absolute;
+  left: 170px;
+}
+
+.headerClass
+  .logo-and-nav
+  .navbar
+  .searchWeatherComponent
+  div
+  .searchButton:hover {
+  transform: scale(1.1);
+}
+
+.loadingClass {
+  position: absolute;
+  top: 100%;
+}
+
+.languageDiv {
+  background: none;
+  left: 260px;
+  position: absolute;
+  top: 34px;
+}
+
+.headerClass .logo-and-nav .mobile-menu-toggle,
+.headerClass .logo-and-nav .mobile-menu {
+  display: none;
+}
+
+.selected-item {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+
+.headerClass .logo-and-nav .navbar-nav .dropdown-menu .okrugClass {
+  background: transparent;
+  padding: 5px 20px;
+}
+
+.navbar-nav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.serbianMapClass {
+  position: relative;
+  z-index: 2;
+}
+
+.modalBackground {
+  text-shadow: 5px 5px 5px black;
+}
+
+.modalContent {
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  overflow: auto;
+  width: 100vw;
+  z-index: 2200;
+  background-color: white;
+  font-size: 20px;
+  cursor: default;
+  padding: 30px;
+
+  h1 {
+    padding-bottom: 20px;
+    font-size: 50px;
+    padding-top: 20px;
+  }
+
+  p {
+    padding-bottom: 10px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 10px 0 10px 60px;
+  }
+
+  h4 {
+    margin: 10px 0 10px 30px;
+    padding-bottom: 10px;
+    word-spacing: 2px;
+    line-height: 1.6;
+  }
+
+  h3 {
+    padding-bottom: 15px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+}
+
+.btnClassPortal {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.BtnPortal {
+  margin: 40px 50px;
+  width: 110px;
+  height: 35px;
+  color: var(--someBlueColor);
+  background: white;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  border: 0;
+}
+
+.btnClass {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.firstBtn {
+  margin: 40px 50px;
+  width: 150px;
+  color: var(--someBlueColor);
+  background: white;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  border: 0;
+}
+
+.firstBtn:hover {
+  transform: scale(1.1);
+  background-color: var(--someBlueColor);
+  color: white;
+}
+
+.firstBtn:active {
+  transform: scale(1);
+}
+
+.secondBtn {
+  margin: 40px 50px;
+  width: 150px;
+  color: var(--someBlueColor);
+  background: white;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+
+  height: 60px;
+
+  border: 0;
+}
+
+.secondBtn:hover {
+  transform: scale(1.1);
+  background-color: var(--someBlueColor);
+  color: white;
+}
+
+.secondBtn:active {
+  transform: scale(1);
+}
+
+.cursor-pointer-false {
+  cursor: pointer;
+}
+
+.cursor-pointer-true {
+  cursor: default;
+}
+
+.vojvodinaTekstModalBackround {
+  background-image: url(./assets/images/Vojvodina/vojvodinaTekstModalBackground.jpg);
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  text-shadow: 5px 5px 5px black;
+  padding-top: 85px;
+}
+
+.sumadijaBGD {
+  background-image: url(./assets/images/SumadijaIZapadnaSrbija/sumadijaTeksBackround.jpg);
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  text-shadow: 5px 5px 5px black;
+  padding-top: 85px;
+}
+
+.istocnaIJuznaSrbijaTekstModalBackground {
+  background-image: url(./assets/images/JuznaIIstocnaSrbija/istocnaSrbija.jpg);
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  text-shadow: 5px 5px 5px black;
+  padding-top: 85px;
+}
+
+.kosovoIMetohijaTekstModalBackgorund {
+  background-image: url(./assets/images/KosovoIMetohija/kosovo.jpg);
+  color: white;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
+  text-shadow: 5px 5px 5px black;
+  padding-top: 85px;
+}
+
+.toolTipClass {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+  color: black;
+}
+
+.okrugBackground {
+  width: 100vw;
+  z-index: 2200;
+  background-color: white;
+  font-size: 25px;
+  cursor: default;
+
+  .okrugButton {
+    color: var(--someBlueColor);
+    background: white;
+    border-radius: 999px;
+    box-shadow: #5e5df0 0 10px 20px -10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    word-break: break-word;
+    border: 0;
+    margin: 20px 0 20px 50%;
+    transform: translateX(-50%);
+  }
+
+  .okrug {
+    background-position: 50%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+    padding-bottom: 50px;
+    font-size: 26px;
+    text-shadow: 5px 5px 5px black;
+
+    article,
+    div {
+      padding: 0 50px;
+      word-spacing: 1.5px;
+
+      p {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .rasinski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/RasinskiOrkug/rasinskiOkrug.jpg);
+  }
+
+  .raski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/RaskiOkrug/raskiOkrug.jpg);
+  }
+
+  .zapadnoBacki {
+    background-image: url(../src/assets/images/Vojvodina/ZapadnoBackiOkrug/Sombor.jpg);
+  }
+
+  .severnoBanatski {
+    background-image: url("./assets/images/Vojvodina/SevernoBanatskiOkrug/kikindaBCG.jpg");
+  }
+
+  .juznoBacki {
+    background-image: url("./assets/images/Vojvodina/JuznoBackiOkrug/NoviSad.jpg");
+  }
+
+  .juznoBanatski {
+    background-image: url("./assets/images/Vojvodina/JuznoBanatskiOkrug/juznobanatskiOkrug.jpg");
+  }
+
+  .severnoBacki {
+    background-image: url(../src/assets/images/Vojvodina/SevernoBackiOkrug/PalickoJezero3.jpg);
+  }
+
+  .srednjeBanatski {
+    background-image: url("./assets/images/Vojvodina/SrednjeBanatskiOkrug/SrednjeBanatskiOkrug.jpg");
+  }
+
+  .sremski {
+    background-image: url("./assets/images/Vojvodina/SremskiOkrug/sremski.jpg");
+  }
+
+  .kolubarski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/KolubarskiOkrug/kolubarski.jpg);
+  }
+
+  .macvanski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/MacvanskiOkrug/macvanski.jpg);
+  }
+
+  .moravicki {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/MoravickiOkrug/moravickiOkrug.jpg);
+  }
+
+  .sumadijski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/SumadijskiOkrug/sumadija.jpg);
+  }
+
+  .zlatiborski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/ZlatiborskiOkrug/zlatiborskiOkrug.jpg);
+  }
+
+  .pomoravski {
+    background-image: url(../src/assets/images/SumadijaIZapadnaSrbija/PomoravskiOkrug/pomoravskiOkrug.jpg);
+  }
+
+  .podunavski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/PodunavskiOkrug/podunavskiOkrug.jpg);
+  }
+
+  .branicevski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/BranicevskiOkrug/branicevskiOkug.jpg);
+  }
+
+  .borski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/BorskiOkrug/borskiOkrug.jpg);
+  }
+
+  .zajecarski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/ZajecarskiOkrug/zajecarskiOkrug.jpg);
+  }
+
+  .nisavski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/NisavskiOkrug/nisavskiOkrug.jpg);
+  }
+
+  .toplicki {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/ToplickiOkrug/toplickiOkrug.jpg);
+  }
+
+  .pirotski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/PirotskiOkrug/pirotskiOkrug.jpg);
+  }
+
+  .jablanicki {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/JablanickiOkrug/jablanickiOkrug.jpg);
+  }
+
+  .pcinjski {
+    background-image: url(../src/assets/images/JuznaIIstocnaSrbija/PcinjskiOkrug/pcinjskiOkrug.jpg);
+  }
+
+  .pecki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Pecki/peckiOkrug.jpg);
+  }
+
+  .mitrovacki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Mitrovacki/mitrovackiOkrug.jpg);
+  }
+
+  .pristinki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Pristinski/pristinskiOkrug.jpg);
+  }
+
+  .prizrenski {
+    background-image: url(../src/assets/images/KosovoIMetohija/Prizrenski/prizrenskiOkrug.jpg);
+  }
+
+  .djakovicki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Djakovicki/djakovickiOkrug.jpg);
+  }
+
+  .urosevacki {
+    background-image: url(../src/assets/images/KosovoIMetohija/Urosevacki/urosevackiOkrug.jpg);
+  }
+
+  .gnjilanski {
+    background-image: url(../src/assets/images/KosovoIMetohija/Gnjilanski/gnjilanskiOkrug.jpg);
+  }
+
+  h1 {
+    padding: 100px 50px 30px 50px;
+    font-size: 50px;
+  }
+
+  .basicInfo {
+    padding: 0px 50px 50px 50px;
+
+    h3 {
+      padding-bottom: 25px;
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 31px;
+      padding: 5px;
+    }
+  }
+
+  .beograd {
+    background-image: url("./assets/images/Beograd/beograd1.jpg");
+    background-position: 50% 40%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    color: white;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 5px black;
+
+    div {
+      padding: 0 50px;
+      word-spacing: 1.5px;
+    }
+  }
+}
+
+.displayFlexClassicWeather {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.displayFlexClassicWeatherHeader {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+.citatClass {
+  background-color: white;
+
+  blockquote,
+  em {
+    text-align: center;
+    padding: 50px;
+    font-style: italic;
+    font-weight: 500;
+    color: #080818;
+  }
+}
+
+.caruoselClass {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+
+  .caruoselInfo {
+    padding: 0;
+  }
+
+  .arrow {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    left: 2%;
+  }
+
+  .arrow-right {
+    right: 2%;
+  }
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.arrow2 {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  position: absolute;
+  cursor: pointer;
+}
+
+.arrow-left2 {
+  left: 2%;
+}
+
+.arrow-right2 {
+  right: 2%;
+}
+
+.caruoselBackground {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  position: absolute;
+
+  &-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &-visible {
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .caruoselInfo {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 400px;
+    height: 450px;
+    margin-top: 7%;
+    margin-left: 10%;
+    z-index: 100;
+
+    h3 {
+      padding: 30px;
+    }
+
+    p {
+      line-height: 23px;
+      word-spacing: 1.2px;
+      overflow: scroll;
+      padding: 0 30px 30px 30px;
+      height: 210px;
+      font-size: 17px;
+      text-align: justify;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    button {
+      margin: 20px 0 30px 30px;
+      width: 120px;
+      color: var(--someBlueColor);
+      background: white;
+      border-radius: 999px;
+      box-shadow: #5e5df0 0 10px 20px -10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 8px 18px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
+    }
+    button:hover {
+      transform: scale(1.1) translateY(3px);
+      color: white;
+      background: var(--someBlueColor);
+    }
+
+    button:active {
+      transform: scale(1);
+      color: var(--someBlueColor);
+      background: white;
+    }
+  }
+}
+
+.placeBackground {
+  width: 100vw;
+  overflow-y: auto;
+  z-index: 100000;
+
+  h1 {
+    position: absolute;
+    top: 5px;
+    font-size: 85px;
+
+    font-style: italic;
+  }
+
+  section {
+    background-color: white;
+    align-items: justify;
+    padding: 50px;
+    font-size: 27px;
+    line-height: 40px;
+
+    p,
+    strong,
+    em {
+      color: var(--someBlueColor);
+      text-align: justify;
+    }
+  }
+
+  .sectionTextClass p {
+    padding: 10px 0;
+  }
+
+  .fruskaGoraParagh {
+    font-size: 22px;
+    margin: 50px;
+    overflow: auto;
+    padding: 0;
+    height: 350px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fruskaGoraClassImg {
+    width: 3500px;
+    height: 450px;
+    background-color: white;
+    padding: 50px;
+  }
+
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .displayFlex {
+    background-color: white;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 30%;
+    }
+
+    img {
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+      margin: 40px 20px 0 20px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 22px;
+      color: var(--someBlueColor);
+      padding: 30px;
+    }
+  }
+
+  .fourImages {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    align-content: center;
+
+    img {
+      width: 22%;
+      height: 300px;
+    }
+
+    p {
+      color: var(--someBlueColor);
+      text-align: center;
+    }
+  }
+
+  .fourImagesSenta {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    align-content: center;
+
+    img {
+      width: 400px;
+      height: 300px;
+      padding: 0 20px;
+    }
+
+    p {
+      color: var(--someBlueColor);
+      font-size: 25px;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  .manyImages {
+    display: flex;
+    gap: 50px;
+    background-color: white;
+    flex-direction: column;
+
+    img {
+      margin: 30px;
+    }
+  }
+
+  .kgImages {
+    width: 80%;
+    height: 400px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  .kgImages:hover {
+    transform: scale(1.1);
+  }
+
+  .kgImages:active {
+    transform: scale(1);
+  }
+
+  h1 {
+    margin: 110px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    font-style: italic;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  .milosevVenac {
+    text-align: center;
+    margin: 10px 0 45px 0;
+    color: rgb(19 17 35);
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  .milosevVenacName {
+    color: var(--someBlueColor);
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+}
+
+.displayFlexClassic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    padding: 55px;
+    width: 65%;
+  }
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  cursor: pointer;
+  fill: var(--someBlueColor);
+  z-index: 100000000;
+
+  :hover {
+    transform: scale(1.2);
+  }
+
+  :active {
+    transform: scale(1);
+  }
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  height: 55px;
+  width: 55px;
+  font-weight: 1000;
+  overflow: hidden;
+  font-size: 45px;
+  background-color: #ffffff;
+  color: var(--someBlueColor);
+  border: 3px solid var(--someBlueColor);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 12000;
+  transition: background-color 0.3s ease;
+  background-color: var(--someBlueColor);
+  color: white;
+}
+
+.scroll-to-top-btn:hover {
+  transform: scale(1.1);
+}
+
+.scroll-to-top-btn.show {
+  display: flex;
+}
+
+.singleComponent {
+  cursor: default;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  pointer-events: auto;
+}
+
+.scrollableClass {
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+  height: 60vh;
+}
+
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.placePortal {
+  position: absolute;
+  inset: 0;
+  z-index: 10000000000000000;
+  background-color: var(--someBlueColor);
+  height: 100vh;
+}
+
+.placePortalWrapper {
+  margin: 5% auto;
+  width: 600px;
+  height: 500px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+
+  h2 {
+    display: flex;
+    margin: 40px auto;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 13px;
+    padding: 0 30px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    backdrop-filter: blur(1.2px);
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .headerClass .logo-and-nav ul {
+    position: relative;
+
+    .dropdown-menu {
+      transform: translate(0, 0);
+      height: 235px;
+      border-radius: 10px;
+      z-index: 10000000;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      font-size: 15px;
+      overflow: auto;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        width: 120px;
+        padding: 7px;
+        text-align: center;
+        color: yellow;
+        border-bottom: 1px solid yellow;
+      }
+
+      .menu-items a {
+        color: yellow;
+      }
+    }
+  }
+
+  .headerClass .logo-and-nav {
+    justify-content: flex-start;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li ul {
+    margin: 0;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li ul a {
+    text-decoration: none;
+  }
+
+  .headerClass .logo-and-nav ul .dropdown-menu li ul a:hover {
+    transform: scale(1.1);
+  }
+
+  .headerClass .logo-and-nav ul li {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    justify-content: center;
+    font-size: 11px;
+    margin: 0 10px;
+  }
+
+  .headerClass .logo-and-nav img {
+    width: 40px;
+    height: 40px;
+    margin-left: -30px;
+    z-index: 100000;
+  }
+
+  .headerClass .logo-and-nav .navbar.mobile {
+    display: none;
+  }
+
+  .headerClass .logo-and-nav .mobile-menu-toggle {
+    display: block;
+    right: 23px;
+    top: 22px;
+    z-index: 100000000;
+    position: absolute;
+  }
+
+  .headerClass .logo-and-nav .mobile-menu {
+    display: block;
+    position: fixed;
+    z-index: 1000000;
+    height: 100vh;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 1s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .mobile-menu-wrapper {
+      position: absolute;
+      left: 100%;
+      background: linear-gradient(
+        135deg,
+        rgb(19 17 35),
+        rgb(60 55 100),
+        rgb(120 115 180)
+      );
+      right: 0;
+      bottom: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      transition: left 1s ease-in;
+
+      ul {
+        margin-left: 0;
+      }
+
+      li {
+        font-size: 15px;
+        border-radius: 0;
+        margin: 5px 0;
+        width: 100%;
+        flex-direction: column;
+        background: transparent;
+      }
+    }
+  }
+
+  .placePortal {
+    .placePortalWrapper {
+      width: 100%;
+      margin: 0;
+      border: 0;
+      height: 100vh;
+    }
+
+    .btnClassPortal {
+      margin-top: 0px;
+    }
+
+    .BtnPortal {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+
+    h2 {
+      margin: 25px auto;
+    }
+  }
+
+  .headerClass .logo-and-nav .mobile-menu:not(.active) {
+    background-color: transparent;
+  }
+
+  .headerClass .logo-and-nav .mobile-menu.active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .headerClass .logo-and-nav .mobile-menu .mobile-menu-wrapper.active {
+    left: 55%;
+  }
+
+  .languageText {
+    position: static;
+    margin-left: 20px;
+  }
+
+  .languageDiv {
+    position: static;
+    margin-left: 40px;
+    z-index: 10000000;
+
+    .languageClass {
+      position: static;
+      margin-left: -30px;
+      padding: 10px;
+    }
+  }
+
+  .headerClass .logo-and-nav .mobile-menu .searchWeatherComponent {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    cursor: pointer;
+    transform: translate(0, 0);
+    transition: all 0.3s ease-in-out;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 5px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      display: flex;
+    }
+
+    input {
+      color: var(--someBlueColor);
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      background: black;
+      border: none;
+      margin-left: 15px;
+      font-size: 23px;
+    }
+
+    .imgWeatherIconsMobile {
+      margin-left: 0;
+    }
+
+    .weatherDallyMobile {
+      margin-top: 15px;
+      div {
+        width: 45px;
+      }
+    }
+
+    .displayFlexClassicWeather {
+      justify-content: space-around;
+      display: flex;
+      margin: 15px;
+
+      p {
+        margin: 0 70px;
+      }
+    }
+
+    .displayFlexClassicWeatherHeader {
+      margin: 10px auto;
+    }
+
+    .horisontalDetails {
+      display: none;
+    }
+
+    .weatherDescriptions {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  }
+
+  hr {
+    width: 120%;
+  }
+
+  .homePage .homePageTextContent {
+    margin: -30px auto 60px auto;
+    width: 80%;
+  }
+
+  .homePage div h1 {
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 60px;
+    font-size: 18px;
+  }
+
+  .homePage h2 {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .headerClass
+    .logo-and-nav
+    .mobile-menu
+    .mobile-menu-wrapper
+    .searchComponent {
+    display: flex;
+    flex-direction: column;
+
+    max-height: 200px;
+    overflow: auto;
+
+    p {
+      margin: 5px;
+    }
+
+    input {
+      height: 30px;
+      border: none;
+      padding: 5px;
+      font-size: 13px;
+      color: black;
+      border-radius: 10px;
+      width: 135px;
+      margin-top: 5px;
+    }
+
+    .selected-item {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .carouselOverlay {
+    height: 100vh;
+  }
+
+  .modalContent {
+    p {
+      font-size: 11px;
+      margin: 30px 0 0 10px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    h4 {
+      font-size: 13px;
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+
+  .displayFlexClassic {
+    img {
+      padding: 25px;
+      width: 48%;
+    }
+  }
+
+  .displayFlexClassicWeather {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .okrugBackground {
+    .okrugButton {
+      color: var(--someBlueColor);
+      background: white;
+      border-radius: 999px;
+      box-shadow: #5e5df0 0 10px 20px -10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      padding: 8px 18px;
+      user-select: none;
+      -webkit-user-select: none;
+      word-break: break-word;
+      border: 0;
+      margin: 20px 0 20px 50%;
+      transform: translateX(-50%);
+    }
+
+    h1 {
+      font-size: 33px;
+    }
+
+    article strong {
+      padding-right: 5px;
+    }
+    article p {
+      font-size: 18px;
+      padding: 5px 0;
+      text-align: justify;
+    }
+
+    .basicInfo {
+      strong {
+        line-height: 1.2;
+        font-size: 20px;
+      }
+      p {
+        font-size: 20px;
+        text-align: justify;
+      }
+    }
+    div {
+      line-height: 25px;
+    }
+  }
+
+  .caruoselClass {
+    height: 60vh;
+
+    .caruoselBackground {
+      height: 60vh;
+
+      .caruoselInfo {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: white;
+        margin: 20px auto;
+        height: auto;
+        width: 200px;
+
+        p {
+          color: white;
+          padding: 10px 30px;
+
+          font-style: italic;
+          text-shadow: 5px 5px 5px black;
+        }
+
+        button {
+          margin: 20px 0 30px 30px;
+          height: 39px;
+          width: 126px;
+          font-size: 13px;
+        }
+
+        p {
+          height: 135px;
+          font-size: 13px;
+        }
+
+        h3 {
+          margin-top: 5px;
+          padding: 15px 0 10px 30px;
+          color: white;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .citatClass blockquote {
+    font-size: 21px;
+    padding: 40px;
+  }
+
+  .placeBackground {
+    h1 {
+      font-size: 25px;
+      margin: 65px 70px 0 30px;
+      padding: 10px;
+      top: 0;
+    }
+
+    p {
+      padding: 10px 30px;
+      font-size: 16px;
+      line-height: 30px;
+      color: var(--someBlueColor);
+    }
+
+    section {
+      padding: 10px 0;
+    }
+
+    img {
+      height: 45vh;
+    }
+
+    .displayFlex {
+      display: flex;
+      align-items: baseline;
+      height: 78vh;
+
+      img {
+        height: 40vh;
+        width: 27vw;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 27px;
+      }
+    }
+
+    .flexColumn {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fruskaGoraParagh {
+      overflow: visible;
+      line-height: 27px;
+      margin: 0 30px 30px 30px;
+      font-size: 16px;
+      height: 100%;
+    }
+    .fruskaGoraClassImg {
+      height: auto;
+      max-height: 60vh;
+      width: 100%;
+      padding: 0;
+      margin: 50px 0;
+    }
+
+    .fourImages {
+      padding: 15px;
+      overflow: scroll;
+
+      img {
+        height: 200px;
+      }
+    }
+
+    .fourImagesSenta {
+      display: flex;
+      background-color: white;
+      justify-content: space-evenly;
+      margin: 10px;
+      padding: 5px;
+      align-content: center;
+      gap: 15px;
+
+      div {
+        text-align: center;
+      }
+
+      img {
+        width: 110px;
+        height: 100px;
+        padding: 0 5px;
+      }
+
+      p {
+        color: var(--someBlueColor);
+        font-size: 10px;
+        padding: 5px;
+        text-align: center;
+      }
+    }
+
+    .milosevVenac {
+      font-size: 30px;
+    }
+  }
+
+  .scroll-to-top-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 35px;
+  }
+
+  .arrowLeft {
+    top: 18px;
+    right: 10px;
+    font-size: 25px;
+    z-index: 1000000;
+    display: none;
+  }
+
+  .secondBtn {
+    margin-left: 20px;
+  }
+
+  .firstBtn {
+    margin-right: 20px;
+  }
+}
