@@ -27,13 +27,6 @@ export default function CommentForm({ onSubmit }) {
                 required
                 style={{ color: 'black' }}
             />
-            <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-            />
             <textarea
                 placeholder="Vaš komentar"
                 value={comment}

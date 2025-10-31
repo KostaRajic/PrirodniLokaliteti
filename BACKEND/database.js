@@ -18,7 +18,7 @@ const checkConnection = async () => {
      }
 }
 
-const result = await pool.query('select * from Comments')
-console.log(result)
+// const result = await pool.query('select * from Comments')
+// console.log(result)
 
-export { pool, checkConnection, result }
+export { pool, checkConnection } 

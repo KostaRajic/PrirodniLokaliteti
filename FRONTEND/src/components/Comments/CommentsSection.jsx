@@ -5,7 +5,7 @@ export default function CommentsSection() {
     const [comments, setComments] = useState([]);
 
     useEffect(() => {
-        fetch('https://prirodnilokaliteti.onrender.com/tps://api.serbiawonders.com/api/comments')
+        fetch('https://prirodnilokaliteti.onrender.com/api/comments')
             .then((res) => res.json())
             .then((data) => setComments(data))
     }, [])
@@ -16,6 +16,8 @@ export default function CommentsSection() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newComment),
         });
+        console.log('Šaljem:', newComment);
+
         if (res.ok) {
             const saved = await res.json();
             alert(saved.message)
@@ -24,23 +26,27 @@ export default function CommentsSection() {
         setComments((prev) => [{ ...newComment, _id: Date.now() }, ...prev]);
     }
 
-    console.log(comments)
+    // https://prirodnilokaliteti.onrender.com
 
     return (
-        <div>
-            <h2>Komentari</h2>
+        <div className='placePortal'>
 
-            <CommentForm onSubmit={addComment} />
+            <div className='placePortalWrapper' style={{ backgroundColor: 'wheat' }}>
+                <h2>Komentari</h2>
 
-            <div>
-                {comments.length === 0 && <p>Nema komentara još.</p>}
-                {comments.map((c) => (
-                    <div key={c._id}>
-                        <p>{c.name}</p>
-                        <p>{c.comment}</p>
-                    </div>
-                ))}
+                <CommentForm onSubmit={addComment} />
+
+                <div>
+                    {comments.length === 0 && <p>Nema komentara još.</p>}
+                    {comments.map((c) => (
+                        <div key={c.ID || c._id}>
+                            <p><strong>{c.User}</strong></p>
+                            <p>{c.Comment}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
+
         </div>
     )
 }

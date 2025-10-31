@@ -8,7 +8,11 @@ import { useContextAuth } from "../Context";
 import Regions from "./regionDropDown/regions";
 import { PlacePortal } from "./PlacePortal";
 import Spinner from "../Spinner";
-const Header = lazy(() => import("./Header"))
+const Header = lazy(() =>
+  new Promise((resolve) =>
+    setTimeout(() => resolve(import("./Header")), 2000)
+  )
+);
 
 const Layout = ({ children }) => {
   const navigate = useNavigate();
@@ -171,7 +175,6 @@ const Layout = ({ children }) => {
   };
 
   const handleRegionsComponent = (e) => {
-
     setOpen(true)
   }
 

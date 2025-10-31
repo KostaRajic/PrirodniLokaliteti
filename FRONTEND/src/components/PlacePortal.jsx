@@ -4,11 +4,13 @@ import { useEffect, useState } from 'react'
 import { useContextAuth } from '../Context';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import CommentsSection from './Comments/CommentsSection';
 
 export const PlacePortal = ({ place }) => {
     const { switchLanguage, setSelectedPlace } = useContextAuth();
     const navigate = useNavigate();
     const [data, setData] = useState([])
+    const [ commentSections, setCommentsSection ] = useState(false)
 
 
     const loadOkrugData = async () => {
@@ -154,7 +156,7 @@ export const PlacePortal = ({ place }) => {
                             <p>
                                 {switchLanguage === 'en' ? (place.mainTextENG || place.mainTextSRB) : place.mainTextSRB}
                             </p>
-                            <FontAwesomeIcon icon={faThumbsUp} size="2x" color="blue" />
+                            <FontAwesomeIcon icon={faThumbsUp} size="2x" color="blue" onClick={() => setCommentsSection(true)}/>
                             <div className="btnClassPortal">
                                 <button className="BtnPortal" onClick={() => setSelectedPlace(false)}>{switchLanguage === 'en' ? 'Back' : 'Nazad'}</button>
                                 <button className="BtnPortal" onClick={handleNext}>{switchLanguage === 'en' ? 'Next' : 'Napred'}</button>
@@ -164,10 +166,10 @@ export const PlacePortal = ({ place }) => {
 
                     </div>
                 </>
-
+    
             ))}
 
-
+            {commentSections && <CommentsSection/>}
 
         </div >
     )
